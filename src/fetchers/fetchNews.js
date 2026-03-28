@@ -1,21 +1,20 @@
 const Parser = require('rss-parser');
 const crypto = require('crypto');
-const { db, admin } = require('../config/firebase');
 const CONFIG = require('../config/constants');
 const { cleanHtmlTags } = require('../utils/formatters');
 const fs = require('fs');
 const path = require('path');
-
-const CACHE_FILE = path.join(__dirname, '../../seen_cache.json');
 
 async function fetchNews() {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log('📰 FETCHING LATEST ANIME NEWS');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
-  const rawCache = fs.existsSync(CACHE_FILE) ? JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8')) : {};
-  if (!rawCache.news) rawCache.news = {};
-  const currentNewsCache = rawCache.news;
+  const apiFile = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.NEWS}.json`);
+  let existingNews = [];
+  if (fs.existsSync(apiFile)) {
+    existingNews = JSON.parse(fs.readFileSync(apiFile, 'utf8'));
+  }
 
   const parser = new Parser({
     customFields: {
@@ -43,10 +42,6 @@ async function fetchNews() {
         // Create unique ID based on URL
         const id = crypto.createHash('sha256').update(item.link || item.title).digest('hex').substring(0, 20);
         
-        if (currentNewsCache[id]) {
-            continue; // Skip this article, already in cache
-        }
-        
         // Try to find image url 
         let imageUrl = '';
         if (item.mediaThumbnail && item.mediaThumbnail['$'] && item.mediaThumbnail['$'].url) {
@@ -67,11 +62,9 @@ async function fetchNews() {
           link: item.link,
           summary: summary,
           imageUrl: imageUrl,
-          pubDate: item.pubDate ? new Date(item.pubDate) : new Date(),
+          pubDate: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
           source: feed.title || 'Anime News',
           author: item.creator || item.author || '',
-          insertedAt: admin.firestore.FieldValue.serverTimestamp(),
-          // Don't overwrite comments or likes on set with merge:true
         };
         toUpload.push(newsData);
       }
@@ -80,33 +73,32 @@ async function fetchNews() {
     }
   }
 
-  if (toUpload.length > 0) {
-    console.log(`\n🚀 Uploading ${toUpload.length} news articles to Firestore...`);
-    let batch = db.batch();
-    let count = 0;
+  // Merge new items with existing ones, deduplicate by id
+  const newsMap = new Map();
+  for (const n of existingNews) {
+    newsMap.set(n.id, n);
+  }
+  for (const n of toUpload) {
+    newsMap.set(n.id, n);
+  }
 
-    for (const news of toUpload) {
-      currentNewsCache[news.id] = news.pubDate.getTime() / 1000;
-      const docRef = db.collection(CONFIG.FIRESTORE_COLLECTIONS.NEWS).doc(news.id);
-      
-      // Merge: true is CRITICAL to keep likes, comments, and stats from users intact!
-      batch.set(docRef, news, { merge: true });
-      count++;
+  const combinedNews = Array.from(newsMap.values());
+  // Sort by newest first
+  combinedNews.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+  
+  // Keep only the most recent 100 articles
+  const finalNews = combinedNews.slice(0, 100);
 
-      if (count % 400 === 0) {
-        await batch.commit();
-        batch = db.batch();
-      }
-    }
-    
-    if (count % 400 !== 0) {
-      await batch.commit();
-    }
-    
-    fs.writeFileSync(CACHE_FILE, JSON.stringify(rawCache, null, 2), 'utf8');
-    console.log(`✅ ${toUpload.length} News successfully uploaded.`);
+  fs.mkdirSync(path.dirname(apiFile), { recursive: true });
+  
+  const existingContent = JSON.stringify(existingNews, null, 2);
+  const newContent = JSON.stringify(finalNews, null, 2);
+
+  if (existingContent !== newContent) {
+    fs.writeFileSync(apiFile, newContent, 'utf8');
+    console.log(`✅ Uploaded ${finalNews.length} news articles to ${apiFile}.`);
   } else {
-    console.log('\n✅ No news articles found.');
+    console.log('\n✅ No new news articles found (API file is up to date).');
   }
 }
 

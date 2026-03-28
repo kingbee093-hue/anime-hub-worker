@@ -14,7 +14,7 @@ async function fetchByGenre() {
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
     for (const genre of TOP_GENRES) {
-        const collectionPath = `${CONFIG.FIRESTORE_COLLECTIONS.BY_GENRE}/by_genre/genres/${genre}/items`;
+        const collectionPath = `${CONFIG.API_PATHS.BY_GENRE}/${genre}`;
         
         await fetchSection(collectionPath, {
             page: 1,

@@ -12,32 +12,6 @@ on:
     types: [run-recent, run-news, run-sections, run-genres, run-cleanup, run-all]
 
 jobs:
-  cleanup:
-    name: Daily Cleanup
-    runs-on: ubuntu-latest
-    if: github.event.inputs.job_target == 'cleanup' || github.event.inputs.job_target == 'all' || github.event.action == 'run-cleanup' || github.event.action == 'run-all'
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Run Cleanup
-        run: node cleanup_seen.js
-
-      - name: Commit Updated seen_cache.json
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git pull --rebase origin main || true
-          git add seen_cache.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: cleanup old seen cache" && git push)
 
   recent_episodes:
     name: Fetch Recent Episodes
@@ -57,18 +31,14 @@ jobs:
 
       - name: Run Recent Episodes Fetcher
         run: npm run fetch:recent
-        env:
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-          FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Commit Updated seen_cache.json
+      - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull --rebase origin main || true
-          git add seen_cache.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update seen cache tracking" && git push)
+          git add api/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update recent episodes [skip ci]" && git push)
 
   fetch_news:
     name: Fetch Latest News
@@ -88,18 +58,14 @@ jobs:
 
       - name: Run News Fetcher
         run: npm run fetch:news
-        env:
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-          FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Commit Updated seen_cache.json
+      - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull --rebase origin main || true
-          git add seen_cache.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update news cache" && git push)
+          git add api/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update news [skip ci]" && git push)
 
   fetch_sections:
     name: Fetch General Sections (Top Rated, Popular, etc)
@@ -119,18 +85,14 @@ jobs:
 
       - name: Run Sections Fetcher
         run: npm run fetch:sections
-        env:
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-          FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Commit Updated seen_cache.json
+      - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull --rebase origin main || true
-          git add seen_cache.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update sections cache" && git push)
+          git add api/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update frontpage sections [skip ci]" && git push)
 
   fetch_genres:
     name: Fetch By Genre
@@ -150,15 +112,11 @@ jobs:
 
       - name: Run Genres Fetcher
         run: npm run fetch:genres
-        env:
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-          FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Commit Updated seen_cache.json
+      - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull --rebase origin main || true
-          git add seen_cache.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update genres cache" && git push)
+          git add api/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update genres [skip ci]" && git push)

@@ -1,13 +1,10 @@
 const fs = require('fs');
 const path = require('path');
-const { db } = require('../config/firebase');
 const CONFIG = require('../config/constants');
 const { isAdultContent, isAnime } = require('../utils/filters');
 const { convertToFirestoreFormat, delay } = require('../utils/formatters');
 const { fetchGraphQL } = require('../utils/fetchHelper');
 const { AIRING_ANIME_QUERY } = require('../utils/anilistQueries');
-
-const CACHE_FILE = path.join(__dirname, '../../seen_cache.json');
 
 async function fetchRecentEpisodes() {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -50,11 +47,8 @@ async function fetchRecentEpisodes() {
     }
   }
 
-  const rawCache = fs.existsSync(CACHE_FILE) ? JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8')) : {};
-  if (!rawCache.recent_episodes) rawCache.recent_episodes = {};
-  const newSeen = { ...rawCache.recent_episodes };
-  const toUpload = [];
   const animeMap = new Map();
+  const finalData = [];
 
   for (const schedule of allSchedules) {
     const media = schedule.media;
@@ -69,45 +63,31 @@ async function fetchRecentEpisodes() {
   }
 
   for (const data of animeMap.values()) {
-    const fallbackId = data.media.idMal || data.media.id;
-    const key = `${fallbackId}_ep${data.episode}`;
-    if (rawCache.recent_episodes[key]) continue;
-    newSeen[key] = data.airingTime;
-
     const firestoreData = convertToFirestoreFormat(data.media, {
       latestEpisode: data.episode,
       latestEpisodeTitle: `Episode ${data.episode}`,
     });
 
-    if (firestoreData) toUpload.push(firestoreData);
+    if (firestoreData) finalData.push(firestoreData);
   }
 
-  if (toUpload.length > 0) {
-    console.log(`\n🚀 Uploading ${toUpload.length} new episodes to Firestore...`);
-    let batch = db.batch();
-    let count = 0;
+  // Sort by newest airing time first
+  finalData.sort((a, b) => b.airingTime - a.airingTime);
 
-    for (const item of toUpload) {
-      const docRef = db.collection(CONFIG.FIRESTORE_COLLECTIONS.RECENT_EPISODES).doc(item.animeId.toString());
-      item.updatedAt = new Date();
-      batch.set(docRef, item, { merge: true });
-      count++;
-      
-      // Batch limit is 500
-      if (count % 400 === 0) {
-          await batch.commit();
-          batch = db.batch();
-      }
-    }
-    if (count % 400 !== 0) {
-        await batch.commit();
-    }
-    
-    rawCache.recent_episodes = newSeen;
-    fs.writeFileSync(CACHE_FILE, JSON.stringify(rawCache, null, 2), 'utf8');
-    console.log(`✅ Uploaded ${toUpload.length} episodes.`);
+  const apiFile = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.RECENT_EPISODES}.json`);
+  fs.mkdirSync(path.dirname(apiFile), { recursive: true });
+  
+  let existingContent = '';
+  if (fs.existsSync(apiFile)) {
+    existingContent = fs.readFileSync(apiFile, 'utf8');
+  }
+  const newContent = JSON.stringify(finalData, null, 2);
+  
+  if (existingContent !== newContent) {
+    fs.writeFileSync(apiFile, newContent, 'utf8');
+    console.log(`✅ Uploaded ${finalData.length} recent episodes to ${apiFile}.`);
   } else {
-    console.log('\n✅ No new episodes to upload.');
+    console.log('\n✅ No new episodes to upload (API file is up to date).');
   }
 }
 

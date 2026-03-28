@@ -6,15 +6,15 @@ const CONFIG = {
   MAX_RETRIES: 3,
   RETRY_DELAY: 2000,      // 2 seconds
   RATE_LIMIT_DELAY: 700,  // milliseconds between requests
-  FIRESTORE_COLLECTIONS: {
+  API_PATHS: {
     RECENT_EPISODES: 'recent_episodes',
-    TRENDING: 'home_sections/trending/items',
-    TOP_RATED: 'home_sections/top_rated/items',
-    POPULAR_SEASON: 'home_sections/popular_season/items',
-    UPCOMING: 'home_sections/upcoming/items',
-    TOP_AIRING: 'home_sections/top_airing/items',
-    BY_GENRE: 'home_sections', // will append /genres/<genre>/items
-    NEWS: 'news' // Latest news collection
+    TRENDING: 'home_sections/trending',
+    TOP_RATED: 'home_sections/top_rated',
+    POPULAR_SEASON: 'home_sections/popular_season',
+    UPCOMING: 'home_sections/upcoming',
+    TOP_AIRING: 'home_sections/top_airing',
+    BY_GENRE: 'home_sections/genres', 
+    NEWS: 'news' 
   }
 };
 
