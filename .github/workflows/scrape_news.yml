@@ -1,0 +1,36 @@
+name: Scrape and Update Anime News
+
+on:
+  workflow_dispatch: # Allows manual triggering from cron-job / API
+  repository_dispatch: # Allows triggering via GitHub API (webhook)
+    types: [update_news]
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Scraper
+        run: npm start
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add api/news.json
+          git commit -m "chore: auto-update anime news [skip ci]" || echo "No changes to commit"
+          git push
