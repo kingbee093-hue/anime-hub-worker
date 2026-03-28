@@ -19,7 +19,7 @@ async function fetchANN() {
     const articles = [];
     
     $('.herald.box.news').each((i, el) => {
-      if (i >= 15) return; // limit to 15
+      if (i >= 50) return; // limit to 50
       const $el = $(el);
       const title = $el.find('h3 a').text().trim();
       const excerpt = $el.find('.preview').text().trim();
@@ -74,7 +74,7 @@ async function fetchMAL() {
     const $ = cheerio.load(data, { xmlMode: true });
     const articles = [];
 
-    $('item').slice(0, 15).each((i, el) => {
+    $('item').slice(0, 50).each((i, el) => {
       const title = $(el).find('title').text().trim();
       let description = $(el).find('description').text().trim();
       description = cleanHtml(description);
@@ -121,11 +121,11 @@ async function fetchMAL() {
   const malNews = await fetchMAL();
 
   // Combine and sort by date descending
-  let allNews = [...annNews, ...malNews];
-  allNews.sort((a, b) => b.publishedAt - a.publishedAt);
+  let newNews = [...annNews, ...malNews];
+  newNews.sort((a, b) => b.publishedAt - a.publishedAt);
 
-  // Format dates to simple strings so flutter doesn't have to (e.g., Mar 28, 2026 • 01:43 AM)
-  allNews = allNews.map(a => {
+  // Format dates to simple strings for Flutter
+  newNews = newNews.map(a => {
     const dateObj = new Date(a.publishedAt);
     const options = { month: 'short', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true };
     a.publishedAt = dateObj.toLocaleString('en-US', options).replace(',', ' •');
@@ -139,6 +139,29 @@ async function fetchMAL() {
   }
 
   const outputPath = path.join(apiDir, 'news.json');
-  fs.writeFileSync(outputPath, JSON.stringify(allNews, null, 2));
-  console.log(`Successfully wrote ${allNews.length} articles to news.json!`);
+
+  // Load existing news if available to accumulate
+  let existingNews = [];
+  if (fs.existsSync(outputPath)) {
+    try {
+      existingNews = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+    } catch (e) {
+      console.error('Could not parse existing news.json, starting fresh.', e);
+    }
+  }
+
+  // Find unique new articles by checking if sourceUrl already exists
+  const existingUrls = new Set(existingNews.map(a => a.sourceUrl));
+  const uniqueNewArticles = newNews.filter(a => !existingUrls.has(a.sourceUrl));
+
+  console.log(`Found ${uniqueNewArticles.length} brand new articles.`);
+
+  // Accumulate: put new articles at the top
+  let finalNews = [...uniqueNewArticles, ...existingNews];
+
+  // Limit database to 1500 articles to prevent performance issues in GitHub and App
+  finalNews = finalNews.slice(0, 1500);
+
+  fs.writeFileSync(outputPath, JSON.stringify(finalNews, null, 2));
+  console.log(`Successfully wrote ${finalNews.length} total articles to news.json!`);
 })();
