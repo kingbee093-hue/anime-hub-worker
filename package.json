@@ -8,7 +8,8 @@
     "fetch:recent": "node index.js recent",
     "fetch:sections": "node index.js toprated && node index.js trending && node index.js popular && node index.js upcoming && node index.js topairing",
     "fetch:genres": "node index.js genres",
-    "fetch:news": "node scraper.js"
+    "fetch:news": "node scraper.js",
+    "backfill:news": "node backfill.js"
   },
   "keywords": [
     "anime",

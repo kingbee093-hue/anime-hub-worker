@@ -1,0 +1,35 @@
+name: Backfill News (Run Once)
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  backfill_news:
+    name: Backfill Historical News (2019 - Now)
+    runs-on: ubuntu-latest
+    timeout-minutes: 120  # 2 hours max
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Backfill Script
+        run: npm run backfill:news
+
+      - name: Commit Backfilled News
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add api/news.json
+          git diff --staged --quiet || git commit -m "api: backfill historical news 2019-now [skip ci]"
+          git push origin HEAD:main

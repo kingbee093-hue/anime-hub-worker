@@ -114,9 +114,39 @@ async function fetchMAL() {
 }
 
 (async () => {
+  // Load existing news first to get the latest date
+  const apiDir = path.join(__dirname, 'api');
+  if (!fs.existsSync(apiDir)) fs.mkdirSync(apiDir);
+  const outputPath = path.join(apiDir, 'news.json');
+
+  let existingNews = [];
+  if (fs.existsSync(outputPath)) {
+    try {
+      existingNews = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+    } catch (e) {
+      console.error('Could not parse existing news.json, starting fresh.');
+    }
+  }
+
+  console.log(`Existing articles: ${existingNews.length}`);
+
+  // Find the latest article date in existing news to use as a cutoff
+  let latestDate = null;
+  for (const article of existingNews) {
+    const d = new Date(article.publishedAt);
+    if (!isNaN(d.getTime())) {
+      if (!latestDate || d > latestDate) latestDate = d;
+    }
+  }
+  if (latestDate) {
+    console.log(`Latest article in DB: ${latestDate.toISOString()}`);
+  } else {
+    console.log('No existing articles found, fetching all available news.');
+  }
+
   console.log('Fetching ANN news...');
   const annNews = await fetchANN();
-  
+
   console.log('Fetching MAL news...');
   const malNews = await fetchMAL();
 
@@ -132,36 +162,23 @@ async function fetchMAL() {
     return a;
   });
 
-  // Ensure output directory 'api' exists
-  const apiDir = path.join(__dirname, 'api');
-  if (!fs.existsSync(apiDir)) {
-    fs.mkdirSync(apiDir);
-  }
-
-  const outputPath = path.join(apiDir, 'news.json');
-
-  // Load existing news if available to accumulate
-  let existingNews = [];
-  if (fs.existsSync(outputPath)) {
-    try {
-      existingNews = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
-    } catch (e) {
-      console.error('Could not parse existing news.json, starting fresh.', e);
-    }
-  }
-
-  // Find unique new articles by checking if sourceUrl already exists
+  // Filter: only keep articles whose sourceUrl is not already in DB
   const existingUrls = new Set(existingNews.map(a => a.sourceUrl));
-  const uniqueNewArticles = newNews.filter(a => !existingUrls.has(a.sourceUrl));
+  const uniqueNew = newNews.filter(a => !existingUrls.has(a.sourceUrl));
 
-  console.log(`Found ${uniqueNewArticles.length} brand new articles.`);
+  console.log(`Found ${uniqueNew.length} brand new articles not in DB.`);
 
-  // Accumulate: put new articles at the top
-  let finalNews = [...uniqueNewArticles, ...existingNews];
+  if (uniqueNew.length === 0) {
+    console.log('No new articles to add. DB is up to date!');
+    return;
+  }
 
-  // Limit database to 1500 articles to prevent performance issues in GitHub and App
-  finalNews = finalNews.slice(0, 1500);
+  // Accumulate: new articles at the top
+  let finalNews = [...uniqueNew, ...existingNews];
+
+  // Limit to 5000 articles max
+  finalNews = finalNews.slice(0, 5000);
 
   fs.writeFileSync(outputPath, JSON.stringify(finalNews, null, 2));
-  console.log(`Successfully wrote ${finalNews.length} total articles to news.json!`);
+  console.log(`✅ Added ${uniqueNew.length} new articles. Total: ${finalNews.length}`);
 })();
