@@ -58,18 +58,19 @@ async function fetchRecentEpisodes() {
 
   for (const schedule of allSchedules) {
     const media = schedule.media;
-    if (!media || !media.idMal) continue;
+    if (!media || (!media.idMal && !media.id)) continue;
     if (isAdultContent(media).blocked || !isAnime(media).allowed) continue;
     if (schedule.airingAt < cutoffDate || media.status !== 'RELEASING') continue;
 
-    const animeId = media.idMal;
+    const animeId = media.idMal || media.id;
     if (animeMap.has(animeId) && animeMap.get(animeId).episode >= schedule.episode) continue;
     
     animeMap.set(animeId, { media, episode: schedule.episode, airingTime: schedule.airingAt, scheduleId: schedule.id });
   }
 
   for (const data of animeMap.values()) {
-    const key = `${data.media.idMal}_ep${data.episode}`;
+    const fallbackId = data.media.idMal || data.media.id;
+    const key = `${fallbackId}_ep${data.episode}`;
     if (rawCache.recent_episodes[key]) continue;
     newSeen[key] = data.airingTime;
 

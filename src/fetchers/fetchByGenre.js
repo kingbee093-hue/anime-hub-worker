@@ -3,7 +3,9 @@ const CONFIG = require('../config/constants');
 const { delay } = require('../utils/formatters');
 
 const TOP_GENRES = [
-    'Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Romance', 'Sci-Fi', 'Slice of Life', 'Mystery', 'Sports'
+    'Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror', 'Mahou Shoujo',
+    'Mecha', 'Music', 'Mystery', 'Psychological', 'Romance', 'Sci-Fi', 
+    'Slice of Life', 'Sports', 'Supernatural', 'Thriller'
 ];
 
 async function fetchByGenre() {

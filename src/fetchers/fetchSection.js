@@ -31,7 +31,7 @@ async function fetchSection(collectionPath, variables, sectionName) {
   const toUpload = [];
 
   for (const media of mediaList) {
-    if (!media || !media.idMal) continue;
+    if (!media || (!media.idMal && !media.id)) continue;
     if (isAdultContent(media).blocked || !isAnime(media).allowed) continue;
 
     const firestoreData = convertToFirestoreFormat(media);
