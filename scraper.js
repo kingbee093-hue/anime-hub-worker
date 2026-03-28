@@ -68,6 +68,12 @@ async function fetchANN() {
         else if (img.startsWith('/')) img = `https://www.animenewsnetwork.com${img}`;
         
         article.imageUrl = img || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
+
+        // Extract full article text
+        const fullContent = _$('.meat, .text-content, .news-article').text().trim().replace(/\s+/g, ' ');
+        if (fullContent && fullContent.length > article.content.length) {
+          article.content = fullContent;
+        }
       } catch (e) {
         article.imageUrl = 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
       }
@@ -121,6 +127,26 @@ async function fetchMAL() {
         });
       }
     });
+
+    // Fetch full article text for MAL to replace the short RSS snippet
+    await Promise.all(articles.map(async (article) => {
+      try {
+        const { data: articleData } = await axios.get(article.sourceUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+        });
+        const _$ = cheerio.load(articleData);
+        
+        // MAL specific selectors for the main text content, ignoring script tags
+        _$('script, style, iframe, .news-info-block').remove();
+        const fullContent = _$('.news-container .content').text().trim().replace(/\s+/g, ' ');
+        
+        if (fullContent && fullContent.length > article.content.length) {
+          article.content = fullContent;
+        }
+      } catch (e) {
+        // Fallback to initial snippet on failure
+      }
+    }));
 
     return articles;
   } catch (error) {
