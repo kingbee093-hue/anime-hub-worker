@@ -1,11 +1,9 @@
 const ALLOWED_FORMATS = ['TV', 'TV_SHORT', 'OVA', 'ONA', 'SPECIAL', 'MOVIE'];
 
-const BLOCKED_GENRES = ['Hentai', 'Ecchi'];
+const BLOCKED_GENRES = ['Hentai'];
 
 const BLOCKED_TAGS = [
-  'Hentai', 'Ecchi', 'Nudity', 'Explicit Sexual Content',
-  'Sex', 'Softcore', 'Pornography', 'BDSM',
-  'Sexual Abuse', 'Rape', 'Incest',
+  'Hentai', 'Explicit Sexual Content', 'Pornography'
 ];
 
 const ALLOWED_COUNTRIES = ['JP', 'CN', 'KR', 'TW'];
