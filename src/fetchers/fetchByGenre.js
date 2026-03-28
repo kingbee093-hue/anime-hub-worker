@@ -18,7 +18,7 @@ async function fetchByGenre() {
         
         await fetchSection(collectionPath, {
             page: 1,
-            perPage: 20, // top 20 for each genre
+            perPage: 40, // Expanded to top 40 for each genre
             genre: genre,
             sort: ['POPULARITY_DESC', 'SCORE_DESC']
         }, `Genre: ${genre}`);
