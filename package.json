@@ -1,16 +1,27 @@
 {
   "name": "anime-hub-worker",
   "version": "1.0.0",
-  "description": "Anime Hub GitHub Actions Worker - Fetches episodes from Jikan API",
-  "main": "fetch.js",
+  "description": "Anime Hub Backend Worker - Generates all sections from AniList API and RSS feeds",
+  "main": "index.js",
   "scripts": {
-    "fetch": "node fetch.js"
+    "start": "node index.js",
+    "fetch:recent": "node index.js recent",
+    "fetch:sections": "node index.js toprated && node index.js trending && node index.js popular && node index.js upcoming && node index.js topairing",
+    "fetch:genres": "node index.js genres",
+    "fetch:news": "node index.js news"
   },
-  "keywords": ["anime", "github-actions", "firebase", "jikan"],
+  "keywords": [
+    "anime",
+    "github-actions",
+    "firebase",
+    "anilist"
+  ],
   "author": "YOUR_NAME",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^17.3.1",
     "firebase-admin": "^12.0.0",
-    "axios": "^1.7.0"
+    "rss-parser": "^3.13.0"
   }
 }
