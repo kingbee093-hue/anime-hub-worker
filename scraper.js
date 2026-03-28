@@ -176,8 +176,8 @@ async function fetchMAL() {
   // Accumulate: new articles at the top
   let finalNews = [...uniqueNew, ...existingNews];
 
-  // Limit to 5000 articles max
-  finalNews = finalNews.slice(0, 5000);
+  // Limit to 10000 articles max
+  finalNews = finalNews.slice(0, 10000);
 
   fs.writeFileSync(outputPath, JSON.stringify(finalNews, null, 2));
   console.log(`✅ Added ${uniqueNew.length} new articles. Total: ${finalNews.length}`);
