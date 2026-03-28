@@ -32,4 +32,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add api/news.json
           git diff --staged --quiet || git commit -m "api: accumulate news [skip ci]"
+          git pull --rebase origin main || git pull origin main
           git push origin HEAD:main
