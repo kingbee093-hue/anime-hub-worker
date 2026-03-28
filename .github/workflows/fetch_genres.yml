@@ -1,0 +1,33 @@
+name: Fetch By Genre
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [run-genres, run-all]
+
+jobs:
+  fetch_genres:
+    name: Fetch By Genre
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Genres Fetcher
+        run: npm run fetch:genres
+
+      - name: Commit API updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main || true
+          git add api/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update genres [skip ci]" && git push)
