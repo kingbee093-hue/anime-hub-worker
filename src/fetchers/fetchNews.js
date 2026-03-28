@@ -3,11 +3,19 @@ const crypto = require('crypto');
 const { db, admin } = require('../config/firebase');
 const CONFIG = require('../config/constants');
 const { cleanHtmlTags } = require('../utils/formatters');
+const fs = require('fs');
+const path = require('path');
+
+const CACHE_FILE = path.join(__dirname, '../../seen_cache.json');
 
 async function fetchNews() {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log('📰 FETCHING LATEST ANIME NEWS');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+
+  const rawCache = fs.existsSync(CACHE_FILE) ? JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8')) : {};
+  if (!rawCache.news) rawCache.news = {};
+  const currentNewsCache = rawCache.news;
 
   const parser = new Parser({
     customFields: {
@@ -34,6 +42,10 @@ async function fetchNews() {
       for (const item of feed.items) {
         // Create unique ID based on URL
         const id = crypto.createHash('sha256').update(item.link || item.title).digest('hex').substring(0, 20);
+        
+        if (currentNewsCache[id]) {
+            continue; // Skip this article, already in cache
+        }
         
         // Try to find image url 
         let imageUrl = '';
@@ -74,6 +86,7 @@ async function fetchNews() {
     let count = 0;
 
     for (const news of toUpload) {
+      currentNewsCache[news.id] = news.pubDate.getTime() / 1000;
       const docRef = db.collection(CONFIG.FIRESTORE_COLLECTIONS.NEWS).doc(news.id);
       
       // Merge: true is CRITICAL to keep likes, comments, and stats from users intact!
@@ -90,6 +103,7 @@ async function fetchNews() {
       await batch.commit();
     }
     
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(rawCache, null, 2), 'utf8');
     console.log(`✅ ${toUpload.length} News successfully uploaded.`);
   } else {
     console.log('\n✅ No news articles found.');

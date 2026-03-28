@@ -31,12 +31,13 @@ jobs:
       - name: Run Cleanup
         run: node cleanup_seen.js
 
-      - name: Commit Updated seen_episodes.json
+      - name: Commit Updated seen_cache.json
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add seen_episodes.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: cleanup old seen episodes" && git push)
+          git pull --rebase origin main || true
+          git add seen_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: cleanup old seen cache" && git push)
 
   recent_episodes:
     name: Fetch Recent Episodes
@@ -61,12 +62,13 @@ jobs:
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Commit Updated seen_episodes.json
+      - name: Commit Updated seen_cache.json
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add seen_episodes.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update seen episodes tracking" && git push)
+          git pull --rebase origin main || true
+          git add seen_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update seen cache tracking" && git push)
 
   fetch_news:
     name: Fetch Latest News
@@ -91,6 +93,14 @@ jobs:
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
+      - name: Commit Updated seen_cache.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main || true
+          git add seen_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update news cache" && git push)
+
   fetch_sections:
     name: Fetch General Sections (Top Rated, Popular, etc)
     runs-on: ubuntu-latest
@@ -114,6 +124,14 @@ jobs:
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
+      - name: Commit Updated seen_cache.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main || true
+          git add seen_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update sections cache" && git push)
+
   fetch_genres:
     name: Fetch By Genre
     runs-on: ubuntu-latest
@@ -136,3 +154,11 @@ jobs:
           FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
+
+      - name: Commit Updated seen_cache.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main || true
+          git add seen_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update genres cache" && git push)

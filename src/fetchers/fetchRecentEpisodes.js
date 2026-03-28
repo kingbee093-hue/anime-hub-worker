@@ -7,7 +7,7 @@ const { convertToFirestoreFormat, delay } = require('../utils/formatters');
 const { fetchGraphQL } = require('../utils/fetchHelper');
 const { AIRING_ANIME_QUERY } = require('../utils/anilistQueries');
 
-const SEEN_FILE = path.join(__dirname, '../../seen_episodes.json');
+const CACHE_FILE = path.join(__dirname, '../../seen_cache.json');
 
 async function fetchRecentEpisodes() {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -50,8 +50,9 @@ async function fetchRecentEpisodes() {
     }
   }
 
-  const rawSeen = fs.existsSync(SEEN_FILE) ? JSON.parse(fs.readFileSync(SEEN_FILE, 'utf8')) : {};
-  const newSeen = { ...rawSeen };
+  const rawCache = fs.existsSync(CACHE_FILE) ? JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8')) : {};
+  if (!rawCache.recent_episodes) rawCache.recent_episodes = {};
+  const newSeen = { ...rawCache.recent_episodes };
   const toUpload = [];
   const animeMap = new Map();
 
@@ -69,7 +70,7 @@ async function fetchRecentEpisodes() {
 
   for (const data of animeMap.values()) {
     const key = `${data.media.idMal}_ep${data.episode}`;
-    if (rawSeen[key]) continue;
+    if (rawCache.recent_episodes[key]) continue;
     newSeen[key] = data.airingTime;
 
     const firestoreData = convertToFirestoreFormat(data.media, {
@@ -101,7 +102,8 @@ async function fetchRecentEpisodes() {
         await batch.commit();
     }
     
-    fs.writeFileSync(SEEN_FILE, JSON.stringify(newSeen, null, 2), 'utf8');
+    rawCache.recent_episodes = newSeen;
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(rawCache, null, 2), 'utf8');
     console.log(`✅ Uploaded ${toUpload.length} episodes.`);
   } else {
     console.log('\n✅ No new episodes to upload.');
