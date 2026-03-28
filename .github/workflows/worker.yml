@@ -24,11 +24,14 @@ on:
         required: true
         default: 'all'
 
+  repository_dispatch:
+    types: [run-recent, run-news, run-sections, run-genres, run-cleanup, run-all]
+
 jobs:
   cleanup:
     name: Daily Cleanup
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 0 * * *' || github.event.inputs.job_target == 'cleanup' || github.event.inputs.job_target == 'all'
+    if: github.event.schedule == '0 0 * * *' || github.event.inputs.job_target == 'cleanup' || github.event.inputs.job_target == 'all' || github.event.action == 'run-cleanup' || github.event.action == 'run-all'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -54,7 +57,7 @@ jobs:
   recent_episodes:
     name: Fetch Recent Episodes
     runs-on: ubuntu-latest
-    if: github.event.schedule == '*/30 * * * *' || github.event.inputs.job_target == 'recent' || github.event.inputs.job_target == 'all'
+    if: github.event.schedule == '*/30 * * * *' || github.event.inputs.job_target == 'recent' || github.event.inputs.job_target == 'all' || github.event.action == 'run-recent' || github.event.action == 'run-all'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -84,7 +87,7 @@ jobs:
   fetch_news:
     name: Fetch Latest News
     runs-on: ubuntu-latest
-    if: github.event.schedule == '15 * * * *' || github.event.inputs.job_target == 'news' || github.event.inputs.job_target == 'all'
+    if: github.event.schedule == '15 * * * *' || github.event.inputs.job_target == 'news' || github.event.inputs.job_target == 'all' || github.event.action == 'run-news' || github.event.action == 'run-all'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -107,7 +110,7 @@ jobs:
   fetch_sections:
     name: Fetch General Sections (Top Rated, Popular, etc)
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 */6 * * *' || github.event.inputs.job_target == 'sections' || github.event.inputs.job_target == 'all'
+    if: github.event.schedule == '0 */6 * * *' || github.event.inputs.job_target == 'sections' || github.event.inputs.job_target == 'all' || github.event.action == 'run-sections' || github.event.action == 'run-all'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -130,7 +133,7 @@ jobs:
   fetch_genres:
     name: Fetch By Genre
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 2 * * *' || github.event.inputs.job_target == 'genres' || github.event.inputs.job_target == 'all'
+    if: github.event.schedule == '0 2 * * *' || github.event.inputs.job_target == 'genres' || github.event.inputs.job_target == 'all' || github.event.action == 'run-genres' || github.event.action == 'run-all'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
