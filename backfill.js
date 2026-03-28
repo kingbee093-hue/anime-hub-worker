@@ -158,24 +158,26 @@ async function fetchANNFrontPage() {
       const dateAttr = $el.find('time').attr('datetime');
       const link = $el.find('h3 a').attr('href');
 
-      if (!title || !link) return;
+      if (title && link) {
+        if (!isNSFW(title, excerpt)) {
+          const sourceUrl = link.startsWith('http') ? link : `https://www.animenewsnetwork.com${link}`;
+          const dateObj = dateAttr ? new Date(dateAttr) : new Date();
+          const slug = link.split('/').filter(Boolean).pop() || '';
+          const category = classifyCategory(title + ' ' + excerpt);
 
-      const sourceUrl = link.startsWith('http') ? link : `https://www.animenewsnetwork.com${link}`;
-      const dateObj = dateAttr ? new Date(dateAttr) : new Date();
-      const slug = link.split('/').filter(Boolean).pop() || '';
-      const category = classifyCategory(title + ' ' + excerpt);
-
-      articles.push({
-        id: `ann-${slug || `front-${i}`}`,
-        title,
-        content: excerpt || title,
-        sourceUrl,
-        author: 'ANN',
-        publishedAt: formatDate(dateObj),
-        _rawDate: dateObj.toISOString(),
-        category,
-        imageUrl: PLACEHOLDER
-      });
+          articles.push({
+            id: `ann-${slug || `front-${i}`}`,
+            title,
+            content: excerpt || title,
+            sourceUrl,
+            author: 'ANN',
+            publishedAt: formatDate(dateObj),
+            _rawDate: dateObj.toISOString(),
+            category,
+            imageUrl: PLACEHOLDER
+          });
+        }
+      }
     });
 
     console.log(`ANN front page: ${articles.length} articles`);

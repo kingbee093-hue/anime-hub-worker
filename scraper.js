@@ -9,6 +9,18 @@ function cleanHtml(html) {
   return html.replace(/<[^>]+>/g, '').trim();
 }
 
+// Custom NSFW Filter to avoid adult/ecchi articles from scraping
+function isNSFW(title, description = '') {
+  const lowerText = (title + ' ' + description).toLowerCase();
+  const nsfwKeywords = [
+    'hentai', 'ecchi', 'erotica', 'adult', 'panties', 'opantsu',
+    'sex', 'nsfw', 'nipple', 'breasts', 'boobs', 'nudes',
+    'naked', 'porn', 'r18', 'r-18', '18+', 'succubus',
+    'succubi', 'virgin', 'harem', 'iya na kao sare nagara'
+  ];
+  return nsfwKeywords.some(keyword => lowerText.includes(keyword));
+}
+
 // Scrape Anime News Network
 async function fetchANN() {
   try {
@@ -27,16 +39,18 @@ async function fetchANN() {
       const link = $el.find('h3 a').attr('href');
       
       if (title && link) {
-        articles.push({
-          id: `ann-${link.split('/').pop()}`,
-          title: title,
-          content: excerpt || title,
-          sourceUrl: link.startsWith('http') ? link : `https://www.animenewsnetwork.com${link}`,
-          author: 'ANN',
-          publishedAt: dateAttr ? new Date(dateAttr) : new Date(),
-          category: 'News',
-          imageUrl: '' // to be populated
-        });
+        if (!isNSFW(title, excerpt)) {
+          articles.push({
+            id: `ann-${link.split('/').pop()}`,
+            title: title,
+            content: excerpt || title,
+            sourceUrl: link.startsWith('http') ? link : `https://www.animenewsnetwork.com${link}`,
+            author: 'ANN',
+            publishedAt: dateAttr ? new Date(dateAttr) : new Date(),
+            category: 'News',
+            imageUrl: '' // to be populated
+          });
+        }
       }
     });
 
@@ -94,16 +108,18 @@ async function fetchMAL() {
       else if (lowerText.includes('adventure') || lowerText.includes('quest')) matchedCategory = 'Adventure';
       else if (lowerText.includes('romance') || lowerText.includes('love')) matchedCategory = 'Romance';
 
-      articles.push({
-        id: `mal-${Date.now()}-${i}`,
-        title: title,
-        content: description,
-        sourceUrl: link,
-        author: 'MyAnimeList',
-        publishedAt: new Date(pubDate),
-        category: matchedCategory,
-        imageUrl: imageUrl || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News'
-      });
+      if (!isNSFW(title, description)) {
+        articles.push({
+          id: `mal-${Date.now()}-${i}`,
+          title: title,
+          content: description,
+          sourceUrl: link,
+          author: 'MyAnimeList',
+          publishedAt: new Date(pubDate),
+          category: matchedCategory,
+          imageUrl: imageUrl || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News'
+        });
+      }
     });
 
     return articles;
