@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -28,6 +30,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull --rebase origin main || true
-          git add api/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update news [skip ci]" && git push)
+          git add api/news.json
+          git diff --staged --quiet || git commit -m "api: accumulate news [skip ci]"
+          git push origin HEAD:main
