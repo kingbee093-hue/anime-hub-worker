@@ -2,6 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
+const { writePaginatedNewsArtifacts } = require('./src/utils/newsPagination');
 
 const PLACEHOLDER = 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
 const TARGET_YEAR = 2019;
@@ -363,6 +364,6 @@ async function fetchANNFrontPage() {
   console.log(`Grand total: ${finalNews.length}`);
   console.log(`═══════════════════════════════════`);
 
-  fs.writeFileSync(outputPath, JSON.stringify(finalNews, null, 2));
+  writePaginatedNewsArtifacts(apiDir, finalNews);
   console.log(`\n✅ Successfully wrote ${finalNews.length} articles to api/news.json`);
 })();

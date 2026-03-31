@@ -2,6 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
+const { writePaginatedNewsArtifacts } = require('./src/utils/newsPagination');
 
 function decodeHtmlEntities(text) {
   return text
@@ -912,7 +913,8 @@ async function fetchAnimeCorner() {
   // Limit to 10000 articles max
   finalNews = finalNews.slice(0, 10000);
 
-  fs.writeFileSync(outputPath, JSON.stringify(finalNews, null, 2));
+  writePaginatedNewsArtifacts(apiDir, finalNews);
+  console.log(`Wrote paginated news artifacts to ${apiDir}`);
   console.log(`âœ… Added ${uniqueNew.length} new articles. Total: ${finalNews.length}`);
 })();
 
