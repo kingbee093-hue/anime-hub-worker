@@ -3,10 +3,32 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-// Helper to clean HTML from description
+function decodeHtmlEntities(text) {
+  return text
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, num) => String.fromCharCode(parseInt(num, 10)))
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#039;/g, "'")
+    .replace(/&#39;/g, "'");
+}
+
+// Helper to clean encoded HTML and strip any leftover tags.
 function cleanHtml(html) {
   if (!html) return '';
-  return html.replace(/<[^>]+>/g, '').trim();
+
+  let decoded = html.replace(/<br\s*\/?>/gi, ' ');
+  for (let i = 0; i < 3; i++) {
+    const next = decodeHtmlEntities(decoded);
+    if (next === decoded) break;
+    decoded = next;
+  }
+
+  return decoded.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 // Custom NSFW Filter to avoid adult/ecchi articles from scraping
@@ -33,8 +55,8 @@ async function fetchANN() {
     $('.herald.box.news').each((i, el) => {
       if (i >= 50) return; // limit to 50
       const $el = $(el);
-      const title = $el.find('h3 a').text().trim();
-      const excerpt = $el.find('.preview').text().trim();
+      const title = cleanHtml($el.find('h3 a').text().trim());
+      const excerpt = cleanHtml($el.find('.preview').html() || $el.find('.preview').text().trim());
       const dateAttr = $el.find('.byline time').attr('datetime');
       const link = $el.find('h3 a').attr('href');
       
@@ -69,8 +91,8 @@ async function fetchANN() {
         
         article.imageUrl = img || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
 
-        // Extract full article text
-        const fullContent = _$('.meat, .text-content, .news-article').text().trim().replace(/\s+/g, ' ');
+        const fullContentRoot = _$('.meat, .text-content, .news-article').first();
+        const fullContent = cleanHtml(fullContentRoot.html() || fullContentRoot.text() || '');
         if (fullContent && fullContent.length > article.content.length) {
           article.content = fullContent;
         }
@@ -95,7 +117,7 @@ async function fetchMAL() {
     const articles = [];
 
     $('item').slice(0, 50).each((i, el) => {
-      const title = $(el).find('title').text().trim();
+      const title = cleanHtml($(el).find('title').text().trim());
       let description = $(el).find('description').text().trim();
       description = cleanHtml(description);
       const link = $(el).find('link').text().trim();
@@ -138,7 +160,7 @@ async function fetchMAL() {
         
         // MAL specific selectors for the main text content, ignoring script tags
         _$('script, style, iframe, .news-info-block').remove();
-        const fullContent = _$('.news-container .content').text().trim().replace(/\s+/g, ' ');
+        const fullContent = cleanHtml(_$('.news-container .content').html() || _$('.news-container .content').text() || '');
         
         if (fullContent && fullContent.length > article.content.length) {
           article.content = fullContent;
@@ -165,7 +187,7 @@ async function fetchComicBook() {
     const articles = [];
 
     $('item').slice(0, 50).each((i, el) => {
-      const title = $(el).find('title').text().trim();
+      const title = cleanHtml($(el).find('title').text().trim());
       const link = $(el).find('link').text().trim();
       const pubDate = $(el).find('pubDate').text().trim();
 
@@ -180,7 +202,7 @@ async function fetchComicBook() {
         // Extract all text paragraphs for cleaner full content
         const pTexts = [];
         _$('p').each((_, p) => {
-          const pt = _$(p).text().trim();
+          const pt = cleanHtml(_$(p).html() || _$(p).text());
           if (pt) pTexts.push(pt);
         });
         contentText = pTexts.join('\n\n');
@@ -228,7 +250,7 @@ async function fetchAnimeCorner() {
       const $el = $(el);
 
       const titleEl = $el.find('h2 a, h3 a').first();
-      const title = titleEl.text().trim();
+      const title = cleanHtml(titleEl.text().trim());
       const link = titleEl.attr('href') || '';
       if (!title || !link) return;
 
@@ -241,7 +263,7 @@ async function fetchAnimeCorner() {
         imageUrl = imageUrl.split(',')[0].trim().split(' ')[0];
       }
 
-      const excerpt = $el.find('.entry-summary p, .excerpt p, p').first().text().trim();
+      const excerpt = cleanHtml($el.find('.entry-summary p, .excerpt p, p').first().html() || $el.find('.entry-summary p, .excerpt p, p').first().text().trim());
       const dateText = $el.find('time').attr('datetime') || $el.find('.entry-date').text().trim();
 
       if (isNSFW(title, excerpt)) return;
@@ -272,7 +294,7 @@ async function fetchAnimeCorner() {
         }
         // Get full content
         _$('script, style, .sharedaddy, .jp-relatedposts').remove();
-        const fullContent = _$('.entry-content, .post-content, article .content').text().trim().replace(/\s+/g, ' ');
+        const fullContent = cleanHtml(_$('.entry-content, .post-content, article .content').first().html() || _$('.entry-content, .post-content, article .content').first().text() || '');
         if (fullContent && fullContent.length > article.content.length) {
           article.content = fullContent;
         }
