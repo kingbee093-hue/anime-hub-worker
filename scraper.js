@@ -155,6 +155,140 @@ async function fetchMAL() {
   }
 }
 
+// Fetch Crunchyroll News via RSS
+async function fetchCrunchyroll() {
+  try {
+    const { data } = await axios.get('https://www.crunchyroll.com/rss/news', {
+      headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+    });
+    const $ = cheerio.load(data, { xmlMode: true });
+    const articles = [];
+
+    $('item').slice(0, 50).each((i, el) => {
+      const title = $(el).find('title').text().trim();
+      let description = $(el).find('description').text().trim();
+      description = cleanHtml(description);
+      const link = $(el).find('link').text().trim();
+      const pubDate = $(el).find('pubDate').text().trim();
+
+      // Try getting image from media:thumbnail or enclosure
+      let imageUrl = $(el).find('media\\:thumbnail').attr('url') ||
+                     $(el).find('enclosure').attr('url') || '';
+      // Also try extracting first img src from description content
+      if (!imageUrl) {
+        const rawDesc = $(el).find('description').text();
+        const match = rawDesc.match(/src=["']([^"']+)["']/);
+        if (match) imageUrl = match[1];
+      }
+
+      if (!title || !link) return;
+      if (isNSFW(title, description)) return;
+
+      articles.push({
+        id: `cr-${link.split('/').filter(Boolean).pop() || i}`,
+        title,
+        content: description || title,
+        sourceUrl: link,
+        author: 'Crunchyroll',
+        publishedAt: new Date(pubDate),
+        category: 'News',
+        imageUrl: imageUrl || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News'
+      });
+    });
+
+    // Fetch images for articles that are missing them
+    await Promise.all(articles.filter(a => !a.imageUrl || a.imageUrl.includes('placehold')).map(async (article) => {
+      try {
+        const { data: articleData } = await axios.get(article.sourceUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+        });
+        const _$ = cheerio.load(articleData);
+        const img = _$('meta[property="og:image"]').attr('content') || '';
+        if (img) article.imageUrl = img;
+      } catch(e) {}
+    }));
+
+    console.log(`Crunchyroll: ${articles.length} articles fetched`);
+    return articles;
+  } catch (error) {
+    console.error('Crunchyroll error:', error.message);
+    return [];
+  }
+}
+
+// Scrape Anime Corner News
+async function fetchAnimeCorner() {
+  try {
+    const { data } = await axios.get('https://animecorner.me/category/anime-news/', {
+      headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+    });
+    const $ = cheerio.load(data);
+    const articles = [];
+
+    $('article').each((i, el) => {
+      if (i >= 30) return;
+      const $el = $(el);
+
+      const titleEl = $el.find('h2 a, h3 a').first();
+      const title = titleEl.text().trim();
+      const link = titleEl.attr('href') || '';
+      if (!title || !link) return;
+
+      // Image: lazy-loaded in data-bgset attribute
+      let imageUrl = $el.find('[data-bgset]').attr('data-bgset') ||
+                     $el.find('[data-bg]').attr('data-bg') ||
+                     $el.find('img').attr('src') || '';
+      // data-bgset sometimes has multiple sizes like "url 768w, url2 1024w"
+      if (imageUrl && imageUrl.includes(' ')) {
+        imageUrl = imageUrl.split(',')[0].trim().split(' ')[0];
+      }
+
+      const excerpt = $el.find('.entry-summary p, .excerpt p, p').first().text().trim();
+      const dateText = $el.find('time').attr('datetime') || $el.find('.entry-date').text().trim();
+
+      if (isNSFW(title, excerpt)) return;
+
+      articles.push({
+        id: `ac-${link.split('/').filter(Boolean).pop() || i}`,
+        title,
+        content: excerpt || title,
+        sourceUrl: link,
+        author: 'Anime Corner',
+        publishedAt: dateText ? new Date(dateText) : new Date(),
+        category: 'News',
+        imageUrl: imageUrl || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News'
+      });
+    });
+
+    // For articles with short content, fetch full article text
+    await Promise.all(articles.map(async (article) => {
+      try {
+        const { data: articleData } = await axios.get(article.sourceUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+        });
+        const _$ = cheerio.load(articleData);
+        // Get og:image if we're missing it
+        if (!article.imageUrl || article.imageUrl.includes('placehold')) {
+          const img = _$('meta[property="og:image"]').attr('content') || '';
+          if (img) article.imageUrl = img;
+        }
+        // Get full content
+        _$('script, style, .sharedaddy, .jp-relatedposts').remove();
+        const fullContent = _$('.entry-content, .post-content, article .content').text().trim().replace(/\s+/g, ' ');
+        if (fullContent && fullContent.length > article.content.length) {
+          article.content = fullContent;
+        }
+      } catch(e) {}
+    }));
+
+    console.log(`Anime Corner: ${articles.length} articles fetched`);
+    return articles;
+  } catch (error) {
+    console.error('Anime Corner error:', error.message);
+    return [];
+  }
+}
+
 (async () => {
   // Load existing news first to get the latest date
   const apiDir = path.join(__dirname, 'api');
@@ -192,8 +326,14 @@ async function fetchMAL() {
   console.log('Fetching MAL news...');
   const malNews = await fetchMAL();
 
+  console.log('Fetching Crunchyroll news...');
+  const crNews = await fetchCrunchyroll();
+
+  console.log('Fetching Anime Corner news...');
+  const acNews = await fetchAnimeCorner();
+
   // Combine and sort by date descending
-  let newNews = [...annNews, ...malNews];
+  let newNews = [...annNews, ...malNews, ...crNews, ...acNews];
   newNews.sort((a, b) => b.publishedAt - a.publishedAt);
 
   // Format dates to simple strings for Flutter
