@@ -7,6 +7,23 @@ const PLACEHOLDER = 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+N
 const TARGET_YEAR = 2019;
 const DELAY_MS = 800; // delay between requests to be polite
 
+// NSFW filter
+function isNSFW(title, description = '') {
+  const lowerText = (title + ' ' + description).toLowerCase();
+  const nsfwKeywords = [
+    'hentai', 'ecchi', 'erotica', 'adult', 'panties', 'opantsu',
+    'sex', 'nsfw', 'nipple', 'breasts', 'boobs', 'nudes',
+    'naked', 'porn', 'r18', 'r-18', '18+', 'succubus',
+    'succubi', 'virgin', 'harem', 'iya na kao sare nagara'
+  ];
+  return nsfwKeywords.some(keyword => lowerText.includes(keyword));
+}
+
+function cleanHtml(html) {
+  if (!html) return '';
+  return html.replace(/<[^>]+>/g, '').trim();
+}
+
 function classifyCategory(text) {
   const lower = text.toLowerCase();
   if (lower.includes('shonen') || lower.includes('shounen') || lower.includes('jump')) return 'Shonen';
@@ -208,16 +225,68 @@ async function fetchANNFrontPage() {
     }
   }
 
-  // ── Step 1: Fetch ANN front page ──
+  // ── Step 1: Fetch Crunchyroll RSS ──
+  console.log('\n── Fetching Crunchyroll RSS ──');
+  const crArticles = [];
+  try {
+    const { data: crData } = await axios.get('https://www.crunchyroll.com/rss/news', {
+      headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+    });
+    const $cr = cheerio.load(crData, { xmlMode: true });
+    $cr('item').slice(0, 50).each((i, el) => {
+      const title = $cr(el).find('title').text().trim();
+      let description = cleanHtml($cr(el).find('description').text().trim());
+      const link = $cr(el).find('link').text().trim();
+      const pubDate = $cr(el).find('pubDate').text().trim();
+      let imageUrl = $cr(el).find('media\\:thumbnail').attr('url') || $cr(el).find('enclosure').attr('url') || PLACEHOLDER;
+      const dateObj = pubDate ? new Date(pubDate) : new Date();
+      if (!title || !link || isNSFW(title, description)) return;
+      const newsId = `cr-${link.split('/').filter(Boolean).pop() || i}`;
+      if (!seenUrls.has(link)) {
+        seenUrls.add(link);
+        crArticles.push({ id: newsId, title, content: description || title, sourceUrl: link, author: 'Crunchyroll', publishedAt: formatDate(dateObj), _rawDate: dateObj.toISOString(), category: 'News', imageUrl });
+      }
+    });
+    console.log(`Crunchyroll: ${crArticles.length} new articles`);
+  } catch(e) { console.error('Crunchyroll error:', e.message); }
+
+  // ── Step 2: Fetch Anime Corner ──
+  console.log('\n── Fetching Anime Corner ──');
+  const acArticles = [];
+  try {
+    const { data: acData } = await axios.get('https://animecorner.me/category/anime-news/', {
+      headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+    });
+    const $ac = cheerio.load(acData);
+    $ac('article').slice(0, 30).each((i, el) => {
+      const $el = $ac(el);
+      const titleEl = $el.find('h2 a, h3 a').first();
+      const title = titleEl.text().trim();
+      const link = titleEl.attr('href') || '';
+      if (!title || !link || isNSFW(title, '')) return;
+      let imageUrl = $el.find('[data-bgset]').attr('data-bgset') || PLACEHOLDER;
+      if (imageUrl && imageUrl.includes(' ')) imageUrl = imageUrl.split(',')[0].trim().split(' ')[0];
+      const dateText = $el.find('time').attr('datetime') || '';
+      const dateObj = dateText ? new Date(dateText) : new Date();
+      const excerpt = $el.find('p').first().text().trim();
+      if (!seenUrls.has(link)) {
+        seenUrls.add(link);
+        acArticles.push({ id: `ac-${link.split('/').filter(Boolean).pop() || i}`, title, content: excerpt || title, sourceUrl: link, author: 'Anime Corner', publishedAt: formatDate(dateObj), _rawDate: dateObj.toISOString(), category: 'News', imageUrl });
+      }
+    });
+    console.log(`Anime Corner: ${acArticles.length} new articles`);
+  } catch(e) { console.error('Anime Corner error:', e.message); }
+
+  // ── Step 3: Fetch ANN front page ──
   console.log('\n── Fetching ANN front page ──');
   const annArticles = await fetchANNFrontPage();
   const newANN = annArticles.filter(a => !seenUrls.has(a.sourceUrl));
   newANN.forEach(a => seenUrls.add(a.sourceUrl));
   console.log(`ANN: ${newANN.length} new articles\n`);
 
-  // ── Step 2: Paginate through MAL news ──
+  // ── Step 4: Paginate through MAL news ──
   console.log('── Fetching MAL news pages ──');
-  const allNewArticles = [...newANN];
+  const allNewArticles = [...crArticles, ...acArticles, ...newANN];
   let pageNum = 1;
   let reachedTarget = false;
   let consecutiveEmpty = 0;
