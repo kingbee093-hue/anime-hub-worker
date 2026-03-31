@@ -225,30 +225,50 @@ async function fetchANNFrontPage() {
     }
   }
 
-  // ── Step 1: Fetch Crunchyroll RSS ──
-  console.log('\n── Fetching Crunchyroll RSS ──');
-  const crArticles = [];
+  // ── Step 1: Fetch ComicBook Anime News ──
+  console.log('\n── Fetching ComicBook Anime News ──');
+  const cbArticles = [];
   try {
-    const { data: crData } = await axios.get('https://www.crunchyroll.com/rss/news', {
+    const { data: cbData } = await axios.get('https://comicbook.com/category/anime/feed/', {
       headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
     });
-    const $cr = cheerio.load(crData, { xmlMode: true });
-    $cr('item').slice(0, 50).each((i, el) => {
-      const title = $cr(el).find('title').text().trim();
-      let description = cleanHtml($cr(el).find('description').text().trim());
-      const link = $cr(el).find('link').text().trim();
-      const pubDate = $cr(el).find('pubDate').text().trim();
-      let imageUrl = $cr(el).find('media\\:thumbnail').attr('url') || $cr(el).find('enclosure').attr('url') || PLACEHOLDER;
+    const $cb = cheerio.load(cbData, { xmlMode: true });
+    $cb('item').slice(0, 50).each((i, el) => {
+      const title = $cb(el).find('title').text().trim();
+      const link = $cb(el).find('link').text().trim();
+      const pubDate = $cb(el).find('pubDate').text().trim();
       const dateObj = pubDate ? new Date(pubDate) : new Date();
-      if (!title || !link || isNSFW(title, description)) return;
-      const newsId = `cr-${link.split('/').filter(Boolean).pop() || i}`;
+
+      const fullContentHtml = $cb(el).find('content\\:encoded').text().trim();
+      let contentText = '';
+      let imageUrl = '';
+
+      if (fullContentHtml) {
+        const _$ = cheerio.load(fullContentHtml);
+        imageUrl = _$('img').first().attr('src') || '';
+        const pTexts = [];
+        _$('p').each((_, p) => {
+          const pt = _$(p).text().trim();
+          if (pt) pTexts.push(pt);
+        });
+        contentText = pTexts.join('\n\n');
+      }
+
+      if (!imageUrl) {
+        imageUrl = $cb(el).find('media\\:content').attr('url') || $cb(el).find('thumbnail').attr('url') || PLACEHOLDER;
+      }
+
+      if (!title || !link || !contentText) return;
+      if (isNSFW(title, contentText)) return;
+
+      const newsId = `cb-${link.split('/').filter(Boolean).pop() || i}`;
       if (!seenUrls.has(link)) {
         seenUrls.add(link);
-        crArticles.push({ id: newsId, title, content: description || title, sourceUrl: link, author: 'Crunchyroll', publishedAt: formatDate(dateObj), _rawDate: dateObj.toISOString(), category: 'News', imageUrl });
+        cbArticles.push({ id: newsId, title, content: contentText, sourceUrl: link, author: 'ComicBook', publishedAt: formatDate(dateObj), _rawDate: dateObj.toISOString(), category: 'News', imageUrl });
       }
     });
-    console.log(`Crunchyroll: ${crArticles.length} new articles`);
-  } catch(e) { console.error('Crunchyroll error:', e.message); }
+    console.log(`ComicBook: ${cbArticles.length} new articles`);
+  } catch(e) { console.error('ComicBook error:', e.message); }
 
   // ── Step 2: Fetch Anime Corner ──
   console.log('\n── Fetching Anime Corner ──');
@@ -286,7 +306,7 @@ async function fetchANNFrontPage() {
 
   // ── Step 4: Paginate through MAL news ──
   console.log('── Fetching MAL news pages ──');
-  const allNewArticles = [...crArticles, ...acArticles, ...newANN];
+  const allNewArticles = [...cbArticles, ...acArticles, ...newANN];
   let pageNum = 1;
   let reachedTarget = false;
   let consecutiveEmpty = 0;

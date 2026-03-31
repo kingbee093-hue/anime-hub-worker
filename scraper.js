@@ -155,10 +155,10 @@ async function fetchMAL() {
   }
 }
 
-// Fetch Crunchyroll News via RSS
-async function fetchCrunchyroll() {
+// Fetch ComicBook Anime News via RSS
+async function fetchComicBook() {
   try {
-    const { data } = await axios.get('https://www.crunchyroll.com/rss/news', {
+    const { data } = await axios.get('https://comicbook.com/category/anime/feed/', {
       headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
     });
     const $ = cheerio.load(data, { xmlMode: true });
@@ -166,52 +166,50 @@ async function fetchCrunchyroll() {
 
     $('item').slice(0, 50).each((i, el) => {
       const title = $(el).find('title').text().trim();
-      let description = $(el).find('description').text().trim();
-      description = cleanHtml(description);
       const link = $(el).find('link').text().trim();
       const pubDate = $(el).find('pubDate').text().trim();
 
-      // Try getting image from media:thumbnail or enclosure
-      let imageUrl = $(el).find('media\\:thumbnail').attr('url') ||
-                     $(el).find('enclosure').attr('url') || '';
-      // Also try extracting first img src from description content
-      if (!imageUrl) {
-        const rawDesc = $(el).find('description').text();
-        const match = rawDesc.match(/src=["']([^"']+)["']/);
-        if (match) imageUrl = match[1];
+      // Comicbook includes full content in content:encoded
+      const fullContentHtml = $(el).find('content\\:encoded').text().trim();
+      let contentText = '';
+      let imageUrl = '';
+
+      if (fullContentHtml) {
+        const _$ = cheerio.load(fullContentHtml);
+        imageUrl = _$('img').first().attr('src') || '';
+        // Extract all text paragraphs for cleaner full content
+        const pTexts = [];
+        _$('p').each((_, p) => {
+          const pt = _$(p).text().trim();
+          if (pt) pTexts.push(pt);
+        });
+        contentText = pTexts.join('\n\n');
       }
 
-      if (!title || !link) return;
-      if (isNSFW(title, description)) return;
+      if (!imageUrl) {
+        // Fallback to media:content if available
+        imageUrl = $(el).find('media\\:content').attr('url') || $(el).find('thumbnail').attr('url') || '';
+      }
+
+      if (!title || !link || !contentText) return;
+      if (isNSFW(title, contentText)) return;
 
       articles.push({
-        id: `cr-${link.split('/').filter(Boolean).pop() || i}`,
+        id: `cb-${link.split('/').filter(Boolean).pop() || i}`,
         title,
-        content: description || title,
+        content: contentText,
         sourceUrl: link,
-        author: 'Crunchyroll',
+        author: 'ComicBook',
         publishedAt: new Date(pubDate),
         category: 'News',
         imageUrl: imageUrl || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News'
       });
     });
 
-    // Fetch images for articles that are missing them
-    await Promise.all(articles.filter(a => !a.imageUrl || a.imageUrl.includes('placehold')).map(async (article) => {
-      try {
-        const { data: articleData } = await axios.get(article.sourceUrl, {
-          headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
-        });
-        const _$ = cheerio.load(articleData);
-        const img = _$('meta[property="og:image"]').attr('content') || '';
-        if (img) article.imageUrl = img;
-      } catch(e) {}
-    }));
-
-    console.log(`Crunchyroll: ${articles.length} articles fetched`);
+    console.log(`ComicBook: ${articles.length} articles fetched`);
     return articles;
   } catch (error) {
-    console.error('Crunchyroll error:', error.message);
+    console.error('ComicBook error:', error.message);
     return [];
   }
 }
@@ -326,14 +324,14 @@ async function fetchAnimeCorner() {
   console.log('Fetching MAL news...');
   const malNews = await fetchMAL();
 
-  console.log('Fetching Crunchyroll news...');
-  const crNews = await fetchCrunchyroll();
+  console.log('Fetching ComicBook news...');
+  const cbNews = await fetchComicBook();
 
   console.log('Fetching Anime Corner news...');
   const acNews = await fetchAnimeCorner();
 
   // Combine and sort by date descending
-  let newNews = [...annNews, ...malNews, ...crNews, ...acNews];
+  let newNews = [...annNews, ...malNews, ...cbNews, ...acNews];
   newNews.sort((a, b) => b.publishedAt - a.publishedAt);
 
   // Format dates to simple strings for Flutter
