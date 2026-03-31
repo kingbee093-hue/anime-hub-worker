@@ -31,6 +31,17 @@ function cleanHtml(html) {
   return decoded.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
+function collapseText(text) {
+  return (text || '').replace(/[ \t]+/g, ' ').trim();
+}
+
+function collapseRichText(text) {
+  return (text || '')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
 function normalizeUrl(url, baseUrl = '') {
   if (!url) return '';
 
@@ -43,6 +54,46 @@ function normalizeUrl(url, baseUrl = '') {
   } catch (_) {
     return url;
   }
+}
+
+function extractUrlCandidate(value, baseUrl = '') {
+  if (!value) return '';
+
+  const normalized = value
+    .split(',')
+    .map(part => part.trim().split(/\s+/)[0])
+    .find(Boolean) || '';
+
+  if (!normalized || normalized.startsWith('data:image/')) {
+    return '';
+  }
+
+  return normalizeUrl(normalized, baseUrl);
+}
+
+function getImageUrlFromNode($node, baseUrl = '') {
+  const candidates = [
+    $node.attr('data-src'),
+    $node.attr('data-lazy-src'),
+    $node.attr('data-image'),
+    $node.attr('data-original'),
+    $node.attr('data-srcset'),
+    $node.attr('srcset'),
+    $node.attr('data-bgset'),
+    $node.attr('data-bg'),
+    $node.attr('src'),
+  ];
+
+  for (const candidate of candidates) {
+    const url = extractUrlCandidate(candidate, baseUrl);
+    if (!url) continue;
+    if (/spacer\.gif|blank\.(gif|png)$|bookmark-shorturl\.png$/i.test(url)) {
+      continue;
+    }
+    return url;
+  }
+
+  return '';
 }
 
 function isNoiseText(text) {
@@ -63,10 +114,20 @@ function isNoiseText(text) {
     lower.startsWith('image courtesy of '),
     lower.startsWith('image courtesy '),
     lower.startsWith('credit:'),
+    lower.startsWith('related:'),
+    lower.startsWith('read next:'),
+    lower.startsWith('continue reading:'),
+    lower.startsWith('what do you think?'),
+    lower.startsWith('leave a comment'),
+    lower.startsWith('join the conversation'),
+    lower.startsWith('videos by comicbook.com'),
     lower.startsWith('copyright '),
+    (lower.startsWith('via ') && cleaned.length <= 80),
+    /^[←→]\s+[a-z]+\s+\d{4}$/i.test(cleaned),
     /^(?:�|©|Â©)/.test(cleaned),
     lower.includes('pic.twitter.com/'),
     lower.includes('pic.x.com/'),
+    lower.includes('looking for more anime coverage'),
   ].some(Boolean);
 }
 
@@ -88,15 +149,19 @@ function splitCaptionAndCredit(text) {
   return { caption, credit };
 }
 
-function createTextBlock(type, text) {
+function createTextBlock(type, text, extra = {}) {
   const cleaned = cleanHtml(text);
   if (!cleaned || isNoiseText(cleaned)) return null;
-  return { type, text: cleaned };
+  return { type, text: cleaned, ...extra };
 }
 
 function createLinkOrParagraphBlock(text) {
   const cleaned = cleanHtml(text);
   if (!cleaned || isNoiseText(cleaned)) return null;
+
+  if (/^[A-Z][A-Za-z0-9&/()'".,: \-]{1,80}:$/.test(cleaned)) {
+    return { type: 'heading', text: cleaned };
+  }
 
   if (/^https?:\/\/\S+$/i.test(cleaned)) {
     return { type: 'link', text: cleaned, sourceUrl: cleaned };
@@ -107,11 +172,15 @@ function createLinkOrParagraphBlock(text) {
 
 function blocksToPlainText(blocks) {
   return blocks
-    .filter(block => ['heading', 'paragraph', 'quote'].includes(block.type))
-    .map(block => block.text)
+    .filter(block => ['heading', 'paragraph', 'quote', 'list_item'].includes(block.type))
+    .map(block => {
+      if (!block.text) return '';
+      return block.type === 'list_item' ? `• ${block.text}` : block.text;
+    })
     .filter(Boolean)
     .join('\n\n')
-    .replace(/\s+/g, ' ')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
     .trim();
 }
 
@@ -122,7 +191,7 @@ function extractContentBlocks(html, baseUrl = '') {
   const root = $('#article-body');
 
   root.find(
-    'script, style, noscript, iframe, .share, .sharedaddy, .jp-relatedposts, .news-info-block, .social-share, .related, .ad, .advertisement'
+    'script, style, noscript, iframe, .share, .sharedaddy, .jp-relatedposts, .news-info-block, .social-share, .related, .ad, .advertisement, .wp-block-savage-platform-read-next, .read-next, .newsletter-form, .mailing-list, .social-embed, .twitter-tweet, .instagram-media, span[id^="ezoic-pub-ad-placeholder"], span[data-ez-ph-id]'
   ).remove();
 
   const blocks = [];
@@ -160,23 +229,19 @@ function extractContentBlocks(html, baseUrl = '') {
     const imgNode = $node.is('img') ? $node : $node.find('img').first();
     if (!imgNode.length) return;
 
-    const preferredImageSource = [
-      imgNode.attr('data-src'),
-      imgNode.attr('data-lazy-src'),
-      imgNode.attr('data-image'),
-      imgNode.attr('data-original'),
-      imgNode.attr('src'),
-    ].find(value => value && value.trim());
-
-    const imageUrl = normalizeUrl(
-      preferredImageSource || '',
-      baseUrl
-    );
-    if (!imageUrl || /spacer\.gif|blank\.(gif|png)$|bookmark-shorturl\.png$/i.test(imageUrl)) return;
+    const imageUrl = getImageUrlFromNode(imgNode, baseUrl);
+    if (!imageUrl) return;
 
     const captionNode = $node.find('figcaption').first();
+    const siblingCaptionNode = !captionNode.length
+      ? $node.nextAll('figcaption').first().length
+        ? $node.nextAll('figcaption').first()
+        : $node.prevAll('figcaption').first()
+      : null;
     const captionSource = captionNode.length
       ? captionNode.html() || captionNode.text()
+      : siblingCaptionNode?.length
+        ? siblingCaptionNode.html() || siblingCaptionNode.text()
       : imgNode.attr('alt') || '';
     const { caption, credit } = splitCaptionAndCredit(captionSource);
 
@@ -202,7 +267,7 @@ function extractContentBlocks(html, baseUrl = '') {
 
   const pushListBlocks = $node => {
     $node.children('li').each((_, li) => {
-      pushBlock(createTextBlock('paragraph', `- ${$(li).html() || $(li).text()}`));
+      pushBlock(createTextBlock('list_item', $(li).text()));
     });
   };
 
@@ -262,10 +327,192 @@ function extractContentBlocks(html, baseUrl = '') {
   return blocks;
 }
 
-function applyStructuredContent(article, html) {
+function isMalSectionHeading(text) {
+  return [
+    /^week \d+:/i,
+    /^(anime|manga|light novel|digital|home video|merchandise) releases$/i,
+  ].some(pattern => pattern.test(text));
+}
+
+function looksLikeMalListItem(text) {
+  return [
+    /\bVol\.\d+/i,
+    /\bBlu-ray\b/i,
+    /\bDVD\b/i,
+    /\[Light Novel\]/i,
+    /\bSeason \d+\b/i,
+    /\bVoyage \d+\b/i,
+    /\bSteelBook\b/i,
+  ].some(pattern => pattern.test(text));
+}
+
+function pushUniqueImageBlock(blocks, seenImages, imageUrl, extra = {}) {
+  if (!imageUrl || seenImages.has(imageUrl)) return;
+  seenImages.add(imageUrl);
+  blocks.push({
+    type: 'image',
+    imageUrl,
+    ...extra,
+  });
+}
+
+function extractMalContentBlocks(html, baseUrl = '') {
+  if (!html) return [];
+
+  const $ = cheerio.load(`<div id="article-body">${html}</div>`, {
+    decodeEntities: false,
+  });
+  const root = $('#article-body');
+
+  root.find('script, style, noscript, iframe, .news-info-block').remove();
+
+  const blocks = [];
+  const seenImages = new Set();
+  const paragraphBuffer = [];
+  let currentLine = '';
+  let inReleaseList = false;
+
+  const flushParagraph = () => {
+    const text = collapseRichText(paragraphBuffer.join(' '));
+    paragraphBuffer.length = 0;
+    if (!text || isNoiseText(text)) return;
+    blocks.push({ type: 'paragraph', text });
+  };
+
+  const handleLine = text => {
+    const normalized = collapseText(text);
+    currentLine = '';
+
+    if (!normalized) {
+      flushParagraph();
+      return;
+    }
+
+    if (isNoiseText(normalized)) {
+      return;
+    }
+
+    if (isMalSectionHeading(normalized)) {
+      flushParagraph();
+      blocks.push({ type: 'heading', text: normalized });
+      inReleaseList = !/^week \d+:/i.test(normalized);
+      return;
+    }
+
+    if (inReleaseList || looksLikeMalListItem(normalized)) {
+      flushParagraph();
+      blocks.push({ type: 'list_item', text: normalized });
+      return;
+    }
+
+    paragraphBuffer.push(normalized);
+  };
+
+  const appendHtml = htmlChunk => {
+    currentLine += htmlChunk || '';
+  };
+
+  const flushCurrentLine = () => {
+    if (!currentLine.trim()) {
+      handleLine('');
+      return;
+    }
+
+    handleLine(cleanHtml(currentLine));
+  };
+
+  const walkNode = node => {
+    if (!node) return;
+
+    if (node.type === 'text') {
+      appendHtml(node.data || '');
+      return;
+    }
+
+    if (node.type !== 'tag') {
+      return;
+    }
+
+    const $node = $(node);
+    const tag = (node.tagName || '').toLowerCase();
+
+    if (tag === 'br') {
+      flushCurrentLine();
+      return;
+    }
+
+    if (tag === 'img') {
+      flushCurrentLine();
+      const imageUrl = getImageUrlFromNode($node, baseUrl);
+      if (!imageUrl) return;
+      const caption = cleanHtml($node.attr('alt') || '');
+      pushUniqueImageBlock(blocks, seenImages, imageUrl, {
+        ...(caption ? { caption } : {}),
+      });
+      return;
+    }
+
+    if (['p', 'div', 'section', 'article'].includes(tag)) {
+      $node.contents().each((_, child) => walkNode(child));
+      flushCurrentLine();
+      return;
+    }
+
+    if (['ul', 'ol'].includes(tag)) {
+      flushCurrentLine();
+      $node.children('li').each((_, li) => {
+        handleLine($(li).text());
+      });
+      return;
+    }
+
+    appendHtml($.html(node));
+  };
+
+  root.contents().each((_, node) => walkNode(node));
+  flushCurrentLine();
+  flushParagraph();
+
+  return blocks;
+}
+
+function extractComicBookContentBlocks(html, baseUrl = '') {
+  if (!html) return [];
+
+  const $ = cheerio.load(`<div id="article-body">${html}</div>`);
+  const root = $('#article-body');
+
+  root.find(
+    'script, style, noscript, iframe, .wp-block-savage-platform-read-next, .read-next, .newsletter-form, .mailing-list, .social-share, .related, .advertisement, .ad'
+  ).remove();
+
+  const orphanCaption = root.children('figcaption').first();
+  const leadFigure = root.children('figure').first();
+  if (orphanCaption.length && leadFigure.length && !leadFigure.find('figcaption').length) {
+    leadFigure.append(`<figcaption>${orphanCaption.html() || orphanCaption.text()}</figcaption>`);
+    orphanCaption.remove();
+  }
+
+  return extractContentBlocks(root.html() || '', baseUrl);
+}
+
+function extractAnimeCornerContentBlocks(html, baseUrl = '') {
+  if (!html) return [];
+
+  const $ = cheerio.load(`<div id="article-body">${html}</div>`);
+  const root = $('#article-body');
+
+  root.find(
+    'script, style, noscript, iframe, .sharedaddy, .jp-relatedposts, .code-block, .advertisement, .ad, .twitter-tweet, .instagram-media, span[id^="ezoic-pub-ad-placeholder"], span[data-ez-ph-id]'
+  ).remove();
+
+  return extractContentBlocks(root.html() || '', baseUrl);
+}
+
+function applyStructuredContent(article, html, extractor = extractContentBlocks) {
   if (!html) return;
 
-  const blocks = extractContentBlocks(html, article.sourceUrl);
+  const blocks = extractor(html, article.sourceUrl);
   if (blocks.length) {
     article.contentBlocks = blocks;
 
@@ -418,10 +665,15 @@ async function fetchMAL() {
         
         // MAL specific selectors for the main text content, ignoring script tags
         _$('script, style, iframe, .news-info-block').remove();
+        const ogImage = _$('meta[property="og:image"]').attr('content') || '';
+        if (ogImage) {
+          article.imageUrl = ogImage;
+        }
         const contentRoot = _$('.news-container .content').first();
         applyStructuredContent(
           article,
-          contentRoot.html() || contentRoot.text() || ''
+          contentRoot.html() || contentRoot.text() || '',
+          extractMalContentBlocks
         );
       } catch (e) {
         // Fallback to initial snippet on failure
@@ -456,8 +708,8 @@ async function fetchComicBook() {
 
       if (fullContentHtml) {
         const _$ = cheerio.load(fullContentHtml);
-        imageUrl = _$('img').first().attr('src') || '';
-        const blocks = extractContentBlocks(fullContentHtml, link);
+        imageUrl = getImageUrlFromNode(_$('img').first(), link) || '';
+        const blocks = extractComicBookContentBlocks(fullContentHtml, link);
         const blockText = blocksToPlainText(blocks);
         contentText = blockText || cleanHtml(fullContentHtml);
       }
@@ -474,7 +726,7 @@ async function fetchComicBook() {
         id: `cb-${link.split('/').filter(Boolean).pop() || i}`,
         title,
         content: contentText,
-        ...(fullContentHtml ? { contentBlocks: extractContentBlocks(fullContentHtml, link) } : {}),
+        ...(fullContentHtml ? { contentBlocks: extractComicBookContentBlocks(fullContentHtml, link) } : {}),
         sourceUrl: link,
         author: 'ComicBook',
         publishedAt: new Date(pubDate),
@@ -482,6 +734,28 @@ async function fetchComicBook() {
         imageUrl: imageUrl || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News'
       });
     });
+
+    await Promise.all(articles.map(async article => {
+      try {
+        const { data: articleData } = await axios.get(article.sourceUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 10000
+        });
+        const _$ = cheerio.load(articleData);
+        const ogImage = _$('meta[property="og:image"]').attr('content') || '';
+        if (ogImage) {
+          article.imageUrl = ogImage;
+        }
+
+        const contentRoot = _$('.entry-content.wp-block-post-content, .entry-content, .wp-block-post-content').first();
+        applyStructuredContent(
+          article,
+          contentRoot.html() || '',
+          extractComicBookContentBlocks
+        );
+      } catch (e) {
+        // Keep RSS-derived content when page fetch fails.
+      }
+    }));
 
     console.log(`ComicBook: ${articles.length} articles fetched`);
     return articles;
@@ -552,7 +826,8 @@ async function fetchAnimeCorner() {
         const contentRoot = _$('.entry-content, .post-content, article .content').first();
         applyStructuredContent(
           article,
-          contentRoot.html() || contentRoot.text() || ''
+          contentRoot.html() || contentRoot.text() || '',
+          extractAnimeCornerContentBlocks
         );
       } catch(e) {}
     }));
