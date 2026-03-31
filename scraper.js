@@ -31,6 +31,259 @@ function cleanHtml(html) {
   return decoded.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
+function normalizeUrl(url, baseUrl = '') {
+  if (!url) return '';
+
+  if (url.startsWith('//')) {
+    return `https:${url}`;
+  }
+
+  try {
+    return new URL(url, baseUrl || 'https://www.animenewsnetwork.com').toString();
+  } catch (_) {
+    return url;
+  }
+}
+
+function isNoiseText(text) {
+  const cleaned = cleanHtml(text);
+  if (!cleaned) return true;
+
+  const lower = cleaned.toLowerCase();
+  return [
+    lower.startsWith('source:'),
+    lower.startsWith('sources:'),
+    lower.startsWith('official site:'),
+    lower.startsWith('official website:'),
+    lower.startsWith('official x:'),
+    lower.startsWith('disclosure:'),
+    lower.startsWith('image via '),
+    lower.startsWith('image courtesy of '),
+    lower.startsWith('image courtesy '),
+    lower.startsWith('credit:'),
+    lower.startsWith('copyright '),
+    /^(?:�|©|Â©)/.test(cleaned),
+    lower.includes('pic.twitter.com/'),
+    lower.includes('pic.x.com/'),
+  ].some(Boolean);
+}
+
+function splitCaptionAndCredit(text) {
+  const cleaned = cleanHtml(text);
+  if (!cleaned) return { caption: '', credit: '' };
+
+  if (/^(image (via|courtesy of|courtesy)|credit:|Â©|copyright )/i.test(cleaned)) {
+    return { caption: '', credit: cleaned };
+  }
+
+  const creditMatch = cleaned.match(/((?:�|©|Â©).+|Image (?:via|courtesy of|courtesy).+)$/i);
+  if (!creditMatch) {
+    return { caption: cleaned, credit: '' };
+  }
+
+  const credit = creditMatch[1].trim();
+  const caption = cleaned.slice(0, cleaned.lastIndexOf(credit)).trim();
+  return { caption, credit };
+}
+
+function createTextBlock(type, text) {
+  const cleaned = cleanHtml(text);
+  if (!cleaned || isNoiseText(cleaned)) return null;
+  return { type, text: cleaned };
+}
+
+function createLinkOrParagraphBlock(text) {
+  const cleaned = cleanHtml(text);
+  if (!cleaned || isNoiseText(cleaned)) return null;
+
+  if (/^https?:\/\/\S+$/i.test(cleaned)) {
+    return { type: 'link', text: cleaned, sourceUrl: cleaned };
+  }
+
+  return { type: 'paragraph', text: cleaned };
+}
+
+function blocksToPlainText(blocks) {
+  return blocks
+    .filter(block => ['heading', 'paragraph', 'quote'].includes(block.type))
+    .map(block => block.text)
+    .filter(Boolean)
+    .join('\n\n')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractContentBlocks(html, baseUrl = '') {
+  if (!html) return [];
+
+  const $ = cheerio.load(`<div id="article-body">${html}</div>`);
+  const root = $('#article-body');
+
+  root.find(
+    'script, style, noscript, iframe, .share, .sharedaddy, .jp-relatedposts, .news-info-block, .social-share, .related, .ad, .advertisement'
+  ).remove();
+
+  const blocks = [];
+  const seenImages = new Set();
+  const blockSelector =
+    'figure, img, h2, h3, h4, blockquote, ul, ol, p, div, section, article';
+  const blockTags = new Set([
+    'figure',
+    'img',
+    'h2',
+    'h3',
+    'h4',
+    'blockquote',
+    'ul',
+    'ol',
+    'p',
+    'div',
+    'section',
+    'article',
+  ]);
+
+  const pushBlock = block => {
+    if (!block) return;
+
+    if (block.type === 'image') {
+      const key = block.imageUrl || '';
+      if (!key || seenImages.has(key)) return;
+      seenImages.add(key);
+    }
+
+    blocks.push(block);
+  };
+
+  const pushImageBlock = $node => {
+    const imgNode = $node.is('img') ? $node : $node.find('img').first();
+    if (!imgNode.length) return;
+
+    const imageUrl = normalizeUrl(
+      imgNode.attr('src') ||
+        imgNode.attr('data-src') ||
+        imgNode.attr('data-lazy-src') ||
+        imgNode.attr('data-image') ||
+        imgNode.attr('data-original') ||
+        '',
+      baseUrl
+    );
+    if (!imageUrl || /spacer\.gif|blank\.(gif|png)$/i.test(imageUrl)) return;
+
+    const captionNode = $node.find('figcaption').first();
+    const captionSource = captionNode.length
+      ? captionNode.html() || captionNode.text()
+      : imgNode.attr('alt') || '';
+    const { caption, credit } = splitCaptionAndCredit(captionSource);
+
+    pushBlock({
+      type: 'image',
+      imageUrl,
+      ...(caption ? { caption } : {}),
+      ...(credit ? { credit } : {}),
+    });
+  };
+
+  let processNode = () => {};
+
+  const recurseBlockChildren = $node => {
+    const blockChildren = $node.children().filter((_, child) =>
+      blockTags.has((child.tagName || '').toLowerCase())
+    );
+    if (!blockChildren.length) return false;
+
+    blockChildren.each((_, child) => processNode($(child)));
+    return true;
+  };
+
+  const pushListBlocks = $node => {
+    $node.children('li').each((_, li) => {
+      pushBlock(createTextBlock('paragraph', `- ${$(li).html() || $(li).text()}`));
+    });
+  };
+
+  processNode = $node => {
+    if (!$node.length) return;
+
+    const tag = ($node[0].tagName || '').toLowerCase();
+    if (!tag) return;
+
+    if (tag === 'figure') {
+      pushImageBlock($node);
+      return;
+    }
+
+    if (tag === 'img') {
+      pushImageBlock($node);
+      return;
+    }
+
+    if (['h2', 'h3', 'h4'].includes(tag)) {
+      pushBlock(createTextBlock('heading', $node.html() || $node.text()));
+      return;
+    }
+
+    if (tag === 'blockquote') {
+      pushBlock(createTextBlock('quote', $node.html() || $node.text()));
+      return;
+    }
+
+    if (['ul', 'ol'].includes(tag)) {
+      pushListBlocks($node);
+      return;
+    }
+
+    if (['div', 'section', 'article'].includes(tag) && recurseBlockChildren($node)) {
+      return;
+    }
+
+    if (tag === 'p') {
+      $node.find('img').each((_, img) => pushImageBlock($(img)));
+
+      const textClone = $node.clone();
+      textClone.find(`${blockSelector}, figcaption`).remove();
+      pushBlock(createLinkOrParagraphBlock(textClone.html() || textClone.text()));
+      return;
+    }
+
+    recurseBlockChildren($node);
+  };
+
+  root.children().each((_, el) => processNode($(el)));
+
+  if (!blocks.length) {
+    pushBlock(createTextBlock('paragraph', root.text()));
+  }
+
+  return blocks;
+}
+
+function applyStructuredContent(article, html) {
+  if (!html) return;
+
+  const blocks = extractContentBlocks(html, article.sourceUrl);
+  if (blocks.length) {
+    article.contentBlocks = blocks;
+
+    const plainText = blocksToPlainText(blocks);
+    if (plainText && plainText.length >= article.content.length) {
+      article.content = plainText;
+    }
+
+    if (!article.imageUrl || article.imageUrl.includes('placehold')) {
+      const firstImage = blocks.find(block => block.type === 'image' && block.imageUrl);
+      if (firstImage?.imageUrl) {
+        article.imageUrl = firstImage.imageUrl;
+      }
+    }
+    return;
+  }
+
+  const fallback = cleanHtml(html);
+  if (fallback && fallback.length > article.content.length) {
+    article.content = fallback;
+  }
+}
+
 // Custom NSFW Filter to avoid adult/ecchi articles from scraping
 function isNSFW(title, description = '') {
   const lowerText = (title + ' ' + description).toLowerCase();
@@ -92,10 +345,10 @@ async function fetchANN() {
         article.imageUrl = img || 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
 
         const fullContentRoot = _$('.meat, .text-content, .news-article').first();
-        const fullContent = cleanHtml(fullContentRoot.html() || fullContentRoot.text() || '');
-        if (fullContent && fullContent.length > article.content.length) {
-          article.content = fullContent;
-        }
+        applyStructuredContent(
+          article,
+          fullContentRoot.html() || fullContentRoot.text() || ''
+        );
       } catch (e) {
         article.imageUrl = 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
       }
@@ -160,11 +413,11 @@ async function fetchMAL() {
         
         // MAL specific selectors for the main text content, ignoring script tags
         _$('script, style, iframe, .news-info-block').remove();
-        const fullContent = cleanHtml(_$('.news-container .content').html() || _$('.news-container .content').text() || '');
-        
-        if (fullContent && fullContent.length > article.content.length) {
-          article.content = fullContent;
-        }
+        const contentRoot = _$('.news-container .content').first();
+        applyStructuredContent(
+          article,
+          contentRoot.html() || contentRoot.text() || ''
+        );
       } catch (e) {
         // Fallback to initial snippet on failure
       }
@@ -199,13 +452,9 @@ async function fetchComicBook() {
       if (fullContentHtml) {
         const _$ = cheerio.load(fullContentHtml);
         imageUrl = _$('img').first().attr('src') || '';
-        // Extract all text paragraphs for cleaner full content
-        const pTexts = [];
-        _$('p').each((_, p) => {
-          const pt = cleanHtml(_$(p).html() || _$(p).text());
-          if (pt) pTexts.push(pt);
-        });
-        contentText = pTexts.join('\n\n');
+        const blocks = extractContentBlocks(fullContentHtml, link);
+        const blockText = blocksToPlainText(blocks);
+        contentText = blockText || cleanHtml(fullContentHtml);
       }
 
       if (!imageUrl) {
@@ -220,6 +469,7 @@ async function fetchComicBook() {
         id: `cb-${link.split('/').filter(Boolean).pop() || i}`,
         title,
         content: contentText,
+        ...(fullContentHtml ? { contentBlocks: extractContentBlocks(fullContentHtml, link) } : {}),
         sourceUrl: link,
         author: 'ComicBook',
         publishedAt: new Date(pubDate),
@@ -294,10 +544,11 @@ async function fetchAnimeCorner() {
         }
         // Get full content
         _$('script, style, .sharedaddy, .jp-relatedposts').remove();
-        const fullContent = cleanHtml(_$('.entry-content, .post-content, article .content').first().html() || _$('.entry-content, .post-content, article .content').first().text() || '');
-        if (fullContent && fullContent.length > article.content.length) {
-          article.content = fullContent;
-        }
+        const contentRoot = _$('.entry-content, .post-content, article .content').first();
+        applyStructuredContent(
+          article,
+          contentRoot.html() || contentRoot.text() || ''
+        );
       } catch(e) {}
     }));
 
@@ -360,7 +611,7 @@ async function fetchAnimeCorner() {
   newNews = newNews.map(a => {
     const dateObj = new Date(a.publishedAt);
     const options = { month: 'short', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true };
-    a.publishedAt = dateObj.toLocaleString('en-US', options).replace(',', ' •');
+    a.publishedAt = dateObj.toLocaleString('en-US', options).replace(',', ' -');
     return a;
   });
 
@@ -382,5 +633,7 @@ async function fetchAnimeCorner() {
   finalNews = finalNews.slice(0, 10000);
 
   fs.writeFileSync(outputPath, JSON.stringify(finalNews, null, 2));
-  console.log(`✅ Added ${uniqueNew.length} new articles. Total: ${finalNews.length}`);
+  console.log(`âœ… Added ${uniqueNew.length} new articles. Total: ${finalNews.length}`);
 })();
+
+
