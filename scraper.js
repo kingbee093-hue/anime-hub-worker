@@ -57,6 +57,8 @@ function isNoiseText(text) {
     lower.startsWith('official website:'),
     lower.startsWith('official x:'),
     lower.startsWith('disclosure:'),
+    lower === 'news homepage / archives',
+    lower === 'homepage / archives',
     lower.startsWith('image via '),
     lower.startsWith('image courtesy of '),
     lower.startsWith('image courtesy '),
@@ -158,16 +160,19 @@ function extractContentBlocks(html, baseUrl = '') {
     const imgNode = $node.is('img') ? $node : $node.find('img').first();
     if (!imgNode.length) return;
 
+    const preferredImageSource = [
+      imgNode.attr('data-src'),
+      imgNode.attr('data-lazy-src'),
+      imgNode.attr('data-image'),
+      imgNode.attr('data-original'),
+      imgNode.attr('src'),
+    ].find(value => value && value.trim());
+
     const imageUrl = normalizeUrl(
-      imgNode.attr('src') ||
-        imgNode.attr('data-src') ||
-        imgNode.attr('data-lazy-src') ||
-        imgNode.attr('data-image') ||
-        imgNode.attr('data-original') ||
-        '',
+      preferredImageSource || '',
       baseUrl
     );
-    if (!imageUrl || /spacer\.gif|blank\.(gif|png)$/i.test(imageUrl)) return;
+    if (!imageUrl || /spacer\.gif|blank\.(gif|png)$|bookmark-shorturl\.png$/i.test(imageUrl)) return;
 
     const captionNode = $node.find('figcaption').first();
     const captionSource = captionNode.length
