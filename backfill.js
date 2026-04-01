@@ -2,7 +2,10 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-const { writePaginatedNewsArtifacts } = require('./src/utils/newsPagination');
+const {
+  ARCHIVE_LIMIT,
+  writePaginatedNewsArtifacts,
+} = require('./src/utils/newsPagination');
 
 const PLACEHOLDER = 'https://placehold.co/600x400/1a1a2e/7c3aed/png?text=Anime+News';
 const TARGET_YEAR = 2019;
@@ -356,7 +359,7 @@ async function fetchANNFrontPage() {
   const cleanArticles = allNewArticles.map(({ _rawDate, ...rest }) => rest);
 
   // Merge: new at top, existing below
-  const finalNews = [...cleanArticles, ...existingNews];
+  const finalNews = [...cleanArticles, ...existingNews].slice(0, ARCHIVE_LIMIT);
 
   console.log(`\n═══════════════════════════════════`);
   console.log(`New articles added: ${cleanArticles.length}`);

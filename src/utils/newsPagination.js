@@ -3,16 +3,37 @@ const path = require('path');
 
 const DEFAULT_PAGE_SIZE = 10;
 const PREVIEW_LENGTH = 320;
+const LATEST_FEED_LIMIT = 5000;
+const ARCHIVE_LIMIT = 300000;
 
 function writePaginatedNewsArtifacts(apiDir, articles, pageSize = DEFAULT_PAGE_SIZE) {
   fs.mkdirSync(apiDir, { recursive: true });
 
-  writeJson(path.join(apiDir, 'news.json'), articles);
-  writePagedFeed(apiDir, 'news', articles, pageSize);
+  const archiveArticles = articles.slice(0, ARCHIVE_LIMIT);
+  const latestArticles = archiveArticles.slice(0, LATEST_FEED_LIMIT);
 
-  const indexArticles = articles.map(buildIndexArticle);
-  writeJson(path.join(apiDir, 'news_index.json'), indexArticles);
-  writePagedFeed(apiDir, 'news_index', indexArticles, pageSize);
+  writeJson(path.join(apiDir, 'news.json'), archiveArticles);
+  writePagedFeed(apiDir, 'news', archiveArticles, pageSize);
+
+  const archiveIndexArticles = archiveArticles.map(buildIndexArticle);
+  writeJson(path.join(apiDir, 'news_index.json'), archiveIndexArticles);
+  writePagedFeed(apiDir, 'news_index', archiveIndexArticles, pageSize);
+
+  writeJson(path.join(apiDir, 'news_latest.json'), latestArticles);
+  writePagedFeed(apiDir, 'news_latest', latestArticles, pageSize);
+
+  const latestIndexArticles = latestArticles.map(buildIndexArticle);
+  writeJson(path.join(apiDir, 'news_latest_index.json'), latestIndexArticles);
+  writePagedFeed(apiDir, 'news_latest_index', latestIndexArticles, pageSize);
+
+  writeJson(path.join(apiDir, 'news_catalog_manifest.json'), {
+    pageSize,
+    archiveLimit: ARCHIVE_LIMIT,
+    latestFeedLimit: LATEST_FEED_LIMIT,
+    archiveCount: archiveArticles.length,
+    latestCount: latestArticles.length,
+    lastUpdated: new Date().toISOString(),
+  });
 }
 
 function writePagedFeed(apiDir, baseName, articles, pageSize) {
@@ -111,6 +132,8 @@ function writeJson(filePath, value) {
 }
 
 module.exports = {
+  ARCHIVE_LIMIT,
   DEFAULT_PAGE_SIZE,
+  LATEST_FEED_LIMIT,
   writePaginatedNewsArtifacts,
 };

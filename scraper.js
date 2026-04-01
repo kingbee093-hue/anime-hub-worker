@@ -2,7 +2,10 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-const { writePaginatedNewsArtifacts } = require('./src/utils/newsPagination');
+const {
+  ARCHIVE_LIMIT,
+  writePaginatedNewsArtifacts,
+} = require('./src/utils/newsPagination');
 
 function decodeHtmlEntities(text) {
   return text
@@ -910,8 +913,8 @@ async function fetchAnimeCorner() {
   // Accumulate: new articles at the top
   let finalNews = [...uniqueNew, ...existingNews];
 
-  // Limit to 10000 articles max
-  finalNews = finalNews.slice(0, 10000);
+  // Keep a large rolling archive while dropping the oldest stories past the cap.
+  finalNews = finalNews.slice(0, ARCHIVE_LIMIT);
 
   writePaginatedNewsArtifacts(apiDir, finalNews);
   console.log(`Wrote paginated news artifacts to ${apiDir}`);
