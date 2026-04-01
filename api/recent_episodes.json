@@ -909,6 +909,16 @@
         "isAdult": false
       },
       {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 217,
         "name": "Dystopian",
         "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
@@ -929,31 +939,11 @@
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 109,
         "name": "Primarily Adult Cast",
         "description": "Main cast is mostly composed of characters above a high school age.",
         "category": "Cast-Main Cast",
         "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 281,
-        "name": "Surreal Comedy",
-        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
-        "category": "Theme-Comedy",
-        "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -989,11 +979,11 @@
         "isAdult": false
       },
       {
-        "id": 1689,
-        "name": "Curses",
-        "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
-        "category": "Theme-Fantasy",
-        "rank": 46,
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1003,7 +993,17 @@
         "name": "Full CGI",
         "description": "Almost entirely created with computer-generated imagery.",
         "category": "Technical",
-        "rank": 20,
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1689,
+        "name": "Curses",
+        "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
+        "category": "Theme-Fantasy",
+        "rank": 46,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
