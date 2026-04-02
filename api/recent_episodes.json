@@ -350,7 +350,7 @@
         "name": "Reincarnation",
         "description": "Features a character being born again after death, typically as another person or in another world.",
         "category": "Theme-Other",
-        "rank": 80,
+        "rank": 84,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -360,7 +360,7 @@
         "name": "Super Power",
         "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
         "category": "Theme-Fantasy",
-        "rank": 66,
+        "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -756,6 +756,16 @@
         "isAdult": false
       },
       {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 140,
         "name": "Educational",
         "description": "Primary aim is to educate the audience.",
@@ -779,16 +789,6 @@
         "id": 93,
         "name": "Post-Apocalyptic",
         "description": "Partly or completely set in a world or civilization after a global disaster.",
-        "category": "Setting-Universe",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 63,
-        "name": "Space",
-        "description": "Partly or completely set in outer space.",
         "category": "Setting-Universe",
         "rank": 20,
         "isGeneralSpoiler": false,
