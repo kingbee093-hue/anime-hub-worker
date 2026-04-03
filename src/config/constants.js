@@ -17,6 +17,8 @@ const CONFIG = {
     BY_GENRE: 'home_sections/genres', 
     SCHEDULE: 'schedule',
     CATALOG: 'catalog',
+    CHARACTERS: 'catalog/characters',
+    STUDIOS: 'catalog/studios',
     SEARCH_INDEX: 'search/anime_index',
     NEWS: 'news' 
   }

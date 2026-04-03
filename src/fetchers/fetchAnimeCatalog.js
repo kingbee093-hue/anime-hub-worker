@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const CONFIG = require('../config/constants');
 const { fetchGraphQL } = require('../utils/fetchHelper');
 const { GENERIC_MEDIA_QUERY } = require('../utils/anilistQueries');
@@ -6,13 +8,13 @@ const { isAdultContent, isAnime } = require('../utils/filters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 
 const CATALOG_PAGE_SIZE = 150;
-const CATALOG_MAX_ITEMS = 2000;
+const CATALOG_MAX_ITEMS = 3000;
 const GENRE_MAX_ITEMS = 120;
 
 const CATALOG_SOURCES = [
   {
     label: 'popular',
-    pages: 20,
+    pages: 28,
     variables: {
       perPage: 50,
       sort: ['POPULARITY_DESC'],
@@ -20,7 +22,7 @@ const CATALOG_SOURCES = [
   },
   {
     label: 'top-rated',
-    pages: 10,
+    pages: 14,
     variables: {
       perPage: 50,
       sort: ['SCORE_DESC', 'POPULARITY_DESC'],
@@ -28,7 +30,7 @@ const CATALOG_SOURCES = [
   },
   {
     label: 'trending',
-    pages: 8,
+    pages: 12,
     variables: {
       perPage: 50,
       sort: ['TRENDING_DESC', 'POPULARITY_DESC'],
@@ -36,7 +38,7 @@ const CATALOG_SOURCES = [
   },
   {
     label: 'airing',
-    pages: 5,
+    pages: 8,
     variables: {
       perPage: 50,
       status: 'RELEASING',
@@ -45,7 +47,7 @@ const CATALOG_SOURCES = [
   },
   {
     label: 'upcoming',
-    pages: 5,
+    pages: 8,
     variables: {
       perPage: 50,
       status: 'NOT_YET_RELEASED',
@@ -53,6 +55,40 @@ const CATALOG_SOURCES = [
     },
   },
 ];
+
+function readJsonIfExists(filePath) {
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+
+  try {
+    const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    console.error(`Failed to parse ${filePath}: ${error.message}`);
+    return [];
+  }
+}
+
+function getJsonFilesRecursive(directoryPath) {
+  if (!fs.existsSync(directoryPath)) {
+    return [];
+  }
+
+  const entries = fs.readdirSync(directoryPath, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(directoryPath, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...getJsonFilesRecursive(fullPath));
+    } else if (entry.isFile() && fullPath.toLowerCase().endsWith('.json')) {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
 
 function computeRichnessScore(anime) {
   let score = 0;
@@ -179,6 +215,56 @@ function addToShard(shards, shardKey, anime) {
   shards.get(shardKey).set(anime.animeId, anime);
 }
 
+function buildStudioCatalog(catalog) {
+  const studios = new Map();
+
+  for (const anime of catalog) {
+    for (const studio of anime.studios || []) {
+      const studioId = studio.id || studio.name;
+      if (!studioId) continue;
+
+      const existing = studios.get(studioId) || {
+        id: studio.id || null,
+        name: studio.name || '',
+        siteUrl: studio.siteUrl || '',
+        isAnimationStudio: Boolean(studio.isAnimationStudio),
+        animeCount: 0,
+        popularityScore: 0,
+        averageScoreTotal: 0,
+        sampleTitles: [],
+        searchTerms: [],
+      };
+
+      existing.animeCount += 1;
+      existing.popularityScore += Number(anime.popularity || 0);
+      existing.averageScoreTotal += Number(anime.averageScore || 0);
+      if (anime.title && existing.sampleTitles.length < 8 && !existing.sampleTitles.includes(anime.title)) {
+        existing.sampleTitles.push(anime.title);
+      }
+      if (!existing.searchTerms.includes(existing.name)) {
+        existing.searchTerms.push(existing.name);
+      }
+
+      studios.set(studioId, existing);
+    }
+  }
+
+  return Array.from(studios.values())
+    .map((studio) => ({
+      ...studio,
+      averageScore: studio.animeCount > 0
+          ? Number((studio.averageScoreTotal / studio.animeCount).toFixed(2))
+          : 0,
+    }))
+    .sort((a, b) => {
+      const countDelta = Number(b.animeCount || 0) - Number(a.animeCount || 0);
+      if (countDelta !== 0) {
+        return countDelta;
+      }
+      return Number(b.popularityScore || 0) - Number(a.popularityScore || 0);
+    });
+}
+
 async function fetchAnimeCatalog() {
   console.log('========================================');
   console.log('BUILDING: Anime Catalog');
@@ -213,12 +299,28 @@ async function fetchAnimeCatalog() {
     }
   }
 
+  const apiRoot = path.join(__dirname, '../../api');
+  const localSeedFiles = [
+    path.join(apiRoot, 'recent_episodes.json'),
+    ...getJsonFilesRecursive(path.join(apiRoot, 'home_sections')),
+    ...getJsonFilesRecursive(path.join(apiRoot, 'schedule')),
+  ];
+
+  for (const sourceFile of localSeedFiles) {
+    for (const anime of readJsonIfExists(sourceFile)) {
+      const animeId = anime?.animeId;
+      if (!animeId) continue;
+      deduped.set(animeId, mergeAnime(deduped.get(animeId), anime));
+    }
+  }
+
   const catalog = sortCatalog(Array.from(deduped.values())).slice(0, CATALOG_MAX_ITEMS);
   const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
   const lookup = {};
   const genreBuckets = new Map();
   const searchIndex = [];
   const searchShards = new Map();
+  const studiosCatalog = buildStudioCatalog(catalog);
 
   for (let pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
     const start = (pageNumber - 1) * CATALOG_PAGE_SIZE;
@@ -269,6 +371,11 @@ async function fetchAnimeCatalog() {
     writeJsonIfChanged(`${CONFIG.API_PATHS.CATALOG}/genres/${genre}`, sortedItems);
   }
 
+  writeJsonIfChanged(CONFIG.API_PATHS.STUDIOS, studiosCatalog);
+  writeJsonIfChanged(`${CONFIG.API_PATHS.STUDIOS}_manifest`, {
+    generatedAt: new Date().toISOString(),
+    totalItems: studiosCatalog.length,
+  });
   const searchManifest = {
     generatedAt: new Date().toISOString(),
     totalItems: searchIndex.length,

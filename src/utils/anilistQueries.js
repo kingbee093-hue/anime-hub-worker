@@ -60,8 +60,36 @@ query ($page: Int, $perPage: Int, $from: Int, $to: Int) {
 }
 `;
 
+const POPULAR_CHARACTERS_QUERY = `
+query ($page: Int, $perPage: Int) {
+  Page(page: $page, perPage: $perPage) {
+    pageInfo { total currentPage lastPage hasNextPage perPage }
+    characters(sort: [FAVOURITES_DESC]) {
+      id
+      name { full native }
+      image { large medium }
+      description
+      gender
+      age
+      favourites
+      siteUrl
+      media(perPage: 3, sort: [POPULARITY_DESC]) {
+        nodes {
+          id
+          title { romaji english native userPreferred }
+          type
+          format
+          siteUrl
+        }
+      }
+    }
+  }
+}
+`;
+
 module.exports = {
   AIRING_ANIME_QUERY,
   GENERIC_MEDIA_QUERY,
   AIRING_SCHEDULE_WINDOW_QUERY,
+  POPULAR_CHARACTERS_QUERY,
 };
