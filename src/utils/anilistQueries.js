@@ -41,4 +41,27 @@ query ($page: Int, $perPage: Int, $sort: [MediaSort], $status: MediaStatus, $sea
 }
 `;
 
-module.exports = { AIRING_ANIME_QUERY, GENERIC_MEDIA_QUERY };
+const AIRING_SCHEDULE_WINDOW_QUERY = `
+query ($page: Int, $perPage: Int, $from: Int, $to: Int) {
+  Page(page: $page, perPage: $perPage) {
+    pageInfo { total currentPage lastPage hasNextPage perPage }
+    airingSchedules(
+      airingAt_greater: $from,
+      airingAt_lesser: $to,
+      sort: TIME
+    ) {
+      id
+      episode
+      airingAt
+      timeUntilAiring
+      media { ${MEDIA_FRAGMENT} }
+    }
+  }
+}
+`;
+
+module.exports = {
+  AIRING_ANIME_QUERY,
+  GENERIC_MEDIA_QUERY,
+  AIRING_SCHEDULE_WINDOW_QUERY,
+};

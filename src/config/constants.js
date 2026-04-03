@@ -15,6 +15,8 @@ const CONFIG = {
     UPCOMING: 'home_sections/upcoming',
     TOP_AIRING: 'home_sections/top_airing',
     BY_GENRE: 'home_sections/genres', 
+    SCHEDULE: 'schedule',
+    SEARCH_INDEX: 'search/anime_index',
     NEWS: 'news' 
   }
 };

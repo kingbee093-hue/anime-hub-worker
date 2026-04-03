@@ -1,23 +1,20 @@
-const fs = require('fs');
-const path = require('path');
-const crypto = require('crypto');
 const CONFIG = require('../config/constants');
 const { isAdultContent, isAnime } = require('../utils/filters');
 const { convertToFirestoreFormat } = require('../utils/formatters');
 const { fetchGraphQL } = require('../utils/fetchHelper');
 const { GENERIC_MEDIA_QUERY } = require('../utils/anilistQueries');
-
+const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 
 async function fetchSection(collectionPath, variables, sectionName) {
-  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  console.log(`🌟 FETCHING: ${sectionName}`);
-  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log('========================================');
+  console.log(`FETCHING: ${sectionName}`);
+  console.log('========================================');
 
   const data = await fetchGraphQL(GENERIC_MEDIA_QUERY, variables);
 
   if (!data || !data.Page) {
-      console.error(`⚠️  Failed to fetch ${sectionName}`);
-      return;
+    console.error(`Failed to fetch ${sectionName}`);
+    return;
   }
 
   const mediaList = data.Page.media || [];
@@ -33,21 +30,11 @@ async function fetchSection(collectionPath, variables, sectionName) {
     }
   }
 
-  const apiFile = path.join(__dirname, '../../api', `${collectionPath}.json`);
-  fs.mkdirSync(path.dirname(apiFile), { recursive: true });
-  
-  // To avoid unnecessary git commits, check if file content actually changed
-  let existingContent = '';
-  if (fs.existsSync(apiFile)) {
-    existingContent = fs.readFileSync(apiFile, 'utf8');
-  }
-  const newContent = JSON.stringify(finalData, null, 2);
-  
-  if (existingContent !== newContent) {
-    fs.writeFileSync(apiFile, newContent, 'utf8');
-    console.log(`✅ ${sectionName} successfully written to ${apiFile}.`);
+  const result = writeJsonIfChanged(collectionPath, finalData);
+  if (result.changed) {
+    console.log(`${sectionName} successfully written to ${result.file}.`);
   } else {
-    console.log(`⚠️ No changes detected for ${sectionName}.`);
+    console.log(`No changes detected for ${sectionName}.`);
   }
 }
 
