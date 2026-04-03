@@ -5,10 +5,18 @@ on:
   repository_dispatch:
     types: [run-genres, run-all]
 
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-genres
+  cancel-in-progress: false
+
 jobs:
   fetch_genres:
     name: Fetch By Genre
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4

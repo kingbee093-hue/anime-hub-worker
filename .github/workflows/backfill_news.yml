@@ -3,6 +3,13 @@ name: Backfill News (Run Once)
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: backfill-news
+  cancel-in-progress: false
+
 jobs:
   backfill_news:
     name: Backfill Historical News (2019 - Now)

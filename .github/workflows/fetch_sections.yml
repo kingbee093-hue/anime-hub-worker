@@ -5,10 +5,18 @@ on:
   repository_dispatch:
     types: [run-sections, run-all]
 
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-sections
+  cancel-in-progress: false
+
 jobs:
   fetch_sections:
     name: Fetch General Sections (Top Rated, Popular, etc)
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4

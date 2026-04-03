@@ -5,10 +5,18 @@ on:
   repository_dispatch:
     types: [run-recent, run-all]
 
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-recent
+  cancel-in-progress: false
+
 jobs:
   recent_episodes:
     name: Fetch Recent Episodes
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4

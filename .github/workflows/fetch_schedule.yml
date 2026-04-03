@@ -1,27 +1,25 @@
-name: Fetch Latest News
+name: Fetch Schedule
 
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [run-news, run-all]
+    types: [run-schedule, run-all]
 
 permissions:
   contents: write
 
 concurrency:
-  group: fetch-news
+  group: fetch-schedule
   cancel-in-progress: false
 
 jobs:
-  fetch_news:
-    name: Fetch Latest News
+  fetch_schedule:
+    name: Fetch Weekly Schedule
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -31,14 +29,13 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run News Fetcher
-        run: npm run fetch:news
+      - name: Run Schedule Fetcher
+        run: npm run fetch:schedule
 
       - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/news*.json
-          git diff --staged --quiet || git commit -m "api: accumulate news [skip ci]"
-          git pull --rebase origin main || git pull origin main
-          git push origin HEAD:main
+          git pull --rebase origin main || true
+          git add api/schedule
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update schedule [skip ci]" && git push)
