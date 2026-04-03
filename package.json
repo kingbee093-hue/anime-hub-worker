@@ -10,6 +10,7 @@
     "fetch:schedule": "node index.js schedule",
     "fetch:catalog": "node index.js catalog",
     "fetch:manga": "node index.js manga",
+    "fetch:manga-chapters": "node index.js mangachapters",
     "fetch:characters": "node index.js characters",
     "fetch:genres": "node index.js genres",
     "fetch:news": "node scraper.js",

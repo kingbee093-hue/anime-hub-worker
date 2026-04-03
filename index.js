@@ -9,6 +9,7 @@ const { fetchFeatured, fetchTrending, fetchTopRated, fetchPopularSeason, fetchUp
 const fetchSchedule = require('./src/fetchers/fetchSchedule');
 const fetchAnimeCatalog = require('./src/fetchers/fetchAnimeCatalog');
 const fetchMangaCatalog = require('./src/fetchers/fetchMangaCatalog');
+const fetchMangaChapters = require('./src/fetchers/fetchMangaChapters');
 const fetchCharacterCatalog = require('./src/fetchers/fetchCharacterCatalog');
 const fetchByGenre = require('./src/fetchers/fetchByGenre');
 const fetchNews = require('./scraper');
@@ -30,7 +31,11 @@ async function run() {
         if (target === 'schedule' || target === 'all') await fetchSchedule();
         if (target === 'genres' || target === 'all') await fetchByGenre();
         if (target === 'catalog' || target === 'searchindex' || target === 'all') await fetchAnimeCatalog();
-        if (target === 'manga' || target === 'all') await fetchMangaCatalog();
+        if (target === 'manga' || target === 'all') {
+            await fetchMangaCatalog();
+            await fetchMangaChapters();
+        }
+        if (target === 'mangachapters' || target === 'all') await fetchMangaChapters();
         if (target === 'characters' || target === 'all') await fetchCharacterCatalog();
         if (target === 'news' || target === 'all') await fetchNews();
 
