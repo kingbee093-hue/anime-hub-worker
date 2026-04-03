@@ -844,7 +844,7 @@ async function fetchAnimeCorner() {
   }
 }
 
-(async () => {
+async function runNewsScraper() {
   // Load existing news first to get the latest date
   const apiDir = path.join(__dirname, 'api');
   if (!fs.existsSync(apiDir)) fs.mkdirSync(apiDir);
@@ -919,6 +919,15 @@ async function fetchAnimeCorner() {
   writePaginatedNewsArtifacts(apiDir, finalNews);
   console.log(`Wrote paginated news artifacts to ${apiDir}`);
   console.log(`âœ… Added ${uniqueNew.length} new articles. Total: ${finalNews.length}`);
-})();
+}
+
+if (require.main === module) {
+  runNewsScraper().catch((error) => {
+    console.error('News scraper failed:', error);
+    process.exit(1);
+  });
+}
+
+module.exports = runNewsScraper;
 
 

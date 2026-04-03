@@ -9,9 +9,8 @@ const { fetchFeatured, fetchTrending, fetchTopRated, fetchPopularSeason, fetchUp
 const fetchSchedule = require('./src/fetchers/fetchSchedule');
 const fetchAnimeCatalog = require('./src/fetchers/fetchAnimeCatalog');
 const fetchCharacterCatalog = require('./src/fetchers/fetchCharacterCatalog');
-const fetchSearchIndex = require('./src/fetchers/fetchSearchIndex');
 const fetchByGenre = require('./src/fetchers/fetchByGenre');
-const fetchNews = require('./src/fetchers/fetchNews');
+const fetchNews = require('./scraper');
 
 async function run() {
     const args = process.argv.slice(2);
@@ -29,9 +28,8 @@ async function run() {
         if (target === 'topairing' || target === 'all') await fetchTopAiring();
         if (target === 'schedule' || target === 'all') await fetchSchedule();
         if (target === 'genres' || target === 'all') await fetchByGenre();
-        if (target === 'catalog' || target === 'all') await fetchAnimeCatalog();
+        if (target === 'catalog' || target === 'searchindex' || target === 'all') await fetchAnimeCatalog();
         if (target === 'characters' || target === 'all') await fetchCharacterCatalog();
-        if (target === 'searchindex') await fetchSearchIndex();
         if (target === 'news' || target === 'all') await fetchNews();
 
         console.log('\n🎉 All tasks completed successfully!');
