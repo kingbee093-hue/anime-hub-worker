@@ -11,9 +11,12 @@ function writePaginatedNewsArtifacts(apiDir, articles, pageSize = DEFAULT_PAGE_S
 
   const archiveArticles = articles.slice(0, ARCHIVE_LIMIT);
   const latestArticles = archiveArticles.slice(0, LATEST_FEED_LIMIT);
+  const latestMirrorsArchive = latestArticles.length === archiveArticles.length;
 
   writeJson(path.join(apiDir, 'news.json'), archiveArticles);
-  writePagedFeed(apiDir, 'news', archiveArticles, pageSize);
+  writePagedFeed(apiDir, 'news', archiveArticles, pageSize, {
+    writeManifest: false,
+  });
 
   const archiveIndexArticles = archiveArticles.map((article, index) =>
     buildIndexArticle(article, {
@@ -24,20 +27,58 @@ function writePaginatedNewsArtifacts(apiDir, articles, pageSize = DEFAULT_PAGE_S
   writeJson(path.join(apiDir, 'news_index.json'), archiveIndexArticles);
   writePagedFeed(apiDir, 'news_index', archiveIndexArticles, pageSize);
 
-  writePagedFeed(apiDir, 'news_latest', latestArticles, pageSize);
+  if (latestMirrorsArchive) {
+    removeFeedArtifacts(apiDir, 'news_latest');
+    removeFeedArtifacts(apiDir, 'news_latest_index');
+    writeJson(path.join(apiDir, 'news_latest_index_manifest.json'), {
+      pageSize,
+      totalArticles: archiveArticles.length,
+      totalPages: Math.ceil(archiveArticles.length / pageSize),
+      lastUpdated: new Date().toISOString(),
+      mirrorsArchive: true,
+      sourceBase: 'news_index',
+    });
+  } else {
+    writePagedFeed(apiDir, 'news_latest', latestArticles, pageSize, {
+      writeManifest: false,
+    });
 
-  const latestIndexArticles = latestArticles.map((article, index) =>
-    buildIndexArticle(article, {
-      detailFeed: 'news_latest',
-      detailPage: Math.floor(index / pageSize) + 1,
-    })
-  );
-  writeJson(path.join(apiDir, 'news_latest_index.json'), latestIndexArticles);
-  writePagedFeed(apiDir, 'news_latest_index', latestIndexArticles, pageSize);
+    const latestIndexArticles = latestArticles.map((article, index) =>
+      buildIndexArticle(article, {
+        detailFeed: 'news_latest',
+        detailPage: Math.floor(index / pageSize) + 1,
+      })
+    );
+    writeJson(path.join(apiDir, 'news_latest_index.json'), latestIndexArticles);
+    writePagedFeed(apiDir, 'news_latest_index', latestIndexArticles, pageSize);
+  }
 
 }
 
-function writePagedFeed(apiDir, baseName, articles, pageSize) {
+function removeFeedArtifacts(apiDir, baseName) {
+  const rootJson = path.join(apiDir, `${baseName}.json`);
+  const manifestJson = path.join(apiDir, `${baseName}_manifest.json`);
+  if (fs.existsSync(rootJson)) {
+    fs.rmSync(rootJson, { force: true });
+  }
+  if (fs.existsSync(manifestJson)) {
+    fs.rmSync(manifestJson, { force: true });
+  }
+
+  for (const file of fs.readdirSync(apiDir)) {
+    if (new RegExp(`^${baseName}_page_\\d+\\.json$`).test(file)) {
+      fs.rmSync(path.join(apiDir, file), { force: true });
+    }
+  }
+}
+
+function writePagedFeed(
+  apiDir,
+  baseName,
+  articles,
+  pageSize,
+  { writeManifest = true } = {},
+) {
   const totalArticles = articles.length;
   const totalPages = Math.ceil(totalArticles / pageSize);
 
@@ -56,12 +97,14 @@ function writePagedFeed(apiDir, baseName, articles, pageSize) {
     );
   }
 
-  writeJson(path.join(apiDir, `${baseName}_manifest.json`), {
-    pageSize,
-    totalArticles,
-    totalPages,
-    lastUpdated: new Date().toISOString(),
-  });
+  if (writeManifest) {
+    writeJson(path.join(apiDir, `${baseName}_manifest.json`), {
+      pageSize,
+      totalArticles,
+      totalPages,
+      lastUpdated: new Date().toISOString(),
+    });
+  }
 }
 
 function buildIndexArticle(article, locator = {}) {
