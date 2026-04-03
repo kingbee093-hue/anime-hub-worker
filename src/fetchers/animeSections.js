@@ -9,6 +9,14 @@ async function fetchTrending() {
     }, 'Trending Anime');
 }
 
+async function fetchFeatured() {
+    return fetchSection(CONFIG.API_PATHS.FEATURED, {
+        page: 1,
+        perPage: 8,
+        sort: ['TRENDING_DESC', 'SCORE_DESC', 'POPULARITY_DESC']
+    }, 'Featured Anime');
+}
+
 async function fetchTopRated() {
     return fetchSection(CONFIG.API_PATHS.TOP_RATED, {
         page: 1, perPage: CONFIG.MEDIA_PER_PAGE, sort: ['SCORE_DESC']
@@ -43,5 +51,5 @@ async function fetchTopAiring() {
 }
 
 module.exports = {
-    fetchTrending, fetchTopRated, fetchPopularSeason, fetchUpcoming, fetchTopAiring
+    fetchFeatured, fetchTrending, fetchTopRated, fetchPopularSeason, fetchUpcoming, fetchTopAiring
 };

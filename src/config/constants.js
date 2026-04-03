@@ -8,6 +8,7 @@ const CONFIG = {
   RATE_LIMIT_DELAY: 700,  // milliseconds between requests
   API_PATHS: {
     RECENT_EPISODES: 'recent_episodes',
+    FEATURED: 'home_sections/featured',
     TRENDING: 'home_sections/trending',
     TOP_RATED: 'home_sections/top_rated',
     POPULAR_SEASON: 'home_sections/popular_season',

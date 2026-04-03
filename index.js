@@ -5,7 +5,7 @@
 require('dotenv').config();
 
 const fetchRecentEpisodes = require('./src/fetchers/fetchRecentEpisodes');
-const { fetchTrending, fetchTopRated, fetchPopularSeason, fetchUpcoming, fetchTopAiring } = require('./src/fetchers/animeSections');
+const { fetchFeatured, fetchTrending, fetchTopRated, fetchPopularSeason, fetchUpcoming, fetchTopAiring } = require('./src/fetchers/animeSections');
 const fetchByGenre = require('./src/fetchers/fetchByGenre');
 const fetchNews = require('./src/fetchers/fetchNews');
 
@@ -17,6 +17,7 @@ async function run() {
 
     try {
         if (target === 'recent' || target === 'all') await fetchRecentEpisodes();
+        if (target === 'featured' || target === 'all') await fetchFeatured();
         if (target === 'trending' || target === 'all') await fetchTrending();
         if (target === 'toprated' || target === 'all') await fetchTopRated();
         if (target === 'popular' || target === 'all') await fetchPopularSeason();
