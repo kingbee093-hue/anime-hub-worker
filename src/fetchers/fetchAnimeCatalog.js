@@ -154,6 +154,31 @@ function buildSearchIndexItem(anime, detailPage) {
   };
 }
 
+function normalizeSearchText(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\u0600-\u06FF\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getSearchShardKey(term) {
+  const normalized = normalizeSearchText(term);
+  if (!normalized) return 'other';
+  const firstChar = normalized[0];
+  if (/[a-z]/.test(firstChar)) return firstChar;
+  if (/[0-9]/.test(firstChar)) return '0-9';
+  if (/[\u0600-\u06FF]/.test(firstChar)) return 'arabic';
+  return 'other';
+}
+
+function addToShard(shards, shardKey, anime) {
+  if (!shards.has(shardKey)) {
+    shards.set(shardKey, new Map());
+  }
+  shards.get(shardKey).set(anime.animeId, anime);
+}
+
 async function fetchAnimeCatalog() {
   console.log('========================================');
   console.log('BUILDING: Anime Catalog');
@@ -193,6 +218,7 @@ async function fetchAnimeCatalog() {
   const lookup = {};
   const genreBuckets = new Map();
   const searchIndex = [];
+  const searchShards = new Map();
 
   for (let pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
     const start = (pageNumber - 1) * CATALOG_PAGE_SIZE;
@@ -200,7 +226,19 @@ async function fetchAnimeCatalog() {
 
     for (const item of pageItems) {
       lookup[String(item.animeId)] = pageNumber;
-      searchIndex.push(buildSearchIndexItem(item, pageNumber));
+      const searchItem = buildSearchIndexItem(item, pageNumber);
+      searchIndex.push(searchItem);
+
+      const shardTerms = new Set([
+        searchItem.title,
+        searchItem.titleEnglish,
+        searchItem.titleRomaji,
+        searchItem.titleNative,
+        ...((item.synonyms || []).slice(0, 8)),
+      ]);
+      for (const term of shardTerms) {
+        addToShard(searchShards, getSearchShardKey(term), searchItem);
+      }
 
       for (const genre of item.genres || []) {
         if (!genreBuckets.has(genre)) {
@@ -231,6 +269,25 @@ async function fetchAnimeCatalog() {
     writeJsonIfChanged(`${CONFIG.API_PATHS.CATALOG}/genres/${genre}`, sortedItems);
   }
 
+  const searchManifest = {
+    generatedAt: new Date().toISOString(),
+    totalItems: searchIndex.length,
+    shards: {},
+  };
+
+  for (const [shardKey, itemsMap] of searchShards.entries()) {
+    const shardItems = sortCatalog(Array.from(itemsMap.values()));
+    searchManifest.shards[shardKey] = {
+      count: shardItems.length,
+      path: `${CONFIG.API_PATHS.SEARCH_INDEX}/shards/${shardKey}.json`,
+    };
+    writeJsonIfChanged(
+      `${CONFIG.API_PATHS.SEARCH_INDEX}/shards/${shardKey}`,
+      shardItems,
+    );
+  }
+
+  writeJsonIfChanged(`${CONFIG.API_PATHS.SEARCH_INDEX}/manifest`, searchManifest);
   writeJsonIfChanged(CONFIG.API_PATHS.SEARCH_INDEX, searchIndex);
   console.log(`Anime catalog built with ${catalog.length} items across ${totalPages} pages.`);
 }
