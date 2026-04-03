@@ -309,7 +309,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Mystery",
       "Psychological",
@@ -395,7 +395,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 23,
     "genres": [
       "Comedy"
     ],
@@ -498,8 +498,8 @@
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
-    "duration": 0,
+    "episodes": 12,
+    "duration": 24,
     "genres": [
       "Romance",
       "Slice of Life"
@@ -624,7 +624,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 13,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Action",
       "Supernatural"
@@ -676,6 +676,16 @@
         "description": "Partly or completely set during a real period of world history.",
         "category": "Setting-Time",
         "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -739,7 +749,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 12,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Comedy",
       "Romance",
@@ -896,7 +906,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 26,
     "genres": [
       "Comedy",
       "Romance",
@@ -1053,7 +1063,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Action",
       "Adventure",
