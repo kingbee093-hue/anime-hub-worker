@@ -15,14 +15,24 @@ function writePaginatedNewsArtifacts(apiDir, articles, pageSize = DEFAULT_PAGE_S
   writeJson(path.join(apiDir, 'news.json'), archiveArticles);
   writePagedFeed(apiDir, 'news', archiveArticles, pageSize);
 
-  const archiveIndexArticles = archiveArticles.map(buildIndexArticle);
+  const archiveIndexArticles = archiveArticles.map((article, index) =>
+    buildIndexArticle(article, {
+      detailFeed: 'news',
+      detailPage: Math.floor(index / pageSize) + 1,
+    })
+  );
   writeJson(path.join(apiDir, 'news_index.json'), archiveIndexArticles);
   writePagedFeed(apiDir, 'news_index', archiveIndexArticles, pageSize);
 
   writeJson(path.join(apiDir, 'news_latest.json'), latestArticles);
   writePagedFeed(apiDir, 'news_latest', latestArticles, pageSize);
 
-  const latestIndexArticles = latestArticles.map(buildIndexArticle);
+  const latestIndexArticles = latestArticles.map((article, index) =>
+    buildIndexArticle(article, {
+      detailFeed: 'news_latest',
+      detailPage: Math.floor(index / pageSize) + 1,
+    })
+  );
   writeJson(path.join(apiDir, 'news_latest_index.json'), latestIndexArticles);
   writePagedFeed(apiDir, 'news_latest_index', latestIndexArticles, pageSize);
 
@@ -63,7 +73,7 @@ function writePagedFeed(apiDir, baseName, articles, pageSize) {
   });
 }
 
-function buildIndexArticle(article) {
+function buildIndexArticle(article, locator = {}) {
   const fullText = normalizeWhitespace(article.content || '');
   const preview = truncatePreview(fullText, PREVIEW_LENGTH);
 
@@ -79,6 +89,10 @@ function buildIndexArticle(article) {
     readingTime: estimateReadingTime(fullText),
     articleType: inferArticleType(article),
     isPartial: true,
+    ...(locator.detailFeed ? { detailFeed: locator.detailFeed } : {}),
+    ...(Number.isInteger(locator.detailPage)
+      ? { detailPage: locator.detailPage }
+      : {}),
   };
 }
 
