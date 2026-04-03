@@ -36,24 +36,63 @@ function cleanHtmlTags(html) {
     .trim();
 }
 
+function getPrimaryTitle(media) {
+  return (
+    media.title?.english ||
+    media.title?.romaji ||
+    media.title?.userPreferred ||
+    media.title?.native ||
+    'Unknown'
+  );
+}
+
+function getBestImageUrl(media) {
+  let imageUrl =
+    media.coverImage?.extraLarge ||
+    media.coverImage?.large ||
+    media.coverImage?.medium ||
+    media.bannerImage ||
+    '';
+
+  if (!imageUrl && media.bannerImage) {
+    imageUrl = media.bannerImage;
+  }
+
+  return imageUrl;
+}
+
+function buildIsoDate(date) {
+  if (!date || !date.year) return null;
+  return `${date.year}-${String(date.month || 1).padStart(2, '0')}-${String(date.day || 1).padStart(2, '0')}`;
+}
+
+function extractStaffByRole(staffEdges, roleKeywords) {
+  return (staffEdges || [])
+    .filter((edge) => {
+      const role = String(edge?.role || '').toLowerCase();
+      return roleKeywords.some((keyword) => role.includes(keyword));
+    })
+    .map((edge) => edge?.node?.name?.full || edge?.node?.name?.native || '')
+    .filter(Boolean);
+}
+
+function normalizeExternalLinks(externalLinks) {
+  return (externalLinks || [])
+    .map((link) => ({
+      site: link?.site || '',
+      url: link?.url || '',
+    }))
+    .filter((link) => link.site && link.url);
+}
+
 /**
  * Shared method to convert AniList node/media to a consistent Firestore map
  */
 function convertToFirestoreFormat(media, extra = {}) {
   try {
     const animeId = media.idMal || media.id;
-    const title = media.title?.english || media.title?.romaji || media.title?.userPreferred || 'Unknown';
-    
-    let imageUrl = media.coverImage?.extraLarge || 
-                     media.coverImage?.large || 
-                     media.coverImage?.medium ||
-                     media.bannerImage || '';
-    
-    // Fallback if banner image exists but cover is missing
-    if (!imageUrl && media.bannerImage) {
-        imageUrl = media.bannerImage;
-    }
-    
+    const title = getPrimaryTitle(media);
+    const imageUrl = getBestImageUrl(media);
     const synopsis = cleanHtmlTags(media.description || '').substring(0, 1000);
     
     return {
@@ -103,10 +142,8 @@ function convertToFirestoreFormat(media, extra = {}) {
       isLicensed: media.isLicensed || false,
       isAdult: media.isAdult || false,
       hashtag: media.hashtag || '',
-      startDate: media.startDate && media.startDate.year ? 
-        `${media.startDate.year}-${String(media.startDate.month || 1).padStart(2, '0')}-${String(media.startDate.day || 1).padStart(2, '0')}` : null,
-      endDate: media.endDate && media.endDate.year ? 
-        `${media.endDate.year}-${String(media.endDate.month || 1).padStart(2, '0')}-${String(media.endDate.day || 1).padStart(2, '0')}` : null,
+      startDate: buildIsoDate(media.startDate),
+      endDate: buildIsoDate(media.endDate),
       mal_url: media.idMal ? `https://myanimelist.net/anime/${media.idMal}` : '',
       anilist_url: media.siteUrl || '',
       trailer: media.trailer ? {
@@ -121,4 +158,75 @@ function convertToFirestoreFormat(media, extra = {}) {
   }
 }
 
-module.exports = { delay, formatTimestamp, cleanHtmlTags, convertToFirestoreFormat };
+function convertMangaToFirestoreFormat(media, extra = {}) {
+  try {
+    const title = getPrimaryTitle(media);
+    const imageUrl = getBestImageUrl(media);
+    const synopsis = cleanHtmlTags(media.description || '').substring(0, 1200);
+    const staffEdges = media.staff?.edges || [];
+    const authors = extractStaffByRole(staffEdges, ['story', 'original', 'writer', 'author']);
+    const artists = extractStaffByRole(staffEdges, ['art', 'illustration', 'mangaka', 'artist']);
+
+    return {
+      mangaId: media.id,
+      anilistId: media.id,
+      idMal: media.idMal || null,
+      title,
+      titleRomaji: media.title?.romaji || '',
+      titleEnglish: media.title?.english || '',
+      titleNative: media.title?.native || '',
+      synonyms: media.synonyms || [],
+      imageUrl,
+      coverImageLarge: media.coverImage?.large || '',
+      coverImageMedium: media.coverImage?.medium || '',
+      coverImageColor: media.coverImage?.color || '',
+      bannerImage: media.bannerImage || '',
+      synopsis,
+      type: media.type || 'MANGA',
+      format: media.format || 'MANGA',
+      status: media.status || 'UNKNOWN',
+      year: media.startDate?.year || 0,
+      startDate: buildIsoDate(media.startDate),
+      endDate: buildIsoDate(media.endDate),
+      chapters: media.chapters || 0,
+      volumes: media.volumes || 0,
+      genres: media.genres || [],
+      tags: (media.tags || []).map((tag) => ({
+        id: tag.id,
+        name: tag.name,
+        description: tag.description,
+        category: tag.category,
+        rank: tag.rank,
+        isGeneralSpoiler: tag.isGeneralSpoiler || false,
+        isMediaSpoiler: tag.isMediaSpoiler || false,
+        isAdult: tag.isAdult || false,
+      })),
+      authors,
+      artists,
+      rating: media.averageScore ? media.averageScore / 10 : 0,
+      averageScore: media.averageScore || 0,
+      meanScore: media.meanScore || 0,
+      popularity: media.popularity || 0,
+      trending: media.trending || 0,
+      favourites: media.favourites || 0,
+      source: media.source || '',
+      countryOfOrigin: media.countryOfOrigin || '',
+      isAdult: media.isAdult || false,
+      anilist_url: media.siteUrl || '',
+      mal_url: media.idMal ? `https://myanimelist.net/manga/${media.idMal}` : '',
+      externalLinks: normalizeExternalLinks(media.externalLinks),
+      ...extra,
+    };
+  } catch (error) {
+    console.error(`Error formatting manga media ${media?.id}: ${error.message}`);
+    return null;
+  }
+}
+
+module.exports = {
+  delay,
+  formatTimestamp,
+  cleanHtmlTags,
+  convertToFirestoreFormat,
+  convertMangaToFirestoreFormat,
+};

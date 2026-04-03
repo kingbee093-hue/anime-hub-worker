@@ -20,6 +20,14 @@ const CONFIG = {
     CHARACTERS: 'catalog/characters',
     STUDIOS: 'catalog/studios',
     SEARCH_INDEX: 'search/anime_index',
+    MANGA_FEATURED: 'manga/featured',
+    MANGA_TRENDING: 'manga/trending',
+    MANGA_TOP_RATED: 'manga/top_rated',
+    MANGA_POPULAR: 'manga/popular',
+    MANGA_BY_GENRE: 'manga/genres',
+    MANGA_CATALOG: 'manga/catalog',
+    MANGA_MAPPING: 'manga/mangadex_mapping',
+    MANGA_SEARCH_INDEX: 'search/manga_index',
     NEWS: 'news' 
   }
 };

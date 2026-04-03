@@ -1,4 +1,5 @@
 const ALLOWED_FORMATS = ['TV', 'TV_SHORT', 'OVA', 'ONA', 'SPECIAL', 'MOVIE'];
+const ALLOWED_MANGA_FORMATS = ['MANGA', 'NOVEL', 'ONE_SHOT'];
 
 const BLOCKED_GENRES = ['Hentai'];
 
@@ -44,4 +45,16 @@ function isAnime(media) {
   return { allowed: true };
 }
 
-module.exports = { isAdultContent, isAnime };
+function isManga(media) {
+  if (media.type !== 'MANGA') {
+    return { allowed: false, reason: `Not manga type: ${media.type}` };
+  }
+
+  if (media.format && !ALLOWED_MANGA_FORMATS.includes(media.format)) {
+    return { allowed: false, reason: `Blocked manga format: ${media.format}` };
+  }
+
+  return { allowed: true };
+}
+
+module.exports = { isAdultContent, isAnime, isManga };

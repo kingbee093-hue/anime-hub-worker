@@ -41,6 +41,57 @@ query ($page: Int, $perPage: Int, $sort: [MediaSort], $status: MediaStatus, $sea
 }
 `;
 
+const MANGA_MEDIA_FRAGMENT = `
+  id
+  idMal
+  title { romaji english native userPreferred }
+  coverImage { extraLarge large medium color }
+  bannerImage
+  startDate { year month day }
+  endDate { year month day }
+  description
+  chapters
+  volumes
+  countryOfOrigin
+  source
+  updatedAt
+  genres
+  synonyms
+  averageScore
+  meanScore
+  popularity
+  trending
+  favourites
+  isAdult
+  siteUrl
+  type
+  format
+  status
+  tags { id name description category rank isGeneralSpoiler isMediaSpoiler isAdult }
+  externalLinks { site url }
+  staff(perPage: 5) {
+    edges {
+      role
+      node {
+        id
+        name { full native }
+        siteUrl
+      }
+    }
+  }
+`;
+
+const GENERIC_MANGA_QUERY = `
+query ($page: Int, $perPage: Int, $sort: [MediaSort], $status: MediaStatus, $genre: String) {
+  Page(page: $page, perPage: $perPage) {
+    pageInfo { total currentPage lastPage hasNextPage perPage }
+    media(type: MANGA, sort: $sort, status: $status, genre: $genre) {
+      ${MANGA_MEDIA_FRAGMENT}
+    }
+  }
+}
+`;
+
 const AIRING_SCHEDULE_WINDOW_QUERY = `
 query ($page: Int, $perPage: Int, $from: Int, $to: Int) {
   Page(page: $page, perPage: $perPage) {
@@ -90,6 +141,7 @@ query ($page: Int, $perPage: Int) {
 module.exports = {
   AIRING_ANIME_QUERY,
   GENERIC_MEDIA_QUERY,
+  GENERIC_MANGA_QUERY,
   AIRING_SCHEDULE_WINDOW_QUERY,
   POPULAR_CHARACTERS_QUERY,
 };

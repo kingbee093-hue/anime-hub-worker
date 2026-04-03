@@ -1,0 +1,43 @@
+name: AnimeHub - Manga Catalog
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [run-manga, run-all]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-manga
+  cancel-in-progress: false
+
+jobs:
+  fetch_manga:
+    name: Build Manga Catalog, Search Index, and MangaDex Mapping
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Manga Builder
+        run: npm run fetch:manga
+
+      - name: Commit API updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main || true
+          git add api/manga api/search
+          git diff --quiet && git diff --staged --quiet || (git commit -m "api: rebuild manga catalog [skip ci]" && git push)
