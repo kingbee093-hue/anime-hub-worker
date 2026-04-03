@@ -83,12 +83,6 @@ async function fetchCharacterCatalog() {
   });
 
   writeJsonIfChanged(CONFIG.API_PATHS.CHARACTERS, catalog);
-  writeJsonIfChanged(`${CONFIG.API_PATHS.CHARACTERS}_manifest`, {
-    generatedAt: new Date().toISOString(),
-    totalItems: catalog.length,
-    pages: CHARACTER_PAGES,
-    pageSize: CHARACTER_PAGE_SIZE,
-  });
   console.log(`Character catalog built with ${catalog.length} characters.`);
 }
 

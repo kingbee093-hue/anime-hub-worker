@@ -24,7 +24,6 @@ function writePaginatedNewsArtifacts(apiDir, articles, pageSize = DEFAULT_PAGE_S
   writeJson(path.join(apiDir, 'news_index.json'), archiveIndexArticles);
   writePagedFeed(apiDir, 'news_index', archiveIndexArticles, pageSize);
 
-  writeJson(path.join(apiDir, 'news_latest.json'), latestArticles);
   writePagedFeed(apiDir, 'news_latest', latestArticles, pageSize);
 
   const latestIndexArticles = latestArticles.map((article, index) =>
@@ -36,14 +35,6 @@ function writePaginatedNewsArtifacts(apiDir, articles, pageSize = DEFAULT_PAGE_S
   writeJson(path.join(apiDir, 'news_latest_index.json'), latestIndexArticles);
   writePagedFeed(apiDir, 'news_latest_index', latestIndexArticles, pageSize);
 
-  writeJson(path.join(apiDir, 'news_catalog_manifest.json'), {
-    pageSize,
-    archiveLimit: ARCHIVE_LIMIT,
-    latestFeedLimit: LATEST_FEED_LIMIT,
-    archiveCount: archiveArticles.length,
-    latestCount: latestArticles.length,
-    lastUpdated: new Date().toISOString(),
-  });
 }
 
 function writePagedFeed(apiDir, baseName, articles, pageSize) {

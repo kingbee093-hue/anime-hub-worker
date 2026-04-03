@@ -354,14 +354,6 @@ async function fetchAnimeCatalog() {
   }
 
   writeJsonIfChanged(`${CONFIG.API_PATHS.CATALOG}/anime_lookup`, lookup);
-  writeJsonIfChanged(`${CONFIG.API_PATHS.CATALOG}/anime_manifest`, {
-    generatedAt: new Date().toISOString(),
-    totalItems: catalog.length,
-    pageSize: CATALOG_PAGE_SIZE,
-    totalPages,
-    sourceCount: CATALOG_SOURCES.length,
-  });
-
   for (const [genre, items] of genreBuckets.entries()) {
     const sortedItems = sortCatalog(
       Array.from(
@@ -372,10 +364,6 @@ async function fetchAnimeCatalog() {
   }
 
   writeJsonIfChanged(CONFIG.API_PATHS.STUDIOS, studiosCatalog);
-  writeJsonIfChanged(`${CONFIG.API_PATHS.STUDIOS}_manifest`, {
-    generatedAt: new Date().toISOString(),
-    totalItems: studiosCatalog.length,
-  });
   const searchManifest = {
     generatedAt: new Date().toISOString(),
     totalItems: searchIndex.length,
