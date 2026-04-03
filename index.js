@@ -7,6 +7,7 @@ require('dotenv').config();
 const fetchRecentEpisodes = require('./src/fetchers/fetchRecentEpisodes');
 const { fetchFeatured, fetchTrending, fetchTopRated, fetchPopularSeason, fetchUpcoming, fetchTopAiring } = require('./src/fetchers/animeSections');
 const fetchSchedule = require('./src/fetchers/fetchSchedule');
+const fetchAnimeCatalog = require('./src/fetchers/fetchAnimeCatalog');
 const fetchSearchIndex = require('./src/fetchers/fetchSearchIndex');
 const fetchByGenre = require('./src/fetchers/fetchByGenre');
 const fetchNews = require('./src/fetchers/fetchNews');
@@ -27,7 +28,8 @@ async function run() {
         if (target === 'topairing' || target === 'all') await fetchTopAiring();
         if (target === 'schedule' || target === 'all') await fetchSchedule();
         if (target === 'genres' || target === 'all') await fetchByGenre();
-        if (target === 'searchindex' || target === 'all') await fetchSearchIndex();
+        if (target === 'catalog' || target === 'all') await fetchAnimeCatalog();
+        if (target === 'searchindex') await fetchSearchIndex();
         if (target === 'news' || target === 'all') await fetchNews();
 
         console.log('\n🎉 All tasks completed successfully!');
