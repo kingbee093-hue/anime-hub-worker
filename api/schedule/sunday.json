@@ -116,7 +116,7 @@
         "name": "Dystopian",
         "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
         "category": "Setting-Time",
-        "rank": 66,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -169,6 +169,16 @@
         "rank": 53,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1403,
+        "name": "Class Struggle",
+        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
+        "category": "Theme-Drama",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -246,16 +256,6 @@
         "name": "Orphan",
         "description": "Prominently features a character that is an orphan.",
         "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1403,
-        "name": "Class Struggle",
-        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
-        "category": "Theme-Drama",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
@@ -3089,7 +3089,7 @@
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
+    "episodes": 12,
     "duration": 0,
     "genres": [
       "Action",
@@ -3111,6 +3111,16 @@
         "id": 220,
         "name": "Ghost",
         "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
         "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -3142,7 +3152,7 @@
     "isAdult": false,
     "hashtag": "#GHOSTCONCERT",
     "startDate": "2026-04-06",
-    "endDate": null,
+    "endDate": "2026-06-29",
     "mal_url": "https://myanimelist.net/anime/62852",
     "anilist_url": "https://anilist.co/anime/201090",
     "trailer": {
@@ -3371,6 +3381,91 @@
     },
     "nextEpisode": 1,
     "nextAiringAt": 1775405100
+  },
+  {
+    "animeId": 63310,
+    "anilistId": 206166,
+    "title": "Ingoku Danchi:Deviant's Apartment Complex",
+    "titleRomaji": "Ingoku Danchi",
+    "titleEnglish": "Ingoku Danchi:Deviant's Apartment Complex",
+    "titleNative": "インゴクダンチ",
+    "synonyms": [
+      "Perverts' Apartment Complex ",
+      "淫獄団地"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206166-DBCWm9mAcBT8.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206166-DBCWm9mAcBT8.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206166-DBCWm9mAcBT8.jpg",
+    "coverImageColor": "#aee4a1",
+    "bannerImage": "",
+    "synopsis": "It's a place where greedy wives live... A married woman's erotic suspense! This is the extreme suspense of a married woman by the author of Libido Hunter Takeru ! In this story, a group of perverted married women wearing the mysterious \"libido cross\" costume that amplifies human desires come under attack! Protect the apartment complex from the threat of perverted wives, new janitor Yoshida!",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "NOT_YET_RELEASED",
+    "season": "SPRING",
+    "seasonYear": 2026,
+    "seasonInt": 262,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Ecchi"
+    ],
+    "tags": [
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6733,
+        "name": "Elias",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6733"
+      }
+    ],
+    "studiosNames": [
+      "Elias"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 1534,
+    "trending": 1,
+    "favourites": 20,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#インゴクダンチ",
+    "startDate": "2026-04-06",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63310",
+    "anilist_url": "https://anilist.co/anime/206166",
+    "trailer": {
+      "id": "MkI3yiYeE2c",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=MkI3yiYeE2c"
+    },
+    "nextEpisode": 1,
+    "nextAiringAt": 1775405400
   },
   {
     "animeId": 63087,
