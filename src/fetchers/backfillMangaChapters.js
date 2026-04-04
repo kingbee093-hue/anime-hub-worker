@@ -143,8 +143,6 @@ async function backfillMangaChapters() {
     return;
   }
 
-  process.env.MANGA_FORCE_FULL_REFRESH = '1';
-
   try {
     for (const { item } of selected) {
       try {
@@ -187,7 +185,6 @@ async function backfillMangaChapters() {
     }
   } finally {
     delete process.env.MANGA_TARGET_IDS;
-    delete process.env.MANGA_FORCE_FULL_REFRESH;
   }
 
   writeProgress({ status: 'completed' });
