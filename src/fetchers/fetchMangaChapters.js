@@ -347,7 +347,7 @@ async function buildEnglishFallbackChapters(
   if (freshCached?.provider && freshCached?.providerId) {
     providerCandidates.push(freshCached);
   } else {
-    console.log(`Resolving English fallback provider for ${entry.title}...`);
+    console.log(`Resolving English fallback providers for ${entry.title}...`);
     const best = await resolveBestFallbackProvider(entry, cachedMapping);
     if (best) {
       providerCandidates.push(best);
@@ -370,7 +370,7 @@ async function buildEnglishFallbackChapters(
     }
 
     const provider = providers[mapping.provider];
-    console.log(`Checking English fallback ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
+    console.log(`Evaluating fallback candidate ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
 
     let info;
     try {
