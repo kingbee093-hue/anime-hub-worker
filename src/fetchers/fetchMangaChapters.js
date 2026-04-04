@@ -27,18 +27,24 @@ const MAX_NEW_RELEASING_TITLES_PER_RUN = Number(process.env.MANGA_MAX_NEW_RELEAS
 const MAX_NEW_LIBRARY_TITLES_PER_RUN = Number(process.env.MANGA_MAX_NEW_LIBRARY_TITLES || 8);
 const BOOTSTRAP_INDEX_TARGET = Number(process.env.MANGA_BOOTSTRAP_INDEX_TARGET || 50);
 const BOOTSTRAP_MULTIPLIER = Number(process.env.MANGA_BOOTSTRAP_MULTIPLIER || 2);
-const FORCE_FULL_REFRESH = process.env.MANGA_FORCE_FULL_REFRESH === '1';
 const ENABLE_ENGLISH_FALLBACK = process.env.MANGA_ENABLE_ENGLISH_FALLBACK !== '0';
-const TARGET_MANGA_IDS = new Set(
-  String(process.env.MANGA_TARGET_IDS || '')
-    .split(',')
-    .map((item) => item.trim())
-    .filter(Boolean),
-);
 const FALLBACK_MAPPING_TTL_HOURS = Number(process.env.MANGA_FALLBACK_MAPPING_TTL_HOURS || 24 * 14);
 const FALLBACK_PAGE_MAX_RETRIES = Number(process.env.MANGA_FALLBACK_PAGE_MAX_RETRIES || 3);
 const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_MS || 45000);
 const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
+
+function isForceFullRefresh() {
+  return process.env.MANGA_FORCE_FULL_REFRESH === '1';
+}
+
+function getTargetMangaIds() {
+  return new Set(
+    String(process.env.MANGA_TARGET_IDS || '')
+      .split(',')
+      .map((item) => item.trim())
+      .filter(Boolean),
+  );
+}
 
 function readJsonFile(filePath, fallback) {
   try {
@@ -119,8 +125,8 @@ function writeFallbackMappingMap(mappingMap) {
   });
 }
 
-function buildRefreshPlan(entries, manifestMap) {
-  if (FORCE_FULL_REFRESH) {
+function buildRefreshPlan(entries, manifestMap, forceFullRefresh) {
+  if (forceFullRefresh) {
     return {
       refreshSet: new Set(entries.map((entry) => entry.mangadexId)),
       releasingCount: entries.filter((entry) => isReleasingStatus(entry.status)).length,
@@ -596,6 +602,9 @@ async function fetchMangaChapters() {
   console.log('BUILDING: Manga Chapter Index');
   console.log('========================================');
 
+  const forceFullRefresh = isForceFullRefresh();
+  const targetMangaIds = getTargetMangaIds();
+
   const rawCatalogEntries = getCatalogEntries()
     .filter((item) => item && item.mangadexId)
     .map((item) => ({
@@ -615,11 +624,11 @@ async function fetchMangaChapters() {
     new Map(rawCatalogEntries.map((item) => [item.mangadexId, item])).values(),
   );
 
-  const catalogEntries = TARGET_MANGA_IDS.size > 0
+  const catalogEntries = targetMangaIds.size > 0
     ? rawCatalogEntries.filter((item) =>
-        TARGET_MANGA_IDS.has(String(item.mangadexId)) ||
-        TARGET_MANGA_IDS.has(String(item.mangaId)) ||
-        TARGET_MANGA_IDS.has(String(item.anilistId)),
+        targetMangaIds.has(String(item.mangadexId)) ||
+        targetMangaIds.has(String(item.mangaId)) ||
+        targetMangaIds.has(String(item.anilistId)),
       )
     : rawCatalogEntries;
 
@@ -628,12 +637,12 @@ async function fetchMangaChapters() {
   );
   const existingManifestMap = getManifestMap();
   const fallbackMappingMap = getFallbackMappingMap();
-  const refreshPlan = buildRefreshPlan(uniqueEntries, existingManifestMap);
-  const untouchedManifestItems = TARGET_MANGA_IDS.size > 0
+  const refreshPlan = buildRefreshPlan(uniqueEntries, existingManifestMap, forceFullRefresh);
+  const untouchedManifestItems = targetMangaIds.size > 0
     ? Array.from(existingManifestMap.values()).filter((item) =>
-        !TARGET_MANGA_IDS.has(String(item.mangadexId)) &&
-        !TARGET_MANGA_IDS.has(String(item.mangaId)) &&
-        !TARGET_MANGA_IDS.has(String(item.anilistId)),
+        !targetMangaIds.has(String(item.mangadexId)) &&
+        !targetMangaIds.has(String(item.mangaId)) &&
+        !targetMangaIds.has(String(item.anilistId)),
       )
     : [];
 
@@ -644,7 +653,7 @@ async function fetchMangaChapters() {
   };
 
   console.log(
-    `Manga chapter refresh plan -> new releasing: ${refreshPlan.newReleasingCount}, new library: ${refreshPlan.newLibraryCount}, stale releasing: ${refreshPlan.staleReleasingCount}, stale library: ${refreshPlan.staleLibraryCount}, skipped: ${refreshPlan.skippedCount}, forceFull: ${FORCE_FULL_REFRESH}`,
+    `Manga chapter refresh plan -> new releasing: ${refreshPlan.newReleasingCount}, new library: ${refreshPlan.newLibraryCount}, stale releasing: ${refreshPlan.staleReleasingCount}, stale library: ${refreshPlan.staleLibraryCount}, skipped: ${refreshPlan.skippedCount}, forceFull: ${forceFullRefresh}, targeted: ${targetMangaIds.size}`,
   );
 
   for (const entry of uniqueEntries) {
