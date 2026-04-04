@@ -1,5 +1,469 @@
 [
   {
+    "animeId": 53876,
+    "anilistId": 158871,
+    "title": "Pokémon Horizons: The Series",
+    "titleRomaji": "Pocket Monsters (2023)",
+    "titleEnglish": "Pokémon Horizons: The Series",
+    "titleNative": "ポケットモンスター (2023)",
+    "synonyms": [
+      "Pocket Monsters: Liko to Roy no Tabidachi (ポケットモンスター リコとロイの旅立ち)",
+      "Pocket Monsters: Terapagos no Kagayaki (ポケットモンスター テラパゴスのかがやき)",
+      "Pocket Monsters: Terastal Debut (ポケットモンスター テラスタルデビュー)",
+      "Pocket Monsters: Rayquaza Rising (ポケットモンスター レックウザ ライジング)",
+      "Pocket Monsters: Mega Voltage (ポケットモンスター メガボルテージ)",
+      "Pokémon (2023)",
+      "Pokémon Horizontes: A Série",
+      "Pokémon Horyzonty: Seria",
+      "Orizzonti Pokémon: La serie",
+      "Pokémon Horisonter: Serien",
+      "Pokémon: Taivaanranta - Sarja",
+      "Pokémon Yeni Ufuklar: Dizi"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158871-GBM9AMDfDRSu.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx158871-GBM9AMDfDRSu.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx158871-GBM9AMDfDRSu.jpg",
+    "coverImageColor": "#e4bb28",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/158871-jKfsW5HCGA3K.jpg",
+    "synopsis": "A new dream and adventure set throughout the entire Pokémon world unfolds in a brand new Pokémon-series following a girl named Liko and a boy named Roy.",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "RELEASING",
+    "season": "SPRING",
+    "seasonYear": 2023,
+    "seasonInt": 232,
+    "episodes": 0,
+    "duration": 24,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 1490,
+        "name": "Proxy Battle",
+        "description": "A proxy battle is a battle where humans use creatures/robots to do the fighting for them, either by commanding those creatures/robots or by simply evolving them/changing them into battle mode.",
+        "category": "Theme-Other",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1771,
+        "name": "Creature Taming",
+        "description": "Features the taming of animals, monsters, or other creatures.",
+        "category": "Theme-Other",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 80,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 355,
+        "name": "Aviation",
+        "description": "Regarding the flying or operation of aircraft.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 99,
+        "name": "Henshin",
+        "description": "Prominently features character or costume transformations which often grant special abilities.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 251,
+        "name": "Archery",
+        "description": "Centers around the sport of archery, or prominently features the use of archery in combat.",
+        "category": "Theme-Action",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 212,
+        "name": "Fishing",
+        "description": "Centers around the sport of fishing.",
+        "category": "Theme-Game-Sport",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1052,
+        "name": "Adoption",
+        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 812,
+        "name": "Butler",
+        "description": "Prominently features a character who is a butler.",
+        "category": "Cast-Traits",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 172,
+        "name": "Superhero",
+        "description": "Prominently features super-powered humans who aim to serve the greater good.",
+        "category": "Theme-Fantasy",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1616,
+        "name": "Snowscape",
+        "description": "Prominently or partially set in a snowy environment.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 26,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 265,
+        "name": "Musical Theater",
+        "description": "Features a performance that combines songs, spoken dialogue, acting, and dance.",
+        "category": "Theme-Arts-Music",
+        "rank": 24,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 13,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 28,
+        "name": "OLM",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/28"
+      }
+    ],
+    "studiosNames": [
+      "OLM"
+    ],
+    "rating": 7.3,
+    "averageScore": 73,
+    "meanScore": 74,
+    "popularity": 21817,
+    "trending": 8,
+    "favourites": 704,
+    "source": "VIDEO_GAME",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#アニポケ #anipoke #pokemonhorizons",
+    "startDate": "2023-04-14",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/53876",
+    "anilist_url": "https://anilist.co/anime/158871",
+    "trailer": {
+      "id": "_c_hMehCORQ",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=_c_hMehCORQ"
+    },
+    "nextEpisode": 133,
+    "nextAiringAt": 1775814900
+  },
+  {
+    "animeId": 61687,
+    "anilistId": 192808,
+    "title": "An Observation Log of My Fiancée Who Calls Herself a Villainess",
+    "titleRomaji": "Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku.",
+    "titleEnglish": "An Observation Log of My Fiancée Who Calls Herself a Villainess",
+    "titleNative": "自称悪役令嬢な婚約者の観察記録。",
+    "synonyms": [
+      "Observation Records of My Fiancée: The Misadventures of a Self-Proclaimed Villainess"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192808-tfrX4Gn2Y1Ye.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192808-tfrX4Gn2Y1Ye.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx192808-tfrX4Gn2Y1Ye.jpg",
+    "coverImageColor": "#5da1e4",
+    "bannerImage": "",
+    "synopsis": "Bertia is reincarnated into her favorite otome game—not as the heroine, but as the villainess engaged to the perfect Crown Prince Cecil! Fully aware that her role is to sabotage his future romance, she’s determined to bloom as a wicked flower and wither away according to the story. But no matter how hard she tries to scheme, her “evil” plans only make her more endearing! (Source: Crunchyroll) Note: Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku. was streamed 3 days in advance of the TV broadcast on Prime Video, and Crunchyroll beginning April 3, 2026. Regular broadcasting began on April 6, 2026.",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "RELEASING",
+    "season": "SPRING",
+    "seasonYear": 2026,
+    "seasonInt": 262,
+    "episodes": 0,
+    "duration": 24,
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 857,
+        "name": "Villainess",
+        "description": "Centers around or prominently features a villainous noble lady.",
+        "category": "Cast-Traits",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 196,
+        "name": "Ashi Productions",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/196"
+      }
+    ],
+    "studiosNames": [
+      "Ashi Productions"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 6629,
+    "trending": 0,
+    "favourites": 69,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#自称悪役令嬢",
+    "startDate": "2026-04-03",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/61687",
+    "anilist_url": "https://anilist.co/anime/192808",
+    "trailer": {
+      "id": "r6RkeRy4B4c",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=r6RkeRy4B4c"
+    },
+    "nextEpisode": 2,
+    "nextAiringAt": 1775826000
+  },
+  {
     "animeId": 56876,
     "anilistId": 170019,
     "title": "The Angel Next Door Spoils Me Rotten 2",
@@ -39,7 +503,7 @@
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 93,
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -75,6 +539,16 @@
         "isAdult": false
       },
       {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 1228,
         "name": "Primarily Teen Cast",
         "description": "Main cast is mostly composed of teen characters.",
@@ -85,21 +559,11 @@
         "isAdult": false
       },
       {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
-        "rank": 71,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
         "category": "Setting-Scene",
-        "rank": 65,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -122,7 +586,7 @@
     "meanScore": 0,
     "popularity": 38283,
     "trending": 13,
-    "favourites": 817,
+    "favourites": 957,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -137,8 +601,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=8Gtb1uhjPKs"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775223000
+    "nextEpisode": 2,
+    "nextAiringAt": 1775827800
   },
   {
     "animeId": 59970,
@@ -280,7 +744,7 @@
     "meanScore": 0,
     "popularity": 48919,
     "trending": 24,
-    "favourites": 870,
+    "favourites": 973,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -295,8 +759,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=ikxIrDr72iA"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775224800
+    "nextEpisode": 2,
+    "nextAiringAt": 1775829600
   },
   {
     "animeId": 62068,
@@ -337,11 +801,21 @@
         "isAdult": false
       },
       {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 517,
         "name": "Artificial Intelligence",
         "description": "Intelligent non-organic machines that work and react similarly to humans.",
         "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -351,17 +825,7 @@
         "name": "Post-Apocalyptic",
         "description": "Partly or completely set in a world or civilization after a global disaster.",
         "category": "Setting-Universe",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -371,7 +835,7 @@
         "name": "Snowscape",
         "description": "Prominently or partially set in a snowy environment.",
         "category": "Setting-Scene",
-        "rank": 20,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -381,17 +845,7 @@
         "name": "Kaiju",
         "description": "Prominently features giant monsters.",
         "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 191,
-        "name": "Aliens",
-        "description": "Prominently features extraterrestrial lifeforms.",
-        "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -401,7 +855,27 @@
         "name": "Robots",
         "description": "Prominently features humanoid machines.",
         "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -411,7 +885,7 @@
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
-        "rank": 20,
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -434,7 +908,7 @@
     "meanScore": 0,
     "popularity": 3515,
     "trending": 2,
-    "favourites": 24,
+    "favourites": 31,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -449,194 +923,46 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=0vTK8SWTgws"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775226600
+    "nextEpisode": 2,
+    "nextAiringAt": 1775831400
   },
   {
-    "animeId": 61687,
-    "anilistId": 192808,
-    "title": "An Observation Log of My Fiancée Who Calls Herself a Villainess",
-    "titleRomaji": "Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku.",
-    "titleEnglish": "An Observation Log of My Fiancée Who Calls Herself a Villainess",
-    "titleNative": "自称悪役令嬢な婚約者の観察記録。",
+    "animeId": 62981,
+    "anilistId": 202508,
+    "title": "The Drops of God",
+    "titleRomaji": "Kami no Shizuku",
+    "titleEnglish": "The Drops of God",
+    "titleNative": "神の雫",
     "synonyms": [
-      "Observation Records of My Fiancée: The Misadventures of a Self-Proclaimed Villainess"
+      "Les Gouttes de Dieu",
+      "신의물방울"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192808-tfrX4Gn2Y1Ye.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192808-tfrX4Gn2Y1Ye.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx192808-tfrX4Gn2Y1Ye.jpg",
-    "coverImageColor": "#5da1e4",
-    "bannerImage": "",
-    "synopsis": "Bertia is reincarnated into her favorite otome game—not as the heroine, but as the villainess engaged to the perfect Crown Prince Cecil! Fully aware that her role is to sabotage his future romance, she’s determined to bloom as a wicked flower and wither away according to the story. But no matter how hard she tries to scheme, her “evil” plans only make her more endearing! (Source: Crunchyroll) Note: Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku. was streamed 3 days in advance of the TV broadcast on Prime Video, and Crunchyroll beginning April 3, 2026. Regular broadcasting began on April 6, 2026.",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202508-dk6LEyevJYUY.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202508-dk6LEyevJYUY.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202508-dk6LEyevJYUY.jpg",
+    "coverImageColor": "#e44386",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202508-K276v0truxE0.jpg",
+    "synopsis": "World-renowned wine critic Yutaka Kanzaki has passed away, leaving behind a wine collection worth over 12 billion yen. His will states that his collection will be given to the one who can identify the origin and year of twelve wines he’s chosen, the “Twelve Apostles”, and one that’s superior even to them, “The Drops of God”. Competing for the prize are Yutaka’s son, Shizuku, who received a world-class education in wine but rebelled against his father and has never drank a drop, and Issei Tomine, a young charismatic wine critic whom Yutaka had recently adopted as his son. What is wine? What is a parent and a child? What is life? The complex and fragrant battle surrounding the legendary ”Drops of God” is about to begin… (Source: Pony Canyon)",
     "type": "ANIME",
-    "format": "ONA",
-    "status": "RELEASING",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 24,
+    "duration": 0,
     "genres": [
-      "Comedy",
-      "Fantasy",
-      "Romance",
+      "Drama",
+      "Mystery",
       "Slice of Life"
     ],
     "tags": [
       {
-        "id": 857,
-        "name": "Villainess",
-        "description": "Centers around or prominently features a villainous noble lady.",
-        "category": "Cast-Traits",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 53,
-        "name": "Shoujo",
-        "description": "Target demographic is teenage and young adult females.",
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
         "category": "Demographic",
         "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 196,
-        "name": "Ashi Productions",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/196"
-      }
-    ],
-    "studiosNames": [
-      "Ashi Productions"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 6629,
-    "trending": 0,
-    "favourites": 57,
-    "source": "LIGHT_NOVEL",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#自称悪役令嬢",
-    "startDate": "2026-04-03",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/61687",
-    "anilist_url": "https://anilist.co/anime/192808",
-    "trailer": {
-      "id": "r6RkeRy4B4c",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=r6RkeRy4B4c"
-    },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775227200
-  },
-  {
-    "animeId": 59229,
-    "anilistId": 179062,
-    "title": "Fire Force Season 3 Part 2",
-    "titleRomaji": "Enen no Shouboutai: San no Shou Part 2",
-    "titleEnglish": "Fire Force Season 3 Part 2",
-    "titleNative": "炎炎ノ消防隊 参ノ章 第2クール",
-    "synonyms": [
-      "Enen no Shouboutai 3rd Season Part 2",
-      "หน่วยผจญคนไฟลุก ภาค 3"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179062-pbzYE1miZq61.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179062-pbzYE1miZq61.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx179062-pbzYE1miZq61.png",
-    "coverImageColor": "#febb28",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/179062-ZnxW4uWEsV3H.jpg",
-    "synopsis": "The second cour of Enen no Shouboutai: San no Shou . As chaos spreads, Shinra and Company 8 fight to stop a final, world-ending blaze. (Source: Crunchyroll News)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "FINISHED",
-    "season": "WINTER",
-    "seasonYear": 2026,
-    "seasonInt": 261,
-    "episodes": 13,
-    "duration": 24,
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "tags": [
-      {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 100,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 613,
-        "name": "Firefighters",
-        "description": "Centered around the life and activities of rescuers specialised in firefighting.",
-        "category": "Theme-Other-Organisations",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1091,
-        "name": "Religion",
-        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
-        "category": "Theme-Other",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -646,7 +972,111 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 79,
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 41,
+        "name": "Satelight",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/41"
+      }
+    ],
+    "studiosNames": [
+      "Satelight"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 1990,
+    "trending": 2,
+    "favourites": 6,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#神の雫 #TheDropsofGod",
+    "startDate": "2026-04-10",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/62981",
+    "anilist_url": "https://anilist.co/anime/202508",
+    "trailer": {
+      "id": "Oz5EkYVJbBc",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=Oz5EkYVJbBc"
+    },
+    "nextEpisode": 1,
+    "nextAiringAt": 1775831400
+  },
+  {
+    "animeId": 61186,
+    "anilistId": 187869,
+    "title": "Botan Kamiina Fully Blossoms When Drunk",
+    "titleRomaji": "Kamiina Botan, Yoeru Sugata wa Yuri no Hana",
+    "titleEnglish": "Botan Kamiina Fully Blossoms When Drunk",
+    "titleNative": "上伊那ぼたん、酔へる姿は百合の花",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187869-LUn3dyTzuKUq.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187869-LUn3dyTzuKUq.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187869-LUn3dyTzuKUq.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "Kamiina Botan is a 20-year-old college student. At the welcome party for the dorm she was assigned to, the dorm leader Ibuki gives her a highball to drink and she becomes tipsy, leading to her involvement with Ibuki from now on... A tipsy teasing girl's comedy!",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "SPRING",
+    "seasonYear": 2026,
+    "seasonInt": 262,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -656,36 +1086,46 @@
         "name": "Primarily Adult Cast",
         "description": "Main cast is mostly composed of characters above a high school age.",
         "category": "Cast-Main Cast",
-        "rank": 79,
+        "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 614,
-        "name": "Nun",
-        "description": "Prominently features a character who is a nun.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
+        "id": 404,
+        "name": "College",
+        "description": "Partly or completely set in a college or university.",
         "category": "Setting-Scene",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 92,
+        "name": "Cute Girls Doing Cute Things",
+        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
+        "category": "Theme-Slice of Life",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -702,140 +1142,204 @@
         "isAdult": false
       },
       {
-        "id": 1742,
-        "name": "Mixed Media",
-        "description": "Features a combination of different media and animation techniques. Often seen with puppetry, textiles, live action footage, stop motion, and more. This does not include works with normal usage of CGI in their production.",
-        "category": "Technical",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 636,
-        "name": "Cosmic Horror",
-        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
         "category": "Theme-Other",
         "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 76,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 276,
-        "name": "Kaiju",
-        "description": "Prominently features giant monsters.",
-        "category": "Theme-Fantasy",
+        "id": 161,
+        "name": "Bar",
+        "description": "Partly or completely set in a bar.",
+        "category": "Setting-Scene",
         "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 157,
-        "name": "Guns",
-        "description": "Prominently features the use of guns in combat.",
-        "category": "Theme-Action",
-        "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 586,
-        "name": "Cult",
-        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
-        "category": "Theme-Other-Organisations",
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
         "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 251,
-        "name": "Archery",
-        "description": "Centers around the sport of archery, or prominently features the use of archery in combat.",
-        "category": "Theme-Action",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 113,
-        "name": "Nekomimi",
-        "description": "Humanoid characters with cat-like features such as cat ears and a tail.",
-        "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 144,
-        "name": "Meta",
-        "description": "Features fourth wall-breaking references to itself or genre tropes.",
-        "category": "Theme-Other",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       }
     ],
     "studios": [
       {
-        "id": 287,
-        "name": "David Production",
+        "id": 7505,
+        "name": "Soigne",
         "isMain": true,
         "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/287"
+        "siteUrl": "https://anilist.co/studio/7505"
       }
     ],
     "studiosNames": [
-      "David Production"
+      "Soigne"
     ],
-    "rating": 8,
-    "averageScore": 80,
-    "meanScore": 80,
-    "popularity": 64949,
-    "trending": 57,
-    "favourites": 1230,
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 8346,
+    "trending": 3,
+    "favourites": 46,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
     "isAdult": false,
-    "hashtag": "#炎炎ノ消防隊",
-    "startDate": "2026-01-10",
-    "endDate": "2026-04-04",
-    "mal_url": "https://myanimelist.net/anime/59229",
-    "anilist_url": "https://anilist.co/anime/179062",
+    "hashtag": "#上伊那ぼたん",
+    "startDate": "2026-04-11",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/61186",
+    "anilist_url": "https://anilist.co/anime/187869",
     "trailer": {
-      "id": "voLZJvdwUEE",
+      "id": "XX90FklAWsc",
       "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=voLZJvdwUEE"
+      "url": "https://www.youtube.com/watch?v=XX90FklAWsc"
     },
-    "nextEpisode": 13,
-    "nextAiringAt": 1775235180
+    "nextEpisode": 1,
+    "nextAiringAt": 1775833200
+  },
+  {
+    "animeId": 56646,
+    "anilistId": 169228,
+    "title": "FIST OF THE NORTH STAR: HOKUTO NO KEN",
+    "titleRomaji": "Hokuto no Ken: FIST OF THE NORTH STAR",
+    "titleEnglish": "FIST OF THE NORTH STAR: HOKUTO NO KEN",
+    "titleNative": "北斗の拳 -FIST OF THE NORTH STAR-",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169228-4MsNkVygvkIs.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169228-4MsNkVygvkIs.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169228-4MsNkVygvkIs.jpg",
+    "coverImageColor": "#e4bb50",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169228-L0wA8BGp54fa.jpg",
+    "synopsis": "In the year 199X, the world is engulfed in a nuclear inferno! The seas have vanished. The earth lies in ruins. It seems all life has been wiped out...but humanity has not perished! Across the scorched and broken land, survivors cling to hope, desperately searching for food and water. However, their hopes are trampled underfoot by violence. Might makes right in this world, and the weak are crushed without mercy. From the depths of that despair, a lone man with seven scars on his chest emerges. His name is Kenshiro, heir to the legendary assassination art Hokuto Shinken. As he roams the wasteland in pursuit of his sworn enemy Shin, who stole his fiancée Yuria, Kenshiro answers the cries of the oppressed, becoming a beacon of hope in a world of despair. Standing in his path are brutal survivors of the apocalypse, their ambitions twisted by power and greed. In a world where the weak are prey and prayers go unheard, Kenshiro forges a path with his iron fists! (Source: Official Website)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "SPRING",
+    "seasonYear": 2026,
+    "seasonInt": 262,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 30,
+        "name": "Martial Arts",
+        "description": "Centers around the use of traditional hand-to-hand combat.",
+        "category": "Theme-Action",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 73,
+        "name": "TMS Entertainment",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/73"
+      }
+    ],
+    "studiosNames": [
+      "TMS Entertainment"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 3549,
+    "trending": 0,
+    "favourites": 33,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#北斗の拳アニメ #FISTOFTHENORTHSTAR ",
+    "startDate": "2026-04-11",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/56646",
+    "anilist_url": "https://anilist.co/anime/169228",
+    "trailer": {
+      "id": "Gux_dYHDMK4",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=Gux_dYHDMK4"
+    },
+    "nextEpisode": 1,
+    "nextAiringAt": 1775836800
   },
   {
     "animeId": 50418,
@@ -984,8 +1488,8 @@
     "mal_url": "https://myanimelist.net/anime/50418",
     "anilist_url": "https://anilist.co/anime/142274",
     "trailer": null,
-    "nextEpisode": 210,
-    "nextAiringAt": 1775255400
+    "nextEpisode": 211,
+    "nextAiringAt": 1775860200
   },
   {
     "animeId": 62649,
@@ -1072,7 +1576,7 @@
     "mal_url": "https://myanimelist.net/anime/62649",
     "anilist_url": "https://anilist.co/anime/203296",
     "trailer": null,
-    "nextEpisode": 11,
-    "nextAiringAt": 1775257200
+    "nextEpisode": 12,
+    "nextAiringAt": 1775862000
   }
 ]
