@@ -90,7 +90,7 @@ async function backfillMangaChapters() {
     ? selectedPool
     : selectedPool.slice(0, CHAPTER_BATCH_SIZE);
 
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/chapters_progress`, {
+  const baseProgress = {
     updatedAt: new Date().toISOString(),
     universeTotal: universeItems.length,
     indexedTitles: chapterManifest.items?.length || 0,
@@ -112,48 +112,85 @@ async function backfillMangaChapters() {
       mangadexId: item.mangadexId,
       title: item.title,
     })),
-  });
+  };
+
+  const completed = [];
+  const failed = [];
+
+  function writeProgress(extra = {}) {
+    const refreshedManifest = getChapterManifest();
+    const refreshedMap = new Map((refreshedManifest.items || []).map((item) => [item.mangadexId, item]));
+    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/chapters_progress`, {
+      ...baseProgress,
+      ...extra,
+      updatedAt: new Date().toISOString(),
+      indexedTitles: refreshedManifest.items?.length || 0,
+      pendingTitles: candidates.filter(({ item }) => {
+        const manifestItem = refreshedMap.get(item.mangadexId);
+        return scoreCandidate(item, manifestItem) >= 0;
+      }).length,
+      completedCount: completed.length,
+      failedCount: failed.length,
+      completed,
+      failed,
+    });
+  }
+
+  writeProgress();
 
   if (selected.length === 0) {
     console.log('No manga chapter backfill candidates need work right now.');
     return;
   }
 
-  process.env.MANGA_TARGET_IDS = selected.map(({ item }) => item.mangadexId).join(',');
   process.env.MANGA_FORCE_FULL_REFRESH = '1';
 
-  await fetchMangaChapters();
+  try {
+    for (const { item } of selected) {
+      try {
+        process.env.MANGA_TARGET_IDS = item.mangadexId;
+        await fetchMangaChapters();
+        const refreshedManifest = getChapterManifest();
+        const refreshedMap = new Map((refreshedManifest.items || []).map((entry) => [entry.mangadexId, entry]));
+        const manifestItem = refreshedMap.get(item.mangadexId) || {};
+        completed.push({
+          mangadexId: item.mangadexId,
+          title: item.title,
+          englishCount: Number(manifestItem.counts?.en || 0),
+          arabicCount: Number(manifestItem.counts?.ar || 0),
+          fallback: manifestItem.englishFallbackProvider || null,
+          updatedAt: manifestItem.updatedAt || null,
+        });
+        writeProgress({
+          currentItem: {
+            mangadexId: item.mangadexId,
+            title: item.title,
+            status: 'completed',
+          },
+        });
+      } catch (error) {
+        failed.push({
+          mangadexId: item.mangadexId,
+          title: item.title,
+          error: error.message,
+        });
+        writeProgress({
+          currentItem: {
+            mangadexId: item.mangadexId,
+            title: item.title,
+            status: 'failed',
+            error: error.message,
+          },
+        });
+        throw error;
+      }
+    }
+  } finally {
+    delete process.env.MANGA_TARGET_IDS;
+    delete process.env.MANGA_FORCE_FULL_REFRESH;
+  }
 
-  const refreshedManifest = getChapterManifest();
-  const refreshedMap = new Map((refreshedManifest.items || []).map((item) => [item.mangadexId, item]));
-
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/chapters_progress`, {
-    updatedAt: new Date().toISOString(),
-    universeTotal: universeItems.length,
-    indexedTitles: refreshedManifest.items?.length || 0,
-    pendingTitles: candidates.filter(({ item }) => {
-      const manifestItem = refreshedMap.get(item.mangadexId);
-      return scoreCandidate(item, manifestItem) >= 0;
-    }).length,
-    selectedCount: selected.length,
-    batchSize: CHAPTER_BATCH_SIZE,
-    forceAll: FORCE_ALL,
-    targetIds: Array.from(TARGET_IDS),
-    completed: selected.map(({ item }) => {
-      const manifestItem = refreshedMap.get(item.mangadexId) || {};
-      return {
-        mangadexId: item.mangadexId,
-        title: item.title,
-        englishCount: Number(manifestItem.counts?.en || 0),
-        arabicCount: Number(manifestItem.counts?.ar || 0),
-        fallback: manifestItem.englishFallbackProvider || null,
-        updatedAt: manifestItem.updatedAt || null,
-      };
-    }),
-  });
-
-  delete process.env.MANGA_TARGET_IDS;
-  delete process.env.MANGA_FORCE_FULL_REFRESH;
+  writeProgress({ status: 'completed' });
   console.log(`Chapter backfill completed for ${selected.length} manga titles.`);
 }
 

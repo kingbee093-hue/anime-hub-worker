@@ -42,6 +42,14 @@ function buildManifestKey(mangadexId, chapterId) {
   return `${mangadexId}|${chapterId}`;
 }
 
+function sortManifestItems(items) {
+  return items.sort((a, b) => {
+    const titleDelta = String(a.title || '').localeCompare(String(b.title || ''));
+    if (titleDelta !== 0) return titleDelta;
+    return String(b.chapter || '').localeCompare(String(a.chapter || ''), undefined, { numeric: true });
+  });
+}
+
 function getReadableChapters(chapterIndex, languages) {
   const result = [];
   for (const language of languages) {
@@ -130,25 +138,49 @@ async function backfillMangaPages() {
     }
   }
 
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/pages_progress`, {
-    updatedAt: new Date().toISOString(),
-    universeTotal: universeItems.length,
-    warmedChapters: pageItemMap.size,
-    selectedCount: candidates.length,
-    batchSize: PAGE_BATCH_SIZE,
-    perTitleLimit: PAGE_PER_TITLE_LIMIT,
-    languages: PAGE_LANGUAGES,
-    targetIds: Array.from(PAGE_TARGET_IDS),
-    selected: candidates.map(({ manga, chapter }) => ({
-      mangadexId: manga.mangadexId,
-      title: manga.title,
-      chapterId: chapter.id,
-      chapter: chapter.chapter,
-      language: chapter.language,
-      sourceType: chapter.sourceType,
-      provider: chapter.provider || null,
-    })),
-  });
+  const completed = [];
+  const failed = [];
+
+  function writePageManifest() {
+    const items = sortManifestItems(Array.from(pageItemMap.values()));
+    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_PAGES}/manifest`, {
+      updatedAt: new Date().toISOString(),
+      totalChapters: items.length,
+      languages: PAGE_LANGUAGES,
+      items,
+    });
+    return items;
+  }
+
+  function writeProgress(extra = {}) {
+    const items = Array.from(pageItemMap.values());
+    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/pages_progress`, {
+      updatedAt: new Date().toISOString(),
+      universeTotal: universeItems.length,
+      warmedChapters: items.length,
+      selectedCount: candidates.length,
+      batchSize: PAGE_BATCH_SIZE,
+      perTitleLimit: PAGE_PER_TITLE_LIMIT,
+      languages: PAGE_LANGUAGES,
+      targetIds: Array.from(PAGE_TARGET_IDS),
+      completedCount: completed.length,
+      failedCount: failed.length,
+      completed,
+      failed,
+      selected: candidates.map(({ manga, chapter }) => ({
+        mangadexId: manga.mangadexId,
+        title: manga.title,
+        chapterId: chapter.id,
+        chapter: chapter.chapter,
+        language: chapter.language,
+        sourceType: chapter.sourceType,
+        provider: chapter.provider || null,
+      })),
+      ...extra,
+    });
+  }
+
+  writeProgress();
 
   if (candidates.length === 0) {
     console.log('No manga page manifest candidates need warmup right now.');
@@ -166,11 +198,45 @@ async function backfillMangaPages() {
         imageHeaders = resolved.imageHeaders;
       } catch (error) {
         console.error(`Failed MangaDex page warmup for ${manga.title} ch ${chapter.chapter}: ${error.message}`);
+        failed.push({
+          mangadexId: manga.mangadexId,
+          title: manga.title,
+          chapterId: chapter.id,
+          chapter: chapter.chapter,
+          error: error.message,
+        });
+        writeProgress({
+          currentItem: {
+            mangadexId: manga.mangadexId,
+            title: manga.title,
+            chapterId: chapter.id,
+            chapter: chapter.chapter,
+            status: 'failed',
+            error: error.message,
+          },
+        });
         continue;
       }
     }
 
     if (pageUrls.length === 0) {
+      failed.push({
+        mangadexId: manga.mangadexId,
+        title: manga.title,
+        chapterId: chapter.id,
+        chapter: chapter.chapter,
+        error: 'No page URLs resolved',
+      });
+      writeProgress({
+        currentItem: {
+          mangadexId: manga.mangadexId,
+          title: manga.title,
+          chapterId: chapter.id,
+          chapter: chapter.chapter,
+          status: 'skipped',
+          error: 'No page URLs resolved',
+        },
+      });
       continue;
     }
 
@@ -207,31 +273,7 @@ async function backfillMangaPages() {
       path: `${CONFIG.API_PATHS.MANGA_PAGES}/${manga.mangadexId}/${fileId}.json`,
       updatedAt: pageData.updatedAt,
     });
-  }
-
-  const items = Array.from(pageItemMap.values()).sort((a, b) => {
-    const titleDelta = String(a.title || '').localeCompare(String(b.title || ''));
-    if (titleDelta !== 0) return titleDelta;
-    return String(b.chapter || '').localeCompare(String(a.chapter || ''), undefined, { numeric: true });
-  });
-
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_PAGES}/manifest`, {
-    updatedAt: new Date().toISOString(),
-    totalChapters: items.length,
-    languages: PAGE_LANGUAGES,
-    items,
-  });
-
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/pages_progress`, {
-    updatedAt: new Date().toISOString(),
-    universeTotal: universeItems.length,
-    warmedChapters: items.length,
-    selectedCount: candidates.length,
-    batchSize: PAGE_BATCH_SIZE,
-    perTitleLimit: PAGE_PER_TITLE_LIMIT,
-    languages: PAGE_LANGUAGES,
-    targetIds: Array.from(PAGE_TARGET_IDS),
-    completed: candidates.map(({ manga, chapter }) => ({
+    completed.push({
       mangadexId: manga.mangadexId,
       title: manga.title,
       chapterId: chapter.id,
@@ -239,8 +281,22 @@ async function backfillMangaPages() {
       language: chapter.language,
       sourceType: chapter.sourceType,
       provider: chapter.provider || null,
-    })),
-  });
+      pageCount: pageUrls.length,
+    });
+    writePageManifest();
+    writeProgress({
+      currentItem: {
+        mangadexId: manga.mangadexId,
+        title: manga.title,
+        chapterId: chapter.id,
+        chapter: chapter.chapter,
+        status: 'completed',
+      },
+    });
+  }
+
+  writePageManifest();
+  writeProgress({ status: 'completed' });
 
   console.log(`Page warmup completed for ${candidates.length} chapters.`);
 }
