@@ -41,6 +41,7 @@ jobs:
       - name: Run Manga Builder
         shell: bash
         env:
+          MANGA_SKIP_CHAPTER_INDEX: '1'
           MANGA_RELEASING_REFRESH_HOURS: '12'
           MANGA_LIBRARY_REFRESH_HOURS: '168'
           MANGA_MAX_RELEASING_TITLES: '80'

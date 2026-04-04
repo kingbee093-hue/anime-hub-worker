@@ -17,6 +17,7 @@ const fetchNews = require('./scraper');
 async function run() {
     const args = process.argv.slice(2);
     const target = args[0] ? args[0].toLowerCase() : 'all';
+    const skipMangaChapters = process.env.MANGA_SKIP_CHAPTER_INDEX === '1';
 
     console.log(`🚀 Starting Anime Hub Worker... Target: [${target.toUpperCase()}]`);
 
@@ -33,9 +34,19 @@ async function run() {
         if (target === 'catalog' || target === 'searchindex' || target === 'all') await fetchAnimeCatalog();
         if (target === 'manga' || target === 'all') {
             await fetchMangaCatalog();
-            await fetchMangaChapters();
+            if (skipMangaChapters) {
+                console.log('Skipping MangaDex chapter index build (MANGA_SKIP_CHAPTER_INDEX=1).');
+            } else {
+                await fetchMangaChapters();
+            }
         }
-        if (target === 'mangachapters' || target === 'all') await fetchMangaChapters();
+        if (target === 'mangachapters' || target === 'all') {
+            if (skipMangaChapters && target !== 'mangachapters') {
+                console.log('Skipping MangaDex chapter index build (MANGA_SKIP_CHAPTER_INDEX=1).');
+            } else {
+                await fetchMangaChapters();
+            }
+        }
         if (target === 'characters' || target === 'all') await fetchCharacterCatalog();
         if (target === 'news' || target === 'all') await fetchNews();
 
