@@ -10,6 +10,11 @@ const MANGADEX_API = 'https://api.mangadex.org';
 const CHAPTER_LANGUAGES = ['en', 'ar', 'ja'];
 const CHAPTER_PAGE_SIZE = 500;
 const CHAPTER_DELAY_MS = 250;
+const RELEASING_REFRESH_HOURS = Number(process.env.MANGA_RELEASING_REFRESH_HOURS || 12);
+const LIBRARY_REFRESH_HOURS = Number(process.env.MANGA_LIBRARY_REFRESH_HOURS || 24 * 7);
+const MAX_RELEASING_TITLES_PER_RUN = Number(process.env.MANGA_MAX_RELEASING_TITLES || 80);
+const MAX_LIBRARY_TITLES_PER_RUN = Number(process.env.MANGA_MAX_LIBRARY_TITLES || 40);
+const FORCE_FULL_REFRESH = process.env.MANGA_FORCE_FULL_REFRESH === '1';
 
 function readJsonFile(filePath, fallback) {
   try {
@@ -41,6 +46,88 @@ function getCatalogEntries() {
     const items = readJsonFile(fullPath, []);
     return Array.isArray(items) ? items : [];
   });
+}
+
+function isReleasingStatus(status) {
+  return String(status || '').toUpperCase() === 'RELEASING';
+}
+
+function getHoursSince(isoDate) {
+  if (!isoDate) return Number.POSITIVE_INFINITY;
+  const time = new Date(isoDate).getTime();
+  if (Number.isNaN(time)) return Number.POSITIVE_INFINITY;
+  return (Date.now() - time) / 3600000;
+}
+
+function getManifestMap() {
+  const manifestPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
+  const manifest = readJsonFile(manifestPath, {});
+  const items = Array.isArray(manifest.items) ? manifest.items : [];
+  return new Map(items.map((item) => [item.mangadexId, item]));
+}
+
+function buildRefreshPlan(entries, manifestMap) {
+  if (FORCE_FULL_REFRESH) {
+    return {
+      refreshSet: new Set(entries.map((entry) => entry.mangadexId)),
+      releasingCount: entries.filter((entry) => isReleasingStatus(entry.status)).length,
+      libraryCount: entries.filter((entry) => !isReleasingStatus(entry.status)).length,
+      skippedCount: 0,
+    };
+  }
+
+  const releasingCandidates = [];
+  const libraryCandidates = [];
+
+  for (const entry of entries) {
+    const existing = manifestMap.get(entry.mangadexId);
+    if (!existing) {
+      if (isReleasingStatus(entry.status)) {
+        releasingCandidates.push({ entry, staleHours: Number.POSITIVE_INFINITY });
+      } else {
+        libraryCandidates.push({ entry, staleHours: Number.POSITIVE_INFINITY });
+      }
+      continue;
+    }
+
+    const staleHours = getHoursSince(existing.updatedAt);
+    if (isReleasingStatus(entry.status)) {
+      if (staleHours >= RELEASING_REFRESH_HOURS) {
+        releasingCandidates.push({ entry, staleHours });
+      }
+    } else if (staleHours >= LIBRARY_REFRESH_HOURS) {
+      libraryCandidates.push({ entry, staleHours });
+    }
+  }
+
+  releasingCandidates.sort((a, b) => {
+    const staleDelta = b.staleHours - a.staleHours;
+    if (staleDelta !== 0) return staleDelta;
+    return Number(b.entry.popularity || 0) - Number(a.entry.popularity || 0);
+  });
+
+  libraryCandidates.sort((a, b) => {
+    const staleDelta = b.staleHours - a.staleHours;
+    if (staleDelta !== 0) return staleDelta;
+    return Number(b.entry.popularity || 0) - Number(a.entry.popularity || 0);
+  });
+
+  const selectedReleasing = releasingCandidates
+    .slice(0, MAX_RELEASING_TITLES_PER_RUN)
+    .map((item) => item.entry);
+  const selectedLibrary = libraryCandidates
+    .slice(0, MAX_LIBRARY_TITLES_PER_RUN)
+    .map((item) => item.entry);
+
+  return {
+    refreshSet: new Set(
+      [...selectedReleasing, ...selectedLibrary].map((entry) => entry.mangadexId),
+    ),
+    releasingCount: selectedReleasing.length,
+    libraryCount: selectedLibrary.length,
+    skippedCount:
+      entries.length - selectedReleasing.length - selectedLibrary.length,
+  };
 }
 
 function normalizeChapterItem(raw, scanlationGroup) {
@@ -161,11 +248,15 @@ async function fetchMangaChapters() {
       anilistId: item.anilistId || item.mangaId,
       title: item.title || '',
       mangadexId: item.mangadexId,
+      status: item.status || '',
+      popularity: Number(item.popularity || 0),
     }));
 
   const uniqueEntries = Array.from(
     new Map(catalogEntries.map((item) => [item.mangadexId, item])).values(),
   );
+  const existingManifestMap = getManifestMap();
+  const refreshPlan = buildRefreshPlan(uniqueEntries, existingManifestMap);
 
   const manifest = {
     generatedAt: new Date().toISOString(),
@@ -173,8 +264,26 @@ async function fetchMangaChapters() {
     items: [],
   };
 
+  console.log(
+    `Manga chapter refresh plan -> releasing: ${refreshPlan.releasingCount}, library: ${refreshPlan.libraryCount}, skipped: ${refreshPlan.skippedCount}, forceFull: ${FORCE_FULL_REFRESH}`,
+  );
+
   for (const entry of uniqueEntries) {
-    console.log(`Fetching chapters for ${entry.title} (${entry.mangadexId})`);
+    if (!refreshPlan.refreshSet.has(entry.mangadexId)) {
+      const existing = existingManifestMap.get(entry.mangadexId);
+      if (existing) {
+        manifest.items.push({
+          ...existing,
+          mangaId: entry.mangaId,
+          anilistId: entry.anilistId,
+          title: entry.title,
+          mangadexId: entry.mangadexId,
+        });
+      }
+      continue;
+    }
+
+    console.log(`Refreshing chapters for ${entry.title} (${entry.mangadexId})`);
     const languages = {};
 
     for (const language of CHAPTER_LANGUAGES) {
@@ -209,6 +318,7 @@ async function fetchMangaChapters() {
       anilistId: entry.anilistId,
       mangadexId: entry.mangadexId,
       title: entry.title,
+      updatedAt: chapterIndex.updatedAt,
       availableLanguages,
       counts: chapterIndex.counts,
     });

@@ -2,6 +2,12 @@ name: AnimeHub - Manga Catalog
 
 on:
   workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: Force a full MangaDex chapter refresh
+        required: false
+        default: false
+        type: boolean
   repository_dispatch:
     types: [run-manga, run-all]
 
@@ -10,7 +16,7 @@ permissions:
 
 concurrency:
   group: fetch-manga
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   fetch_manga:
@@ -27,12 +33,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install Dependencies
         run: npm ci
 
       - name: Run Manga Builder
-        run: npm run fetch:manga
+        shell: bash
+        env:
+          MANGA_RELEASING_REFRESH_HOURS: '12'
+          MANGA_LIBRARY_REFRESH_HOURS: '168'
+          MANGA_MAX_RELEASING_TITLES: '80'
+          MANGA_MAX_LIBRARY_TITLES: '40'
+          FORCE_REFRESH_INPUT: ${{ github.event.inputs.full_refresh || 'false' }}
+        run: |
+          if [ "$FORCE_REFRESH_INPUT" = "true" ]; then
+            export MANGA_FORCE_FULL_REFRESH=1
+            echo "Running full manga refresh."
+          else
+            echo "Running incremental manga refresh."
+          fi
+          npm run fetch:manga
 
       - name: Commit API updates
         run: |
