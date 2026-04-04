@@ -362,7 +362,7 @@
     "meanScore": 73,
     "popularity": 783,
     "trending": 0,
-    "favourites": 15,
+    "favourites": 17,
     "source": "MANGA",
     "countryOfOrigin": "CN",
     "isLicensed": true,
@@ -632,7 +632,7 @@
     "rating": 5.7,
     "averageScore": 57,
     "meanScore": 61,
-    "popularity": 757,
+    "popularity": 758,
     "trending": 0,
     "favourites": 6,
     "source": "MANGA",
@@ -736,6 +736,64 @@
     }
   },
   {
+    "animeId": 62246,
+    "anilistId": 198749,
+    "title": "The Outcast Season 6",
+    "titleRomaji": "Yi Ren Zhi Xia 6",
+    "titleEnglish": "The Outcast Season 6",
+    "titleNative": "一人之下 6",
+    "synonyms": [
+      "Hitori No Shita: The Outcast 6th Season"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198749-hb8hWniEYzYy.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198749-hb8hWniEYzYy.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b198749-hb8hWniEYzYy.jpg",
+    "coverImageColor": "#f1930d",
+    "bannerImage": "",
+    "synopsis": "The sixth season of Yi Ren Zhi Xia .",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "RELEASING",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 26,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Supernatural"
+    ],
+    "tags": [],
+    "studios": [
+      {
+        "id": 6547,
+        "name": "Qiyuan Yinghua",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6547"
+      }
+    ],
+    "studiosNames": [
+      "Qiyuan Yinghua"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 67,
+    "popularity": 745,
+    "trending": 0,
+    "favourites": 9,
+    "source": "MANGA",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-01-02",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/62246",
+    "anilist_url": "https://anilist.co/anime/198749",
+    "trailer": null
+  },
+  {
     "animeId": 59787,
     "anilistId": 180894,
     "title": "Romeria Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
@@ -816,64 +874,6 @@
     "trailer": null
   },
   {
-    "animeId": 62246,
-    "anilistId": 198749,
-    "title": "The Outcast Season 6",
-    "titleRomaji": "Yi Ren Zhi Xia 6",
-    "titleEnglish": "The Outcast Season 6",
-    "titleNative": "一人之下 6",
-    "synonyms": [
-      "Hitori No Shita: The Outcast 6th Season"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198749-hb8hWniEYzYy.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198749-hb8hWniEYzYy.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b198749-hb8hWniEYzYy.jpg",
-    "coverImageColor": "#f1930d",
-    "bannerImage": "",
-    "synopsis": "The sixth season of Yi Ren Zhi Xia .",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "RELEASING",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 26,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Supernatural"
-    ],
-    "tags": [],
-    "studios": [
-      {
-        "id": 6547,
-        "name": "Qiyuan Yinghua",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6547"
-      }
-    ],
-    "studiosNames": [
-      "Qiyuan Yinghua"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 67,
-    "popularity": 738,
-    "trending": 0,
-    "favourites": 9,
-    "source": "MANGA",
-    "countryOfOrigin": "CN",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2026-01-02",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/62246",
-    "anilist_url": "https://anilist.co/anime/198749",
-    "trailer": null
-  },
-  {
     "animeId": 200455,
     "anilistId": 200455,
     "title": "Yowaki MAX Reijou Nano ni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta",
@@ -908,7 +908,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 723,
+    "popularity": 726,
     "trending": 0,
     "favourites": 8,
     "source": "LIGHT_NOVEL",
@@ -974,7 +974,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 719,
+    "popularity": 723,
     "trending": 0,
     "favourites": 10,
     "source": "LIGHT_NOVEL",
@@ -1040,7 +1040,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 717,
+    "popularity": 719,
     "trending": 0,
     "favourites": 4,
     "source": "VIDEO_GAME",
@@ -1100,147 +1100,6 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=G8EiZJ6Dy4Y"
     }
-  },
-  {
-    "animeId": 63292,
-    "anilistId": 205896,
-    "title": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
-    "titleRomaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
-    "titleEnglish": "",
-    "titleNative": "信者ゼロの女神サマと始める異世界攻略",
-    "synonyms": [
-      "Full Clearing Another World under a Goddess with Zero Believers",
-      "Clear the world like a game with the zero believer goddess"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ezHQ339UPj39.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205896-ezHQ339UPj39.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ezHQ339UPj39.jpg",
-    "coverImageColor": "#e4c95d",
-    "bannerImage": "",
-    "synopsis": "RPG player Makoto Takatsuki is hurled into another world with awful skills and stats. But he soon meets a goddess named Noah, who asks him to become her 1st believer in return for blessings. (Source: J-Novel Club)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Adventure",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 703,
-    "trending": 0,
-    "favourites": 13,
-    "source": "LIGHT_NOVEL",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#信者ゼロの女神サマ",
-    "startDate": null,
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/63292",
-    "anilist_url": "https://anilist.co/anime/205896",
-    "trailer": null
-  },
-  {
-    "animeId": 35854,
-    "anilistId": 100148,
-    "title": "Zero Seiki Movie 2: Herlock",
-    "titleRomaji": "Zero Seiki Movie 2: Herlock",
-    "titleEnglish": "",
-    "titleNative": "零世紀 ハーロック",
-    "synonyms": [
-      "The Zero Century: Harlock",
-      " The Zero Century Movie 2: Herlock",
-      " The Zero Century: Herlock"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx100148-0tfdtJVMCyMm.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100148-0tfdtJVMCyMm.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx100148-0tfdtJVMCyMm.jpg",
-    "coverImageColor": "#e4785d",
-    "bannerImage": "",
-    "synopsis": "An anime movie that was announced at Japan Expo which was supposed to air in 2023.",
-    "type": "ANIME",
-    "format": "MOVIE",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 1,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Sci-Fi"
-    ],
-    "tags": [],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 701,
-    "trending": 0,
-    "favourites": 4,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": null,
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/35854",
-    "anilist_url": "https://anilist.co/anime/100148",
-    "trailer": null
   },
   {
     "animeId": 62696,
@@ -1357,7 +1216,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 699,
+    "popularity": 704,
     "trending": 0,
     "favourites": 5,
     "source": "",
@@ -1374,6 +1233,147 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=FOCLp8HWS60"
     }
+  },
+  {
+    "animeId": 63292,
+    "anilistId": 205896,
+    "title": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
+    "titleRomaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
+    "titleEnglish": "",
+    "titleNative": "信者ゼロの女神サマと始める異世界攻略",
+    "synonyms": [
+      "Full Clearing Another World under a Goddess with Zero Believers",
+      "Clear the world like a game with the zero believer goddess"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ezHQ339UPj39.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205896-ezHQ339UPj39.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ezHQ339UPj39.jpg",
+    "coverImageColor": "#e4c95d",
+    "bannerImage": "",
+    "synopsis": "RPG player Makoto Takatsuki is hurled into another world with awful skills and stats. But he soon meets a goddess named Noah, who asks him to become her 1st believer in return for blessings. (Source: J-Novel Club)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 704,
+    "trending": 0,
+    "favourites": 13,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#信者ゼロの女神サマ",
+    "startDate": null,
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63292",
+    "anilist_url": "https://anilist.co/anime/205896",
+    "trailer": null
+  },
+  {
+    "animeId": 35854,
+    "anilistId": 100148,
+    "title": "Zero Seiki Movie 2: Herlock",
+    "titleRomaji": "Zero Seiki Movie 2: Herlock",
+    "titleEnglish": "",
+    "titleNative": "零世紀 ハーロック",
+    "synonyms": [
+      "The Zero Century: Harlock",
+      " The Zero Century Movie 2: Herlock",
+      " The Zero Century: Herlock"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx100148-0tfdtJVMCyMm.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100148-0tfdtJVMCyMm.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx100148-0tfdtJVMCyMm.jpg",
+    "coverImageColor": "#e4785d",
+    "bannerImage": "",
+    "synopsis": "An anime movie that was announced at Japan Expo which was supposed to air in 2023.",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 1,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "tags": [],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 701,
+    "trending": 0,
+    "favourites": 4,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": null,
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/35854",
+    "anilist_url": "https://anilist.co/anime/100148",
+    "trailer": null
   },
   {
     "animeId": 63601,
@@ -1417,7 +1417,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 695,
+    "popularity": 697,
     "trending": 1,
     "favourites": 4,
     "source": "MANGA",
@@ -1429,57 +1429,6 @@
     "endDate": null,
     "mal_url": "https://myanimelist.net/anime/63601",
     "anilist_url": "https://anilist.co/anime/208609",
-    "trailer": null
-  },
-  {
-    "animeId": 59266,
-    "anilistId": 179294,
-    "title": "Watari Tori to Katatsumuri",
-    "titleRomaji": "Watari Tori to Katatsumuri",
-    "titleEnglish": "",
-    "titleNative": "渡り鳥とカタツムリ",
-    "synonyms": [
-      "Migratory Birds & Snail",
-      "WataKata",
-      "わたカタ"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179294-pVNoLa5QabZh.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179294-pVNoLa5QabZh.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx179294-pVNoLa5QabZh.jpg",
-    "coverImageColor": "#4393e4",
-    "bannerImage": "",
-    "synopsis": "Unpei Mochizuki had been working for two years as a spare parts dealer. After making a mistake, he had only one wish: to go far, where no one can recognize him. That’s when he crosses paths with Tsugumi Nagisa, illustrator… and nomad. A woman of indefinable age, who lives with her dog in a van. Unpei begins a new life on the road with Tsugumi and her car. Far from the usual tidy, sedentary lifestyle, the nomadic spirit offers new surprises every single day. From beaches to mountains, from the North to the South… Freedom and endless new landscapes await! (Source: Noeve grafx, translated)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Slice of Life"
-    ],
-    "tags": [],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 690,
-    "trending": 0,
-    "favourites": 2,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#わたカタ",
-    "startDate": "2027-01-01",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/59266",
-    "anilist_url": "https://anilist.co/anime/179294",
     "trailer": null
   },
   {
@@ -1588,7 +1537,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 689,
+    "popularity": 696,
     "trending": 0,
     "favourites": 3,
     "source": "LIGHT_NOVEL",
@@ -1601,6 +1550,138 @@
     "mal_url": "https://myanimelist.net/anime/63730",
     "anilist_url": "https://anilist.co/anime/209221",
     "trailer": null
+  },
+  {
+    "animeId": 59266,
+    "anilistId": 179294,
+    "title": "Watari Tori to Katatsumuri",
+    "titleRomaji": "Watari Tori to Katatsumuri",
+    "titleEnglish": "",
+    "titleNative": "渡り鳥とカタツムリ",
+    "synonyms": [
+      "Migratory Birds & Snail",
+      "WataKata",
+      "わたカタ"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179294-pVNoLa5QabZh.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179294-pVNoLa5QabZh.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx179294-pVNoLa5QabZh.jpg",
+    "coverImageColor": "#4393e4",
+    "bannerImage": "",
+    "synopsis": "Unpei Mochizuki had been working for two years as a spare parts dealer. After making a mistake, he had only one wish: to go far, where no one can recognize him. That’s when he crosses paths with Tsugumi Nagisa, illustrator… and nomad. A woman of indefinable age, who lives with her dog in a van. Unpei begins a new life on the road with Tsugumi and her car. Far from the usual tidy, sedentary lifestyle, the nomadic spirit offers new surprises every single day. From beaches to mountains, from the North to the South… Freedom and endless new landscapes await! (Source: Noeve grafx, translated)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Slice of Life"
+    ],
+    "tags": [],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 690,
+    "trending": 0,
+    "favourites": 2,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#わたカタ",
+    "startDate": "2027-01-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/59266",
+    "anilist_url": "https://anilist.co/anime/179294",
+    "trailer": null
+  },
+  {
+    "animeId": 63751,
+    "anilistId": 209499,
+    "title": "TANK CHAIR: Sensha Isu",
+    "titleRomaji": "TANK CHAIR: Sensha Isu",
+    "titleEnglish": "",
+    "titleNative": "TANK CHAIR-戦車椅子-",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209499-sxqd8SZtWbFm.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209499-sxqd8SZtWbFm.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209499-sxqd8SZtWbFm.jpg",
+    "coverImageColor": "#d61aff",
+    "bannerImage": "",
+    "synopsis": "Shizuka takes on the most dangerous of assassin jobs, but she's not the one doing the killing. Rather, it's her brother, Nagi, a strong assassin who took a bullet to protect his sister, leaving him in a comatose state and having to use a wheelchair. However, Shizuka has figured out the key to waking her brother up: he must be faced with killing intent! Thus begins a violent journey of recovery, battling the most dangerous foes! (Source: Kodansha USA)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "FALL",
+    "seasonYear": 2026,
+    "seasonInt": 264,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6067,
+        "name": "POLYGON PICTURES",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6067"
+      }
+    ],
+    "studiosNames": [
+      "POLYGON PICTURES"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 682,
+    "trending": 0,
+    "favourites": 6,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#TANKCHAIR",
+    "startDate": "2026-01-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63751",
+    "anilist_url": "https://anilist.co/anime/209499",
+    "trailer": {
+      "id": "CdzLcwU9pVo",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=CdzLcwU9pVo"
+    }
   },
   {
     "animeId": 62649,
@@ -1687,10 +1768,10 @@
     "mal_url": "https://myanimelist.net/anime/62649",
     "anilist_url": "https://anilist.co/anime/203296",
     "trailer": null,
-    "latestEpisode": 10,
-    "latestEpisodeTitle": "Episode 10",
-    "nextEpisode": 11,
-    "nextAiringAt": 1775257200
+    "latestEpisode": 11,
+    "latestEpisodeTitle": "Episode 11",
+    "nextEpisode": 12,
+    "nextAiringAt": 1775862000
   },
   {
     "animeId": 63469,
@@ -1919,87 +2000,6 @@
     }
   },
   {
-    "animeId": 63751,
-    "anilistId": 209499,
-    "title": "TANK CHAIR: Sensha Isu",
-    "titleRomaji": "TANK CHAIR: Sensha Isu",
-    "titleEnglish": "",
-    "titleNative": "TANK CHAIR-戦車椅子-",
-    "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209499-sxqd8SZtWbFm.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209499-sxqd8SZtWbFm.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209499-sxqd8SZtWbFm.jpg",
-    "coverImageColor": "#d61aff",
-    "bannerImage": "",
-    "synopsis": "Shizuka takes on the most dangerous of assassin jobs, but she's not the one doing the killing. Rather, it's her brother, Nagi, a strong assassin who took a bullet to protect his sister, leaving him in a comatose state and having to use a wheelchair. However, Shizuka has figured out the key to waking her brother up: he must be faced with killing intent! Thus begins a violent journey of recovery, battling the most dangerous foes! (Source: Kodansha USA)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "NOT_YET_RELEASED",
-    "season": "FALL",
-    "seasonYear": 2026,
-    "seasonInt": 264,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "tags": [
-      {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 6067,
-        "name": "POLYGON PICTURES",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6067"
-      }
-    ],
-    "studiosNames": [
-      "POLYGON PICTURES"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 665,
-    "trending": 0,
-    "favourites": 5,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#TANKCHAIR",
-    "startDate": "2026-01-01",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/63751",
-    "anilist_url": "https://anilist.co/anime/209499",
-    "trailer": {
-      "id": "CdzLcwU9pVo",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=CdzLcwU9pVo"
-    }
-  },
-  {
     "animeId": 169374,
     "anilistId": 169374,
     "title": "DICE",
@@ -2114,7 +2114,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 654,
+    "popularity": 655,
     "trending": 0,
     "favourites": 30,
     "source": "OTHER",
@@ -2183,9 +2183,9 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 650,
+    "popularity": 651,
     "trending": 0,
-    "favourites": 5,
+    "favourites": 6,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2395,6 +2395,96 @@
     "trailer": null
   },
   {
+    "animeId": 63712,
+    "anilistId": 209219,
+    "title": "Tensei Goblin Dakedo Shitsumon Aru?",
+    "titleRomaji": "Tensei Goblin Dakedo Shitsumon Aru?",
+    "titleEnglish": "",
+    "titleNative": "転生ゴブリンだけど質問ある？",
+    "synonyms": [
+      "So What's Wrong with Getting Reborn as a Goblin?",
+      "転ゴブ",
+      "เกิดใหม่เป็นก็อบลินแล้วไง มีคำถามอะไรไหม?",
+      "Tengobu"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-vU7uIlcKmVlW.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-vU7uIlcKmVlW.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-vU7uIlcKmVlW.jpg",
+    "coverImageColor": "#5093e4",
+    "bannerImage": "",
+    "synopsis": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever! (Source: Yen Press)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "FALL",
+    "seasonYear": 2026,
+    "seasonInt": 264,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 480,
+        "name": "Goblin",
+        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 641,
+    "trending": 1,
+    "favourites": 8,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#転ゴブ",
+    "startDate": "2026-10-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63712",
+    "anilist_url": "https://anilist.co/anime/209219",
+    "trailer": {
+      "id": "V4K-kG3hEJc",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=V4K-kG3hEJc"
+    }
+  },
+  {
     "animeId": 121998,
     "anilistId": 121998,
     "title": "Long Xin Shaonü",
@@ -2593,7 +2683,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 627,
+    "popularity": 629,
     "trending": 1,
     "favourites": 8,
     "source": "OTHER",
@@ -2608,61 +2698,98 @@
     "trailer": null
   },
   {
-    "animeId": 63712,
-    "anilistId": 209219,
-    "title": "Tensei Goblin Dakedo Shitsumon Aru?",
-    "titleRomaji": "Tensei Goblin Dakedo Shitsumon Aru?",
+    "animeId": 62683,
+    "anilistId": 200230,
+    "title": "Let's Go Kaikigumi",
+    "titleRomaji": "Let's Go Kaikigumi",
     "titleEnglish": "",
-    "titleNative": "転生ゴブリンだけど質問ある？",
-    "synonyms": [
-      "So What's Wrong with Getting Reborn as a Goblin?",
-      "転ゴブ",
-      "เกิดใหม่เป็นก็อบลินแล้วไง มีคำถามอะไรไหม?",
-      "Tengobu"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-vU7uIlcKmVlW.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-vU7uIlcKmVlW.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-vU7uIlcKmVlW.jpg",
-    "coverImageColor": "#5093e4",
+    "titleNative": "レッツゴー怪奇組",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200230-8pOIknqkt160.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx200230-8pOIknqkt160.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx200230-8pOIknqkt160.png",
+    "coverImageColor": "#f1e45d",
     "bannerImage": "",
-    "synopsis": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever! (Source: Yen Press)",
+    "synopsis": "The horror comedy manga begins one fateful day when the cowardly (unnamed) protagonist meets Mechako, the leader of the \"Kaikigumi\" organization which is in charge of the ghosts and supernatural creatures scaring humans. The protagonist somehow takes part in the revival of the Kaikigumi, after which one bizarre (yet not scary) phenomenon after another crops up around him. (Source: ANN)",
     "type": "ANIME",
     "format": "TV",
     "status": "NOT_YET_RELEASED",
-    "season": "FALL",
+    "season": "SUMMER",
     "seasonYear": 2026,
-    "seasonInt": 264,
+    "seasonInt": 263,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Supernatural"
+    ],
+    "tags": [],
+    "studios": [
+      {
+        "id": 6074,
+        "name": "C-Station",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6074"
+      }
+    ],
+    "studiosNames": [
+      "C-Station"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 627,
+    "trending": 1,
+    "favourites": 4,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-07-05",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/62683",
+    "anilist_url": "https://anilist.co/anime/200230",
+    "trailer": {
+      "id": "XBqUZYpEcfk",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=XBqUZYpEcfk"
+    }
+  },
+  {
+    "animeId": 202250,
+    "anilistId": 202250,
+    "title": "Kashita Maryoku wa [Ribo Harai] de Kyousei Choushuu",
+    "titleRomaji": "Kashita Maryoku wa [Ribo Harai] de Kyousei Choushuu",
+    "titleEnglish": "",
+    "titleNative": "貸した魔力は【リボ払い】で強制徴収",
+    "synonyms": [
+      "Magic Repo Man: Dumped by My Party, I'll Cash In With a Cute Support Fairy to Become the Strongest!",
+      "貸した魔力は【リボ払い】で強制徴収～用済みとパーティー追放された俺は、可愛いサポート妖精と一緒に取り立てた魔力を運用して最強を目指す。～",
+      "Kashita Maryoku wa [Ribo Harai] de Kyousei Choushuu ~Youzumi to Party Tsuihou sareta Ore wa, Kawaii Support Yousei to Issho ni Toritateta Maryoku wo Unyou shite Saikyou wo Mezasu."
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-xfuf10GUke6L.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202250-xfuf10GUke6L.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202250-xfuf10GUke6L.jpg",
+    "coverImageColor": "#f17843",
+    "bannerImage": "",
+    "synopsis": "If there's one thing you can never have enough of in a world of RPG-style swords and sorcery, it's magic points! Whether you're fueling spells, techniques, or showing off an incredible ability, you've gotta spend those points to do real damage. But what if you run out? Lent is part of the up-and-coming party known as the “Skypiercers,” and thanks to his unique Gift, he can loan massive amounts of magic to others. No MP? No problem with Lent around! Except, now that his companions have become formidable heroes (thanks to his skill), his usefulness is questioned. Kicked out of the group, Lent is furious…until he discovers a hidden power to his Gift. Now, with his adorably devious fairy partner, he's going to claw back every last scrap of magic from his former party—with interest! (Source: Seven Seas Entertainment)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
     "episodes": 0,
     "duration": 0,
     "genres": [
       "Action",
       "Adventure",
-      "Comedy",
-      "Drama",
-      "Fantasy",
-      "Romance"
+      "Fantasy"
     ],
     "tags": [
-      {
-        "id": 243,
-        "name": "Reincarnation",
-        "description": "Features a character being born again after death, typically as another person or in another world.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 480,
-        "name": "Goblin",
-        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
       {
         "id": 29,
         "name": "Magic",
@@ -2672,30 +2799,46 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 1455,
+        "name": "Fairy",
+        "description": "Prominently features a character who is a fairy.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
       }
     ],
-    "studios": [],
-    "studiosNames": [],
+    "studios": [
+      {
+        "id": 118,
+        "name": "SynergySP",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/118"
+      }
+    ],
+    "studiosNames": [
+      "SynergySP"
+    ],
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 626,
-    "trending": 1,
-    "favourites": 7,
+    "popularity": 623,
+    "trending": 0,
+    "favourites": 8,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
     "isAdult": false,
-    "hashtag": "#転ゴブ",
-    "startDate": "2026-10-01",
+    "hashtag": "",
+    "startDate": "2026-01-01",
     "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/63712",
-    "anilist_url": "https://anilist.co/anime/209219",
-    "trailer": {
-      "id": "V4K-kG3hEJc",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=V4K-kG3hEJc"
-    }
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/202250",
+    "trailer": null
   },
   {
     "animeId": 196613,
@@ -2814,6 +2957,126 @@
     "latestEpisodeTitle": "Episode 35",
     "nextEpisode": 36,
     "nextAiringAt": 1775354400
+  },
+  {
+    "animeId": 209116,
+    "anilistId": 209116,
+    "title": "J⇔M",
+    "titleRomaji": "J⇔M",
+    "titleEnglish": "",
+    "titleNative": "J⇔M",
+    "synonyms": [
+      "J⇔M ジェイエム",
+      "JM"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209116-n1TnXuBx0kF5.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209116-n1TnXuBx0kF5.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209116-n1TnXuBx0kF5.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "J is a professional hitman...he was orphan and raised by a syndicate as an assassin. He was too good, killed too many people, knew too much about the syndicate. When the syndicate tried to erase him, they were backfired...when three syndicates were wiped out completely, J became \"untouchable.\" Megumi, a girl in third grade, was bullied by her classmates because she is half-Japanese, half-American and gets good grades. One day, when they bumped their heads...their bodies were switched. Now J is inside a cute girl's body...and Megumi is inside the tough guy's body. Now they must hide that they are not who they were and keep their everyday life look the same as before. J never knew how hard a girl's life is, and Megumi enjoys her new life!? (Source: BookWalker)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "tags": [
+      {
+        "id": 154,
+        "name": "Body Swapping",
+        "description": "Centers around individuals swapping bodies with one another.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1589,
+        "name": "Criminal Organization",
+        "description": "Prominently features a group of people who commit crimes for illicit or violent purposes.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 199,
+        "name": "Yakuza",
+        "description": "Centered around Japanese organised crime syndicates.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 622,
+    "trending": 0,
+    "favourites": 6,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": null,
+    "endDate": null,
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/209116",
+    "trailer": null
   },
   {
     "animeId": 63151,
@@ -2962,6 +3225,127 @@
     "nextAiringAt": 1775602800
   },
   {
+    "animeId": 63752,
+    "anilistId": 209504,
+    "title": "Suterare Seijo no Isekai Gohantabi: Kakure Skill de Camping Car wo Shoukan Shimashita",
+    "titleRomaji": "Suterare Seijo no Isekai Gohantabi: Kakure Skill de Camping Car wo Shoukan Shimashita",
+    "titleEnglish": "",
+    "titleNative": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
+    "synonyms": [
+      "The Forsaken Saintess and Her Foodie Roadtrip in Another World"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209504-OQMWY4zTSGhG.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209504-OQMWY4zTSGhG.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209504-OQMWY4zTSGhG.png",
+    "coverImageColor": "#5dc9e4",
+    "bannerImage": "",
+    "synopsis": "Rin Takanashi, a caregiver in her thirties, was unceremoniously discarded as \"trash\" despite being summoned as a saint. However, as a lover of the great outdoors and all things camping, she was blessed with a special skill, \"Survival,\" as well as another unique skill! Thus, a riveting tale begins: one of sweat, tears, and insatiable hunger as Rin, together with companions she picked up along the way, leisurely explores this parallel world and savours gourmet cuisine to her heart's content... Or so the story should have gone, but it looks like their road is going in an unexpected direction...?",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 604,
+        "name": "Dungeon",
+        "description": "Prominently features a dungeon environment.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6125,
+        "name": "EMT Squared",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6125"
+      }
+    ],
+    "studiosNames": [
+      "EMT Squared"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 614,
+    "trending": 1,
+    "favourites": 7,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-01-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63752",
+    "anilist_url": "https://anilist.co/anime/209504",
+    "trailer": null
+  },
+  {
     "animeId": 183231,
     "anilistId": 183231,
     "title": "RILAKKUMA",
@@ -2970,17 +3354,18 @@
     "titleNative": "リラックマ ～ごゆるり夢の旅～",
     "synonyms": [
       "リラックマ アニメ",
-      "Rilakkuma Anime"
+      "Rilakkuma Anime",
+      "RILAKKUMA: A Leisurely Dream Journey"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183231-nqc56OPthHii.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx183231-nqc56OPthHii.jpg",
     "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx183231-nqc56OPthHii.jpg",
     "coverImageColor": "#43d6e4",
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/183231-JFjTqQe3rPCw.jpg",
-    "synopsis": "Rilakkuma is always with you, no matter what day it is. Now, he's stepping out of his everyday routine and into the leisurely world of animation. It's a moment that will make your heart feel lighter and lighter. No matter where you are or what you're doing, Rilakkuma will be by your side. An exciting new story begins. (Source: Rilakkuma Anime Site, translated)",
+    "synopsis": "Everyday life gets a cozy twist with the laid-back Rilakkuma. Gentle moments of friendship, change, and small joys unfold, turning ordinary moments into something quietly magical—one soft, comforting day at a time. It's a moment that will make your heart feel lighter and lighter. No matter where you are or what you're doing, Rilakkuma will be by your side. An exciting new story begins! Experience the stress-free world of Rilakkuma, the relaxed bear who makes being lazy look effortless! (Source: Crunchyroll, Rilakkuma Anime Site, translated)",
     "type": "ANIME",
     "format": "TV_SHORT",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -3034,8 +3419,130 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=rV-fcFL5vtU"
     },
+    "latestEpisode": 1,
+    "latestEpisodeTitle": "Episode 1",
     "nextEpisode": 1,
     "nextAiringAt": 1775262360
+  },
+  {
+    "animeId": 137668,
+    "anilistId": 137668,
+    "title": "Daihao: Kuangxin",
+    "titleRomaji": "Daihao: Kuangxin",
+    "titleEnglish": "",
+    "titleNative": "代号：狂信",
+    "synonyms": [
+      "Defective Lovers"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137668-TSKC9vdVOi02.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx137668-TSKC9vdVOi02.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx137668-TSKC9vdVOi02.jpg",
+    "coverImageColor": "#e47850",
+    "bannerImage": "",
+    "synopsis": "The hot-tempered criminal investigation captain Qian Cuo, and the high IQ cold-blooded detective Teng Ruiyu, the two teamed up to detect countless incredible cases, until they were involved in continuous alchemy crimes two years ago...",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 75,
+        "name": "Boys' Love",
+        "description": "Prominently features romance between two males, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6162,
+        "name": "Foch",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6162"
+      }
+    ],
+    "studiosNames": [
+      "Foch"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 609,
+    "trending": 0,
+    "favourites": 9,
+    "source": "MANGA",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": null,
+    "endDate": null,
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/137668",
+    "trailer": null
   },
   {
     "animeId": 209312,
@@ -3203,6 +3710,81 @@
     }
   },
   {
+    "animeId": 60587,
+    "anilistId": 199411,
+    "title": "B.King",
+    "titleRomaji": "Yu Ling Shi",
+    "titleEnglish": "B.King",
+    "titleNative": "驭灵师",
+    "synonyms": [
+      "Tamers",
+      "Spirit Master"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199411-ToFTWRXUdfMj.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199411-ToFTWRXUdfMj.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199411-ToFTWRXUdfMj.jpg",
+    "coverImageColor": "#5daee4",
+    "bannerImage": "",
+    "synopsis": "This is the tale of a well-known cartoonist who rose to fame thanks to his comic book.B.K. But after several years, he ran out of ideas and had to rely solely on abandoning his characters in order to draw attention. He was drawn into the realm of B. King as Wang Xiaoming after receiving an enigmatic phone call one day. As a result, Wang Xiaoming, who now possesses the ideas of the \"creator,\" sets out on a fantastical journey that might be summed up as \"God's shortcut, one step to heaven.\" (Source: Bilibili TV)",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "RELEASING",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 18,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 66,
+    "popularity": 556,
+    "trending": 1,
+    "favourites": 7,
+    "source": "MANGA",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-02-26",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/60587",
+    "anilist_url": "https://anilist.co/anime/199411",
+    "trailer": {
+      "id": "eOHtrs1sc38",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=eOHtrs1sc38"
+    }
+  },
+  {
     "animeId": 185729,
     "anilistId": 185729,
     "title": "Shen Yin Wangzuo 3",
@@ -3263,81 +3845,6 @@
     "trailer": null
   },
   {
-    "animeId": 60587,
-    "anilistId": 199411,
-    "title": "B.King",
-    "titleRomaji": "Yu Ling Shi",
-    "titleEnglish": "B.King",
-    "titleNative": "驭灵师",
-    "synonyms": [
-      "Tamers",
-      "Spirit Master"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199411-ToFTWRXUdfMj.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199411-ToFTWRXUdfMj.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199411-ToFTWRXUdfMj.jpg",
-    "coverImageColor": "#5daee4",
-    "bannerImage": "",
-    "synopsis": "This is the tale of a well-known cartoonist who rose to fame thanks to his comic book.B.K. But after several years, he ran out of ideas and had to rely solely on abandoning his characters in order to draw attention. He was drawn into the realm of B. King as Wang Xiaoming after receiving an enigmatic phone call one day. As a result, Wang Xiaoming, who now possesses the ideas of the \"creator,\" sets out on a fantastical journey that might be summed up as \"God's shortcut, one step to heaven.\" (Source: Bilibili TV)",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "RELEASING",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 18,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 243,
-        "name": "Reincarnation",
-        "description": "Features a character being born again after death, typically as another person or in another world.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 65,
-    "popularity": 545,
-    "trending": 1,
-    "favourites": 7,
-    "source": "MANGA",
-    "countryOfOrigin": "CN",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2026-02-26",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/60587",
-    "anilist_url": "https://anilist.co/anime/199411",
-    "trailer": {
-      "id": "eOHtrs1sc38",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=eOHtrs1sc38"
-    }
-  },
-  {
     "animeId": 58780,
     "anilistId": 204762,
     "title": "Enter the Garden",
@@ -3394,7 +3901,7 @@
     "rating": 5,
     "averageScore": 50,
     "meanScore": 58,
-    "popularity": 539,
+    "popularity": 541,
     "trending": 0,
     "favourites": 5,
     "source": "ORIGINAL",
@@ -3984,7 +4491,7 @@
     "meanScore": 63,
     "popularity": 399,
     "trending": 2,
-    "favourites": 8,
+    "favourites": 9,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -4066,7 +4573,7 @@
     "rating": 4.6,
     "averageScore": 46,
     "meanScore": 52,
-    "popularity": 378,
+    "popularity": 379,
     "trending": 0,
     "favourites": 2,
     "source": "OTHER",
@@ -4243,6 +4750,93 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=9BLoDcwM-zU"
     }
+  },
+  {
+    "animeId": 63851,
+    "anilistId": 210157,
+    "title": "Love Live! Hasu no Sora Jogakuin School Idol Club",
+    "titleRomaji": "Love Live! Hasu no Sora Jogakuin School Idol Club",
+    "titleEnglish": "",
+    "titleNative": "ラブライブ！蓮ノ空女学院スクールアイドルクラブ",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210157-TsOt9K0ADCmK.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210157-TsOt9K0ADCmK.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210157-TsOt9K0ADCmK.jpg",
+    "coverImageColor": "#a1bbff",
+    "bannerImage": "",
+    "synopsis": "Note: Relations are provisional and subject to change when more info is announced.",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "WINTER",
+    "seasonYear": 2027,
+    "seasonInt": 271,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Music",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 347,
+    "trending": 7,
+    "favourites": 3,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#蓮ノ空 #リンクラ #lovelive",
+    "startDate": "2027-01-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63851",
+    "anilist_url": "https://anilist.co/anime/210157",
+    "trailer": null
   },
   {
     "animeId": 203953,
@@ -4595,7 +5189,7 @@
     "meanScore": 43,
     "popularity": 319,
     "trending": 0,
-    "favourites": 0,
+    "favourites": 17,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -4715,93 +5309,6 @@
     "endDate": null,
     "mal_url": "https://myanimelist.net/anime/61562",
     "anilist_url": "https://anilist.co/anime/199410",
-    "trailer": null
-  },
-  {
-    "animeId": 63851,
-    "anilistId": 210157,
-    "title": "Love Live! Hasu no Sora Jogakuin School Idol Club",
-    "titleRomaji": "Love Live! Hasu no Sora Jogakuin School Idol Club",
-    "titleEnglish": "",
-    "titleNative": "ラブライブ！蓮ノ空女学院スクールアイドルクラブ",
-    "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210157-TsOt9K0ADCmK.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210157-TsOt9K0ADCmK.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210157-TsOt9K0ADCmK.jpg",
-    "coverImageColor": "#a1bbff",
-    "bannerImage": "",
-    "synopsis": "Note: Relations are provisional and subject to change when more info is announced.",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "NOT_YET_RELEASED",
-    "season": "WINTER",
-    "seasonYear": 2027,
-    "seasonInt": 271,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Music",
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 115,
-        "name": "Idol",
-        "description": "Centers around the life and activities of an idol.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 308,
-    "trending": 7,
-    "favourites": 3,
-    "source": "OTHER",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#蓮ノ空 #リンクラ #lovelive",
-    "startDate": "2027-01-01",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/63851",
-    "anilist_url": "https://anilist.co/anime/210157",
     "trailer": null
   },
   {
@@ -5369,7 +5876,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 69,
-    "popularity": 245,
+    "popularity": 246,
     "trending": 0,
     "favourites": 7,
     "source": "OTHER",
@@ -5445,7 +5952,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 82,
-    "popularity": 243,
+    "popularity": 244,
     "trending": 0,
     "favourites": 15,
     "source": "OTHER",
@@ -5514,7 +6021,7 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 86,
+    "meanScore": 87,
     "popularity": 233,
     "trending": 0,
     "favourites": 14,
@@ -5814,7 +6321,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 70,
-    "popularity": 222,
+    "popularity": 223,
     "trending": 0,
     "favourites": 10,
     "source": "OTHER",
@@ -6037,10 +6544,10 @@
     ],
     "tags": [
       {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6057,10 +6564,10 @@
         "isAdult": false
       },
       {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6097,6 +6604,76 @@
     "trailer": null
   },
   {
+    "animeId": 61921,
+    "anilistId": 198701,
+    "title": "Shen Mu 3",
+    "titleRomaji": "Shen Mu 3",
+    "titleEnglish": "",
+    "titleNative": "神墓 第三季",
+    "synonyms": [
+      "Tomb of Fallen Gods 3"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198701-lyhCxTRIvuXA.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198701-lyhCxTRIvuXA.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198701-lyhCxTRIvuXA.jpg",
+    "coverImageColor": "#f1780d",
+    "bannerImage": "",
+    "synopsis": "After sleeping for ten thousand years, Chen Nan wakes up from the Cemetery of Gods and Demons, and becomes famous after a series of adventures. As Chen Nan arrives in Yangjin Country and meets Chen Xi, a new adventure begins again. He fights in Kaiyuan City, searches for the mystery of his life in the Death Zone, and fights the Ling family just to seek justice. In this season, Chen Nan will continue to search for Yu Xin's traces while exploring the mystery of his life. (Source: Youku, Google translated)",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "RELEASING",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 52,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6778,
+        "name": "Wonder Cat Animation",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6778"
+      }
+    ],
+    "studiosNames": [
+      "Wonder Cat Animation"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 79,
+    "popularity": 208,
+    "trending": 0,
+    "favourites": 12,
+    "source": "OTHER",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2025-08-08",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/61921",
+    "anilist_url": "https://anilist.co/anime/198701",
+    "trailer": null
+  },
+  {
     "animeId": 153843,
     "anilistId": 153843,
     "title": "NoriPro Anime",
@@ -6124,9 +6701,19 @@
     ],
     "tags": [
       {
-        "id": 1047,
-        "name": "VTuber",
-        "description": "Prominently features a character who is either an actual or fictive VTuber.",
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1456,
+        "name": "Femboy",
+        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
         "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -6134,9 +6721,9 @@
         "isAdult": false
       },
       {
-        "id": 249,
-        "name": "Maids",
-        "description": "Prominently features a character who is a maid.",
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
         "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -6154,9 +6741,9 @@
         "isAdult": false
       },
       {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
         "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -6164,20 +6751,10 @@
         "isAdult": false
       },
       {
-        "id": 1456,
-        "name": "Femboy",
-        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
+        "id": 1047,
+        "name": "VTuber",
+        "description": "Prominently features a character who is either an actual or fictive VTuber.",
         "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 193,
-        "name": "Episodic",
-        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
-        "category": "Technical",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6236,76 +6813,6 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=ZTFUAFRM0yQ"
     }
-  },
-  {
-    "animeId": 61921,
-    "anilistId": 198701,
-    "title": "Shen Mu 3",
-    "titleRomaji": "Shen Mu 3",
-    "titleEnglish": "",
-    "titleNative": "神墓 第三季",
-    "synonyms": [
-      "Tomb of Fallen Gods 3"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198701-lyhCxTRIvuXA.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198701-lyhCxTRIvuXA.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198701-lyhCxTRIvuXA.jpg",
-    "coverImageColor": "#f1780d",
-    "bannerImage": "",
-    "synopsis": "After sleeping for ten thousand years, Chen Nan wakes up from the Cemetery of Gods and Demons, and becomes famous after a series of adventures. As Chen Nan arrives in Yangjin Country and meets Chen Xi, a new adventure begins again. He fights in Kaiyuan City, searches for the mystery of his life in the Death Zone, and fights the Ling family just to seek justice. In this season, Chen Nan will continue to search for Yu Xin's traces while exploring the mystery of his life. (Source: Youku, Google translated)",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "RELEASING",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 52,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 6778,
-        "name": "Wonder Cat Animation",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6778"
-      }
-    ],
-    "studiosNames": [
-      "Wonder Cat Animation"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 79,
-    "popularity": 207,
-    "trending": 0,
-    "favourites": 12,
-    "source": "OTHER",
-    "countryOfOrigin": "CN",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2025-08-08",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/61921",
-    "anilist_url": "https://anilist.co/anime/198701",
-    "trailer": null
   },
   {
     "animeId": 63485,
@@ -6418,20 +6925,10 @@
         "isAdult": false
       },
       {
-        "id": 254,
-        "name": "Kemonomimi",
-        "description": "Prominently features humanoid characters with animal ears.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 83,
-        "name": "Slapstick",
-        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
-        "category": "Theme-Comedy",
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6448,10 +6945,20 @@
         "isAdult": false
       },
       {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 254,
+        "name": "Kemonomimi",
+        "description": "Prominently features humanoid characters with animal ears.",
+        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -7012,8 +7519,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 73,
-    "popularity": 164,
+    "meanScore": 70,
+    "popularity": 167,
     "trending": 2,
     "favourites": 3,
     "source": "OTHER",
@@ -7058,20 +7565,20 @@
     ],
     "tags": [
       {
-        "id": 326,
-        "name": "Cultivation",
-        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
-        "category": "Theme-Fantasy",
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 25,
-        "name": "Historical",
-        "description": "Partly or completely set during a real period of world history.",
-        "category": "Setting-Time",
+        "id": 326,
+        "name": "Cultivation",
+        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
+        "category": "Theme-Fantasy",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -7173,20 +7680,20 @@
         "isAdult": false
       },
       {
-        "id": 1277,
-        "name": "Found Family",
-        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
-        "category": "Theme-Other",
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 208,
-        "name": "Mythology",
-        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
-        "category": "Theme-Fantasy",
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -7208,7 +7715,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 70,
-    "popularity": 157,
+    "popularity": 160,
     "trending": 1,
     "favourites": 9,
     "source": "MANGA",
@@ -7734,7 +8241,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 60,
-    "popularity": 119,
+    "popularity": 118,
     "trending": 0,
     "favourites": 2,
     "source": "MANGA",
@@ -7971,8 +8478,8 @@
     "studiosNames": [],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 59,
-    "popularity": 112,
+    "meanScore": 55,
+    "popularity": 113,
     "trending": 0,
     "favourites": 1,
     "source": "MANGA",
@@ -7988,6 +8495,90 @@
       "id": "obAik5EWrVk",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=obAik5EWrVk"
+    }
+  },
+  {
+    "animeId": 208105,
+    "anilistId": 208105,
+    "title": "Yani Neko Mini",
+    "titleRomaji": "Yani Neko Mini",
+    "titleEnglish": "",
+    "titleNative": "ヤニねこ ミニ",
+    "synonyms": [
+      "Yani Neko Mini Anime",
+      "ヤニねこ ミニアニメ",
+      "Chainsmoker Cat Minis"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b208105-pYHSBy6n9naY.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b208105-pYHSBy6n9naY.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b208105-pYHSBy6n9naY.png",
+    "coverImageColor": "#865028",
+    "bannerImage": "",
+    "synopsis": "Chibi shorts posted on the official Yani Neko YouTube channel and Twitter account of the main series.",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "RELEASING",
+    "season": "WINTER",
+    "seasonYear": 2026,
+    "seasonInt": 261,
+    "episodes": 0,
+    "duration": 1,
+    "genres": [
+      "Comedy"
+    ],
+    "tags": [
+      {
+        "id": 324,
+        "name": "Chibi",
+        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 113,
+        "name": "Nekomimi",
+        "description": "Humanoid characters with cat-like features such as cat ears and a tail.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 64,
+    "popularity": 101,
+    "trending": 0,
+    "favourites": 1,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#ヤニねこ",
+    "startDate": "2026-02-22",
+    "endDate": null,
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/208105",
+    "trailer": {
+      "id": "uPZ5qL6ka2Q",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=uPZ5qL6ka2Q"
     }
   },
   {
@@ -8101,90 +8692,6 @@
     "mal_url": "https://myanimelist.net/anime/60248",
     "anilist_url": "https://anilist.co/anime/185830",
     "trailer": null
-  },
-  {
-    "animeId": 208105,
-    "anilistId": 208105,
-    "title": "Yani Neko Mini",
-    "titleRomaji": "Yani Neko Mini",
-    "titleEnglish": "",
-    "titleNative": "ヤニねこ ミニ",
-    "synonyms": [
-      "Yani Neko Mini Anime",
-      "ヤニねこ ミニアニメ",
-      "Chainsmoker Cat Minis"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b208105-pYHSBy6n9naY.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b208105-pYHSBy6n9naY.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b208105-pYHSBy6n9naY.png",
-    "coverImageColor": "#865028",
-    "bannerImage": "",
-    "synopsis": "Chibi shorts posted on the official Yani Neko YouTube channel and Twitter account of the main series.",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "RELEASING",
-    "season": "WINTER",
-    "seasonYear": 2026,
-    "seasonInt": 261,
-    "episodes": 0,
-    "duration": 1,
-    "genres": [
-      "Comedy"
-    ],
-    "tags": [
-      {
-        "id": 324,
-        "name": "Chibi",
-        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 113,
-        "name": "Nekomimi",
-        "description": "Humanoid characters with cat-like features such as cat ears and a tail.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 64,
-    "popularity": 100,
-    "trending": 0,
-    "favourites": 1,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#ヤニねこ",
-    "startDate": "2026-02-22",
-    "endDate": null,
-    "mal_url": "",
-    "anilist_url": "https://anilist.co/anime/208105",
-    "trailer": {
-      "id": "uPZ5qL6ka2Q",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=uPZ5qL6ka2Q"
-    }
   },
   {
     "animeId": 50388,
@@ -8614,8 +9121,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 73,
-    "popularity": 93,
+    "meanScore": 72,
+    "popularity": 94,
     "trending": 0,
     "favourites": 2,
     "source": "ORIGINAL",
@@ -8733,6 +9240,53 @@
     "mal_url": "https://myanimelist.net/anime/58753",
     "anilist_url": "https://anilist.co/anime/178352",
     "trailer": null
+  },
+  {
+    "animeId": 201910,
+    "anilistId": 201910,
+    "title": "Oshiri Dandy the Young",
+    "titleRomaji": "Oshiri Dandy the Young",
+    "titleEnglish": "",
+    "titleNative": "おしりダンディ ザ・ヤング",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201910-yulAeyMQbbvw.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201910-yulAeyMQbbvw.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201910-yulAeyMQbbvw.png",
+    "coverImageColor": "#50d6fe",
+    "bannerImage": "",
+    "synopsis": "",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "RELEASING",
+    "season": "SPRING",
+    "seasonYear": 2026,
+    "seasonInt": 262,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [],
+    "tags": [],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 45,
+    "popularity": 80,
+    "trending": 1,
+    "favourites": 0,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-04-04",
+    "endDate": null,
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/201910",
+    "trailer": {
+      "id": "ClHFIN462aw",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=ClHFIN462aw"
+    }
   },
   {
     "animeId": 155323,
@@ -8867,7 +9421,7 @@
     "synopsis": "",
     "type": "ANIME",
     "format": "TV",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -8876,7 +9430,18 @@
     "genres": [
       "Fantasy"
     ],
-    "tags": [],
+    "tags": [
+      {
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "studios": [
       {
         "id": 7791,
@@ -8909,6 +9474,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_gP6XPIBgmo"
     },
+    "latestEpisode": 1,
+    "latestEpisodeTitle": "Episode 1",
     "nextEpisode": 1,
     "nextAiringAt": 1775262600
   },
@@ -9206,9 +9773,19 @@
         "isAdult": false
       },
       {
-        "id": 433,
-        "name": "Animals",
-        "description": "Prominently features animal characters in a leading role.",
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
         "category": "Theme-Other",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -9216,29 +9793,9 @@
         "isAdult": false
       },
       {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1304,
-        "name": "Anthropomorphism",
-        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 193,
-        "name": "Episodic",
-        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
         "category": "Technical",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -9246,9 +9803,29 @@
         "isAdult": false
       },
       {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 324,
+        "name": "Chibi",
+        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 262,
+        "name": "Outdoor Activities",
+        "description": "Centers around hiking, camping or other outdoor activities.",
         "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -9266,9 +9843,9 @@
         "isAdult": false
       },
       {
-        "id": 262,
-        "name": "Outdoor Activities",
-        "description": "Centers around hiking, camping or other outdoor activities.",
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
         "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -9276,19 +9853,9 @@
         "isAdult": false
       },
       {
-        "id": 324,
-        "name": "Chibi",
-        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
         "category": "Technical",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -9296,19 +9863,19 @@
         "isAdult": false
       },
       {
-        "id": 90,
-        "name": "CGI",
-        "description": "Prominently features scenes created with computer-generated imagery.",
-        "category": "Technical",
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 143,
-        "name": "Survival",
-        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
         "category": "Theme-Other",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -9316,10 +9883,10 @@
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -9347,139 +9914,6 @@
       "id": "wGxcTQpZVuQ",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=wGxcTQpZVuQ"
-    }
-  },
-  {
-    "animeId": 62083,
-    "anilistId": 196227,
-    "title": "TOMICA & TOM",
-    "titleRomaji": "TOMICA & TOM",
-    "titleEnglish": "",
-    "titleNative": "トミカとトム",
-    "synonyms": [
-      "Tomica to Tom",
-      "Tomica and Tom"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196227-B9kbcrGihskA.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196227-B9kbcrGihskA.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196227-B9kbcrGihskA.png",
-    "coverImageColor": "#e47828",
-    "bannerImage": "",
-    "synopsis": "After you fall asleep or while you're out, what are Tomica and Tom doing? Are they sleeping peacefully in the toy box? Are they just sitting there on the floor? Or maybe... No one knows the story of Tomica and Tom, but today we'll let you in on a special secret. (Source: Official site)",
-    "type": "ANIME",
-    "format": "TV_SHORT",
-    "status": "RELEASING",
-    "season": "SUMMER",
-    "seasonYear": 2025,
-    "seasonInt": 253,
-    "episodes": 0,
-    "duration": 2,
-    "genres": [
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 613,
-        "name": "Firefighters",
-        "description": "Centered around the life and activities of rescuers specialised in firefighting.",
-        "category": "Theme-Other-Organisations",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1304,
-        "name": "Anthropomorphism",
-        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1601,
-        "name": "Primarily Animal Cast",
-        "description": "Main cast is mostly composed animal or animal-like characters.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 433,
-        "name": "Animals",
-        "description": "Prominently features animal characters in a leading role.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 28,
-        "name": "Kids",
-        "description": "Target demographic is young children.",
-        "category": "Demographic",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 10,
-        "name": "Cars",
-        "description": "Centers around the use of automotive vehicles.",
-        "category": "Theme-Other-Vehicle",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 505,
-        "name": "Advertisement",
-        "description": "Produced in order to promote the products of a certain company.",
-        "category": "Technical",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 7687,
-        "name": "Tsumupapa",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/7687"
-      }
-    ],
-    "studiosNames": [
-      "Tsumupapa"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 50,
-    "popularity": 58,
-    "trending": 0,
-    "favourites": 1,
-    "source": "OTHER",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2025-07-20",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/62083",
-    "anilist_url": "https://anilist.co/anime/196227",
-    "trailer": {
-      "id": "Lgj9wFPjmEw",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=Lgj9wFPjmEw"
     }
   },
   {
@@ -9579,7 +10013,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 10,
-    "popularity": 55,
+    "popularity": 57,
     "trending": 0,
     "favourites": 2,
     "source": "ORIGINAL",
@@ -9595,6 +10029,139 @@
       "id": "152xy1DqhUw",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=152xy1DqhUw"
+    }
+  },
+  {
+    "animeId": 62083,
+    "anilistId": 196227,
+    "title": "TOMICA & TOM",
+    "titleRomaji": "TOMICA & TOM",
+    "titleEnglish": "",
+    "titleNative": "トミカとトム",
+    "synonyms": [
+      "Tomica to Tom",
+      "Tomica and Tom"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196227-B9kbcrGihskA.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196227-B9kbcrGihskA.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196227-B9kbcrGihskA.png",
+    "coverImageColor": "#e47828",
+    "bannerImage": "",
+    "synopsis": "After you fall asleep or while you're out, what are Tomica and Tom doing? Are they sleeping peacefully in the toy box? Are they just sitting there on the floor? Or maybe... No one knows the story of Tomica and Tom, but today we'll let you in on a special secret. (Source: Official site)",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "RELEASING",
+    "season": "SUMMER",
+    "seasonYear": 2025,
+    "seasonInt": 253,
+    "episodes": 0,
+    "duration": 2,
+    "genres": [
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 10,
+        "name": "Cars",
+        "description": "Centers around the use of automotive vehicles.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 505,
+        "name": "Advertisement",
+        "description": "Produced in order to promote the products of a certain company.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1601,
+        "name": "Primarily Animal Cast",
+        "description": "Main cast is mostly composed animal or animal-like characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 613,
+        "name": "Firefighters",
+        "description": "Centered around the life and activities of rescuers specialised in firefighting.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 7687,
+        "name": "Tsumupapa",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/7687"
+      }
+    ],
+    "studiosNames": [
+      "Tsumupapa"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 50,
+    "popularity": 57,
+    "trending": 0,
+    "favourites": 1,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2025-07-20",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/62083",
+    "anilist_url": "https://anilist.co/anime/196227",
+    "trailer": {
+      "id": "Lgj9wFPjmEw",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=Lgj9wFPjmEw"
     }
   },
   {
