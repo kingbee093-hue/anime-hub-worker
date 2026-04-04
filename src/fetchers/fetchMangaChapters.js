@@ -83,6 +83,15 @@ function getManifestMap() {
   return new Map(items.map((item) => [item.mangadexId, item]));
 }
 
+function getExistingChapterIndex(mangadexId) {
+  const chapterPath = path.join(
+    __dirname,
+    '../../api',
+    `${CONFIG.API_PATHS.MANGA_CHAPTERS}/${mangadexId}.json`,
+  );
+  return readJsonFile(chapterPath, null);
+}
+
 function getFallbackMappingPath() {
   return path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_MAPPING}_fallback.json`);
 }
@@ -276,9 +285,15 @@ function isMappingFresh(mapping) {
   return (Date.now() - updatedAt) / 3600000 < FALLBACK_MAPPING_TTL_HOURS;
 }
 
-async function buildEnglishFallbackChapters(entry, existingEnglish, fallbackMappingMap) {
-  if (!ENABLE_ENGLISH_FALLBACK || !needsEnglishFallback(entry, existingEnglish)) {
-    return { chapters: existingEnglish, mapping: null };
+async function buildEnglishFallbackChapters(
+  entry,
+  currentEnglish,
+  previousEnglish,
+  fallbackMappingMap,
+) {
+  const baseEnglish = dedupeChapters([...(previousEnglish || []), ...(currentEnglish || [])]);
+  if (!ENABLE_ENGLISH_FALLBACK || !needsEnglishFallback(entry, baseEnglish)) {
+    return { chapters: baseEnglish, mapping: null };
   }
 
   const cachedMapping = fallbackMappingMap.get(entry.mangadexId);
@@ -299,15 +314,15 @@ async function buildEnglishFallbackChapters(entry, existingEnglish, fallbackMapp
   }
 
   if (!mapping?.provider || !mapping?.providerId || !providers[mapping.provider]) {
-    return { chapters: existingEnglish, mapping: null };
+    return { chapters: baseEnglish, mapping: null };
   }
 
   const provider = providers[mapping.provider];
   console.log(`Using English fallback ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
   const info = await provider.fetchInfo(mapping.providerId);
   const providerChaptersRaw = Array.isArray(info?.chapters) ? info.chapters : [];
-  const existingMap = new Map(existingEnglish.map((chapter) => [_chapterKey(chapter), chapter]));
-  const merged = [...existingEnglish];
+  const existingMap = new Map(baseEnglish.map((chapter) => [_chapterKey(chapter), chapter]));
+  const merged = [...baseEnglish];
   let addedCount = 0;
 
   for (const chapter of providerChaptersRaw) {
@@ -331,9 +346,9 @@ async function buildEnglishFallbackChapters(entry, existingEnglish, fallbackMapp
       const key = _chapterKey(tempChapter);
     const existing = existingMap.get(key);
 
-    if (existing && existing.sourceType === 'reader' && Number(existing.pages || 0) > 0) {
+    if (existing && Number(existing.pages || 0) > 0) {
       continue;
-      }
+    }
 
       try {
       const pages = await fetchFallbackPagesWithRetry(provider, chapter.id);
@@ -343,7 +358,7 @@ async function buildEnglishFallbackChapters(entry, existingEnglish, fallbackMapp
             .filter(Boolean)
             .map((url) => String(url))
         : [];
-      if (pageUrls.isEmpty) {
+      if (pageUrls.length === 0) {
         continue;
       }
 
@@ -510,12 +525,27 @@ async function fetchMangaChapters() {
     console.log(`Refreshing chapters for ${entry.title} (${entry.mangadexId})`);
     const languages = {};
     let englishFallbackMapping = null;
+    const existingChapterIndex = getExistingChapterIndex(entry.mangadexId);
+    const previousLanguages =
+      existingChapterIndex && typeof existingChapterIndex.languages === 'object'
+        ? existingChapterIndex.languages
+        : {};
 
     for (const language of CHAPTER_LANGUAGES) {
       try {
         let chapters = await fetchLanguageChapters(entry.mangadexId, language);
         if (language === 'en') {
-          const fallback = await buildEnglishFallbackChapters(entry, chapters, fallbackMappingMap);
+          const previousEnglish = Array.isArray(previousLanguages.en)
+            ? previousLanguages.en
+                .filter((item) => item && typeof item === 'object')
+                .map(normalizeStoredChapter)
+            : [];
+          const fallback = await buildEnglishFallbackChapters(
+            entry,
+            chapters,
+            previousEnglish,
+            fallbackMappingMap,
+          );
           chapters = fallback.chapters;
           englishFallbackMapping = fallback.mapping;
         }
@@ -562,6 +592,25 @@ async function fetchMangaChapters() {
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
   writeFallbackMappingMap(fallbackMappingMap);
   console.log(`Saved chapter indexes for ${manifest.items.length} manga titles.`);
+}
+
+function normalizeStoredChapter(item) {
+  return {
+    id: String(item.id || ''),
+    title: String(item.title || ''),
+    chapter: String(item.chapter || ''),
+    volume: String(item.volume || ''),
+    language: String(item.language || ''),
+    pages: Number(item.pages || 0),
+    pageUrls: Array.isArray(item.pageUrls) ? item.pageUrls.map((url) => String(url)) : [],
+    imageHeaders: item.imageHeaders || {},
+    publishedAt: item.publishedAt || null,
+    externalUrl: item.externalUrl || null,
+    scanlationGroup: String(item.scanlationGroup || ''),
+    sourceType: String(item.sourceType || 'reader'),
+    provider: item.provider || '',
+    providerChapterId: item.providerChapterId || '',
+  };
 }
 
 module.exports = fetchMangaChapters;

@@ -135,7 +135,7 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
   }
 
   const candidateTitles = buildCandidateTitles(manga);
-  if (candidateTitles.isEmpty) return null;
+  if (candidateTitles.length === 0) return null;
 
   let best = null;
 
