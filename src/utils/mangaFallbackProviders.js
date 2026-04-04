@@ -183,6 +183,60 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
   return best;
 }
 
+async function resolveFallbackProviderCandidates(manga) {
+  const candidateTitles = buildCandidateTitles(manga);
+  if (candidateTitles.length === 0) return [];
+
+  const ranked = [];
+
+  for (const providerKey of PROVIDER_PRIORITY) {
+    const provider = providers[providerKey];
+    for (const query of candidateTitles) {
+      let searchResults = [];
+      try {
+        searchResults = await provider.search(query);
+      } catch (_) {
+        continue;
+      }
+
+      for (const candidate of searchResults.slice(0, 4)) {
+        const matchScore = titleScore(candidate.title, candidateTitles);
+        if (matchScore < 55) {
+          continue;
+        }
+
+        try {
+          const info = await provider.fetchInfo(candidate.id);
+          const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+          const score =
+            matchScore +
+            scoreCoverage(chapterCount, manga.chapters) +
+            (PROVIDER_PRIORITY.length - PROVIDER_PRIORITY.indexOf(providerKey));
+
+          ranked.push({
+            provider: providerKey,
+            providerId: candidate.id,
+            providerTitle: typeof candidate.title === 'string' ? candidate.title : query,
+            chapterCount,
+            score,
+            updatedAt: new Date().toISOString(),
+          });
+        } catch (_) {
+          continue;
+        }
+      }
+    }
+  }
+
+  return Array.from(
+    new Map(
+      ranked
+        .sort((a, b) => b.score - a.score)
+        .map((item) => [`${item.provider}:${item.providerId}`, item]),
+    ).values(),
+  );
+}
+
 function normalizeProviderChapter(providerKey, chapter, pageUrls) {
   const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
   return {
@@ -211,5 +265,6 @@ module.exports = {
   buildCandidateTitles,
   parseChapterNumber,
   resolveBestFallbackProvider,
+  resolveFallbackProviderCandidates,
   normalizeProviderChapter,
 };

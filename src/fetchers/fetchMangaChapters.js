@@ -9,6 +9,7 @@ const {
   PROVIDER_LABELS,
   parseChapterNumber,
   resolveBestFallbackProvider,
+  resolveFallbackProviderCandidates,
   providers,
   normalizeProviderChapter,
 } = require('../utils/mangaFallbackProviders');
@@ -36,6 +37,8 @@ const TARGET_MANGA_IDS = new Set(
 );
 const FALLBACK_MAPPING_TTL_HOURS = Number(process.env.MANGA_FALLBACK_MAPPING_TTL_HOURS || 24 * 14);
 const FALLBACK_PAGE_MAX_RETRIES = Number(process.env.MANGA_FALLBACK_PAGE_MAX_RETRIES || 3);
+const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_MS || 45000);
+const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
 
 function readJsonFile(filePath, fallback) {
   try {
@@ -338,99 +341,136 @@ async function buildEnglishFallbackChapters(
   }
 
   const cachedMapping = fallbackMappingMap.get(entry.mangadexId);
-  let mapping = isMappingFresh(cachedMapping) ? cachedMapping : null;
-  if (!mapping) {
+  const providerCandidates = [];
+  const freshCached = isMappingFresh(cachedMapping) ? cachedMapping : null;
+
+  if (freshCached?.provider && freshCached?.providerId) {
+    providerCandidates.push(freshCached);
+  } else {
     console.log(`Resolving English fallback provider for ${entry.title}...`);
-    mapping = await resolveBestFallbackProvider(entry, cachedMapping);
-    if (mapping) {
-      fallbackMappingMap.set(entry.mangadexId, {
+    const best = await resolveBestFallbackProvider(entry, cachedMapping);
+    if (best) {
+      providerCandidates.push(best);
+    }
+  }
+
+  const rankedCandidates = await resolveFallbackProviderCandidates(entry);
+  for (const candidate of rankedCandidates) {
+    const exists = providerCandidates.some((item) =>
+      item.provider === candidate.provider && item.providerId === candidate.providerId);
+    if (!exists) {
+      providerCandidates.push(candidate);
+    }
+  }
+
+  for (const mapping of providerCandidates) {
+    if (!mapping?.provider || !mapping?.providerId || !providers[mapping.provider]) {
+      continue;
+    }
+
+    const provider = providers[mapping.provider];
+    console.log(`Using English fallback ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
+
+    let info;
+    try {
+      info = await provider.fetchInfo(mapping.providerId);
+    } catch (error) {
+      console.error(`Failed fallback info for ${entry.title} via ${mapping.provider}: ${error.message}`);
+      continue;
+    }
+
+    const providerChaptersRaw = Array.isArray(info?.chapters) ? info.chapters : [];
+    const existingMap = new Map(baseEnglish.map((chapter) => [_chapterKey(chapter), chapter]));
+    const merged = [...baseEnglish];
+    let addedCount = 0;
+    let failureCount = 0;
+
+    for (const chapter of providerChaptersRaw) {
+      const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
+      if (chapterNumber == null) {
+        continue;
+      }
+
+      const tempChapter = {
+        id: `${mapping.provider}:${chapter.id}`,
+        title: String(chapter.title || '').trim(),
+        chapter: String(chapterNumber),
+        volume: chapter.volumeNumber != null ? String(chapter.volumeNumber) : '',
+        language: 'en',
+        pages: 0,
+        publishedAt: chapter.releaseDate || chapter.releasedDate || null,
+        externalUrl: null,
+        scanlationGroup: PROVIDER_LABELS[mapping.provider] || mapping.provider,
+        sourceType: 'fallback_reader',
+      };
+      const key = _chapterKey(tempChapter);
+      const existing = existingMap.get(key);
+
+      if (existing && Number(existing.pages || 0) > 0) {
+        continue;
+      }
+
+      try {
+        const pages = await fetchFallbackPagesWithRetry(provider, chapter.id);
+        const pageUrls = Array.isArray(pages)
+          ? pages
+              .map((page) => page?.img)
+              .filter(Boolean)
+              .map((url) => String(url))
+          : [];
+        if (pageUrls.length === 0) {
+          failureCount += 1;
+          if (failureCount >= FALLBACK_PROVIDER_FAILURE_LIMIT && addedCount === 0) {
+            console.warn(`Fallback provider ${mapping.provider} aborted for ${entry.title} after repeated empty pages.`);
+            break;
+          }
+          continue;
+        }
+
+        const normalized = normalizeProviderChapter(mapping.provider, chapter, pageUrls);
+        if (existing) {
+          const index = merged.findIndex((item) => _chapterKey(item) === key);
+          if (index >= 0 && scoreChapterVariant(normalized) > scoreChapterVariant(merged[index])) {
+            merged[index] = normalized;
+          }
+        } else {
+          merged.push(normalized);
+        }
+        existingMap.set(key, normalized);
+        addedCount += 1;
+      } catch (error) {
+        failureCount += 1;
+        console.error(
+          `Failed fallback pages for ${entry.title} ch ${chapterNumber} via ${mapping.provider}: ${error.message}`,
+        );
+        if (failureCount >= FALLBACK_PROVIDER_FAILURE_LIMIT && addedCount === 0) {
+          console.warn(`Fallback provider ${mapping.provider} aborted for ${entry.title} after repeated failures.`);
+          break;
+        }
+      }
+
+      await delay(FALLBACK_DELAY_MS);
+    }
+
+    if (addedCount > 0) {
+      const finalMapping = {
         mangadexId: entry.mangadexId,
         title: entry.title,
         mangaId: entry.mangaId,
         anilistId: entry.anilistId,
         ...mapping,
-      });
+      };
+      fallbackMappingMap.set(entry.mangadexId, finalMapping);
       writeFallbackMappingMap(fallbackMappingMap);
+      console.log(`Added ${addedCount} English fallback chapters for ${entry.title}.`);
+      return {
+        chapters: dedupeChapters(merged),
+        mapping: finalMapping,
+      };
     }
   }
 
-  if (!mapping?.provider || !mapping?.providerId || !providers[mapping.provider]) {
-    return { chapters: baseEnglish, mapping: null };
-  }
-
-  const provider = providers[mapping.provider];
-  console.log(`Using English fallback ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
-  const info = await provider.fetchInfo(mapping.providerId);
-  const providerChaptersRaw = Array.isArray(info?.chapters) ? info.chapters : [];
-  const existingMap = new Map(baseEnglish.map((chapter) => [_chapterKey(chapter), chapter]));
-  const merged = [...baseEnglish];
-  let addedCount = 0;
-
-  for (const chapter of providerChaptersRaw) {
-    const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
-    if (chapterNumber == null) {
-      continue;
-    }
-
-    const tempChapter = {
-      id: `${mapping.provider}:${chapter.id}`,
-      title: String(chapter.title || '').trim(),
-      chapter: String(chapterNumber),
-      volume: chapter.volumeNumber != null ? String(chapter.volumeNumber) : '',
-      language: 'en',
-      pages: 0,
-      publishedAt: chapter.releaseDate || chapter.releasedDate || null,
-      externalUrl: null,
-      scanlationGroup: PROVIDER_LABELS[mapping.provider] || mapping.provider,
-      sourceType: 'fallback_reader',
-    };
-      const key = _chapterKey(tempChapter);
-    const existing = existingMap.get(key);
-
-    if (existing && Number(existing.pages || 0) > 0) {
-      continue;
-    }
-
-      try {
-      const pages = await fetchFallbackPagesWithRetry(provider, chapter.id);
-      const pageUrls = Array.isArray(pages)
-        ? pages
-            .map((page) => page?.img)
-            .filter(Boolean)
-            .map((url) => String(url))
-        : [];
-      if (pageUrls.length === 0) {
-        continue;
-      }
-
-      const normalized = normalizeProviderChapter(mapping.provider, chapter, pageUrls);
-      if (existing) {
-        const index = merged.findIndex((item) => _chapterKey(item) === key);
-        if (index >= 0 && scoreChapterVariant(normalized) > scoreChapterVariant(merged[index])) {
-          merged[index] = normalized;
-        }
-      } else {
-        merged.push(normalized);
-      }
-      existingMap.set(key, normalized);
-      addedCount += 1;
-    } catch (error) {
-      console.error(
-        `Failed fallback pages for ${entry.title} ch ${chapterNumber} via ${mapping.provider}: ${error.message}`,
-      );
-    }
-
-    await delay(FALLBACK_DELAY_MS);
-  }
-
-  if (addedCount > 0) {
-    console.log(`Added ${addedCount} English fallback chapters for ${entry.title}.`);
-  }
-
-  return {
-    chapters: dedupeChapters(merged),
-    mapping,
-  };
+  return { chapters: baseEnglish, mapping: null };
 }
 
 async function fetchFallbackPagesWithRetry(provider, chapterId) {
@@ -439,7 +479,12 @@ async function fetchFallbackPagesWithRetry(provider, chapterId) {
 
   while (attempt < FALLBACK_PAGE_MAX_RETRIES) {
     try {
-      return await provider.fetchChapterPages(chapterId);
+      return await Promise.race([
+        provider.fetchChapterPages(chapterId),
+        new Promise((_, reject) => {
+          setTimeout(() => reject(new Error(`Timeout after ${FALLBACK_PAGE_TIMEOUT_MS}ms`)), FALLBACK_PAGE_TIMEOUT_MS);
+        }),
+      ]);
     } catch (error) {
       lastError = error;
       attempt += 1;
