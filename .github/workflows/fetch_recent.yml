@@ -36,6 +36,11 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull --rebase origin main || true
           git add api/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "api: update recent episodes [skip ci]" && git push)
+          if git diff --staged --quiet; then
+            echo "No API changes to commit."
+          else
+            git commit -m "api: update recent episodes [skip ci]"
+            git pull --rebase origin main || git pull origin main
+            git push origin HEAD:main
+          fi
