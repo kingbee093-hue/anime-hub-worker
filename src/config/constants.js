@@ -28,6 +28,9 @@ const CONFIG = {
     MANGA_CATALOG: 'manga/catalog',
     MANGA_CHAPTERS: 'manga/chapters',
     MANGA_MAPPING: 'manga/mangadex_mapping',
+    MANGA_UNIVERSE: 'manga/universe',
+    MANGA_PAGES: 'manga/pages',
+    MANGA_BACKFILL: 'manga/backfill',
     MANGA_SEARCH_INDEX: 'search/manga_index',
     NEWS: 'news' 
   }

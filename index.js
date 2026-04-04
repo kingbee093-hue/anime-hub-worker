@@ -10,6 +10,9 @@ const fetchSchedule = require('./src/fetchers/fetchSchedule');
 const fetchAnimeCatalog = require('./src/fetchers/fetchAnimeCatalog');
 const fetchMangaCatalog = require('./src/fetchers/fetchMangaCatalog');
 const fetchMangaChapters = require('./src/fetchers/fetchMangaChapters');
+const fetchMangaUniverse = require('./src/fetchers/fetchMangaUniverse');
+const backfillMangaChapters = require('./src/fetchers/backfillMangaChapters');
+const backfillMangaPages = require('./src/fetchers/backfillMangaPages');
 const fetchCharacterCatalog = require('./src/fetchers/fetchCharacterCatalog');
 const fetchByGenre = require('./src/fetchers/fetchByGenre');
 const fetchNews = require('./scraper');
@@ -40,6 +43,7 @@ async function run() {
                 await fetchMangaChapters();
             }
         }
+        if (target === 'mangauniverse' || target === 'all') await fetchMangaUniverse();
         if (target === 'mangachapters' || target === 'all') {
             if (skipMangaChapters && target !== 'mangachapters') {
                 console.log('Skipping MangaDex chapter index build (MANGA_SKIP_CHAPTER_INDEX=1).');
@@ -47,6 +51,8 @@ async function run() {
                 await fetchMangaChapters();
             }
         }
+        if (target === 'mangachaptersbackfill' || target === 'all') await backfillMangaChapters();
+        if (target === 'mangapagesbackfill' || target === 'all') await backfillMangaPages();
         if (target === 'characters' || target === 'all') await fetchCharacterCatalog();
         if (target === 'news' || target === 'all') await fetchNews();
 
