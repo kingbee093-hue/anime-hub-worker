@@ -5,16 +5,33 @@ const axios = require('axios');
 const CONFIG = require('../config/constants');
 const { delay } = require('../utils/formatters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
+const {
+  PROVIDER_LABELS,
+  parseChapterNumber,
+  resolveBestFallbackProvider,
+  providers,
+  normalizeProviderChapter,
+} = require('../utils/mangaFallbackProviders');
 
 const MANGADEX_API = 'https://api.mangadex.org';
-const CHAPTER_LANGUAGES = ['en', 'ar', 'ja'];
+const CHAPTER_LANGUAGES = ['en', 'ar'];
 const CHAPTER_PAGE_SIZE = 500;
 const CHAPTER_DELAY_MS = 250;
+const FALLBACK_DELAY_MS = 500;
 const RELEASING_REFRESH_HOURS = Number(process.env.MANGA_RELEASING_REFRESH_HOURS || 12);
 const LIBRARY_REFRESH_HOURS = Number(process.env.MANGA_LIBRARY_REFRESH_HOURS || 24 * 7);
 const MAX_RELEASING_TITLES_PER_RUN = Number(process.env.MANGA_MAX_RELEASING_TITLES || 80);
 const MAX_LIBRARY_TITLES_PER_RUN = Number(process.env.MANGA_MAX_LIBRARY_TITLES || 40);
 const FORCE_FULL_REFRESH = process.env.MANGA_FORCE_FULL_REFRESH === '1';
+const ENABLE_ENGLISH_FALLBACK = process.env.MANGA_ENABLE_ENGLISH_FALLBACK !== '0';
+const TARGET_MANGA_IDS = new Set(
+  String(process.env.MANGA_TARGET_IDS || '')
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean),
+);
+const FALLBACK_MAPPING_TTL_HOURS = Number(process.env.MANGA_FALLBACK_MAPPING_TTL_HOURS || 24 * 14);
+const FALLBACK_PAGE_MAX_RETRIES = Number(process.env.MANGA_FALLBACK_PAGE_MAX_RETRIES || 3);
 
 function readJsonFile(filePath, fallback) {
   try {
@@ -64,6 +81,26 @@ function getManifestMap() {
   const manifest = readJsonFile(manifestPath, {});
   const items = Array.isArray(manifest.items) ? manifest.items : [];
   return new Map(items.map((item) => [item.mangadexId, item]));
+}
+
+function getFallbackMappingPath() {
+  return path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_MAPPING}_fallback.json`);
+}
+
+function getFallbackMappingMap() {
+  const items = readJsonFile(getFallbackMappingPath(), { items: [] });
+  const list = Array.isArray(items.items) ? items.items : [];
+  return new Map(list.map((item) => [item.mangadexId, item]));
+}
+
+function writeFallbackMappingMap(mappingMap) {
+  const items = Array.from(mappingMap.values()).sort((a, b) =>
+    String(a.title || '').localeCompare(String(b.title || '')),
+  );
+  writeJsonIfChanged(CONFIG.API_PATHS.MANGA_MAPPING + '_fallback', {
+    updatedAt: new Date().toISOString(),
+    items,
+  });
 }
 
 function buildRefreshPlan(entries, manifestMap) {
@@ -145,7 +182,7 @@ function normalizeChapterItem(raw, scanlationGroup) {
     sourceType: attributes.externalUrl ? 'official_external' : 'reader',
   };
 
-  if (!chapter.id || chapter.pages <= 0 || chapter.sourceType !== 'reader') {
+  if (!chapter.id) {
     return null;
   }
 
@@ -166,21 +203,13 @@ function dedupeChapters(chapters) {
 
   const resolved = Array.from(grouped.values()).map((variants) => {
     variants.sort((a, b) => {
-      let scoreA = 0;
-      let scoreB = 0;
-      if (a.pages > 0) scoreA += 500;
-      if (b.pages > 0) scoreB += 500;
-      if (a.scanlationGroup) scoreA += 50;
-      if (b.scanlationGroup) scoreB += 50;
-      if (a.publishedAt) scoreA += new Date(a.publishedAt).getTime() / 86400000;
-      if (b.publishedAt) scoreB += new Date(b.publishedAt).getTime() / 86400000;
-      return scoreB - scoreA;
+      return scoreChapterVariant(b) - scoreChapterVariant(a);
     });
     return variants[0];
   });
 
   resolved.sort((a, b) => {
-    const chapterDiff = (parseFloat(b.chapter) || -1) - (parseFloat(a.chapter) || -1);
+    const chapterDiff = (parseChapterNumber(b.chapter) || -1) - (parseChapterNumber(a.chapter) || -1);
     if (chapterDiff !== 0) {
       return chapterDiff;
     }
@@ -188,6 +217,188 @@ function dedupeChapters(chapters) {
   });
 
   return resolved;
+}
+
+function scoreChapterVariant(chapter) {
+  let score = 0;
+  if (chapter.sourceType === 'reader') score += 900;
+  if (chapter.sourceType === 'fallback_reader') score += 800;
+  if (chapter.sourceType === 'official_external') score += 100;
+  if (chapter.pages > 0) score += 400;
+  if (Array.isArray(chapter.pageUrls) && chapter.pageUrls.length > 0) score += 350;
+  if (chapter.scanlationGroup) score += 50;
+  if (chapter.publishedAt) score += 25;
+  return score;
+}
+
+function _chapterKey(chapter) {
+  const chapterNumber = String(chapter.chapter || '').trim();
+  if (chapterNumber) {
+    return `${chapter.language || 'en'}|${chapterNumber}`;
+  }
+
+  const title = String(chapter.title || '').trim().toLowerCase();
+  if (title) {
+    return `${chapter.language || 'en'}|title|${title}`;
+  }
+
+  return `${chapter.language || 'en'}|${chapter.id}`;
+}
+
+function needsEnglishFallback(entry, englishChapters) {
+  const catalogTotal = Number(entry.chapters || 0);
+  if (englishChapters.length === 0) return true;
+
+  const readableCount = englishChapters.filter((chapter) => chapter.sourceType === 'reader').length;
+  const externalCount = englishChapters.filter((chapter) => chapter.sourceType === 'official_external').length;
+  const maxChapter = Math.max(
+    0,
+    ...englishChapters
+      .map((chapter) => parseChapterNumber(chapter.chapter))
+      .filter((value) => Number.isFinite(value)),
+  );
+
+  if (catalogTotal > 0 && readableCount < catalogTotal) {
+    return true;
+  }
+
+  if (externalCount > 0) {
+    return true;
+  }
+
+  return catalogTotal > 0 && maxChapter + 1 < catalogTotal;
+}
+
+function isMappingFresh(mapping) {
+  if (!mapping?.updatedAt) return false;
+  const updatedAt = new Date(mapping.updatedAt).getTime();
+  if (Number.isNaN(updatedAt)) return false;
+  return (Date.now() - updatedAt) / 3600000 < FALLBACK_MAPPING_TTL_HOURS;
+}
+
+async function buildEnglishFallbackChapters(entry, existingEnglish, fallbackMappingMap) {
+  if (!ENABLE_ENGLISH_FALLBACK || !needsEnglishFallback(entry, existingEnglish)) {
+    return { chapters: existingEnglish, mapping: null };
+  }
+
+  const cachedMapping = fallbackMappingMap.get(entry.mangadexId);
+  let mapping = isMappingFresh(cachedMapping) ? cachedMapping : null;
+  if (!mapping) {
+    console.log(`Resolving English fallback provider for ${entry.title}...`);
+    mapping = await resolveBestFallbackProvider(entry, cachedMapping);
+    if (mapping) {
+      fallbackMappingMap.set(entry.mangadexId, {
+        mangadexId: entry.mangadexId,
+        title: entry.title,
+        mangaId: entry.mangaId,
+        anilistId: entry.anilistId,
+        ...mapping,
+      });
+      writeFallbackMappingMap(fallbackMappingMap);
+    }
+  }
+
+  if (!mapping?.provider || !mapping?.providerId || !providers[mapping.provider]) {
+    return { chapters: existingEnglish, mapping: null };
+  }
+
+  const provider = providers[mapping.provider];
+  console.log(`Using English fallback ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
+  const info = await provider.fetchInfo(mapping.providerId);
+  const providerChaptersRaw = Array.isArray(info?.chapters) ? info.chapters : [];
+  const existingMap = new Map(existingEnglish.map((chapter) => [_chapterKey(chapter), chapter]));
+  const merged = [...existingEnglish];
+  let addedCount = 0;
+
+  for (const chapter of providerChaptersRaw) {
+    const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
+    if (chapterNumber == null) {
+      continue;
+    }
+
+    const tempChapter = {
+      id: `${mapping.provider}:${chapter.id}`,
+      title: String(chapter.title || '').trim(),
+      chapter: String(chapterNumber),
+      volume: chapter.volumeNumber != null ? String(chapter.volumeNumber) : '',
+      language: 'en',
+      pages: 0,
+      publishedAt: chapter.releaseDate || chapter.releasedDate || null,
+      externalUrl: null,
+      scanlationGroup: PROVIDER_LABELS[mapping.provider] || mapping.provider,
+      sourceType: 'fallback_reader',
+    };
+      const key = _chapterKey(tempChapter);
+    const existing = existingMap.get(key);
+
+    if (existing && existing.sourceType === 'reader' && Number(existing.pages || 0) > 0) {
+      continue;
+      }
+
+      try {
+      const pages = await fetchFallbackPagesWithRetry(provider, chapter.id);
+      const pageUrls = Array.isArray(pages)
+        ? pages
+            .map((page) => page?.img)
+            .filter(Boolean)
+            .map((url) => String(url))
+        : [];
+      if (pageUrls.isEmpty) {
+        continue;
+      }
+
+      const normalized = normalizeProviderChapter(mapping.provider, chapter, pageUrls);
+      if (existing) {
+        const index = merged.findIndex((item) => _chapterKey(item) === key);
+        if (index >= 0 && scoreChapterVariant(normalized) > scoreChapterVariant(merged[index])) {
+          merged[index] = normalized;
+        }
+      } else {
+        merged.push(normalized);
+      }
+      existingMap.set(key, normalized);
+      addedCount += 1;
+    } catch (error) {
+      console.error(
+        `Failed fallback pages for ${entry.title} ch ${chapterNumber} via ${mapping.provider}: ${error.message}`,
+      );
+    }
+
+    await delay(FALLBACK_DELAY_MS);
+  }
+
+  if (addedCount > 0) {
+    console.log(`Added ${addedCount} English fallback chapters for ${entry.title}.`);
+  }
+
+  return {
+    chapters: dedupeChapters(merged),
+    mapping,
+  };
+}
+
+async function fetchFallbackPagesWithRetry(provider, chapterId) {
+  let attempt = 0;
+  let lastError = null;
+
+  while (attempt < FALLBACK_PAGE_MAX_RETRIES) {
+    try {
+      return await provider.fetchChapterPages(chapterId);
+    } catch (error) {
+      lastError = error;
+      attempt += 1;
+      const statusCode = error?.response?.status;
+      if (statusCode === 429 && attempt < FALLBACK_PAGE_MAX_RETRIES) {
+        await delay(FALLBACK_DELAY_MS * attempt * 3);
+        continue;
+      }
+      if (attempt < FALLBACK_PAGE_MAX_RETRIES) {
+        await delay(FALLBACK_DELAY_MS * attempt);
+      }
+    }
+  }
+
+  throw lastError || new Error('Failed to fetch fallback pages.');
 }
 
 async function fetchLanguageChapters(mangaDexId, language) {
@@ -241,7 +452,7 @@ async function fetchMangaChapters() {
   console.log('BUILDING: Manga Chapter Index');
   console.log('========================================');
 
-  const catalogEntries = getCatalogEntries()
+  const rawCatalogEntries = getCatalogEntries()
     .filter((item) => item && item.mangadexId)
     .map((item) => ({
       mangaId: item.mangaId,
@@ -250,12 +461,25 @@ async function fetchMangaChapters() {
       mangadexId: item.mangadexId,
       status: item.status || '',
       popularity: Number(item.popularity || 0),
+      chapters: Number(item.chapters || 0),
+      titleEnglish: item.titleEnglish || '',
+      titleRomaji: item.titleRomaji || '',
+      synonyms: Array.isArray(item.synonyms) ? item.synonyms : [],
     }));
+
+  const catalogEntries = TARGET_MANGA_IDS.size > 0
+    ? rawCatalogEntries.filter((item) =>
+        TARGET_MANGA_IDS.has(String(item.mangadexId)) ||
+        TARGET_MANGA_IDS.has(String(item.mangaId)) ||
+        TARGET_MANGA_IDS.has(String(item.anilistId)),
+      )
+    : rawCatalogEntries;
 
   const uniqueEntries = Array.from(
     new Map(catalogEntries.map((item) => [item.mangadexId, item])).values(),
   );
   const existingManifestMap = getManifestMap();
+  const fallbackMappingMap = getFallbackMappingMap();
   const refreshPlan = buildRefreshPlan(uniqueEntries, existingManifestMap);
 
   const manifest = {
@@ -285,10 +509,16 @@ async function fetchMangaChapters() {
 
     console.log(`Refreshing chapters for ${entry.title} (${entry.mangadexId})`);
     const languages = {};
+    let englishFallbackMapping = null;
 
     for (const language of CHAPTER_LANGUAGES) {
       try {
-        const chapters = await fetchLanguageChapters(entry.mangadexId, language);
+        let chapters = await fetchLanguageChapters(entry.mangadexId, language);
+        if (language === 'en') {
+          const fallback = await buildEnglishFallbackChapters(entry, chapters, fallbackMappingMap);
+          chapters = fallback.chapters;
+          englishFallbackMapping = fallback.mapping;
+        }
         if (chapters.length > 0) {
           languages[language] = chapters;
         }
@@ -310,6 +540,9 @@ async function fetchMangaChapters() {
         availableLanguages.map((language) => [language, languages[language].length]),
       ),
       languages,
+      englishFallbackProvider: englishFallbackMapping?.provider || null,
+      englishFallbackProviderTitle: englishFallbackMapping?.providerTitle || null,
+      englishFallbackChapterCount: englishFallbackMapping?.chapterCount || null,
     };
 
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/${entry.mangadexId}`, chapterIndex);
@@ -321,10 +554,13 @@ async function fetchMangaChapters() {
       updatedAt: chapterIndex.updatedAt,
       availableLanguages,
       counts: chapterIndex.counts,
+      englishFallbackProvider: chapterIndex.englishFallbackProvider,
+      englishFallbackChapterCount: chapterIndex.englishFallbackChapterCount,
     });
   }
 
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
+  writeFallbackMappingMap(fallbackMappingMap);
   console.log(`Saved chapter indexes for ${manifest.items.length} manga titles.`);
 }
 
