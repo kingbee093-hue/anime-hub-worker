@@ -45,6 +45,10 @@ jobs:
           MANGA_LIBRARY_REFRESH_HOURS: '168'
           MANGA_MAX_RELEASING_TITLES: '80'
           MANGA_MAX_LIBRARY_TITLES: '40'
+          MANGA_MAX_NEW_RELEASING_TITLES: '12'
+          MANGA_MAX_NEW_LIBRARY_TITLES: '8'
+          MANGA_BOOTSTRAP_INDEX_TARGET: '50'
+          MANGA_BOOTSTRAP_MULTIPLIER: '2'
           MANGA_ENABLE_ENGLISH_FALLBACK: '1'
           FORCE_REFRESH_INPUT: ${{ github.event.inputs.full_refresh || 'false' }}
         run: |

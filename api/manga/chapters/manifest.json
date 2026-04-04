@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-04-04T14:47:27.011Z",
-  "totalTitles": 2,
+  "generatedAt": "2026-04-04T15:50:13.677Z",
+  "totalTitles": 414,
   "items": [
+    {
+      "mangaId": 53390,
+      "anilistId": 53390,
+      "mangadexId": "304ceac3-8cdb-4fe7-acf7-2b6ff7a60613",
+      "title": "Attack on Titan",
+      "updatedAt": "2026-04-04T15:42:20.615Z",
+      "availableLanguages": [
+        "en"
+      ],
+      "counts": {
+        "en": 142
+      },
+      "englishFallbackProvider": "weebcentral",
+      "englishFallbackChapterCount": 142
+    },
     {
       "mangaId": 105778,
       "anilistId": 105778,
@@ -20,6 +35,23 @@
       "englishFallbackChapterCount": 232
     },
     {
+      "mangaId": 87216,
+      "anilistId": 87216,
+      "mangadexId": "789642f8-ca89-4e4e-8f7b-eee4d17ea08b",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "updatedAt": "2026-04-04T15:44:47.084Z",
+      "availableLanguages": [
+        "en",
+        "ar"
+      ],
+      "counts": {
+        "en": 205,
+        "ar": 214
+      },
+      "englishFallbackProvider": "weebcentral",
+      "englishFallbackChapterCount": 205
+    },
+    {
       "mangaId": 101517,
       "anilistId": 101517,
       "mangadexId": "c52b2ce3-7f95-469c-96b0-479524fb7a1a",
@@ -33,6 +65,36 @@
       },
       "englishFallbackProvider": "weebcentral",
       "englishFallbackChapterCount": 271
+    },
+    {
+      "mangaId": 85486,
+      "anilistId": 85486,
+      "mangadexId": "1a051bb3-094e-4494-aa2e-fdac29b9ab5b",
+      "title": "My Hero Academia",
+      "updatedAt": "2026-04-04T15:49:39.859Z",
+      "availableLanguages": [
+        "en"
+      ],
+      "counts": {
+        "en": 431
+      },
+      "englishFallbackProvider": "weebcentral",
+      "englishFallbackChapterCount": 431
+    },
+    {
+      "mangaId": 105398,
+      "anilistId": 105398,
+      "mangadexId": "32d76d19-8a05-4db0-9fc2-e0b0648fe9d0",
+      "title": "Solo Leveling",
+      "updatedAt": "2026-04-04T15:40:28.182Z",
+      "availableLanguages": [
+        "en"
+      ],
+      "counts": {
+        "en": 201
+      },
+      "englishFallbackProvider": "weebcentral",
+      "englishFallbackChapterCount": 201
     }
   ]
 }

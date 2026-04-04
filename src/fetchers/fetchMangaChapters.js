@@ -22,6 +22,10 @@ const RELEASING_REFRESH_HOURS = Number(process.env.MANGA_RELEASING_REFRESH_HOURS
 const LIBRARY_REFRESH_HOURS = Number(process.env.MANGA_LIBRARY_REFRESH_HOURS || 24 * 7);
 const MAX_RELEASING_TITLES_PER_RUN = Number(process.env.MANGA_MAX_RELEASING_TITLES || 80);
 const MAX_LIBRARY_TITLES_PER_RUN = Number(process.env.MANGA_MAX_LIBRARY_TITLES || 40);
+const MAX_NEW_RELEASING_TITLES_PER_RUN = Number(process.env.MANGA_MAX_NEW_RELEASING_TITLES || 12);
+const MAX_NEW_LIBRARY_TITLES_PER_RUN = Number(process.env.MANGA_MAX_NEW_LIBRARY_TITLES || 8);
+const BOOTSTRAP_INDEX_TARGET = Number(process.env.MANGA_BOOTSTRAP_INDEX_TARGET || 50);
+const BOOTSTRAP_MULTIPLIER = Number(process.env.MANGA_BOOTSTRAP_MULTIPLIER || 2);
 const FORCE_FULL_REFRESH = process.env.MANGA_FORCE_FULL_REFRESH === '1';
 const ENABLE_ENGLISH_FALLBACK = process.env.MANGA_ENABLE_ENGLISH_FALLBACK !== '0';
 const TARGET_MANGA_IDS = new Set(
@@ -118,20 +122,26 @@ function buildRefreshPlan(entries, manifestMap) {
       refreshSet: new Set(entries.map((entry) => entry.mangadexId)),
       releasingCount: entries.filter((entry) => isReleasingStatus(entry.status)).length,
       libraryCount: entries.filter((entry) => !isReleasingStatus(entry.status)).length,
+      newReleasingCount: entries.filter((entry) => isReleasingStatus(entry.status)).length,
+      newLibraryCount: entries.filter((entry) => !isReleasingStatus(entry.status)).length,
+      staleReleasingCount: 0,
+      staleLibraryCount: 0,
       skippedCount: 0,
     };
   }
 
-  const releasingCandidates = [];
-  const libraryCandidates = [];
+  const newReleasingCandidates = [];
+  const newLibraryCandidates = [];
+  const staleReleasingCandidates = [];
+  const staleLibraryCandidates = [];
 
   for (const entry of entries) {
     const existing = manifestMap.get(entry.mangadexId);
     if (!existing) {
       if (isReleasingStatus(entry.status)) {
-        releasingCandidates.push({ entry, staleHours: Number.POSITIVE_INFINITY });
+        newReleasingCandidates.push({ entry, staleHours: Number.POSITIVE_INFINITY });
       } else {
-        libraryCandidates.push({ entry, staleHours: Number.POSITIVE_INFINITY });
+        newLibraryCandidates.push({ entry, staleHours: Number.POSITIVE_INFINITY });
       }
       continue;
     }
@@ -139,40 +149,71 @@ function buildRefreshPlan(entries, manifestMap) {
     const staleHours = getHoursSince(existing.updatedAt);
     if (isReleasingStatus(entry.status)) {
       if (staleHours >= RELEASING_REFRESH_HOURS) {
-        releasingCandidates.push({ entry, staleHours });
+        staleReleasingCandidates.push({ entry, staleHours });
       }
     } else if (staleHours >= LIBRARY_REFRESH_HOURS) {
-      libraryCandidates.push({ entry, staleHours });
+      staleLibraryCandidates.push({ entry, staleHours });
     }
   }
 
-  releasingCandidates.sort((a, b) => {
+  newReleasingCandidates.sort((a, b) => {
+    return Number(b.entry.popularity || 0) - Number(a.entry.popularity || 0);
+  });
+
+  newLibraryCandidates.sort((a, b) => {
+    return Number(b.entry.popularity || 0) - Number(a.entry.popularity || 0);
+  });
+
+  staleReleasingCandidates.sort((a, b) => {
     const staleDelta = b.staleHours - a.staleHours;
     if (staleDelta !== 0) return staleDelta;
     return Number(b.entry.popularity || 0) - Number(a.entry.popularity || 0);
   });
 
-  libraryCandidates.sort((a, b) => {
+  staleLibraryCandidates.sort((a, b) => {
     const staleDelta = b.staleHours - a.staleHours;
     if (staleDelta !== 0) return staleDelta;
     return Number(b.entry.popularity || 0) - Number(a.entry.popularity || 0);
   });
 
-  const selectedReleasing = releasingCandidates
+  const bootstrapMultiplier = manifestMap.size < BOOTSTRAP_INDEX_TARGET
+    ? BOOTSTRAP_MULTIPLIER
+    : 1;
+
+  const selectedNewReleasing = newReleasingCandidates
+    .slice(0, MAX_NEW_RELEASING_TITLES_PER_RUN * bootstrapMultiplier)
+    .map((item) => item.entry);
+  const selectedNewLibrary = newLibraryCandidates
+    .slice(0, MAX_NEW_LIBRARY_TITLES_PER_RUN * bootstrapMultiplier)
+    .map((item) => item.entry);
+  const selectedStaleReleasing = staleReleasingCandidates
     .slice(0, MAX_RELEASING_TITLES_PER_RUN)
     .map((item) => item.entry);
-  const selectedLibrary = libraryCandidates
+  const selectedStaleLibrary = staleLibraryCandidates
     .slice(0, MAX_LIBRARY_TITLES_PER_RUN)
     .map((item) => item.entry);
 
   return {
     refreshSet: new Set(
-      [...selectedReleasing, ...selectedLibrary].map((entry) => entry.mangadexId),
+      [
+        ...selectedNewReleasing,
+        ...selectedNewLibrary,
+        ...selectedStaleReleasing,
+        ...selectedStaleLibrary,
+      ].map((entry) => entry.mangadexId),
     ),
-    releasingCount: selectedReleasing.length,
-    libraryCount: selectedLibrary.length,
+    releasingCount: selectedNewReleasing.length + selectedStaleReleasing.length,
+    libraryCount: selectedNewLibrary.length + selectedStaleLibrary.length,
+    newReleasingCount: selectedNewReleasing.length,
+    newLibraryCount: selectedNewLibrary.length,
+    staleReleasingCount: selectedStaleReleasing.length,
+    staleLibraryCount: selectedStaleLibrary.length,
     skippedCount:
-      entries.length - selectedReleasing.length - selectedLibrary.length,
+      entries.length -
+      selectedNewReleasing.length -
+      selectedNewLibrary.length -
+      selectedStaleReleasing.length -
+      selectedStaleLibrary.length,
   };
 }
 
@@ -482,6 +523,10 @@ async function fetchMangaChapters() {
       synonyms: Array.isArray(item.synonyms) ? item.synonyms : [],
     }));
 
+  const allUniqueEntries = Array.from(
+    new Map(rawCatalogEntries.map((item) => [item.mangadexId, item])).values(),
+  );
+
   const catalogEntries = TARGET_MANGA_IDS.size > 0
     ? rawCatalogEntries.filter((item) =>
         TARGET_MANGA_IDS.has(String(item.mangadexId)) ||
@@ -496,15 +541,22 @@ async function fetchMangaChapters() {
   const existingManifestMap = getManifestMap();
   const fallbackMappingMap = getFallbackMappingMap();
   const refreshPlan = buildRefreshPlan(uniqueEntries, existingManifestMap);
+  const untouchedManifestItems = TARGET_MANGA_IDS.size > 0
+    ? Array.from(existingManifestMap.values()).filter((item) =>
+        !TARGET_MANGA_IDS.has(String(item.mangadexId)) &&
+        !TARGET_MANGA_IDS.has(String(item.mangaId)) &&
+        !TARGET_MANGA_IDS.has(String(item.anilistId)),
+      )
+    : [];
 
   const manifest = {
     generatedAt: new Date().toISOString(),
-    totalTitles: uniqueEntries.length,
-    items: [],
+    totalTitles: allUniqueEntries.length,
+    items: [...untouchedManifestItems],
   };
 
   console.log(
-    `Manga chapter refresh plan -> releasing: ${refreshPlan.releasingCount}, library: ${refreshPlan.libraryCount}, skipped: ${refreshPlan.skippedCount}, forceFull: ${FORCE_FULL_REFRESH}`,
+    `Manga chapter refresh plan -> new releasing: ${refreshPlan.newReleasingCount}, new library: ${refreshPlan.newLibraryCount}, stale releasing: ${refreshPlan.staleReleasingCount}, stale library: ${refreshPlan.staleLibraryCount}, skipped: ${refreshPlan.skippedCount}, forceFull: ${FORCE_FULL_REFRESH}`,
   );
 
   for (const entry of uniqueEntries) {
@@ -589,6 +641,7 @@ async function fetchMangaChapters() {
     });
   }
 
+  manifest.items.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
   writeFallbackMappingMap(fallbackMappingMap);
   console.log(`Saved chapter indexes for ${manifest.items.length} manga titles.`);
