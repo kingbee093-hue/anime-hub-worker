@@ -33,6 +33,18 @@ const FALLBACK_PAGE_MAX_RETRIES = Number(process.env.MANGA_FALLBACK_PAGE_MAX_RET
 const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_MS || 45000);
 const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
 
+function isProviderBlockedError(error) {
+  const message = String(error?.message || '').toLowerCase();
+  return (
+    message.includes('removed all content') ||
+    message.includes('removed all content or links') ||
+    message.includes('copyright party') ||
+    message.includes('dmca') ||
+    message.includes('content unavailable') ||
+    message.includes('this series has been licensed')
+  );
+}
+
 function isForceFullRefresh() {
   return process.env.MANGA_FORCE_FULL_REFRESH === '1';
 }
@@ -438,6 +450,7 @@ async function buildEnglishFallbackChapters(
   let addedCount = 0;
   const providerSuccessCounts = new Map();
   const providerFailureCounts = new Map();
+  const blockedProviders = new Set();
 
   for (const [key, options] of chapterOptions.entries()) {
     const existing = existingMap.get(key);
@@ -449,6 +462,9 @@ async function buildEnglishFallbackChapters(
 
     for (const { providerEntry, chapter } of options) {
       const providerKey = providerEntry.mapping.provider;
+      if (blockedProviders.has(providerKey)) {
+        continue;
+      }
       const failureCount = providerFailureCounts.get(providerKey) || 0;
       const successCount = providerSuccessCounts.get(providerKey) || 0;
       if (failureCount >= FALLBACK_PROVIDER_FAILURE_LIMIT && successCount === 0) {
@@ -485,6 +501,13 @@ async function buildEnglishFallbackChapters(
       } catch (error) {
         providerFailureCounts.set(providerKey, failureCount + 1);
         const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
+        if (isProviderBlockedError(error)) {
+          blockedProviders.add(providerKey);
+          console.error(
+            `Blocked fallback provider ${providerKey} for ${entry.title}: ${error.message}`,
+          );
+          continue;
+        }
         console.error(
           `Failed fallback pages for ${entry.title} ch ${chapterNumber} via ${providerKey}: ${error.message}`,
         );
