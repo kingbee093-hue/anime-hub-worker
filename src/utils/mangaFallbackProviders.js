@@ -23,6 +23,8 @@ const PROVIDER_LABELS = {
 };
 const MAX_SEARCH_RESULTS_PER_QUERY = 3;
 const MAX_PROVIDER_CANDIDATES = 2;
+const PROVIDER_SEARCH_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_SEARCH_TIMEOUT_MS || 20000);
+const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_MS || 30000);
 
 function normalizeText(value) {
   return String(value || '')
@@ -112,6 +114,15 @@ function buildSearchCandidateRecord(candidate, candidateTitles, query) {
   };
 }
 
+function withTimeout(promise, timeoutMs, label) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => {
+      setTimeout(() => reject(new Error(`${label} timed out after ${timeoutMs}ms`)), timeoutMs);
+    }),
+  ]);
+}
+
 async function collectProviderCandidates(providerKey, candidateTitles) {
   const provider = providers[providerKey];
   const rankedMap = new Map();
@@ -159,12 +170,20 @@ class FallbackProviderClient {
   }
 
   async search(query) {
-    const result = await this.client.search(query);
+    const result = await withTimeout(
+      this.client.search(query),
+      PROVIDER_SEARCH_TIMEOUT_MS,
+      `${this.label} search`,
+    );
     return Array.isArray(result?.results) ? result.results : [];
   }
 
   async fetchInfo(id) {
-    return this.client.fetchMangaInfo(id);
+    return withTimeout(
+      this.client.fetchMangaInfo(id),
+      PROVIDER_INFO_TIMEOUT_MS,
+      `${this.label} fetchInfo`,
+    );
   }
 
   async fetchChapterPages(chapterId) {
