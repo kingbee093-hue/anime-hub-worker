@@ -3326,6 +3326,26 @@
         "name": "Youkai",
         "description": "Prominently features supernatural creatures from Japanese folklore.",
         "category": "Theme-Fantasy",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 250,
+        "name": "Rural",
+        "description": "Partly or completely set in the countryside.",
+        "category": "Setting-Scene",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -3342,21 +3362,11 @@
         "isAdult": false
       },
       {
-        "id": 250,
-        "name": "Rural",
-        "description": "Partly or completely set in the countryside.",
-        "category": "Setting-Scene",
-        "rank": 46,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 40,
+        "id": 1719,
+        "name": "Exorcism",
+        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3366,16 +3376,6 @@
         "name": "Animals",
         "description": "Prominently features animal characters in a leading role.",
         "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1719,
-        "name": "Exorcism",
-        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
-        "category": "Theme-Fantasy",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -11487,100 +11487,5 @@
     "trailer": null,
     "latestEpisode": 12,
     "latestEpisodeTitle": "Episode 12"
-  },
-  {
-    "animeId": 61084,
-    "anilistId": 187062,
-    "title": "Oedo Fire Slayer -The Legend of Phoenix-",
-    "titleRomaji": "Hikuidori",
-    "titleEnglish": "Oedo Fire Slayer -The Legend of Phoenix-",
-    "titleNative": "火喰鳥",
-    "synonyms": [
-      "วิหคกินเพลิง: หน่วยพิทักษ์เพลิงแห่งเอโดะ"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187062-JuXPEjrLQSeO.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187062-JuXPEjrLQSeO.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187062-JuXPEjrLQSeO.png",
-    "coverImageColor": "#d65d1a",
-    "bannerImage": "",
-    "synopsis": "The fire extinguishing samurai who stopped the great fire was called \"The fire-eating bird\". Matsunaga Gengo, once known as the \"Fire-eating Bird\", was the best fire-fighting samurai in Edo. He had resigned from the fire brigade for a reason but suddenly received an invitation to serve in the Shinjo clan. The Shinjo clan's fire-fighting team had no money and no personnel and was looked down upon by those around them. With the encouragement of his wife, Miyuki, Gengo decides to rebuild the collapsed fire-fighting clan as its chairman. Gengo and his friends, all of whom have their own peculiarities, struggle to \"save any life\", despite being ridiculed as \"ragged steeplejacks\"(= the 'Boro-Tobi-Gumi'.), In Edo, a mysterious series of suspicious fires called \"foxfires\" continue. An entertaining action drama opens, with the firefighters scrambling to save lives in the face of the approaching disaster! (Source: Amuse Creative Studio)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "RELEASING",
-    "season": "WINTER",
-    "seasonYear": 2026,
-    "seasonInt": 261,
-    "episodes": 12,
-    "duration": 24,
-    "genres": [
-      "Action",
-      "Drama"
-    ],
-    "tags": [
-      {
-        "id": 613,
-        "name": "Firefighters",
-        "description": "Centered around the life and activities of rescuers specialised in firefighting.",
-        "category": "Theme-Other-Organisations",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 25,
-        "name": "Historical",
-        "description": "Partly or completely set during a real period of world history.",
-        "category": "Setting-Time",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 118,
-        "name": "SynergySP",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/118"
-      }
-    ],
-    "studiosNames": [
-      "SynergySP"
-    ],
-    "rating": 4.2,
-    "averageScore": 42,
-    "meanScore": 42,
-    "popularity": 3940,
-    "trending": 1,
-    "favourites": 41,
-    "source": "OTHER",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2026-01-11",
-    "endDate": "2026-04-05",
-    "mal_url": "https://myanimelist.net/anime/61084",
-    "anilist_url": "https://anilist.co/anime/187062",
-    "trailer": {
-      "id": "bB6qXk2YOYE",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=bB6qXk2YOYE"
-    },
-    "latestEpisode": 11,
-    "latestEpisodeTitle": "Episode 11"
   }
 ]
