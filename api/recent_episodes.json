@@ -1794,7 +1794,7 @@
         "name": "Denpa",
         "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
         "category": "Theme-Other",
-        "rank": 97,
+        "rank": 87,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -1814,7 +1814,7 @@
         "name": "VTuber",
         "description": "Prominently features a character who is either an actual or fictive VTuber.",
         "category": "Cast-Traits",
-        "rank": 65,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1824,7 +1824,7 @@
         "name": "Otaku Culture",
         "description": "Centers around the culture of a fanatical fan-base.",
         "category": "Theme-Other",
-        "rank": 60,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1834,6 +1834,26 @@
         "name": "Idol",
         "description": "Centers around the life and activities of an idol.",
         "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1742,
+        "name": "Mixed Media",
+        "description": "Features a combination of different media and animation techniques. Often seen with puppetry, textiles, live action footage, stop motion, and more. This does not include works with normal usage of CGI in their production.",
+        "category": "Technical",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
         "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1854,7 +1874,7 @@
         "name": "CGI",
         "description": "Prominently features scenes created with computer-generated imagery.",
         "category": "Technical",
-        "rank": 40,
+        "rank": 46,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1877,16 +1897,6 @@
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1742,
-        "name": "Mixed Media",
-        "description": "Features a combination of different media and animation techniques. Often seen with puppetry, textiles, live action footage, stop motion, and more. This does not include works with normal usage of CGI in their production.",
-        "category": "Technical",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -1934,16 +1944,6 @@
         "name": "Disability",
         "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
         "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
