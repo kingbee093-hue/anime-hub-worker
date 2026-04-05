@@ -2591,6 +2591,16 @@
         "isAdult": false
       },
       {
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 489,
         "name": "Drugs",
         "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
@@ -2601,11 +2611,11 @@
         "isAdult": false
       },
       {
-        "id": 97,
-        "name": "Otaku Culture",
-        "description": "Centers around the culture of a fanatical fan-base.",
-        "category": "Theme-Other",
-        "rank": 76,
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2626,16 +2636,6 @@
         "description": "Prominently features a character who is either an actual or fictive VTuber.",
         "category": "Cast-Traits",
         "rank": 71,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 115,
-        "name": "Idol",
-        "description": "Centers around the life and activities of an idol.",
-        "category": "Cast-Traits",
-        "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -4638,10 +4638,10 @@
     "studiosNames": [
       "WIT STUDIO"
     ],
-    "rating": 7.3,
-    "averageScore": 73,
-    "meanScore": 87,
-    "popularity": 18226,
+    "rating": 7.8,
+    "averageScore": 78,
+    "meanScore": 82,
+    "popularity": 19709,
     "trending": 5,
     "favourites": 276,
     "source": "LIGHT_NOVEL",
@@ -6092,10 +6092,10 @@
     "studiosNames": [
       "project No.9"
     ],
-    "rating": 8.3,
-    "averageScore": 83,
-    "meanScore": 85,
-    "popularity": 40605,
+    "rating": 8.2,
+    "averageScore": 82,
+    "meanScore": 84,
+    "popularity": 41919,
     "trending": 13,
     "favourites": 1011,
     "source": "LIGHT_NOVEL",
@@ -9051,10 +9051,10 @@
     "studiosNames": [
       "MAPPA"
     ],
-    "rating": 7.8,
-    "averageScore": 78,
+    "rating": 7.9,
+    "averageScore": 79,
     "meanScore": 81,
-    "popularity": 23461,
+    "popularity": 24158,
     "trending": 92,
     "favourites": 333,
     "source": "MANGA",
