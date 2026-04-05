@@ -8,7 +8,6 @@ const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
   PROVIDER_LABELS,
   parseChapterNumber,
-  resolveBestFallbackProvider,
   resolveFallbackProviderCandidates,
   providers,
   normalizeProviderChapter,
@@ -382,25 +381,17 @@ async function buildEnglishFallbackChapters(
   }
 
   const cachedMapping = fallbackMappingMap.get(entry.mangadexId);
-  const providerCandidates = [];
   const freshCached = isMappingFresh(cachedMapping) ? cachedMapping : null;
-
-  if (freshCached?.provider && freshCached?.providerId) {
-    providerCandidates.push(freshCached);
-  } else {
-    console.log(`Resolving English fallback providers for ${entry.title}...`);
-    const best = await resolveBestFallbackProvider(entry, cachedMapping);
-    if (best) {
-      providerCandidates.push(best);
-    }
-  }
+  console.log(`Resolving English fallback providers for ${entry.title} (MangaPill preferred first)...`);
 
   const rankedCandidates = await resolveFallbackProviderCandidates(entry);
-  for (const candidate of rankedCandidates) {
+  const providerCandidates = [...rankedCandidates];
+
+  if (freshCached?.provider && freshCached?.providerId) {
     const exists = providerCandidates.some((item) =>
-      item.provider === candidate.provider && item.providerId === candidate.providerId);
+      item.provider === freshCached.provider && item.providerId === freshCached.providerId);
     if (!exists) {
-      providerCandidates.push(candidate);
+      providerCandidates.push(freshCached);
     }
   }
 

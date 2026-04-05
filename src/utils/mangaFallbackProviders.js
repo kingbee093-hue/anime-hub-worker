@@ -284,7 +284,14 @@ async function resolveFallbackProviderCandidates(manga) {
   return Array.from(
     new Map(
       ranked
-        .sort((a, b) => b.score - a.score)
+        .sort((a, b) => {
+          const providerRankA = PROVIDER_PRIORITY.indexOf(a.provider);
+          const providerRankB = PROVIDER_PRIORITY.indexOf(b.provider);
+          if (providerRankA !== providerRankB) {
+            return providerRankA - providerRankB;
+          }
+          return b.score - a.score;
+        })
         .map((item) => [`${item.provider}:${item.providerId}`, item]),
     ).values(),
   );
