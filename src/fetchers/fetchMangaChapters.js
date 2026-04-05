@@ -32,6 +32,7 @@ const FALLBACK_MAPPING_TTL_HOURS = Number(process.env.MANGA_FALLBACK_MAPPING_TTL
 const FALLBACK_PAGE_MAX_RETRIES = Number(process.env.MANGA_FALLBACK_PAGE_MAX_RETRIES || 3);
 const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_MS || 45000);
 const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
+const FALLBACK_PROGRESS_EVERY = Number(process.env.MANGA_FALLBACK_PROGRESS_EVERY || 10);
 
 function isProviderBlockedError(error) {
   const message = String(error?.message || '').toLowerCase();
@@ -447,12 +448,28 @@ async function buildEnglishFallbackChapters(
     }
   }
 
+  console.log(
+    `Preparing fallback chapter pages for ${entry.title}: ${chapterOptions.size} chapter gaps, ${providerEntries.length} provider candidate(s).`,
+  );
+
   let addedCount = 0;
   const providerSuccessCounts = new Map();
   const providerFailureCounts = new Map();
   const blockedProviders = new Set();
+  let processedCount = 0;
 
   for (const [key, options] of chapterOptions.entries()) {
+    processedCount += 1;
+    if (
+      processedCount === 1 ||
+      processedCount === chapterOptions.size ||
+      processedCount % FALLBACK_PROGRESS_EVERY === 0
+    ) {
+      console.log(
+        `Fallback progress for ${entry.title}: ${processedCount}/${chapterOptions.size} chapter gap(s) checked, ${addedCount} readable chapter(s) added so far.`,
+      );
+    }
+
     const existing = existingMap.get(key);
     if (existing && Number(existing.pages || 0) > 0) {
       continue;
