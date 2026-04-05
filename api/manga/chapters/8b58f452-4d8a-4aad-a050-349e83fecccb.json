@@ -3,7 +3,7 @@
   "anilistId": 105469,
   "mangadexId": "8b58f452-4d8a-4aad-a050-349e83fecccb",
   "title": "Jujutsu Kaisen 0",
-  "updatedAt": "2026-04-04T06:50:44.893Z",
+  "updatedAt": "2026-04-05T08:03:03.474Z",
   "availableLanguages": [
     "en"
   ],
@@ -19,10 +19,14 @@
         "volume": "0",
         "language": "en",
         "pages": 47,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2019-01-15T21:49:26+00:00",
         "externalUrl": null,
         "scanlationGroup": "Coming Soon™ Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "1d97e12e-ff0d-4fc2-9ee0-a693c087e0cb",
@@ -31,10 +35,14 @@
         "volume": "0",
         "language": "en",
         "pages": 46,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2019-01-15T21:48:04+00:00",
         "externalUrl": null,
         "scanlationGroup": "Coming Soon™ Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "aa3250a2-9d4d-4437-958e-365a38ff96ce",
@@ -43,10 +51,14 @@
         "volume": "0",
         "language": "en",
         "pages": 45,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2019-01-12T15:52:03+00:00",
         "externalUrl": null,
         "scanlationGroup": "Coming Soon™ Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "f79426dc-2984-40f3-bccc-c205c76b6dd1",
@@ -55,11 +67,18 @@
         "volume": "0",
         "language": "en",
         "pages": 54,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2018-09-21T11:38:36+00:00",
         "externalUrl": null,
         "scanlationGroup": "Jaimini's~box~",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       }
     ]
-  }
+  },
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }
