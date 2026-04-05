@@ -21,6 +21,8 @@ const PROVIDER_LABELS = {
   mangapill: 'MangaPill',
   mangahere: 'MangaHere',
 };
+const MAX_SEARCH_RESULTS_PER_QUERY = 3;
+const MAX_PROVIDER_CANDIDATES = 2;
 
 function normalizeText(value) {
   return String(value || '')
@@ -92,6 +94,62 @@ function titleScore(resultTitle, candidates) {
   return best;
 }
 
+function buildSearchCandidateRecord(candidate, candidateTitles, query) {
+  const providerId = String(candidate?.id || '').trim();
+  if (!providerId) return null;
+
+  const providerTitle = typeof candidate?.title === 'string' ? candidate.title : query;
+  const matchScore = titleScore(providerTitle, candidateTitles);
+  if (matchScore < 55) {
+    return null;
+  }
+
+  return {
+    providerId,
+    providerTitle,
+    matchScore,
+    dedupeKey: normalizeText(providerTitle) || providerId,
+  };
+}
+
+async function collectProviderCandidates(providerKey, candidateTitles) {
+  const provider = providers[providerKey];
+  const rankedMap = new Map();
+
+  for (const query of candidateTitles) {
+    let searchResults = [];
+    try {
+      searchResults = await provider.search(query);
+    } catch (_) {
+      continue;
+    }
+
+    for (const candidate of searchResults.slice(0, MAX_SEARCH_RESULTS_PER_QUERY)) {
+      const record = buildSearchCandidateRecord(candidate, candidateTitles, query);
+      if (!record) {
+        continue;
+      }
+
+      const existing = rankedMap.get(record.providerId);
+      if (!existing || record.matchScore > existing.matchScore) {
+        rankedMap.set(record.providerId, record);
+      }
+    }
+  }
+
+  const dedupedByTitle = new Map();
+  for (const item of rankedMap.values()) {
+    const existing = dedupedByTitle.get(item.dedupeKey);
+    if (!existing || item.matchScore > existing.matchScore) {
+      dedupedByTitle.set(item.dedupeKey, item);
+    }
+  }
+
+  return Array.from(dedupedByTitle.values())
+    .sort((a, b) => b.matchScore - a.matchScore)
+    .slice(0, MAX_PROVIDER_CANDIDATES);
+}
+
 class FallbackProviderClient {
   constructor(key, factory) {
     this.key = key;
@@ -141,41 +199,29 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
 
   for (const providerKey of PROVIDER_PRIORITY) {
     const provider = providers[providerKey];
-    for (const query of candidateTitles) {
-      let searchResults = [];
+    const providerCandidates = await collectProviderCandidates(providerKey, candidateTitles);
+
+    for (const candidate of providerCandidates) {
       try {
-        searchResults = await provider.search(query);
+        const info = await provider.fetchInfo(candidate.providerId);
+        const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        const score =
+          candidate.matchScore +
+          scoreCoverage(chapterCount, manga.chapters) +
+          (PROVIDER_PRIORITY.length - PROVIDER_PRIORITY.indexOf(providerKey));
+
+        if (!best || score > best.score) {
+          best = {
+            provider: providerKey,
+            providerId: candidate.providerId,
+            providerTitle: candidate.providerTitle,
+            chapterCount,
+            score,
+            updatedAt: new Date().toISOString(),
+          };
+        }
       } catch (_) {
         continue;
-      }
-
-      for (const candidate of searchResults.slice(0, 4)) {
-        const matchScore = titleScore(candidate.title, candidateTitles);
-        if (matchScore < 55) {
-          continue;
-        }
-
-        try {
-          const info = await provider.fetchInfo(candidate.id);
-          const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
-          const score =
-            matchScore +
-            scoreCoverage(chapterCount, manga.chapters) +
-            (PROVIDER_PRIORITY.length - PROVIDER_PRIORITY.indexOf(providerKey));
-
-          if (!best || score > best.score) {
-            best = {
-              provider: providerKey,
-              providerId: candidate.id,
-              providerTitle: typeof candidate.title === 'string' ? candidate.title : query,
-              chapterCount,
-              score,
-              updatedAt: new Date().toISOString(),
-            };
-          }
-        } catch (_) {
-          continue;
-        }
       }
     }
   }
@@ -191,39 +237,27 @@ async function resolveFallbackProviderCandidates(manga) {
 
   for (const providerKey of PROVIDER_PRIORITY) {
     const provider = providers[providerKey];
-    for (const query of candidateTitles) {
-      let searchResults = [];
+    const providerCandidates = await collectProviderCandidates(providerKey, candidateTitles);
+
+    for (const candidate of providerCandidates) {
       try {
-        searchResults = await provider.search(query);
+        const info = await provider.fetchInfo(candidate.providerId);
+        const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        const score =
+          candidate.matchScore +
+          scoreCoverage(chapterCount, manga.chapters) +
+          (PROVIDER_PRIORITY.length - PROVIDER_PRIORITY.indexOf(providerKey));
+
+        ranked.push({
+          provider: providerKey,
+          providerId: candidate.providerId,
+          providerTitle: candidate.providerTitle,
+          chapterCount,
+          score,
+          updatedAt: new Date().toISOString(),
+        });
       } catch (_) {
         continue;
-      }
-
-      for (const candidate of searchResults.slice(0, 4)) {
-        const matchScore = titleScore(candidate.title, candidateTitles);
-        if (matchScore < 55) {
-          continue;
-        }
-
-        try {
-          const info = await provider.fetchInfo(candidate.id);
-          const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
-          const score =
-            matchScore +
-            scoreCoverage(chapterCount, manga.chapters) +
-            (PROVIDER_PRIORITY.length - PROVIDER_PRIORITY.indexOf(providerKey));
-
-          ranked.push({
-            provider: providerKey,
-            providerId: candidate.id,
-            providerTitle: typeof candidate.title === 'string' ? candidate.title : query,
-            chapterCount,
-            score,
-            updatedAt: new Date().toISOString(),
-          });
-        } catch (_) {
-          continue;
-        }
       }
     }
   }
