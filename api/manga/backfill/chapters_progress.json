@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-04-05T11:45:40.667Z",
+  "updatedAt": "2026-04-05T12:53:20.639Z",
   "catalogTotal": 503,
-  "indexedTitles": 143,
-  "pendingTitles": 383,
+  "indexedTitles": 182,
+  "pendingTitles": 352,
   "selectedCount": 50,
   "batchSize": 50,
   "forceAll": false,
@@ -19,7 +19,20 @@
       "currentEnglishCount": 19,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T09:18:15.689Z",
+      "lastSuccessAt": "2026-04-05T10:54:30.700Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
+      "title": "Noblesse",
+      "score": 922386,
+      "year": 2007,
+      "popularity": 33386,
+      "chapters": 544,
+      "currentEnglishCount": 5,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-05T11:16:23.449Z",
       "lastFailureAt": null
     },
     {
@@ -32,7 +45,7 @@
       "currentEnglishCount": 222,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T10:10:43.501Z",
+      "lastSuccessAt": "2026-04-05T10:54:30.771Z",
       "lastFailureAt": null
     },
     {
@@ -45,7 +58,7 @@
       "currentEnglishCount": 9,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T09:51:04.938Z",
+      "lastSuccessAt": "2026-04-05T10:54:30.834Z",
       "lastFailureAt": null
     },
     {
@@ -58,7 +71,7 @@
       "currentEnglishCount": 23,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T10:12:26.523Z",
+      "lastSuccessAt": "2026-04-05T10:54:30.897Z",
       "lastFailureAt": null
     },
     {
@@ -71,7 +84,7 @@
       "currentEnglishCount": 3,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T08:41:26.236Z",
+      "lastSuccessAt": "2026-04-05T10:54:30.963Z",
       "lastFailureAt": null
     },
     {
@@ -84,7 +97,20 @@
       "currentEnglishCount": 326,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T09:23:02.434Z",
+      "lastSuccessAt": "2026-04-05T10:54:31.028Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "score": 583444,
+      "year": 2014,
+      "popularity": 35444,
+      "chapters": 334,
+      "currentEnglishCount": 136,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-05T11:08:10.475Z",
       "lastFailureAt": null
     },
     {
@@ -97,7 +123,7 @@
       "currentEnglishCount": 24,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T08:35:17.922Z",
+      "lastSuccessAt": "2026-04-05T10:54:31.092Z",
       "lastFailureAt": null
     },
     {
@@ -110,7 +136,7 @@
       "currentEnglishCount": 20,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T09:57:28.296Z",
+      "lastSuccessAt": "2026-04-05T10:54:31.156Z",
       "lastFailureAt": null
     },
     {
@@ -123,197 +149,15 @@
       "currentEnglishCount": 1,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-05T09:09:13.326Z",
+      "lastSuccessAt": "2026-04-05T10:54:31.222Z",
       "lastFailureAt": null
     },
     {
-      "mangadexId": "00893d86-c910-4247-b5cb-a2a0e0380012",
-      "title": "Blue Flag",
-      "score": 539291,
-      "year": 2017,
-      "popularity": 39237,
-      "chapters": 54,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "665766a3-905d-4a71-a90a-bd2c75d1a81f",
-      "title": "Alice in Borderland",
-      "score": 539215,
-      "year": 2010,
-      "popularity": 39128,
-      "chapters": 87,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "0aea9f43-d4a9-4bf7-bebc-550a512f9b95",
-      "title": "Shikimori's Not Just a Cutie",
-      "score": 539087,
-      "year": 2018,
-      "popularity": 38884,
-      "chapters": 203,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "67c6df9e-280f-476c-b13c-cecf6b2eb3c7",
-      "title": "THE BREAKER",
-      "score": 538253,
-      "year": 2007,
-      "popularity": 38181,
-      "chapters": 72,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "2725e983-81c3-4a62-8e97-5027c5996c2b",
-      "title": "JoJo's Bizarre Adventure Part 5: Golden Wind",
-      "score": 538059,
-      "year": 1995,
-      "popularity": 37904,
-      "chapters": 155,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "cffdc4f4-0cd9-409b-b88c-62aaf2882e07",
-      "title": "orange",
-      "score": 537619,
-      "year": 2012,
-      "popularity": 37580,
-      "chapters": 39,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "aaedcbda-ea61-4e7b-8143-7a475f327fbf",
-      "title": "Neon Genesis Evangelion",
-      "score": 536591,
-      "year": 1994,
-      "popularity": 36494,
-      "chapters": 97,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "e5357466-c8a2-4259-9b02-2580185bd2bb",
-      "title": "Billy Bat",
-      "score": 536388,
-      "year": 2008,
-      "popularity": 36223,
-      "chapters": 165,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "371a7405-bee1-402c-b0d7-74ea3fb4d587",
-      "title": "Prison School",
-      "score": 536382,
-      "year": 2011,
-      "popularity": 36103,
-      "chapters": 279,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "61079efc-d1c4-4565-bbe6-de58e1d75fdf",
-      "title": "JoJo's Bizarre Adventure Part 2: Battle Tendency",
-      "score": 535860,
-      "year": 1987,
-      "popularity": 35791,
-      "chapters": 69,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "2c2a45bc-42c8-4d62-995c-bd5523642ba8",
-      "title": "Our Dreams at Dusk: Shimanami Tasogare",
-      "score": 535833,
-      "year": 2015,
-      "popularity": 35810,
-      "chapters": 23,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "score": 535778,
-      "year": 2014,
-      "popularity": 35444,
-      "chapters": 334,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "d5e2bd89-e300-4262-a799-fb4f79bdb777",
-      "title": "Maid-sama!",
-      "score": 535524,
-      "year": 2005,
-      "popularity": 35425,
-      "chapters": 99,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "1a69d1cc-b060-4f35-8778-4621424fe5f4",
-      "title": "Yokohama Kaidashi Kikou",
-      "score": 535361,
-      "year": 1994,
-      "popularity": 35217,
-      "chapters": 144,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "1010ebf3-2859-4101-badc-034bd08132ff",
-      "title": "21st Century Boys",
-      "score": 535350,
-      "year": 2006,
-      "popularity": 35334,
+      "mangadexId": "162146eb-672a-4a05-b3b2-0c6303f9614e",
+      "title": "Takopi's Original Sin",
+      "score": 528754,
+      "year": 2021,
+      "popularity": 28738,
       "chapters": 16,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
@@ -322,116 +166,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "4d84cc9c-0f88-45d0-8700-d364d8ddbca9",
-      "title": "My Lesbian Experience With Loneliness",
-      "score": 535300,
-      "year": 2016,
-      "popularity": 35294,
-      "chapters": 6,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "5ed1f8fc-a119-4cbc-aeae-26ce2bd3f838",
-      "title": "JoJo's Bizarre Adventure Part 4: Diamond is Unbreakable",
-      "score": 534894,
-      "year": 1992,
-      "popularity": 34720,
-      "chapters": 174,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "0d545e62-d4cd-4e65-a65c-a5c46b794918",
-      "title": "JoJo's Bizarre Adventure Part 3: Stardust Crusaders",
-      "score": 534145,
-      "year": 1989,
-      "popularity": 33993,
-      "chapters": 152,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
-      "title": "Noblesse",
-      "score": 533930,
-      "year": 2007,
-      "popularity": 33386,
-      "chapters": 544,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "e9b1d4ba-b8fb-48c3-8d52-5a4eefd05980",
-      "title": "Fruits Basket",
-      "score": 533734,
-      "year": 1998,
-      "popularity": 33597,
-      "chapters": 137,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "16e1767d-a8d5-4173-b87f-f7023f6c4578",
-      "title": "Tomb Raider King",
-      "score": 533707,
-      "year": 2019,
-      "popularity": 33296,
-      "chapters": 411,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "6ce4c88e-381e-4c4a-a858-7585fff92f47",
-      "title": "We Never Learn",
-      "score": 533306,
-      "year": 2017,
-      "popularity": 33119,
-      "chapters": 187,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "fa85b2aa-370c-41c5-96ae-29b05c848f3d",
-      "title": "Innocent",
-      "score": 532946,
-      "year": 2013,
-      "popularity": 32847,
-      "chapters": 99,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "676fbea0-be6d-437e-be60-43800486842e",
-      "title": "Yamada-kun and the Seven Witches",
-      "score": 532891,
+      "mangadexId": "9c16fed0-3d93-4487-8c62-a9f49ab48828",
+      "title": "Erased",
+      "score": 528292,
       "year": 2012,
-      "popularity": 32645,
-      "chapters": 246,
+      "popularity": 28243,
+      "chapters": 49,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -439,12 +179,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "bb5d9e0b-3736-432b-b3fe-dc08920243e9",
-      "title": "Masamune-kun’s Revenge",
-      "score": 532064,
-      "year": 2012,
-      "popularity": 32010,
-      "chapters": 54,
+      "mangadexId": "cc1b8669-82b2-4232-99c1-40d48fc2d988",
+      "title": "Undead Unluck",
+      "score": 528087,
+      "year": 2020,
+      "popularity": 27843,
+      "chapters": 244,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -452,12 +192,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "d8779116-f000-446a-af46-cc221c0e7fc9",
-      "title": "LIAR GAME",
-      "score": 531739,
-      "year": 2005,
-      "popularity": 31538,
-      "chapters": 201,
+      "mangadexId": "4ee5e960-6329-4e1d-b038-93e8e0d53589",
+      "title": "Ashita no Joe: Fighting for Tomorrow",
+      "score": 527907,
+      "year": 1968,
+      "popularity": 27736,
+      "chapters": 171,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -465,24 +205,11 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "f65444dc-3694-4e31-a166-8afb2938ed55",
-      "title": "Gin Tama",
-      "score": 531123,
-      "year": 2003,
-      "popularity": 30414,
-      "chapters": 709,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "a3c8ffd0-902f-4c5e-b1c4-96ba66aaa740",
-      "title": "Citrus",
-      "score": 531087,
-      "year": 2012,
-      "popularity": 31037,
+      "mangadexId": "0771c4e7-60f3-4fb5-8708-d779f0a0e023",
+      "title": "Mushishi",
+      "score": 527771,
+      "year": 1999,
+      "popularity": 27721,
       "chapters": 50,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
@@ -491,76 +218,11 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "bf2fed23-7174-408c-972a-af6d0179fe8e",
-      "title": "Death Note: a-Kira",
-      "score": 530854,
-      "year": 2020,
-      "popularity": 30853,
-      "chapters": 1,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "4481002b-f65c-426a-8cb4-3a1bba1040c5",
-      "title": "Blade of the Immortal",
-      "score": 530842,
-      "year": 1993,
-      "popularity": 30623,
-      "chapters": 219,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "9fce5b8e-facf-4ef2-a703-553ec2931065",
-      "title": "Holyland",
-      "score": 530760,
-      "year": 2000,
-      "popularity": 30578,
-      "chapters": 182,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "a07320a4-afcd-413a-a451-d69a448d0c28",
-      "title": "Usogui",
-      "score": 530551,
-      "year": 2006,
-      "popularity": 30012,
-      "chapters": 539,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "99af94f5-04c2-424b-8438-0c8386b0ec5f",
-      "title": "Insomniacs After School",
-      "score": 530266,
-      "year": 2019,
-      "popularity": 30141,
-      "chapters": 125,
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "643b3756-ad1c-412d-b6cf-05b084540071",
-      "title": "My Little Monster",
-      "score": 529908,
-      "year": 2008,
-      "popularity": 29839,
+      "mangadexId": "8483f361-a149-463d-aada-61fa1d94ff7d",
+      "title": "One Room of Happiness",
+      "score": 527403,
+      "year": 2016,
+      "popularity": 27334,
       "chapters": 69,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
@@ -569,12 +231,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
-      "title": "Teasing Master Takagi-san",
-      "score": 529892,
-      "year": 2012,
-      "popularity": 29702,
-      "chapters": 190,
+      "mangadexId": "26937cf3-0fba-4651-995d-5ebcc8a15eb2",
+      "title": "Reborn!",
+      "score": 527084,
+      "year": 2004,
+      "popularity": 26673,
+      "chapters": 411,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -582,12 +244,38 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "147c9906-343e-4b16-ae64-5a8974a623a6",
-      "title": "My Broken Mariko",
-      "score": 529765,
+      "mangadexId": "39e55355-dfb4-44e9-bd0b-df1fc3a0e33e",
+      "title": "The Reason Why Raeliana Ended Up at the Duke's Mansion",
+      "score": 526955,
+      "year": 2017,
+      "popularity": 26797,
+      "chapters": 158,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "f1aa6ceb-4542-4b67-8c44-3cc4c429e4f2",
+      "title": "ACT-AGE",
+      "score": 526841,
+      "year": 2018,
+      "popularity": 26718,
+      "chapters": 123,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "d2df017b-c003-4de6-9625-4f1fba7aef97",
+      "title": "Viral Hit",
+      "score": 526777,
       "year": 2019,
-      "popularity": 29759,
-      "chapters": 6,
+      "popularity": 26555,
+      "chapters": 222,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -595,12 +283,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "fdfc9ba2-b21c-4f37-b5bf-4382f3d1318f",
-      "title": "Inside Mari",
-      "score": 529765,
+      "mangadexId": "885bed69-7d08-47a8-b25c-a37759c97c5f",
+      "title": "Kengan Ashura",
+      "score": 526578,
       "year": 2012,
-      "popularity": 29685,
-      "chapters": 80,
+      "popularity": 26318,
+      "chapters": 260,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -608,12 +296,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "f64f7752-f0b5-4a21-913c-e8b077e0b8b2",
-      "title": "Battle Angel Alita",
-      "score": 529532,
+      "mangadexId": "44a5cbe1-0204-4cc7-a1ff-0fda2ac004b6",
+      "title": "Yu Yu Hakusho",
+      "score": 526046,
       "year": 1990,
-      "popularity": 29478,
-      "chapters": 54,
+      "popularity": 25870,
+      "chapters": 176,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -621,11 +309,102 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "9a502e35-1051-4e4c-b055-5ab211954fa4",
-      "title": "Banana Fish",
-      "score": 529117,
-      "year": 1985,
-      "popularity": 29007,
+      "mangadexId": "6fcfaa0e-6023-403e-97f9-5301dd3c258c",
+      "title": "HELLSING",
+      "score": 525959,
+      "year": 1997,
+      "popularity": 25867,
+      "chapters": 92,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "d8f9afe2-aa44-4bc6-9145-eebb1f282372",
+      "title": "Giji Harem",
+      "score": 525573,
+      "year": 2018,
+      "popularity": 25416,
+      "chapters": 157,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b2ae13e3-bea1-4f11-bfbe-4269f66e74f8",
+      "title": "The Return of the 8th Class Mage",
+      "score": 525508,
+      "year": 2021,
+      "popularity": 25427,
+      "chapters": 81,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "cf05fa96-b52a-4684-b884-00f0d4c21f9c",
+      "title": "Boarding School Juliet",
+      "score": 525467,
+      "year": 2015,
+      "popularity": 25346,
+      "chapters": 121,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "754a46fa-62fa-457a-bc3b-4f31bf1373d4",
+      "title": "Rurouni Kenshin",
+      "score": 525358,
+      "year": 1994,
+      "popularity": 25099,
+      "chapters": 259,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
+      "title": "Maybe Meant to Be",
+      "score": 525343,
+      "year": 2022,
+      "popularity": 25211,
+      "chapters": 132,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "787a9f0c-6f48-401c-8edc-d6ee07516c4f",
+      "title": "Cheeky Brat",
+      "score": 525247,
+      "year": 2013,
+      "popularity": 25109,
+      "chapters": 138,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "e97fdc93-21ec-47e0-b676-e45d67068932",
+      "title": "Sweat and Soap",
+      "score": 525238,
+      "year": 2018,
+      "popularity": 25128,
       "chapters": 110,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
@@ -634,12 +413,12 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "43078ddf-c2aa-415d-bccb-97e35a3755fa",
-      "title": "My Dearest Self With Malice Aforethought",
-      "score": 529073,
-      "year": 2018,
-      "popularity": 28975,
-      "chapters": 98,
+      "mangadexId": "80f496eb-9ab2-4f9a-8e9b-1f6bd3bc8c03",
+      "title": "Inuyashiki",
+      "score": 525167,
+      "year": 2014,
+      "popularity": 25082,
+      "chapters": 85,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -647,12 +426,233 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "5209fe10-4a14-403f-8837-2ccf8cced253",
-      "title": "The Fable",
-      "score": 528920,
-      "year": 2014,
-      "popularity": 28680,
-      "chapters": 240,
+      "mangadexId": "ac0e6974-8555-4637-93fe-bd3a78104923",
+      "title": "Kami nomi zo Shiru Sekai",
+      "score": 524977,
+      "year": 2008,
+      "popularity": 24706,
+      "chapters": 271,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "4393fd4e-d646-4bab-9c95-786168ccb618",
+      "title": "Devilman",
+      "score": 524781,
+      "year": 1972,
+      "popularity": 24728,
+      "chapters": 53,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "d831ed75-10fd-4af4-b23f-e732bc759036",
+      "title": "Gyo",
+      "score": 524725,
+      "year": 2001,
+      "popularity": 24704,
+      "chapters": 21,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "3be16cf9-fe5c-431e-b528-98551d3d3bb0",
+      "title": "Planetes",
+      "score": 524550,
+      "year": 1999,
+      "popularity": 24522,
+      "chapters": 28,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "6d6d9fda-5cd3-40ac-948b-776b1a1a0eb1",
+      "title": "The Girl I Like Forgot Her Glasses",
+      "score": 524313,
+      "year": 2018,
+      "popularity": 24193,
+      "chapters": 120,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "dc34064e-3cd4-48c4-9ec5-550845b96ffb",
+      "title": "Platinum End",
+      "score": 524277,
+      "year": 2015,
+      "popularity": 24219,
+      "chapters": 58,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "dcd65f6a-0454-49e4-b93c-4f8b45438d27",
+      "title": "House of the Sun",
+      "score": 524265,
+      "year": 2010,
+      "popularity": 24195,
+      "chapters": 70,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b2df3b97-06b4-4544-8ec3-79bc41dfa03b",
+      "title": "Unholy Blood",
+      "score": 524247,
+      "year": 2020,
+      "popularity": 24154,
+      "chapters": 93,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "0824242e-dbf0-4356-b18b-55fd491a8ffc",
+      "title": "the gods lie.",
+      "score": 524219,
+      "year": 2013,
+      "popularity": 24214,
+      "chapters": 5,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "32600d3f-a43a-4f90-8a4e-c4e09f35c99b",
+      "title": "Last Game",
+      "score": 524164,
+      "year": 2011,
+      "popularity": 24098,
+      "chapters": 66,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "6a06b979-0ada-44f2-b1ae-fceb70180af4",
+      "title": "Scum's Wish",
+      "score": 524144,
+      "year": 2012,
+      "popularity": 24091,
+      "chapters": 53,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b847ca8b-1b14-4780-98eb-10049467bc03",
+      "title": "The Advanced Player of the Tutorial Tower",
+      "score": 524099,
+      "year": 2020,
+      "popularity": 23876,
+      "chapters": 223,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "80c4c4bc-be9c-400a-8cc0-57b1d0b8a87f",
+      "title": "Higehiro: After Being Rejected, I Shaved and Took In a High School Runaway",
+      "score": 523898,
+      "year": 2018,
+      "popularity": 23831,
+      "chapters": 67,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b73371d4-02dd-4db0-b448-d9afa3d698f1",
+      "title": "Aoashi",
+      "score": 523834,
+      "year": 2015,
+      "popularity": 23424,
+      "chapters": 410,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "9a1fe7f8-dda3-4a94-8108-afef8b451e42",
+      "title": "High-Rise Invasion",
+      "score": 523820,
+      "year": 2013,
+      "popularity": 23562,
+      "chapters": 258,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "d8323b7b-9a7a-462b-90f0-2759fed52511",
+      "title": "Hokkaido Gals Are Super Adorable!",
+      "score": 523660,
+      "year": 2019,
+      "popularity": 23537,
+      "chapters": 123,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "881fccb1-e60c-4c82-b64c-28f709545174",
+      "title": "Medaka Box",
+      "score": 523613,
+      "year": 2009,
+      "popularity": 23419,
+      "chapters": 194,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "8af3ad21-3e7e-4fb5-b344-d0044ec154fc",
+      "title": "Beelzebub",
+      "score": 523441,
+      "year": 2009,
+      "popularity": 23189,
+      "chapters": 252,
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -662,64 +662,64 @@
   ],
   "nextSample": [
     {
-      "mangadexId": "162146eb-672a-4a05-b3b2-0c6303f9614e",
-      "title": "Takopi's Original Sin"
+      "mangadexId": "8a3d319d-2d10-4364-928c-0f30fd367c24",
+      "title": "Hinamatsuri"
     },
     {
-      "mangadexId": "9c16fed0-3d93-4487-8c62-a9f49ab48828",
-      "title": "Erased"
+      "mangadexId": "ce7cd7b0-e595-4f0d-98e8-447da10d652d",
+      "title": "Mission: Yozakura Family"
     },
     {
-      "mangadexId": "cc1b8669-82b2-4232-99c1-40d48fc2d988",
-      "title": "Undead Unluck"
+      "mangadexId": "1a4bc1ca-2ed8-425b-8235-d9372a446d93",
+      "title": "FFF-Class Trashero"
     },
     {
-      "mangadexId": "4ee5e960-6329-4e1d-b038-93e8e0d53589",
-      "title": "Ashita no Joe: Fighting for Tomorrow"
+      "mangadexId": "d8f7ffd5-8ad8-4d17-a40c-12fe7e032674",
+      "title": "Kamisama Kiss"
     },
     {
-      "mangadexId": "0771c4e7-60f3-4fb5-8708-d779f0a0e023",
-      "title": "Mushishi"
+      "mangadexId": "4702058d-c553-4966-ab09-1deab6328384",
+      "title": "xxxHOLiC"
     },
     {
-      "mangadexId": "8483f361-a149-463d-aada-61fa1d94ff7d",
-      "title": "One Room of Happiness"
+      "mangadexId": "89bbd6b1-2558-4279-973c-3b1fd8807228",
+      "title": "Summertime Rendering"
     },
     {
-      "mangadexId": "26937cf3-0fba-4651-995d-5ebcc8a15eb2",
-      "title": "Reborn!"
+      "mangadexId": "b1670c6b-05cc-4744-87b7-ab5affc3a215",
+      "title": "Eden: It's an Endless World!"
     },
     {
-      "mangadexId": "39e55355-dfb4-44e9-bd0b-df1fc3a0e33e",
-      "title": "The Reason Why Raeliana Ended Up at the Duke's Mansion"
+      "mangadexId": "7dab8f66-748e-4d83-a8a0-9f7440e254fc",
+      "title": "Daytime Shooting Star"
     },
     {
-      "mangadexId": "f1aa6ceb-4542-4b67-8c44-3cc4c429e4f2",
-      "title": "ACT-AGE"
+      "mangadexId": "d97db976-eeec-4eb4-8868-346fbd7ed1e5",
+      "title": "PSYЯEN"
     },
     {
-      "mangadexId": "d2df017b-c003-4de6-9625-4f1fba7aef97",
-      "title": "Viral Hit"
+      "mangadexId": "28e35701-de99-4f42-bd2c-2e9f9e43fe4e",
+      "title": "Ayashimon"
     },
     {
-      "mangadexId": "885bed69-7d08-47a8-b25c-a37759c97c5f",
-      "title": "Kengan Ashura"
+      "mangadexId": "fcf1aa35-4891-46a3-9874-f1823ddac415",
+      "title": "Twin Star Exorcists"
     },
     {
-      "mangadexId": "44a5cbe1-0204-4cc7-a1ff-0fda2ac004b6",
-      "title": "Yu Yu Hakusho"
+      "mangadexId": "d7d5f269-6969-4f86-af89-ee57a6180f36",
+      "title": "Chihayafuru"
     },
     {
-      "mangadexId": "6fcfaa0e-6023-403e-97f9-5301dd3c258c",
-      "title": "HELLSING"
+      "mangadexId": "7bcdff73-7d1a-4c88-8501-58b027e1632c",
+      "title": "Future Diary"
     },
     {
-      "mangadexId": "d8f9afe2-aa44-4bc6-9145-eebb1f282372",
-      "title": "Giji Harem"
+      "mangadexId": "c80873ba-a29c-4285-9e3b-9b2b03be3d65",
+      "title": "Girls of the Wild's"
     },
     {
-      "mangadexId": "b2ae13e3-bea1-4f11-bfbe-4269f66e74f8",
-      "title": "The Return of the 8th Class Mage"
+      "mangadexId": "80185498-a09f-4534-925a-63cd554c075c",
+      "title": "THE BREAKER - NEW WAVES"
     }
   ],
   "status": "completed",
@@ -733,6 +733,14 @@
       "arabicCount": 0,
       "fallback": "mangapill",
       "updatedAt": "2026-04-05T09:18:15.686Z"
+    },
+    {
+      "mangadexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
+      "title": "Noblesse",
+      "englishCount": 5,
+      "arabicCount": 0,
+      "fallback": "mangahere",
+      "updatedAt": "2026-04-05T11:16:23.446Z"
     },
     {
       "mangadexId": "c1c408f6-3dec-4d62-b6b3-b57e615d933c",
@@ -775,6 +783,14 @@
       "updatedAt": "2026-04-05T09:23:02.421Z"
     },
     {
+      "mangadexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "englishCount": 136,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T11:08:10.462Z"
+    },
+    {
       "mangadexId": "231d5196-1f41-4eba-af8d-841d40bc548d",
       "title": "Homunculus",
       "englishCount": 24,
@@ -799,332 +815,316 @@
       "updatedAt": "2026-04-05T09:09:13.324Z"
     },
     {
-      "mangadexId": "00893d86-c910-4247-b5cb-a2a0e0380012",
-      "title": "Blue Flag",
-      "englishCount": 56,
+      "mangadexId": "162146eb-672a-4a05-b3b2-0c6303f9614e",
+      "title": "Takopi's Original Sin",
+      "englishCount": 17,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T10:55:23.863Z"
+      "updatedAt": "2026-04-05T11:50:48.099Z"
     },
     {
-      "mangadexId": "665766a3-905d-4a71-a90a-bd2c75d1a81f",
-      "title": "Alice in Borderland",
-      "englishCount": 106,
-      "arabicCount": 3,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T10:55:41.713Z"
-    },
-    {
-      "mangadexId": "0aea9f43-d4a9-4bf7-bebc-550a512f9b95",
-      "title": "Shikimori's Not Just a Cutie",
-      "englishCount": 188,
+      "mangadexId": "9c16fed0-3d93-4487-8c62-a9f49ab48828",
+      "title": "Erased",
+      "englishCount": 49,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T10:58:28.905Z"
+      "updatedAt": "2026-04-05T11:51:31.945Z"
     },
     {
-      "mangadexId": "67c6df9e-280f-476c-b13c-cecf6b2eb3c7",
-      "title": "THE BREAKER",
-      "englishCount": 72,
+      "mangadexId": "cc1b8669-82b2-4232-99c1-40d48fc2d988",
+      "title": "Undead Unluck",
+      "englishCount": 243,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T11:54:51.446Z"
+    },
+    {
+      "mangadexId": "4ee5e960-6329-4e1d-b038-93e8e0d53589",
+      "title": "Ashita no Joe: Fighting for Tomorrow",
+      "englishCount": 107,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-05T10:58:30.379Z"
+      "updatedAt": "2026-04-05T11:55:10.711Z"
     },
     {
-      "mangadexId": "2725e983-81c3-4a62-8e97-5027c5996c2b",
-      "title": "JoJo's Bizarre Adventure Part 5: Golden Wind",
-      "englishCount": 155,
+      "mangadexId": "0771c4e7-60f3-4fb5-8708-d779f0a0e023",
+      "title": "Mushishi",
+      "englishCount": 10,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T11:55:31.128Z"
+    },
+    {
+      "mangadexId": "8483f361-a149-463d-aada-61fa1d94ff7d",
+      "title": "One Room of Happiness",
+      "englishCount": 74,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T11:55:56.977Z"
+    },
+    {
+      "mangadexId": "26937cf3-0fba-4651-995d-5ebcc8a15eb2",
+      "title": "Reborn!",
+      "englishCount": 409,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:02:43.261Z"
+    },
+    {
+      "mangadexId": "39e55355-dfb4-44e9-bd0b-df1fc3a0e33e",
+      "title": "The Reason Why Raeliana Ended Up at the Duke's Mansion",
+      "englishCount": 91,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-05T10:58:31.926Z"
+      "updatedAt": "2026-04-05T12:03:19.047Z"
     },
     {
-      "mangadexId": "cffdc4f4-0cd9-409b-b88c-62aaf2882e07",
-      "title": "orange",
-      "englishCount": 82,
-      "arabicCount": 0,
+      "mangadexId": "f1aa6ceb-4542-4b67-8c44-3cc4c429e4f2",
+      "title": "ACT-AGE",
+      "englishCount": 127,
+      "arabicCount": 31,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T10:59:35.991Z"
+      "updatedAt": "2026-04-05T12:05:25.820Z"
     },
     {
-      "mangadexId": "aaedcbda-ea61-4e7b-8143-7a475f327fbf",
-      "title": "Neon Genesis Evangelion",
-      "englishCount": 97,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:01:01.447Z"
-    },
-    {
-      "mangadexId": "e5357466-c8a2-4259-9b02-2580185bd2bb",
-      "title": "Billy Bat",
-      "englishCount": 165,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:02:15.992Z"
-    },
-    {
-      "mangadexId": "371a7405-bee1-402c-b0d7-74ea3fb4d587",
-      "title": "Prison School",
-      "englishCount": 278,
-      "arabicCount": 5,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:06:02.316Z"
-    },
-    {
-      "mangadexId": "61079efc-d1c4-4565-bbe6-de58e1d75fdf",
-      "title": "JoJo's Bizarre Adventure Part 2: Battle Tendency",
-      "englishCount": 69,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:06:03.877Z"
-    },
-    {
-      "mangadexId": "2c2a45bc-42c8-4d62-995c-bd5523642ba8",
-      "title": "Our Dreams at Dusk: Shimanami Tasogare",
-      "englishCount": 23,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:06:26.004Z"
-    },
-    {
-      "mangadexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "englishCount": 136,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:08:10.462Z"
-    },
-    {
-      "mangadexId": "d5e2bd89-e300-4262-a799-fb4f79bdb777",
-      "title": "Maid-sama!",
-      "englishCount": 99,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:08:20.148Z"
-    },
-    {
-      "mangadexId": "1a69d1cc-b060-4f35-8778-4621424fe5f4",
-      "title": "Yokohama Kaidashi Kikou",
-      "englishCount": 249,
-      "arabicCount": 4,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:12:11.185Z"
-    },
-    {
-      "mangadexId": "1010ebf3-2859-4101-badc-034bd08132ff",
-      "title": "21st Century Boys",
-      "englishCount": 16,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:12:27.945Z"
-    },
-    {
-      "mangadexId": "4d84cc9c-0f88-45d0-8700-d364d8ddbca9",
-      "title": "My Lesbian Experience With Loneliness",
-      "englishCount": 5,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:12:32.993Z"
-    },
-    {
-      "mangadexId": "5ed1f8fc-a119-4cbc-aeae-26ce2bd3f838",
-      "title": "JoJo's Bizarre Adventure Part 4: Diamond is Unbreakable",
-      "englishCount": 174,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:12:34.662Z"
-    },
-    {
-      "mangadexId": "0d545e62-d4cd-4e65-a65c-a5c46b794918",
-      "title": "JoJo's Bizarre Adventure Part 3: Stardust Crusaders",
-      "englishCount": 152,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:12:36.228Z"
-    },
-    {
-      "mangadexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
-      "title": "Noblesse",
-      "englishCount": 5,
-      "arabicCount": 0,
-      "fallback": "mangahere",
-      "updatedAt": "2026-04-05T11:16:23.446Z"
-    },
-    {
-      "mangadexId": "e9b1d4ba-b8fb-48c3-8d52-5a4eefd05980",
-      "title": "Fruits Basket",
-      "englishCount": 158,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:16:25.011Z"
-    },
-    {
-      "mangadexId": "16e1767d-a8d5-4173-b87f-f7023f6c4578",
-      "title": "Tomb Raider King",
+      "mangadexId": "d2df017b-c003-4de6-9625-4f1fba7aef97",
+      "title": "Viral Hit",
       "englishCount": 0,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-05T11:20:07.078Z"
+      "updatedAt": "2026-04-05T12:07:30.757Z"
     },
     {
-      "mangadexId": "6ce4c88e-381e-4c4a-a858-7585fff92f47",
-      "title": "We Never Learn",
-      "englishCount": 202,
+      "mangadexId": "885bed69-7d08-47a8-b25c-a37759c97c5f",
+      "title": "Kengan Ashura",
+      "englishCount": 272,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:23:15.237Z"
+      "updatedAt": "2026-04-05T12:12:06.220Z"
     },
     {
-      "mangadexId": "fa85b2aa-370c-41c5-96ae-29b05c848f3d",
-      "title": "Innocent",
-      "englishCount": 101,
+      "mangadexId": "44a5cbe1-0204-4cc7-a1ff-0fda2ac004b6",
+      "title": "Yu Yu Hakusho",
+      "englishCount": 178,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:24:40.092Z"
+      "updatedAt": "2026-04-05T12:15:17.052Z"
     },
     {
-      "mangadexId": "676fbea0-be6d-437e-be60-43800486842e",
-      "title": "Yamada-kun and the Seven Witches",
-      "englishCount": 246,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:27:53.719Z"
-    },
-    {
-      "mangadexId": "bb5d9e0b-3736-432b-b3fe-dc08920243e9",
-      "title": "Masamune-kun’s Revenge",
-      "englishCount": 77,
+      "mangadexId": "6fcfaa0e-6023-403e-97f9-5301dd3c258c",
+      "title": "HELLSING",
+      "englishCount": 95,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-05T11:27:55.220Z"
+      "updatedAt": "2026-04-05T12:15:18.643Z"
     },
     {
-      "mangadexId": "d8779116-f000-446a-af46-cc221c0e7fc9",
-      "title": "LIAR GAME",
-      "englishCount": 202,
+      "mangadexId": "d8f9afe2-aa44-4bc6-9145-eebb1f282372",
+      "title": "Giji Harem",
+      "englishCount": 171,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:30:40.634Z"
+      "updatedAt": "2026-04-05T12:15:26.283Z"
     },
     {
-      "mangadexId": "f65444dc-3694-4e31-a166-8afb2938ed55",
-      "title": "Gin Tama",
-      "englishCount": 708,
-      "arabicCount": 16,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:30:56.434Z"
-    },
-    {
-      "mangadexId": "a3c8ffd0-902f-4c5e-b1c4-96ba66aaa740",
-      "title": "Citrus",
-      "englishCount": 47,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:31:28.154Z"
-    },
-    {
-      "mangadexId": "bf2fed23-7174-408c-972a-af6d0179fe8e",
-      "title": "Death Note: a-Kira",
-      "englishCount": 1,
+      "mangadexId": "b2ae13e3-bea1-4f11-bfbe-4269f66e74f8",
+      "title": "The Return of the 8th Class Mage",
+      "englishCount": 81,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-05T11:31:29.578Z"
+      "updatedAt": "2026-04-05T12:15:27.783Z"
     },
     {
-      "mangadexId": "4481002b-f65c-426a-8cb4-3a1bba1040c5",
-      "title": "Blade of the Immortal",
-      "englishCount": 207,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:33:13.465Z"
-    },
-    {
-      "mangadexId": "9fce5b8e-facf-4ef2-a703-553ec2931065",
-      "title": "Holyland",
-      "englishCount": 182,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:33:15.058Z"
-    },
-    {
-      "mangadexId": "a07320a4-afcd-413a-a451-d69a448d0c28",
-      "title": "Usogui",
-      "englishCount": 585,
-      "arabicCount": 3,
-      "fallback": null,
-      "updatedAt": "2026-04-05T11:33:17.661Z"
-    },
-    {
-      "mangadexId": "99af94f5-04c2-424b-8438-0c8386b0ec5f",
-      "title": "Insomniacs After School",
+      "mangadexId": "cf05fa96-b52a-4684-b884-00f0d4c21f9c",
+      "title": "Boarding School Juliet",
       "englishCount": 126,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:34:57.801Z"
+      "updatedAt": "2026-04-05T12:18:04.303Z"
     },
     {
-      "mangadexId": "643b3756-ad1c-412d-b6cf-05b084540071",
-      "title": "My Little Monster",
-      "englishCount": 13,
-      "arabicCount": 2,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:35:14.184Z"
-    },
-    {
-      "mangadexId": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
-      "title": "Teasing Master Takagi-san",
-      "englishCount": 203,
+      "mangadexId": "754a46fa-62fa-457a-bc3b-4f31bf1373d4",
+      "title": "Rurouni Kenshin",
+      "englishCount": 259,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:38:48.096Z"
+      "updatedAt": "2026-04-05T12:21:39.863Z"
     },
     {
-      "mangadexId": "147c9906-343e-4b16-ae64-5a8974a623a6",
-      "title": "My Broken Mariko",
-      "englishCount": 7,
+      "mangadexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
+      "title": "Maybe Meant to Be",
+      "englishCount": 0,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-05T12:21:43.647Z"
+    },
+    {
+      "mangadexId": "787a9f0c-6f48-401c-8edc-d6ee07516c4f",
+      "title": "Cheeky Brat",
+      "englishCount": 157,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-05T12:21:45.182Z"
+    },
+    {
+      "mangadexId": "e97fdc93-21ec-47e0-b676-e45d67068932",
+      "title": "Sweat and Soap",
+      "englishCount": 108,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:23:15.640Z"
+    },
+    {
+      "mangadexId": "80f496eb-9ab2-4f9a-8e9b-1f6bd3bc8c03",
+      "title": "Inuyashiki",
+      "englishCount": 85,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:24:24.061Z"
+    },
+    {
+      "mangadexId": "ac0e6974-8555-4637-93fe-bd3a78104923",
+      "title": "Kami nomi zo Shiru Sekai",
+      "englishCount": 300,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:24:33.450Z"
+    },
+    {
+      "mangadexId": "4393fd4e-d646-4bab-9c95-786168ccb618",
+      "title": "Devilman",
+      "englishCount": 71,
+      "arabicCount": 11,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:25:33.856Z"
+    },
+    {
+      "mangadexId": "d831ed75-10fd-4af4-b23f-e732bc759036",
+      "title": "Gyo",
+      "englishCount": 25,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:25:59.648Z"
+    },
+    {
+      "mangadexId": "3be16cf9-fe5c-431e-b528-98551d3d3bb0",
+      "title": "Planetes",
+      "englishCount": 26,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:26:24.185Z"
+    },
+    {
+      "mangadexId": "6d6d9fda-5cd3-40ac-948b-776b1a1a0eb1",
+      "title": "The Girl I Like Forgot Her Glasses",
+      "englishCount": 155,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:30:08.213Z"
+    },
+    {
+      "mangadexId": "dc34064e-3cd4-48c4-9ec5-550845b96ffb",
+      "title": "Platinum End",
+      "englishCount": 59,
+      "arabicCount": 59,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:31:00.466Z"
+    },
+    {
+      "mangadexId": "dcd65f6a-0454-49e4-b93c-4f8b45438d27",
+      "title": "House of the Sun",
+      "englishCount": 54,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:32:08.715Z"
+    },
+    {
+      "mangadexId": "b2df3b97-06b4-4544-8ec3-79bc41dfa03b",
+      "title": "Unholy Blood",
+      "englishCount": 0,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-05T12:33:11.231Z"
+    },
+    {
+      "mangadexId": "0824242e-dbf0-4356-b18b-55fd491a8ffc",
+      "title": "the gods lie.",
+      "englishCount": 5,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:33:22.035Z"
+    },
+    {
+      "mangadexId": "32600d3f-a43a-4f90-8a4e-c4e09f35c99b",
+      "title": "Last Game",
+      "englishCount": 113,
       "arabicCount": 0,
       "fallback": "mangahere",
-      "updatedAt": "2026-04-05T11:38:56.181Z"
+      "updatedAt": "2026-04-05T12:38:20.672Z"
     },
     {
-      "mangadexId": "fdfc9ba2-b21c-4f37-b5bf-4382f3d1318f",
-      "title": "Inside Mari",
-      "englishCount": 80,
-      "arabicCount": 80,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:39:44.687Z"
-    },
-    {
-      "mangadexId": "f64f7752-f0b5-4a21-913c-e8b077e0b8b2",
-      "title": "Battle Angel Alita",
-      "englishCount": 55,
+      "mangadexId": "6a06b979-0ada-44f2-b1ae-fceb70180af4",
+      "title": "Scum's Wish",
+      "englishCount": 52,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:40:44.322Z"
+      "updatedAt": "2026-04-05T12:39:09.949Z"
     },
     {
-      "mangadexId": "9a502e35-1051-4e4c-b055-5ab211954fa4",
-      "title": "Banana Fish",
-      "englishCount": 23,
+      "mangadexId": "b847ca8b-1b14-4780-98eb-10049467bc03",
+      "title": "The Advanced Player of the Tutorial Tower",
+      "englishCount": 0,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-05T12:41:16.794Z"
+    },
+    {
+      "mangadexId": "80c4c4bc-be9c-400a-8cc0-57b1d0b8a87f",
+      "title": "Higehiro: After Being Rejected, I Shaved and Took In a High School Runaway",
+      "englishCount": 74,
       "arabicCount": 1,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:41:10.048Z"
+      "fallback": null,
+      "updatedAt": "2026-04-05T12:41:18.607Z"
     },
     {
-      "mangadexId": "43078ddf-c2aa-415d-bccb-97e35a3755fa",
-      "title": "My Dearest Self With Malice Aforethought",
-      "englishCount": 98,
+      "mangadexId": "b73371d4-02dd-4db0-b448-d9afa3d698f1",
+      "title": "Aoashi",
+      "englishCount": 412,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:42:33.417Z"
+      "updatedAt": "2026-04-05T12:47:57.545Z"
     },
     {
-      "mangadexId": "5209fe10-4a14-403f-8837-2ccf8cced253",
-      "title": "The Fable",
-      "englishCount": 241,
-      "arabicCount": 1,
+      "mangadexId": "9a1fe7f8-dda3-4a94-8108-afef8b451e42",
+      "title": "High-Rise Invasion",
+      "englishCount": 261,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-05T12:47:59.125Z"
+    },
+    {
+      "mangadexId": "d8323b7b-9a7a-462b-90f0-2759fed52511",
+      "title": "Hokkaido Gals Are Super Adorable!",
+      "englishCount": 134,
+      "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-05T11:45:40.650Z"
+      "updatedAt": "2026-04-05T12:50:07.064Z"
+    },
+    {
+      "mangadexId": "881fccb1-e60c-4c82-b64c-28f709545174",
+      "title": "Medaka Box",
+      "englishCount": 196,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:53:13.842Z"
+    },
+    {
+      "mangadexId": "8af3ad21-3e7e-4fb5-b344-d0044ec154fc",
+      "title": "Beelzebub",
+      "englishCount": 252,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T12:53:20.633Z"
     }
   ],
   "failed": []
