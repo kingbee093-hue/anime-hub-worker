@@ -419,7 +419,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 18471,
+    "popularity": 18481,
     "trending": 0,
     "favourites": 964,
     "source": "MANGA",
@@ -579,7 +579,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 77,
-    "popularity": 7067,
+    "popularity": 7078,
     "trending": 0,
     "favourites": 354,
     "source": "MANGA",
@@ -1261,7 +1261,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 82,
-    "popularity": 74353,
+    "popularity": 74390,
     "trending": 7,
     "favourites": 5575,
     "source": "MANGA",
@@ -1284,7 +1284,9 @@
     "titleRomaji": "Mairimashita! Iruma-kun 4",
     "titleEnglish": "Welcome to Demon School! Iruma-kun Season 4",
     "titleNative": "魔入りました！入間くん 第4シリーズ",
-    "synonyms": [],
+    "synonyms": [
+      "อิรุมะคุง ผจญในแดนปีศาจ ซีซั่น 4"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184492-KUVFGieuMaOx.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184492-KUVFGieuMaOx.jpg",
     "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184492-KUVFGieuMaOx.jpg",
@@ -1678,6 +1680,16 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
       }
     ],
     "studios": [
@@ -1890,7 +1902,8 @@
     "synonyms": [
       "ヨミツガ",
       "YomiTsuga",
-      "Pasangan dari Alam Baka"
+      "Pasangan dari Alam Baka",
+      "ยมลแห่งยมโลก"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
@@ -2046,7 +2059,9 @@
     "titleRomaji": "Akane-banashi",
     "titleEnglish": "Akane-banashi",
     "titleNative": "あかね噺",
-    "synonyms": [],
+    "synonyms": [
+      "อาคาเนะ พลิกตำนานวงการราคุโกะ"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196935-RnLWBsEvNp8M.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196935-RnLWBsEvNp8M.jpg",
     "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196935-RnLWBsEvNp8M.jpg",
@@ -2249,7 +2264,8 @@
     "titleEnglish": "MAO",
     "titleNative": "MAO",
     "synonyms": [
-      "マオ"
+      "マオ",
+      "MAO หาญสู้พลิกชะตาอาถรรพณ์"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196012-R3YNjunufpYh.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196012-R3YNjunufpYh.jpg",
@@ -2361,6 +2377,26 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
       }
     ],
     "studios": [
@@ -2433,21 +2469,21 @@
     ],
     "tags": [
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 79,
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 79,
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 95,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2513,6 +2549,16 @@
         "isAdult": false
       },
       {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 253,
         "name": "Gods",
         "description": "Prominently features a character of divine or religious nature.",
@@ -2539,16 +2585,6 @@
         "category": "Theme-Romance",
         "rank": 40,
         "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
-        "rank": 40,
-        "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -2799,7 +2835,7 @@
         "name": "Female Protagonist",
         "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 100,
+        "rank": 97,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2815,31 +2851,21 @@
         "isAdult": false
       },
       {
-        "id": 97,
-        "name": "Otaku Culture",
-        "description": "Centers around the culture of a fanatical fan-base.",
-        "category": "Theme-Other",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 489,
         "name": "Drugs",
         "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
         "category": "Theme-Other",
-        "rank": 79,
+        "rank": 85,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 115,
-        "name": "Idol",
-        "description": "Centers around the life and activities of an idol.",
-        "category": "Cast-Traits",
-        "rank": 75,
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 82,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2849,7 +2875,17 @@
         "name": "Urban",
         "description": "Partly or completely set in a city.",
         "category": "Setting-Scene",
-        "rank": 73,
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 76,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2859,7 +2895,7 @@
         "name": "VTuber",
         "description": "Prominently features a character who is either an actual or fictive VTuber.",
         "category": "Cast-Traits",
-        "rank": 71,
+        "rank": 72,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2869,8 +2905,18 @@
         "name": "Tragedy",
         "description": "Centers around tragic events and unhappy endings.",
         "category": "Theme-Drama",
-        "rank": 65,
+        "rank": 68,
         "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 66,
+        "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -2903,16 +2949,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": true
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 53,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
       },
       {
         "id": 163,
@@ -3409,7 +3445,7 @@
         "name": "Nudity",
         "description": "Features a character wearing no clothing or exposing intimate body parts.",
         "category": "Cast-Traits",
-        "rank": 46,
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3521,6 +3557,26 @@
     ],
     "tags": [
       {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 81,
         "name": "Iyashikei",
         "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
@@ -3531,31 +3587,21 @@
         "isAdult": false
       },
       {
-        "id": 233,
-        "name": "Youkai",
-        "description": "Prominently features supernatural creatures from Japanese folklore.",
-        "category": "Theme-Fantasy",
+        "id": 250,
+        "name": "Rural",
+        "description": "Partly or completely set in the countryside.",
+        "category": "Setting-Scene",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 250,
-        "name": "Rural",
-        "description": "Partly or completely set in the countryside.",
-        "category": "Setting-Scene",
-        "rank": 46,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 40,
+        "id": 1719,
+        "name": "Exorcism",
+        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3575,16 +3621,6 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1719,
-        "name": "Exorcism",
-        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
-        "category": "Theme-Fantasy",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -3675,16 +3711,6 @@
         "isAdult": false
       },
       {
-        "id": 145,
-        "name": "Work",
-        "description": "Centers around the activities of a certain occupation.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 86,
         "name": "Primarily Female Cast",
         "description": "Main cast is mostly composed of female characters.",
@@ -3719,6 +3745,16 @@
         "name": "Cute Girls Doing Cute Things",
         "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
         "category": "Theme-Slice of Life",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -4047,20 +4083,20 @@
         "isAdult": false
       },
       {
-        "id": 334,
-        "name": "Agender",
-        "description": "Prominently features agender characters.",
-        "category": "Cast-Traits",
+        "id": 324,
+        "name": "Chibi",
+        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
+        "category": "Theme-Other",
         "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 324,
-        "name": "Chibi",
-        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
-        "category": "Theme-Other",
+        "id": 334,
+        "name": "Agender",
+        "description": "Prominently features agender characters.",
+        "category": "Cast-Traits",
         "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -4172,20 +4208,20 @@
         "isAdult": false
       },
       {
-        "id": 694,
-        "name": "Detective",
-        "description": "Features a character who investigates and solves crimes.",
-        "category": "Cast-Traits",
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
         "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 28,
-        "name": "Kids",
-        "description": "Target demographic is young children.",
-        "category": "Demographic",
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
         "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -4222,16 +4258,6 @@
         "isAdult": false
       },
       {
-        "id": 1537,
-        "name": "Coastal",
-        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1455,
         "name": "Fairy",
         "description": "Prominently features a character who is a fairy.",
@@ -4252,11 +4278,11 @@
         "isAdult": false
       },
       {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 75,
+        "id": 1537,
+        "name": "Coastal",
+        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
+        "category": "Setting-Scene",
+        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -4266,6 +4292,16 @@
         "name": "Urban",
         "description": "Partly or completely set in a city.",
         "category": "Setting-Scene",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
         "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,

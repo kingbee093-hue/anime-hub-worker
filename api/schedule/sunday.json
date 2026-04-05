@@ -772,7 +772,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Sports"
     ],
@@ -792,7 +792,7 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 85,
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -802,7 +802,7 @@
         "name": "Primarily Male Cast",
         "description": "Main cast is mostly composed of male characters.",
         "category": "Cast-Main Cast",
-        "rank": 84,
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1514,7 +1514,7 @@
     "rating": 5.5,
     "averageScore": 55,
     "meanScore": 57,
-    "popularity": 2315,
+    "popularity": 2319,
     "trending": 0,
     "favourites": 48,
     "source": "MANGA",
@@ -1581,12 +1581,32 @@
         "isAdult": false
       },
       {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
       }
@@ -1619,9 +1639,9 @@
     "mal_url": "https://myanimelist.net/anime/63375",
     "anilist_url": "https://anilist.co/anime/206914",
     "trailer": {
-      "id": "MbJT2w6OaZA",
+      "id": "PvjwzkcaT2Y",
       "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=MbJT2w6OaZA"
+      "url": "https://www.youtube.com/watch?v=PvjwzkcaT2Y"
     },
     "nextEpisode": 1,
     "nextAiringAt": 1775390400
@@ -1798,7 +1818,7 @@
     "synopsis": "Fuu and Rui are two sisters who used to be close, but have been a bit distant from each other recently. One day, Fuu encounters a mysterious spaceship and gains magical powers. At that same time, Rui also gains magical powers, and both transform into the adults they dream to be. The sisters' powers come with two conditions: their magic powers can only be used in one year, and no one must know about it. Unaware of each other's secrets, Fuu and Rui become active as idols. (Source: Anime News Network, edited)",
     "type": "ANIME",
     "format": "TV",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -2327,6 +2347,16 @@
         "isAdult": false
       },
       {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 310,
         "name": "Espionage",
         "description": "Prominently features characters infiltrating an organization in order to steal sensitive information.",
@@ -2344,16 +2374,6 @@
         "rank": 58,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 622,
-        "name": "Asexual",
-        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
-        "category": "Cast-Traits",
-        "rank": 58,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -2397,6 +2417,16 @@
         "isAdult": false
       },
       {
+        "id": 622,
+        "name": "Asexual",
+        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 259,
         "name": "Monster Girl",
         "description": "Prominently features a female character who is part-monster.",
@@ -2411,16 +2441,6 @@
         "name": "Fairy",
         "description": "Prominently features a character who is a fairy.",
         "category": "Cast-Traits",
-        "rank": 57,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 93,
-        "name": "Post-Apocalyptic",
-        "description": "Partly or completely set in a world or civilization after a global disaster.",
-        "category": "Setting-Universe",
         "rank": 57,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2672,7 +2692,7 @@
     "rating": 8.7,
     "averageScore": 87,
     "meanScore": 87,
-    "popularity": 676268,
+    "popularity": 676853,
     "trending": 145,
     "favourites": 98881,
     "source": "MANGA",
@@ -2706,7 +2726,7 @@
     "synopsis": "The fire extinguishing samurai who stopped the great fire was called \"The fire-eating bird\". Matsunaga Gengo, once known as the \"Fire-eating Bird\", was the best fire-fighting samurai in Edo. He had resigned from the fire brigade for a reason but suddenly received an invitation to serve in the Shinjo clan. The Shinjo clan's fire-fighting team had no money and no personnel and was looked down upon by those around them. With the encouragement of his wife, Miyuki, Gengo decides to rebuild the collapsed fire-fighting clan as its chairman. Gengo and his friends, all of whom have their own peculiarities, struggle to \"save any life\", despite being ridiculed as \"ragged steeplejacks\"(= the 'Boro-Tobi-Gumi'.), In Edo, a mysterious series of suspicious fires called \"foxfires\" continue. An entertaining action drama opens, with the firefighters scrambling to save lives in the face of the approaching disaster! (Source: Amuse Creative Studio)",
     "type": "ANIME",
     "format": "TV",
-    "status": "RELEASING",
+    "status": "FINISHED",
     "season": "WINTER",
     "seasonYear": 2026,
     "seasonInt": 261,
@@ -2796,15 +2816,15 @@
     "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201090-HzQKUjjvde32.jpg",
     "coverImageColor": "#e4ae50",
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/201090-YIO0HtbUiCwC.jpg",
-    "synopsis": "The anime takes place in 2045, in a world where songs have been banned. Instead of humans playing instruments and creating music, a music app titled \"MiucS\" is in charge of these things. High school student Seria goes out with her friends one day, but she happens to hear someone singing, which is supposed to be prohibited. What she finds is a lone ghost, a \"Great Ghost\" who has appeared from outside this world. (Source: Anime News Network)",
+    "synopsis": "The year is 2045, in a world where songs have been banned. Instead of humans playing instruments and creating music, a music app titled \"MiucS\" is in charge of these things. High school student Seria goes out with her friends one day, but she happens to hear someone singing, which is supposed to be prohibited. What she finds is a lone ghost, a \"Great Ghost\" who has appeared from outside this world. Now Seria must decide whether to stay silent or risk everything to bring music back to the world. (Source: Anime News Network, Crunchyroll, edited)",
     "type": "ANIME",
     "format": "TV",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 12,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Action",
       "Music",
@@ -2816,7 +2836,7 @@
         "name": "Female Protagonist",
         "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 79,
+        "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2826,7 +2846,7 @@
         "name": "Ghost",
         "description": "Prominently features a character who is a ghost.",
         "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2835,6 +2855,16 @@
         "id": 517,
         "name": "Artificial Intelligence",
         "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
         "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -2893,7 +2923,7 @@
     "synopsis": "Confessing to my childhood friend Marika was impossible for someone as unpopular as me. So, I did what any desperate boy would do—I wished upon a shooting star! When I woke up, that dream had come true?! I could see a love meter for people, just like in a love simulation game. Once I realized this was real and not a dream I went straight to see Marika. Her love meter was so low it had broken and practically fallen all the way to hell! If she hated me so much why was she so nice?! Is this how she really felt or...?! (Source: Coolmic) Note: Episode 1 received an advanced distribution on AnimeFesta on March 13th, 2026. The start date reflects the start of the regular series broadcasting.",
     "type": "ANIME",
     "format": "TV_SHORT",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -3018,7 +3048,7 @@
     "synopsis": "Souta was suddenly made dorm manager and coach of the Hokuei University Women's Volleyball Club as prompted by his older sister, Kaori. There, he had a fateful reunion with Ayano, his first love... In the girls' dorm! In the gym! In a hotel?! What awaited him were days of being bossed around by girls bigger than him! A Happy Harem Rom-Com of Size Differences♡ Born Huge on the Northern Plains!! (Source: OceanVeil) Note: Episode 1 received an advanced distribution on AnimeFesta on March 13th, 2025. The start date reflects the start of the regular series broadcasting.",
     "type": "ANIME",
     "format": "TV_SHORT",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -3115,12 +3145,12 @@
     "synopsis": "It's a place where greedy wives live... A married woman's erotic suspense! This is the extreme suspense of a married woman by the author of Libido Hunter Takeru ! In this story, a group of perverted married women wearing the mysterious \"libido cross\" costume that amplifies human desires come under attack! Protect the apartment complex from the threat of perverted wives, new janitor Yoshida!",
     "type": "ANIME",
     "format": "TV_SHORT",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 3,
     "genres": [
       "Ecchi"
     ],
@@ -3199,7 +3229,7 @@
     "synopsis": "Sixteenth season of Yami Shibai .",
     "type": "ANIME",
     "format": "TV_SHORT",
-    "status": "RELEASING",
+    "status": "FINISHED",
     "season": "WINTER",
     "seasonYear": 2026,
     "seasonInt": 261,
@@ -3275,7 +3305,7 @@
     "isAdult": false,
     "hashtag": "#闇芝居",
     "startDate": "2026-01-12",
-    "endDate": null,
+    "endDate": "2026-04-06",
     "mal_url": "https://myanimelist.net/anime/63087",
     "anilist_url": "https://anilist.co/anime/203939",
     "trailer": null,
