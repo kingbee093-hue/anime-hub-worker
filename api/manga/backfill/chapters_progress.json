@@ -1,215 +1,332 @@
 {
-  "updatedAt": "2026-04-04T20:53:22.183Z",
-  "universeTotal": 146,
-  "indexedTitles": 14,
-  "pendingTitles": 132,
-  "selectedCount": 8,
-  "batchSize": 8,
+  "updatedAt": "2026-04-05T07:29:02.888Z",
+  "catalogTotal": 503,
+  "indexedTitles": 26,
+  "pendingTitles": 477,
+  "selectedCount": 12,
+  "batchSize": 12,
   "forceAll": false,
+  "failureCooldownHours": 24,
   "targetIds": [],
   "selected": [
     {
-      "mangadexId": "6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
-      "title": "Tokyo Ghoul",
-      "score": 684766,
-      "year": 2011,
-      "popularity": 184622,
-      "chapters": 144,
-      "currentEnglishCount": 0
-    },
-    {
-      "mangadexId": "4301d363-ee02-43f4-ae24-4cbf29a74830",
-      "title": "Goodnight Punpun",
-      "score": 675705,
-      "year": 2007,
-      "popularity": 175558,
-      "chapters": 147,
-      "currentEnglishCount": 0
-    },
-    {
-      "mangadexId": "5d1fc77e-706a-4fc5-bea8-486c9be0145d",
-      "title": "Vinland Saga",
-      "score": 630760,
-      "year": 2005,
-      "popularity": 130540,
-      "chapters": 220,
-      "currentEnglishCount": 0
-    },
-    {
-      "mangadexId": "46e9cae5-4407-4576-9b9e-4c517ae9298e",
-      "title": "The Promised Neverland",
-      "score": 629063,
+      "mangadexId": "a96676e5-8ae2-425e-b549-7f15dd34a6d8",
+      "title": "Komi Can't Communicate",
+      "score": 603652,
       "year": 2016,
-      "popularity": 128882,
+      "popularity": 103115,
+      "chapters": 537,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "296cbc31-af1a-4b5b-a34b-fee2b4cad542",
+      "title": "[Oshi no Ko]",
+      "score": 601741,
+      "year": 2020,
+      "popularity": 101570,
+      "chapters": 171,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "237d527f-adb5-420e-8e6e-b7dd006fbe47",
+      "title": "Kaiju No.8",
+      "score": 601383,
+      "year": 2020,
+      "popularity": 101254,
+      "chapters": 129,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "d9e30523-9d65-469e-92a2-302995770950",
+      "title": "Monster",
+      "score": 601307,
+      "year": 1994,
+      "popularity": 101145,
+      "chapters": 162,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "ad06790a-01e3-400c-a449-0ec152d6756a",
+      "title": "20th Century Boys",
+      "score": 601057,
+      "year": 1999,
+      "popularity": 100808,
+      "chapters": 249,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "bb57ccb8-a09a-4e9e-86ce-1c3743d3394d",
+      "title": "Haikyu!!",
+      "score": 598417,
+      "year": 2012,
+      "popularity": 98013,
+      "chapters": 404,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b30dfee3-9d1d-4e8d-bfbe-8fcabc3c96f6",
+      "title": "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+      "score": 598153,
+      "year": 2004,
+      "popularity": 98058,
+      "chapters": 95,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "59f47645-66a9-443e-8228-788313c3ae3c",
+      "title": "Tokyo Ghoul:re",
+      "score": 597996,
+      "year": 2014,
+      "popularity": 97815,
       "chapters": 181,
-      "currentEnglishCount": 0
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
     },
     {
-      "mangadexId": "a25e46ec-30f7-4db6-89df-cacbc1d9a900",
-      "title": "Horimiya",
-      "score": 618186,
-      "year": 2011,
-      "popularity": 118034,
-      "chapters": 152,
-      "currentEnglishCount": 0
+      "mangadexId": "6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
+      "title": "Fire Punch",
+      "score": 597814,
+      "year": 2016,
+      "popularity": 97731,
+      "chapters": 83,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
     },
     {
-      "mangadexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
-      "title": "Kaguya-sama: Love is War",
-      "score": 614660,
-      "year": 2015,
-      "popularity": 114379,
-      "chapters": 281,
-      "currentEnglishCount": 0
+      "mangadexId": "6b1eb93e-473a-4ab3-9922-1a66d2a29a4a",
+      "title": "Naruto",
+      "score": 595066,
+      "year": 1999,
+      "popularity": 94366,
+      "chapters": 700,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
     },
     {
-      "mangadexId": "59b36734-f2d6-46d7-97c0-06cfd2380852",
-      "title": "Tokyo Revengers",
-      "score": 614373,
-      "year": 2017,
-      "popularity": 114094,
-      "chapters": 279,
-      "currentEnglishCount": 0
+      "mangadexId": "75ee72ab-c6bf-4b87-badd-de839156934c",
+      "title": "Death Note",
+      "score": 594682,
+      "year": 2003,
+      "popularity": 94574,
+      "chapters": 108,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
     },
     {
-      "mangadexId": "239d6260-d71f-43b0-afff-074e3619e3de",
-      "title": "Bleach",
-      "score": 614060,
-      "year": 2001,
-      "popularity": 113354,
-      "chapters": 706,
-      "currentEnglishCount": 0
+      "mangadexId": "cb77e4a6-3921-43b9-9d64-7d78cd3205ce",
+      "title": "Hell’s Paradise: Jigokuraku",
+      "score": 593221,
+      "year": 2018,
+      "popularity": 93094,
+      "chapters": 127,
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
     }
   ],
   "nextSample": [
     {
-      "mangadexId": "a96676e5-8ae2-425e-b549-7f15dd34a6d8",
-      "title": "Komi Can't Communicate"
+      "mangadexId": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+      "title": "My Dress-Up Darling"
     },
     {
-      "mangadexId": "296cbc31-af1a-4b5b-a34b-fee2b4cad542",
-      "title": "[Oshi no Ko]"
+      "mangadexId": "4bde51e5-e420-45a4-98e9-7405bf2d59ff",
+      "title": "A Silent Voice"
     },
     {
-      "mangadexId": "237d527f-adb5-420e-8e6e-b7dd006fbe47",
-      "title": "Kaiju No.8"
+      "mangadexId": "cfc3d743-bd89-48e2-991f-63e680cc4edf",
+      "title": "Dr. STONE"
     },
     {
-      "mangadexId": "d9e30523-9d65-469e-92a2-302995770950",
-      "title": "Monster"
+      "mangadexId": "f4cfbb1c-766e-49db-ae80-1a5db3cbcc1b",
+      "title": "Uzumaki: Spiral into Horror"
     },
     {
-      "mangadexId": "ad06790a-01e3-400c-a449-0ec152d6756a",
-      "title": "20th Century Boys"
+      "mangadexId": "34f45c13-2b78-4900-8af2-d0bb551101f4",
+      "title": "Dorohedoro"
+    },
+    {
+      "mangadexId": "9e03b2ca-5191-44a6-88b6-c0cd49d06b51",
+      "title": "Three Days of Happiness"
     },
     {
       "mangadexId": "c9926df8-a200-40ba-8c05-0f5b375180c9",
       "title": "Goodbye, Eri"
     },
     {
-      "mangadexId": "ba7908db-5c9e-4f78-9fc1-3b3581f752e9",
-      "title": "Look Back"
+      "mangadexId": "cade38b7-64c4-4a29-8e3c-8c283291d6c6",
+      "title": "Land of the Lustrous"
     },
     {
-      "mangadexId": "558c2122-7342-4649-85e9-a866727bb2e8",
-      "title": "Mashle: Magic and Muscles"
+      "mangadexId": "dd8a907a-3850-4f95-ba03-ba201a8399e3",
+      "title": "Fullmetal Alchemist"
     },
     {
-      "mangadexId": "d7f56ace-cd30-48b9-8b64-afeca0077fca",
-      "title": "The Greatest Estate Developer"
+      "mangadexId": "bb169078-7289-4f95-948f-9315960e6905",
+      "title": "Bastard"
     },
     {
-      "mangadexId": "5439fe65-5b3a-420e-9ef4-27c9bcc49c5a",
-      "title": "Boy's Abyss"
+      "mangadexId": "d86cf65b-5f6c-437d-a0af-19a31f94ec55",
+      "title": "Don't Toy With Me, Miss Nagatoro"
     },
     {
-      "mangadexId": "bf2fed23-7174-408c-972a-af6d0179fe8e",
-      "title": "Death Note: a-Kira"
+      "mangadexId": "d84b20c0-2502-4ed6-8a3a-65448e1acd46",
+      "title": "Slam Dunk"
     },
     {
-      "mangadexId": "162146eb-672a-4a05-b3b2-0c6303f9614e",
-      "title": "Takopi's Original Sin"
+      "mangadexId": "01882116-3e45-4d67-b932-34f60d360086",
+      "title": "The Flowers of Evil"
     },
     {
-      "mangadexId": "cc1b8669-82b2-4232-99c1-40d48fc2d988",
-      "title": "Undead Unluck"
+      "mangadexId": "8b58f452-4d8a-4aad-a050-349e83fecccb",
+      "title": "Jujutsu Kaisen 0"
     },
     {
-      "mangadexId": "b2ae13e3-bea1-4f11-bfbe-4269f66e74f8",
-      "title": "The Return of the 8th Class Mage"
-    },
-    {
-      "mangadexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
-      "title": "Maybe Meant to Be"
+      "mangadexId": "a2febd3e-6252-46eb-bd63-01d51deaaec5",
+      "title": "The Quintessential Quintuplets"
     }
   ],
   "status": "completed",
-  "completedCount": 8,
+  "completedCount": 12,
   "failedCount": 0,
   "completed": [
     {
-      "mangadexId": "6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
-      "title": "Tokyo Ghoul",
-      "englishCount": 197,
+      "mangadexId": "a96676e5-8ae2-425e-b549-7f15dd34a6d8",
+      "title": "Komi Can't Communicate",
+      "englishCount": 541,
       "arabicCount": 10,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-04T20:24:19.589Z"
-    },
-    {
-      "mangadexId": "4301d363-ee02-43f4-ae24-4cbf29a74830",
-      "title": "Goodnight Punpun",
-      "englishCount": 147,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-04T20:27:04.080Z"
-    },
-    {
-      "mangadexId": "5d1fc77e-706a-4fc5-bea8-486c9be0145d",
-      "title": "Vinland Saga",
-      "englishCount": 224,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-04T20:31:13.947Z"
-    },
-    {
-      "mangadexId": "46e9cae5-4407-4576-9b9e-4c517ae9298e",
-      "title": "The Promised Neverland",
-      "englishCount": 189,
-      "arabicCount": 0,
       "fallback": "mangahere",
-      "updatedAt": "2026-04-04T20:36:29.132Z"
+      "updatedAt": "2026-04-05T06:50:34.615Z"
     },
     {
-      "mangadexId": "a25e46ec-30f7-4db6-89df-cacbc1d9a900",
-      "title": "Horimiya",
-      "englishCount": 164,
+      "mangadexId": "296cbc31-af1a-4b5b-a34b-fee2b4cad542",
+      "title": "[Oshi no Ko]",
+      "englishCount": 177,
+      "arabicCount": 3,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T06:51:44.379Z"
+    },
+    {
+      "mangadexId": "237d527f-adb5-420e-8e6e-b7dd006fbe47",
+      "title": "Kaiju No.8",
+      "englishCount": 155,
       "arabicCount": 6,
       "fallback": "mangahere",
-      "updatedAt": "2026-04-04T20:40:00.479Z"
+      "updatedAt": "2026-04-05T07:02:17.756Z"
     },
     {
-      "mangadexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
-      "title": "Kaguya-sama: Love is War",
-      "englishCount": 317,
-      "arabicCount": 26,
+      "mangadexId": "d9e30523-9d65-469e-92a2-302995770950",
+      "title": "Monster",
+      "englishCount": 175,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T07:04:42.673Z"
+    },
+    {
+      "mangadexId": "ad06790a-01e3-400c-a449-0ec152d6756a",
+      "title": "20th Century Boys",
+      "englishCount": 249,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T07:09:18.188Z"
+    },
+    {
+      "mangadexId": "bb57ccb8-a09a-4e9e-86ce-1c3743d3394d",
+      "title": "Haikyu!!",
+      "englishCount": 408,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T07:14:53.217Z"
+    },
+    {
+      "mangadexId": "b30dfee3-9d1d-4e8d-bfbe-8fcabc3c96f6",
+      "title": "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+      "englishCount": 98,
+      "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-04T20:40:02.315Z"
+      "updatedAt": "2026-04-05T07:14:54.653Z"
     },
     {
-      "mangadexId": "59b36734-f2d6-46d7-97c0-06cfd2380852",
-      "title": "Tokyo Revengers",
-      "englishCount": 299,
+      "mangadexId": "59f47645-66a9-443e-8228-788313c3ae3c",
+      "title": "Tokyo Ghoul:re",
+      "englishCount": 183,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-04T20:44:06.924Z"
+      "updatedAt": "2026-04-05T07:15:06.894Z"
     },
     {
-      "mangadexId": "239d6260-d71f-43b0-afff-074e3619e3de",
-      "title": "Bleach",
-      "englishCount": 706,
+      "mangadexId": "6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
+      "title": "Fire Punch",
+      "englishCount": 83,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-04T20:53:22.144Z"
+      "updatedAt": "2026-04-05T07:16:21.919Z"
+    },
+    {
+      "mangadexId": "6b1eb93e-473a-4ab3-9922-1a66d2a29a4a",
+      "title": "Naruto",
+      "englishCount": 701,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T07:25:25.427Z"
+    },
+    {
+      "mangadexId": "75ee72ab-c6bf-4b87-badd-de839156934c",
+      "title": "Death Note",
+      "englishCount": 114,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T07:27:06.013Z"
+    },
+    {
+      "mangadexId": "cb77e4a6-3921-43b9-9d64-7d78cd3205ce",
+      "title": "Hell’s Paradise: Jigokuraku",
+      "englishCount": 131,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-05T07:29:02.875Z"
     }
   ],
   "failed": []
