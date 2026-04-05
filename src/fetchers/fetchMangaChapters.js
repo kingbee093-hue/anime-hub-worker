@@ -348,6 +348,28 @@ function isMappingFresh(mapping) {
   return (Date.now() - updatedAt) / 3600000 < FALLBACK_MAPPING_TTL_HOURS;
 }
 
+function formatProviderStats(successMap, failureMap) {
+  const keys = Array.from(
+    new Set([
+      ...successMap.keys(),
+      ...failureMap.keys(),
+    ]),
+  );
+
+  if (keys.length === 0) {
+    return 'no provider stats';
+  }
+
+  return keys
+    .map((providerKey) => {
+      const label = PROVIDER_LABELS[providerKey] || providerKey;
+      const success = successMap.get(providerKey) || 0;
+      const failure = failureMap.get(providerKey) || 0;
+      return `${label}: +${success}/-${failure}`;
+    })
+    .join(', ');
+}
+
 async function buildEnglishFallbackChapters(
   entry,
   currentEnglish,
@@ -389,7 +411,9 @@ async function buildEnglishFallbackChapters(
     }
 
     const provider = providers[mapping.provider];
-    console.log(`Evaluating fallback candidate ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}.`);
+    console.log(
+      `Evaluating fallback candidate ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}: ${mapping.providerTitle || mapping.providerId}.`,
+    );
 
     let info;
     try {
@@ -399,6 +423,11 @@ async function buildEnglishFallbackChapters(
       continue;
     }
 
+    const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+    console.log(
+      `Fallback candidate ready for ${entry.title}: ${PROVIDER_LABELS[mapping.provider] || mapping.provider} -> "${mapping.providerTitle || mapping.providerId}" with ${chapterCount} chapter candidate(s).`,
+    );
+
     providerEntries.push({
       mapping,
       provider,
@@ -407,6 +436,7 @@ async function buildEnglishFallbackChapters(
   }
 
   if (providerEntries.length === 0) {
+    console.warn(`No usable English fallback providers were found for ${entry.title}.`);
     return { chapters: baseEnglish, mapping: null };
   }
 
@@ -451,6 +481,11 @@ async function buildEnglishFallbackChapters(
   console.log(
     `Preparing fallback chapter pages for ${entry.title}: ${chapterOptions.size} chapter gaps, ${providerEntries.length} provider candidate(s).`,
   );
+  console.log(
+    `Fallback provider order for ${entry.title}: ${providerEntries
+      .map((item) => `${PROVIDER_LABELS[item.mapping.provider] || item.mapping.provider}("${item.mapping.providerTitle || item.mapping.providerId}")`)
+      .join(' -> ')}.`,
+  );
 
   let addedCount = 0;
   const providerSuccessCounts = new Map();
@@ -489,6 +524,10 @@ async function buildEnglishFallbackChapters(
       }
 
       try {
+        const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
+        console.log(
+          `Trying ${PROVIDER_LABELS[providerKey] || providerKey} for ${entry.title} chapter ${chapterNumber ?? '?'} (${chapter.id}).`,
+        );
         const pages = await fetchFallbackPagesWithRetry(providerEntry.provider, chapter.id);
         const pageUrls = Array.isArray(pages)
           ? pages
@@ -513,6 +552,9 @@ async function buildEnglishFallbackChapters(
         existingMap.set(key, normalized);
         providerSuccessCounts.set(providerKey, successCount + 1);
         addedCount += 1;
+        console.log(
+          `Accepted ${PROVIDER_LABELS[providerKey] || providerKey} for ${entry.title} chapter ${normalized.chapter || '?' } with ${pageUrls.length} page(s).`,
+        );
         resolved = true;
         break;
       } catch (error) {
@@ -553,12 +595,18 @@ async function buildEnglishFallbackChapters(
     fallbackMappingMap.set(entry.mangadexId, finalMapping);
     writeFallbackMappingMap(fallbackMappingMap);
     console.log(`Added ${addedCount} English fallback chapters for ${entry.title}.`);
+    console.log(
+      `Fallback provider stats for ${entry.title}: ${formatProviderStats(providerSuccessCounts, providerFailureCounts)}.`,
+    );
     return {
       chapters: dedupeChapters(merged),
       mapping: finalMapping,
     };
   }
 
+  console.warn(
+    `No readable English fallback chapters were added for ${entry.title}. Provider stats: ${formatProviderStats(providerSuccessCounts, providerFailureCounts)}.`,
+  );
   return { chapters: baseEnglish, mapping: null };
 }
 
@@ -723,12 +771,18 @@ async function fetchMangaChapters() {
     for (const language of CHAPTER_LANGUAGES) {
       try {
         let chapters = await fetchLanguageChapters(entry.mangadexId, language);
+        console.log(
+          `Fetched ${chapters.length} raw ${language.toUpperCase()} chapter(s) from MangaDex for ${entry.title}.`,
+        );
         if (language === 'en') {
           const previousEnglish = Array.isArray(previousLanguages.en)
             ? previousLanguages.en
                 .filter((item) => item && typeof item === 'object')
                 .map(normalizeStoredChapter)
             : [];
+          console.log(
+            `Existing cached EN chapters for ${entry.title}: ${previousEnglish.length}. Catalog chapter target: ${entry.chapters || 0}.`,
+          );
           const fallback = await buildEnglishFallbackChapters(
             entry,
             chapters,
@@ -763,6 +817,12 @@ async function fetchMangaChapters() {
       englishFallbackProviderTitle: englishFallbackMapping?.providerTitle || null,
       englishFallbackChapterCount: englishFallbackMapping?.chapterCount || null,
     };
+
+    console.log(
+      `Final chapter coverage for ${entry.title}: ${availableLanguages
+        .map((language) => `${language.toUpperCase()}=${chapterIndex.counts[language] || 0}`)
+        .join(', ')}${chapterIndex.englishFallbackProvider ? ` | EN fallback=${chapterIndex.englishFallbackProvider}` : ''}.`,
+    );
 
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/${entry.mangadexId}`, chapterIndex);
     manifest.items.push({
