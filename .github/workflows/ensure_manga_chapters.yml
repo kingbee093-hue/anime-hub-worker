@@ -1,42 +1,42 @@
-name: AnimeHub - Manga Chapter Backfill
+name: AnimeHub - Manga Chapters
 
 on:
   workflow_dispatch:
     inputs:
       force_all:
-        description: Force processing all pending universe titles
+        description: Force processing all catalog titles that still need chapter work
         required: false
         default: false
         type: boolean
       batch_size:
-        description: Backfill batch size
+        description: Number of manga titles to process in one run
         required: false
-        default: '8'
+        default: '12'
         type: string
       target_ids:
-        description: Optional comma-separated AniList/MangaDex IDs to backfill
+        description: Optional comma-separated AniList or MangaDex IDs to process
         required: false
         default: ''
         type: string
   repository_dispatch:
-    types: [run-manga-chapters-backfill, run-all]
+    types: [run-manga-chapters, run-all]
   workflow_run:
-    workflows: ['AnimeHub - Manga Universe']
+    workflows: ['AnimeHub - Manga Catalog']
     types: [completed]
 
 permissions:
   contents: write
 
 concurrency:
-  group: backfill-manga-chapters
+  group: ensure-manga-chapters
   cancel-in-progress: false
 
 jobs:
-  backfill_chapters:
+  ensure_manga_chapters:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
-    name: Backfill Manga Chapter Coverage
+    name: Ensure Manga Chapter Coverage
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -52,22 +52,22 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run Chapter Backfill
+      - name: Run Chapter Coverage
         shell: bash
         env:
           MANGA_ENABLE_ENGLISH_FALLBACK: '1'
           FORCE_ALL_INPUT: ${{ github.event.inputs.force_all || 'false' }}
-          BATCH_SIZE_INPUT: ${{ github.event.inputs.batch_size || '8' }}
+          BATCH_SIZE_INPUT: ${{ github.event.inputs.batch_size || '12' }}
           TARGET_IDS_INPUT: ${{ github.event.inputs.target_ids || '' }}
         run: |
           export MANGA_BACKFILL_CHAPTER_BATCH="${BATCH_SIZE_INPUT}"
-          export MANGA_BACKFILL_TARGET_IDS="${TARGET_IDS_INPUT}"
           if [ "$FORCE_ALL_INPUT" = "true" ]; then
             export MANGA_BACKFILL_FORCE_ALL=1
-            echo "Running full chapter backfill."
-          else
-            echo "Running incremental chapter backfill."
           fi
+          if [ -n "$TARGET_IDS_INPUT" ]; then
+            export MANGA_BACKFILL_TARGET_IDS="$TARGET_IDS_INPUT"
+          fi
+          echo "Running smart manga chapter coverage."
           npm run backfill:manga-chapters
 
       - name: Commit API updates
@@ -76,9 +76,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add api/manga/chapters api/manga/backfill api/manga/mangadex_mapping_fallback.json
           if git diff --staged --quiet; then
-            echo "No API changes to commit."
+            echo "No chapter coverage changes to commit."
           else
-            git commit -m "api: backfill manga chapters [skip ci]"
+            git commit -m "api: ensure manga chapter coverage [skip ci]"
             git pull --rebase origin main || git pull origin main
             git push origin HEAD:main
           fi
