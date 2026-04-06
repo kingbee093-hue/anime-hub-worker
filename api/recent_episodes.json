@@ -2341,6 +2341,16 @@
         "isAdult": false
       },
       {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
@@ -2356,16 +2366,6 @@
         "description": "Main cast is mostly composed of male characters.",
         "category": "Cast-Main Cast",
         "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2415,7 +2415,7 @@
         "name": "Cute Boys Doing Cute Things",
         "description": "Centers around male characters doing cute activities, usually with little to no emphasis on drama and conflict.",
         "category": "Theme-Slice of Life",
-        "rank": 20,
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
