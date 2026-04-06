@@ -3,8 +3,54 @@
   "anilistId": 113666,
   "mangadexId": "1a4bc1ca-2ed8-425b-8235-d9372a446d93",
   "title": "FFF-Class Trashero",
-  "updatedAt": "2026-04-04T06:58:09.014Z",
-  "availableLanguages": [],
-  "counts": {},
-  "languages": {}
+  "updatedAt": "2026-04-06T20:03:00.122Z",
+  "availableLanguages": [
+    "en"
+  ],
+  "counts": {
+    "en": 3
+  },
+  "languages": {
+    "en": [
+      {
+        "id": "ef1c2be2-81db-4d66-831c-23c1eb819b26",
+        "title": "Episode 9",
+        "chapter": "9",
+        "volume": "1",
+        "language": "en",
+        "pages": 8,
+        "publishedAt": "2022-11-08T03:03:16+00:00",
+        "externalUrl": "https://www.bilibilicomics.com/mc667/57209?utm_source=mgd&utm_medium=uploader&utm_campaign=667&utm_content=9-0",
+        "scanlationGroup": "Bilibili Comics",
+        "sourceType": "official_external"
+      },
+      {
+        "id": "6ea68dc7-0870-4aa3-8759-62518a478d04",
+        "title": "Episode 2",
+        "chapter": "2",
+        "volume": "1",
+        "language": "en",
+        "pages": 119,
+        "publishedAt": "2022-05-07T12:47:16+00:00",
+        "externalUrl": "https://www.bilibilicomics.com/mc667/57064?utm_source=mgd&utm_medium=uploader&utm_campaign=667&utm_content=2-0",
+        "scanlationGroup": "Bilibili Comics",
+        "sourceType": "official_external"
+      },
+      {
+        "id": "37203db5-7218-42b2-b027-ac9a57a4c8a0",
+        "title": "Episode 1",
+        "chapter": "1",
+        "volume": "1",
+        "language": "en",
+        "pages": 186,
+        "publishedAt": "2022-05-07T09:15:29+00:00",
+        "externalUrl": "https://www.bilibilicomics.com/mc667/57053?utm_source=mgd&utm_medium=uploader&utm_campaign=667&utm_content=1-0",
+        "scanlationGroup": "Bilibili Comics",
+        "sourceType": "official_external"
+      }
+    ]
+  },
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }
