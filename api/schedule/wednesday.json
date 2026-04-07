@@ -55,7 +55,7 @@
     "rating": 7.2,
     "averageScore": 72,
     "meanScore": 79,
-    "popularity": 1524,
+    "popularity": 1528,
     "trending": 2,
     "favourites": 99,
     "source": "OTHER",
@@ -200,7 +200,7 @@
     "rating": 5.2,
     "averageScore": 52,
     "meanScore": 63,
-    "popularity": 403,
+    "popularity": 404,
     "trending": 2,
     "favourites": 9,
     "source": "MANGA",
@@ -292,8 +292,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 48,
-    "popularity": 488,
+    "meanScore": 47,
+    "popularity": 608,
     "trending": 0,
     "favourites": 14,
     "source": "MANGA",
@@ -375,7 +375,7 @@
         "name": "Tragedy",
         "description": "Centers around tragic events and unhappy endings.",
         "category": "Theme-Drama",
-        "rank": 88,
+        "rank": 89,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -385,9 +385,19 @@
         "name": "Female Protagonist",
         "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 87,
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -401,21 +411,11 @@
         "isAdult": false
       },
       {
-        "id": 536,
-        "name": "Dissociative Identities",
-        "description": "A case where one or more people share the same body.",
-        "category": "Cast-Traits",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 179,
         "name": "Witch",
         "description": "Prominently features a character who is a witch.",
         "category": "Cast-Traits",
-        "rank": 83,
+        "rank": 84,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -461,6 +461,16 @@
         "isAdult": false
       },
       {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 586,
         "name": "Cult",
         "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
@@ -478,16 +488,6 @@
         "rank": 77,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 240,
-        "name": "Amnesia",
-        "description": "Prominently features a character(s) with memory loss.",
-        "category": "Cast-Traits",
-        "rank": 77,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -575,7 +575,7 @@
         "name": "Dragons",
         "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
         "category": "Cast-Traits",
-        "rank": 50,
+        "rank": 52,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -596,7 +596,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 57497,
+    "popularity": 58181,
     "trending": 19,
     "favourites": 1220,
     "source": "LIGHT_NOVEL",
@@ -712,7 +712,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 9658,
+    "popularity": 9808,
     "trending": 3,
     "favourites": 121,
     "source": "MANGA",
@@ -875,10 +875,10 @@
       "AXsiZ",
       "Studio Gokumi"
     ],
-    "rating": 6.2,
-    "averageScore": 62,
+    "rating": 6.3,
+    "averageScore": 63,
     "meanScore": 67,
-    "popularity": 6934,
+    "popularity": 7127,
     "trending": 69,
     "favourites": 81,
     "source": "LIGHT_NOVEL",
@@ -944,6 +944,16 @@
         "isAdult": false
       },
       {
+        "id": 101,
+        "name": "Battle Royale",
+        "description": "Centers around a fierce group competition, often violent and with only one winner.",
+        "category": "Theme-Action",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 143,
         "name": "Survival",
         "description": "Centers around the struggle to live in spite of extreme obstacles.",
@@ -968,16 +978,6 @@
         "name": "Anti-Hero",
         "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
         "category": "Cast-Main Cast",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 101,
-        "name": "Battle Royale",
-        "description": "Centers around a fierce group competition, often violent and with only one winner.",
-        "category": "Theme-Action",
         "rank": 95,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1154,11 +1154,21 @@
         "isAdult": false
       },
       {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 139,
         "name": "Love Triangle",
         "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
         "category": "Theme-Romance",
-        "rank": 60,
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1168,17 +1178,7 @@
         "name": "Female Harem",
         "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
         "category": "Theme-Romance",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 53,
+        "rank": 46,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1196,10 +1196,10 @@
     "studiosNames": [
       "Lerche"
     ],
-    "rating": 8,
-    "averageScore": 80,
+    "rating": 7.9,
+    "averageScore": 79,
     "meanScore": 80,
-    "popularity": 57026,
+    "popularity": 58291,
     "trending": 493,
     "favourites": 1133,
     "source": "LIGHT_NOVEL",
@@ -1429,7 +1429,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 81,
-    "popularity": 24797,
+    "popularity": 25352,
     "trending": 92,
     "favourites": 369,
     "source": "MANGA",
@@ -1552,10 +1552,10 @@
     "studiosNames": [
       "studio A-CAT"
     ],
-    "rating": 6,
-    "averageScore": 60,
-    "meanScore": 61,
-    "popularity": 22695,
+    "rating": 5.9,
+    "averageScore": 59,
+    "meanScore": 60,
+    "popularity": 23071,
     "trending": 25,
     "favourites": 371,
     "source": "OTHER",
@@ -1691,7 +1691,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 13588,
+    "popularity": 13927,
     "trending": 8,
     "favourites": 129,
     "source": "MANGA",
@@ -1847,7 +1847,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 76,
-    "popularity": 14707,
+    "popularity": 15088,
     "trending": 5,
     "favourites": 238,
     "source": "MANGA",
@@ -1985,8 +1985,8 @@
     ],
     "rating": 6.7,
     "averageScore": 67,
-    "meanScore": 71,
-    "popularity": 7694,
+    "meanScore": 70,
+    "popularity": 7936,
     "trending": 3,
     "favourites": 87,
     "source": "LIGHT_NOVEL",
