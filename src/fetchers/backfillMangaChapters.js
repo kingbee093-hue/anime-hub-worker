@@ -11,6 +11,10 @@ const CHAPTER_BATCH_SIZE = Number(process.env.MANGA_BACKFILL_CHAPTER_BATCH || 12
 const CHAPTER_STALE_HOURS = Number(process.env.MANGA_BACKFILL_CHAPTER_STALE_HOURS || 24 * 14);
 const FORCE_ALL = process.env.MANGA_BACKFILL_FORCE_ALL === '1';
 const FAILURE_COOLDOWN_HOURS = Number(process.env.MANGA_BACKFILL_FAILURE_COOLDOWN_HOURS || 24);
+const SUCCESS_COOLDOWN_HOURS = Number(process.env.MANGA_BACKFILL_SUCCESS_COOLDOWN_HOURS || 24 * 7);
+const SUCCESS_COOLDOWN_RELEASING_HOURS = Number(
+  process.env.MANGA_BACKFILL_SUCCESS_COOLDOWN_RELEASING_HOURS || 24,
+);
 const MIN_AVAILABLE_CHAPTERS = Number(process.env.MANGA_BACKFILL_MIN_AVAILABLE_CHAPTERS || 1);
 const TARGET_IDS = new Set(
   String(process.env.MANGA_BACKFILL_TARGET_IDS || '')
@@ -122,6 +126,15 @@ function isFailureCoolingDown(stateItem) {
   return getHoursSince(stateItem.lastFailureAt) < FAILURE_COOLDOWN_HOURS;
 }
 
+function isSuccessCoolingDown(item, stateItem, counts) {
+  if (!stateItem?.lastSuccessAt) return false;
+  if ((counts?.total || 0) < MIN_AVAILABLE_CHAPTERS) return false;
+  const cooldownHours = String(item?.status || '').toUpperCase() === 'RELEASING'
+    ? SUCCESS_COOLDOWN_RELEASING_HOURS
+    : SUCCESS_COOLDOWN_HOURS;
+  return getHoursSince(stateItem.lastSuccessAt) < cooldownHours;
+}
+
 function scoreCandidate(item, manifestItem, stateItem) {
   const popularity = Number(item.popularity || 0);
   const expected = Number(item.chapters || 0);
@@ -135,6 +148,10 @@ function scoreCandidate(item, manifestItem, stateItem) {
   const hasUsableCoverage = counts.total >= MIN_AVAILABLE_CHAPTERS;
 
   if (!FORCE_ALL && isFailureCoolingDown(stateItem)) {
+    return -1;
+  }
+
+  if (!FORCE_ALL && isSuccessCoolingDown(item, stateItem, counts)) {
     return -1;
   }
 
@@ -240,6 +257,8 @@ async function backfillMangaChapters() {
     batchSize: CHAPTER_BATCH_SIZE,
     forceAll: FORCE_ALL,
     failureCooldownHours: FAILURE_COOLDOWN_HOURS,
+    successCooldownHours: SUCCESS_COOLDOWN_HOURS,
+    successCooldownReleasingHours: SUCCESS_COOLDOWN_RELEASING_HOURS,
     targetIds: Array.from(TARGET_IDS),
     selected: selected.map(({ item, manifestItem, stateItem, score }) => ({
       mangadexId: item.mangadexId,
