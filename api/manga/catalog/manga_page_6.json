@@ -1355,7 +1355,11 @@
         "site": "Naver Series",
         "url": "https://series.naver.com/comic/detail.series?productNo=4205149"
       }
-    ]
+    ],
+    "mangadexId": "d110834c-0280-42fe-95d9-4f79e939ca0a",
+    "mangadexUrl": "https://mangadex.org/title/d110834c-0280-42fe-95d9-4f79e939ca0a",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 154349,
@@ -1601,7 +1605,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 14714,
+    "popularity": 14729,
     "trending": 2,
     "favourites": 461,
     "source": "ORIGINAL",
@@ -2902,7 +2906,7 @@
     "rating": 7.1,
     "averageScore": 71,
     "meanScore": 72,
-    "popularity": 14496,
+    "popularity": 14516,
     "trending": 27,
     "favourites": 341,
     "source": "ORIGINAL",
@@ -4097,7 +4101,11 @@
     "isAdult": false,
     "anilist_url": "https://anilist.co/manga/58226",
     "mal_url": "https://myanimelist.net/manga/28226",
-    "externalLinks": []
+    "externalLinks": [],
+    "mangadexId": "e5e6b437-611a-4d7f-81a3-c3cd692fc885",
+    "mangadexUrl": "https://mangadex.org/title/e5e6b437-611a-4d7f-81a3-c3cd692fc885",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 98608,
@@ -4477,7 +4485,7 @@
     "rating": 6.6,
     "averageScore": 66,
     "meanScore": 67,
-    "popularity": 14374,
+    "popularity": 14388,
     "trending": 0,
     "favourites": 374,
     "source": "ORIGINAL",
@@ -6705,7 +6713,7 @@
     "rating": 7,
     "averageScore": 70,
     "meanScore": 70,
-    "popularity": 14212,
+    "popularity": 14215,
     "trending": 3,
     "favourites": 312,
     "source": "OTHER",
@@ -7419,7 +7427,7 @@
     "rating": 7.1,
     "averageScore": 71,
     "meanScore": 72,
-    "popularity": 14168,
+    "popularity": 14176,
     "trending": 2,
     "favourites": 488,
     "source": "LIGHT_NOVEL",
@@ -7643,7 +7651,7 @@
     "rating": 8,
     "averageScore": 80,
     "meanScore": 81,
-    "popularity": 14162,
+    "popularity": 14173,
     "trending": 1,
     "favourites": 813,
     "source": "OTHER",
@@ -8362,6 +8370,237 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 124783,
+    "anilistId": 124783,
+    "idMal": 146716,
+    "title": "I Am the Real One",
+    "titleRomaji": "Sasireun Naega Jinjjayeotda",
+    "titleEnglish": "I Am the Real One",
+    "titleNative": "사실은 내가 진짜였다",
+    "synonyms": [
+      "Actually, I Was the Real One",
+      "実は私が本物だった",
+      "其實我才是正牌千金",
+      "ฉันนี่แหละที่เป็นตัวจริง"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124783-Q3DuRbP7Rqmo.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx124783-Q3DuRbP7Rqmo.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx124783-Q3DuRbP7Rqmo.jpg",
+    "coverImageColor": "#28aee4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/124783-FVHfE4eH211w.jpg",
+    "synopsis": "A prophecy foretold that the Grand Duke would only have one water elementalist born from him. Though she lacks her father’s affection, Keira knows she’s destined for those powers. But after years of doing what was right and proper of a noble, she’s executed after the conniving Cosette appears, claiming to be the Grand Duke’s real daughter. But then—Keira wakes up with newfound purpose: make changes, allies, and even friends before it’s too late. Will it be enough before Cosette hatches her plot? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2020,
+    "startDate": "2020-09-30",
+    "endDate": "2026-02-20",
+    "chapters": 160,
+    "volumes": 0,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 77,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 780,
+        "name": "Ojou-sama",
+        "description": "Features a wealthy, high-class, oftentimes stuck up and demanding female character.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1789,
+        "name": "Long Strip",
+        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Samwol"
+    ],
+    "artists": [
+      "Yuwoon"
+    ],
+    "rating": 7.3,
+    "averageScore": 73,
+    "meanScore": 74,
+    "popularity": 14030,
+    "trending": 1,
+    "favourites": 391,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/124783",
+    "mal_url": "https://myanimelist.net/manga/146716",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/home?seriesId=55721630"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/i-am-the-real-one/info"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/65571"
+      }
+    ],
+    "mangadexId": "48d231af-d0cd-4f1e-a1e2-9d1a7aa91a6a",
+    "mangadexUrl": "https://mangadex.org/title/48d231af-d0cd-4f1e-a1e2-9d1a7aa91a6a",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 101563,
     "anilistId": 101563,
     "idMal": 137200,
@@ -8721,236 +8960,9 @@
         "site": "WeComics",
         "url": "https://www.wecomics.in.th/comics/9195"
       }
-    ]
-  },
-  {
-    "mangaId": 124783,
-    "anilistId": 124783,
-    "idMal": 146716,
-    "title": "I Am the Real One",
-    "titleRomaji": "Sasireun Naega Jinjjayeotda",
-    "titleEnglish": "I Am the Real One",
-    "titleNative": "사실은 내가 진짜였다",
-    "synonyms": [
-      "Actually, I Was the Real One",
-      "実は私が本物だった",
-      "其實我才是正牌千金",
-      "ฉันนี่แหละที่เป็นตัวจริง"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124783-Q3DuRbP7Rqmo.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx124783-Q3DuRbP7Rqmo.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx124783-Q3DuRbP7Rqmo.jpg",
-    "coverImageColor": "#28aee4",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/124783-FVHfE4eH211w.jpg",
-    "synopsis": "A prophecy foretold that the Grand Duke would only have one water elementalist born from him. Though she lacks her father’s affection, Keira knows she’s destined for those powers. But after years of doing what was right and proper of a noble, she’s executed after the conniving Cosette appears, claiming to be the Grand Duke’s real daughter. But then—Keira wakes up with newfound purpose: make changes, allies, and even friends before it’s too late. Will it be enough before Cosette hatches her plot? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 2020,
-    "startDate": "2020-09-30",
-    "endDate": "2026-02-20",
-    "chapters": 160,
-    "volumes": 0,
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 100,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 96,
-        "name": "Time Manipulation",
-        "description": "Prominently features time-traveling or other time-warping phenomena.",
-        "category": "Theme-Sci-Fi",
-        "rank": 77,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 488,
-        "name": "Age Regression",
-        "description": "Prominently features a character who was returned to a younger state.",
-        "category": "Cast-Traits",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 53,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1327,
-        "name": "Royal Affairs",
-        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
-        "category": "Theme-Other",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 87,
-        "name": "Family Life",
-        "description": "Centers around the activities of a family unit.",
-        "category": "Theme-Slice of Life",
-        "rank": 46,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 780,
-        "name": "Ojou-sama",
-        "description": "Features a wealthy, high-class, oftentimes stuck up and demanding female character.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 20,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 139,
-        "name": "Love Triangle",
-        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1789,
-        "name": "Long Strip",
-        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
-        "category": "Technical",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Samwol"
-    ],
-    "artists": [
-      "Yuwoon"
-    ],
-    "rating": 7.3,
-    "averageScore": 73,
-    "meanScore": 74,
-    "popularity": 14021,
-    "trending": 1,
-    "favourites": 391,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/124783",
-    "mal_url": "https://myanimelist.net/manga/146716",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=55721630"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/i-am-the-real-one/info"
-      },
-      {
-        "site": "Piccoma",
-        "url": "https://piccoma.com/web/product/65571"
-      }
-    ],
-    "mangadexId": "48d231af-d0cd-4f1e-a1e2-9d1a7aa91a6a",
-    "mangadexUrl": "https://mangadex.org/title/48d231af-d0cd-4f1e-a1e2-9d1a7aa91a6a",
+    "mangadexId": "6e52262f-bcd5-49c4-b93a-f4652d189844",
+    "mangadexUrl": "https://mangadex.org/title/6e52262f-bcd5-49c4-b93a-f4652d189844",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -9335,7 +9347,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 13972,
+    "popularity": 13983,
     "trending": 10,
     "favourites": 764,
     "source": "OTHER",
@@ -9872,7 +9884,7 @@
     "rating": 7.1,
     "averageScore": 71,
     "meanScore": 72,
-    "popularity": 13855,
+    "popularity": 13862,
     "trending": 0,
     "favourites": 426,
     "source": "OTHER",
@@ -10568,266 +10580,6 @@
     "mangadexMappingConfidence": 0.87
   },
   {
-    "mangaId": 128160,
-    "anilistId": 128160,
-    "idMal": 134028,
-    "title": "Tying the Knot with an Amagami Sister",
-    "titleRomaji": "Amagami-san Chi no Enmusubi",
-    "titleEnglish": "Tying the Knot with an Amagami Sister",
-    "titleNative": "甘神さんちの縁結び",
-    "synonyms": [
-      "Matchmaking of the Amagami Household",
-      "ด้ายแดงผูกรักบ้านอามากามิ",
-      "結緣甘神神社",
-      "甘神家的连理枝",
-      "아마가미 씨네 인연 맺기"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx128160-Zc1m3o79aW4O.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx128160-Zc1m3o79aW4O.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128160-Zc1m3o79aW4O.jpg",
-    "coverImageColor": "#f14328",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/128160-ZUiV9EH6wmp2.jpg",
-    "synopsis": "Uryuu Kamihate has had a rough start to life, but plans to forget it all by achieving his dream—matriculating into medical school. But when he arrives at his new foster home, a working shrine, his dream of a quiet place to study goes up in smoke. Not only will he be living with the three beautiful, lively Amagami sisters—but he learns that he must marry one of them and take over the temple! (Source: Kodansha USA)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 2021,
-    "startDate": "2021-04-21",
-    "endDate": "2025-08-27",
-    "chapters": 194,
-    "volumes": 22,
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Ecchi",
-      "Romance",
-      "Supernatural"
-    ],
-    "tags": [
-      {
-        "id": 468,
-        "name": "Shrine Maiden",
-        "description": "Prominently features a character who is a shrine maiden.",
-        "category": "Cast-Traits",
-        "rank": 97,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1277,
-        "name": "Found Family",
-        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
-        "category": "Theme-Other",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 164,
-        "name": "Tsundere",
-        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
-        "category": "Cast-Traits",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 65,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 96,
-        "name": "Time Manipulation",
-        "description": "Prominently features time-traveling or other time-warping phenomena.",
-        "category": "Theme-Sci-Fi",
-        "rank": 56,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1091,
-        "name": "Religion",
-        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
-        "category": "Theme-Other",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1459,
-        "name": "Polyamorous",
-        "description": "Features a character who is in a consenting relationship with multiple people at one time.",
-        "category": "Theme-Romance",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 154,
-        "name": "Body Swapping",
-        "description": "Centers around individuals swapping bodies with one another.",
-        "category": "Theme-Fantasy",
-        "rank": 40,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1052,
-        "name": "Adoption",
-        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 87,
-        "name": "Family Life",
-        "description": "Centers around the activities of a family unit.",
-        "category": "Theme-Slice of Life",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 494,
-        "name": "Twins",
-        "description": "Prominently features two or more siblings that were born at one birth.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1382,
-        "name": "Orphan",
-        "description": "Prominently features a character that is an orphan.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Marcey Naitou"
-    ],
-    "artists": [
-      "Marcey Naitou"
-    ],
-    "rating": 7.4,
-    "averageScore": 74,
-    "meanScore": 75,
-    "popularity": 13729,
-    "trending": 0,
-    "favourites": 471,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/128160",
-    "mal_url": "https://myanimelist.net/manga/134028",
-    "externalLinks": [
-      {
-        "site": "Twitter",
-        "url": "https://twitter.com/amagamisan_wm"
-      },
-      {
-        "site": "Kodansha",
-        "url": "https://kodansha.us/series/tying-the-knot-with-an-amagami-sister/"
-      },
-      {
-        "site": "Pocket Magazine",
-        "url": "https://pocket.shonenmagazine.com/episode/3269632237327960663"
-      },
-      {
-        "site": "Kodansha",
-        "url": "https://kc.kodansha.co.jp/title?code=1000039823"
-      },
-      {
-        "site": "K MANGA",
-        "url": "https://kmanga.kodansha.com/title/10007/episode/315031"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://www.pika.fr/livre/how-i-married-amagami-sister-t01"
-      },
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/content/60526543"
-      }
-    ],
-    "mangadexId": "0f6003ca-e7f3-43ce-bfd2-0694146994be",
-    "mangadexUrl": "https://mangadex.org/title/0f6003ca-e7f3-43ce-bfd2-0694146994be",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
     "mangaId": 149893,
     "anilistId": 149893,
     "idMal": 147494,
@@ -11064,7 +10816,7 @@
     "rating": 6.8,
     "averageScore": 68,
     "meanScore": 69,
-    "popularity": 13716,
+    "popularity": 13751,
     "trending": 1,
     "favourites": 289,
     "source": "ORIGINAL",
@@ -11096,6 +10848,266 @@
     ],
     "mangadexId": "0e2cb981-70c8-4229-aff7-6be966852b03",
     "mangadexUrl": "https://mangadex.org/title/0e2cb981-70c8-4229-aff7-6be966852b03",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 128160,
+    "anilistId": 128160,
+    "idMal": 134028,
+    "title": "Tying the Knot with an Amagami Sister",
+    "titleRomaji": "Amagami-san Chi no Enmusubi",
+    "titleEnglish": "Tying the Knot with an Amagami Sister",
+    "titleNative": "甘神さんちの縁結び",
+    "synonyms": [
+      "Matchmaking of the Amagami Household",
+      "ด้ายแดงผูกรักบ้านอามากามิ",
+      "結緣甘神神社",
+      "甘神家的连理枝",
+      "아마가미 씨네 인연 맺기"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx128160-Zc1m3o79aW4O.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx128160-Zc1m3o79aW4O.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx128160-Zc1m3o79aW4O.jpg",
+    "coverImageColor": "#f14328",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/128160-ZUiV9EH6wmp2.jpg",
+    "synopsis": "Uryuu Kamihate has had a rough start to life, but plans to forget it all by achieving his dream—matriculating into medical school. But when he arrives at his new foster home, a working shrine, his dream of a quiet place to study goes up in smoke. Not only will he be living with the three beautiful, lively Amagami sisters—but he learns that he must marry one of them and take over the temple! (Source: Kodansha USA)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2021,
+    "startDate": "2021-04-21",
+    "endDate": "2025-08-27",
+    "chapters": 194,
+    "volumes": 22,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Ecchi",
+      "Romance",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 468,
+        "name": "Shrine Maiden",
+        "description": "Prominently features a character who is a shrine maiden.",
+        "category": "Cast-Traits",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 56,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1459,
+        "name": "Polyamorous",
+        "description": "Features a character who is in a consenting relationship with multiple people at one time.",
+        "category": "Theme-Romance",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 154,
+        "name": "Body Swapping",
+        "description": "Centers around individuals swapping bodies with one another.",
+        "category": "Theme-Fantasy",
+        "rank": 40,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1052,
+        "name": "Adoption",
+        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Marcey Naitou"
+    ],
+    "artists": [
+      "Marcey Naitou"
+    ],
+    "rating": 7.4,
+    "averageScore": 74,
+    "meanScore": 75,
+    "popularity": 13735,
+    "trending": 0,
+    "favourites": 471,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/128160",
+    "mal_url": "https://myanimelist.net/manga/134028",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/amagamisan_wm"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/tying-the-knot-with-an-amagami-sister/"
+      },
+      {
+        "site": "Pocket Magazine",
+        "url": "https://pocket.shonenmagazine.com/episode/3269632237327960663"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kc.kodansha.co.jp/title?code=1000039823"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10007/episode/315031"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.pika.fr/livre/how-i-married-amagami-sister-t01"
+      },
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/60526543"
+      }
+    ],
+    "mangadexId": "0f6003ca-e7f3-43ce-bfd2-0694146994be",
+    "mangadexUrl": "https://mangadex.org/title/0f6003ca-e7f3-43ce-bfd2-0694146994be",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -11401,7 +11413,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 13684,
+    "popularity": 13697,
     "trending": 4,
     "favourites": 453,
     "source": "OTHER",
@@ -11932,157 +11944,9 @@
         "site": "Lezhin",
         "url": "https://www.lezhin.com/ko/comic/vampire_knight"
       }
-    ]
-  },
-  {
-    "mangaId": 166154,
-    "anilistId": 166154,
-    "idMal": 159734,
-    "title": "The Player Hides His Past",
-    "titleRomaji": "Player-ga Gwageoreul Sumgim",
-    "titleEnglish": "The Player Hides His Past",
-    "titleNative": "플레이어가 과거를 숨김",
-    "synonyms": [
-      "Le Player cache son passé",
-      "隐瞒黑历史的玩家",
-      "ตัวตนสุดเบียวของเพลเยอร์ผู้กู้โลก"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166154-m65LKgDdfe8p.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx166154-m65LKgDdfe8p.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx166154-m65LKgDdfe8p.jpg",
-    "coverImageColor": "#e45d78",
-    "bannerImage": "",
-    "synopsis": "The real world is suddenly ambushed by rifts that threaten to spill out monsters from the VR game “Chronicles of Arcana.” These rifts can only be closed by “players,” people who have awakened as their in-game characters with all the same stats and skills. Unfortunately for protagonist Lee Ho-Yeol, his awakening is the opposite of cool as his avatar happens to be the one he made during the height of his awkward phase in middle school, giving him all the mannerisms and speech of an absolute cringelord. Just how will he go on to become the hero humanity needs most? (Source: WEBTOON, edited)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2023,
-    "startDate": "2023-06-16",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 536,
-        "name": "Dissociative Identities",
-        "description": "A case where one or more people share the same body.",
-        "category": "Cast-Traits",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 65,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 172,
-        "name": "Superhero",
-        "description": "Prominently features super-powered humans who aim to serve the greater good.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Gaechaban",
-      "Bedes"
-    ],
-    "artists": [
-      "Binukki"
-    ],
-    "rating": 7.5,
-    "averageScore": 75,
-    "meanScore": 76,
-    "popularity": 13675,
-    "trending": 0,
-    "favourites": 409,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/166154",
-    "mal_url": "https://myanimelist.net/manga/159734",
-    "externalLinks": [
-      {
-        "site": "Naver Series",
-        "url": "https://series.naver.com/comic/detail.series?productNo=9847125"
-      },
-      {
-        "site": "Naver Webtoon",
-        "url": "https://comic.naver.com/webtoon/list?titleId=811707"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/en/action/the-player-hides-his-past/list?title_no=5655"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/fr/action/le-player-cache-son-passe/list?title_no=5882"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/th/fantasy/the-player-hides-his-past/list?title_no=6232"
-      },
-      {
-        "site": "Dongman Manhua",
-        "url": "https://www.dongmanmanhua.cn/BOY/yinmanheilishidewanjia/list?title_no=2612"
-      }
-    ],
-    "mangadexId": "4dfb6202-8f0d-4b79-8e8f-4798306d7513",
-    "mangadexUrl": "https://mangadex.org/title/4dfb6202-8f0d-4b79-8e8f-4798306d7513",
+    "mangadexId": "baaa0ca4-efef-4b15-b91a-c1f85692c2a7",
+    "mangadexUrl": "https://mangadex.org/title/baaa0ca4-efef-4b15-b91a-c1f85692c2a7",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -12281,7 +12145,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 78,
-    "popularity": 13657,
+    "popularity": 13675,
     "trending": 1,
     "favourites": 553,
     "source": "ORIGINAL",
@@ -12325,6 +12189,158 @@
     ],
     "mangadexId": "e43a7f5b-6ae7-478d-a4d5-53c8dc3ce52f",
     "mangadexUrl": "https://mangadex.org/title/e43a7f5b-6ae7-478d-a4d5-53c8dc3ce52f",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 166154,
+    "anilistId": 166154,
+    "idMal": 159734,
+    "title": "The Player Hides His Past",
+    "titleRomaji": "Player-ga Gwageoreul Sumgim",
+    "titleEnglish": "The Player Hides His Past",
+    "titleNative": "플레이어가 과거를 숨김",
+    "synonyms": [
+      "Le Player cache son passé",
+      "隐瞒黑历史的玩家",
+      "ตัวตนสุดเบียวของเพลเยอร์ผู้กู้โลก"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166154-m65LKgDdfe8p.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx166154-m65LKgDdfe8p.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx166154-m65LKgDdfe8p.jpg",
+    "coverImageColor": "#e45d78",
+    "bannerImage": "",
+    "synopsis": "The real world is suddenly ambushed by rifts that threaten to spill out monsters from the VR game “Chronicles of Arcana.” These rifts can only be closed by “players,” people who have awakened as their in-game characters with all the same stats and skills. Unfortunately for protagonist Lee Ho-Yeol, his awakening is the opposite of cool as his avatar happens to be the one he made during the height of his awkward phase in middle school, giving him all the mannerisms and speech of an absolute cringelord. Just how will he go on to become the hero humanity needs most? (Source: WEBTOON, edited)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2023,
+    "startDate": "2023-06-16",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 172,
+        "name": "Superhero",
+        "description": "Prominently features super-powered humans who aim to serve the greater good.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Gaechaban",
+      "Bedes"
+    ],
+    "artists": [
+      "Binukki"
+    ],
+    "rating": 7.5,
+    "averageScore": 75,
+    "meanScore": 76,
+    "popularity": 13675,
+    "trending": 0,
+    "favourites": 409,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/166154",
+    "mal_url": "https://myanimelist.net/manga/159734",
+    "externalLinks": [
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=9847125"
+      },
+      {
+        "site": "Naver Webtoon",
+        "url": "https://comic.naver.com/webtoon/list?titleId=811707"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/en/action/the-player-hides-his-past/list?title_no=5655"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/fr/action/le-player-cache-son-passe/list?title_no=5882"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/th/fantasy/the-player-hides-his-past/list?title_no=6232"
+      },
+      {
+        "site": "Dongman Manhua",
+        "url": "https://www.dongmanmanhua.cn/BOY/yinmanheilishidewanjia/list?title_no=2612"
+      }
+    ],
+    "mangadexId": "4dfb6202-8f0d-4b79-8e8f-4798306d7513",
+    "mangadexUrl": "https://mangadex.org/title/4dfb6202-8f0d-4b79-8e8f-4798306d7513",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -12454,7 +12470,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 75,
-    "popularity": 13637,
+    "popularity": 13641,
     "trending": 6,
     "favourites": 416,
     "source": "OTHER",
@@ -12705,6 +12721,194 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 124621,
+    "anilistId": 124621,
+    "idMal": 130633,
+    "title": "How to Grill Our Love",
+    "titleRomaji": "Yaiteru Futari",
+    "titleEnglish": "How to Grill Our Love",
+    "titleNative": "焼いてるふたり",
+    "synonyms": [
+      "A Rare Marriage: How to Grill Our Love",
+      "Grilling for Two",
+      "Rare Love",
+      "Grilling Together",
+      "จุดรักเราด้วยเตาถ่าน",
+      "굽고 있는 두 사람"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124621-g3dTY9fb8Frj.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx124621-g3dTY9fb8Frj.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx124621-g3dTY9fb8Frj.jpg",
+    "coverImageColor": "#e48650",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/124621-ZpvFhEaPNUzf.jpg",
+    "synopsis": "Dating can be tough when you nerd out over barbecue. Kenta, a practical pitmaster, looks for a grill-friend in Chihiro, an aloof and faultless business babe…or is she? Scared of being rejected for who they really are, the two of them find comfort in food and each other…and all is well until Kenta must transfer away. With their developing relationship at steak, Chihiro proposes they tie the knot and they marry for better or wurst. Winging a long-distance marriage is one thing, but here's the rub—they barely know each other! It's a rare marriage where all the awkwardness of dating meets a sizzling passion for grilling! (Source: Kodansha USA)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2020,
+    "startDate": "2020-09-24",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 98,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 262,
+        "name": "Outdoor Activities",
+        "description": "Centers around hiking, camping or other outdoor activities.",
+        "category": "Setting-Scene",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 250,
+        "name": "Rural",
+        "description": "Partly or completely set in the countryside.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 140,
+        "name": "Educational",
+        "description": "Primary aim is to educate the audience.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 653,
+        "name": "Office Lady",
+        "description": "Prominently features a female office worker or OL.",
+        "category": "Cast-Traits",
+        "rank": 33,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Shiori Hanatsuka"
+    ],
+    "artists": [
+      "Shiori Hanatsuka"
+    ],
+    "rating": 7.6,
+    "averageScore": 76,
+    "meanScore": 77,
+    "popularity": 13608,
+    "trending": 1,
+    "favourites": 291,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/124621",
+    "mal_url": "https://myanimelist.net/manga/130633",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://morning.kodansha.co.jp/c/yaiterufutari/"
+      },
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/13933686331710621187"
+      }
+    ],
+    "mangadexId": "a3e48f50-d3d1-4d08-b54a-a3b7ad4b0801",
+    "mangadexUrl": "https://mangadex.org/title/a3e48f50-d3d1-4d08-b54a-a3b7ad4b0801",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 135369,
     "anilistId": 135369,
     "idMal": 147489,
@@ -12827,7 +13031,7 @@
     "rating": 6.7,
     "averageScore": 67,
     "meanScore": 67,
-    "popularity": 13605,
+    "popularity": 13607,
     "trending": 3,
     "favourites": 286,
     "source": "OTHER",
@@ -13001,194 +13205,6 @@
     ],
     "mangadexId": "74112e07-9efd-4d57-8f2b-3d4ed5abcd5a",
     "mangadexUrl": "https://mangadex.org/title/74112e07-9efd-4d57-8f2b-3d4ed5abcd5a",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 124621,
-    "anilistId": 124621,
-    "idMal": 130633,
-    "title": "How to Grill Our Love",
-    "titleRomaji": "Yaiteru Futari",
-    "titleEnglish": "How to Grill Our Love",
-    "titleNative": "焼いてるふたり",
-    "synonyms": [
-      "A Rare Marriage: How to Grill Our Love",
-      "Grilling for Two",
-      "Rare Love",
-      "Grilling Together",
-      "จุดรักเราด้วยเตาถ่าน",
-      "굽고 있는 두 사람"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124621-g3dTY9fb8Frj.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx124621-g3dTY9fb8Frj.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx124621-g3dTY9fb8Frj.jpg",
-    "coverImageColor": "#e48650",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/124621-ZpvFhEaPNUzf.jpg",
-    "synopsis": "Dating can be tough when you nerd out over barbecue. Kenta, a practical pitmaster, looks for a grill-friend in Chihiro, an aloof and faultless business babe…or is she? Scared of being rejected for who they really are, the two of them find comfort in food and each other…and all is well until Kenta must transfer away. With their developing relationship at steak, Chihiro proposes they tie the knot and they marry for better or wurst. Winging a long-distance marriage is one thing, but here's the rub—they barely know each other! It's a rare marriage where all the awkwardness of dating meets a sizzling passion for grilling! (Source: Kodansha USA)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2020,
-    "startDate": "2020-09-24",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 142,
-        "name": "Food",
-        "description": "Centers around cooking or food appraisal.",
-        "category": "Theme-Arts",
-        "rank": 98,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 87,
-        "name": "Family Life",
-        "description": "Centers around the activities of a family unit.",
-        "category": "Theme-Slice of Life",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 262,
-        "name": "Outdoor Activities",
-        "description": "Centers around hiking, camping or other outdoor activities.",
-        "category": "Setting-Scene",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 250,
-        "name": "Rural",
-        "description": "Partly or completely set in the countryside.",
-        "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 140,
-        "name": "Educational",
-        "description": "Primary aim is to educate the audience.",
-        "category": "Theme-Other",
-        "rank": 57,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
-        "rank": 53,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 653,
-        "name": "Office Lady",
-        "description": "Prominently features a female office worker or OL.",
-        "category": "Cast-Traits",
-        "rank": 33,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Shiori Hanatsuka"
-    ],
-    "artists": [
-      "Shiori Hanatsuka"
-    ],
-    "rating": 7.6,
-    "averageScore": 76,
-    "meanScore": 77,
-    "popularity": 13601,
-    "trending": 1,
-    "favourites": 291,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/124621",
-    "mal_url": "https://myanimelist.net/manga/130633",
-    "externalLinks": [
-      {
-        "site": "Official Site",
-        "url": "https://morning.kodansha.co.jp/c/yaiterufutari/"
-      },
-      {
-        "site": "Comic Days",
-        "url": "https://comic-days.com/episode/13933686331710621187"
-      }
-    ],
-    "mangadexId": "a3e48f50-d3d1-4d08-b54a-a3b7ad4b0801",
-    "mangadexUrl": "https://mangadex.org/title/a3e48f50-d3d1-4d08-b54a-a3b7ad4b0801",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -13959,6 +13975,148 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 139339,
+    "anilistId": 139339,
+    "idMal": 148212,
+    "title": "Into the Light, Once Again",
+    "titleRomaji": "Dasi Han Beon, Bin Sogeuro",
+    "titleEnglish": "Into the Light, Once Again",
+    "titleNative": "다시 한 번, 빛 속으로",
+    "synonyms": [
+      "Once Again Into the Light, Alone",
+      "重迎曙光",
+      "もう一度、光の中へ"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx139339-VnROu4poh9rw.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139339-VnROu4poh9rw.png",
+    "coverImageColor": "#c9f1f1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/139339-TuBFEPsPOddW.jpg",
+    "synopsis": "When Princess Alisa is framed for a terrible crime, she is shocked to learn that her own family wants her executed. Feeling defeated, she finds herself reborn as the princess of a rival empire. And though her new family acts sweet and kind on the surface, she’s not sure they can be truly trusted. Luckily, with this new life comes new power. But what exactly is this mysterious magic that awakens in her? And more importantly, can she use it to get vengeance against those who once betrayed her? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-09-02",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Spoon",
+      "Tikatika",
+      "Yuya"
+    ],
+    "artists": [
+      "Yuya"
+    ],
+    "rating": 7.5,
+    "averageScore": 75,
+    "meanScore": 75,
+    "popularity": 13588,
+    "trending": 1,
+    "favourites": 514,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/139339",
+    "mal_url": "https://myanimelist.net/manga/148212",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/home?seriesId=57770713"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/into-the-light-once-again/info"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/fr/romance/into-the-light-once-again/list?title_no=8929"
+      }
+    ],
+    "mangadexId": "6cfc0541-41e2-4f77-8340-971fdc15bacc",
+    "mangadexUrl": "https://mangadex.org/title/6cfc0541-41e2-4f77-8340-971fdc15bacc",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 114003,
     "anilistId": 114003,
     "idMal": 122842,
@@ -14155,148 +14313,6 @@
     ],
     "mangadexId": "fa6ee44f-8c47-4cbc-ba10-9815a100d6b5",
     "mangadexUrl": "https://mangadex.org/title/fa6ee44f-8c47-4cbc-ba10-9815a100d6b5",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 139339,
-    "anilistId": 139339,
-    "idMal": 148212,
-    "title": "Into the Light, Once Again",
-    "titleRomaji": "Dasi Han Beon, Bin Sogeuro",
-    "titleEnglish": "Into the Light, Once Again",
-    "titleNative": "다시 한 번, 빛 속으로",
-    "synonyms": [
-      "Once Again Into the Light, Alone",
-      "重迎曙光",
-      "もう一度、光の中へ"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx139339-VnROu4poh9rw.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139339-VnROu4poh9rw.png",
-    "coverImageColor": "#c9f1f1",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/139339-TuBFEPsPOddW.jpg",
-    "synopsis": "When Princess Alisa is framed for a terrible crime, she is shocked to learn that her own family wants her executed. Feeling defeated, she finds herself reborn as the princess of a rival empire. And though her new family acts sweet and kind on the surface, she’s not sure they can be truly trusted. Luckily, with this new life comes new power. But what exactly is this mysterious magic that awakens in her? And more importantly, can she use it to get vengeance against those who once betrayed her? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2021,
-    "startDate": "2021-09-02",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 243,
-        "name": "Reincarnation",
-        "description": "Features a character being born again after death, typically as another person or in another world.",
-        "category": "Theme-Other",
-        "rank": 90,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 365,
-        "name": "Memory Manipulation",
-        "description": "Prominently features a character(s) who has had their memories altered.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1327,
-        "name": "Royal Affairs",
-        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Spoon",
-      "Tikatika",
-      "Yuya"
-    ],
-    "artists": [
-      "Yuya"
-    ],
-    "rating": 7.5,
-    "averageScore": 75,
-    "meanScore": 75,
-    "popularity": 13578,
-    "trending": 1,
-    "favourites": 514,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/139339",
-    "mal_url": "https://myanimelist.net/manga/148212",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=57770713"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/into-the-light-once-again/info"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/fr/romance/into-the-light-once-again/list?title_no=8929"
-      }
-    ],
-    "mangadexId": "6cfc0541-41e2-4f77-8340-971fdc15bacc",
-    "mangadexUrl": "https://mangadex.org/title/6cfc0541-41e2-4f77-8340-971fdc15bacc",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -15310,6 +15326,122 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 143117,
+    "anilistId": 143117,
+    "idMal": 146385,
+    "title": "The Divine Twilight's Return",
+    "titleRomaji": "Buseojin Seongjwaui Hoegwi",
+    "titleEnglish": "The Divine Twilight's Return",
+    "titleNative": "부서진 성좌의 회귀",
+    "synonyms": [
+      "Return of the Broken Constellation",
+      "Return Of The Shattered Constellation"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143117-RkTi17DYV6Ur.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143117-RkTi17DYV6Ur.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143117-RkTi17DYV6Ur.jpg",
+    "coverImageColor": "#f1935d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/143117-goPcftGgstoo.jpg",
+    "synopsis": "After being put on trial, the deity once known as \"The Divine Twilight\" is offered a job by Thanatos, king of the underworld! Now, the fallen deity is back on Earth as his former self, Lee Chang-Seon, and is tasked with sealing those trying to invade from beyond. With the promise of a fresh start, Chang-Seon is gathering the gear and skills needed to get the job done, but he's feeling some watchful eyes on him... Will this Divine Twilight see a new day, or is the sun setting on his second chance? (Source: Tapas, edited)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-11-29",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 73,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Do-Yeon Sa"
+    ],
+    "artists": [
+      "Kyeong-Il Yang",
+      "Hyeong-Min Kim",
+      "I-Sup Jong"
+    ],
+    "rating": 7.2,
+    "averageScore": 72,
+    "meanScore": 73,
+    "popularity": 13498,
+    "trending": 0,
+    "favourites": 348,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/143117",
+    "mal_url": "https://myanimelist.net/manga/146385",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/home?seriesId=58274684"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/the-divine-twilights-return/info"
+      }
+    ],
+    "mangadexId": "8d12bb9f-dd9a-45ab-b6d7-fa26e52c91b5",
+    "mangadexUrl": "https://mangadex.org/title/8d12bb9f-dd9a-45ab-b6d7-fa26e52c91b5",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 104617,
     "anilistId": 104617,
     "idMal": 120177,
@@ -15538,30 +15670,32 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 143117,
-    "anilistId": 143117,
-    "idMal": 146385,
-    "title": "The Divine Twilight's Return",
-    "titleRomaji": "Buseojin Seongjwaui Hoegwi",
-    "titleEnglish": "The Divine Twilight's Return",
-    "titleNative": "부서진 성좌의 회귀",
+    "mangaId": 143025,
+    "anilistId": 143025,
+    "idMal": null,
+    "title": "Duke Pendragon: Master of the White Dragon",
+    "titleRomaji": "Hakuryuu Koushaku Pendragon",
+    "titleEnglish": "Duke Pendragon: Master of the White Dragon",
+    "titleNative": "白龍公爵ペンドラゴン",
     "synonyms": [
-      "Return of the Broken Constellation",
-      "Return Of The Shattered Constellation"
+      "백룡공작 팬드래건",
+      "Duke Pendragon",
+      "White Dragon Duke: Pendragon",
+      "白龙公爵佩德·莱欧"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143117-RkTi17DYV6Ur.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143117-RkTi17DYV6Ur.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143117-RkTi17DYV6Ur.jpg",
-    "coverImageColor": "#f1935d",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/143117-goPcftGgstoo.jpg",
-    "synopsis": "After being put on trial, the deity once known as \"The Divine Twilight\" is offered a job by Thanatos, king of the underworld! Now, the fallen deity is back on Earth as his former self, Lee Chang-Seon, and is tasked with sealing those trying to invade from beyond. With the promise of a fresh start, Chang-Seon is gathering the gear and skills needed to get the job done, but he's feeling some watchful eyes on him... Will this Divine Twilight see a new day, or is the sun setting on his second chance? (Source: Tapas, edited)",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143025-YL8hzpkVFR5J.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143025-YL8hzpkVFR5J.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143025-YL8hzpkVFR5J.jpg",
+    "coverImageColor": "#e4785d",
+    "bannerImage": "",
+    "synopsis": "After 10 grueling years as a monster hunter in the Devil’s Army, Raven Balt was given his final mission: guard Allen Pendragon, heir of a formerly glorious dragon-taming family. But when Raven and Allen are both killed as part of a conspiracy, Raven wakes up seven years in the past inside Allen’s body. To solve the mystery behind his death, Raven must find the legendary White Dragon to restore the power of House Pendragon. But does this mere hunter have what it takes to become a dragon master? (Source: Tapas)",
     "type": "MANGA",
     "format": "MANGA",
-    "status": "RELEASING",
+    "status": "FINISHED",
     "year": 2021,
-    "startDate": "2021-11-29",
-    "endDate": null,
-    "chapters": 0,
+    "startDate": "2021-12-22",
+    "endDate": "2025-04-12",
+    "chapters": 131,
     "volumes": 0,
     "genres": [
       "Action",
@@ -15569,21 +15703,31 @@
     ],
     "tags": [
       {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 243,
         "name": "Reincarnation",
         "description": "Features a character being born again after death, typically as another person or in another world.",
         "category": "Theme-Other",
-        "rank": 73,
+        "rank": 82,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 488,
-        "name": "Age Regression",
-        "description": "Prominently features a character who was returned to a younger state.",
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
         "category": "Cast-Traits",
-        "rank": 73,
+        "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -15593,8 +15737,18 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 66,
+        "rank": 76,
         "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 70,
+        "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -15603,53 +15757,120 @@
         "name": "Full Color",
         "description": "Manga that were initially published in full color.",
         "category": "Technical",
-        "rank": 66,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
         "category": "Cast-Traits",
-        "rank": 66,
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 480,
+        "name": "Goblin",
+        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1243,
+        "name": "Necromancy",
+        "description": "When the dead are summoned as spirits, skeletons, or the undead, usually for the purpose of gaining information or to be used as a weapon.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1789,
+        "name": "Long Strip",
+        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
+        "category": "Technical",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
     "authors": [
-      "Do-Yeon Sa"
+      "Yuusuke Utsumi",
+      "Hyeong-Jun Kim"
     ],
     "artists": [
-      "Kyeong-Il Yang",
-      "Hyeong-Min Kim",
-      "I-Sup Jong"
+      "Yuukina Sumishiro"
     ],
-    "rating": 7.2,
-    "averageScore": 72,
-    "meanScore": 73,
-    "popularity": 13495,
+    "rating": 7.3,
+    "averageScore": 73,
+    "meanScore": 74,
+    "popularity": 13475,
     "trending": 0,
-    "favourites": 348,
+    "favourites": 408,
     "source": "OTHER",
-    "countryOfOrigin": "KR",
+    "countryOfOrigin": "JP",
     "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/143117",
-    "mal_url": "https://myanimelist.net/manga/146385",
+    "anilist_url": "https://anilist.co/manga/143025",
+    "mal_url": "",
     "externalLinks": [
       {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/81737"
+      },
+      {
+        "site": "KuaiKan Manhua",
+        "url": "https://m.kuaikanmanhua.com/mobile/13413/list/"
+      },
+      {
         "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=58274684"
+        "url": "https://page.kakao.com/home?seriesId=58558135"
       },
       {
         "site": "Tapas",
-        "url": "https://tapas.io/series/the-divine-twilights-return/info"
+        "url": "https://tapas.io/series/duke-pendragon-master-of-the-white-dragon"
       }
     ],
-    "mangadexId": "8d12bb9f-dd9a-45ab-b6d7-fa26e52c91b5",
-    "mangadexUrl": "https://mangadex.org/title/8d12bb9f-dd9a-45ab-b6d7-fa26e52c91b5",
+    "mangadexId": "1849fc45-8c4c-4d29-9242-5f35ea689023",
+    "mangadexUrl": "https://mangadex.org/title/1849fc45-8c4c-4d29-9242-5f35ea689023",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -15887,94 +16108,45 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 143025,
-    "anilistId": 143025,
-    "idMal": null,
-    "title": "Duke Pendragon: Master of the White Dragon",
-    "titleRomaji": "Hakuryuu Koushaku Pendragon",
-    "titleEnglish": "Duke Pendragon: Master of the White Dragon",
-    "titleNative": "白龍公爵ペンドラゴン",
+    "mangaId": 143516,
+    "anilistId": 143516,
+    "idMal": 142629,
+    "title": "Make the Exorcist Fall in Love",
+    "titleRomaji": "Exorcist wo Otosenai",
+    "titleEnglish": "Make the Exorcist Fall in Love",
+    "titleNative": "エクソシストを堕とせない",
     "synonyms": [
-      "백룡공작 팬드래건",
-      "Duke Pendragon",
-      "White Dragon Duke: Pendragon",
-      "白龙公爵佩德·莱欧"
+      "Make the Exorcist Fall in Love – Egzorcysta nie do wyrwania",
+      "엑소시스트를 타락시킬 수 없어"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143025-YL8hzpkVFR5J.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143025-YL8hzpkVFR5J.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143025-YL8hzpkVFR5J.jpg",
-    "coverImageColor": "#e4785d",
-    "bannerImage": "",
-    "synopsis": "After 10 grueling years as a monster hunter in the Devil’s Army, Raven Balt was given his final mission: guard Allen Pendragon, heir of a formerly glorious dragon-taming family. But when Raven and Allen are both killed as part of a conspiracy, Raven wakes up seven years in the past inside Allen’s body. To solve the mystery behind his death, Raven must find the legendary White Dragon to restore the power of House Pendragon. But does this mere hunter have what it takes to become a dragon master? (Source: Tapas)",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143516-kIK4iJpcCH30.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143516-kIK4iJpcCH30.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143516-kIK4iJpcCH30.jpg",
+    "coverImageColor": "#e45d6b",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/143516-VJrThM8wtBHS.jpg",
+    "synopsis": "A boy was chosen by god to become the world's strongest exorcist and to face deadly demons in battle. Burdened with the fate of humanity, all he really wants to do is quietly bake sweets, when one day a certain girl enters his life… A story of love and hope blooming during a bloody holy war! (Source: MANGA Plus)",
     "type": "MANGA",
     "format": "MANGA",
-    "status": "FINISHED",
+    "status": "RELEASING",
     "year": 2021,
-    "startDate": "2021-12-22",
-    "endDate": "2025-04-12",
-    "chapters": 131,
+    "startDate": "2021-12-15",
+    "endDate": null,
+    "chapters": 0,
     "volumes": 0,
     "genres": [
       "Action",
-      "Fantasy"
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Supernatural"
     ],
     "tags": [
       {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 243,
-        "name": "Reincarnation",
-        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
         "category": "Theme-Other",
-        "rank": 82,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 224,
-        "name": "Dragons",
-        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
-        "category": "Cast-Traits",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 96,
-        "name": "Time Manipulation",
-        "description": "Prominently features time-traveling or other time-warping phenomena.",
-        "category": "Theme-Sci-Fi",
-        "rank": 70,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 70,
+        "rank": 98,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -15984,7 +16156,37 @@
         "name": "Demons",
         "description": "Prominently features malevolent otherworldly creatures.",
         "category": "Cast-Traits",
-        "rank": 60,
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 179,
+        "name": "Witch",
+        "description": "Prominently features a character who is a witch.",
+        "category": "Cast-Traits",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -15994,9 +16196,19 @@
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 60,
+        "rank": 84,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1670,
+        "name": "Psychosexual",
+        "description": "Work that involves the psychological aspects of sexual impulses.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -16004,15 +16216,135 @@
         "name": "Magic",
         "description": "Prominently features magical elements or the use of magic.",
         "category": "Theme-Fantasy",
-        "rank": 46,
+        "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 220,
-        "name": "Ghost",
-        "description": "Prominently features a character who is a ghost.",
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1719,
+        "name": "Exorcism",
+        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 665,
+        "name": "Succubus",
+        "description": "Prominently features a character who is a succubus, a creature in medieval folklore that typically uses their sexual prowess to trap and seduce people to feed off them.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 614,
+        "name": "Nun",
+        "description": "Prominently features a character who is a nun.",
+        "category": "Cast-Traits",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 75,
+        "name": "Boys' Love",
+        "description": "Prominently features romance between two males, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
         "category": "Cast-Traits",
         "rank": 40,
         "isGeneralSpoiler": false,
@@ -16020,74 +16352,59 @@
         "isAdult": false
       },
       {
-        "id": 480,
-        "name": "Goblin",
-        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1243,
-        "name": "Necromancy",
-        "description": "When the dead are summoned as spirits, skeletons, or the undead, usually for the purpose of gaining information or to be used as a weapon.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 1789,
-        "name": "Long Strip",
-        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
-        "category": "Technical",
-        "rank": 20,
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 31,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
     "authors": [
-      "Yuusuke Utsumi",
-      "Hyeong-Jun Kim"
+      "Aruma Arima"
     ],
     "artists": [
-      "Yuukina Sumishiro"
+      "Masuku Fukayama"
     ],
-    "rating": 7.3,
-    "averageScore": 73,
-    "meanScore": 74,
-    "popularity": 13469,
-    "trending": 0,
-    "favourites": 408,
-    "source": "OTHER",
+    "rating": 7.9,
+    "averageScore": 79,
+    "meanScore": 80,
+    "popularity": 13467,
+    "trending": 7,
+    "favourites": 570,
+    "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/143025",
-    "mal_url": "",
+    "anilist_url": "https://anilist.co/manga/143516",
+    "mal_url": "https://myanimelist.net/manga/142629",
     "externalLinks": [
       {
-        "site": "Piccoma",
-        "url": "https://piccoma.com/web/product/81737"
+        "site": "Twitter",
+        "url": "https://twitter.com/exorcistboy_PR?t=hRYJ3N_NJc1xadHJ3Okc5g&s=09"
       },
       {
-        "site": "KuaiKan Manhua",
-        "url": "https://m.kuaikanmanhua.com/mobile/13413/list/"
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/3269754496649675685"
       },
       {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=58558135"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/duke-pendragon-master-of-the-white-dragon"
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100198"
       }
     ],
-    "mangadexId": "1849fc45-8c4c-4d29-9242-5f35ea689023",
-    "mangadexUrl": "https://mangadex.org/title/1849fc45-8c4c-4d29-9242-5f35ea689023",
+    "mangadexId": "8d2e9520-4127-4bf2-94a3-b2571029562d",
+    "mangadexUrl": "https://mangadex.org/title/8d2e9520-4127-4bf2-94a3-b2571029562d",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -16649,7 +16966,7 @@
     "rating": 6.9,
     "averageScore": 69,
     "meanScore": 69,
-    "popularity": 13444,
+    "popularity": 13448,
     "trending": 0,
     "favourites": 288,
     "source": "OTHER",
@@ -16681,115 +16998,91 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 143516,
-    "anilistId": 143516,
-    "idMal": 142629,
-    "title": "Make the Exorcist Fall in Love",
-    "titleRomaji": "Exorcist wo Otosenai",
-    "titleEnglish": "Make the Exorcist Fall in Love",
-    "titleNative": "エクソシストを堕とせない",
+    "mangaId": 138577,
+    "anilistId": 138577,
+    "idMal": 143991,
+    "title": "After God",
+    "titleRomaji": "After God",
+    "titleEnglish": "After God",
+    "titleNative": "アフターゴッド",
     "synonyms": [
-      "Make the Exorcist Fall in Love – Egzorcysta nie do wyrwania",
-      "엑소시스트를 타락시킬 수 없어"
+      "อาฟเตอร์ก็อด "
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143516-kIK4iJpcCH30.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143516-kIK4iJpcCH30.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143516-kIK4iJpcCH30.jpg",
-    "coverImageColor": "#e45d6b",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/143516-VJrThM8wtBHS.jpg",
-    "synopsis": "A boy was chosen by god to become the world's strongest exorcist and to face deadly demons in battle. Burdened with the fate of humanity, all he really wants to do is quietly bake sweets, when one day a certain girl enters his life… A story of love and hope blooming during a bloody holy war! (Source: MANGA Plus)",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138577-Rev53Zj2JbNC.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx138577-Rev53Zj2JbNC.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx138577-Rev53Zj2JbNC.png",
+    "coverImageColor": "#1a506b",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/138577-2WGl5Wo3aNMC.jpg",
+    "synopsis": "Japan has been invaded by Gods, leaving giant Danger Zones where once were cityscapes. While patrolling the area, Anti-God researcher Tokinaga discovers Kamikura Waka looking forlornly through the protective fence. In her eyes, he spots something deep and dangerous. Something capable of changing the world... (Source: Comikey)",
     "type": "MANGA",
     "format": "MANGA",
     "status": "RELEASING",
     "year": 2021,
-    "startDate": "2021-12-15",
+    "startDate": "2021-08-17",
     "endDate": null,
     "chapters": 0,
     "volumes": 0,
     "genres": [
       "Action",
-      "Comedy",
-      "Drama",
-      "Romance",
       "Supernatural"
     ],
     "tags": [
       {
-        "id": 1091,
-        "name": "Religion",
-        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
-        "category": "Theme-Other",
-        "rank": 98,
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 94,
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 95,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 179,
-        "name": "Witch",
-        "description": "Prominently features a character who is a witch.",
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
         "category": "Cast-Traits",
-        "rank": 88,
+        "rank": 95,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
         "category": "Theme-Drama",
-        "rank": 88,
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
         "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1670,
-        "name": "Psychosexual",
-        "description": "Work that involves the psychological aspects of sexual impulses.",
-        "category": "Theme-Other",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -16799,39 +17092,89 @@
         "name": "Tragedy",
         "description": "Centers around tragic events and unhappy endings.",
         "category": "Theme-Drama",
+        "rank": 84,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
         "rank": 80,
         "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 1719,
-        "name": "Exorcism",
-        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
-        "category": "Theme-Fantasy",
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
         "rank": 80,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 665,
-        "name": "Succubus",
-        "description": "Prominently features a character who is a succubus, a creature in medieval folklore that typically uses their sexual prowess to trap and seduce people to feed off them.",
-        "category": "Cast-Traits",
-        "rank": 79,
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 77,
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 73,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1596,
+        "name": "Time Loop",
+        "description": "A character is stuck in a repetitive cycle that they are attempting to break out of. This is distinct from a manipulating time of their own choice.",
+        "category": "Theme-Sci-Fi",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -16839,27 +17182,77 @@
         "name": "Gore",
         "description": "Prominently features graphic bloodshed and violence.",
         "category": "Theme-Other",
-        "rank": 77,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
+        "id": 179,
+        "name": "Witch",
+        "description": "Prominently features a character who is a witch.",
         "category": "Cast-Traits",
-        "rank": 77,
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "id": 622,
+        "name": "Asexual",
+        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1121,
+        "name": "Torture",
+        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
         "category": "Theme-Other",
-        "rank": 72,
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 874,
+        "name": "Pandemic",
+        "description": "Prominently features a disease prevalent over a whole country or the world.",
+        "category": "Theme-Other",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 55,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -16869,27 +17262,37 @@
         "name": "LGBTQ+ Themes",
         "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
         "category": "Theme-Other",
-        "rank": 67,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 614,
-        "name": "Nun",
-        "description": "Prominently features a character who is a nun.",
-        "category": "Cast-Traits",
-        "rank": 64,
+        "rank": 53,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 60,
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1667,
+        "name": "Eco-Horror",
+        "description": "Utilizes a horrifying depiction of ecology to explore man and its relationship with nature.",
+        "category": "Theme-Drama",
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -16899,85 +17302,59 @@
         "name": "Boys' Love",
         "description": "Prominently features romance between two males, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 54,
+        "rank": 34,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 870,
-        "name": "Cannibalism",
-        "description": "Prominently features the act of consuming another member of the same species as food.",
-        "category": "Theme-Other",
-        "rank": 46,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 294,
-        "name": "Bisexual",
-        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "id": 1574,
+        "name": "Veterinarian",
+        "description": "Prominently features a veterinarian or one of the main characters is a veterinarian.",
         "category": "Cast-Traits",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 186,
-        "name": "Crossdressing",
-        "description": "Prominently features a character dressing up as the opposite sex.",
-        "category": "Cast-Traits",
-        "rank": 31,
+        "rank": 33,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
     "authors": [
-      "Aruma Arima"
+      "Sumi Eno"
     ],
     "artists": [
-      "Masuku Fukayama"
+      "Sumi Eno"
     ],
-    "rating": 7.9,
-    "averageScore": 79,
-    "meanScore": 80,
+    "rating": 7.7,
+    "averageScore": 77,
+    "meanScore": 78,
     "popularity": 13436,
-    "trending": 7,
-    "favourites": 570,
+    "trending": 1,
+    "favourites": 391,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/143516",
-    "mal_url": "https://myanimelist.net/manga/142629",
+    "anilist_url": "https://anilist.co/manga/138577",
+    "mal_url": "https://myanimelist.net/manga/143991",
     "externalLinks": [
       {
-        "site": "Twitter",
-        "url": "https://twitter.com/exorcistboy_PR?t=hRYJ3N_NJc1xadHJ3Okc5g&s=09"
+        "site": "Ura Sunday",
+        "url": "https://urasunday.com/title/1755"
       },
       {
-        "site": "Shonen Jump Plus",
-        "url": "https://shonenjumpplus.com/episode/3269754496649675685"
+        "site": "Comikey",
+        "url": "https://comikey.com/comics/after-god-manga/159/"
       },
       {
-        "site": "MANGA Plus",
-        "url": "https://mangaplus.shueisha.co.jp/titles/100198"
+        "site": "VIZ",
+        "url": "https://www.viz.com/after-god"
+      },
+      {
+        "site": "Comikey",
+        "url": "https://br.comikey.com/comics/after-god-pt-br-manga/765/"
       }
     ],
-    "mangadexId": "8d2e9520-4127-4bf2-94a3-b2571029562d",
-    "mangadexUrl": "https://mangadex.org/title/8d2e9520-4127-4bf2-94a3-b2571029562d",
+    "mangadexId": "65fa324d-4075-4f59-a71c-2c82f69f6779",
+    "mangadexUrl": "https://mangadex.org/title/65fa324d-4075-4f59-a71c-2c82f69f6779",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -17357,367 +17734,6 @@
     ],
     "mangadexId": "da36a727-7686-4e92-8fac-94bc292b8e91",
     "mangadexUrl": "https://mangadex.org/title/da36a727-7686-4e92-8fac-94bc292b8e91",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 138577,
-    "anilistId": 138577,
-    "idMal": 143991,
-    "title": "After God",
-    "titleRomaji": "After God",
-    "titleEnglish": "After God",
-    "titleNative": "アフターゴッド",
-    "synonyms": [
-      "อาฟเตอร์ก็อด "
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138577-Rev53Zj2JbNC.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx138577-Rev53Zj2JbNC.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx138577-Rev53Zj2JbNC.png",
-    "coverImageColor": "#1a506b",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/138577-2WGl5Wo3aNMC.jpg",
-    "synopsis": "Japan has been invaded by Gods, leaving giant Danger Zones where once were cityscapes. While patrolling the area, Anti-God researcher Tokinaga discovers Kamikura Waka looking forlornly through the protective fence. In her eyes, he spots something deep and dangerous. Something capable of changing the world... (Source: Comikey)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2021,
-    "startDate": "2021-08-17",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Supernatural"
-    ],
-    "tags": [
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 100,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 536,
-        "name": "Dissociative Identities",
-        "description": "A case where one or more people share the same body.",
-        "category": "Cast-Traits",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 217,
-        "name": "Dystopian",
-        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
-        "category": "Setting-Time",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 84,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 639,
-        "name": "Body Horror",
-        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
-        "category": "Theme-Other",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 636,
-        "name": "Cosmic Horror",
-        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
-        "category": "Theme-Other",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 96,
-        "name": "Time Manipulation",
-        "description": "Prominently features time-traveling or other time-warping phenomena.",
-        "category": "Theme-Sci-Fi",
-        "rank": 80,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1046,
-        "name": "Suicide",
-        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
-        "category": "Theme-Drama",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1596,
-        "name": "Time Loop",
-        "description": "A character is stuck in a repetitive cycle that they are attempting to break out of. This is distinct from a manipulating time of their own choice.",
-        "category": "Theme-Sci-Fi",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 94,
-        "name": "Gore",
-        "description": "Prominently features graphic bloodshed and violence.",
-        "category": "Theme-Other",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 179,
-        "name": "Witch",
-        "description": "Prominently features a character who is a witch.",
-        "category": "Cast-Traits",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 489,
-        "name": "Drugs",
-        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
-        "category": "Theme-Other",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 622,
-        "name": "Asexual",
-        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
-        "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1121,
-        "name": "Torture",
-        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
-        "category": "Theme-Other",
-        "rank": 56,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 874,
-        "name": "Pandemic",
-        "description": "Prominently features a disease prevalent over a whole country or the world.",
-        "category": "Theme-Other",
-        "rank": 55,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 208,
-        "name": "Mythology",
-        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
-        "category": "Theme-Fantasy",
-        "rank": 55,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 483,
-        "name": "LGBTQ+ Themes",
-        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
-        "category": "Theme-Other",
-        "rank": 53,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 43,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1667,
-        "name": "Eco-Horror",
-        "description": "Utilizes a horrifying depiction of ecology to explore man and its relationship with nature.",
-        "category": "Theme-Drama",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 75,
-        "name": "Boys' Love",
-        "description": "Prominently features romance between two males, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 34,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1574,
-        "name": "Veterinarian",
-        "description": "Prominently features a veterinarian or one of the main characters is a veterinarian.",
-        "category": "Cast-Traits",
-        "rank": 33,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Sumi Eno"
-    ],
-    "artists": [
-      "Sumi Eno"
-    ],
-    "rating": 7.7,
-    "averageScore": 77,
-    "meanScore": 78,
-    "popularity": 13422,
-    "trending": 1,
-    "favourites": 391,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/138577",
-    "mal_url": "https://myanimelist.net/manga/143991",
-    "externalLinks": [
-      {
-        "site": "Ura Sunday",
-        "url": "https://urasunday.com/title/1755"
-      },
-      {
-        "site": "Comikey",
-        "url": "https://comikey.com/comics/after-god-manga/159/"
-      },
-      {
-        "site": "VIZ",
-        "url": "https://www.viz.com/after-god"
-      },
-      {
-        "site": "Comikey",
-        "url": "https://br.comikey.com/comics/after-god-pt-br-manga/765/"
-      }
-    ],
-    "mangadexId": "65fa324d-4075-4f59-a71c-2c82f69f6779",
-    "mangadexUrl": "https://mangadex.org/title/65fa324d-4075-4f59-a71c-2c82f69f6779",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -18295,6 +18311,191 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 122337,
+    "anilistId": 122337,
+    "idMal": 130934,
+    "title": "The Angel Next Door Spoils Me Rotten",
+    "titleRomaji": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
+    "titleEnglish": "The Angel Next Door Spoils Me Rotten",
+    "titleNative": "お隣の天使様にいつの間にか駄目人間にされていた件",
+    "synonyms": [
+      "She is the neighbour Angel, I am spoilt by her.",
+      "The Case of the Neighbourhood Angel Turning into a Degenerate Unaware",
+      "The Case of Being Turned into a Good-for-nothing by my Neighbour the Angel",
+      "ขาดคุณนางฟ้าข้างห้องไป ผมคงมีชีวิตต่อไปไม่ได้อีกแล้ว",
+      "關於我在無意間被隔壁的天使變成廢柴這件事",
+      "Aku Dimanjakan Tetanggaku yang Seperti Malaikat"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx122337-vy8L0b1ySIQr.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx122337-vy8L0b1ySIQr.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx122337-vy8L0b1ySIQr.jpg",
+    "coverImageColor": "#e4505d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/122337-MJbLoI7yTp2O.jpg",
+    "synopsis": "Amane Fujimiya lives alone in a messy apartment&mdash;right next door to Mahiru Shiina, a veritable \"angel\" who's the smartest, prettiest girl at school. When a chance encounter on a rainy day draws them together, Mahiru finds herself spending more and more time helping Amane get his life in order. And though they both insist they have no intention of dating the other, slowly but surely, something more than friendship begins to blossom. (Source: Square Enix)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-01-06",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 92,
+        "name": "Cute Girls Doing Cute Things",
+        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
+        "category": "Theme-Slice of Life",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1564,
+        "name": "Estranged Family",
+        "description": "At least one family member of the MC intentionally distances themselves or a family distances themselves from a person related to the MC.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1753,
+        "name": "Cohabitation",
+        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Wan Shibata",
+      "Suzu Yuuki",
+      "Saeki-san"
+    ],
+    "artists": [
+      "Wan Shibata"
+    ],
+    "rating": 7.9,
+    "averageScore": 79,
+    "meanScore": 80,
+    "popularity": 13362,
+    "trending": 0,
+    "favourites": 517,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/122337",
+    "mal_url": "https://myanimelist.net/manga/130934",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://magazine.jp.square-enix.com/mangaup/original/tendame/"
+      },
+      {
+        "site": "Manga UP!",
+        "url": "https://global.manga-up.com/manga/204"
+      },
+      {
+        "site": "Comikey",
+        "url": "https://comikey.com/comics/the-angel-next-door-spoils-me-rotten-manga/458/"
+      }
+    ],
+    "mangadexId": "2fec6641-beb1-4ae9-a32f-204dd06688ac",
+    "mangadexUrl": "https://mangadex.org/title/2fec6641-beb1-4ae9-a32f-204dd06688ac",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 30869,
     "anilistId": 30869,
     "idMal": 869,
@@ -18796,191 +18997,6 @@
     ],
     "mangadexId": "d773c8be-8e82-4ff1-a4e9-46171395319b",
     "mangadexUrl": "https://mangadex.org/title/d773c8be-8e82-4ff1-a4e9-46171395319b",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 122337,
-    "anilistId": 122337,
-    "idMal": 130934,
-    "title": "The Angel Next Door Spoils Me Rotten",
-    "titleRomaji": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
-    "titleEnglish": "The Angel Next Door Spoils Me Rotten",
-    "titleNative": "お隣の天使様にいつの間にか駄目人間にされていた件",
-    "synonyms": [
-      "She is the neighbour Angel, I am spoilt by her.",
-      "The Case of the Neighbourhood Angel Turning into a Degenerate Unaware",
-      "The Case of Being Turned into a Good-for-nothing by my Neighbour the Angel",
-      "ขาดคุณนางฟ้าข้างห้องไป ผมคงมีชีวิตต่อไปไม่ได้อีกแล้ว",
-      "關於我在無意間被隔壁的天使變成廢柴這件事",
-      "Aku Dimanjakan Tetanggaku yang Seperti Malaikat"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx122337-vy8L0b1ySIQr.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx122337-vy8L0b1ySIQr.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx122337-vy8L0b1ySIQr.jpg",
-    "coverImageColor": "#e4505d",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/122337-MJbLoI7yTp2O.jpg",
-    "synopsis": "Amane Fujimiya lives alone in a messy apartment&mdash;right next door to Mahiru Shiina, a veritable \"angel\" who's the smartest, prettiest girl at school. When a chance encounter on a rainy day draws them together, Mahiru finds herself spending more and more time helping Amane get his life in order. And though they both insist they have no intention of dating the other, slowly but surely, something more than friendship begins to blossom. (Source: Square Enix)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2022,
-    "startDate": "2022-01-06",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 92,
-        "name": "Cute Girls Doing Cute Things",
-        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
-        "category": "Theme-Slice of Life",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 74,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 142,
-        "name": "Food",
-        "description": "Centers around cooking or food appraisal.",
-        "category": "Theme-Arts",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1564,
-        "name": "Estranged Family",
-        "description": "At least one family member of the MC intentionally distances themselves or a family distances themselves from a person related to the MC.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1753,
-        "name": "Cohabitation",
-        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 779,
-        "name": "Kuudere",
-        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Wan Shibata",
-      "Suzu Yuuki",
-      "Saeki-san"
-    ],
-    "artists": [
-      "Wan Shibata"
-    ],
-    "rating": 7.9,
-    "averageScore": 79,
-    "meanScore": 80,
-    "popularity": 13334,
-    "trending": 0,
-    "favourites": 517,
-    "source": "LIGHT_NOVEL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/122337",
-    "mal_url": "https://myanimelist.net/manga/130934",
-    "externalLinks": [
-      {
-        "site": "Official Site",
-        "url": "https://magazine.jp.square-enix.com/mangaup/original/tendame/"
-      },
-      {
-        "site": "Manga UP!",
-        "url": "https://global.manga-up.com/manga/204"
-      },
-      {
-        "site": "Comikey",
-        "url": "https://comikey.com/comics/the-angel-next-door-spoils-me-rotten-manga/458/"
-      }
-    ],
-    "mangadexId": "2fec6641-beb1-4ae9-a32f-204dd06688ac",
-    "mangadexUrl": "https://mangadex.org/title/2fec6641-beb1-4ae9-a32f-204dd06688ac",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -19586,7 +19602,7 @@
     "rating": 7.3,
     "averageScore": 73,
     "meanScore": 74,
-    "popularity": 13166,
+    "popularity": 13179,
     "trending": 3,
     "favourites": 281,
     "source": "OTHER",
@@ -19618,6 +19634,135 @@
     ],
     "mangadexId": "a9630bbe-6b68-437f-8624-bdb89fd61aa7",
     "mangadexUrl": "https://mangadex.org/title/a9630bbe-6b68-437f-8624-bdb89fd61aa7",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 153994,
+    "anilistId": 153994,
+    "idMal": 151111,
+    "title": "My F-Rank High School Life",
+    "titleRomaji": "Pyegeubin Cheokaetdeon Hakgyosaenghwal",
+    "titleEnglish": "My F-Rank High School Life",
+    "titleNative": "폐급인 척했던 학교생활",
+    "synonyms": [
+      "My School Life Pretending To Be a Worthless Person"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153994-O5C49ETPQRAw.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx153994-O5C49ETPQRAw.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx153994-O5C49ETPQRAw.png",
+    "coverImageColor": "#e42835",
+    "bannerImage": "",
+    "synopsis": "The world discovered the essence of the human soul, Ideia, and found a way to materialize it. The stronger one's Ideia, the more power one has. In a society where hierarchy is determined by this power, F-rank Park Jinsung has always been his school's punching bag. In reality, though, he is an S-rank with extreme bloodlust, which he has been hiding to keep others safe. With only two years left of high school, will Jinsung be able to hide his killer side and prove rank isn't everything? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-08-16",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Sand Fairy",
+      "Ppirippara"
+    ],
+    "artists": [
+      "Ssyung-Nyung",
+      "TW"
+    ],
+    "rating": 6.6,
+    "averageScore": 66,
+    "meanScore": 66,
+    "popularity": 13112,
+    "trending": 0,
+    "favourites": 325,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/153994",
+    "mal_url": "https://myanimelist.net/manga/151111",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/home?seriesId=59989217&page=1"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/my-f-rank-high-school-life"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/fr/action/my-f-rank-high-school-life/list?title_no=9788"
+      }
+    ],
+    "mangadexId": "059977a8-b192-43c7-aa90-a903f6aae536",
+    "mangadexUrl": "https://mangadex.org/title/059977a8-b192-43c7-aa90-a903f6aae536",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -19796,135 +19941,6 @@
     "mangadexUrl": "https://mangadex.org/title/ff4b6bfd-40b4-4a84-b60e-1006c46c106b",
     "mangadexMappingSource": "fuzzy",
     "mangadexMappingConfidence": 0.87
-  },
-  {
-    "mangaId": 153994,
-    "anilistId": 153994,
-    "idMal": 151111,
-    "title": "My F-Rank High School Life",
-    "titleRomaji": "Pyegeubin Cheokaetdeon Hakgyosaenghwal",
-    "titleEnglish": "My F-Rank High School Life",
-    "titleNative": "폐급인 척했던 학교생활",
-    "synonyms": [
-      "My School Life Pretending To Be a Worthless Person"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153994-O5C49ETPQRAw.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx153994-O5C49ETPQRAw.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx153994-O5C49ETPQRAw.png",
-    "coverImageColor": "#e42835",
-    "bannerImage": "",
-    "synopsis": "The world discovered the essence of the human soul, Ideia, and found a way to materialize it. The stronger one's Ideia, the more power one has. In a society where hierarchy is determined by this power, F-rank Park Jinsung has always been his school's punching bag. In reality, though, he is an S-rank with extreme bloodlust, which he has been hiding to keep others safe. With only two years left of high school, will Jinsung be able to hide his killer side and prove rank isn't everything? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2022,
-    "startDate": "2022-08-16",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 65,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Sand Fairy",
-      "Ppirippara"
-    ],
-    "artists": [
-      "Ssyung-Nyung",
-      "TW"
-    ],
-    "rating": 6.6,
-    "averageScore": 66,
-    "meanScore": 66,
-    "popularity": 13107,
-    "trending": 0,
-    "favourites": 325,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/153994",
-    "mal_url": "https://myanimelist.net/manga/151111",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=59989217&page=1"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/my-f-rank-high-school-life"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/fr/action/my-f-rank-high-school-life/list?title_no=9788"
-      }
-    ],
-    "mangadexId": "059977a8-b192-43c7-aa90-a903f6aae536",
-    "mangadexUrl": "https://mangadex.org/title/059977a8-b192-43c7-aa90-a903f6aae536",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 31859,
@@ -20179,7 +20195,11 @@
         "site": "Official Site",
         "url": "https://lala.ne.jp/sakuhin/?id=3"
       }
-    ]
+    ],
+    "mangadexId": "2c3cd370-04bd-4994-87dc-e54a4d80c4ec",
+    "mangadexUrl": "https://mangadex.org/title/2c3cd370-04bd-4994-87dc-e54a4d80c4ec",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 169922,
@@ -21749,6 +21769,193 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 158448,
+    "anilistId": 158448,
+    "idMal": 155726,
+    "title": "I'm Not That Kind of Talent",
+    "titleRomaji": "Jeo Geureon Injae Animnida",
+    "titleEnglish": "I'm Not That Kind of Talent",
+    "titleNative": "저 그런 인재 아닙니다",
+    "synonyms": [
+      "I'm Not That Kind Of Talent",
+      "Je ne suis pas celui que vous croyez",
+      "我不是那種人才",
+      "我不是那种人才"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx158448-qY1w6kiq1nAk.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx158448-qY1w6kiq1nAk.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx158448-qY1w6kiq1nAk.jpg",
+    "coverImageColor": "#d61a35",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/158448-xUUQ5unf5LrQ.jpg",
+    "synopsis": "A talented individual who is respected by many and welcomed anywhere? Not at all! A bloodthirsty battle fanatic who knows no defeat? Couldn’t be further from the truth! In reality, Deon Hardt is a sickly human who coughs up blood from receiving the tiniest bit of stress and gets sunburns from standing in the sun for ten minutes. But due to an unfortunate misunderstanding, he becomes “Demon Arut,” the notorious 0th corps commander of the demon army and the demon king’s joker. Caught in a war between humans and demonkind, Deon must find a way to survive! (Source: Tappytoon)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-11-21",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Emong",
+      "Denpi"
+    ],
+    "artists": [
+      "Meona"
+    ],
+    "rating": 7.3,
+    "averageScore": 73,
+    "meanScore": 74,
+    "popularity": 12801,
+    "trending": 0,
+    "favourites": 443,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/158448",
+    "mal_url": "https://myanimelist.net/manga/155726",
+    "externalLinks": [
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=9099632"
+      },
+      {
+        "site": "Tappytoon",
+        "url": "https://www.tappytoon.com/en/book/im-not-that-kind-of-talent"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/zh-hant/fantasy/not-that-kind-of-talent/list?title_no=5145"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/fr/action/je-ne-suis-pas-celui-que-vous-croyez/list?title_no=5276"
+      },
+      {
+        "site": "Naver Webtoon",
+        "url": "https://comic.naver.com/webtoon/list?titleId=802840"
+      },
+      {
+        "site": "Tappytoon",
+        "url": "https://www.tappytoon.com/fr/book/im-not-that-kind-of-talent-fr"
+      },
+      {
+        "site": "Dongman Manhua",
+        "url": "https://www.dongmanmanhua.cn/BOY/wobushinazhongrencai/list?title_no=2335"
+      }
+    ],
+    "mangadexId": "0eb1e1a0-ec19-4d84-907c-d6efe40cdc98",
+    "mangadexUrl": "https://mangadex.org/title/0eb1e1a0-ec19-4d84-907c-d6efe40cdc98",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 138655,
     "anilistId": 138655,
     "idMal": 147661,
@@ -21945,7 +22152,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 76,
-    "popularity": 12789,
+    "popularity": 12798,
     "trending": 0,
     "favourites": 450,
     "source": "OTHER",
@@ -21969,193 +22176,6 @@
     ],
     "mangadexId": "79428c31-72f5-4fb0-8579-250f7933b2d5",
     "mangadexUrl": "https://mangadex.org/title/79428c31-72f5-4fb0-8579-250f7933b2d5",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 158448,
-    "anilistId": 158448,
-    "idMal": 155726,
-    "title": "I'm Not That Kind of Talent",
-    "titleRomaji": "Jeo Geureon Injae Animnida",
-    "titleEnglish": "I'm Not That Kind of Talent",
-    "titleNative": "저 그런 인재 아닙니다",
-    "synonyms": [
-      "I'm Not That Kind Of Talent",
-      "Je ne suis pas celui que vous croyez",
-      "我不是那種人才",
-      "我不是那种人才"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx158448-qY1w6kiq1nAk.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx158448-qY1w6kiq1nAk.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx158448-qY1w6kiq1nAk.jpg",
-    "coverImageColor": "#d61a35",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/158448-xUUQ5unf5LrQ.jpg",
-    "synopsis": "A talented individual who is respected by many and welcomed anywhere? Not at all! A bloodthirsty battle fanatic who knows no defeat? Couldn’t be further from the truth! In reality, Deon Hardt is a sickly human who coughs up blood from receiving the tiniest bit of stress and gets sunburns from standing in the sun for ten minutes. But due to an unfortunate misunderstanding, he becomes “Demon Arut,” the notorious 0th corps commander of the demon army and the demon king’s joker. Caught in a war between humans and demonkind, Deon must find a way to survive! (Source: Tappytoon)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2022,
-    "startDate": "2022-11-21",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 536,
-        "name": "Dissociative Identities",
-        "description": "A case where one or more people share the same body.",
-        "category": "Cast-Traits",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 80,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 94,
-        "name": "Gore",
-        "description": "Prominently features graphic bloodshed and violence.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 111,
-        "name": "War",
-        "description": "Partly or completely set during wartime.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Emong",
-      "Denpi"
-    ],
-    "artists": [
-      "Meona"
-    ],
-    "rating": 7.3,
-    "averageScore": 73,
-    "meanScore": 74,
-    "popularity": 12786,
-    "trending": 0,
-    "favourites": 443,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/158448",
-    "mal_url": "https://myanimelist.net/manga/155726",
-    "externalLinks": [
-      {
-        "site": "Naver Series",
-        "url": "https://series.naver.com/comic/detail.series?productNo=9099632"
-      },
-      {
-        "site": "Tappytoon",
-        "url": "https://www.tappytoon.com/en/book/im-not-that-kind-of-talent"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/zh-hant/fantasy/not-that-kind-of-talent/list?title_no=5145"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/fr/action/je-ne-suis-pas-celui-que-vous-croyez/list?title_no=5276"
-      },
-      {
-        "site": "Naver Webtoon",
-        "url": "https://comic.naver.com/webtoon/list?titleId=802840"
-      },
-      {
-        "site": "Tappytoon",
-        "url": "https://www.tappytoon.com/fr/book/im-not-that-kind-of-talent-fr"
-      },
-      {
-        "site": "Dongman Manhua",
-        "url": "https://www.dongmanmanhua.cn/BOY/wobushinazhongrencai/list?title_no=2335"
-      }
-    ],
-    "mangadexId": "0eb1e1a0-ec19-4d84-907c-d6efe40cdc98",
-    "mangadexUrl": "https://mangadex.org/title/0eb1e1a0-ec19-4d84-907c-d6efe40cdc98",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -22787,7 +22807,7 @@
     "rating": 8,
     "averageScore": 80,
     "meanScore": 81,
-    "popularity": 12647,
+    "popularity": 12666,
     "trending": 1,
     "favourites": 545,
     "source": "ORIGINAL",
@@ -23147,7 +23167,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 83,
-    "popularity": 12602,
+    "popularity": 12601,
     "trending": 0,
     "favourites": 693,
     "source": "ORIGINAL",
@@ -23329,7 +23349,7 @@
     "rating": 6.9,
     "averageScore": 69,
     "meanScore": 70,
-    "popularity": 12523,
+    "popularity": 12534,
     "trending": 0,
     "favourites": 298,
     "source": "OTHER",
@@ -23449,7 +23469,7 @@
     "rating": 7.1,
     "averageScore": 71,
     "meanScore": 72,
-    "popularity": 12520,
+    "popularity": 12528,
     "trending": 2,
     "favourites": 357,
     "source": "OTHER",
@@ -24162,7 +24182,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 83,
-    "popularity": 12410,
+    "popularity": 12423,
     "trending": 0,
     "favourites": 1356,
     "source": "ORIGINAL",
@@ -24374,6 +24394,189 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 129579,
+    "anilistId": 129579,
+    "idMal": 151060,
+    "title": "Doctor, Live Again",
+    "titleRomaji": "Uiwon, Dasi Salda",
+    "titleEnglish": "Doctor, Live Again",
+    "titleNative": "의원, 다시 살다",
+    "synonyms": [
+      "Doctor’s Rebirth",
+      "医員、蘇る",
+      "轉世武林當大夫"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b129579-4CjDJYnWI8el.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b129579-4CjDJYnWI8el.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b129579-4CjDJYnWI8el.jpg",
+    "coverImageColor": "#e4d6a1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/129579-Mf2nNffhgXyW.jpg",
+    "synopsis": "A medical mission turns fatal as Dr. Jin’s life slips away. Miraculously, he wakes on a battlefield. Instinct takes over. He tends to patients before realizing that this is the martial arts world of The Reigning Heavenly Demon! He’s reincarnated as a child with mastery of modern medicine and soon his skills draw notice. From the renowned White-scaled Doctor to the infamous Gongson Family, everyone sees his potential. But how much is Dr. Jin willing to sacrifice before risking death again? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-01-16",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 303,
+        "name": "Wuxia",
+        "description": "Chinese fiction concerning the adventures of martial artists in Ancient China.",
+        "category": "Theme-Fantasy",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 659,
+        "name": "Medicine",
+        "description": "Centered around the activities of people working in the field of medicine.",
+        "category": "Theme-Other",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 326,
+        "name": "Cultivation",
+        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
+        "category": "Theme-Fantasy",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 30,
+        "name": "Martial Arts",
+        "description": "Centers around the use of traditional hand-to-hand combat.",
+        "category": "Theme-Action",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 446,
+        "name": "Primarily Child Cast",
+        "description": "Main cast is mostly composed of characters below a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Tae-Seon"
+    ],
+    "artists": [
+      "Do-Bin"
+    ],
+    "rating": 7.4,
+    "averageScore": 74,
+    "meanScore": 74,
+    "popularity": 12362,
+    "trending": 2,
+    "favourites": 306,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/129579",
+    "mal_url": "https://myanimelist.net/manga/151060",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/home?seriesId=55989064&page=1"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/66743"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/doctor-live-again/info"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/zh-hant/martial-arts/doctor-live-again/list?title_no=8534"
+      }
+    ],
+    "mangadexId": "8acdc047-6c6b-4603-8ee9-55f03421fceb",
+    "mangadexUrl": "https://mangadex.org/title/8acdc047-6c6b-4603-8ee9-55f03421fceb",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 169904,
     "anilistId": 169904,
     "idMal": 163356,
@@ -24581,189 +24784,6 @@
     ],
     "mangadexId": "df361a38-eef6-4674-bec6-86d08aa1d1aa",
     "mangadexUrl": "https://mangadex.org/title/df361a38-eef6-4674-bec6-86d08aa1d1aa",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 129579,
-    "anilistId": 129579,
-    "idMal": 151060,
-    "title": "Doctor, Live Again",
-    "titleRomaji": "Uiwon, Dasi Salda",
-    "titleEnglish": "Doctor, Live Again",
-    "titleNative": "의원, 다시 살다",
-    "synonyms": [
-      "Doctor’s Rebirth",
-      "医員、蘇る",
-      "轉世武林當大夫"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b129579-4CjDJYnWI8el.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b129579-4CjDJYnWI8el.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b129579-4CjDJYnWI8el.jpg",
-    "coverImageColor": "#e4d6a1",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/129579-Mf2nNffhgXyW.jpg",
-    "synopsis": "A medical mission turns fatal as Dr. Jin’s life slips away. Miraculously, he wakes on a battlefield. Instinct takes over. He tends to patients before realizing that this is the martial arts world of The Reigning Heavenly Demon! He’s reincarnated as a child with mastery of modern medicine and soon his skills draw notice. From the renowned White-scaled Doctor to the infamous Gongson Family, everyone sees his potential. But how much is Dr. Jin willing to sacrifice before risking death again? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2021,
-    "startDate": "2021-01-16",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 303,
-        "name": "Wuxia",
-        "description": "Chinese fiction concerning the adventures of martial artists in Ancient China.",
-        "category": "Theme-Fantasy",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 659,
-        "name": "Medicine",
-        "description": "Centered around the activities of people working in the field of medicine.",
-        "category": "Theme-Other",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 77,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 326,
-        "name": "Cultivation",
-        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
-        "category": "Theme-Fantasy",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 25,
-        "name": "Historical",
-        "description": "Partly or completely set during a real period of world history.",
-        "category": "Setting-Time",
-        "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 68,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 30,
-        "name": "Martial Arts",
-        "description": "Centers around the use of traditional hand-to-hand combat.",
-        "category": "Theme-Action",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1304,
-        "name": "Anthropomorphism",
-        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
-        "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
-        "category": "Theme-Drama",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 446,
-        "name": "Primarily Child Cast",
-        "description": "Main cast is mostly composed of characters below a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 43,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Tae-Seon"
-    ],
-    "artists": [
-      "Do-Bin"
-    ],
-    "rating": 7.4,
-    "averageScore": 74,
-    "meanScore": 74,
-    "popularity": 12352,
-    "trending": 2,
-    "favourites": 306,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/129579",
-    "mal_url": "https://myanimelist.net/manga/151060",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=55989064&page=1"
-      },
-      {
-        "site": "Piccoma",
-        "url": "https://piccoma.com/web/product/66743"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/doctor-live-again/info"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/zh-hant/martial-arts/doctor-live-again/list?title_no=8534"
-      }
-    ],
-    "mangadexId": "8acdc047-6c6b-4603-8ee9-55f03421fceb",
-    "mangadexUrl": "https://mangadex.org/title/8acdc047-6c6b-4603-8ee9-55f03421fceb",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -25215,7 +25235,11 @@
         "site": "Tencent Comics",
         "url": "https://ac.qq.com/Comic/comicInfo/id/639297"
       }
-    ]
+    ],
+    "mangadexId": "aafb046c-9de4-4c3d-990c-6d75b079c0b9",
+    "mangadexUrl": "https://mangadex.org/title/aafb046c-9de4-4c3d-990c-6d75b079c0b9",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 118371,

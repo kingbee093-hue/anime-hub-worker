@@ -7989,7 +7989,11 @@
         "site": "Manga UP!",
         "url": "https://www.manga-up.com/titles/36"
       }
-    ]
+    ],
+    "mangadexId": "53ef1720-7a5d-40ad-90b0-2f9ca0a1ab01",
+    "mangadexUrl": "https://mangadex.org/title/53ef1720-7a5d-40ad-90b0-2f9ca0a1ab01",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 30583,
@@ -8665,7 +8669,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 83,
-    "popularity": 60641,
+    "popularity": 60681,
     "trending": 7,
     "favourites": 4225,
     "source": "OTHER",
@@ -9255,7 +9259,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 58490,
+    "popularity": 58576,
     "trending": 10,
     "favourites": 3852,
     "source": "ORIGINAL",
@@ -10256,7 +10260,7 @@
     "rating": 8.9,
     "averageScore": 89,
     "meanScore": 89,
-    "popularity": 56665,
+    "popularity": 56748,
     "trending": 19,
     "favourites": 6590,
     "source": "OTHER",
@@ -15270,7 +15274,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 45554,
+    "popularity": 45587,
     "trending": 14,
     "favourites": 2113,
     "source": "OTHER",
@@ -15565,7 +15569,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 76,
-    "popularity": 45169,
+    "popularity": 45209,
     "trending": 5,
     "favourites": 1457,
     "source": "ORIGINAL",
@@ -16778,7 +16782,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 42994,
+    "popularity": 43024,
     "trending": 12,
     "favourites": 2865,
     "source": "OTHER",
@@ -17611,7 +17615,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 78,
-    "popularity": 40799,
+    "popularity": 40821,
     "trending": 1,
     "favourites": 2115,
     "source": "OTHER",
@@ -18491,7 +18495,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 77,
-    "popularity": 40062,
+    "popularity": 40091,
     "trending": 20,
     "favourites": 1535,
     "source": "OTHER",
@@ -18724,7 +18728,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 76,
-    "popularity": 39540,
+    "popularity": 39583,
     "trending": 1,
     "favourites": 1557,
     "source": "ORIGINAL",
@@ -19139,7 +19143,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 79,
-    "popularity": 38773,
+    "popularity": 38802,
     "trending": 7,
     "favourites": 1839,
     "source": "OTHER",
@@ -19388,7 +19392,7 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 84,
-    "popularity": 38151,
+    "popularity": 38208,
     "trending": 0,
     "favourites": 2766,
     "source": "OTHER",
@@ -20036,7 +20040,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 79,
-    "popularity": 37389,
+    "popularity": 37416,
     "trending": 1,
     "favourites": 1591,
     "source": "ORIGINAL",
@@ -20076,6 +20080,234 @@
     ],
     "mangadexId": "773c2211-750b-4fff-bd64-c914986e4637",
     "mangadexUrl": "https://mangadex.org/title/773c2211-750b-4fff-bd64-c914986e4637",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 159441,
+    "anilistId": 159441,
+    "idMal": 154587,
+    "title": "Pick Me Up",
+    "titleRomaji": "Pick Me Up!",
+    "titleEnglish": "Pick Me Up",
+    "titleNative": "픽 미 업!",
+    "synonyms": [
+      "Pick Me Up, Infinite Gacha",
+      "PICK ME UP～低レア★英雄の成り上がり～"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159441-9W8201jAT9Yv.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx159441-9W8201jAT9Yv.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx159441-9W8201jAT9Yv.jpg",
+    "coverImageColor": "#5dc9f1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/159441-ozFKHuPOjxhB.jpg",
+    "synopsis": "1-Star heroes are just fodder for learning a boss' attack patterns. That was Seojin Han's philosophy when playing the notoriously difficult game Pick Me Up. But after being transported into the game as one of those 1-star heroes, he's got no choice but to rise in rank and defeat the player controlling him and his party. Can a gacha game character hope to defeat a player akin to being his god? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-12-28",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 308,
+        "name": "Video Games",
+        "description": "Centers around characters playing video games.",
+        "category": "Theme-Game",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 615,
+        "name": "Death Game",
+        "description": "Features characters participating in a game, where failure results in death.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1789,
+        "name": "Long Strip",
+        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1419,
+        "name": "Kingdom Management",
+        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 480,
+        "name": "Goblin",
+        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "U-Ne Cho",
+      "Hermod"
+    ],
+    "artists": [
+      "Wasakbasak"
+    ],
+    "rating": 8.3,
+    "averageScore": 83,
+    "meanScore": 84,
+    "popularity": 37375,
+    "trending": 24,
+    "favourites": 2376,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/159441",
+    "mal_url": "https://myanimelist.net/manga/154587",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/60914825"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/121552"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/pick-me-up/info"
+      },
+      {
+        "site": "Kakao Webtoon",
+        "url": "https://th.kakaowebtoon.com/content/PICK_ME_UP/623?tab=episode"
+      },
+      {
+        "site": "Kakao Webtoon",
+        "url": "https://webtoon.kakao.com/content/픽-미-업/3205?tab=episode"
+      }
+    ],
+    "mangadexId": "58167656-a065-4b49-b499-bd73d00555d5",
+    "mangadexUrl": "https://mangadex.org/title/58167656-a065-4b49-b499-bd73d00555d5",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -20521,233 +20753,9 @@
         "site": "WEBTOON",
         "url": "https://www.webtoons.com/en/romance/who-made-me-a-princess/list?title_no=9475"
       }
-    ]
-  },
-  {
-    "mangaId": 159441,
-    "anilistId": 159441,
-    "idMal": 154587,
-    "title": "Pick Me Up",
-    "titleRomaji": "Pick Me Up!",
-    "titleEnglish": "Pick Me Up",
-    "titleNative": "픽 미 업!",
-    "synonyms": [
-      "Pick Me Up, Infinite Gacha",
-      "PICK ME UP～低レア★英雄の成り上がり～"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159441-9W8201jAT9Yv.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx159441-9W8201jAT9Yv.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx159441-9W8201jAT9Yv.jpg",
-    "coverImageColor": "#5dc9f1",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/159441-ozFKHuPOjxhB.jpg",
-    "synopsis": "1-Star heroes are just fodder for learning a boss' attack patterns. That was Seojin Han's philosophy when playing the notoriously difficult game Pick Me Up. But after being transported into the game as one of those 1-star heroes, he's got no choice but to rise in rank and defeat the player controlling him and his party. Can a gacha game character hope to defeat a player akin to being his god? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2022,
-    "startDate": "2022-12-28",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 143,
-        "name": "Survival",
-        "description": "Centers around the struggle to live in spite of extreme obstacles.",
-        "category": "Theme-Other",
-        "rank": 97,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 308,
-        "name": "Video Games",
-        "description": "Centers around characters playing video games.",
-        "category": "Theme-Game",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 93,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 615,
-        "name": "Death Game",
-        "description": "Features characters participating in a game, where failure results in death.",
-        "category": "Theme-Other",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 89,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 94,
-        "name": "Gore",
-        "description": "Prominently features graphic bloodshed and violence.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 79,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1789,
-        "name": "Long Strip",
-        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
-        "category": "Technical",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1419,
-        "name": "Kingdom Management",
-        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
-        "category": "Theme-Drama",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 43,
-        "name": "Swordplay",
-        "description": "Prominently features the use of swords in combat.",
-        "category": "Theme-Action",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 322,
-        "name": "Assassins",
-        "description": "Centers around characters who murder people as a profession.",
-        "category": "Theme-Other-Organisations",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 480,
-        "name": "Goblin",
-        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
-        "category": "Cast-Traits",
-        "rank": 30,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "U-Ne Cho",
-      "Hermod"
-    ],
-    "artists": [
-      "Wasakbasak"
-    ],
-    "rating": 8.3,
-    "averageScore": 83,
-    "meanScore": 84,
-    "popularity": 37334,
-    "trending": 24,
-    "favourites": 2376,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/159441",
-    "mal_url": "https://myanimelist.net/manga/154587",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/content/60914825"
-      },
-      {
-        "site": "Piccoma",
-        "url": "https://piccoma.com/web/product/121552"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/pick-me-up/info"
-      },
-      {
-        "site": "Kakao Webtoon",
-        "url": "https://th.kakaowebtoon.com/content/PICK_ME_UP/623?tab=episode"
-      },
-      {
-        "site": "Kakao Webtoon",
-        "url": "https://webtoon.kakao.com/content/픽-미-업/3205?tab=episode"
-      }
-    ],
-    "mangadexId": "58167656-a065-4b49-b499-bd73d00555d5",
-    "mangadexUrl": "https://mangadex.org/title/58167656-a065-4b49-b499-bd73d00555d5",
+    "mangadexId": "722a45c0-5e55-40f2-929b-ff69b0989edb",
+    "mangadexUrl": "https://mangadex.org/title/722a45c0-5e55-40f2-929b-ff69b0989edb",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -22375,7 +22383,7 @@
     "rating": 7.5,
     "averageScore": 75,
     "meanScore": 75,
-    "popularity": 34865,
+    "popularity": 34891,
     "trending": 6,
     "favourites": 1278,
     "source": "OTHER",
@@ -23001,7 +23009,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 79,
-    "popularity": 34224,
+    "popularity": 34272,
     "trending": 44,
     "favourites": 1537,
     "source": "OTHER",
@@ -23026,7 +23034,11 @@
         "site": "Piccoma",
         "url": "https://piccoma.com/web/product/133030"
       }
-    ]
+    ],
+    "mangadexId": "4d97b35d-2d9f-4369-964f-3b0ce2c7fbbc",
+    "mangadexUrl": "https://mangadex.org/title/4d97b35d-2d9f-4369-964f-3b0ce2c7fbbc",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 86568,
@@ -23588,7 +23600,7 @@
     "rating": 7.2,
     "averageScore": 72,
     "meanScore": 72,
-    "popularity": 33351,
+    "popularity": 33368,
     "trending": 0,
     "favourites": 1074,
     "source": "OTHER",
@@ -24301,7 +24313,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 78,
-    "popularity": 31998,
+    "popularity": 32027,
     "trending": 0,
     "favourites": 1359,
     "source": "OTHER",
@@ -25149,7 +25161,7 @@
     "rating": 7.2,
     "averageScore": 72,
     "meanScore": 72,
-    "popularity": 29280,
+    "popularity": 29295,
     "trending": 1,
     "favourites": 874,
     "source": "OTHER",
@@ -25600,7 +25612,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 78,
-    "popularity": 28991,
+    "popularity": 29011,
     "trending": 4,
     "favourites": 1102,
     "source": "OTHER",
@@ -25794,7 +25806,7 @@
     "rating": 7.5,
     "averageScore": 75,
     "meanScore": 75,
-    "popularity": 28783,
+    "popularity": 28809,
     "trending": 1,
     "favourites": 1026,
     "source": "OTHER",
@@ -27711,7 +27723,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 78,
-    "popularity": 26482,
+    "popularity": 26494,
     "trending": 23,
     "favourites": 1049,
     "source": "OTHER",
@@ -27914,7 +27926,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 25820,
+    "popularity": 25845,
     "trending": 10,
     "favourites": 1066,
     "source": "OTHER",
@@ -28163,7 +28175,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 75,
-    "popularity": 25450,
+    "popularity": 25470,
     "trending": 2,
     "favourites": 696,
     "source": "OTHER",
@@ -30247,7 +30259,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 74,
-    "popularity": 24391,
+    "popularity": 24402,
     "trending": 5,
     "favourites": 679,
     "source": "OTHER",
@@ -30631,7 +30643,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 79,
-    "popularity": 24173,
+    "popularity": 24185,
     "trending": 2,
     "favourites": 1165,
     "source": "OTHER",
@@ -31640,7 +31652,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 74,
-    "popularity": 23362,
+    "popularity": 23378,
     "trending": 1,
     "favourites": 720,
     "source": "OTHER",
@@ -31928,7 +31940,7 @@
     "rating": 7.3,
     "averageScore": 73,
     "meanScore": 74,
-    "popularity": 23327,
+    "popularity": 23340,
     "trending": 6,
     "favourites": 747,
     "source": "OTHER",
@@ -32971,6 +32983,330 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 130429,
+    "anilistId": 130429,
+    "idMal": 147692,
+    "title": "I Shall Master this Family!",
+    "titleRomaji": "Ibeon Saengeun Gajuga Doegetseumnida",
+    "titleEnglish": "I Shall Master this Family!",
+    "titleNative": "이번 생은 가주가 되겠습니다",
+    "synonyms": [
+      "I'll Be the Matriarch in This Life",
+      "In This Life, I Will Be the Lord",
+      "На сей раз я - хозяйка этой жизни",
+      "今世は当主になります",
+      "今生我來當家主",
+      "这一世我来当家主",
+      "เกิดใหม่ชาตินี้ฉันจะเป็นเจ้าตระกูล",
+      "La Nouvelle Cheffe de Clan"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130429-m3PuqOmxBgoo.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx130429-m3PuqOmxBgoo.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx130429-m3PuqOmxBgoo.png",
+    "coverImageColor": "#e43550",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/130429-AEQPOcAgJ6yU.jpg",
+    "synopsis": "The great Lombardi family was once at the top of the empire. After the death of its patriarch, the fate of the family and that of Firentia, born from a Lombardi and a peasant, fall to ruin at the hands of her useless and cruel cousins. But when she’s reincarnated as her seven-year-old self, she’ll work to protect the family’s honor, gain her grandpa Lulac’s favor, and prevent her own father’s death. In this lifetime, there’s only one way for her to win: become the head of their mighty household. (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-02-28",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1419,
+        "name": "Kingdom Management",
+        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1789,
+        "name": "Long Strip",
+        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1526,
+        "name": "Matriarchy",
+        "description": "Prominently features a country that is ruled by a Queen or a society that is dominated by female inheritance.",
+        "category": "Setting",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 72,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 68,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 780,
+        "name": "Ojou-sama",
+        "description": "Features a wealthy, high-class, oftentimes stuck up and demanding female character.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 248,
+        "name": "Economics",
+        "description": "Centers around the field of economics.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 857,
+        "name": "Villainess",
+        "description": "Centers around or prominently features a villainous noble lady.",
+        "category": "Cast-Traits",
+        "rank": 28,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1403,
+        "name": "Class Struggle",
+        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1539,
+        "name": "Unrequited Love",
+        "description": "One or more characters are experiencing an unrequited love that may or may not be reciprocated.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Mon",
+      "Roah Kim"
+    ],
+    "artists": [
+      "Mon"
+    ],
+    "rating": 8.2,
+    "averageScore": 82,
+    "meanScore": 83,
+    "popularity": 22414,
+    "trending": 5,
+    "favourites": 1653,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/130429",
+    "mal_url": "https://myanimelist.net/manga/147692",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/56566288"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/i-shall-master-this-family/info"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/67335"
+      },
+      {
+        "site": "KuaiKan Manhua",
+        "url": "https://m.kuaikanmanhua.com/mobile/9796/list/"
+      },
+      {
+        "site": "Kakao Webtoon",
+        "url": "https://webtoon.kakao.com/content/이번-생은-가주가-되겠습니다/2473"
+      },
+      {
+        "site": "WeComics",
+        "url": "https://www.wecomics.in.th/comics/15402/"
+      },
+      {
+        "site": "Tappytoon",
+        "url": "https://www.tappytoon.com/en/comics/i-shall-master-this-family"
+      },
+      {
+        "site": "Lezhin",
+        "url": "https://www.lezhinfr.com/detail/daf_1000914"
+      },
+      {
+        "site": "Tappytoon",
+        "url": "https://www.tappytoon.com/fr/book/i-shall-master-this-family-fr"
+      },
+      {
+        "site": "ONO",
+        "url": "https://www.ono.live/webtoon/la-nouvelle-cheffe-de-clan"
+      }
+    ],
+    "mangadexId": "f89ed57a-e4c0-48f5-b664-8ef88aa87fd9",
+    "mangadexUrl": "https://mangadex.org/title/f89ed57a-e4c0-48f5-b664-8ef88aa87fd9",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 104063,
     "anilistId": 104063,
     "idMal": 115730,
@@ -33300,330 +33636,6 @@
     "mangadexUrl": "https://mangadex.org/title/8c697de6-a142-4cec-ae1f-9b31a07f04cb",
     "mangadexMappingSource": "fuzzy",
     "mangadexMappingConfidence": 0.95
-  },
-  {
-    "mangaId": 130429,
-    "anilistId": 130429,
-    "idMal": 147692,
-    "title": "I Shall Master this Family!",
-    "titleRomaji": "Ibeon Saengeun Gajuga Doegetseumnida",
-    "titleEnglish": "I Shall Master this Family!",
-    "titleNative": "이번 생은 가주가 되겠습니다",
-    "synonyms": [
-      "I'll Be the Matriarch in This Life",
-      "In This Life, I Will Be the Lord",
-      "На сей раз я - хозяйка этой жизни",
-      "今世は当主になります",
-      "今生我來當家主",
-      "这一世我来当家主",
-      "เกิดใหม่ชาตินี้ฉันจะเป็นเจ้าตระกูล",
-      "La Nouvelle Cheffe de Clan"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130429-m3PuqOmxBgoo.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx130429-m3PuqOmxBgoo.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx130429-m3PuqOmxBgoo.png",
-    "coverImageColor": "#e43550",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/130429-AEQPOcAgJ6yU.jpg",
-    "synopsis": "The great Lombardi family was once at the top of the empire. After the death of its patriarch, the fate of the family and that of Firentia, born from a Lombardi and a peasant, fall to ruin at the hands of her useless and cruel cousins. But when she’s reincarnated as her seven-year-old self, she’ll work to protect the family’s honor, gain her grandpa Lulac’s favor, and prevent her own father’s death. In this lifetime, there’s only one way for her to win: become the head of their mighty household. (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2021,
-    "startDate": "2021-02-28",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 94,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1327,
-        "name": "Royal Affairs",
-        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
-        "category": "Theme-Other",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 488,
-        "name": "Age Regression",
-        "description": "Prominently features a character who was returned to a younger state.",
-        "category": "Cast-Traits",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 87,
-        "name": "Family Life",
-        "description": "Centers around the activities of a family unit.",
-        "category": "Theme-Slice of Life",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1419,
-        "name": "Kingdom Management",
-        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
-        "category": "Theme-Drama",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1789,
-        "name": "Long Strip",
-        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
-        "category": "Technical",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 77,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1526,
-        "name": "Matriarchy",
-        "description": "Prominently features a country that is ruled by a Queen or a society that is dominated by female inheritance.",
-        "category": "Setting",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 243,
-        "name": "Reincarnation",
-        "description": "Features a character being born again after death, typically as another person or in another world.",
-        "category": "Theme-Other",
-        "rank": 72,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 96,
-        "name": "Time Manipulation",
-        "description": "Prominently features time-traveling or other time-warping phenomena.",
-        "category": "Theme-Sci-Fi",
-        "rank": 68,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 780,
-        "name": "Ojou-sama",
-        "description": "Features a wealthy, high-class, oftentimes stuck up and demanding female character.",
-        "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 248,
-        "name": "Economics",
-        "description": "Centers around the field of economics.",
-        "category": "Theme-Other",
-        "rank": 57,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
-        "category": "Theme-Drama",
-        "rank": 56,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 494,
-        "name": "Twins",
-        "description": "Prominently features two or more siblings that were born at one birth.",
-        "category": "Cast-Traits",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 153,
-        "name": "Time Skip",
-        "description": "Features a gap in time used to advance the story.",
-        "category": "Setting-Time",
-        "rank": 40,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 857,
-        "name": "Villainess",
-        "description": "Centers around or prominently features a villainous noble lady.",
-        "category": "Cast-Traits",
-        "rank": 28,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1403,
-        "name": "Class Struggle",
-        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
-        "category": "Theme-Drama",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1539,
-        "name": "Unrequited Love",
-        "description": "One or more characters are experiencing an unrequited love that may or may not be reciprocated.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Mon",
-      "Roah Kim"
-    ],
-    "artists": [
-      "Mon"
-    ],
-    "rating": 8.2,
-    "averageScore": 82,
-    "meanScore": 83,
-    "popularity": 22391,
-    "trending": 5,
-    "favourites": 1653,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/130429",
-    "mal_url": "https://myanimelist.net/manga/147692",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/content/56566288"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/i-shall-master-this-family/info"
-      },
-      {
-        "site": "Piccoma",
-        "url": "https://piccoma.com/web/product/67335"
-      },
-      {
-        "site": "KuaiKan Manhua",
-        "url": "https://m.kuaikanmanhua.com/mobile/9796/list/"
-      },
-      {
-        "site": "Kakao Webtoon",
-        "url": "https://webtoon.kakao.com/content/이번-생은-가주가-되겠습니다/2473"
-      },
-      {
-        "site": "WeComics",
-        "url": "https://www.wecomics.in.th/comics/15402/"
-      },
-      {
-        "site": "Tappytoon",
-        "url": "https://www.tappytoon.com/en/comics/i-shall-master-this-family"
-      },
-      {
-        "site": "Lezhin",
-        "url": "https://www.lezhinfr.com/detail/daf_1000914"
-      },
-      {
-        "site": "Tappytoon",
-        "url": "https://www.tappytoon.com/fr/book/i-shall-master-this-family-fr"
-      },
-      {
-        "site": "ONO",
-        "url": "https://www.ono.live/webtoon/la-nouvelle-cheffe-de-clan"
-      }
-    ],
-    "mangadexId": "f89ed57a-e4c0-48f5-b664-8ef88aa87fd9",
-    "mangadexUrl": "https://mangadex.org/title/f89ed57a-e4c0-48f5-b664-8ef88aa87fd9",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 85247,
@@ -34135,7 +34147,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 76,
-    "popularity": 21786,
+    "popularity": 21795,
     "trending": 4,
     "favourites": 789,
     "source": "OTHER",
@@ -34656,7 +34668,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 78,
-    "popularity": 21637,
+    "popularity": 21649,
     "trending": 1,
     "favourites": 1166,
     "source": "ORIGINAL",
@@ -37233,7 +37245,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 76,
-    "popularity": 20411,
+    "popularity": 20422,
     "trending": 4,
     "favourites": 799,
     "source": "ORIGINAL",
@@ -37472,7 +37484,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 20401,
+    "popularity": 20421,
     "trending": 0,
     "favourites": 693,
     "source": "OTHER",
