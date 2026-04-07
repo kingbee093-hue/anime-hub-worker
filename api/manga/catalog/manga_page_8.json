@@ -1073,13 +1073,7 @@
     "mangadexId": "7bb7e5ae-a784-4009-98b2-8ad4a7541548",
     "mangadexUrl": "https://mangadex.org/title/7bb7e5ae-a784-4009-98b2-8ad4a7541548",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1,
-    "chapterSourceProvider": "weebcentral",
-    "chapterSourceId": "01J76XYBASVMF7XXJ2VMGC2RRT/Diamond-No-Ace-Act-I-I",
-    "chapterSourceTitle": "Diamond no Ace Act II",
-    "chapterSourceChapterCount": 309,
-    "chapterSourceConfidence": 0.98,
-    "chapterSourceUpdatedAt": "2026-04-07T00:00:00.000Z"
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 30214,
@@ -1248,13 +1242,7 @@
     "mangadexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexUrl": "https://mangadex.org/title/f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1,
-    "chapterSourceProvider": "weebcentral",
-    "chapterSourceId": "01J76XYBBFEGS03TAW21JKX3R3/Mobile-Suit-Gundam-The-Origin",
-    "chapterSourceTitle": "Mobile Suit Gundam: The Origin",
-    "chapterSourceChapterCount": 102,
-    "chapterSourceConfidence": 0.98,
-    "chapterSourceUpdatedAt": "2026-04-07T00:00:00.000Z"
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 143099,
@@ -2291,7 +2279,7 @@
     "rating": 8.5,
     "averageScore": 85,
     "meanScore": 86,
-    "popularity": 7166,
+    "popularity": 7172,
     "trending": 0,
     "favourites": 474,
     "source": "ORIGINAL",
@@ -5812,6 +5800,203 @@
     "mangadexMappingConfidence": 0.94
   },
   {
+    "mangaId": 73921,
+    "anilistId": 73921,
+    "idMal": 43921,
+    "title": "Sword Art Online Progressive",
+    "titleRomaji": "Sword Art Online: Progressive",
+    "titleEnglish": "Sword Art Online Progressive",
+    "titleNative": "ソードアート・オンライン プログレッシブ",
+    "synonyms": [
+      "SAO Progressive"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx73921-HKvbNY03AzY0.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx73921-HKvbNY03AzY0.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx73921-HKvbNY03AzY0.jpg",
+    "coverImageColor": "#1aa1d6",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/73921-nX8liAl6wR6r.jpg",
+    "synopsis": "\"There's no way to beat this game. The only difference is when and where you die...\" One month has passed since Akihiko Kayaba's deadly game began, and the body count continues to rise. Two thousand players are already dead. Kirito and Asuna are two very different people, but they both desire to fight alone. Nonetheless, they find themselves drawn together to face challenges from both within and without. Given that the entire virtual world they now live in has been created as a deathtrap, the surviving players of Sword Art Online are starting to get desperate, and desperation makes them dangerous to loners like Kirito and Asuna. As it becomes clear that solitude equals suicide, will the two be able to overcome their differences to find the strength to believe in each other, and in doing so, survive? Sword Art Online: Progressive is a new version of the Sword Art Online tale that starts at the beginning of Kirito and Asuna's epic adventure—on the very first level of the deadly world of Aincrad! (Source: Yen Press)",
+    "type": "MANGA",
+    "format": "NOVEL",
+    "status": "RELEASING",
+    "year": 2012,
+    "startDate": "2012-10-10",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 112,
+        "name": "Virtual World",
+        "description": "Partly or completely set in the world inside a video game.",
+        "category": "Setting-Universe",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 604,
+        "name": "Dungeon",
+        "description": "Prominently features a dungeon environment.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 615,
+        "name": "Death Game",
+        "description": "Features characters participating in a game, where failure results in death.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 308,
+        "name": "Video Games",
+        "description": "Centers around characters playing video games.",
+        "category": "Theme-Game",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 598,
+        "name": "Elf",
+        "description": "Prominently features a character who is an elf.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 74,
+        "name": "Vampire",
+        "description": "Prominently features a character who is a vampire.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Reki Kawahara"
+    ],
+    "artists": [
+      "BUNBUN"
+    ],
+    "rating": 8.1,
+    "averageScore": 81,
+    "meanScore": 82,
+    "popularity": 6270,
+    "trending": 0,
+    "favourites": 328,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/73921",
+    "mal_url": "https://myanimelist.net/manga/43921",
+    "externalLinks": [
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/sword-art-online-progressive"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://dengekibunko.jp/product/sao/311740900000.html"
+      }
+    ],
+    "chapterIndexId": "0721494e-b8ee-4d8d-b7d1-06767451b44d",
+    "mangadexId": "0721494e-b8ee-4d8d-b7d1-06767451b44d",
+    "mangadexUrl": "https://mangadex.org/title/0721494e-b8ee-4d8d-b7d1-06767451b44d",
+    "mangadexMappingSource": "fuzzy",
+    "mangadexMappingConfidence": 0.87
+  },
+  {
     "mangaId": 107462,
     "anilistId": 107462,
     "idMal": 108566,
@@ -6065,203 +6250,6 @@
     "mangadexUrl": "https://mangadex.org/title/d4ff7502-b5d4-4fd2-845f-c8754b14dd8d",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 73921,
-    "anilistId": 73921,
-    "idMal": 43921,
-    "title": "Sword Art Online Progressive",
-    "titleRomaji": "Sword Art Online: Progressive",
-    "titleEnglish": "Sword Art Online Progressive",
-    "titleNative": "ソードアート・オンライン プログレッシブ",
-    "synonyms": [
-      "SAO Progressive"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx73921-HKvbNY03AzY0.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx73921-HKvbNY03AzY0.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx73921-HKvbNY03AzY0.jpg",
-    "coverImageColor": "#1aa1d6",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/73921-nX8liAl6wR6r.jpg",
-    "synopsis": "\"There's no way to beat this game. The only difference is when and where you die...\" One month has passed since Akihiko Kayaba's deadly game began, and the body count continues to rise. Two thousand players are already dead. Kirito and Asuna are two very different people, but they both desire to fight alone. Nonetheless, they find themselves drawn together to face challenges from both within and without. Given that the entire virtual world they now live in has been created as a deathtrap, the surviving players of Sword Art Online are starting to get desperate, and desperation makes them dangerous to loners like Kirito and Asuna. As it becomes clear that solitude equals suicide, will the two be able to overcome their differences to find the strength to believe in each other, and in doing so, survive? Sword Art Online: Progressive is a new version of the Sword Art Online tale that starts at the beginning of Kirito and Asuna's epic adventure—on the very first level of the deadly world of Aincrad! (Source: Yen Press)",
-    "type": "MANGA",
-    "format": "NOVEL",
-    "status": "RELEASING",
-    "year": 2012,
-    "startDate": "2012-10-10",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "tags": [
-      {
-        "id": 112,
-        "name": "Virtual World",
-        "description": "Partly or completely set in the world inside a video game.",
-        "category": "Setting-Universe",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 604,
-        "name": "Dungeon",
-        "description": "Prominently features a dungeon environment.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 43,
-        "name": "Swordplay",
-        "description": "Prominently features the use of swords in combat.",
-        "category": "Theme-Action",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 517,
-        "name": "Artificial Intelligence",
-        "description": "Intelligent non-organic machines that work and react similarly to humans.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 615,
-        "name": "Death Game",
-        "description": "Features characters participating in a game, where failure results in death.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 308,
-        "name": "Video Games",
-        "description": "Centers around characters playing video games.",
-        "category": "Theme-Game",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 322,
-        "name": "Assassins",
-        "description": "Centers around characters who murder people as a profession.",
-        "category": "Theme-Other-Organisations",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 598,
-        "name": "Elf",
-        "description": "Prominently features a character who is an elf.",
-        "category": "Cast-Traits",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 60,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 74,
-        "name": "Vampire",
-        "description": "Prominently features a character who is a vampire.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1752,
-        "name": "Medieval",
-        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
-        "category": "Setting-Time",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Reki Kawahara"
-    ],
-    "artists": [
-      "BUNBUN"
-    ],
-    "rating": 8.1,
-    "averageScore": 81,
-    "meanScore": 82,
-    "popularity": 6265,
-    "trending": 0,
-    "favourites": 328,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/73921",
-    "mal_url": "https://myanimelist.net/manga/43921",
-    "externalLinks": [
-      {
-        "site": "Yen Press",
-        "url": "https://yenpress.com/series/sword-art-online-progressive"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://dengekibunko.jp/product/sao/311740900000.html"
-      }
-    ],
-    "chapterIndexId": "0721494e-b8ee-4d8d-b7d1-06767451b44d",
-    "mangadexId": "0721494e-b8ee-4d8d-b7d1-06767451b44d",
-    "mangadexUrl": "https://mangadex.org/title/0721494e-b8ee-4d8d-b7d1-06767451b44d",
-    "mangadexMappingSource": "fuzzy",
-    "mangadexMappingConfidence": 0.87
   },
   {
     "mangaId": 111593,
@@ -7307,7 +7295,7 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 86,
-    "popularity": 6174,
+    "popularity": 6176,
     "trending": 0,
     "favourites": 163,
     "source": "ORIGINAL",
@@ -10719,7 +10707,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 85,
-    "popularity": 5651,
+    "popularity": 5653,
     "trending": 0,
     "favourites": 187,
     "source": "ORIGINAL",
@@ -13332,7 +13320,7 @@
     "rating": 6.9,
     "averageScore": 69,
     "meanScore": 71,
-    "popularity": 4802,
+    "popularity": 4803,
     "trending": 4,
     "favourites": 68,
     "source": "LIGHT_NOVEL",
