@@ -8,6 +8,7 @@ const {
 } = require('../utils/formatters');
 const { isAdultContent, isManga } = require('../utils/filters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
+const { discoverProviderTitlesForManga } = require('../utils/mangaFallbackProviders');
 
 const MANGADEX_API = 'https://api.mangadex.org';
 const CATALOG_PAGE_SIZE = 120;
@@ -15,7 +16,8 @@ const CATALOG_MAX_ITEMS = 2200;
 const GENRE_MAX_ITEMS = 120;
 const SECTION_ITEMS = 24;
 const MANGADEX_DELAY_MS = 250;
-const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = 120;
+const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 220);
+const MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT = Number(process.env.MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT || 6);
 
 const MANGA_CATALOG_SOURCES = [
   {
@@ -209,6 +211,68 @@ function getCandidateTitles(manga) {
   return Array.from(new Set(titles)).slice(0, 6);
 }
 
+function buildTitleVariants(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return [];
+
+  const variants = new Set([raw]);
+  const separators = [':', ' - ', ' — ', ' – ', '(', '[', '/'];
+
+  for (const separator of separators) {
+    if (!raw.includes(separator)) continue;
+    const parts = raw.split(separator).map((item) => item.trim()).filter(Boolean);
+    for (const part of parts) {
+      if (part.length >= 2) {
+        variants.add(part.replace(/[)\]]+$/g, '').trim());
+      }
+    }
+  }
+
+  variants.add(raw.replace(/[:\-–—/()[\]]/g, ' ').replace(/\s+/g, ' ').trim());
+  variants.add(raw.replace(/\bpart\s+\d+\b/gi, '').replace(/\s+/g, ' ').trim());
+
+  return Array.from(variants)
+    .map((item) => item.trim())
+    .filter((item) => item.length >= 2);
+}
+
+function buildMappingQueryPlans(manga, providerDiscoveredTitles = []) {
+  const nativeTitles = getCandidateTitles(manga)
+    .flatMap((title) => buildTitleVariants(title));
+  const providerTitles = providerDiscoveredTitles
+    .flatMap((item) => buildTitleVariants(item.title));
+
+  const allNativeTitles = Array.from(new Set(nativeTitles));
+  const allProviderTitles = Array.from(new Set(providerTitles))
+    .filter((title) => !allNativeTitles.includes(title))
+    .slice(0, MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT);
+
+  const plans = [];
+  const seen = new Set();
+
+  function pushPlan(strategy, title, year = null) {
+    const key = `${strategy}|${title}|${year || ''}`;
+    if (!title || seen.has(key)) return;
+    seen.add(key);
+    plans.push({ strategy, title, year });
+  }
+
+  for (const title of allNativeTitles) {
+    pushPlan('title+year', title, manga.year || null);
+  }
+  for (const title of allProviderTitles) {
+    pushPlan('provider-title+year', title, manga.year || null);
+  }
+  for (const title of allNativeTitles) {
+    pushPlan('title', title, null);
+  }
+  for (const title of allProviderTitles) {
+    pushPlan('provider-title', title, null);
+  }
+
+  return plans;
+}
+
 function extractMangaDexIdFromUrl(url) {
   const match = String(url || '').match(/mangadex\.org\/title\/([0-9a-f-]{36})/i);
   return match ? match[1] : null;
@@ -308,14 +372,31 @@ function scoreMangaDexCandidate(candidate, manga) {
   };
 }
 
-async function resolveMangaDexMapping(manga, existingCache) {
+function mappingPriorityScore(manga) {
+  const format = String(manga.format || '').toUpperCase();
+  let bonus = 0;
+  if (format === 'MANGA') bonus += 1000000;
+  else if (format === 'ONE_SHOT') bonus += 600000;
+  else if (format === 'NOVEL') bonus -= 250000;
+
+  bonus += Number(manga.popularity || 0) * 10;
+  bonus += Number(manga.averageScore || 0);
+  bonus += Number(manga.year || 0) / 1000;
+  return bonus;
+}
+
+async function resolveMangaDexMapping(manga, existingCache, stats = null) {
   const cached = existingCache[String(manga.anilistId || manga.mangaId)];
   if (cached?.mangadexId) {
+    if (stats) stats.cachedHits += 1;
+    console.log(`Mapping cache hit for "${manga.title}" -> ${cached.mangadexId} (${cached.source || 'cached'}).`);
     return cached;
   }
 
   const anilistLinkedId = getAniListLinkedMangaDexId(manga);
   if (anilistLinkedId) {
+    if (stats) stats.directExternalHits += 1;
+    console.log(`Mapping direct AniList external hit for "${manga.title}" -> ${anilistLinkedId}.`);
     return {
       mangadexId: anilistLinkedId,
       source: 'anilist_external',
@@ -327,15 +408,41 @@ async function resolveMangaDexMapping(manga, existingCache) {
     };
   }
 
-  const titles = getCandidateTitles(manga);
-  for (const title of titles) {
+  let providerDiscoveredTitles = [];
+  try {
+    providerDiscoveredTitles = await discoverProviderTitlesForManga(
+      manga,
+      MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT,
+    );
+  } catch (error) {
+    console.warn(`Provider-assisted title discovery failed for "${manga.title}": ${error.message}`);
+  }
+
+  if (providerDiscoveredTitles.length > 0) {
+    console.log(
+      `Provider-assisted titles for "${manga.title}": ${providerDiscoveredTitles
+        .map((item) => `${item.title} [${item.provider}]`)
+        .join(' | ')}.`,
+    );
+  }
+
+  const queryPlans = buildMappingQueryPlans(manga, providerDiscoveredTitles);
+  let bestMatch = null;
+
+  for (const plan of queryPlans) {
     try {
-      const candidates = await fetchMangaDexCandidates(title, manga.year);
+      console.log(
+        `Mapping search for "${manga.title}" via ${plan.strategy}: "${plan.title}"${plan.year ? ` (${plan.year})` : ''}.`,
+      );
+      const candidates = await fetchMangaDexCandidates(plan.title, plan.year);
+      console.log(
+        `Mapping candidate count for "${manga.title}" via ${plan.strategy}: ${candidates.length}.`,
+      );
       for (const candidate of candidates) {
         const result = scoreMangaDexCandidate(candidate, manga);
         if (!result.matched) continue;
 
-        return {
+        const resolved = {
           mangadexId: candidate.id,
           source: result.source,
           confidence: result.confidence,
@@ -345,14 +452,41 @@ async function resolveMangaDexMapping(manga, existingCache) {
           idMal: manga.idMal || null,
           mangadexUrl: `https://mangadex.org/title/${candidate.id}`,
         };
+
+        console.log(
+          `Mapping matched for "${manga.title}" -> ${candidate.id} via ${plan.strategy}/${result.source} (${result.confidence}).`,
+        );
+
+        if (result.source !== 'fuzzy') {
+          if (stats) {
+            if (result.source === 'al') stats.alHits += 1;
+            else if (result.source === 'mal') stats.malHits += 1;
+            else stats.otherDirectHits += 1;
+          }
+          return resolved;
+        }
+
+        if (!bestMatch || Number(result.confidence || 0) > Number(bestMatch.confidence || 0)) {
+          bestMatch = resolved;
+        }
       }
     } catch (error) {
-      console.error(`MangaDex mapping failed for "${manga.title}" (${title}): ${error.message}`);
+      console.error(`MangaDex mapping failed for "${manga.title}" via ${plan.strategy} ("${plan.title}"): ${error.message}`);
     }
 
     await delay(MANGADEX_DELAY_MS);
   }
 
+  if (bestMatch?.mangadexId) {
+    if (stats) stats.fuzzyHits += 1;
+    console.log(
+      `Mapping accepted best fuzzy match for "${manga.title}" -> ${bestMatch.mangadexId} (${bestMatch.confidence}).`,
+    );
+    return bestMatch;
+  }
+
+  if (stats) stats.unmapped += 1;
+  console.warn(`Mapping unresolved for "${manga.title}".`);
   return null;
 }
 
@@ -429,11 +563,24 @@ async function fetchMangaCatalog() {
   const mappingCache = readObjectJson(CONFIG.API_PATHS.MANGA_MAPPING);
   const nextMappingCache = { ...mappingCache };
   let mappingAttempts = 0;
+  const mappingStats = {
+    cachedHits: 0,
+    directExternalHits: 0,
+    alHits: 0,
+    malHits: 0,
+    otherDirectHits: 0,
+    fuzzyHits: 0,
+    unmapped: 0,
+  };
 
-  for (let index = 0; index < catalog.length; index++) {
-    const manga = catalog[index];
+  const prioritizedIndexes = catalog
+    .map((manga, index) => ({ manga, index }))
+    .sort((a, b) => mappingPriorityScore(b.manga) - mappingPriorityScore(a.manga));
+
+  for (const { manga, index } of prioritizedIndexes) {
     const cachedMapping = nextMappingCache[String(manga.anilistId || manga.mangaId)];
     if (cachedMapping?.mangadexId) {
+      mappingStats.cachedHits += 1;
       catalog[index] = attachMapping(manga, cachedMapping);
       continue;
     }
@@ -442,7 +589,10 @@ async function fetchMangaCatalog() {
       continue;
     }
 
-    const resolved = await resolveMangaDexMapping(manga, nextMappingCache);
+    console.log(
+      `Mapping attempt ${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN} for "${manga.title}" (${manga.format || 'UNKNOWN'}, pop=${manga.popularity || 0}, year=${manga.year || 0}).`,
+    );
+    const resolved = await resolveMangaDexMapping(manga, nextMappingCache, mappingStats);
     mappingAttempts += 1;
     if (resolved?.mangadexId) {
       nextMappingCache[String(manga.anilistId || manga.mangaId)] = resolved;
@@ -528,6 +678,9 @@ async function fetchMangaCatalog() {
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/manifest`, searchManifest);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
+  console.log(
+    `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,
+  );
 }
 
 module.exports = fetchMangaCatalog;

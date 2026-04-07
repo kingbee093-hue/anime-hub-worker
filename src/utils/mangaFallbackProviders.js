@@ -297,6 +297,35 @@ async function resolveFallbackProviderCandidates(manga) {
   );
 }
 
+async function discoverProviderTitlesForManga(manga, limit = 6) {
+  const candidateTitles = buildCandidateTitles(manga);
+  if (candidateTitles.length === 0) return [];
+
+  const discovered = [];
+
+  for (const providerKey of PROVIDER_PRIORITY) {
+    const providerCandidates = await collectProviderCandidates(providerKey, candidateTitles);
+    for (const candidate of providerCandidates) {
+      const title = String(candidate.providerTitle || '').trim();
+      if (!title) continue;
+      discovered.push({
+        provider: providerKey,
+        title,
+        score: candidate.matchScore,
+      });
+    }
+  }
+
+  return Array.from(
+    new Map(
+      discovered
+        .sort((a, b) => b.score - a.score)
+        .map((item) => [normalizeText(item.title), item]),
+    ).values(),
+  )
+    .slice(0, limit);
+}
+
 function normalizeProviderChapter(providerKey, chapter, pageUrls) {
   const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
   return {
@@ -323,6 +352,7 @@ module.exports = {
   PROVIDER_LABELS,
   providers,
   buildCandidateTitles,
+  discoverProviderTitlesForManga,
   parseChapterNumber,
   resolveBestFallbackProvider,
   resolveFallbackProviderCandidates,
