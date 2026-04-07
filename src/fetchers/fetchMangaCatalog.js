@@ -11,6 +11,7 @@ const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
   discoverProviderTitlesForManga,
   resolveBestFallbackProvider,
+  validateProviderSourceMapping,
 } = require('../utils/mangaFallbackProviders');
 const {
   writeNewChaptersSection,
@@ -684,6 +685,7 @@ async function fetchMangaCatalog() {
   const chapterSourceCache = readObjectJson(CONFIG.API_PATHS.MANGA_CHAPTER_SOURCE_MAPPING);
   const nextMappingCache = { ...mappingCache };
   const nextChapterSourceCache = { ...chapterSourceCache };
+  const validatedChapterSources = new Map();
   let mappingAttempts = 0;
   const mappingStats = {
     cachedHits: 0,
@@ -714,24 +716,49 @@ async function fetchMangaCatalog() {
     processedMappingIds.add(processedKey);
 
     const cachedMapping = nextMappingCache[String(manga.anilistId || manga.mangaId)];
-    const knownChapterSource =
+    let knownChapterSource =
       nextChapterSourceCache[processedKey] ||
       getManualChapterSourceMapping(manga);
     if (cachedMapping?.mangadexId) {
       mappingStats.cachedHits += 1;
+      if (knownChapterSource?.provider && knownChapterSource?.providerId) {
+        const sourceKey = `${knownChapterSource.provider}:${knownChapterSource.providerId}`;
+        let isValid = validatedChapterSources.get(sourceKey);
+        if (isValid == null) {
+          isValid = await validateProviderSourceMapping(knownChapterSource);
+          validatedChapterSources.set(sourceKey, isValid);
+        }
+        if (!isValid) {
+          delete nextChapterSourceCache[processedKey];
+          knownChapterSource = null;
+          console.warn(`Chapter source invalid: "${manga.title}" -> ${sourceKey} has no readable pages.`);
+        }
+      }
       catalog[index] = attachChapterSource(attachMapping(manga, cachedMapping), knownChapterSource);
       continue;
     }
 
     if (knownChapterSource?.provider && knownChapterSource?.providerId) {
-      catalog[index] = attachChapterSource(manga, knownChapterSource);
-      nextChapterSourceCache[processedKey] = {
-        ...knownChapterSource,
-        title: manga.title,
-        mangaId: manga.mangaId,
-        anilistId: manga.anilistId || manga.mangaId,
-        updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
-      };
+      const sourceKey = `${knownChapterSource.provider}:${knownChapterSource.providerId}`;
+      let isValid = validatedChapterSources.get(sourceKey);
+      if (isValid == null) {
+        isValid = await validateProviderSourceMapping(knownChapterSource);
+        validatedChapterSources.set(sourceKey, isValid);
+      }
+      if (!isValid) {
+        delete nextChapterSourceCache[processedKey];
+        knownChapterSource = null;
+        console.warn(`Chapter source invalid: "${manga.title}" -> ${sourceKey} has no readable pages.`);
+      } else {
+        catalog[index] = attachChapterSource(manga, knownChapterSource);
+        nextChapterSourceCache[processedKey] = {
+          ...knownChapterSource,
+          title: manga.title,
+          mangaId: manga.mangaId,
+          anilistId: manga.anilistId || manga.mangaId,
+          updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
+        };
+      }
     }
 
     if (!canUseProviderSourceMapping(manga)) {
@@ -764,16 +791,18 @@ async function fetchMangaCatalog() {
     if (chapterSource?.provider && chapterSource?.providerId) {
       nextChapterSourceCache[processedKey] = chapterSource;
       catalog[index] = attachChapterSource(manga, chapterSource);
+      validatedChapterSources.set(`${chapterSource.provider}:${chapterSource.providerId}`, true);
     }
   }
 
-  catalog = catalog.map((manga) => {
+  const enrichedCatalog = [];
+  for (const manga of catalog) {
     const processedKey = String(manga.anilistId || manga.mangaId);
     const cachedMapping =
       nextMappingCache[processedKey] ||
       manualMangaMappings[processedKey] ||
       manualMangaMappings[String(manga.mangaId || '')];
-    const knownChapterSource =
+    let knownChapterSource =
       nextChapterSourceCache[processedKey] ||
       manualMangaSourceMappings[processedKey] ||
       manualMangaSourceMappings[String(manga.mangaId || '')] ||
@@ -784,17 +813,28 @@ async function fetchMangaCatalog() {
       enriched = attachMapping(enriched, cachedMapping);
     }
     if (knownChapterSource?.provider && knownChapterSource?.providerId) {
-      nextChapterSourceCache[processedKey] = {
-        ...knownChapterSource,
-        title: manga.title,
-        mangaId: manga.mangaId,
-        anilistId: manga.anilistId || manga.mangaId,
-        updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
-      };
-      enriched = attachChapterSource(enriched, nextChapterSourceCache[processedKey]);
+      const sourceKey = `${knownChapterSource.provider}:${knownChapterSource.providerId}`;
+      let isValid = validatedChapterSources.get(sourceKey);
+      if (isValid == null) {
+        isValid = await validateProviderSourceMapping(knownChapterSource);
+        validatedChapterSources.set(sourceKey, isValid);
+      }
+      if (isValid) {
+        nextChapterSourceCache[processedKey] = {
+          ...knownChapterSource,
+          title: manga.title,
+          mangaId: manga.mangaId,
+          anilistId: manga.anilistId || manga.mangaId,
+          updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
+        };
+        enriched = attachChapterSource(enriched, nextChapterSourceCache[processedKey]);
+      } else {
+        delete nextChapterSourceCache[processedKey];
+      }
     }
-    return enriched;
-  });
+    enrichedCatalog.push(enriched);
+  }
+  catalog = enrichedCatalog;
 
   const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
   const lookup = {};

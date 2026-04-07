@@ -25,6 +25,7 @@ const MAX_SEARCH_RESULTS_PER_QUERY = 3;
 const MAX_PROVIDER_CANDIDATES = 2;
 const PROVIDER_SEARCH_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_SEARCH_TIMEOUT_MS || 20000);
 const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_MS || 30000);
+const PROVIDER_PAGES_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_PAGES_TIMEOUT_MS || 45000);
 
 function normalizeText(value) {
   return String(value || '')
@@ -187,7 +188,11 @@ class FallbackProviderClient {
   }
 
   async fetchChapterPages(chapterId) {
-    return this.client.fetchChapterPages(chapterId);
+    return withTimeout(
+      this.client.fetchChapterPages(chapterId),
+      PROVIDER_PAGES_TIMEOUT_MS,
+      `${this.label} fetchChapterPages`,
+    );
   }
 }
 
@@ -204,6 +209,95 @@ function scoreCoverage(chapterCount, catalogTotal) {
   if (total <= 0) return Math.min(count, 300);
   const gap = Math.abs(total - count);
   return Math.max(0, 220 - (gap * 3));
+}
+
+function extractPageUrls(pagesPayload) {
+  if (Array.isArray(pagesPayload)) {
+    return pagesPayload
+      .map((item) => {
+        if (typeof item === 'string') return item;
+        if (typeof item?.img === 'string') return item.img;
+        if (typeof item?.url === 'string') return item.url;
+        return null;
+      })
+      .filter(Boolean);
+  }
+
+  if (Array.isArray(pagesPayload?.pages)) {
+    return pagesPayload.pages
+      .map((item) => {
+        if (typeof item === 'string') return item;
+        if (typeof item?.img === 'string') return item.img;
+        if (typeof item?.url === 'string') return item.url;
+        return null;
+      })
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
+function pickProbeChapters(chapters) {
+  if (!Array.isArray(chapters) || chapters.length === 0) return [];
+
+  const picks = [];
+  const indexes = [
+    0,
+    Math.floor(chapters.length / 2),
+    chapters.length - 1,
+  ];
+
+  for (const index of indexes) {
+    const chapter = chapters[index];
+    if (chapter?.id && !picks.some((item) => item.id === chapter.id)) {
+      picks.push(chapter);
+    }
+  }
+
+  return picks;
+}
+
+async function probeReadableCandidate(providerKey, info) {
+  const provider = providers[providerKey];
+  if (!provider) return null;
+
+  const probeChapters = pickProbeChapters(info?.chapters || []);
+  for (const chapter of probeChapters) {
+    try {
+      const pagesPayload = await provider.fetchChapterPages(chapter.id);
+      const pageUrls = extractPageUrls(pagesPayload);
+      if (pageUrls.length > 0) {
+        return {
+          chapterId: chapter.id,
+          pageCount: pageUrls.length,
+        };
+      }
+    } catch (_) {
+      continue;
+    }
+  }
+
+  return null;
+}
+
+async function validateProviderSourceMapping(mapping) {
+  if (!mapping?.provider || !mapping?.providerId) return false;
+
+  const provider = providers[mapping.provider];
+  if (!provider) return false;
+
+  try {
+    const info = await provider.fetchInfo(mapping.providerId);
+    const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+    if (chapterCount <= 0) {
+      return false;
+    }
+
+    const probe = await probeReadableCandidate(mapping.provider, info);
+    return Boolean(probe?.pageCount);
+  } catch (_) {
+    return false;
+  }
 }
 
 async function resolveBestFallbackProvider(manga, cachedMapping = null) {
@@ -224,6 +318,10 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
       try {
         const info = await provider.fetchInfo(candidate.providerId);
         const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        const probe = await probeReadableCandidate(providerKey, info);
+        if (!probe?.pageCount) {
+          continue;
+        }
         const score =
           candidate.matchScore +
           scoreCoverage(chapterCount, manga.chapters) +
@@ -235,6 +333,7 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
             providerId: candidate.providerId,
             providerTitle: candidate.providerTitle,
             chapterCount,
+            probePageCount: probe.pageCount,
             score,
             updatedAt: new Date().toISOString(),
           };
@@ -262,6 +361,10 @@ async function resolveFallbackProviderCandidates(manga) {
       try {
         const info = await provider.fetchInfo(candidate.providerId);
         const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        const probe = await probeReadableCandidate(providerKey, info);
+        if (!probe?.pageCount) {
+          continue;
+        }
         const score =
           candidate.matchScore +
           scoreCoverage(chapterCount, manga.chapters) +
@@ -272,6 +375,7 @@ async function resolveFallbackProviderCandidates(manga) {
           providerId: candidate.providerId,
           providerTitle: candidate.providerTitle,
           chapterCount,
+          probePageCount: probe.pageCount,
           score,
           updatedAt: new Date().toISOString(),
         });
@@ -356,5 +460,6 @@ module.exports = {
   parseChapterNumber,
   resolveBestFallbackProvider,
   resolveFallbackProviderCandidates,
+  validateProviderSourceMapping,
   normalizeProviderChapter,
 };
