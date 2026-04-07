@@ -2907,7 +2907,7 @@
     "rating": 8,
     "averageScore": 80,
     "meanScore": 81,
-    "popularity": 44316,
+    "popularity": 44343,
     "trending": 39,
     "favourites": 2514,
     "source": "LIGHT_NOVEL",
@@ -3764,7 +3764,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 43845,
+    "popularity": 43860,
     "trending": 0,
     "favourites": 1630,
     "source": "ORIGINAL",
@@ -5956,7 +5956,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 41996,
+    "popularity": 42015,
     "trending": 2,
     "favourites": 1922,
     "source": "OTHER",
@@ -6467,7 +6467,7 @@
     "rating": 8.5,
     "averageScore": 85,
     "meanScore": 85,
-    "popularity": 41644,
+    "popularity": 41674,
     "trending": 46,
     "favourites": 3920,
     "source": "ORIGINAL",
@@ -9898,7 +9898,7 @@
     "rating": 7.8,
     "averageScore": 78,
     "meanScore": 78,
-    "popularity": 40055,
+    "popularity": 40082,
     "trending": 1,
     "favourites": 1998,
     "source": "ORIGINAL",
@@ -12578,7 +12578,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 74,
-    "popularity": 38914,
+    "popularity": 38928,
     "trending": 2,
     "favourites": 1345,
     "source": "ORIGINAL",
@@ -14831,234 +14831,6 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 159441,
-    "anilistId": 159441,
-    "idMal": 154587,
-    "title": "Pick Me Up",
-    "titleRomaji": "Pick Me Up!",
-    "titleEnglish": "Pick Me Up",
-    "titleNative": "픽 미 업!",
-    "synonyms": [
-      "Pick Me Up, Infinite Gacha",
-      "PICK ME UP～低レア★英雄の成り上がり～"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159441-9W8201jAT9Yv.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx159441-9W8201jAT9Yv.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx159441-9W8201jAT9Yv.jpg",
-    "coverImageColor": "#5dc9f1",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/159441-ozFKHuPOjxhB.jpg",
-    "synopsis": "1-Star heroes are just fodder for learning a boss' attack patterns. That was Seojin Han's philosophy when playing the notoriously difficult game Pick Me Up. But after being transported into the game as one of those 1-star heroes, he's got no choice but to rise in rank and defeat the player controlling him and his party. Can a gacha game character hope to defeat a player akin to being his god? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2022,
-    "startDate": "2022-12-28",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 143,
-        "name": "Survival",
-        "description": "Centers around the struggle to live in spite of extreme obstacles.",
-        "category": "Theme-Other",
-        "rank": 97,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 308,
-        "name": "Video Games",
-        "description": "Centers around characters playing video games.",
-        "category": "Theme-Game",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 93,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 615,
-        "name": "Death Game",
-        "description": "Features characters participating in a game, where failure results in death.",
-        "category": "Theme-Other",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 89,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 94,
-        "name": "Gore",
-        "description": "Prominently features graphic bloodshed and violence.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 79,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1789,
-        "name": "Long Strip",
-        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
-        "category": "Technical",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1419,
-        "name": "Kingdom Management",
-        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
-        "category": "Theme-Drama",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 43,
-        "name": "Swordplay",
-        "description": "Prominently features the use of swords in combat.",
-        "category": "Theme-Action",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 322,
-        "name": "Assassins",
-        "description": "Centers around characters who murder people as a profession.",
-        "category": "Theme-Other-Organisations",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 480,
-        "name": "Goblin",
-        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
-        "category": "Cast-Traits",
-        "rank": 30,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "U-Ne Cho",
-      "Hermod"
-    ],
-    "artists": [
-      "Wasakbasak"
-    ],
-    "rating": 8.3,
-    "averageScore": 83,
-    "meanScore": 84,
-    "popularity": 37375,
-    "trending": 24,
-    "favourites": 2376,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/159441",
-    "mal_url": "https://myanimelist.net/manga/154587",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/content/60914825"
-      },
-      {
-        "site": "Piccoma",
-        "url": "https://piccoma.com/web/product/121552"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/pick-me-up/info"
-      },
-      {
-        "site": "Kakao Webtoon",
-        "url": "https://th.kakaowebtoon.com/content/PICK_ME_UP/623?tab=episode"
-      },
-      {
-        "site": "Kakao Webtoon",
-        "url": "https://webtoon.kakao.com/content/픽-미-업/3205?tab=episode"
-      }
-    ],
-    "mangadexId": "58167656-a065-4b49-b499-bd73d00555d5",
-    "mangadexUrl": "https://mangadex.org/title/58167656-a065-4b49-b499-bd73d00555d5",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
     "mangaId": 107521,
     "anilistId": 107521,
     "idMal": 121269,
@@ -15443,7 +15215,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 83,
-    "popularity": 37357,
+    "popularity": 37385,
     "trending": 0,
     "favourites": 3777,
     "source": "OTHER",
@@ -15503,6 +15275,234 @@
     ],
     "mangadexId": "722a45c0-5e55-40f2-929b-ff69b0989edb",
     "mangadexUrl": "https://mangadex.org/title/722a45c0-5e55-40f2-929b-ff69b0989edb",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 159441,
+    "anilistId": 159441,
+    "idMal": 154587,
+    "title": "Pick Me Up",
+    "titleRomaji": "Pick Me Up!",
+    "titleEnglish": "Pick Me Up",
+    "titleNative": "픽 미 업!",
+    "synonyms": [
+      "Pick Me Up, Infinite Gacha",
+      "PICK ME UP～低レア★英雄の成り上がり～"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159441-9W8201jAT9Yv.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx159441-9W8201jAT9Yv.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx159441-9W8201jAT9Yv.jpg",
+    "coverImageColor": "#5dc9f1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/159441-ozFKHuPOjxhB.jpg",
+    "synopsis": "1-Star heroes are just fodder for learning a boss' attack patterns. That was Seojin Han's philosophy when playing the notoriously difficult game Pick Me Up. But after being transported into the game as one of those 1-star heroes, he's got no choice but to rise in rank and defeat the player controlling him and his party. Can a gacha game character hope to defeat a player akin to being his god? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-12-28",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 308,
+        "name": "Video Games",
+        "description": "Centers around characters playing video games.",
+        "category": "Theme-Game",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 615,
+        "name": "Death Game",
+        "description": "Features characters participating in a game, where failure results in death.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1789,
+        "name": "Long Strip",
+        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1419,
+        "name": "Kingdom Management",
+        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 480,
+        "name": "Goblin",
+        "description": "A goblin is a monstrous creature from European folklore. They are almost always small and grotesque, mischievous or outright malicious, and greedy. Sometimes with magical abilities.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "U-Ne Cho",
+      "Hermod"
+    ],
+    "artists": [
+      "Wasakbasak"
+    ],
+    "rating": 8.3,
+    "averageScore": 83,
+    "meanScore": 84,
+    "popularity": 37375,
+    "trending": 24,
+    "favourites": 2376,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/159441",
+    "mal_url": "https://myanimelist.net/manga/154587",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/60914825"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/121552"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/pick-me-up/info"
+      },
+      {
+        "site": "Kakao Webtoon",
+        "url": "https://th.kakaowebtoon.com/content/PICK_ME_UP/623?tab=episode"
+      },
+      {
+        "site": "Kakao Webtoon",
+        "url": "https://webtoon.kakao.com/content/픽-미-업/3205?tab=episode"
+      }
+    ],
+    "mangadexId": "58167656-a065-4b49-b499-bd73d00555d5",
+    "mangadexUrl": "https://mangadex.org/title/58167656-a065-4b49-b499-bd73d00555d5",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -18695,6 +18695,202 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 109501,
+    "anilistId": 109501,
+    "idMal": 125052,
+    "title": "My Love Story with Yamada-kun at Lv999",
+    "titleRomaji": "Yamada-kun to Lv999 no Koi wo Suru",
+    "titleEnglish": "My Love Story with Yamada-kun at Lv999",
+    "titleNative": "山田くんとLv999の恋をする",
+    "synonyms": [
+      "My Lv999 Love for Yamada-kun",
+      "Loving Yamada at LV999!",
+      "Mi amor por Yamada está al Nv. 999",
+      "Kocham Yamadę na 999 poziomie!",
+      "Tình yêu lvl.999 của Yamada và ",
+      "Minha História de Amor com Yamada-kun Nível 999",
+      "야마다 군과 Lv999의 사랑을 하다"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109501-eT3s7wv5gkrB.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx109501-eT3s7wv5gkrB.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx109501-eT3s7wv5gkrB.jpg",
+    "coverImageColor": "#f1506b",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/109501-y84LgnESYhKS.jpg",
+    "synopsis": "Recently dumped, Akane is just about to quit the game she used to play with her boyfriend, when she meets Yamada in the same RPG. Yamada in real life turns out to be somewhat of a legend. The only problem is - he is ONLY interested in the game. As Akane's feelings grow, will Yamada's focus stay on the game? (Source: Mangamo) Note: Ninth place of Tsugimanga 2020 Award in the Web Manga Category",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2019,
+    "startDate": "2019-03-07",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 308,
+        "name": "Video Games",
+        "description": "Centers around characters playing video games.",
+        "category": "Theme-Game",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 112,
+        "name": "Virtual World",
+        "description": "Partly or completely set in the world inside a video game.",
+        "category": "Setting-Universe",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 404,
+        "name": "College",
+        "description": "Partly or completely set in a college or university.",
+        "category": "Setting-Scene",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 792,
+        "name": "E-Sports",
+        "description": "Prominently features professional video game competitions, tournaments, players, etc.",
+        "category": "Theme-Game",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Mashiro"
+    ],
+    "artists": [
+      "Mashiro"
+    ],
+    "rating": 8.1,
+    "averageScore": 81,
+    "meanScore": 81,
+    "popularity": 35491,
+    "trending": 0,
+    "favourites": 2194,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/109501",
+    "mal_url": "https://myanimelist.net/manga/125052",
+    "externalLinks": [
+      {
+        "site": "Ganma!",
+        "url": "https://ganma.jp/yamadalv999"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/yamada_a_jp"
+      },
+      {
+        "site": "Kadocomi",
+        "url": "https://comic-walker.com/contents/detail/KDCW_CW01201479010000_68/"
+      },
+      {
+        "site": "Instagram",
+        "url": "https://www.instagram.com/yamadalv999_official/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.penguinrandomhouse.com/series/LYA/my-love-story-with-yamada-kun-at-lv999/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.mangamo.com/manga/my-love-story-with-yamada-kun-at-lv999"
+      }
+    ],
+    "mangadexId": "643561e6-5c27-4382-95d3-8e84894a3fb6",
+    "mangadexUrl": "https://mangadex.org/title/643561e6-5c27-4382-95d3-8e84894a3fb6",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 85470,
     "anilistId": 85470,
     "idMal": 70261,
@@ -19189,202 +19385,6 @@
     "mangadexUrl": "https://mangadex.org/title/bd6d0982-0091-4945-ad70-c028ed3c0917",
     "mangadexMappingSource": "fuzzy",
     "mangadexMappingConfidence": 0.95
-  },
-  {
-    "mangaId": 109501,
-    "anilistId": 109501,
-    "idMal": 125052,
-    "title": "My Love Story with Yamada-kun at Lv999",
-    "titleRomaji": "Yamada-kun to Lv999 no Koi wo Suru",
-    "titleEnglish": "My Love Story with Yamada-kun at Lv999",
-    "titleNative": "山田くんとLv999の恋をする",
-    "synonyms": [
-      "My Lv999 Love for Yamada-kun",
-      "Loving Yamada at LV999!",
-      "Mi amor por Yamada está al Nv. 999",
-      "Kocham Yamadę na 999 poziomie!",
-      "Tình yêu lvl.999 của Yamada và ",
-      "Minha História de Amor com Yamada-kun Nível 999",
-      "야마다 군과 Lv999의 사랑을 하다"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109501-eT3s7wv5gkrB.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx109501-eT3s7wv5gkrB.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx109501-eT3s7wv5gkrB.jpg",
-    "coverImageColor": "#f1506b",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/109501-y84LgnESYhKS.jpg",
-    "synopsis": "Recently dumped, Akane is just about to quit the game she used to play with her boyfriend, when she meets Yamada in the same RPG. Yamada in real life turns out to be somewhat of a legend. The only problem is - he is ONLY interested in the game. As Akane's feelings grow, will Yamada's focus stay on the game? (Source: Mangamo) Note: Ninth place of Tsugimanga 2020 Award in the Web Manga Category",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2019,
-    "startDate": "2019-03-07",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 308,
-        "name": "Video Games",
-        "description": "Centers around characters playing video games.",
-        "category": "Theme-Game",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 91,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 97,
-        "name": "Otaku Culture",
-        "description": "Centers around the culture of a fanatical fan-base.",
-        "category": "Theme-Other",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 53,
-        "name": "Shoujo",
-        "description": "Target demographic is teenage and young adult females.",
-        "category": "Demographic",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 138,
-        "name": "Age Gap",
-        "description": "Prominently features romantic relations between people with a significant age difference.",
-        "category": "Theme-Romance",
-        "rank": 60,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 112,
-        "name": "Virtual World",
-        "description": "Partly or completely set in the world inside a video game.",
-        "category": "Setting-Universe",
-        "rank": 56,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 404,
-        "name": "College",
-        "description": "Partly or completely set in a college or university.",
-        "category": "Setting-Scene",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 45,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 792,
-        "name": "E-Sports",
-        "description": "Prominently features professional video game competitions, tournaments, players, etc.",
-        "category": "Theme-Game",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Mashiro"
-    ],
-    "artists": [
-      "Mashiro"
-    ],
-    "rating": 8.1,
-    "averageScore": 81,
-    "meanScore": 81,
-    "popularity": 35460,
-    "trending": 0,
-    "favourites": 2194,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/109501",
-    "mal_url": "https://myanimelist.net/manga/125052",
-    "externalLinks": [
-      {
-        "site": "Ganma!",
-        "url": "https://ganma.jp/yamadalv999"
-      },
-      {
-        "site": "Twitter",
-        "url": "https://twitter.com/yamada_a_jp"
-      },
-      {
-        "site": "Kadocomi",
-        "url": "https://comic-walker.com/contents/detail/KDCW_CW01201479010000_68/"
-      },
-      {
-        "site": "Instagram",
-        "url": "https://www.instagram.com/yamadalv999_official/"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://www.penguinrandomhouse.com/series/LYA/my-love-story-with-yamada-kun-at-lv999/"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://www.mangamo.com/manga/my-love-story-with-yamada-kun-at-lv999"
-      }
-    ],
-    "mangadexId": "643561e6-5c27-4382-95d3-8e84894a3fb6",
-    "mangadexUrl": "https://mangadex.org/title/643561e6-5c27-4382-95d3-8e84894a3fb6",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 32921,
@@ -21809,6 +21809,225 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 111189,
+    "anilistId": 111189,
+    "idMal": 121504,
+    "title": "A Sign of Affection",
+    "titleRomaji": "Yubisaki to Renren",
+    "titleEnglish": "A Sign of Affection",
+    "titleNative": "ゆびさきと恋々",
+    "synonyms": [
+      "Ein Zeichen der Zuneigung",
+      "손끝과 연연",
+      "Signos de Afecto",
+      "Кохання на кінчиках пальців",
+      "Znaki naszych uczuć",
+      "Yubiren",
+      "Um Sinal de Afeto"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111189-tvPJRVj5nGic.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx111189-tvPJRVj5nGic.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx111189-tvPJRVj5nGic.png",
+    "coverImageColor": "#f1a143",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/111189-SvB7s0IMtfmj.jpg",
+    "synopsis": "Yuki is a typical college student, whose world revolves around her friends, social media, and the latest sales. But when a chance encounter on a train leads to her meeting friend-of-a-friend and fellow student Itsuomi-san, her world starts to widen. But even though Itsuomi-kun can speak three languages, sign language isn’t one of them. Can the two learn to communicate the budding feelings between them? (Source: Kodansha USA) Notes: - Ranked 17th place for the Tsugimanga Award in the Print Manga Category in 2020. - Nominated for the 45th and 46th Kodansha Manga Award in the Shoujo Category in 2021 and 2022. - Nominated for the 68th Shogakukan Manga Award in the Shoujo Category",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2019,
+    "startDate": "2019-07-24",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 516,
+        "name": "Language Barrier",
+        "description": "A barrier to communication between people who are unable to speak a common language.",
+        "category": "Theme-Other",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 404,
+        "name": "College",
+        "description": "Partly or completely set in a college or university.",
+        "category": "Setting-Scene",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 161,
+        "name": "Bar",
+        "description": "Partly or completely set in a bar.",
+        "category": "Setting-Scene",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 324,
+        "name": "Chibi",
+        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1753,
+        "name": "Cohabitation",
+        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
+        "category": "Theme-Romance",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 32,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Suu Morishita"
+    ],
+    "artists": [
+      "Suu Morishita"
+    ],
+    "rating": 8.3,
+    "averageScore": 83,
+    "meanScore": 84,
+    "popularity": 34102,
+    "trending": 1,
+    "favourites": 2670,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/111189",
+    "mal_url": "https://myanimelist.net/manga/121504",
+    "externalLinks": [
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/a-sign-of-affection/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://go-dessert.jp/kc/renren/"
+      },
+      {
+        "site": "INKR",
+        "url": "https://comics.inkr.com/title/1227-a-sign-of-affection"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kc.kodansha.co.jp/title?code=1000036186"
+      },
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/10834108156720561629"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.akata.fr/series/sign-affection"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10520/episode/346061"
+      }
+    ],
+    "mangadexId": "11bfa371-f53f-42b7-8213-94b1323b02b6",
+    "mangadexUrl": "https://mangadex.org/title/11bfa371-f53f-42b7-8213-94b1323b02b6",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 86568,
     "anilistId": 86568,
     "idMal": 93753,
@@ -22191,225 +22410,6 @@
     ],
     "mangadexId": "e1d8b192-fa28-4651-bdaf-d4e0d4418ea8",
     "mangadexUrl": "https://mangadex.org/title/e1d8b192-fa28-4651-bdaf-d4e0d4418ea8",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 111189,
-    "anilistId": 111189,
-    "idMal": 121504,
-    "title": "A Sign of Affection",
-    "titleRomaji": "Yubisaki to Renren",
-    "titleEnglish": "A Sign of Affection",
-    "titleNative": "ゆびさきと恋々",
-    "synonyms": [
-      "Ein Zeichen der Zuneigung",
-      "손끝과 연연",
-      "Signos de Afecto",
-      "Кохання на кінчиках пальців",
-      "Znaki naszych uczuć",
-      "Yubiren",
-      "Um Sinal de Afeto"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111189-tvPJRVj5nGic.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx111189-tvPJRVj5nGic.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx111189-tvPJRVj5nGic.png",
-    "coverImageColor": "#f1a143",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/111189-SvB7s0IMtfmj.jpg",
-    "synopsis": "Yuki is a typical college student, whose world revolves around her friends, social media, and the latest sales. But when a chance encounter on a train leads to her meeting friend-of-a-friend and fellow student Itsuomi-san, her world starts to widen. But even though Itsuomi-kun can speak three languages, sign language isn’t one of them. Can the two learn to communicate the budding feelings between them? (Source: Kodansha USA) Notes: - Ranked 17th place for the Tsugimanga Award in the Print Manga Category in 2020. - Nominated for the 45th and 46th Kodansha Manga Award in the Shoujo Category in 2021 and 2022. - Nominated for the 68th Shogakukan Manga Award in the Shoujo Category",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2019,
-    "startDate": "2019-07-24",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 53,
-        "name": "Shoujo",
-        "description": "Target demographic is teenage and young adult females.",
-        "category": "Demographic",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 516,
-        "name": "Language Barrier",
-        "description": "A barrier to communication between people who are unable to speak a common language.",
-        "category": "Theme-Other",
-        "rank": 93,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 78,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 404,
-        "name": "College",
-        "description": "Partly or completely set in a college or university.",
-        "category": "Setting-Scene",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 139,
-        "name": "Love Triangle",
-        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
-        "category": "Theme-Romance",
-        "rank": 57,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 161,
-        "name": "Bar",
-        "description": "Partly or completely set in a bar.",
-        "category": "Setting-Scene",
-        "rank": 52,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 324,
-        "name": "Chibi",
-        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
-        "category": "Theme-Other",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1753,
-        "name": "Cohabitation",
-        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
-        "category": "Theme-Romance",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 164,
-        "name": "Tsundere",
-        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
-        "category": "Cast-Traits",
-        "rank": 32,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Suu Morishita"
-    ],
-    "artists": [
-      "Suu Morishita"
-    ],
-    "rating": 8.3,
-    "averageScore": 83,
-    "meanScore": 84,
-    "popularity": 34088,
-    "trending": 1,
-    "favourites": 2670,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/111189",
-    "mal_url": "https://myanimelist.net/manga/121504",
-    "externalLinks": [
-      {
-        "site": "Kodansha",
-        "url": "https://kodansha.us/series/a-sign-of-affection/"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://go-dessert.jp/kc/renren/"
-      },
-      {
-        "site": "INKR",
-        "url": "https://comics.inkr.com/title/1227-a-sign-of-affection"
-      },
-      {
-        "site": "Kodansha",
-        "url": "https://kc.kodansha.co.jp/title?code=1000036186"
-      },
-      {
-        "site": "Comic Days",
-        "url": "https://comic-days.com/episode/10834108156720561629"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://www.akata.fr/series/sign-affection"
-      },
-      {
-        "site": "K MANGA",
-        "url": "https://kmanga.kodansha.com/title/10520/episode/346061"
-      }
-    ],
-    "mangadexId": "11bfa371-f53f-42b7-8213-94b1323b02b6",
-    "mangadexUrl": "https://mangadex.org/title/11bfa371-f53f-42b7-8213-94b1323b02b6",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -24026,7 +24026,7 @@
     "rating": 7.3,
     "averageScore": 73,
     "meanScore": 73,
-    "popularity": 33330,
+    "popularity": 33353,
     "trending": 3,
     "favourites": 1287,
     "source": "OTHER",
@@ -25097,7 +25097,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 33039,
+    "popularity": 33067,
     "trending": 1,
     "favourites": 1667,
     "source": "ORIGINAL",
@@ -28474,7 +28474,7 @@
     "rating": 8.6,
     "averageScore": 86,
     "meanScore": 86,
-    "popularity": 30957,
+    "popularity": 30980,
     "trending": 2,
     "favourites": 3226,
     "source": "ORIGINAL",
@@ -30280,7 +30280,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 83,
-    "popularity": 30175,
+    "popularity": 30197,
     "trending": 1,
     "favourites": 1697,
     "source": "ORIGINAL",
@@ -30982,6 +30982,226 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 112579,
+    "anilistId": 112579,
+    "idMal": 123812,
+    "title": "My Broken Mariko",
+    "titleRomaji": "My Broken Mariko",
+    "titleEnglish": "My Broken Mariko",
+    "titleNative": "マイ・ブロークン・マリコ",
+    "synonyms": [
+      "Nàng Mariko vụn vỡ của tôi",
+      "แด่มาริโกะของฉัน",
+      "Moje vadná Mariko",
+      "Моя зломлена Маріко"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx112579-STxOi2dwQmTZ.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112579-STxOi2dwQmTZ.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx112579-STxOi2dwQmTZ.png",
+    "coverImageColor": "#f1e450",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/112579-kU8eOqO9AI8k.jpg",
+    "synopsis": "Tomoyo Shiino has stood by her friend Mariko through years of abuse, abandonment, and depression. However horrific her circumstances, their friendship has been the one reassuring constant in Mariko's life-and Tomoyo's too. That is, until Tomoyo is utterly blindsided by news of Mariko's death. In life, Tomoyo felt powerless to help her best friend out of the darkness that ultimately drove her over the edge. Now, Tomoyo is determined to liberate Mariko's ashes for one final journey together... to set free her dear, broken Mariko. (Source: Yen Press) Notes: - Includes the one-shot \"YISKA\". - includes the extra \"Home Sweet Home!\".",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2019,
+    "startDate": "2019-07-16",
+    "endDate": "2019-12-17",
+    "chapters": 6,
+    "volumes": 1,
+    "genres": [
+      "Drama",
+      "Psychological"
+    ],
+    "tags": [
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 97,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1537,
+        "name": "Coastal",
+        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 27,
+        "name": "Josei",
+        "description": "Target demographic is adult females.",
+        "category": "Demographic",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 931,
+        "name": "Tomboy",
+        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 311,
+        "name": "Rehabilitation",
+        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
+        "category": "Theme-Drama",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Waka Hirako"
+    ],
+    "artists": [
+      "Waka Hirako"
+    ],
+    "rating": 7.8,
+    "averageScore": 78,
+    "meanScore": 78,
+    "popularity": 29824,
+    "trending": 1,
+    "favourites": 1779,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/112579",
+    "mal_url": "https://myanimelist.net/manga/123812",
+    "externalLinks": [
+      {
+        "site": "Kadocomi",
+        "url": "https://comic-walker.com/contents/detail/KDCW_CB01201022010000_68/"
+      },
+      {
+        "site": "Nico Nico Seiga",
+        "url": "http://seiga.nicovideo.jp/comic/42873"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/my-broken-mariko"
+      }
+    ],
+    "mangadexId": "147c9906-343e-4b16-ae64-5a8974a623a6",
+    "mangadexUrl": "https://mangadex.org/title/147c9906-343e-4b16-ae64-5a8974a623a6",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 87321,
     "anilistId": 87321,
     "idMal": 98720,
@@ -31210,226 +31430,6 @@
     ],
     "mangadexId": "67a7dfd1-a39d-46c8-8ff2-9a24a9abaeb6",
     "mangadexUrl": "https://mangadex.org/title/67a7dfd1-a39d-46c8-8ff2-9a24a9abaeb6",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 112579,
-    "anilistId": 112579,
-    "idMal": 123812,
-    "title": "My Broken Mariko",
-    "titleRomaji": "My Broken Mariko",
-    "titleEnglish": "My Broken Mariko",
-    "titleNative": "マイ・ブロークン・マリコ",
-    "synonyms": [
-      "Nàng Mariko vụn vỡ của tôi",
-      "แด่มาริโกะของฉัน",
-      "Moje vadná Mariko",
-      "Моя зломлена Маріко"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx112579-STxOi2dwQmTZ.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112579-STxOi2dwQmTZ.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx112579-STxOi2dwQmTZ.png",
-    "coverImageColor": "#f1e450",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/112579-kU8eOqO9AI8k.jpg",
-    "synopsis": "Tomoyo Shiino has stood by her friend Mariko through years of abuse, abandonment, and depression. However horrific her circumstances, their friendship has been the one reassuring constant in Mariko's life-and Tomoyo's too. That is, until Tomoyo is utterly blindsided by news of Mariko's death. In life, Tomoyo felt powerless to help her best friend out of the darkness that ultimately drove her over the edge. Now, Tomoyo is determined to liberate Mariko's ashes for one final journey together... to set free her dear, broken Mariko. (Source: Yen Press) Notes: - Includes the one-shot \"YISKA\". - includes the extra \"Home Sweet Home!\".",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 2019,
-    "startDate": "2019-07-16",
-    "endDate": "2019-12-17",
-    "chapters": 6,
-    "volumes": 1,
-    "genres": [
-      "Drama",
-      "Psychological"
-    ],
-    "tags": [
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 97,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 94,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1046,
-        "name": "Suicide",
-        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
-        "category": "Theme-Drama",
-        "rank": 94,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1537,
-        "name": "Coastal",
-        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 78,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 27,
-        "name": "Josei",
-        "description": "Target demographic is adult females.",
-        "category": "Demographic",
-        "rank": 77,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
-        "category": "Theme-Drama",
-        "rank": 71,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 931,
-        "name": "Tomboy",
-        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
-        "category": "Cast-Traits",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 155,
-        "name": "Rape",
-        "description": "Features non-consensual sexual penetration.",
-        "category": "Sexual Content",
-        "rank": 65,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": true
-      },
-      {
-        "id": 311,
-        "name": "Rehabilitation",
-        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
-        "category": "Theme-Drama",
-        "rank": 61,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 483,
-        "name": "LGBTQ+ Themes",
-        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 654,
-        "name": "Denpa",
-        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Waka Hirako"
-    ],
-    "artists": [
-      "Waka Hirako"
-    ],
-    "rating": 7.8,
-    "averageScore": 78,
-    "meanScore": 78,
-    "popularity": 29805,
-    "trending": 1,
-    "favourites": 1779,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/112579",
-    "mal_url": "https://myanimelist.net/manga/123812",
-    "externalLinks": [
-      {
-        "site": "Kadocomi",
-        "url": "https://comic-walker.com/contents/detail/KDCW_CB01201022010000_68/"
-      },
-      {
-        "site": "Nico Nico Seiga",
-        "url": "http://seiga.nicovideo.jp/comic/42873"
-      },
-      {
-        "site": "Yen Press",
-        "url": "https://yenpress.com/series/my-broken-mariko"
-      }
-    ],
-    "mangadexId": "147c9906-343e-4b16-ae64-5a8974a623a6",
-    "mangadexUrl": "https://mangadex.org/title/147c9906-343e-4b16-ae64-5a8974a623a6",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
