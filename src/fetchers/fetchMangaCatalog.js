@@ -698,6 +698,7 @@ async function fetchMangaCatalog() {
     providerManualHits: 0,
     providerResolvedHits: 0,
     providerUnresolved: 0,
+    skippedNonChapterFormats: 0,
   };
 
   const prioritizedIndexes = catalog
@@ -731,6 +732,16 @@ async function fetchMangaCatalog() {
         anilistId: manga.anilistId || manga.mangaId,
         updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
       };
+    }
+
+    if (!canUseProviderSourceMapping(manga)) {
+      mappingStats.skippedNonChapterFormats += 1;
+      if (VERBOSE_MAPPING_LOGS) {
+        console.log(
+          `Mapping skipped: "${manga.title}" (${manga.format || 'UNKNOWN'}) is not a chapter-bearing manga format.`,
+        );
+      }
+      continue;
     }
 
     if (mappingAttempts >= MANGADEX_MAPPING_ATTEMPTS_PER_RUN) {
@@ -880,6 +891,9 @@ async function fetchMangaCatalog() {
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
   console.log(
     `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, manual: ${mappingStats.manualHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,
+  );
+  console.log(
+    `Manga mapping skipped non-chapter formats: ${mappingStats.skippedNonChapterFormats}.`,
   );
   console.log(
     `Chapter source mapping summary -> cache hits: ${mappingStats.providerCacheHits}, manual: ${mappingStats.providerManualHits}, resolved: ${mappingStats.providerResolvedHits}, unresolved: ${mappingStats.providerUnresolved}.`,
