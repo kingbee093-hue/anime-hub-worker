@@ -1,9 +1,10 @@
 {
+  "chapterIndexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
   "mangaId": 59983,
   "anilistId": 59983,
   "mangadexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
   "title": "Noblesse",
-  "updatedAt": "2026-04-05T11:16:23.446Z",
+  "updatedAt": "2026-04-07T16:07:19.746Z",
   "availableLanguages": [
     "en"
   ],
@@ -14,8 +15,6 @@
     "en": [
       {
         "id": "mangahere:noblesse_rai_s_adventure/c005",
-        "provider": "mangahere",
-        "providerChapterId": "noblesse_rai_s_adventure/c005",
         "title": "Ch.005",
         "chapter": "5",
         "volume": "",
@@ -57,12 +56,12 @@
         "publishedAt": "Jun 14,2016",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "noblesse_rai_s_adventure/c005"
       },
       {
         "id": "mangahere:noblesse/v04/c544",
-        "provider": "mangahere",
-        "providerChapterId": "noblesse/v04/c544",
         "title": "Vol.04 Ch.544",
         "chapter": "4",
         "volume": "",
@@ -127,12 +126,12 @@
         "publishedAt": "Jan 08,2019",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "noblesse/v04/c544"
       },
       {
         "id": "mangahere:noblesse/v03/c205",
-        "provider": "mangahere",
-        "providerChapterId": "noblesse/v03/c205",
         "title": "Vol.03 Ch.205 - #205",
         "chapter": "3",
         "volume": "",
@@ -176,12 +175,12 @@
         "publishedAt": "Oct 11,2011",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "noblesse/v03/c205"
       },
       {
         "id": "mangahere:noblesse/v02/c188",
-        "provider": "mangahere",
-        "providerChapterId": "noblesse/v02/c188",
         "title": "Vol.02 Ch.188 - #188",
         "chapter": "2",
         "volume": "",
@@ -233,12 +232,12 @@
         "publishedAt": "Jun 08,2011",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "noblesse/v02/c188"
       },
       {
         "id": "mangahere:noblesse_rai_s_adventure/c001",
-        "provider": "mangahere",
-        "providerChapterId": "noblesse_rai_s_adventure/c001",
         "title": "Ch.001",
         "chapter": "1",
         "volume": "",
@@ -277,11 +276,16 @@
         "publishedAt": "Jun 14,2016",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "noblesse_rai_s_adventure/c001"
       }
     ]
   },
-  "englishFallbackProvider": "mangahere",
-  "englishFallbackProviderTitle": "Noblesse",
-  "englishFallbackChapterCount": 550
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }
