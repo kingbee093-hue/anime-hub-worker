@@ -66,6 +66,29 @@ function sanitizeFilePart(value) {
     .slice(0, 120) || 'item';
 }
 
+function buildChapterIndexId(item) {
+  if (!item || typeof item !== 'object') {
+    return null;
+  }
+
+  const direct = String(item.chapterIndexId || item.mangadexId || '').trim();
+  if (direct) {
+    return sanitizeFilePart(direct);
+  }
+
+  const provider = String(
+    item.chapterSourceProvider ||
+      item.provider ||
+      '',
+  ).trim();
+  const ownerId = String(item.anilistId || item.mangaId || '').trim();
+  if (!provider || !ownerId) {
+    return null;
+  }
+
+  return sanitizeFilePart(`src-${provider}-${ownerId}`);
+}
+
 module.exports = {
   readJsonFile,
   getMangaCatalogEntries,
@@ -74,4 +97,5 @@ module.exports = {
   getChapterIndex,
   getPageManifest,
   sanitizeFilePart,
+  buildChapterIndexId,
 };

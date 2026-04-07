@@ -3,6 +3,7 @@ const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
   getMangaCatalogEntries,
   getChapterManifest,
+  buildChapterIndexId,
 } = require('../utils/mangaBackfillData');
 const fetchMangaChapters = require('./fetchMangaChapters');
 
@@ -50,7 +51,9 @@ function writeState(state) {
 }
 
 function getEntryIds(item) {
-  return [item.mangadexId, item.mangaId, item.anilistId].map((id) => String(id || '')).filter(Boolean);
+  return [item.chapterIndexId, item.mangadexId, item.mangaId, item.anilistId]
+    .map((id) => String(id || ''))
+    .filter(Boolean);
 }
 
 function getManifestCounts(manifestItem) {
@@ -124,33 +127,44 @@ async function backfillMangaChapters() {
   const catalogItems = Array.from(
     new Map(
       rawCatalogEntries
-        .filter((item) => item && item.mangadexId)
-        .map((item) => [item.mangadexId, {
+        .filter((item) => item && (item.mangadexId || (item.chapterSourceProvider && item.chapterSourceId)))
+        .map((item) => {
+          const chapterIndexId = buildChapterIndexId(item);
+          return [chapterIndexId, {
+          chapterIndexId,
           mangaId: item.mangaId,
           anilistId: item.anilistId || item.mangaId,
           mangadexId: item.mangadexId,
+          chapterSourceProvider: item.chapterSourceProvider || '',
+          chapterSourceId: item.chapterSourceId || '',
           title: item.title || '',
           popularity: Number(item.popularity || 0),
           chapters: Number(item.chapters || 0),
           status: item.status || '',
           year: item.year || item.startYear || null,
-        }]),
+        }];
+        })
+        .filter(([chapterIndexId]) => Boolean(chapterIndexId)),
     ).values(),
   );
   const chapterManifest = getChapterManifest();
-  const chapterMap = new Map((chapterManifest.items || []).map((item) => [item.mangadexId, item]));
+  const chapterMap = new Map(
+    (chapterManifest.items || [])
+      .map((item) => [item.chapterIndexId || item.mangadexId, item])
+      .filter(([key]) => Boolean(key)),
+  );
   const state = getState();
   const stateTitles = state.titles || {};
 
   const candidates = catalogItems
     .map((item) => ({
       item,
-      manifestItem: chapterMap.get(item.mangadexId) || null,
-      stateItem: stateTitles[item.mangadexId] || null,
+      manifestItem: chapterMap.get(item.chapterIndexId) || null,
+      stateItem: stateTitles[item.chapterIndexId] || null,
       score: scoreCandidate(
         item,
-        chapterMap.get(item.mangadexId) || null,
-        stateTitles[item.mangadexId] || null,
+        chapterMap.get(item.chapterIndexId) || null,
+        stateTitles[item.chapterIndexId] || null,
       ),
     }))
     .filter((entry) => entry.score >= 0)
@@ -183,6 +197,7 @@ async function backfillMangaChapters() {
       year: item.year,
       popularity: item.popularity,
       chapters: item.chapters,
+      chapterIndexId: item.chapterIndexId,
       currentEnglishCount: Number(manifestItem?.counts?.en || 0),
       currentArabicCount: Number(manifestItem?.counts?.ar || 0),
       hasCoverage: hasAnyUsableChapters(manifestItem),
@@ -200,15 +215,19 @@ async function backfillMangaChapters() {
 
   function writeProgress(extra = {}) {
     const refreshedManifest = getChapterManifest();
-    const refreshedMap = new Map((refreshedManifest.items || []).map((item) => [item.mangadexId, item]));
+    const refreshedMap = new Map(
+      (refreshedManifest.items || [])
+        .map((item) => [item.chapterIndexId || item.mangadexId, item])
+        .filter(([key]) => Boolean(key)),
+    );
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BACKFILL}/chapters_progress`, {
       ...baseProgress,
       ...extra,
       updatedAt: new Date().toISOString(),
       indexedTitles: refreshedManifest.items?.length || 0,
       pendingTitles: candidates.filter(({ item }) => {
-        const manifestItem = refreshedMap.get(item.mangadexId);
-        return scoreCandidate(item, manifestItem, stateTitles[item.mangadexId] || null) >= 0;
+        const manifestItem = refreshedMap.get(item.chapterIndexId);
+        return scoreCandidate(item, manifestItem, stateTitles[item.chapterIndexId] || null) >= 0;
       }).length,
       completedCount: completed.length,
       failedCount: failed.length,
@@ -228,26 +247,36 @@ async function backfillMangaChapters() {
   try {
     for (const { item } of selected) {
       try {
-        process.env.MANGA_TARGET_IDS = item.mangadexId;
+        process.env.MANGA_TARGET_IDS = item.chapterIndexId;
         await fetchMangaChapters();
         const refreshedManifest = getChapterManifest();
-        const refreshedMap = new Map((refreshedManifest.items || []).map((entry) => [entry.mangadexId, entry]));
-        const manifestItem = refreshedMap.get(item.mangadexId) || {};
-        stateTitles[item.mangadexId] = {
+        const refreshedMap = new Map(
+          (refreshedManifest.items || [])
+            .map((entry) => [entry.chapterIndexId || entry.mangadexId, entry])
+            .filter(([key]) => Boolean(key)),
+        );
+        const manifestItem = refreshedMap.get(item.chapterIndexId) || {};
+        const hasCoverage = hasAnyUsableChapters(manifestItem);
+        if (!hasCoverage) {
+          throw new Error('No readable chapter coverage was produced for this title.');
+        }
+        stateTitles[item.chapterIndexId] = {
           title: item.title,
+          chapterIndexId: item.chapterIndexId,
           mangaId: item.mangaId,
           anilistId: item.anilistId,
           mangadexId: item.mangadexId,
           lastAttemptAt: new Date().toISOString(),
           lastSuccessAt: new Date().toISOString(),
-          lastFailureAt: stateTitles[item.mangadexId]?.lastFailureAt || null,
+          lastFailureAt: stateTitles[item.chapterIndexId]?.lastFailureAt || null,
           consecutiveFailures: 0,
           latestEnglishCount: Number(manifestItem.counts?.en || 0),
           latestArabicCount: Number(manifestItem.counts?.ar || 0),
-          hasCoverage: hasAnyUsableChapters(manifestItem),
+          hasCoverage,
         };
         writeState(state);
         completed.push({
+          chapterIndexId: item.chapterIndexId,
           mangadexId: item.mangadexId,
           title: item.title,
           englishCount: Number(manifestItem.counts?.en || 0),
@@ -257,34 +286,38 @@ async function backfillMangaChapters() {
         });
         writeProgress({
           currentItem: {
+            chapterIndexId: item.chapterIndexId,
             mangadexId: item.mangadexId,
             title: item.title,
             status: 'completed',
           },
         });
       } catch (error) {
-        const previousFailures = Number(stateTitles[item.mangadexId]?.consecutiveFailures || 0);
-        stateTitles[item.mangadexId] = {
+        const previousFailures = Number(stateTitles[item.chapterIndexId]?.consecutiveFailures || 0);
+        stateTitles[item.chapterIndexId] = {
           title: item.title,
+          chapterIndexId: item.chapterIndexId,
           mangaId: item.mangaId,
           anilistId: item.anilistId,
           mangadexId: item.mangadexId,
           lastAttemptAt: new Date().toISOString(),
-          lastSuccessAt: stateTitles[item.mangadexId]?.lastSuccessAt || null,
+          lastSuccessAt: stateTitles[item.chapterIndexId]?.lastSuccessAt || null,
           lastFailureAt: new Date().toISOString(),
           consecutiveFailures: previousFailures + 1,
-          latestEnglishCount: Number(chapterMap.get(item.mangadexId)?.counts?.en || 0),
-          latestArabicCount: Number(chapterMap.get(item.mangadexId)?.counts?.ar || 0),
-          hasCoverage: hasAnyUsableChapters(chapterMap.get(item.mangadexId)),
+          latestEnglishCount: Number(chapterMap.get(item.chapterIndexId)?.counts?.en || 0),
+          latestArabicCount: Number(chapterMap.get(item.chapterIndexId)?.counts?.ar || 0),
+          hasCoverage: hasAnyUsableChapters(chapterMap.get(item.chapterIndexId)),
         };
         writeState(state);
         failed.push({
+          chapterIndexId: item.chapterIndexId,
           mangadexId: item.mangadexId,
           title: item.title,
           error: error.message,
         });
         writeProgress({
           currentItem: {
+            chapterIndexId: item.chapterIndexId,
             mangadexId: item.mangadexId,
             title: item.title,
             status: 'failed',

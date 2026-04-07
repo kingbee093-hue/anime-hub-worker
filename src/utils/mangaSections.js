@@ -7,17 +7,21 @@ function buildCatalogEntryMaps(entries) {
   const byMangaId = new Map();
   const byAniListId = new Map();
   const byMangaDexId = new Map();
+  const byChapterIndexId = new Map();
 
   for (const entry of entries || []) {
     if (!entry || !entry.mangaId) continue;
     byMangaId.set(String(entry.mangaId), entry);
     byAniListId.set(String(entry.anilistId || entry.mangaId), entry);
+    if (entry.chapterIndexId) {
+      byChapterIndexId.set(String(entry.chapterIndexId), entry);
+    }
     if (entry.mangadexId) {
       byMangaDexId.set(String(entry.mangadexId), entry);
     }
   }
 
-  return { byMangaId, byAniListId, byMangaDexId };
+  return { byMangaId, byAniListId, byMangaDexId, byChapterIndexId };
 }
 
 function buildReleasingSection(catalogEntries, limit = DEFAULT_SECTION_LIMIT) {
@@ -54,6 +58,7 @@ function buildNewChaptersSection(catalogEntries, chapterManifest, limit = DEFAUL
   const ranked = manifestItems
     .map((item) => {
       const catalogEntry =
+        maps.byChapterIndexId.get(String(item.chapterIndexId || '')) ||
         maps.byMangaDexId.get(String(item.mangadexId || '')) ||
         maps.byAniListId.get(String(item.anilistId || '')) ||
         maps.byMangaId.get(String(item.mangaId || ''));

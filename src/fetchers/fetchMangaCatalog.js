@@ -8,12 +8,18 @@ const {
 } = require('../utils/formatters');
 const { isAdultContent, isManga } = require('../utils/filters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
-const { discoverProviderTitlesForManga } = require('../utils/mangaFallbackProviders');
+const {
+  discoverProviderTitlesForManga,
+  resolveBestFallbackProvider,
+} = require('../utils/mangaFallbackProviders');
 const {
   writeNewChaptersSection,
   writeReleasingSection,
   DEFAULT_SECTION_LIMIT,
 } = require('../utils/mangaSections');
+const { buildChapterIndexId } = require('../utils/mangaBackfillData');
+const manualMangaMappings = require('../config/manualMangaMappings.json');
+const manualMangaSourceMappings = require('../config/manualMangaSourceMappings.json');
 
 const MANGADEX_API = 'https://api.mangadex.org';
 const CATALOG_PAGE_SIZE = 120;
@@ -395,12 +401,39 @@ function mappingPriorityScore(manga) {
   return bonus;
 }
 
+function canUseProviderSourceMapping(manga) {
+  const format = String(manga?.format || '').toUpperCase();
+  return format === 'MANGA' || format === 'ONE_SHOT';
+}
+
+function getManualMangaDexMapping(manga) {
+  return manualMangaMappings[String(manga.anilistId || manga.mangaId)] || null;
+}
+
+function getManualChapterSourceMapping(manga) {
+  return manualMangaSourceMappings[String(manga.anilistId || manga.mangaId)] || null;
+}
+
 async function resolveMangaDexMapping(manga, existingCache, stats = null) {
   const cached = existingCache[String(manga.anilistId || manga.mangaId)];
   if (cached?.mangadexId) {
     if (stats) stats.cachedHits += 1;
     console.log(`Mapping cache hit: "${manga.title}" -> ${cached.mangadexId} (${cached.source || 'cached'}).`);
     return cached;
+  }
+
+  const manualMapping = getManualMangaDexMapping(manga);
+  if (manualMapping?.mangadexId) {
+    if (stats) stats.manualHits += 1;
+    console.log(`Mapping success: "${manga.title}" -> ${manualMapping.mangadexId} via manual override.`);
+    return {
+      ...manualMapping,
+      matchedAt: manualMapping.matchedAt || new Date().toISOString(),
+      title: manga.title,
+      anilistId: manga.anilistId || manga.mangaId,
+      idMal: manga.idMal || null,
+      mangadexUrl: manualMapping.mangadexUrl || `https://mangadex.org/title/${manualMapping.mangadexId}`,
+    };
   }
 
   const anilistLinkedId = getAniListLinkedMangaDexId(manga);
@@ -519,10 +552,72 @@ function attachMapping(manga, mapping) {
   if (!mapping?.mangadexId) return manga;
   return {
     ...manga,
+    chapterIndexId: buildChapterIndexId({ ...manga, mangadexId: mapping.mangadexId }),
     mangadexId: mapping.mangadexId,
     mangadexUrl: mapping.mangadexUrl || `https://mangadex.org/title/${mapping.mangadexId}`,
     mangadexMappingSource: mapping.source || '',
     mangadexMappingConfidence: mapping.confidence || 0,
+  };
+}
+
+async function resolveChapterSourceMapping(manga, existingSourceCache, stats = null) {
+  if (!canUseProviderSourceMapping(manga)) {
+    return null;
+  }
+
+  const cached = existingSourceCache[String(manga.anilistId || manga.mangaId)];
+  if (cached?.provider && cached?.providerId) {
+    if (stats) stats.providerCacheHits += 1;
+    console.log(`Chapter source cache hit: "${manga.title}" -> ${cached.provider} (${cached.providerId}).`);
+    return cached;
+  }
+
+  const manualSource = getManualChapterSourceMapping(manga);
+  if (manualSource?.provider && manualSource?.providerId) {
+    if (stats) stats.providerManualHits += 1;
+    console.log(`Chapter source success: "${manga.title}" -> ${manualSource.provider} via manual override.`);
+    return {
+      ...manualSource,
+      title: manga.title,
+      mangaId: manga.mangaId,
+      anilistId: manga.anilistId || manga.mangaId,
+      updatedAt: manualSource.updatedAt || new Date().toISOString(),
+    };
+  }
+
+  const bestProvider = await resolveBestFallbackProvider(manga, null);
+  if (bestProvider?.provider && bestProvider?.providerId && Number(bestProvider.chapterCount || 0) > 0) {
+    if (stats) stats.providerResolvedHits += 1;
+    console.log(
+      `Chapter source success: "${manga.title}" -> ${bestProvider.provider} (${bestProvider.chapterCount} chapter candidates).`,
+    );
+    return {
+      ...bestProvider,
+      title: manga.title,
+      mangaId: manga.mangaId,
+      anilistId: manga.anilistId || manga.mangaId,
+    };
+  }
+
+  if (stats) stats.providerUnresolved += 1;
+  console.warn(`Chapter source unresolved: "${manga.title}".`);
+  return null;
+}
+
+function attachChapterSource(manga, sourceMapping) {
+  if (!sourceMapping?.provider || !sourceMapping?.providerId) return manga;
+  return {
+    ...manga,
+    chapterIndexId: buildChapterIndexId({
+      ...manga,
+      chapterSourceProvider: sourceMapping.provider,
+    }),
+    chapterSourceProvider: sourceMapping.provider,
+    chapterSourceId: sourceMapping.providerId,
+    chapterSourceTitle: sourceMapping.providerTitle || '',
+    chapterSourceChapterCount: Number(sourceMapping.chapterCount || 0),
+    chapterSourceConfidence: Number(sourceMapping.confidence || 0),
+    chapterSourceUpdatedAt: sourceMapping.updatedAt || null,
   };
 }
 
@@ -586,16 +681,23 @@ async function fetchMangaCatalog() {
 
   let catalog = sortCatalog(Array.from(deduped.values())).slice(0, CATALOG_MAX_ITEMS);
   const mappingCache = readObjectJson(CONFIG.API_PATHS.MANGA_MAPPING);
+  const chapterSourceCache = readObjectJson(CONFIG.API_PATHS.MANGA_CHAPTER_SOURCE_MAPPING);
   const nextMappingCache = { ...mappingCache };
+  const nextChapterSourceCache = { ...chapterSourceCache };
   let mappingAttempts = 0;
   const mappingStats = {
     cachedHits: 0,
+    manualHits: 0,
     directExternalHits: 0,
     alHits: 0,
     malHits: 0,
     otherDirectHits: 0,
     fuzzyHits: 0,
     unmapped: 0,
+    providerCacheHits: 0,
+    providerManualHits: 0,
+    providerResolvedHits: 0,
+    providerUnresolved: 0,
   };
 
   const prioritizedIndexes = catalog
@@ -611,10 +713,24 @@ async function fetchMangaCatalog() {
     processedMappingIds.add(processedKey);
 
     const cachedMapping = nextMappingCache[String(manga.anilistId || manga.mangaId)];
+    const knownChapterSource =
+      nextChapterSourceCache[processedKey] ||
+      getManualChapterSourceMapping(manga);
     if (cachedMapping?.mangadexId) {
       mappingStats.cachedHits += 1;
-      catalog[index] = attachMapping(manga, cachedMapping);
+      catalog[index] = attachChapterSource(attachMapping(manga, cachedMapping), knownChapterSource);
       continue;
+    }
+
+    if (knownChapterSource?.provider && knownChapterSource?.providerId) {
+      catalog[index] = attachChapterSource(manga, knownChapterSource);
+      nextChapterSourceCache[processedKey] = {
+        ...knownChapterSource,
+        title: manga.title,
+        mangaId: manga.mangaId,
+        anilistId: manga.anilistId || manga.mangaId,
+        updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
+      };
     }
 
     if (mappingAttempts >= MANGADEX_MAPPING_ATTEMPTS_PER_RUN) {
@@ -628,9 +744,46 @@ async function fetchMangaCatalog() {
     mappingAttempts += 1;
     if (resolved?.mangadexId) {
       nextMappingCache[String(manga.anilistId || manga.mangaId)] = resolved;
+      delete nextChapterSourceCache[processedKey];
       catalog[index] = attachMapping(manga, resolved);
+      continue;
+    }
+
+    const chapterSource = await resolveChapterSourceMapping(manga, nextChapterSourceCache, mappingStats);
+    if (chapterSource?.provider && chapterSource?.providerId) {
+      nextChapterSourceCache[processedKey] = chapterSource;
+      catalog[index] = attachChapterSource(manga, chapterSource);
     }
   }
+
+  catalog = catalog.map((manga) => {
+    const processedKey = String(manga.anilistId || manga.mangaId);
+    const cachedMapping =
+      nextMappingCache[processedKey] ||
+      manualMangaMappings[processedKey] ||
+      manualMangaMappings[String(manga.mangaId || '')];
+    const knownChapterSource =
+      nextChapterSourceCache[processedKey] ||
+      manualMangaSourceMappings[processedKey] ||
+      manualMangaSourceMappings[String(manga.mangaId || '')] ||
+      getManualChapterSourceMapping(manga);
+
+    let enriched = manga;
+    if (cachedMapping?.mangadexId) {
+      enriched = attachMapping(enriched, cachedMapping);
+    }
+    if (knownChapterSource?.provider && knownChapterSource?.providerId) {
+      nextChapterSourceCache[processedKey] = {
+        ...knownChapterSource,
+        title: manga.title,
+        mangaId: manga.mangaId,
+        anilistId: manga.anilistId || manga.mangaId,
+        updatedAt: knownChapterSource.updatedAt || new Date().toISOString(),
+      };
+      enriched = attachChapterSource(enriched, nextChapterSourceCache[processedKey]);
+    }
+    return enriched;
+  });
 
   const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
   const lookup = {};
@@ -671,6 +824,7 @@ async function fetchMangaCatalog() {
 
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_lookup`, lookup);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_MAPPING, nextMappingCache);
+  writeJsonIfChanged(CONFIG.API_PATHS.MANGA_CHAPTER_SOURCE_MAPPING, nextChapterSourceCache);
 
   for (const [genre, items] of genreBuckets.entries()) {
     const sortedItems = sortCatalog(
@@ -681,7 +835,10 @@ async function fetchMangaCatalog() {
 
   for (const source of MANGA_CATALOG_SOURCES) {
     const items = (sectionBuckets.get(source.label) || [])
-      .map((item) => attachMapping(item, nextMappingCache[String(item.anilistId || item.mangaId)]))
+      .map((item) => attachChapterSource(
+        attachMapping(item, nextMappingCache[String(item.anilistId || item.mangaId)]),
+        nextChapterSourceCache[String(item.anilistId || item.mangaId)],
+      ))
       .slice(0, source.limit || SECTION_ITEMS);
 
     if (source.sectionPath) {
@@ -722,7 +879,10 @@ async function fetchMangaCatalog() {
   }
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
   console.log(
-    `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,
+    `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, manual: ${mappingStats.manualHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,
+  );
+  console.log(
+    `Chapter source mapping summary -> cache hits: ${mappingStats.providerCacheHits}, manual: ${mappingStats.providerManualHits}, resolved: ${mappingStats.providerResolvedHits}, unresolved: ${mappingStats.providerUnresolved}.`,
   );
 }
 
