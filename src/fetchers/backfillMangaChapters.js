@@ -18,6 +18,7 @@ const TARGET_IDS = new Set(
     .map((item) => item.trim())
     .filter(Boolean),
 );
+const chapterCountsCache = new Map();
 
 function getHoursSince(isoDate) {
   if (!isoDate) return Number.POSITIVE_INFINITY;
@@ -58,11 +59,55 @@ function getEntryIds(item) {
 
 function getManifestCounts(manifestItem) {
   const counts = manifestItem?.counts || {};
+  const legacyEn = Number(manifestItem?.englishChapterCount || 0);
+  const legacyAr = Number(manifestItem?.arabicChapterCount || 0);
+  const legacyTotal = Number(manifestItem?.totalChapters || 0);
   return {
-    en: Number(counts.en || 0),
-    ar: Number(counts.ar || 0),
-    total: Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0),
+    en: Math.max(Number(counts.en || 0), legacyEn),
+    ar: Math.max(Number(counts.ar || 0), legacyAr),
+    total: Math.max(
+      Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0),
+      legacyTotal,
+      legacyEn + legacyAr,
+    ),
   };
+}
+
+function getStoredChapterCounts(chapterIndexId) {
+  if (!chapterIndexId) {
+    return { en: 0, ar: 0, total: 0 };
+  }
+
+  if (chapterCountsCache.has(chapterIndexId)) {
+    return chapterCountsCache.get(chapterIndexId);
+  }
+
+  const filePath = `${CONFIG.API_PATHS.MANGA_CHAPTERS}/${chapterIndexId}`;
+  let chapterIndex = null;
+  try {
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    chapterIndex = require(`../../api/${filePath}.json`);
+  } catch (_) {
+    chapterCountsCache.set(chapterIndexId, { en: 0, ar: 0, total: 0 });
+    return chapterCountsCache.get(chapterIndexId);
+  }
+
+  const counts = chapterIndex?.counts || {};
+  const languages = chapterIndex?.languages || {};
+  const resolved = {
+    en: Math.max(Number(counts.en || 0), Array.isArray(languages.en) ? languages.en.length : 0),
+    ar: Math.max(Number(counts.ar || 0), Array.isArray(languages.ar) ? languages.ar.length : 0),
+    total: 0,
+  };
+  resolved.total = Math.max(
+    Number(chapterIndex?.totalChapters || 0),
+    Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0),
+    Object.values(languages).reduce((sum, value) => sum + (Array.isArray(value) ? value.length : 0), 0),
+    resolved.en + resolved.ar,
+  );
+
+  chapterCountsCache.set(chapterIndexId, resolved);
+  return resolved;
 }
 
 function hasAnyUsableChapters(manifestItem) {
@@ -80,7 +125,13 @@ function isFailureCoolingDown(stateItem) {
 function scoreCandidate(item, manifestItem, stateItem) {
   const popularity = Number(item.popularity || 0);
   const expected = Number(item.chapters || 0);
-  const counts = getManifestCounts(manifestItem);
+  const manifestCounts = getManifestCounts(manifestItem);
+  const storedCounts = getStoredChapterCounts(item.chapterIndexId);
+  const counts = {
+    en: Math.max(manifestCounts.en, storedCounts.en),
+    ar: Math.max(manifestCounts.ar, storedCounts.ar),
+    total: Math.max(manifestCounts.total, storedCounts.total),
+  };
   const hasUsableCoverage = counts.total >= MIN_AVAILABLE_CHAPTERS;
 
   if (!FORCE_ALL && isFailureCoolingDown(stateItem)) {
