@@ -1021,6 +1021,7 @@ async function fetchMangaChapters() {
 
     for (const language of CHAPTER_LANGUAGES) {
       try {
+        console.log(`Starting ${language.toUpperCase()} chapter fetch for ${entry.title}.`);
         let chapters = [];
         if (entry.mangadexId) {
           chapters = await fetchLanguageChapters(entry.mangadexId, language);
@@ -1050,6 +1051,9 @@ async function fetchMangaChapters() {
           chapters = fallback.chapters;
           englishFallbackMapping = fallback.mapping;
         }
+        console.log(
+          `Finished ${language.toUpperCase()} chapter fetch for ${entry.title}: ${chapters.length} chapter(s).`,
+        );
         if (chapters.length > 0) {
           languages[language] = chapters;
         }
@@ -1102,7 +1106,9 @@ async function fetchMangaChapters() {
         .join(', ')}${chapterIndex.englishFallbackProvider ? ` | EN fallback=${chapterIndex.englishFallbackProvider}` : ''}.`,
     );
 
+    console.log(`Writing chapter index file for ${entry.title} (${entry.chapterIndexId}).`);
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/${entry.chapterIndexId}`, chapterIndex);
+    console.log(`Wrote chapter index file for ${entry.title}.`);
     manifest.items.push({
       chapterIndexId: entry.chapterIndexId,
       mangaId: entry.mangaId,
