@@ -4,7 +4,7 @@
   "anilistId": 86099,
   "mangadexId": "c1c408f6-3dec-4d62-b6b3-b57e615d933c",
   "title": "Wind Breaker",
-  "updatedAt": "2026-04-07T16:07:53.169Z",
+  "updatedAt": "2026-04-07T16:10:41.878Z",
   "availableLanguages": [
     "en"
   ],
@@ -111,8 +111,6 @@
       },
       {
         "id": "mangapill:5830-10211000/wind-breaker-nii-satoru-chapter-211",
-        "provider": "mangapill",
-        "providerChapterId": "5830-10211000/wind-breaker-nii-satoru-chapter-211",
         "title": "Chapter 211",
         "chapter": "211",
         "volume": "",
@@ -147,7 +145,9 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5830-10211000/wind-breaker-nii-satoru-chapter-211"
       },
       {
         "id": "mangapill:5830-10210000/wind-breaker-nii-satoru-chapter-210",
@@ -7799,8 +7799,6 @@
       },
       {
         "id": "mangahere:wind_breaker_nii_satoru/c032.5",
-        "provider": "mangahere",
-        "providerChapterId": "wind_breaker_nii_satoru/c032.5",
         "title": "Ch.032.5",
         "chapter": "32.5",
         "volume": "",
@@ -7822,7 +7820,9 @@
         "publishedAt": "Apr 25,2022",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "wind_breaker_nii_satoru/c032.5"
       },
       {
         "id": "mangapill:5830-10032000/wind-breaker-nii-satoru-chapter-32",
@@ -8189,8 +8189,6 @@
       },
       {
         "id": "mangahere:wind_breaker_nii_satoru/c023.5",
-        "provider": "mangahere",
-        "providerChapterId": "wind_breaker_nii_satoru/c023.5",
         "title": "Ch.023.5",
         "chapter": "23.5",
         "volume": "",
@@ -8209,12 +8207,12 @@
         "publishedAt": "Jul 20,2023",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "wind_breaker_nii_satoru/c023.5"
       },
       {
         "id": "mangahere:wind_breaker_nii_satoru/c023.1",
-        "provider": "mangahere",
-        "providerChapterId": "wind_breaker_nii_satoru/c023.1",
         "title": "Ch.023.1",
         "chapter": "23.1",
         "volume": "",
@@ -8233,7 +8231,9 @@
         "publishedAt": "Aug 09,2023",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "wind_breaker_nii_satoru/c023.1"
       },
       {
         "id": "mangapill:5830-10023000/wind-breaker-nii-satoru-chapter-23",
@@ -9197,8 +9197,6 @@
       },
       {
         "id": "mangahere:wind_breaker_nii_satoru/c001.2",
-        "provider": "mangahere",
-        "providerChapterId": "wind_breaker_nii_satoru/c001.2",
         "title": "Ch.001.2",
         "chapter": "1.2",
         "volume": "",
@@ -9250,12 +9248,12 @@
         "publishedAt": "Feb 07,2024",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "wind_breaker_nii_satoru/c001.2"
       },
       {
         "id": "mangahere:wind_breaker_nii_satoru/c001.1",
-        "provider": "mangahere",
-        "providerChapterId": "wind_breaker_nii_satoru/c001.1",
         "title": "Ch.001.1",
         "chapter": "1.1",
         "volume": "",
@@ -9297,7 +9295,9 @@
         "publishedAt": "Feb 07,2024",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "wind_breaker_nii_satoru/c001.1"
       },
       {
         "id": "mangapill:5830-10001000/wind-breaker-nii-satoru-chapter-1",
@@ -9383,10 +9383,10 @@
       }
     ]
   },
-  "chapterSourceProvider": "mangahere",
-  "chapterSourceId": "wind_breaker_nii_satoru",
-  "chapterSourceTitle": "Wind Breaker (NII Satoru)",
-  "englishFallbackProvider": "mangahere",
-  "englishFallbackProviderTitle": "Wind Breaker (NII Satoru)",
-  "englishFallbackChapterCount": 219
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }
