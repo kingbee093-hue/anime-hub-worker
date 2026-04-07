@@ -146,8 +146,8 @@ function writeFallbackMappingMap(mappingMap) {
   });
 }
 
-function buildRefreshPlan(entries, manifestMap, forceFullRefresh) {
-  if (forceFullRefresh) {
+function buildRefreshPlan(entries, manifestMap, forceFullRefresh, forceTargeted = false) {
+  if (forceFullRefresh || forceTargeted) {
     return {
       refreshSet: new Set(entries.map((entry) => entry.chapterIndexId)),
       releasingCount: entries.filter((entry) => isReleasingStatus(entry.status)).length,
@@ -974,7 +974,12 @@ async function fetchMangaChapters() {
   );
   const existingManifestMap = getManifestMap();
   const fallbackMappingMap = getFallbackMappingMap();
-  const refreshPlan = buildRefreshPlan(uniqueEntries, existingManifestMap, forceFullRefresh);
+  const refreshPlan = buildRefreshPlan(
+    uniqueEntries,
+    existingManifestMap,
+    forceFullRefresh,
+    targetMangaIds.size > 0,
+  );
   const untouchedManifestItems = targetMangaIds.size > 0
     ? Array.from(existingManifestMap.values()).filter((item) =>
         !targetMangaIds.has(String(item.chapterIndexId || '')) &&
@@ -993,6 +998,9 @@ async function fetchMangaChapters() {
   console.log(
     `Manga chapter refresh plan -> new releasing: ${refreshPlan.newReleasingCount}, new library: ${refreshPlan.newLibraryCount}, stale releasing: ${refreshPlan.staleReleasingCount}, stale library: ${refreshPlan.staleLibraryCount}, skipped: ${refreshPlan.skippedCount}, forceFull: ${forceFullRefresh}, targeted: ${targetMangaIds.size}`,
   );
+  if (targetMangaIds.size > 0) {
+    console.log(`Targeted chapter refresh mode enabled: forcing ${uniqueEntries.length} selected title(s) through chapter rebuild.`);
+  }
 
   for (const entry of uniqueEntries) {
     if (!refreshPlan.refreshSet.has(entry.chapterIndexId)) {
