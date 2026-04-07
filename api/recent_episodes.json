@@ -24,7 +24,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 23,
     "genres": [
       "Comedy",
       "Fantasy"
@@ -185,6 +185,26 @@
         "id": 139,
         "name": "Love Triangle",
         "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 123,
+        "name": "Male Harem",
+        "description": "Main cast features the protagonist plus several male characters who are romantically interested in them.",
         "category": "Theme-Romance",
         "rank": 20,
         "isGeneralSpoiler": false,
