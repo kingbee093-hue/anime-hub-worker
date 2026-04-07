@@ -1977,6 +1977,16 @@
         "isAdult": false
       },
       {
+        "id": 490,
+        "name": "Anachronism",
+        "description": "Prominently features elements that are out of place in the historical period the work takes place in, particularly modern elements in a historical setting.",
+        "category": "Setting-Time",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 494,
         "name": "Twins",
         "description": "Prominently features two or more siblings that were born at one birth.",
@@ -1994,16 +2004,6 @@
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 490,
-        "name": "Anachronism",
-        "description": "Prominently features elements that are out of place in the historical period the work takes place in, particularly modern elements in a historical setting.",
-        "category": "Setting-Time",
-        "rank": 53,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2891,6 +2891,16 @@
         "isAdult": false
       },
       {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 65,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 115,
         "name": "Idol",
         "description": "Centers around the life and activities of an idol.",
@@ -2909,16 +2919,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": true
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 62,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
       },
       {
         "id": 1742,
@@ -3557,6 +3557,16 @@
         "isAdult": false
       },
       {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 253,
         "name": "Gods",
         "description": "Prominently features a character of divine or religious nature.",
@@ -3571,16 +3581,6 @@
         "name": "Rural",
         "description": "Partly or completely set in the countryside.",
         "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
