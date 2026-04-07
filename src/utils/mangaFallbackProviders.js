@@ -23,9 +23,11 @@ const PROVIDER_LABELS = {
 };
 const MAX_SEARCH_RESULTS_PER_QUERY = 3;
 const MAX_PROVIDER_CANDIDATES = 2;
-const PROVIDER_SEARCH_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_SEARCH_TIMEOUT_MS || 20000);
-const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_MS || 30000);
-const PROVIDER_PAGES_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_PAGES_TIMEOUT_MS || 45000);
+const PROVIDER_SEARCH_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_SEARCH_TIMEOUT_MS || 12000);
+const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_MS || 15000);
+const PROVIDER_PAGES_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_PAGES_TIMEOUT_MS || 15000);
+const PROVIDER_PROBE_CHAPTER_LIMIT = Number(process.env.MANGA_PROVIDER_PROBE_CHAPTER_LIMIT || 1);
+const PROVIDER_RESOLUTION_BUDGET_MS = Number(process.env.MANGA_PROVIDER_RESOLUTION_BUDGET_MS || 45000);
 
 function normalizeText(value) {
   return String(value || '')
@@ -240,6 +242,12 @@ function extractPageUrls(pagesPayload) {
 function pickProbeChapters(chapters) {
   if (!Array.isArray(chapters) || chapters.length === 0) return [];
 
+  const requestedLimit = Math.max(1, PROVIDER_PROBE_CHAPTER_LIMIT);
+  if (requestedLimit <= 1) {
+    const latest = chapters[0] || null;
+    return latest?.id ? [latest] : [];
+  }
+
   const picks = [];
   const indexes = [
     0,
@@ -254,7 +262,7 @@ function pickProbeChapters(chapters) {
     }
   }
 
-  return picks;
+  return picks.slice(0, requestedLimit);
 }
 
 async function probeReadableCandidate(providerKey, info) {
@@ -311,10 +319,14 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
   let best = null;
 
   for (const providerKey of PROVIDER_PRIORITY) {
+    const providerStartedAt = Date.now();
     const provider = providers[providerKey];
     const providerCandidates = await collectProviderCandidates(providerKey, candidateTitles);
 
     for (const candidate of providerCandidates) {
+      if ((Date.now() - providerStartedAt) > PROVIDER_RESOLUTION_BUDGET_MS) {
+        break;
+      }
       try {
         const info = await provider.fetchInfo(candidate.providerId);
         const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
@@ -354,10 +366,14 @@ async function resolveFallbackProviderCandidates(manga) {
   const ranked = [];
 
   for (const providerKey of PROVIDER_PRIORITY) {
+    const providerStartedAt = Date.now();
     const provider = providers[providerKey];
     const providerCandidates = await collectProviderCandidates(providerKey, candidateTitles);
 
     for (const candidate of providerCandidates) {
+      if ((Date.now() - providerStartedAt) > PROVIDER_RESOLUTION_BUDGET_MS) {
+        break;
+      }
       try {
         const info = await provider.fetchInfo(candidate.providerId);
         const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
