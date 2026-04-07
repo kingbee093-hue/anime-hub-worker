@@ -37,6 +37,7 @@ const FALLBACK_PAGE_MAX_RETRIES = Number(process.env.MANGA_FALLBACK_PAGE_MAX_RET
 const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_MS || 45000);
 const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
 const FALLBACK_PROGRESS_EVERY = Number(process.env.MANGA_FALLBACK_PROGRESS_EVERY || 10);
+const FALLBACK_CHAPTER_BUDGET_MS = Number(process.env.MANGA_FALLBACK_CHAPTER_BUDGET_MS || 120000);
 
 function isProviderBlockedError(error) {
   const message = String(error?.message || '').toLowerCase();
@@ -511,8 +512,17 @@ async function buildEnglishFallbackChapters(
     }
 
     let resolved = false;
+    const chapterBudgetStartedAt = Date.now();
 
     for (const { providerEntry, chapter } of options) {
+      if (Date.now() - chapterBudgetStartedAt >= FALLBACK_CHAPTER_BUDGET_MS) {
+        const chapterNumber = key.split('|')[1];
+        console.warn(
+          `Fallback chapter budget exceeded for ${entry.title} ch ${chapterNumber} after ${FALLBACK_CHAPTER_BUDGET_MS}ms. Skipping remaining providers for this chapter.`,
+        );
+        break;
+      }
+
       const providerKey = providerEntry.mapping.provider;
       if (blockedProviders.has(providerKey)) {
         continue;
@@ -528,7 +538,11 @@ async function buildEnglishFallbackChapters(
         console.log(
           `Trying ${PROVIDER_LABELS[providerKey] || providerKey} for ${entry.title} chapter ${chapterNumber ?? '?'} (${chapter.id}).`,
         );
-        const pages = await fetchFallbackPagesWithRetry(providerEntry.provider, chapter.id);
+        const pages = await fetchFallbackPagesWithRetry(
+          providerEntry.provider,
+          chapter.id,
+          `${entry.title} ch ${chapterNumber ?? '?'} via ${PROVIDER_LABELS[providerKey] || providerKey}`,
+        );
         const pageUrls = Array.isArray(pages)
           ? pages
               .map((page) => page?.img)
@@ -611,12 +625,15 @@ async function buildEnglishFallbackChapters(
   return { chapters: baseEnglish, mapping: null };
 }
 
-async function fetchFallbackPagesWithRetry(provider, chapterId) {
+async function fetchFallbackPagesWithRetry(provider, chapterId, contextLabel = '') {
   let attempt = 0;
   let lastError = null;
 
   while (attempt < FALLBACK_PAGE_MAX_RETRIES) {
     try {
+      console.log(
+        `Fallback page attempt ${attempt + 1}/${FALLBACK_PAGE_MAX_RETRIES}${contextLabel ? ` for ${contextLabel}` : ''}.`,
+      );
       return await Promise.race([
         provider.fetchChapterPages(chapterId),
         new Promise((_, reject) => {
@@ -627,6 +644,9 @@ async function fetchFallbackPagesWithRetry(provider, chapterId) {
       lastError = error;
       attempt += 1;
       const statusCode = error?.response?.status;
+      console.warn(
+        `Fallback page attempt ${attempt}/${FALLBACK_PAGE_MAX_RETRIES} failed${contextLabel ? ` for ${contextLabel}` : ''}: ${error.message}`,
+      );
       if (statusCode === 429 && attempt < FALLBACK_PAGE_MAX_RETRIES) {
         await delay(FALLBACK_DELAY_MS * attempt * 3);
         continue;
@@ -831,7 +851,16 @@ async function buildProviderOnlyEnglishChapters(
     }
 
     let resolved = false;
+    const chapterBudgetStartedAt = Date.now();
     for (const { providerEntry, chapter } of options) {
+      if (Date.now() - chapterBudgetStartedAt >= FALLBACK_CHAPTER_BUDGET_MS) {
+        const chapterNumber = key.split('|')[1];
+        console.warn(
+          `Provider-backed chapter budget exceeded for ${entry.title} ch ${chapterNumber} after ${FALLBACK_CHAPTER_BUDGET_MS}ms. Skipping remaining providers for this chapter.`,
+        );
+        break;
+      }
+
       const providerKey = providerEntry.mapping.provider;
       if (blockedProviders.has(providerKey)) {
         continue;
@@ -847,7 +876,11 @@ async function buildProviderOnlyEnglishChapters(
         console.log(
           `Trying provider source ${PROVIDER_LABELS[providerKey] || providerKey} for ${entry.title} chapter ${chapterNumber ?? '?' } (${chapter.id}).`,
         );
-        const pages = await fetchFallbackPagesWithRetry(providerEntry.provider, chapter.id);
+        const pages = await fetchFallbackPagesWithRetry(
+          providerEntry.provider,
+          chapter.id,
+          `${entry.title} ch ${chapterNumber ?? '?'} via ${PROVIDER_LABELS[providerKey] || providerKey}`,
+        );
         const pageUrls = Array.isArray(pages)
           ? pages.map((page) => page?.img).filter(Boolean).map((url) => String(url))
           : [];
