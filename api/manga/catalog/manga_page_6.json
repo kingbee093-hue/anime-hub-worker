@@ -500,7 +500,11 @@
         "site": "Official Site",
         "url": "https://dengekibunko.jp/title/sao/"
       }
-    ]
+    ],
+    "mangadexId": "888b9646-1701-4caf-ab89-78a0544f377b",
+    "mangadexUrl": "https://mangadex.org/title/888b9646-1701-4caf-ab89-78a0544f377b",
+    "mangadexMappingSource": "fuzzy",
+    "mangadexMappingConfidence": 0.94
   },
   {
     "mangaId": 101134,
@@ -1791,7 +1795,11 @@
     "isAdult": false,
     "anilist_url": "https://anilist.co/manga/78621",
     "mal_url": "https://myanimelist.net/manga/48621",
-    "externalLinks": []
+    "externalLinks": [],
+    "mangadexId": "4bde51e5-e420-45a4-98e9-7405bf2d59ff",
+    "mangadexUrl": "https://mangadex.org/title/4bde51e5-e420-45a4-98e9-7405bf2d59ff",
+    "mangadexMappingSource": "fuzzy",
+    "mangadexMappingConfidence": 0.94
   },
   {
     "mangaId": 116062,
@@ -2009,7 +2017,7 @@
     "rating": 6.7,
     "averageScore": 67,
     "meanScore": 67,
-    "popularity": 14671,
+    "popularity": 14683,
     "trending": 8,
     "favourites": 424,
     "source": "LIGHT_NOVEL",
@@ -2363,7 +2371,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 14595,
+    "popularity": 14600,
     "trending": 0,
     "favourites": 391,
     "source": "ORIGINAL",
@@ -5766,6 +5774,163 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 116333,
+    "anilistId": 116333,
+    "idMal": 118819,
+    "title": "I Have a Crush at Work",
+    "titleRomaji": "Kono Kaisha ni Suki na Hito ga Imasu",
+    "titleEnglish": "I Have a Crush at Work",
+    "titleNative": "この会社に好きな人がいます",
+    "synonyms": [
+      "Can You Keep a Secret?",
+      "บริษัทนี้มีความรัก"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116333-XHv3cySppGPV.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx116333-XHv3cySppGPV.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx116333-XHv3cySppGPV.jpg",
+    "coverImageColor": "#f1c95d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/116333-fG4mEW8FQium.jpg",
+    "synopsis": "Yui Mitsuya and Masugu Tateishi aren't just any coworkers-they totally have the hots for each other. His helpful yet humble attitude makes her giddy, and her cuteness leaves him grinning like a fool. Problem is, they're trying to keep their new relationship under wraps to avoid making things awkward at work. But seeing how they can't keep their hands off each other, they run the risk of spilling their little secret with each passing day at the office. (Source: Kodansha USA)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2019,
+    "startDate": "2019-03-07",
+    "endDate": "2023-01-26",
+    "chapters": 147,
+    "volumes": 15,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 653,
+        "name": "Office Lady",
+        "description": "Prominently features a female office worker or OL.",
+        "category": "Cast-Traits",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1571,
+        "name": "Office",
+        "description": "Features people who work in a business office.",
+        "category": "Setting-Scene",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Akamaru Enomoto"
+    ],
+    "artists": [
+      "Akamaru Enomoto"
+    ],
+    "rating": 7.5,
+    "averageScore": 75,
+    "meanScore": 75,
+    "popularity": 14260,
+    "trending": 0,
+    "favourites": 251,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/116333",
+    "mal_url": "https://myanimelist.net/manga/118819",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/kaisha_suki"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kc.kodansha.co.jp/title?code=1000034738"
+      },
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/10834108156668590067"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://morning.kodansha.co.jp/c/kaishanisuki.html"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/i-have-a-crush-at-work/"
+      }
+    ],
+    "mangadexId": "3e8cf40f-ba17-480a-b60b-a675db032ee2",
+    "mangadexUrl": "https://mangadex.org/title/3e8cf40f-ba17-480a-b60b-a675db032ee2",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
     "mangaId": 30705,
     "anilistId": 30705,
     "idMal": 705,
@@ -6069,163 +6234,6 @@
     "mangadexUrl": "https://mangadex.org/title/c13b4714-2495-4ee1-b36a-726806c8db07",
     "mangadexMappingSource": "fuzzy",
     "mangadexMappingConfidence": 0.87
-  },
-  {
-    "mangaId": 116333,
-    "anilistId": 116333,
-    "idMal": 118819,
-    "title": "I Have a Crush at Work",
-    "titleRomaji": "Kono Kaisha ni Suki na Hito ga Imasu",
-    "titleEnglish": "I Have a Crush at Work",
-    "titleNative": "この会社に好きな人がいます",
-    "synonyms": [
-      "Can You Keep a Secret?",
-      "บริษัทนี้มีความรัก"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116333-XHv3cySppGPV.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx116333-XHv3cySppGPV.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx116333-XHv3cySppGPV.jpg",
-    "coverImageColor": "#f1c95d",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/116333-fG4mEW8FQium.jpg",
-    "synopsis": "Yui Mitsuya and Masugu Tateishi aren't just any coworkers-they totally have the hots for each other. His helpful yet humble attitude makes her giddy, and her cuteness leaves him grinning like a fool. Problem is, they're trying to keep their new relationship under wraps to avoid making things awkward at work. But seeing how they can't keep their hands off each other, they run the risk of spilling their little secret with each passing day at the office. (Source: Kodansha USA)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 2019,
-    "startDate": "2019-03-07",
-    "endDate": "2023-01-26",
-    "chapters": 147,
-    "volumes": 15,
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 653,
-        "name": "Office Lady",
-        "description": "Prominently features a female office worker or OL.",
-        "category": "Cast-Traits",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1571,
-        "name": "Office",
-        "description": "Features people who work in a business office.",
-        "category": "Setting-Scene",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 74,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 71,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 138,
-        "name": "Age Gap",
-        "description": "Prominently features romantic relations between people with a significant age difference.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Akamaru Enomoto"
-    ],
-    "artists": [
-      "Akamaru Enomoto"
-    ],
-    "rating": 7.5,
-    "averageScore": 75,
-    "meanScore": 75,
-    "popularity": 14249,
-    "trending": 0,
-    "favourites": 251,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/116333",
-    "mal_url": "https://myanimelist.net/manga/118819",
-    "externalLinks": [
-      {
-        "site": "Twitter",
-        "url": "https://twitter.com/kaisha_suki"
-      },
-      {
-        "site": "Kodansha",
-        "url": "https://kc.kodansha.co.jp/title?code=1000034738"
-      },
-      {
-        "site": "Comic Days",
-        "url": "https://comic-days.com/episode/10834108156668590067"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://morning.kodansha.co.jp/c/kaishanisuki.html"
-      },
-      {
-        "site": "Kodansha",
-        "url": "https://kodansha.us/series/i-have-a-crush-at-work/"
-      }
-    ],
-    "mangadexId": "3e8cf40f-ba17-480a-b60b-a675db032ee2",
-    "mangadexUrl": "https://mangadex.org/title/3e8cf40f-ba17-480a-b60b-a675db032ee2",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 30054,
@@ -8162,7 +8170,7 @@
     "rating": 6.4,
     "averageScore": 64,
     "meanScore": 65,
-    "popularity": 14110,
+    "popularity": 14119,
     "trending": 0,
     "favourites": 280,
     "source": "ORIGINAL",
@@ -9563,7 +9571,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 77,
-    "popularity": 13956,
+    "popularity": 13959,
     "trending": 0,
     "favourites": 342,
     "source": "ORIGINAL",
@@ -13975,148 +13983,6 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 139339,
-    "anilistId": 139339,
-    "idMal": 148212,
-    "title": "Into the Light, Once Again",
-    "titleRomaji": "Dasi Han Beon, Bin Sogeuro",
-    "titleEnglish": "Into the Light, Once Again",
-    "titleNative": "다시 한 번, 빛 속으로",
-    "synonyms": [
-      "Once Again Into the Light, Alone",
-      "重迎曙光",
-      "もう一度、光の中へ"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx139339-VnROu4poh9rw.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139339-VnROu4poh9rw.png",
-    "coverImageColor": "#c9f1f1",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/139339-TuBFEPsPOddW.jpg",
-    "synopsis": "When Princess Alisa is framed for a terrible crime, she is shocked to learn that her own family wants her executed. Feeling defeated, she finds herself reborn as the princess of a rival empire. And though her new family acts sweet and kind on the surface, she’s not sure they can be truly trusted. Luckily, with this new life comes new power. But what exactly is this mysterious magic that awakens in her? And more importantly, can she use it to get vengeance against those who once betrayed her? (Source: Tapas)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2021,
-    "startDate": "2021-09-02",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 243,
-        "name": "Reincarnation",
-        "description": "Features a character being born again after death, typically as another person or in another world.",
-        "category": "Theme-Other",
-        "rank": 90,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 29,
-        "name": "Magic",
-        "description": "Prominently features magical elements or the use of magic.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 207,
-        "name": "Full Color",
-        "description": "Manga that were initially published in full color.",
-        "category": "Technical",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 365,
-        "name": "Memory Manipulation",
-        "description": "Prominently features a character(s) who has had their memories altered.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1327,
-        "name": "Royal Affairs",
-        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Spoon",
-      "Tikatika",
-      "Yuya"
-    ],
-    "artists": [
-      "Yuya"
-    ],
-    "rating": 7.5,
-    "averageScore": 75,
-    "meanScore": 75,
-    "popularity": 13588,
-    "trending": 1,
-    "favourites": 514,
-    "source": "OTHER",
-    "countryOfOrigin": "KR",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/139339",
-    "mal_url": "https://myanimelist.net/manga/148212",
-    "externalLinks": [
-      {
-        "site": "KakaoPage",
-        "url": "https://page.kakao.com/home?seriesId=57770713"
-      },
-      {
-        "site": "Tapas",
-        "url": "https://tapas.io/series/into-the-light-once-again/info"
-      },
-      {
-        "site": "WEBTOON",
-        "url": "https://www.webtoons.com/fr/romance/into-the-light-once-again/list?title_no=8929"
-      }
-    ],
-    "mangadexId": "6cfc0541-41e2-4f77-8340-971fdc15bacc",
-    "mangadexUrl": "https://mangadex.org/title/6cfc0541-41e2-4f77-8340-971fdc15bacc",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
     "mangaId": 114003,
     "anilistId": 114003,
     "idMal": 122842,
@@ -14289,7 +14155,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 13587,
+    "popularity": 13596,
     "trending": 0,
     "favourites": 829,
     "source": "ORIGINAL",
@@ -14313,6 +14179,148 @@
     ],
     "mangadexId": "fa6ee44f-8c47-4cbc-ba10-9815a100d6b5",
     "mangadexUrl": "https://mangadex.org/title/fa6ee44f-8c47-4cbc-ba10-9815a100d6b5",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 139339,
+    "anilistId": 139339,
+    "idMal": 148212,
+    "title": "Into the Light, Once Again",
+    "titleRomaji": "Dasi Han Beon, Bin Sogeuro",
+    "titleEnglish": "Into the Light, Once Again",
+    "titleNative": "다시 한 번, 빛 속으로",
+    "synonyms": [
+      "Once Again Into the Light, Alone",
+      "重迎曙光",
+      "もう一度、光の中へ"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx139339-VnROu4poh9rw.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx139339-VnROu4poh9rw.png",
+    "coverImageColor": "#c9f1f1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/139339-TuBFEPsPOddW.jpg",
+    "synopsis": "When Princess Alisa is framed for a terrible crime, she is shocked to learn that her own family wants her executed. Feeling defeated, she finds herself reborn as the princess of a rival empire. And though her new family acts sweet and kind on the surface, she’s not sure they can be truly trusted. Luckily, with this new life comes new power. But what exactly is this mysterious magic that awakens in her? And more importantly, can she use it to get vengeance against those who once betrayed her? (Source: Tapas)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-09-02",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Spoon",
+      "Tikatika",
+      "Yuya"
+    ],
+    "artists": [
+      "Yuya"
+    ],
+    "rating": 7.5,
+    "averageScore": 75,
+    "meanScore": 75,
+    "popularity": 13588,
+    "trending": 1,
+    "favourites": 514,
+    "source": "OTHER",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/139339",
+    "mal_url": "https://myanimelist.net/manga/148212",
+    "externalLinks": [
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/home?seriesId=57770713"
+      },
+      {
+        "site": "Tapas",
+        "url": "https://tapas.io/series/into-the-light-once-again/info"
+      },
+      {
+        "site": "WEBTOON",
+        "url": "https://www.webtoons.com/fr/romance/into-the-light-once-again/list?title_no=8929"
+      }
+    ],
+    "mangadexId": "6cfc0541-41e2-4f77-8340-971fdc15bacc",
+    "mangadexUrl": "https://mangadex.org/title/6cfc0541-41e2-4f77-8340-971fdc15bacc",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -16816,7 +16824,7 @@
     "rating": 7.2,
     "averageScore": 72,
     "meanScore": 72,
-    "popularity": 13452,
+    "popularity": 13461,
     "trending": 2,
     "favourites": 338,
     "source": "OTHER",
@@ -23658,7 +23666,7 @@
     "rating": 6.8,
     "averageScore": 68,
     "meanScore": 69,
-    "popularity": 12451,
+    "popularity": 12454,
     "trending": 0,
     "favourites": 273,
     "source": "OTHER",
@@ -25364,7 +25372,7 @@
     "rating": 8.7,
     "averageScore": 87,
     "meanScore": 88,
-    "popularity": 12251,
+    "popularity": 12269,
     "trending": 0,
     "favourites": 1075,
     "source": "ORIGINAL",
