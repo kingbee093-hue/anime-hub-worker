@@ -22,6 +22,8 @@ const CONFIG = {
     SEARCH_INDEX: 'search/anime_index',
     MANGA_FEATURED: 'manga/featured',
     MANGA_TRENDING: 'manga/trending',
+    MANGA_RELEASING: 'manga/releasing',
+    MANGA_NEW_CHAPTERS: 'manga/new_chapters',
     MANGA_TOP_RATED: 'manga/top_rated',
     MANGA_POPULAR: 'manga/popular',
     MANGA_BY_GENRE: 'manga/genres',

@@ -9,6 +9,11 @@ const {
 const { isAdultContent, isManga } = require('../utils/filters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const { discoverProviderTitlesForManga } = require('../utils/mangaFallbackProviders');
+const {
+  writeNewChaptersSection,
+  writeReleasingSection,
+  DEFAULT_SECTION_LIMIT,
+} = require('../utils/mangaSections');
 
 const MANGADEX_API = 'https://api.mangadex.org';
 const CATALOG_PAGE_SIZE = 120;
@@ -62,6 +67,8 @@ const MANGA_CATALOG_SOURCES = [
   },
   {
     label: 'releasing',
+    sectionPath: CONFIG.API_PATHS.MANGA_RELEASING,
+    limit: SECTION_ITEMS,
     pages: 8,
     variables: {
       perPage: 35,
@@ -677,6 +684,17 @@ async function fetchMangaCatalog() {
 
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/manifest`, searchManifest);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
+  const releasingItems = writeReleasingSection(catalog, SECTION_ITEMS);
+  console.log(`Manga releasing section refreshed with ${releasingItems.length} titles.`);
+  try {
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    const existingChapterManifest = require(`../../api/${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
+    const newChapterItems = writeNewChaptersSection(catalog, existingChapterManifest, DEFAULT_SECTION_LIMIT);
+    console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
+  } catch (_) {
+    writeNewChaptersSection(catalog, { items: [] }, DEFAULT_SECTION_LIMIT);
+    console.log('Manga new chapters section refreshed with 0 titles (chapter manifest unavailable yet).');
+  }
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
   console.log(
     `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,

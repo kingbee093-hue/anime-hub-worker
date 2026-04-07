@@ -74,7 +74,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/manga/chapters api/manga/backfill api/manga/mangadex_mapping_fallback.json
+          git add api/manga/chapters api/manga/backfill api/manga/new_chapters.json api/manga/mangadex_mapping_fallback.json
           if git diff --staged --quiet; then
             echo "No chapter coverage changes to commit."
           else
