@@ -1,46 +1,21 @@
 {
-  "updatedAt": "2026-04-08T11:04:40.788Z",
-  "sectionScope": "top_rated",
+  "updatedAt": "2026-04-08T12:13:23.236Z",
+  "sectionScope": "trending",
   "catalogTotal": 24,
   "indexedTitles": 342,
   "pendingTitles": 0,
-  "selectedCount": 1,
-  "batchSize": 1,
+  "selectedCount": 0,
+  "batchSize": 12,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
   "targetIds": [],
-  "selected": [
-    {
-      "mangadexId": "c0ee660b-f9f2-45c3-8068-5123ff53f84a",
-      "title": "Tower of God",
-      "score": 295685,
-      "year": 2010,
-      "popularity": 95685,
-      "chapters": 0,
-      "chapterIndexId": "c0ee660b-f9f2-45c3-8068-5123ff53f84a",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    }
-  ],
+  "selected": [],
   "nextSample": [],
-  "status": "completed",
-  "completedCount": 1,
+  "status": "idle",
+  "completedCount": 0,
   "failedCount": 0,
-  "completed": [
-    {
-      "chapterIndexId": "c0ee660b-f9f2-45c3-8068-5123ff53f84a",
-      "mangadexId": "c0ee660b-f9f2-45c3-8068-5123ff53f84a",
-      "title": "Tower of God",
-      "englishCount": 39,
-      "arabicCount": 0,
-      "fallback": "weebcentral",
-      "updatedAt": "2026-04-08T11:04:40.710Z"
-    }
-  ],
+  "completed": [],
   "failed": []
 }
