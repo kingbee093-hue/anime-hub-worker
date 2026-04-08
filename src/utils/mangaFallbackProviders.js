@@ -52,9 +52,26 @@ function normalizeText(value) {
 function parseChapterNumber(value) {
   const normalized = String(value || '').trim();
   if (!normalized) return null;
-  const match = normalized.match(/(\d+(?:\.\d+)?)/);
-  if (!match) return null;
-  const parsed = Number.parseFloat(match[1]);
+
+  const explicitPatterns = [
+    /\b(?:chapter|chap|ch)\.?\s*[:#-]?\s*(\d+(?:\.\d+)?)/i,
+    /\b(?:episode|ep)\.?\s*[:#-]?\s*(\d+(?:\.\d+)?)/i,
+    /\bc\.?\s*(\d+(?:\.\d+)?)/i,
+  ];
+
+  for (const pattern of explicitPatterns) {
+    const match = normalized.match(pattern);
+    if (!match) continue;
+    const parsed = Number.parseFloat(match[1]);
+    if (Number.isFinite(parsed)) {
+      return parsed;
+    }
+  }
+
+  const numbers = normalized.match(/\d+(?:\.\d+)?/g) || [];
+  if (numbers.length === 0) return null;
+
+  const parsed = Number.parseFloat(numbers[numbers.length - 1]);
   return Number.isFinite(parsed) ? parsed : null;
 }
 
