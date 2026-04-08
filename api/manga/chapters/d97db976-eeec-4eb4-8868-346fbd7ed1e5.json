@@ -1,17 +1,68 @@
 {
+  "chapterIndexId": "d97db976-eeec-4eb4-8868-346fbd7ed1e5",
   "mangaId": 33438,
   "anilistId": 33438,
   "mangadexId": "d97db976-eeec-4eb4-8868-346fbd7ed1e5",
   "title": "PSYЯEN",
-  "updatedAt": "2026-04-06T20:08:03.210Z",
+  "updatedAt": "2026-04-08T18:31:25.633Z",
   "availableLanguages": [
     "en"
   ],
   "counts": {
-    "en": 149
+    "en": 153
   },
   "languages": {
     "en": [
+      {
+        "id": "comick:psyren/JC0wT4c-chapter-146.1-en",
+        "provider": "comick",
+        "providerChapterId": "psyren/JC0wT4c-chapter-146.1-en",
+        "title": "",
+        "chapter": "146.1",
+        "volume": "",
+        "language": "en",
+        "pages": 5,
+        "pageUrls": [
+          "https://cdn1.comicknew.pictures/psyren/0_146.1/en/6f2081b8/0.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146.1/en/6f2081b8/1.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146.1/en/6f2081b8/2.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146.1/en/6f2081b8/3.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146.1/en/6f2081b8/4.jpg"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2025-10-21T09:47:57.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
+        "sourceType": "fallback_reader"
+      },
+      {
+        "id": "comick:psyren/JC0xqJl-chapter-146-en",
+        "provider": "comick",
+        "providerChapterId": "psyren/JC0xqJl-chapter-146-en",
+        "title": "",
+        "chapter": "146",
+        "volume": "",
+        "language": "en",
+        "pages": 5,
+        "pageUrls": [
+          "https://cdn1.comicknew.pictures/psyren/0_146/en/6f2081b8/0.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146/en/6f2081b8/1.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146/en/6f2081b8/2.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146/en/6f2081b8/3.jpg",
+          "https://cdn1.comicknew.pictures/psyren/0_146/en/6f2081b8/4.jpg"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2025-10-21T09:48:16.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
+        "sourceType": "fallback_reader"
+      },
       {
         "id": "89bf745e-5878-49c3-b198-a048945f5b58",
         "title": "Bangaihen",
@@ -1886,8 +1937,6 @@
       },
       {
         "id": "mangapill:8458-10029500/siren-wa-kimi-ni-utawanai-chapter-29.5",
-        "provider": "mangapill",
-        "providerChapterId": "8458-10029500/siren-wa-kimi-ni-utawanai-chapter-29.5",
         "title": "Chapter 29.5",
         "chapter": "29.5",
         "volume": "",
@@ -1916,7 +1965,9 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "8458-10029500/siren-wa-kimi-ni-utawanai-chapter-29.5"
       },
       {
         "id": "f16adc29-1364-4e1e-bf32-f868e4a66735",
@@ -1981,6 +2032,28 @@
         "sourceType": "reader",
         "provider": "",
         "providerChapterId": ""
+      },
+      {
+        "id": "comick:psyren/4znzV-chapter-25.5-ru",
+        "provider": "comick",
+        "providerChapterId": "psyren/4znzV-chapter-25.5-ru",
+        "title": "Экстра",
+        "chapter": "25.5",
+        "volume": "3",
+        "language": "en",
+        "pages": 2,
+        "pageUrls": [
+          "https://cdn1.comicknew.pictures/psyren/3_25.5/ru/ad26a7c7/0.webp",
+          "https://cdn1.comicknew.pictures/psyren/3_25.5/ru/ad26a7c7/1.webp"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2025-08-12T02:05:09.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
+        "sourceType": "fallback_reader"
       },
       {
         "id": "99432472-64e0-4db0-a15b-d1a40f58ad04",
@@ -2256,8 +2329,6 @@
       },
       {
         "id": "mangapill:8458-10009500/siren-wa-kimi-ni-utawanai-chapter-9.5",
-        "provider": "mangapill",
-        "providerChapterId": "8458-10009500/siren-wa-kimi-ni-utawanai-chapter-9.5",
         "title": "Chapter 9.5",
         "chapter": "9.5",
         "volume": "",
@@ -2280,7 +2351,9 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "8458-10009500/siren-wa-kimi-ni-utawanai-chapter-9.5"
       },
       {
         "id": "d2fa0508-57ed-4813-a363-ad6b0e74dba6",
@@ -2425,10 +2498,35 @@
         "sourceType": "reader",
         "provider": "",
         "providerChapterId": ""
+      },
+      {
+        "id": "comick:01-siren-lee-do-go/JEI6GO1-chapter-0-en",
+        "provider": "comick",
+        "providerChapterId": "01-siren-lee-do-go/JEI6GO1-chapter-0-en",
+        "title": "",
+        "chapter": "0",
+        "volume": "",
+        "language": "en",
+        "pages": 2,
+        "pageUrls": [
+          "https://cdn1.comicknew.pictures/01-siren-lee-do-go/0_0/en/6f2081b8/0.jpg",
+          "https://cdn1.comicknew.pictures/01-siren-lee-do-go/0_0/en/6f2081b8/2.jpg"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2025-10-22T21:09:44.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
+        "sourceType": "fallback_reader"
       }
     ]
   },
-  "englishFallbackProvider": "mangapill",
-  "englishFallbackProviderTitle": "Psyren",
-  "englishFallbackChapterCount": 145
+  "chapterSourceProvider": "comick",
+  "chapterSourceId": "01-siren-lee-do-go",
+  "chapterSourceTitle": "Siren",
+  "englishFallbackProvider": "comick",
+  "englishFallbackProviderTitle": "Siren",
+  "englishFallbackChapterCount": 106
 }

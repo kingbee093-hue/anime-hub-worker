@@ -1,80 +1,54 @@
 {
-  "updatedAt": "2026-04-08T17:35:40.018Z",
+  "updatedAt": "2026-04-08T18:46:43.090Z",
   "sectionScope": "targeted",
   "catalogTotal": 970,
-  "indexedTitles": 404,
-  "pendingTitles": 622,
-  "selectedCount": 4,
-  "batchSize": 4,
+  "indexedTitles": 408,
+  "pendingTitles": 608,
+  "selectedCount": 2,
+  "batchSize": 2,
   "forceAll": true,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
   "targetIds": [
-    "140475",
-    "106064",
-    "118408",
-    "114416"
+    "43702",
+    "86099"
   ],
   "selected": [
     {
-      "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
-      "title": "The Fragrant Flower Blooms With Dignity",
-      "score": -1,
-      "year": 2021,
-      "popularity": 70648,
-      "chapters": 0,
-      "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
-      "currentEnglishCount": 6,
+      "mangadexId": "c1c408f6-3dec-4d62-b6b3-b57e615d933c",
+      "title": "Wind Breaker",
+      "score": 510494,
+      "year": 2013,
+      "popularity": 40494,
+      "chapters": 554,
+      "chapterIndexId": "c1c408f6-3dec-4d62-b6b3-b57e615d933c",
+      "currentEnglishCount": 434,
       "currentArabicCount": 0,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-08T17:20:06.195Z",
+      "lastSuccessAt": "2026-04-08T18:37:32.083Z",
       "lastFailureAt": null
     },
     {
-      "mangadexId": "e1e38166-20e4-4468-9370-187f985c550e",
-      "title": "Chained Soldier",
-      "score": -1,
-      "year": 2019,
-      "popularity": 50761,
-      "chapters": 0,
-      "chapterIndexId": "e1e38166-20e4-4468-9370-187f985c550e",
-      "currentEnglishCount": 4,
-      "currentArabicCount": 0,
+      "mangadexId": "643b3756-ad1c-412d-b6cf-05b084540071",
+      "title": "My Little Monster",
+      "score": 385876,
+      "year": 2008,
+      "popularity": 29876,
+      "chapters": 69,
+      "chapterIndexId": "643b3756-ad1c-412d-b6cf-05b084540071",
+      "currentEnglishCount": 63,
+      "currentArabicCount": 2,
       "hasCoverage": true,
-      "lastSuccessAt": "2026-04-08T17:20:07.814Z",
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
-      "title": "Villains Are Destined to Die",
-      "score": -1,
-      "year": 2020,
-      "popularity": 38123,
-      "chapters": 0,
-      "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": "2026-04-08T17:20:09.362Z",
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
-      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
-      "score": -1,
-      "year": 2019,
-      "popularity": 36447,
-      "chapters": 0,
-      "chapterIndexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
-      "currentEnglishCount": 5,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": "2026-04-08T17:20:11.020Z",
+      "lastSuccessAt": "2026-04-08T18:41:10.217Z",
       "lastFailureAt": null
     }
   ],
   "nextSample": [
+    {
+      "mangadexId": "5f20891f-0136-4fa8-afb7-d72f2af23c65",
+      "title": "Food Wars!: Shokugeki no Soma"
+    },
     {
       "mangadexId": "dcdcc8c7-932e-4f60-a900-5f19934eb6cf",
       "title": "Dungeon Reset"
@@ -108,10 +82,6 @@
       "title": "Homunculus"
     },
     {
-      "mangadexId": "fa3e0b2f-4e1f-48ee-9af0-1de9dc28ca51",
-      "title": "Bakuman。"
-    },
-    {
       "mangadexId": "1a4bc1ca-2ed8-425b-8235-d9372a446d93",
       "title": "FFF-Class Trashero"
     },
@@ -136,41 +106,27 @@
       "title": "Boundless Ascension"
     }
   ],
-  "currentItem": {
-    "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
-    "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
-    "title": "Villains Are Destined to Die",
-    "status": "completed"
-  },
-  "completedCount": 3,
+  "status": "completed",
+  "completedCount": 2,
   "failedCount": 0,
   "completed": [
     {
-      "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
-      "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
-      "title": "The Fragrant Flower Blooms With Dignity",
-      "englishCount": 242,
+      "chapterIndexId": "c1c408f6-3dec-4d62-b6b3-b57e615d933c",
+      "mangadexId": "c1c408f6-3dec-4d62-b6b3-b57e615d933c",
+      "title": "Wind Breaker",
+      "englishCount": 434,
       "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-08T17:28:20.209Z"
+      "fallback": null,
+      "updatedAt": "2026-04-08T18:45:49.722Z"
     },
     {
-      "chapterIndexId": "e1e38166-20e4-4468-9370-187f985c550e",
-      "mangadexId": "e1e38166-20e4-4468-9370-187f985c550e",
-      "title": "Chained Soldier",
-      "englishCount": 233,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-08T17:31:56.334Z"
-    },
-    {
-      "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
-      "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
-      "title": "Villains Are Destined to Die",
-      "englishCount": 244,
-      "arabicCount": 0,
-      "fallback": "weebcentral",
-      "updatedAt": "2026-04-08T17:35:39.945Z"
+      "chapterIndexId": "643b3756-ad1c-412d-b6cf-05b084540071",
+      "mangadexId": "643b3756-ad1c-412d-b6cf-05b084540071",
+      "title": "My Little Monster",
+      "englishCount": 63,
+      "arabicCount": 2,
+      "fallback": null,
+      "updatedAt": "2026-04-08T18:46:43.033Z"
     }
   ],
   "failed": []
