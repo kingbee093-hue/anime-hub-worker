@@ -7588,6 +7588,16 @@
         "isAdult": false
       },
       {
+        "id": 342,
+        "name": "Environmental",
+        "description": "Concern with the state of the natural world and how humans interact with it.",
+        "category": "Theme-Other",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 1045,
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
@@ -7602,17 +7612,7 @@
         "name": "Mythology",
         "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
         "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 342,
-        "name": "Environmental",
-        "description": "Concern with the state of the natural world and how humans interact with it.",
-        "category": "Theme-Other",
-        "rank": 79,
+        "rank": 95,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -7658,16 +7658,6 @@
         "isAdult": false
       },
       {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 253,
         "name": "Gods",
         "description": "Prominently features a character of divine or religious nature.",
@@ -7683,6 +7673,16 @@
         "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
         "category": "Cast-Traits",
         "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 53,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -11467,10 +11467,10 @@
       "Imagica Infos",
       "Imageworks Studio"
     ],
-    "rating": 3.5,
-    "averageScore": 35,
-    "meanScore": 33,
-    "popularity": 1808,
+    "rating": 3.6,
+    "averageScore": 36,
+    "meanScore": 34,
+    "popularity": 1936,
     "trending": 0,
     "favourites": 36,
     "source": "LIGHT_NOVEL",
@@ -14009,8 +14009,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 47,
-    "popularity": 608,
+    "meanScore": 45,
+    "popularity": 735,
     "trending": 0,
     "favourites": 18,
     "source": "MANGA",
