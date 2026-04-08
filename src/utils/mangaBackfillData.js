@@ -39,6 +39,42 @@ function getMangaCatalogEntries() {
   return getPagedItems(CONFIG.API_PATHS.MANGA_CATALOG, /^manga_page_\d+\.json$/i);
 }
 
+function getMangaSectionEntries(sectionScope = '') {
+  const scope = String(sectionScope || '').trim().toLowerCase();
+  if (!scope) {
+    return getMangaCatalogEntries();
+  }
+
+  const sectionPathMap = {
+    trending: CONFIG.API_PATHS.MANGA_TRENDING,
+    featured: CONFIG.API_PATHS.MANGA_FEATURED,
+    top_rated: CONFIG.API_PATHS.MANGA_TOP_RATED,
+    'top-rated': CONFIG.API_PATHS.MANGA_TOP_RATED,
+    popular: CONFIG.API_PATHS.MANGA_POPULAR,
+    releasing: CONFIG.API_PATHS.MANGA_RELEASING,
+    new_chapters: CONFIG.API_PATHS.MANGA_NEW_CHAPTERS,
+    'new-chapters': CONFIG.API_PATHS.MANGA_NEW_CHAPTERS,
+  };
+
+  if (sectionPathMap[scope]) {
+    const fullPath = path.join(__dirname, '../../api', `${sectionPathMap[scope]}.json`);
+    const items = readJsonFile(fullPath, []);
+    return Array.isArray(items) ? items : [];
+  }
+
+  if (scope.startsWith('genre:')) {
+    const genreName = scope.slice('genre:'.length).trim();
+    if (!genreName) {
+      return [];
+    }
+    const fullPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genreName}.json`);
+    const items = readJsonFile(fullPath, []);
+    return Array.isArray(items) ? items : [];
+  }
+
+  return [];
+}
+
 function getChapterManifest() {
   const manifestPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
   return readJsonFile(manifestPath, { items: [], totalTitles: 0 });
@@ -92,6 +128,7 @@ function buildChapterIndexId(item) {
 module.exports = {
   readJsonFile,
   getMangaCatalogEntries,
+  getMangaSectionEntries,
   getChapterManifest,
   getUniverseManifest,
   getChapterIndex,

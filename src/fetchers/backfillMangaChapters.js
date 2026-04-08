@@ -2,6 +2,7 @@ const CONFIG = require('../config/constants');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
   getMangaCatalogEntries,
+  getMangaSectionEntries,
   getChapterManifest,
   buildChapterIndexId,
 } = require('../utils/mangaBackfillData');
@@ -22,7 +23,12 @@ const TARGET_IDS = new Set(
     .map((item) => item.trim())
     .filter(Boolean),
 );
+const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || 'trending').trim();
 const chapterCountsCache = new Map();
+
+function getScopeLabel() {
+  return SECTION_SCOPE || 'all';
+}
 
 function getHoursSince(isoDate) {
   if (!isoDate) return Number.POSITIVE_INFINITY;
@@ -192,10 +198,19 @@ async function backfillMangaChapters() {
   console.log('========================================');
 
   const rawCatalogEntries = getMangaCatalogEntries();
+  const rawScopedEntries = SECTION_SCOPE
+    ? getMangaSectionEntries(SECTION_SCOPE)
+    : rawCatalogEntries;
+  const scopedIds = new Set(
+    rawScopedEntries
+      .map((item) => buildChapterIndexId(item))
+      .filter(Boolean),
+  );
   const catalogItems = Array.from(
     new Map(
       rawCatalogEntries
         .filter((item) => item && (item.mangadexId || (item.chapterSourceProvider && item.chapterSourceId)))
+        .filter((item) => !SECTION_SCOPE || scopedIds.has(buildChapterIndexId(item)))
         .map((item) => {
           const chapterIndexId = buildChapterIndexId(item);
           return [chapterIndexId, {
@@ -215,6 +230,7 @@ async function backfillMangaChapters() {
         .filter(([chapterIndexId]) => Boolean(chapterIndexId)),
     ).values(),
   );
+  console.log(`Backfill scope: ${getScopeLabel()} (${catalogItems.length} title(s) in scope).`);
   const chapterManifest = getChapterManifest();
   const chapterMap = new Map(
     (chapterManifest.items || [])
@@ -250,6 +266,7 @@ async function backfillMangaChapters() {
 
   const baseProgress = {
     updatedAt: new Date().toISOString(),
+    sectionScope: getScopeLabel(),
     catalogTotal: catalogItems.length,
     indexedTitles: chapterManifest.items?.length || 0,
     pendingTitles: candidates.length,
@@ -310,7 +327,7 @@ async function backfillMangaChapters() {
 
   if (selected.length === 0) {
     writeProgress({ status: 'idle' });
-    console.log('No manga chapter coverage work is needed right now.');
+    console.log(`No manga chapter coverage work is needed right now for scope "${getScopeLabel()}".`);
     return;
   }
 
