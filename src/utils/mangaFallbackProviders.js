@@ -75,6 +75,36 @@ function parseChapterNumber(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function parseProviderChapterNumber(providerKey, chapter, manga = null) {
+  const rawValue = chapter?.chapter || chapter?.chapterNumber || chapter?.title || '';
+
+  if (providerKey === 'weebcentral' && Number(manga?.anilistId || manga?.mangaId) === 86099) {
+    const title = String(chapter?.title || '').trim();
+    const match = title.match(/^S(\d+)\s*-\s*Episode\s*(\d+(?:\.\d+)?)/i);
+    if (match) {
+      const season = Number(match[1]);
+      const episode = Number.parseFloat(match[2]);
+      if (Number.isFinite(season) && Number.isFinite(episode)) {
+        const offsets = {
+          1: 0,
+          2: 66,
+          3: 248,
+          4: 376,
+        };
+
+        if (Object.prototype.hasOwnProperty.call(offsets, season)) {
+          if (episode === 0) {
+            return offsets[season] + 0.5;
+          }
+          return offsets[season] + episode;
+        }
+      }
+    }
+  }
+
+  return parseChapterNumber(rawValue);
+}
+
 function buildCandidateTitles(manga) {
   return Array.from(
     new Set(
@@ -752,8 +782,8 @@ async function discoverProviderTitlesForManga(manga, limit = 6) {
     .slice(0, limit);
 }
 
-function normalizeProviderChapter(providerKey, chapter, pageUrls) {
-  const chapterNumber = parseChapterNumber(chapter.chapter || chapter.chapterNumber || chapter.title);
+function normalizeProviderChapter(providerKey, chapter, pageUrls, manga = null) {
+  const chapterNumber = parseProviderChapterNumber(providerKey, chapter, manga);
   return {
     id: `${providerKey}:${chapter.id}`,
     provider: providerKey,
@@ -780,6 +810,7 @@ module.exports = {
   buildCandidateTitles,
   discoverProviderTitlesForManga,
   parseChapterNumber,
+  parseProviderChapterNumber,
   resolveBestFallbackProvider,
   resolveFallbackProviderCandidates,
   validateProviderSourceMapping,
