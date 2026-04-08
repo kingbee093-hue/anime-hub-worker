@@ -1,4 +1,6 @@
+const axios = require('axios');
 const { MANGA } = require('@consumet/extensions');
+const { safeUnpack } = require('@consumet/extensions/dist/utils/utils');
 
 const PROVIDER_PRIORITY = ['mangapill', 'comick', 'weebcentral', 'mangahere'];
 const PROVIDER_HEADERS = {
@@ -186,12 +188,63 @@ class FallbackProviderClient {
   }
 
   async fetchChapterPages(chapterId) {
+    if (this.key === 'mangahere') {
+      try {
+        return await withTimeout(
+          this.client.fetchChapterPages(chapterId),
+          PROVIDER_PAGES_TIMEOUT_MS,
+          `${this.label} fetchChapterPages`,
+        );
+      } catch (error) {
+        return withTimeout(
+          fetchMangaHereChapterPages(chapterId),
+          PROVIDER_PAGES_TIMEOUT_MS,
+          `${this.label} fetchChapterPagesFallback`,
+        );
+      }
+    }
+
     return withTimeout(
       this.client.fetchChapterPages(chapterId),
       PROVIDER_PAGES_TIMEOUT_MS,
       `${this.label} fetchChapterPages`,
     );
   }
+}
+
+async function fetchMangaHereChapterPages(chapterId) {
+  const url = `https://mangahere.cc/manga/${chapterId}/1.html`;
+  const { data } = await axios.get(url, {
+    headers: {
+      cookie: 'isAdult=1',
+      Referer: 'https://www.mangahere.cc/',
+      'User-Agent': 'Mozilla/5.0',
+    },
+  });
+
+  const blockedMatch = data.match(/Dear users?,[\s\S]*?enjoy it\./i) || data.match(/removed all content[\s\S]*?enjoy it\./i);
+  if (blockedMatch) {
+    throw new Error(blockedMatch[0].replace(/\s+/g, ' ').trim());
+  }
+
+  const scriptStart = data.indexOf('eval(function(p,a,c,k,e,d)');
+  const scriptEnd = scriptStart >= 0 ? data.indexOf('</script>', scriptStart) : -1;
+  if (scriptStart >= 0 && scriptEnd > scriptStart) {
+    const packedScript = data.substring(scriptStart, scriptEnd);
+    const unpacked = safeUnpack(packedScript) || '';
+    const imageUrls = [...new Set((unpacked.match(/\/\/[A-Za-z0-9._/-]+?\.jpg/g) || []))]
+      .map((urlPart) => `https:${urlPart}`);
+
+    if (imageUrls.length > 0) {
+      return imageUrls.map((img, index) => ({
+        page: index,
+        img,
+        headerForImage: { Referer: url },
+      }));
+    }
+  }
+
+  throw new Error('MangaHere fallback parser could not extract chapter pages');
 }
 
 const providers = {
