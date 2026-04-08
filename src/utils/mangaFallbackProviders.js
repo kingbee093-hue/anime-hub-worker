@@ -1,9 +1,13 @@
 const { MANGA } = require('@consumet/extensions');
 
-const PROVIDER_PRIORITY = ['mangapill', 'weebcentral', 'mangahere'];
+const PROVIDER_PRIORITY = ['mangapill', 'comick', 'weebcentral', 'mangahere'];
 const PROVIDER_HEADERS = {
   weebcentral: {
     Referer: 'https://weebcentral.com',
+    'User-Agent': 'Mozilla/5.0',
+  },
+  comick: {
+    Referer: 'https://comick.io/',
     'User-Agent': 'Mozilla/5.0',
   },
   mangapill: {
@@ -18,6 +22,7 @@ const PROVIDER_HEADERS = {
 
 const PROVIDER_LABELS = {
   weebcentral: 'WeebCentral',
+  comick: 'ComicK',
   mangapill: 'MangaPill',
   mangahere: 'MangaHere',
 };
@@ -200,6 +205,7 @@ class FallbackProviderClient {
 
 const providers = {
   weebcentral: new FallbackProviderClient('weebcentral', () => new MANGA.WeebCentral()),
+  comick: new FallbackProviderClient('comick', () => new MANGA.ComicK()),
   mangapill: new FallbackProviderClient('mangapill', () => new MANGA.MangaPill()),
   mangahere: new FallbackProviderClient('mangahere', () => new MANGA.MangaHere()),
 };

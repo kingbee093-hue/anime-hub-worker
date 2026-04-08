@@ -27,6 +27,9 @@ const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || 'trending').t
 const chapterCountsCache = new Map();
 
 function getScopeLabel() {
+  if (TARGET_IDS.size > 0) {
+    return 'targeted';
+  }
   return SECTION_SCOPE || 'all';
 }
 
@@ -198,7 +201,8 @@ async function backfillMangaChapters() {
   console.log('========================================');
 
   const rawCatalogEntries = getMangaCatalogEntries();
-  const rawScopedEntries = SECTION_SCOPE
+  const shouldApplySectionScope = TARGET_IDS.size === 0 && Boolean(SECTION_SCOPE);
+  const rawScopedEntries = shouldApplySectionScope
     ? getMangaSectionEntries(SECTION_SCOPE)
     : rawCatalogEntries;
   const scopedIds = new Set(
@@ -210,7 +214,7 @@ async function backfillMangaChapters() {
     new Map(
       rawCatalogEntries
         .filter((item) => item && (item.mangadexId || (item.chapterSourceProvider && item.chapterSourceId)))
-        .filter((item) => !SECTION_SCOPE || scopedIds.has(buildChapterIndexId(item)))
+        .filter((item) => !shouldApplySectionScope || scopedIds.has(buildChapterIndexId(item)))
         .map((item) => {
           const chapterIndexId = buildChapterIndexId(item);
           return [chapterIndexId, {
