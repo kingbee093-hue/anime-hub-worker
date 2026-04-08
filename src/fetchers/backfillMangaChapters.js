@@ -26,6 +26,11 @@ const TARGET_IDS = new Set(
 const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || 'trending').trim();
 const chapterCountsCache = new Map();
 
+function isChapterBearingFormat(item) {
+  const format = String(item?.format || '').toUpperCase();
+  return format === 'MANGA' || format === 'ONE_SHOT' || format === '';
+}
+
 function getScopeLabel() {
   if (TARGET_IDS.size > 0) {
     return 'targeted';
@@ -214,6 +219,7 @@ async function backfillMangaChapters() {
     new Map(
       rawCatalogEntries
         .filter((item) => item && (item.mangadexId || (item.chapterSourceProvider && item.chapterSourceId)))
+        .filter((item) => isChapterBearingFormat(item))
         .filter((item) => !shouldApplySectionScope || scopedIds.has(buildChapterIndexId(item)))
         .map((item) => {
           const chapterIndexId = buildChapterIndexId(item);
@@ -227,6 +233,7 @@ async function backfillMangaChapters() {
           title: item.title || '',
           popularity: Number(item.popularity || 0),
           chapters: Number(item.chapters || 0),
+          format: item.format || '',
           status: item.status || '',
           year: item.year || item.startYear || null,
         }];
@@ -287,6 +294,7 @@ async function backfillMangaChapters() {
       mangadexId: item.mangadexId,
       title: item.title,
       score,
+      format: item.format || '',
       year: item.year,
       popularity: item.popularity,
       chapters: item.chapters,
