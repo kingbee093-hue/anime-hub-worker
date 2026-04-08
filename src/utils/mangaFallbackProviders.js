@@ -2,7 +2,7 @@ const axios = require('axios');
 const { MANGA } = require('@consumet/extensions');
 const { safeUnpack } = require('@consumet/extensions/dist/utils/utils');
 
-const PROVIDER_PRIORITY = ['mangapill', 'comick', 'weebcentral', 'mangahere'];
+const PROVIDER_PRIORITY = ['mangapill', 'comick', 'weebcentral', 'mangahere', 'asurascans'];
 const PROVIDER_HEADERS = {
   weebcentral: {
     Referer: 'https://weebcentral.com',
@@ -20,6 +20,10 @@ const PROVIDER_HEADERS = {
     Referer: 'https://www.mangahere.cc/',
     'User-Agent': 'Mozilla/5.0',
   },
+  asurascans: {
+    Referer: 'https://asurascans.com/',
+    'User-Agent': 'Mozilla/5.0',
+  },
 };
 
 const PROVIDER_LABELS = {
@@ -27,6 +31,7 @@ const PROVIDER_LABELS = {
   comick: 'ComicK',
   mangapill: 'MangaPill',
   mangahere: 'MangaHere',
+  asurascans: 'AsuraScans',
 };
 const MAX_SEARCH_RESULTS_PER_QUERY = 3;
 const MAX_PROVIDER_CANDIDATES = 4;
@@ -200,6 +205,10 @@ class FallbackProviderClient {
   }
 
   async search(query) {
+    if (this.key === 'asurascans') {
+      return fetchAsuraSearch(query);
+    }
+
     const queries = [query];
     const normalized = normalizeText(query);
     if (normalized && !queries.includes(normalized)) {
@@ -232,6 +241,10 @@ class FallbackProviderClient {
   }
 
   async fetchInfo(id) {
+    if (this.key === 'asurascans') {
+      return fetchAsuraInfo(id);
+    }
+
     if (this.key === 'comick') {
       return fetchComicKInfo(id);
     }
@@ -244,6 +257,14 @@ class FallbackProviderClient {
   }
 
   async fetchChapterPages(chapterId) {
+    if (this.key === 'asurascans') {
+      return withTimeout(
+        fetchAsuraChapterPages(chapterId),
+        PROVIDER_PAGES_TIMEOUT_MS,
+        `${this.label} fetchChapterPages`,
+      );
+    }
+
     if (this.key === 'mangahere') {
       try {
         return await withTimeout(
@@ -266,6 +287,24 @@ class FallbackProviderClient {
       `${this.label} fetchChapterPages`,
     );
   }
+}
+
+async function fetchAsuraSearch(query) {
+  const { data } = await axios.get('https://api.asurascans.com/api/search', {
+    params: { q: query },
+    headers: {
+      'User-Agent': 'Mozilla/5.0',
+      Referer: 'https://asurascans.com/',
+    },
+  });
+
+  return Array.isArray(data?.data)
+    ? data.data.map((item) => ({
+        id: item.slug,
+        title: item.title,
+        image: item.cover,
+      }))
+    : [];
 }
 
 async function fetchMangaHereChapterPages(chapterId) {
@@ -301,6 +340,73 @@ async function fetchMangaHereChapterPages(chapterId) {
   }
 
   throw new Error('MangaHere fallback parser could not extract chapter pages');
+}
+
+async function fetchAsuraInfo(mangaId) {
+  const headers = {
+    'User-Agent': 'Mozilla/5.0',
+    Referer: 'https://asurascans.com/',
+  };
+
+  const [{ data: detailData }, { data: chapterData }] = await Promise.all([
+    axios.get(`https://api.asurascans.com/api/series/${mangaId}`, { headers }),
+    axios.get(`https://api.asurascans.com/api/series/${mangaId}/chapters`, { headers }),
+  ]);
+
+  const series = detailData?.series || {};
+  const publicUrl = series.public_url || `/comics/${series.slug || mangaId}`;
+  const chapterRows = Array.isArray(chapterData?.data) ? chapterData.data : [];
+  const chapters = chapterRows
+    .map((chapter) => ({
+      id: `${publicUrl}/chapter/${chapter.number}`,
+      title: chapter.title ? `Chapter ${chapter.number}: ${chapter.title}` : `Chapter ${chapter.number}`,
+      chapterNumber: chapter.number,
+      volumeNumber: '',
+      releaseDate: chapter.published_at || null,
+      lang: 'en',
+    }))
+    .filter((chapter) => chapter.id && chapter.chapterNumber != null);
+
+  return {
+    id: series.slug || mangaId,
+    title: series.title || mangaId,
+    altTitles: Array.isArray(series.alt_titles) ? series.alt_titles : [],
+    description: String(series.description || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
+    genres: Array.isArray(series.genres) ? series.genres.map((genre) => genre?.name).filter(Boolean) : [],
+    image: series.cover || '',
+    links: [],
+    chapters,
+  };
+}
+
+async function fetchAsuraChapterPages(chapterId) {
+  const chapterUrl = chapterId.startsWith('http')
+    ? chapterId
+    : `https://asurascans.com${chapterId.startsWith('/') ? '' : '/'}${chapterId}`;
+  const { data } = await axios.get(chapterUrl, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0',
+      Referer: 'https://asurascans.com/',
+    },
+  });
+
+  const decoded = String(data).replace(/&quot;/g, '"');
+  const imageUrls = [
+    ...new Set(
+      (decoded.match(/https:\/\/cdn\.asurascans\.com\/asura-images\/chapters\/[^"\s<>]+/g) || [])
+        .filter((url) => url.endsWith('.webp') || url.endsWith('.jpg') || url.endsWith('.jpeg') || url.endsWith('.png')),
+    ),
+  ];
+
+  if (imageUrls.length === 0) {
+    throw new Error('AsuraScans parser could not extract chapter pages');
+  }
+
+  return imageUrls.map((img, index) => ({
+    page: index + 1,
+    img,
+    headerForImage: { Referer: chapterUrl },
+  }));
 }
 
 function normalizeComicKAltTitles(mdTitles) {
@@ -384,6 +490,7 @@ const providers = {
   comick: new FallbackProviderClient('comick', () => new MANGA.ComicK()),
   mangapill: new FallbackProviderClient('mangapill', () => new MANGA.MangaPill()),
   mangahere: new FallbackProviderClient('mangahere', () => new MANGA.MangaHere()),
+  asurascans: new FallbackProviderClient('asurascans', () => new MANGA.AsuraScans()),
 };
 
 function scoreCoverage(chapterCount, catalogTotal) {
