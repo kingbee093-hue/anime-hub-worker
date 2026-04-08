@@ -1,28 +1,53 @@
 {
-  "updatedAt": "2026-04-08T16:17:06.033Z",
-  "sectionScope": "targeted",
-  "catalogTotal": 970,
-  "indexedTitles": 388,
-  "pendingTitles": 589,
-  "selectedCount": 2,
-  "batchSize": 2,
+  "updatedAt": "2026-04-08T16:43:07.341Z",
+  "sectionScope": "genre:Romance",
+  "catalogTotal": 118,
+  "indexedTitles": 398,
+  "pendingTitles": 20,
+  "selectedCount": 20,
+  "batchSize": 20,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
-  "targetIds": [
-    "30028",
-    "109501"
-  ],
+  "targetIds": [],
   "selected": [
     {
-      "mangadexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-      "title": "Nana",
-      "score": 254527,
-      "year": 2000,
-      "popularity": 54527,
+      "mangadexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
+      "title": "Maybe Meant to Be",
+      "score": 475410,
+      "year": 2022,
+      "popularity": 25278,
+      "chapters": 132,
+      "chapterIndexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": "2026-04-05T12:21:43.649Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b2df3b97-06b4-4544-8ec3-79bc41dfa03b",
+      "title": "Unholy Blood",
+      "score": 474298,
+      "year": 2020,
+      "popularity": 24205,
+      "chapters": 93,
+      "chapterIndexId": "b2df3b97-06b4-4544-8ec3-79bc41dfa03b",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": "2026-04-05T12:33:11.234Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "title": "The Fragrant Flower Blooms With Dignity",
+      "score": 270648,
+      "year": 2021,
+      "popularity": 70648,
       "chapters": 0,
-      "chapterIndexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
+      "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -30,13 +55,237 @@
       "lastFailureAt": null
     },
     {
-      "mangadexId": "643561e6-5c27-4382-95d3-8e84894a3fb6",
-      "title": "My Love Story with Yamada-kun at Lv999",
-      "score": 235519,
-      "year": 2019,
-      "popularity": 35519,
+      "mangadexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
+      "title": "Grand Blue Dreaming",
+      "score": 264713,
+      "year": 2014,
+      "popularity": 64713,
       "chapters": 0,
-      "chapterIndexId": "643561e6-5c27-4382-95d3-8e84894a3fb6",
+      "chapterIndexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "32fdfe9b-6e11-4a13-9e36-dcd8ea77b4e4",
+      "title": "Rent-A-Girlfriend",
+      "score": 260302,
+      "year": 2017,
+      "popularity": 60302,
+      "chapters": 0,
+      "chapterIndexId": "32fdfe9b-6e11-4a13-9e36-dcd8ea77b4e4",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
+      "title": "Blue Box",
+      "score": 250851,
+      "year": 2021,
+      "popularity": 50851,
+      "chapters": 0,
+      "chapterIndexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
+      "title": "The Guy She Was Interested In Wasn't a Guy at All",
+      "score": 245365,
+      "year": 2022,
+      "popularity": 45365,
+      "chapters": 0,
+      "chapterIndexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "30f3ac69-21b6-45ad-a110-d011b7aaadaa",
+      "title": "Fly Me to the Moon",
+      "score": 239482,
+      "year": 2018,
+      "popularity": 39482,
+      "chapters": 0,
+      "chapterIndexId": "30f3ac69-21b6-45ad-a110-d011b7aaadaa",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "title": "Villains Are Destined to Die",
+      "score": 238123,
+      "year": 2020,
+      "popularity": 38123,
+      "chapters": 0,
+      "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "3f1453fb-9dac-4aca-a2ea-69613856c952",
+      "title": "Tamen De Gushi",
+      "score": 237143,
+      "year": 2014,
+      "popularity": 37143,
+      "chapters": 0,
+      "chapterIndexId": "3f1453fb-9dac-4aca-a2ea-69613856c952",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
+      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "score": 236447,
+      "year": 2019,
+      "popularity": 36447,
+      "chapters": 0,
+      "chapterIndexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "baa95345-24fb-47a9-83e9-434ff671f968",
+      "title": "Smoking Behind the Supermarket with You",
+      "score": 234975,
+      "year": 2022,
+      "popularity": 34975,
+      "chapters": 0,
+      "chapterIndexId": "baa95345-24fb-47a9-83e9-434ff671f968",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "11bfa371-f53f-42b7-8213-94b1323b02b6",
+      "title": "A Sign of Affection",
+      "score": 234122,
+      "year": 2019,
+      "popularity": 34122,
+      "chapters": 0,
+      "chapterIndexId": "11bfa371-f53f-42b7-8213-94b1323b02b6",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "3df1a9a3-a1be-47a3-9e90-9b3e55b1d0ac",
+      "title": "The Dangers in My Heart",
+      "score": 233140,
+      "year": 2018,
+      "popularity": 33140,
+      "chapters": 0,
+      "chapterIndexId": "3df1a9a3-a1be-47a3-9e90-9b3e55b1d0ac",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "b4c93297-b32f-4f90-b619-55456a38b0aa",
+      "title": "More Than a Married Couple, but Not Lovers.",
+      "score": 233084,
+      "year": 2018,
+      "popularity": 33084,
+      "chapters": 0,
+      "chapterIndexId": "b4c93297-b32f-4f90-b619-55456a38b0aa",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "737a846b-2e67-4d63-9f7e-f54b3beebac4",
+      "title": "Please Go Home, Miss Akutsu!",
+      "score": 232017,
+      "year": 2019,
+      "popularity": 32017,
+      "chapters": 0,
+      "chapterIndexId": "737a846b-2e67-4d63-9f7e-f54b3beebac4",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "244c9d4f-e5fb-4590-9b96-4da191977b33",
+      "title": "Skip and Loafer",
+      "score": 231004,
+      "year": 2018,
+      "popularity": 31004,
+      "chapters": 0,
+      "chapterIndexId": "244c9d4f-e5fb-4590-9b96-4da191977b33",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "cedc7401-8c70-4057-b14a-4ecbbcd73945",
+      "title": "A Bride's Story",
+      "score": 228740,
+      "year": 2008,
+      "popularity": 28740,
+      "chapters": 0,
+      "chapterIndexId": "cedc7401-8c70-4057-b14a-4ecbbcd73945",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "5e3a710f-0b0d-482b-9e84-d9c91960c625",
+      "title": "Anjo the Mischievous Gal",
+      "score": 227955,
+      "year": 2017,
+      "popularity": 27955,
+      "chapters": 0,
+      "chapterIndexId": "5e3a710f-0b0d-482b-9e84-d9c91960c625",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "195023bf-cf9a-4772-94ef-09dd6eddea84",
+      "title": "The Ancient Magus' Bride",
+      "score": 227767,
+      "year": 2013,
+      "popularity": 27767,
+      "chapters": 0,
+      "chapterIndexId": "195023bf-cf9a-4772-94ef-09dd6eddea84",
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -46,87 +295,170 @@
   ],
   "nextSample": [
     {
-      "mangadexId": "84b933cb-a99a-4737-98bb-b38295087700",
-      "title": "Minamoto-kun Monogatari"
+      "mangadexId": "5ef4e73e-6fbc-456b-b7e1-4642256f666d",
+      "title": "Re:ZERO -Starting Life in Another World-"
     },
     {
-      "mangadexId": "a82fe527-9e74-48d0-9c5f-a5e788c0bd4a",
-      "title": "The Villainess is a Marionette"
+      "mangadexId": "0e8fac17-979e-4e37-8f45-2c334b25d6dd",
+      "title": "Whisper Me a Love Song"
     },
     {
-      "mangadexId": "2998ef22-88d4-4191-81b4-c21ec5d45fbc",
-      "title": "Chobits"
+      "mangadexId": "46748d60-9b15-4647-8250-de0926b20268",
+      "title": "Please Put Them On, Takamine-san"
     },
     {
-      "mangadexId": "6c1eb4e1-95c5-466e-b4e6-ea545585d19a",
-      "title": "Tsubaki-chou Lonely Planet"
+      "mangadexId": "bc634b22-0c05-4a55-9b7e-3f55438a1ad3",
+      "title": "Monthly Girls' Nozaki-kun"
     },
     {
-      "mangadexId": "21024a6b-af2e-42c1-b0dd-f7ab722a5a32",
-      "title": "Magical Girl Site"
+      "mangadexId": "85b51b37-0ce6-4144-a19b-6b064bc2c2ae",
+      "title": "Beware the Villainess!"
     },
     {
-      "mangadexId": "f75812e9-27bb-44d5-9cb1-25de07ceb326",
-      "title": "The Voynich Hotel"
+      "mangadexId": "dc90853b-a3e6-4d5b-8b47-1fa15aa15923",
+      "title": "19 Tian"
     },
     {
-      "mangadexId": "7b4abd68-7d0b-40c7-9fe9-10e7f097a1c2",
-      "title": "Black Torch"
+      "mangadexId": "b1461071-bfbb-43e7-a5b6-a7ba5904649f",
+      "title": "Martial Peak"
     },
     {
-      "mangadexId": "16800ea3-d7cb-4a03-801e-bfbb4dc12bea",
-      "title": "My Wife is the Demon Queen"
+      "mangadexId": "87ffa375-bd2c-49ba-ba0c-6d78ea07c342",
+      "title": "Medaka Kuroiwa is Impervious to My Charms"
     },
     {
-      "mangadexId": "36754a57-473d-44df-bde0-4d3ff29b922e",
-      "title": "GREEN BLOOD"
+      "mangadexId": "5a90308a-8b12-4a4d-9c6d-2487028fe319",
+      "title": "Uzaki-chan Wants to Hang Out!"
     },
     {
-      "mangadexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
-      "title": "Boku Girl"
+      "mangadexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
+      "title": "Kono Oto Tomare!"
     },
     {
-      "mangadexId": "a919bb04-b128-4c22-9703-f2b1c56eab82",
-      "title": "ORIGIN"
+      "mangadexId": "4e7a4a0f-8391-4069-839b-de2352297dab",
+      "title": "A Couple of Cuckoos"
     },
     {
-      "mangadexId": "94a7d0d5-18c6-4f24-826c-4157e36608e6",
-      "title": "RAINBOW: Nisha Rokubou no Shichinin"
-    },
-    {
-      "mangadexId": "9d563964-e935-47d4-812a-abfd2f625384",
-      "title": "Shijou Saikyou no Deshi Kenichi"
-    },
-    {
-      "mangadexId": "d08a69ee-9f90-439a-b17d-da561eda2c66",
-      "title": "Negima! Magister Negi Magi"
-    },
-    {
-      "mangadexId": "a81e63a3-83f1-4da5-95a4-ba431e830ce9",
-      "title": "Shamo"
+      "mangadexId": "f89ed57a-e4c0-48f5-b664-8ef88aa87fd9",
+      "title": "I Shall Master this Family!"
     }
   ],
-  "status": "completed",
-  "completedCount": 2,
+  "currentItem": {
+    "chapterIndexId": "baa95345-24fb-47a9-83e9-434ff671f968",
+    "mangadexId": "baa95345-24fb-47a9-83e9-434ff671f968",
+    "title": "Smoking Behind the Supermarket with You",
+    "status": "completed"
+  },
+  "completedCount": 12,
   "failedCount": 0,
   "completed": [
     {
-      "chapterIndexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-      "mangadexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-      "title": "Nana",
-      "englishCount": 182,
+      "chapterIndexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
+      "mangadexId": "220282a9-a2ff-4a6b-9bed-f4a9da24c661",
+      "title": "Maybe Meant to Be",
+      "englishCount": 140,
       "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-08T16:17:04.328Z"
+      "fallback": "weebcentral",
+      "updatedAt": "2026-04-08T16:27:10.198Z"
     },
     {
-      "chapterIndexId": "643561e6-5c27-4382-95d3-8e84894a3fb6",
-      "mangadexId": "643561e6-5c27-4382-95d3-8e84894a3fb6",
-      "title": "My Love Story with Yamada-kun at Lv999",
-      "englishCount": 89,
+      "chapterIndexId": "b2df3b97-06b4-4544-8ec3-79bc41dfa03b",
+      "mangadexId": "b2df3b97-06b4-4544-8ec3-79bc41dfa03b",
+      "title": "Unholy Blood",
+      "englishCount": 97,
+      "arabicCount": 0,
+      "fallback": "weebcentral",
+      "updatedAt": "2026-04-08T16:29:26.686Z"
+    },
+    {
+      "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "title": "The Fragrant Flower Blooms With Dignity",
+      "englishCount": 6,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-08T16:17:05.983Z"
+      "updatedAt": "2026-04-08T16:29:28.356Z"
+    },
+    {
+      "chapterIndexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
+      "mangadexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
+      "title": "Grand Blue Dreaming",
+      "englishCount": 180,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-08T16:32:43.873Z"
+    },
+    {
+      "chapterIndexId": "32fdfe9b-6e11-4a13-9e36-dcd8ea77b4e4",
+      "mangadexId": "32fdfe9b-6e11-4a13-9e36-dcd8ea77b4e4",
+      "title": "Rent-A-Girlfriend",
+      "englishCount": 459,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-08T16:39:04.900Z"
+    },
+    {
+      "chapterIndexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
+      "mangadexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
+      "title": "Blue Box",
+      "englishCount": 247,
+      "arabicCount": 54,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-08T16:42:56.522Z"
+    },
+    {
+      "chapterIndexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
+      "mangadexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
+      "title": "The Guy She Was Interested In Wasn't a Guy at All",
+      "englishCount": 184,
+      "arabicCount": 2,
+      "fallback": null,
+      "updatedAt": "2026-04-08T16:42:58.491Z"
+    },
+    {
+      "chapterIndexId": "30f3ac69-21b6-45ad-a110-d011b7aaadaa",
+      "mangadexId": "30f3ac69-21b6-45ad-a110-d011b7aaadaa",
+      "title": "Fly Me to the Moon",
+      "englishCount": 283,
+      "arabicCount": 8,
+      "fallback": null,
+      "updatedAt": "2026-04-08T16:43:00.438Z"
+    },
+    {
+      "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "title": "Villains Are Destined to Die",
+      "englishCount": 1,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-08T16:43:02.062Z"
+    },
+    {
+      "chapterIndexId": "3f1453fb-9dac-4aca-a2ea-69613856c952",
+      "mangadexId": "3f1453fb-9dac-4aca-a2ea-69613856c952",
+      "title": "Tamen De Gushi",
+      "englishCount": 262,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-08T16:43:03.740Z"
+    },
+    {
+      "chapterIndexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
+      "mangadexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
+      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "englishCount": 5,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-08T16:43:05.325Z"
+    },
+    {
+      "chapterIndexId": "baa95345-24fb-47a9-83e9-434ff671f968",
+      "mangadexId": "baa95345-24fb-47a9-83e9-434ff671f968",
+      "title": "Smoking Behind the Supermarket with You",
+      "englishCount": 51,
+      "arabicCount": 33,
+      "fallback": null,
+      "updatedAt": "2026-04-08T16:43:07.294Z"
     }
   ],
   "failed": []
