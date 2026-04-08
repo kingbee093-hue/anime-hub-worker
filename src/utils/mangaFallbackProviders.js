@@ -2,7 +2,7 @@ const axios = require('axios');
 const { MANGA } = require('@consumet/extensions');
 const { safeUnpack } = require('@consumet/extensions/dist/utils/utils');
 
-const PROVIDER_PRIORITY = ['mangapill', 'comick', 'weebcentral', 'mangahere', 'asurascans'];
+const PROVIDER_PRIORITY = ['mangapill', 'weebcentral', 'mangahere', 'comick', 'asurascans'];
 const PROVIDER_HEADERS = {
   weebcentral: {
     Referer: 'https://weebcentral.com',
