@@ -69,6 +69,34 @@ function buildCandidateTitles(manga) {
   ).slice(0, 5);
 }
 
+function buildSearchQueries(providerKey, candidateTitles) {
+  const queries = new Set();
+
+  for (const rawTitle of candidateTitles) {
+    const title = String(rawTitle || '').trim();
+    if (!title) continue;
+
+    queries.add(title);
+
+    const normalized = normalizeText(title);
+    if (normalized && normalized !== title.toLowerCase()) {
+      queries.add(normalized);
+    }
+
+    if (providerKey === 'weebcentral') {
+      const compact = normalized
+        .replace(/\b(can t|won t|isn t|doesn t|don t)\b/g, (match) => match.replace(/\s+/g, ''))
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (compact) {
+        queries.add(compact);
+      }
+    }
+  }
+
+  return Array.from(queries);
+}
+
 function titleScore(resultTitle, candidates) {
   const normalizedResult = normalizeText(resultTitle);
   if (!normalizedResult) return 0;
@@ -135,8 +163,9 @@ function withTimeout(promise, timeoutMs, label) {
 async function collectProviderCandidates(providerKey, candidateTitles) {
   const provider = providers[providerKey];
   const rankedMap = new Map();
+  const searchQueries = buildSearchQueries(providerKey, candidateTitles);
 
-  for (const query of candidateTitles) {
+  for (const query of searchQueries) {
     let searchResults = [];
     try {
       searchResults = await provider.search(query);
@@ -171,15 +200,42 @@ class FallbackProviderClient {
   }
 
   async search(query) {
-    const result = await withTimeout(
-      this.client.search(query),
-      PROVIDER_SEARCH_TIMEOUT_MS,
-      `${this.label} search`,
-    );
-    return Array.isArray(result?.results) ? result.results : [];
+    const queries = [query];
+    const normalized = normalizeText(query);
+    if (normalized && !queries.includes(normalized)) {
+      queries.push(normalized);
+    }
+
+    if (this.key === 'weebcentral') {
+      const compact = normalized
+        .replace(/\b(can t|won t|isn t|doesn t|don t)\b/g, (match) => match.replace(/\s+/g, ''))
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (compact && !queries.includes(compact)) {
+        queries.push(compact);
+      }
+    }
+
+    for (const searchQuery of queries) {
+      const result = await withTimeout(
+        this.client.search(searchQuery),
+        PROVIDER_SEARCH_TIMEOUT_MS,
+        `${this.label} search`,
+      );
+      const results = Array.isArray(result?.results) ? result.results : [];
+      if (results.length > 0) {
+        return results;
+      }
+    }
+
+    return [];
   }
 
   async fetchInfo(id) {
+    if (this.key === 'comick') {
+      return fetchComicKInfo(id);
+    }
+
     return withTimeout(
       this.client.fetchMangaInfo(id),
       PROVIDER_INFO_TIMEOUT_MS,
@@ -245,6 +301,82 @@ async function fetchMangaHereChapterPages(chapterId) {
   }
 
   throw new Error('MangaHere fallback parser could not extract chapter pages');
+}
+
+function normalizeComicKAltTitles(mdTitles) {
+  if (Array.isArray(mdTitles)) {
+    return mdTitles
+      .map((item) => item?.title || item)
+      .filter(Boolean)
+      .map((value) => String(value).trim());
+  }
+
+  if (mdTitles && typeof mdTitles === 'object') {
+    return Object.values(mdTitles)
+      .map((item) => item?.title || item)
+      .filter(Boolean)
+      .map((value) => String(value).trim());
+  }
+
+  return [];
+}
+
+async function fetchComicKInfo(mangaId) {
+  const headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+    Referer: 'https://comick.art',
+  };
+
+  const pageResponse = await axios.get(`https://comick.art/comic/${mangaId}`, { headers });
+  const match = String(pageResponse.data).match(/<script id="comic-data"[^>]*>([\s\S]*?)<\/script>/i);
+  const comicData = match ? JSON.parse(match[1]) : {};
+
+  const chapters = [];
+  const chapterKeys = new Set();
+  for (let page = 1; page <= 20; page += 1) {
+    const response = await axios.get(`https://comick.art/api/comics/${mangaId}/chapter-list?page=${page}`, { headers });
+    const pageChapters = Array.isArray(response?.data?.data) ? response.data.data : [];
+    if (pageChapters.length === 0) {
+      break;
+    }
+
+    for (const chapter of pageChapters) {
+      const chapterKey = [
+        String(chapter.chap ?? '').trim(),
+        String(chapter.lang ?? '').trim(),
+        String(chapter.vol ?? '').trim(),
+        String(chapter.hid ?? '').trim(),
+      ].join('|');
+      if (chapterKeys.has(chapterKey)) {
+        continue;
+      }
+      chapterKeys.add(chapterKey);
+      chapters.push({
+        id: `${mangaId}/${chapter.hid}-chapter-${chapter.chap}-${chapter.lang}`,
+        title: chapter.title ?? chapter.chap,
+        chapterNumber: chapter.chap,
+        volumeNumber: chapter.vol,
+        releaseDate: chapter.created_at,
+        lang: chapter.lang,
+      });
+    }
+  }
+
+  return {
+    id: comicData.slug || mangaId,
+    title: comicData.title || mangaId,
+    altTitles: normalizeComicKAltTitles(comicData.md_titles),
+    description: comicData.desc || '',
+    genres: Array.isArray(comicData.md_comic_md_genres)
+      ? comicData.md_comic_md_genres
+          .map((genre) => genre?.md_genres?.name)
+          .filter(Boolean)
+      : [],
+    image: comicData.default_thumbnail || '',
+    malId: comicData?.links?.mal || null,
+    links: Object.values(comicData.links || {}).filter((link) => link != null),
+    chapters,
+  };
 }
 
 const providers = {
