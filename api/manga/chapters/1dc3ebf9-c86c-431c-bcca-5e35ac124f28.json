@@ -1,9 +1,10 @@
 {
+  "chapterIndexId": "1dc3ebf9-c86c-431c-bcca-5e35ac124f28",
   "mangaId": 123573,
   "anilistId": 123573,
   "mangadexId": "1dc3ebf9-c86c-431c-bcca-5e35ac124f28",
   "title": "Lout of Count’s Family",
-  "updatedAt": "2026-04-04T06:53:14.044Z",
+  "updatedAt": "2026-04-08T13:15:09.198Z",
   "availableLanguages": [
     "en"
   ],
@@ -19,10 +20,14 @@
         "volume": "1",
         "language": "en",
         "pages": 3,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2020-11-23T05:10:42+00:00",
         "externalUrl": null,
         "scanlationGroup": "Manga Weebs",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "e9a399e2-21ef-4d58-a09b-f84bed18483b",
@@ -31,11 +36,21 @@
         "volume": "1",
         "language": "en",
         "pages": 3,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2020-11-09T10:26:52+00:00",
         "externalUrl": null,
         "scanlationGroup": "Manga Weebs",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       }
     ]
-  }
+  },
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }

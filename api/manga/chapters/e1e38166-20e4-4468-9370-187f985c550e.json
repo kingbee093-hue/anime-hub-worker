@@ -1,9 +1,10 @@
 {
+  "chapterIndexId": "e1e38166-20e4-4468-9370-187f985c550e",
   "mangaId": 106064,
   "anilistId": 106064,
   "mangadexId": "e1e38166-20e4-4468-9370-187f985c550e",
   "title": "Chained Soldier",
-  "updatedAt": "2026-04-04T06:52:06.873Z",
+  "updatedAt": "2026-04-08T12:56:06.801Z",
   "availableLanguages": [
     "en"
   ],
@@ -19,10 +20,14 @@
         "volume": "",
         "language": "en",
         "pages": 21,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-05-03T22:24:34+00:00",
         "externalUrl": null,
         "scanlationGroup": "Ards",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "d3d9ee1a-f612-4c02-98f1-5fbb2c2b3844",
@@ -31,10 +36,14 @@
         "volume": "",
         "language": "en",
         "pages": 21,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-04-20T00:14:35+00:00",
         "externalUrl": null,
         "scanlationGroup": "Ards",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "04e2a654-4c7c-4d08-aae3-889ed1b4a594",
@@ -43,10 +52,14 @@
         "volume": "",
         "language": "en",
         "pages": 9,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-04-05T20:51:33+00:00",
         "externalUrl": null,
         "scanlationGroup": "Ards",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "c86722da-b63e-4859-8cd3-8ecd4ae52b88",
@@ -55,11 +68,21 @@
         "volume": "18",
         "language": "en",
         "pages": 5,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-04-06T02:24:16+00:00",
         "externalUrl": null,
         "scanlationGroup": "Ards",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       }
     ]
-  }
+  },
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }

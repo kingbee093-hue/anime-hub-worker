@@ -1,9 +1,10 @@
 {
+  "chapterIndexId": "3fba42cf-2ad6-4c30-a7ab-46cb8149208a",
   "mangaId": 85307,
   "anilistId": 85307,
   "mangadexId": "3fba42cf-2ad6-4c30-a7ab-46cb8149208a",
   "title": "Bungo Stray Dogs",
-  "updatedAt": "2026-04-04T06:52:43.341Z",
+  "updatedAt": "2026-04-08T12:59:44.201Z",
   "availableLanguages": [
     "en",
     "ar"
@@ -21,10 +22,14 @@
         "volume": "28",
         "language": "en",
         "pages": 24,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2026-02-03T22:17:49+00:00",
         "externalUrl": null,
         "scanlationGroup": "BungouFR",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "6d82d385-6d8f-4fcf-bcdc-ccf34b86ecbb",
@@ -33,10 +38,14 @@
         "volume": "",
         "language": "en",
         "pages": 32,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2026-01-04T21:35:01+00:00",
         "externalUrl": null,
         "scanlationGroup": "Bungo stray dogs fr ",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "b0bab7ab-20b7-468f-bef2-885e15a48702",
@@ -45,10 +54,14 @@
         "volume": "",
         "language": "en",
         "pages": 34,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-12-04T05:36:39+00:00",
         "externalUrl": null,
         "scanlationGroup": "the swaggoneers",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       }
     ],
     "ar": [
@@ -149,5 +162,11 @@
         "sourceType": "reader"
       }
     ]
-  }
+  },
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }

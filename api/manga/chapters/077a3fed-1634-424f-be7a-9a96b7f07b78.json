@@ -1,9 +1,10 @@
 {
+  "chapterIndexId": "077a3fed-1634-424f-be7a-9a96b7f07b78",
   "mangaId": 46765,
   "anilistId": 46765,
   "mangadexId": "077a3fed-1634-424f-be7a-9a96b7f07b78",
   "title": "Kingdom",
-  "updatedAt": "2026-04-04T06:50:35.992Z",
+  "updatedAt": "2026-04-08T11:54:25.619Z",
   "availableLanguages": [
     "en",
     "ar"
@@ -21,10 +22,14 @@
         "volume": "",
         "language": "en",
         "pages": 22,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-04-29T06:57:44+00:00",
         "externalUrl": null,
         "scanlationGroup": "Sense Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "f3a4ec96-80c4-4fc0-8a06-0354c4707b83",
@@ -33,10 +38,14 @@
         "volume": "",
         "language": "en",
         "pages": 20,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-04-10T14:24:12+00:00",
         "externalUrl": null,
         "scanlationGroup": "Sense Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "d78b5a01-51ac-4904-84c8-b6d962c452a6",
@@ -45,10 +54,14 @@
         "volume": "47",
         "language": "en",
         "pages": 4,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-05-13T21:09:46+00:00",
         "externalUrl": null,
         "scanlationGroup": "YEAR ZERO",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "591dcb24-2c08-4813-a3b2-1a2b53e56668",
@@ -57,10 +70,14 @@
         "volume": "46",
         "language": "en",
         "pages": 2,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-05-13T21:09:33+00:00",
         "externalUrl": null,
         "scanlationGroup": "YEAR ZERO",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "8c59b88e-ad1e-4a50-ac9a-5b8548aa1cb2",
@@ -69,10 +86,14 @@
         "volume": "45",
         "language": "en",
         "pages": 6,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-05-13T21:09:17+00:00",
         "externalUrl": null,
         "scanlationGroup": "YEAR ZERO",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       }
     ],
     "ar": [
@@ -305,5 +326,11 @@
         "sourceType": "reader"
       }
     ]
-  }
+  },
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }

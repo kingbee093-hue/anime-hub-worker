@@ -1,9 +1,10 @@
 {
+  "chapterIndexId": "b6886009-e60b-44a7-abc2-a575765277ba",
   "mangaId": 30024,
   "anilistId": 30024,
   "mangadexId": "b6886009-e60b-44a7-abc2-a575765277ba",
   "title": "D.Gray-man",
-  "updatedAt": "2026-04-04T06:53:19.768Z",
+  "updatedAt": "2026-04-08T13:15:11.060Z",
   "availableLanguages": [
     "en",
     "ar"
@@ -21,10 +22,14 @@
         "volume": "",
         "language": "en",
         "pages": 37,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2026-02-05T19:37:25+00:00",
         "externalUrl": null,
         "scanlationGroup": "Kougeki Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "a8298b49-98a8-4f77-bfa8-a6b2ec712e2f",
@@ -33,10 +38,14 @@
         "volume": "",
         "language": "en",
         "pages": 32,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-11-02T21:09:49+00:00",
         "externalUrl": null,
         "scanlationGroup": "Kougeki Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "6dda1f87-4285-41a1-b7ff-117523223531",
@@ -45,10 +54,14 @@
         "volume": "",
         "language": "en",
         "pages": 18,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-11-02T21:08:35+00:00",
         "externalUrl": null,
         "scanlationGroup": "Kougeki Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       },
       {
         "id": "dafdf0d5-87f7-4c02-add4-ff8fdafff063",
@@ -57,10 +70,14 @@
         "volume": "",
         "language": "en",
         "pages": 32,
+        "pageUrls": [],
+        "imageHeaders": {},
         "publishedAt": "2025-11-02T21:06:59+00:00",
         "externalUrl": null,
         "scanlationGroup": "Kougeki Scans",
-        "sourceType": "reader"
+        "sourceType": "reader",
+        "provider": "",
+        "providerChapterId": ""
       }
     ],
     "ar": [
@@ -125,15 +142,15 @@
         "sourceType": "reader"
       },
       {
-        "id": "d9f040d8-8d83-4e77-826e-c613c4e37656",
-        "title": "الليلة 253: إذا كان مُقدرًا، سنتقابل من جديد 1/2",
+        "id": "15fc573e-dd1d-426c-b83c-59e8dc510d22",
+        "title": "إذا كان قدرًا، فحتمًا سنلتقي مجددًا…!!",
         "chapter": "253",
-        "volume": "29",
+        "volume": "",
         "language": "ar",
         "pages": 28,
-        "publishedAt": "2026-01-31T17:53:23+00:00",
+        "publishedAt": "2025-05-19T13:20:40+00:00",
         "externalUrl": null,
-        "scanlationGroup": "Angel Haru",
+        "scanlationGroup": "Hokage Team",
         "sourceType": "reader"
       },
       {
@@ -581,5 +598,11 @@
         "sourceType": "reader"
       }
     ]
-  }
+  },
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
+  "englishFallbackProvider": null,
+  "englishFallbackProviderTitle": null,
+  "englishFallbackChapterCount": null
 }

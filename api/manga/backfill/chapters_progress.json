@@ -1,21 +1,205 @@
 {
-  "updatedAt": "2026-04-08T12:13:23.236Z",
-  "sectionScope": "trending",
-  "catalogTotal": 24,
-  "indexedTitles": 342,
+  "updatedAt": "2026-04-08T13:39:47.439Z",
+  "sectionScope": "genre:Action",
+  "catalogTotal": 120,
+  "indexedTitles": 385,
   "pendingTitles": 0,
-  "selectedCount": 0,
-  "batchSize": 12,
+  "selectedCount": 8,
+  "batchSize": 8,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
   "targetIds": [],
-  "selected": [],
+  "selected": [
+    {
+      "mangadexId": "e1d8b192-fa28-4651-bdaf-d4e0d4418ea8",
+      "title": "The Case Study of Vanitas",
+      "score": 234109,
+      "year": 2015,
+      "popularity": 34109,
+      "chapters": 0,
+      "chapterIndexId": "e1d8b192-fa28-4651-bdaf-d4e0d4418ea8",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "f7888782-0727-49b0-95ec-a3530c70f83b",
+      "title": "Hajime no Ippo: Fighting Spirit!",
+      "score": 233489,
+      "year": 1989,
+      "popularity": 33489,
+      "chapters": 0,
+      "chapterIndexId": "f7888782-0727-49b0-95ec-a3530c70f83b",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
+      "title": "The Player Who Can't Level Up",
+      "score": 233368,
+      "year": 2021,
+      "popularity": 33368,
+      "chapters": 0,
+      "chapterIndexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "37b87be0-b1f4-4507-affa-06c99ebb27f8",
+      "title": "Dragon Ball Super",
+      "score": 233082,
+      "year": 2015,
+      "popularity": 33082,
+      "chapters": 0,
+      "chapterIndexId": "37b87be0-b1f4-4507-affa-06c99ebb27f8",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "478e6926-b8bc-465c-9694-2bae1dbaf32b",
+      "title": "Latna Saga: Survival of a Sword King",
+      "score": 232633,
+      "year": 2019,
+      "popularity": 32633,
+      "chapters": 0,
+      "chapterIndexId": "478e6926-b8bc-465c-9694-2bae1dbaf32b",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "6e769716-df1e-4d66-89cc-32f3b46e17dc",
+      "title": "My Blasted Reincarnated Life",
+      "score": 232027,
+      "year": 2022,
+      "popularity": 32027,
+      "chapters": 0,
+      "chapterIndexId": "6e769716-df1e-4d66-89cc-32f3b46e17dc",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "812f9696-048f-496d-9ed4-84c99345d1fb",
+      "title": "Tales of Demons and Gods",
+      "score": 230940,
+      "year": 2015,
+      "popularity": 30940,
+      "chapters": 0,
+      "chapterIndexId": "812f9696-048f-496d-9ed4-84c99345d1fb",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "77bee52c-d2d6-44ad-a33a-1734c1fe696a",
+      "title": "The Eminence in Shadow",
+      "score": 210191,
+      "year": 2018,
+      "popularity": 10191,
+      "chapters": 0,
+      "chapterIndexId": "77bee52c-d2d6-44ad-a33a-1734c1fe696a",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    }
+  ],
   "nextSample": [],
-  "status": "idle",
-  "completedCount": 0,
-  "failedCount": 0,
-  "completed": [],
-  "failed": []
+  "status": "completed_with_failures",
+  "completedCount": 7,
+  "failedCount": 1,
+  "completed": [
+    {
+      "chapterIndexId": "e1d8b192-fa28-4651-bdaf-d4e0d4418ea8",
+      "mangadexId": "e1d8b192-fa28-4651-bdaf-d4e0d4418ea8",
+      "title": "The Case Study of Vanitas",
+      "englishCount": 80,
+      "arabicCount": 2,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-08T13:37:15.723Z"
+    },
+    {
+      "chapterIndexId": "f7888782-0727-49b0-95ec-a3530c70f83b",
+      "mangadexId": "f7888782-0727-49b0-95ec-a3530c70f83b",
+      "title": "Hajime no Ippo: Fighting Spirit!",
+      "englishCount": 6,
+      "arabicCount": 4,
+      "fallback": null,
+      "updatedAt": "2026-04-08T13:37:17.814Z"
+    },
+    {
+      "chapterIndexId": "37b87be0-b1f4-4507-affa-06c99ebb27f8",
+      "mangadexId": "37b87be0-b1f4-4507-affa-06c99ebb27f8",
+      "title": "Dragon Ball Super",
+      "englishCount": 107,
+      "arabicCount": 21,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-08T13:38:42.072Z"
+    },
+    {
+      "chapterIndexId": "478e6926-b8bc-465c-9694-2bae1dbaf32b",
+      "mangadexId": "478e6926-b8bc-465c-9694-2bae1dbaf32b",
+      "title": "Latna Saga: Survival of a Sword King",
+      "englishCount": 7,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-08T13:38:43.712Z"
+    },
+    {
+      "chapterIndexId": "6e769716-df1e-4d66-89cc-32f3b46e17dc",
+      "mangadexId": "6e769716-df1e-4d66-89cc-32f3b46e17dc",
+      "title": "My Blasted Reincarnated Life",
+      "englishCount": 81,
+      "arabicCount": 0,
+      "fallback": "weebcentral",
+      "updatedAt": "2026-04-08T13:39:42.503Z"
+    },
+    {
+      "chapterIndexId": "812f9696-048f-496d-9ed4-84c99345d1fb",
+      "mangadexId": "812f9696-048f-496d-9ed4-84c99345d1fb",
+      "title": "Tales of Demons and Gods",
+      "englishCount": 556,
+      "arabicCount": 2,
+      "fallback": null,
+      "updatedAt": "2026-04-08T13:39:45.439Z"
+    },
+    {
+      "chapterIndexId": "77bee52c-d2d6-44ad-a33a-1734c1fe696a",
+      "mangadexId": "77bee52c-d2d6-44ad-a33a-1734c1fe696a",
+      "title": "The Eminence in Shadow",
+      "englishCount": 89,
+      "arabicCount": 5,
+      "fallback": null,
+      "updatedAt": "2026-04-08T13:39:47.372Z"
+    }
+  ],
+  "failed": [
+    {
+      "chapterIndexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
+      "mangadexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
+      "title": "The Player Who Can't Level Up",
+      "error": "No readable chapter coverage was produced for this title."
+    }
+  ]
 }
