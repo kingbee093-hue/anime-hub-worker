@@ -1,108 +1,176 @@
 {
-  "updatedAt": "2026-04-08T17:16:25.272Z",
+  "updatedAt": "2026-04-08T17:35:40.018Z",
   "sectionScope": "targeted",
   "catalogTotal": 970,
   "indexedTitles": 404,
-  "pendingTitles": 573,
-  "selectedCount": 1,
-  "batchSize": 1,
-  "forceAll": false,
+  "pendingTitles": 622,
+  "selectedCount": 4,
+  "batchSize": 4,
+  "forceAll": true,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
   "targetIds": [
-    "114383"
+    "140475",
+    "106064",
+    "118408",
+    "114416"
   ],
   "selected": [
     {
-      "mangadexId": "4e7a4a0f-8391-4069-839b-de2352297dab",
-      "title": "A Couple of Cuckoos",
-      "score": 222806,
-      "year": 2020,
-      "popularity": 22806,
+      "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "title": "The Fragrant Flower Blooms With Dignity",
+      "score": -1,
+      "year": 2021,
+      "popularity": 70648,
       "chapters": 0,
-      "chapterIndexId": "4e7a4a0f-8391-4069-839b-de2352297dab",
-      "currentEnglishCount": 0,
+      "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "currentEnglishCount": 6,
       "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-08T17:20:06.195Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "e1e38166-20e4-4468-9370-187f985c550e",
+      "title": "Chained Soldier",
+      "score": -1,
+      "year": 2019,
+      "popularity": 50761,
+      "chapters": 0,
+      "chapterIndexId": "e1e38166-20e4-4468-9370-187f985c550e",
+      "currentEnglishCount": 4,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-08T17:20:07.814Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "title": "Villains Are Destined to Die",
+      "score": -1,
+      "year": 2020,
+      "popularity": 38123,
+      "chapters": 0,
+      "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "currentEnglishCount": 1,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-08T17:20:09.362Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
+      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "score": -1,
+      "year": 2019,
+      "popularity": 36447,
+      "chapters": 0,
+      "chapterIndexId": "efb4278c-a761-406b-9d69-19603c5e4c8b",
+      "currentEnglishCount": 5,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-08T17:20:11.020Z",
       "lastFailureAt": null
     }
   ],
   "nextSample": [
     {
+      "mangadexId": "dcdcc8c7-932e-4f60-a900-5f19934eb6cf",
+      "title": "Dungeon Reset"
+    },
+    {
+      "mangadexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
+      "title": "I Am a Hero"
+    },
+    {
+      "mangadexId": "d7f56ace-cd30-48b9-8b64-afeca0077fca",
+      "title": "The Greatest Estate Developer"
+    },
+    {
+      "mangadexId": "ac6819d8-de35-442c-82dd-3444983d4f26",
+      "title": "The Remarried Empress"
+    },
+    {
+      "mangadexId": "40bc649f-7b49-4645-859e-6cd94136e722",
+      "title": "Dragon Ball"
+    },
+    {
+      "mangadexId": "79469364-39c5-4f70-8af8-f5e1c9894aa7",
+      "title": "The Lone Necromancer"
+    },
+    {
+      "mangadexId": "f830514d-f3e1-4b11-b18b-e5f7b6d9b861",
+      "title": "Tsubasa RESERVoir CHRoNiCLE"
+    },
+    {
+      "mangadexId": "231d5196-1f41-4eba-af8d-841d40bc548d",
+      "title": "Homunculus"
+    },
+    {
+      "mangadexId": "fa3e0b2f-4e1f-48ee-9af0-1de9dc28ca51",
+      "title": "Bakuman。"
+    },
+    {
+      "mangadexId": "1a4bc1ca-2ed8-425b-8235-d9372a446d93",
+      "title": "FFF-Class Trashero"
+    },
+    {
+      "mangadexId": "7cc37898-6669-407f-b7a6-f23a2859bc0b",
+      "title": "Sweet Home"
+    },
+    {
+      "mangadexId": "4702058d-c553-4966-ab09-1deab6328384",
+      "title": "xxxHOLiC"
+    },
+    {
+      "mangadexId": "40da1219-1860-4d7f-b823-d3511ac67cac",
+      "title": "Positively Yours"
+    },
+    {
       "mangadexId": "3f38adf6-145c-4a04-b220-1ed8b5a20b55",
       "title": "Heavenly Demon Reborn!"
     },
     {
-      "mangadexId": "51a0cd0c-3254-47f0-a7fd-4b9bb178f813",
-      "title": "True Beauty"
-    },
-    {
-      "mangadexId": "42a24ea1-6035-4247-af1c-09963b5bff35",
-      "title": "Say \"I Love You\"."
-    },
-    {
-      "mangadexId": "84b933cb-a99a-4737-98bb-b38295087700",
-      "title": "Minamoto-kun Monogatari"
-    },
-    {
-      "mangadexId": "a82fe527-9e74-48d0-9c5f-a5e788c0bd4a",
-      "title": "The Villainess is a Marionette"
-    },
-    {
-      "mangadexId": "2998ef22-88d4-4191-81b4-c21ec5d45fbc",
-      "title": "Chobits"
-    },
-    {
-      "mangadexId": "6c1eb4e1-95c5-466e-b4e6-ea545585d19a",
-      "title": "Tsubaki-chou Lonely Planet"
-    },
-    {
-      "mangadexId": "21024a6b-af2e-42c1-b0dd-f7ab722a5a32",
-      "title": "Magical Girl Site"
-    },
-    {
-      "mangadexId": "f75812e9-27bb-44d5-9cb1-25de07ceb326",
-      "title": "The Voynich Hotel"
-    },
-    {
-      "mangadexId": "7b4abd68-7d0b-40c7-9fe9-10e7f097a1c2",
-      "title": "Black Torch"
-    },
-    {
-      "mangadexId": "16800ea3-d7cb-4a03-801e-bfbb4dc12bea",
-      "title": "My Wife is the Demon Queen"
-    },
-    {
-      "mangadexId": "36754a57-473d-44df-bde0-4d3ff29b922e",
-      "title": "GREEN BLOOD"
-    },
-    {
-      "mangadexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
-      "title": "Boku Girl"
-    },
-    {
-      "mangadexId": "a919bb04-b128-4c22-9703-f2b1c56eab82",
-      "title": "ORIGIN"
-    },
-    {
-      "mangadexId": "94a7d0d5-18c6-4f24-826c-4157e36608e6",
-      "title": "RAINBOW: Nisha Rokubou no Shichinin"
+      "mangadexId": "9342c30d-2f4b-4527-a66e-08616f348038",
+      "title": "Boundless Ascension"
     }
   ],
-  "status": "completed",
-  "completedCount": 1,
+  "currentItem": {
+    "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+    "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+    "title": "Villains Are Destined to Die",
+    "status": "completed"
+  },
+  "completedCount": 3,
   "failedCount": 0,
   "completed": [
     {
-      "chapterIndexId": "4e7a4a0f-8391-4069-839b-de2352297dab",
-      "mangadexId": "4e7a4a0f-8391-4069-839b-de2352297dab",
-      "title": "A Couple of Cuckoos",
-      "englishCount": 293,
+      "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+      "title": "The Fragrant Flower Blooms With Dignity",
+      "englishCount": 242,
       "arabicCount": 0,
       "fallback": "mangapill",
-      "updatedAt": "2026-04-08T17:16:25.159Z"
+      "updatedAt": "2026-04-08T17:28:20.209Z"
+    },
+    {
+      "chapterIndexId": "e1e38166-20e4-4468-9370-187f985c550e",
+      "mangadexId": "e1e38166-20e4-4468-9370-187f985c550e",
+      "title": "Chained Soldier",
+      "englishCount": 233,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-08T17:31:56.334Z"
+    },
+    {
+      "chapterIndexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "mangadexId": "14569f2f-f66a-4c67-ac7f-a37823a0fa23",
+      "title": "Villains Are Destined to Die",
+      "englishCount": 244,
+      "arabicCount": 0,
+      "fallback": "weebcentral",
+      "updatedAt": "2026-04-08T17:35:39.945Z"
     }
   ],
   "failed": []

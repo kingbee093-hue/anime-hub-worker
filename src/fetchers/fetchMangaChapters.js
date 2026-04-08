@@ -38,6 +38,9 @@ const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_
 const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
 const FALLBACK_PROGRESS_EVERY = Number(process.env.MANGA_FALLBACK_PROGRESS_EVERY || 10);
 const FALLBACK_CHAPTER_BUDGET_MS = Number(process.env.MANGA_FALLBACK_CHAPTER_BUDGET_MS || 120000);
+const UNKNOWN_TARGET_MIN_ENGLISH_COVERAGE = Number(
+  process.env.MANGA_UNKNOWN_TARGET_MIN_ENGLISH_COVERAGE || 20,
+);
 
 function isProviderBlockedError(error) {
   const message = String(error?.message || '').toLowerCase();
@@ -344,6 +347,10 @@ function needsEnglishFallback(entry, englishChapters) {
   }
 
   if (externalCount > 0) {
+    return true;
+  }
+
+  if (catalogTotal <= 0 && readableCount < UNKNOWN_TARGET_MIN_ENGLISH_COVERAGE) {
     return true;
   }
 

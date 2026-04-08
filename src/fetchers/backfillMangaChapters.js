@@ -244,7 +244,7 @@ async function backfillMangaChapters() {
   const state = getState();
   const stateTitles = state.titles || {};
 
-  const candidates = catalogItems
+  const candidateEntries = catalogItems
     .map((item) => ({
       item,
       manifestItem: chapterMap.get(item.chapterIndexId) || null,
@@ -254,12 +254,14 @@ async function backfillMangaChapters() {
         chapterMap.get(item.chapterIndexId) || null,
         stateTitles[item.chapterIndexId] || null,
       ),
-    }))
+    }));
+
+  const candidates = candidateEntries
     .filter((entry) => entry.score >= 0)
     .sort((a, b) => b.score - a.score);
 
   const selectedPool = TARGET_IDS.size > 0
-    ? candidates.filter(({ item }) =>
+    ? candidateEntries.filter(({ item }) =>
         getEntryIds(item).some((id) => TARGET_IDS.has(id)),
       )
     : candidates;
