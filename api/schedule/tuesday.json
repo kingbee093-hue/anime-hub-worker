@@ -957,6 +957,16 @@
         "isAdult": false
       },
       {
+        "id": 1342,
+        "name": "Clone",
+        "description": "Prominently features a character who is an artificial exact copy of another organism.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
@@ -971,16 +981,6 @@
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1342,
-        "name": "Clone",
-        "description": "Prominently features a character who is an artificial exact copy of another organism.",
-        "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1271,20 +1271,20 @@
         "isAdult": false
       },
       {
-        "id": 433,
-        "name": "Animals",
-        "description": "Prominently features animal characters in a leading role.",
-        "category": "Theme-Other",
+        "id": 1601,
+        "name": "Primarily Animal Cast",
+        "description": "Main cast is mostly composed animal or animal-like characters.",
+        "category": "Cast-Main Cast",
         "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1601,
-        "name": "Primarily Animal Cast",
-        "description": "Main cast is mostly composed animal or animal-like characters.",
-        "category": "Cast-Main Cast",
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
         "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1424,20 +1424,20 @@
         "isAdult": false
       },
       {
-        "id": 139,
-        "name": "Love Triangle",
-        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
-        "category": "Theme-Romance",
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 97,
-        "name": "Otaku Culture",
-        "description": "Centers around the culture of a fanatical fan-base.",
-        "category": "Theme-Other",
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1551,16 +1551,6 @@
     ],
     "tags": [
       {
-        "id": 147,
-        "name": "Afterlife",
-        "description": "Partly or completely set in the afterlife.",
-        "category": "Setting-Universe",
-        "rank": 79,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 281,
         "name": "Surreal Comedy",
         "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
@@ -1581,10 +1571,40 @@
         "isAdult": false
       },
       {
+        "id": 147,
+        "name": "Afterlife",
+        "description": "Partly or completely set in the afterlife.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 244,
         "name": "Isekai",
         "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
         "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1601,21 +1621,11 @@
         "isAdult": false
       },
       {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
+        "id": 39,
+        "name": "Parody",
+        "description": "Features deliberate exaggeration of popular tropes or a particular genre to comedic effect.",
+        "category": "Theme-Comedy",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
