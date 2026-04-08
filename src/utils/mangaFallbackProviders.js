@@ -27,7 +27,7 @@ const PROVIDER_LABELS = {
   mangahere: 'MangaHere',
 };
 const MAX_SEARCH_RESULTS_PER_QUERY = 3;
-const MAX_PROVIDER_CANDIDATES = 2;
+const MAX_PROVIDER_CANDIDATES = 4;
 const PROVIDER_SEARCH_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_SEARCH_TIMEOUT_MS || 30000);
 const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_MS || 40000);
 const PROVIDER_PAGES_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_PAGES_TIMEOUT_MS || 40000);
@@ -118,7 +118,6 @@ function buildSearchCandidateRecord(candidate, candidateTitles, query) {
     providerId,
     providerTitle,
     matchScore,
-    dedupeKey: normalizeText(providerTitle) || providerId,
   };
 }
 
@@ -156,15 +155,7 @@ async function collectProviderCandidates(providerKey, candidateTitles) {
     }
   }
 
-  const dedupedByTitle = new Map();
-  for (const item of rankedMap.values()) {
-    const existing = dedupedByTitle.get(item.dedupeKey);
-    if (!existing || item.matchScore > existing.matchScore) {
-      dedupedByTitle.set(item.dedupeKey, item);
-    }
-  }
-
-  return Array.from(dedupedByTitle.values())
+  return Array.from(rankedMap.values())
     .sort((a, b) => b.matchScore - a.matchScore)
     .slice(0, MAX_PROVIDER_CANDIDATES);
 }

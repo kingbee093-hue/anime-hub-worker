@@ -386,12 +386,17 @@ async function buildEnglishFallbackChapters(
   fallbackMappingMap,
 ) {
   const baseEnglish = dedupeChapters([...(previousEnglish || []), ...(currentEnglish || [])]);
-  if (!ENABLE_ENGLISH_FALLBACK || !needsEnglishFallback(entry, baseEnglish)) {
+  const cachedMapping = fallbackMappingMap.get(entry.chapterIndexId);
+  const freshCached = isMappingFresh(cachedMapping) ? cachedMapping : null;
+  const cachedChapterTarget = Number(freshCached?.chapterCount || 0);
+  const needsCachedCoverage =
+    cachedChapterTarget > 0 &&
+    baseEnglish.filter((chapter) => chapter.sourceType === 'reader').length < cachedChapterTarget;
+
+  if (!ENABLE_ENGLISH_FALLBACK || (!needsEnglishFallback(entry, baseEnglish) && !needsCachedCoverage)) {
     return { chapters: baseEnglish, mapping: null };
   }
 
-  const cachedMapping = fallbackMappingMap.get(entry.chapterIndexId);
-  const freshCached = isMappingFresh(cachedMapping) ? cachedMapping : null;
   console.log(`Resolving English fallback providers for ${entry.title} (MangaPill preferred first)...`);
 
   const rankedCandidates = await resolveFallbackProviderCandidates(entry);

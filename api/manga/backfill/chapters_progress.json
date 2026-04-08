@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-04-08T13:51:54.021Z",
+  "updatedAt": "2026-04-08T14:35:53.750Z",
   "sectionScope": "targeted",
-  "catalogTotal": 970,
+  "catalogTotal": 973,
   "indexedTitles": 386,
-  "pendingTitles": 642,
-  "selectedCount": 1,
+  "pendingTitles": 645,
+  "selectedCount": 0,
   "batchSize": 1,
   "forceAll": true,
   "failureCooldownHours": 24,
@@ -13,23 +13,12 @@
   "targetIds": [
     "130511"
   ],
-  "selected": [
-    {
-      "mangadexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
-      "title": "The Player Who Can't Level Up",
-      "score": 233379,
-      "year": 2021,
-      "popularity": 33379,
-      "chapters": 0,
-      "chapterIndexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": "2026-04-08T13:48:15.475Z"
-    }
-  ],
+  "selected": [],
   "nextSample": [
+    {
+      "mangadexId": "3fb3f1c3-153e-400c-a0b3-4eb9cc53be3b",
+      "title": "The God of High School"
+    },
     {
       "mangadexId": "f61952ad-63bb-4e81-a03e-9e50b9e23037",
       "title": "Noblesse"
@@ -85,25 +74,11 @@
     {
       "mangadexId": "7cc37898-6669-407f-b7a6-f23a2859bc0b",
       "title": "Sweet Home"
-    },
-    {
-      "mangadexId": "4702058d-c553-4966-ab09-1deab6328384",
-      "title": "xxxHOLiC"
     }
   ],
-  "status": "completed",
-  "completedCount": 1,
+  "status": "idle",
+  "completedCount": 0,
   "failedCount": 0,
-  "completed": [
-    {
-      "chapterIndexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
-      "mangadexId": "a796fb50-cdc9-4c15-a48d-bc1d733d89b2",
-      "title": "The Player Who Can't Level Up",
-      "englishCount": 43,
-      "arabicCount": 0,
-      "fallback": "comick",
-      "updatedAt": "2026-04-08T13:51:53.960Z"
-    }
-  ],
+  "completed": [],
   "failed": []
 }
