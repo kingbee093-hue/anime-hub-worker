@@ -75,22 +75,62 @@ function parseChapterNumber(value) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function buildProviderChapterContext(providerKey, chapters = []) {
+  if (providerKey !== 'weebcentral' || !Array.isArray(chapters) || chapters.length === 0) {
+    return null;
+  }
+
+  const seasonGroups = new Map();
+
+  for (const chapter of chapters) {
+    const title = String(chapter?.title || '').trim();
+    const match = title.match(/^S(\d+)\s*-\s*Episode\s*(\d+(?:\.\d+)?)/i);
+    if (!match) continue;
+
+    const season = Number(match[1]);
+    const episode = Number.parseFloat(match[2]);
+    if (!Number.isFinite(season) || !Number.isFinite(episode)) continue;
+
+    if (!seasonGroups.has(season)) {
+      seasonGroups.set(season, []);
+    }
+    seasonGroups.get(season).push(episode);
+  }
+
+  if (seasonGroups.size < 2) {
+    return null;
+  }
+
+  const orderedSeasons = Array.from(seasonGroups.keys()).sort((a, b) => a - b);
+  const offsets = {};
+  let cumulativeOffset = 0;
+
+  for (const season of orderedSeasons) {
+    offsets[season] = cumulativeOffset;
+    const episodes = seasonGroups.get(season) || [];
+    const maxEpisode = episodes
+      .filter((value) => Number.isInteger(value) && value >= 0)
+      .reduce((max, value) => Math.max(max, value), 0);
+    cumulativeOffset += maxEpisode;
+  }
+
+  return {
+    type: 'season_episode_offsets',
+    offsets,
+  };
+}
+
 function parseProviderChapterNumber(providerKey, chapter, manga = null) {
   const rawValue = chapter?.chapter || chapter?.chapterNumber || chapter?.title || '';
 
-  if (providerKey === 'weebcentral' && Number(manga?.anilistId || manga?.mangaId) === 86099) {
+  if (providerKey === 'weebcentral' && manga?.providerChapterContext?.type === 'season_episode_offsets') {
     const title = String(chapter?.title || '').trim();
     const match = title.match(/^S(\d+)\s*-\s*Episode\s*(\d+(?:\.\d+)?)/i);
     if (match) {
       const season = Number(match[1]);
       const episode = Number.parseFloat(match[2]);
       if (Number.isFinite(season) && Number.isFinite(episode)) {
-        const offsets = {
-          1: 0,
-          2: 66,
-          3: 248,
-          4: 376,
-        };
+        const offsets = manga.providerChapterContext.offsets || {};
 
         if (Object.prototype.hasOwnProperty.call(offsets, season)) {
           if (episode === 0) {
@@ -808,6 +848,7 @@ module.exports = {
   PROVIDER_LABELS,
   providers,
   buildCandidateTitles,
+  buildProviderChapterContext,
   discoverProviderTitlesForManga,
   parseChapterNumber,
   parseProviderChapterNumber,

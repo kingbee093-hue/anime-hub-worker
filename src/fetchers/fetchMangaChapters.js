@@ -6,6 +6,7 @@ const CONFIG = require('../config/constants');
 const { delay } = require('../utils/formatters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
+  buildProviderChapterContext,
   PROVIDER_LABELS,
   parseChapterNumber,
   parseProviderChapterNumber,
@@ -446,6 +447,10 @@ async function buildEnglishFallbackChapters(
       mapping,
       provider,
       chapters: Array.isArray(info?.chapters) ? info.chapters : [],
+      providerChapterContext: buildProviderChapterContext(
+        mapping.provider,
+        Array.isArray(info?.chapters) ? info.chapters : [],
+      ),
     });
   }
 
@@ -460,7 +465,15 @@ async function buildEnglishFallbackChapters(
 
   for (const providerEntry of providerEntries) {
     for (const chapter of providerEntry.chapters) {
-      const chapterNumber = parseProviderChapterNumber(providerEntry.mapping.provider, chapter, entry);
+      const chapterContext = {
+        ...entry,
+        providerChapterContext: providerEntry.providerChapterContext,
+      };
+      const chapterNumber = parseProviderChapterNumber(
+        providerEntry.mapping.provider,
+        chapter,
+        chapterContext,
+      );
       if (chapterNumber == null) {
         continue;
       }
@@ -547,7 +560,11 @@ async function buildEnglishFallbackChapters(
       }
 
       try {
-        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, entry);
+        const chapterContext = {
+          ...entry,
+          providerChapterContext: providerEntry.providerChapterContext,
+        };
+        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, chapterContext);
         console.log(
           `Trying ${PROVIDER_LABELS[providerKey] || providerKey} for ${entry.title} chapter ${chapterNumber ?? '?'} (${chapter.id}).`,
         );
@@ -567,7 +584,7 @@ async function buildEnglishFallbackChapters(
           continue;
         }
 
-        const normalized = normalizeProviderChapter(providerKey, chapter, pageUrls, entry);
+        const normalized = normalizeProviderChapter(providerKey, chapter, pageUrls, chapterContext);
         if (existing) {
           const index = merged.findIndex((item) => _chapterKey(item) === key);
           if (index >= 0 && scoreChapterVariant(normalized) > scoreChapterVariant(merged[index])) {
@@ -586,7 +603,11 @@ async function buildEnglishFallbackChapters(
         break;
       } catch (error) {
         providerFailureCounts.set(providerKey, failureCount + 1);
-        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, entry);
+        const chapterContext = {
+          ...entry,
+          providerChapterContext: providerEntry.providerChapterContext,
+        };
+        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, chapterContext);
         if (isProviderBlockedError(error)) {
           blockedProviders.add(providerKey);
           console.error(
@@ -794,6 +815,10 @@ async function buildProviderOnlyEnglishChapters(
       },
       provider,
       chapters: Array.isArray(info?.chapters) ? info.chapters : [],
+      providerChapterContext: buildProviderChapterContext(
+        mapping.provider,
+        Array.isArray(info?.chapters) ? info.chapters : [],
+      ),
     });
   }
 
@@ -808,7 +833,15 @@ async function buildProviderOnlyEnglishChapters(
 
   for (const providerEntry of providerEntries) {
     for (const chapter of providerEntry.chapters) {
-      const chapterNumber = parseProviderChapterNumber(providerEntry.mapping.provider, chapter, entry);
+      const chapterContext = {
+        ...entry,
+        providerChapterContext: providerEntry.providerChapterContext,
+      };
+      const chapterNumber = parseProviderChapterNumber(
+        providerEntry.mapping.provider,
+        chapter,
+        chapterContext,
+      );
       if (chapterNumber == null) {
         continue;
       }
@@ -885,7 +918,11 @@ async function buildProviderOnlyEnglishChapters(
       }
 
       try {
-        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, entry);
+        const chapterContext = {
+          ...entry,
+          providerChapterContext: providerEntry.providerChapterContext,
+        };
+        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, chapterContext);
         console.log(
           `Trying provider source ${PROVIDER_LABELS[providerKey] || providerKey} for ${entry.title} chapter ${chapterNumber ?? '?' } (${chapter.id}).`,
         );
@@ -902,7 +939,7 @@ async function buildProviderOnlyEnglishChapters(
           continue;
         }
 
-        const normalized = normalizeProviderChapter(providerKey, chapter, pageUrls, entry);
+        const normalized = normalizeProviderChapter(providerKey, chapter, pageUrls, chapterContext);
         const existing = existingMap.get(key);
         if (existing) {
           const index = merged.findIndex((item) => _chapterKey(item) === key);
@@ -927,7 +964,11 @@ async function buildProviderOnlyEnglishChapters(
           console.error(`Blocked provider source ${providerKey} for ${entry.title}: ${error.message}`);
           continue;
         }
-        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, entry);
+        const chapterContext = {
+          ...entry,
+          providerChapterContext: providerEntry.providerChapterContext,
+        };
+        const chapterNumber = parseProviderChapterNumber(providerKey, chapter, chapterContext);
         console.error(
           `Failed provider source pages for ${entry.title} ch ${chapterNumber} via ${providerKey}: ${error.message}`,
         );
