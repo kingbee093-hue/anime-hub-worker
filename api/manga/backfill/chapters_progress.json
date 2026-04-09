@@ -1,31 +1,39 @@
 {
-  "updatedAt": "2026-04-09T19:13:48.469Z",
+  "updatedAt": "2026-04-09T20:38:50.716Z",
   "sectionScope": "targeted",
   "catalogTotal": 951,
-  "indexedTitles": 466,
-  "pendingTitles": 492,
-  "selectedCount": 0,
+  "indexedTitles": 483,
+  "pendingTitles": 474,
+  "selectedCount": 1,
   "batchSize": 1,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
   "targetIds": [
-    "30703"
+    "44440"
   ],
-  "selected": [],
-  "nextSample": [
+  "selected": [
     {
-      "mangadexId": "3f38adf6-145c-4a04-b220-1ed8b5a20b55",
-      "title": "Heavenly Demon Reborn!"
-    },
+      "mangadexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
+      "title": "I Am a Hero",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2009,
+      "popularity": 40300,
+      "chapters": 265,
+      "chapterIndexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
+      "currentEnglishCount": 164,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-09T19:52:36.078Z",
+      "lastFailureAt": null
+    }
+  ],
+  "nextSample": [
     {
       "mangadexId": "9342c30d-2f4b-4527-a66e-08616f348038",
       "title": "Boundless Ascension"
-    },
-    {
-      "mangadexId": "3080a5e2-abc1-4682-92f5-7429428bc198",
-      "title": "PIGPEN"
     },
     {
       "mangadexId": "28567105-e14a-49af-92c1-d3196dc6b446",
@@ -56,14 +64,6 @@
       "title": "Tsubaki-chou Lonely Planet"
     },
     {
-      "mangadexId": "f75812e9-27bb-44d5-9cb1-25de07ceb326",
-      "title": "The Voynich Hotel"
-    },
-    {
-      "mangadexId": "21024a6b-af2e-42c1-b0dd-f7ab722a5a32",
-      "title": "Magical Girl Site"
-    },
-    {
       "mangadexId": "16800ea3-d7cb-4a03-801e-bfbb4dc12bea",
       "title": "My Wife is the Demon Queen"
     },
@@ -74,11 +74,37 @@
     {
       "mangadexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
       "title": "Boku Girl"
+    },
+    {
+      "mangadexId": "94a7d0d5-18c6-4f24-826c-4157e36608e6",
+      "title": "RAINBOW: Nisha Rokubou no Shichinin"
+    },
+    {
+      "mangadexId": "9d563964-e935-47d4-812a-abfd2f625384",
+      "title": "Shijou Saikyou no Deshi Kenichi"
+    },
+    {
+      "mangadexId": "d08a69ee-9f90-439a-b17d-da561eda2c66",
+      "title": "Negima! Magister Negi Magi"
+    },
+    {
+      "mangadexId": "a81e63a3-83f1-4da5-95a4-ba431e830ce9",
+      "title": "Shamo"
     }
   ],
-  "status": "idle",
-  "completedCount": 0,
+  "status": "completed",
+  "completedCount": 1,
   "failedCount": 0,
-  "completed": [],
+  "completed": [
+    {
+      "chapterIndexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
+      "mangadexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
+      "title": "I Am a Hero",
+      "englishCount": 164,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-09T20:38:50.648Z"
+    }
+  ],
   "failed": []
 }
