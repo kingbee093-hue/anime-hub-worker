@@ -1,6 +1,6 @@
 [
   {
-    "animeId": 183231,
+    "animeId": 60153,
     "anilistId": 183231,
     "title": "RILAKKUMA",
     "titleRomaji": "Rilakkuma: Goyururi Yume no Tabi",
@@ -66,7 +66,7 @@
     "hashtag": "#リラックマアニメ",
     "startDate": "2026-04-04",
     "endDate": null,
-    "mal_url": "",
+    "mal_url": "https://myanimelist.net/anime/60153",
     "anilist_url": "https://anilist.co/anime/183231",
     "trailer": {
       "id": "rV-fcFL5vtU",
@@ -419,7 +419,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 18503,
+    "popularity": 18514,
     "trending": 0,
     "favourites": 965,
     "source": "MANGA",
@@ -579,7 +579,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 77,
-    "popularity": 7093,
+    "popularity": 7097,
     "trending": 0,
     "favourites": 354,
     "source": "MANGA",
@@ -1261,7 +1261,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 82,
-    "popularity": 74490,
+    "popularity": 74529,
     "trending": 7,
     "favourites": 5589,
     "source": "MANGA",
@@ -1508,7 +1508,7 @@
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 60,
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1518,7 +1518,27 @@
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
-        "rank": 20,
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1538,26 +1558,6 @@
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
         "category": "Setting-Scene",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 100,
-        "name": "Nudity",
-        "description": "Features a character wearing no clothing or exposing intimate body parts.",
-        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2855,7 +2855,7 @@
         "name": "Drugs",
         "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
         "category": "Theme-Other",
-        "rank": 80,
+        "rank": 84,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
