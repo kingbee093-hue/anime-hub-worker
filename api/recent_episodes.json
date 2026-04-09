@@ -1,108 +1,60 @@
 [
   {
-    "animeId": 61227,
-    "anilistId": 188034,
-    "title": "Girls und Panzer: Motto Love Love Sakusen desu!",
-    "titleRomaji": "Girls und Panzer: Motto Love Love Sakusen desu!",
+    "animeId": 62387,
+    "anilistId": 198369,
+    "title": "Meitantei Conan: Highway no Datenshi",
+    "titleRomaji": "Meitantei Conan: Highway no Datenshi",
     "titleEnglish": "",
-    "titleNative": "ガールズ＆パンツァー もっとらぶらぶ作戦です！",
+    "titleNative": "名探偵コナン ハイウェイの堕天使",
     "synonyms": [
-      "Girls & Panzer - Motto Love Love Sakusen desu!"
+      "Meitantei Conan Movie 29",
+      "Detective Conan Movie 29",
+      "Detective Conan: Fallen Angel of the Highway"
     ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188034-hlwafdUZhjwD.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188034-hlwafdUZhjwD.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188034-hlwafdUZhjwD.png",
-    "coverImageColor": "#d6ae78",
-    "bannerImage": "",
-    "synopsis": "Four part adaptation of the Girls und Panzer: Motto Love Love Sakusen desu! manga. (Source: Natalie Comics)",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198369-SCQoqNEk325p.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198369-SCQoqNEk325p.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198369-SCQoqNEk325p.jpg",
+    "coverImageColor": "#e4ae35",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/198369-MmvnBvHzuB3D.jpg",
+    "synopsis": "The 29th Detective Conan movie.",
     "type": "ANIME",
     "format": "MOVIE",
     "status": "RELEASING",
-    "season": "WINTER",
+    "season": "SPRING",
     "seasonYear": 2026,
-    "seasonInt": 261,
-    "episodes": 4,
-    "duration": 72,
+    "seasonInt": 262,
+    "episodes": 1,
+    "duration": 0,
     "genres": [
-      "Comedy"
+      "Mystery"
     ],
     "tags": [
       {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 100,
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 39,
-        "name": "Parody",
-        "description": "Features deliberate exaggeration of popular tropes or a particular genre to comedic effect.",
-        "category": "Theme-Comedy",
-        "rank": 79,
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 84,
-        "name": "School Club",
-        "description": "Partly or completely set in a school club scene.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 92,
-        "name": "Cute Girls Doing Cute Things",
-        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
-        "category": "Theme-Slice of Life",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 46,
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -110,46 +62,38 @@
     ],
     "studios": [
       {
-        "id": 132,
-        "name": "P.A.WORKS",
+        "id": 73,
+        "name": "TMS Entertainment",
         "isMain": true,
         "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/132"
-      },
-      {
-        "id": 60,
-        "name": "Actas",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/60"
+        "siteUrl": "https://anilist.co/studio/73"
       }
     ],
     "studiosNames": [
-      "P.A.WORKS",
-      "Actas"
+      "TMS Entertainment"
     ],
-    "rating": 6.8,
-    "averageScore": 68,
-    "meanScore": 78,
-    "popularity": 2857,
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 1275,
     "trending": 0,
-    "favourites": 38,
+    "favourites": 10,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
     "isAdult": false,
-    "hashtag": "#ガルパンらぶらぶ #garupan",
-    "startDate": "2025-12-26",
-    "endDate": "2026-04-10",
-    "mal_url": "https://myanimelist.net/anime/61227",
-    "anilist_url": "https://anilist.co/anime/188034",
+    "hashtag": "#名探偵コナン",
+    "startDate": "2026-04-10",
+    "endDate": "2026-01-01",
+    "mal_url": "https://myanimelist.net/anime/62387",
+    "anilist_url": "https://anilist.co/anime/198369",
     "trailer": {
-      "id": "T6C9C9ynlQo",
+      "id": "CsxkouRl7Yo",
       "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=T6C9C9ynlQo"
+      "url": "https://www.youtube.com/watch?v=CsxkouRl7Yo"
     },
-    "latestEpisode": 4,
-    "latestEpisodeTitle": "Episode 4"
+    "latestEpisode": 1,
+    "latestEpisodeTitle": "Episode 1"
   },
   {
     "animeId": 60852,
@@ -10836,7 +10780,7 @@
         "name": "Drugs",
         "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
         "category": "Theme-Other",
-        "rank": 80,
+        "rank": 84,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
