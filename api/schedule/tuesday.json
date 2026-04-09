@@ -199,7 +199,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 12,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Comedy",
       "Fantasy",
@@ -366,7 +366,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 24,
     "genres": [
       "Action",
       "Comedy",
@@ -525,6 +525,16 @@
         "isAdult": false
       },
       {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 104,
         "name": "Anti-Hero",
         "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
@@ -572,16 +582,6 @@
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 483,
-        "name": "LGBTQ+ Themes",
-        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
@@ -1122,8 +1122,8 @@
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
-    "duration": 0,
+    "episodes": 13,
+    "duration": 25,
     "genres": [
       "Drama"
     ],
@@ -1397,7 +1397,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 23,
     "genres": [
       "Comedy",
       "Romance"
