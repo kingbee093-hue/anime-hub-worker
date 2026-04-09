@@ -1,21 +1,210 @@
 {
-  "updatedAt": "2026-04-09T12:14:00.594Z",
-  "sectionScope": "trending",
-  "catalogTotal": 24,
-  "indexedTitles": 424,
-  "pendingTitles": 0,
-  "selectedCount": 0,
-  "batchSize": 12,
+  "updatedAt": "2026-04-09T16:01:21.733Z",
+  "sectionScope": "targeted",
+  "catalogTotal": 951,
+  "indexedTitles": 432,
+  "pendingTitles": 526,
+  "selectedCount": 5,
+  "batchSize": 5,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
-  "targetIds": [],
-  "selected": [],
-  "nextSample": [],
-  "status": "idle",
-  "completedCount": 0,
+  "targetIds": [
+    "101517",
+    "87216",
+    "33731",
+    "85564",
+    "87459"
+  ],
+  "selected": [
+    {
+      "mangadexId": "c52b2ce3-7f95-469c-96b0-479524fb7a1a",
+      "title": "Jujutsu Kaisen",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2018,
+      "popularity": 238659,
+      "chapters": 272,
+      "chapterIndexId": "c52b2ce3-7f95-469c-96b0-479524fb7a1a",
+      "currentEnglishCount": 271,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "789642f8-ca89-4e4e-8f7b-eee4d17ea08b",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2016,
+      "popularity": 201628,
+      "chapters": 207,
+      "chapterIndexId": "789642f8-ca89-4e4e-8f7b-eee4d17ea08b",
+      "currentEnglishCount": 205,
+      "currentArabicCount": 214,
+      "hasCoverage": true,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "a42db50d-20df-4f33-bddc-fe990df9c231",
+      "title": "Solanin",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2005,
+      "popularity": 51241,
+      "chapters": 30,
+      "chapterIndexId": "a42db50d-20df-4f33-bddc-fe990df9c231",
+      "currentEnglishCount": 29,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-05T09:25:23.627Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2014,
+      "popularity": 45029,
+      "chapters": 0,
+      "chapterIndexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
+      "currentEnglishCount": 136,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-09T15:49:03.599Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "4d84cc9c-0f88-45d0-8700-d364d8ddbca9",
+      "title": "My Lesbian Experience With Loneliness",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2016,
+      "popularity": 35352,
+      "chapters": 6,
+      "chapterIndexId": "4d84cc9c-0f88-45d0-8700-d364d8ddbca9",
+      "currentEnglishCount": 5,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": "2026-04-05T11:12:32.995Z",
+      "lastFailureAt": null
+    }
+  ],
+  "nextSample": [
+    {
+      "mangadexId": "45a1ac5c-8be7-4a5a-8610-ff6495a1e72c",
+      "title": "The Second Coming of Gluttony"
+    },
+    {
+      "mangadexId": "51a0cd0c-3254-47f0-a7fd-4b9bb178f813",
+      "title": "True Beauty"
+    },
+    {
+      "mangadexId": "42a24ea1-6035-4247-af1c-09963b5bff35",
+      "title": "Say \"I Love You\"."
+    },
+    {
+      "mangadexId": "a82fe527-9e74-48d0-9c5f-a5e788c0bd4a",
+      "title": "The Villainess is a Marionette"
+    },
+    {
+      "mangadexId": "84b933cb-a99a-4737-98bb-b38295087700",
+      "title": "Minamoto-kun Monogatari"
+    },
+    {
+      "mangadexId": "2998ef22-88d4-4191-81b4-c21ec5d45fbc",
+      "title": "Chobits"
+    },
+    {
+      "mangadexId": "6c1eb4e1-95c5-466e-b4e6-ea545585d19a",
+      "title": "Tsubaki-chou Lonely Planet"
+    },
+    {
+      "mangadexId": "f75812e9-27bb-44d5-9cb1-25de07ceb326",
+      "title": "The Voynich Hotel"
+    },
+    {
+      "mangadexId": "21024a6b-af2e-42c1-b0dd-f7ab722a5a32",
+      "title": "Magical Girl Site"
+    },
+    {
+      "mangadexId": "7b4abd68-7d0b-40c7-9fe9-10e7f097a1c2",
+      "title": "Black Torch"
+    },
+    {
+      "mangadexId": "16800ea3-d7cb-4a03-801e-bfbb4dc12bea",
+      "title": "My Wife is the Demon Queen"
+    },
+    {
+      "mangadexId": "36754a57-473d-44df-bde0-4d3ff29b922e",
+      "title": "GREEN BLOOD"
+    },
+    {
+      "mangadexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
+      "title": "Boku Girl"
+    },
+    {
+      "mangadexId": "94a7d0d5-18c6-4f24-826c-4157e36608e6",
+      "title": "RAINBOW: Nisha Rokubou no Shichinin"
+    },
+    {
+      "mangadexId": "a919bb04-b128-4c22-9703-f2b1c56eab82",
+      "title": "ORIGIN"
+    }
+  ],
+  "status": "completed",
+  "completedCount": 5,
   "failedCount": 0,
-  "completed": [],
+  "completed": [
+    {
+      "chapterIndexId": "c52b2ce3-7f95-469c-96b0-479524fb7a1a",
+      "mangadexId": "c52b2ce3-7f95-469c-96b0-479524fb7a1a",
+      "title": "Jujutsu Kaisen",
+      "englishCount": 283,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-09T15:54:45.810Z"
+    },
+    {
+      "chapterIndexId": "789642f8-ca89-4e4e-8f7b-eee4d17ea08b",
+      "mangadexId": "789642f8-ca89-4e4e-8f7b-eee4d17ea08b",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "englishCount": 251,
+      "arabicCount": 214,
+      "fallback": "mangahere",
+      "updatedAt": "2026-04-09T16:00:34.313Z"
+    },
+    {
+      "chapterIndexId": "a42db50d-20df-4f33-bddc-fe990df9c231",
+      "mangadexId": "a42db50d-20df-4f33-bddc-fe990df9c231",
+      "title": "Solanin",
+      "englishCount": 30,
+      "arabicCount": 0,
+      "fallback": "comick",
+      "updatedAt": "2026-04-09T16:00:53.690Z"
+    },
+    {
+      "chapterIndexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
+      "mangadexId": "bd6d0982-0091-4945-ad70-c028ed3c0917",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "englishCount": 136,
+      "arabicCount": 0,
+      "fallback": null,
+      "updatedAt": "2026-04-09T16:01:01.909Z"
+    },
+    {
+      "chapterIndexId": "4d84cc9c-0f88-45d0-8700-d364d8ddbca9",
+      "mangadexId": "4d84cc9c-0f88-45d0-8700-d364d8ddbca9",
+      "title": "My Lesbian Experience With Loneliness",
+      "englishCount": 7,
+      "arabicCount": 0,
+      "fallback": "comick",
+      "updatedAt": "2026-04-09T16:01:21.659Z"
+    }
+  ],
   "failed": []
 }
