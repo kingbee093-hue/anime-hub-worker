@@ -1,4 +1,5 @@
 const axios = require('axios');
+const { load } = require('cheerio');
 const { MANGA } = require('@consumet/extensions');
 const { safeUnpack } = require('@consumet/extensions/dist/utils/utils');
 
@@ -45,8 +46,18 @@ const MANGAHERE_CHAPTERFUN_CONCURRENCY = Number(process.env.MANGA_MANGAHERE_CHAP
 function normalizeText(value) {
   return String(value || '')
     .toLowerCase()
+    .replace(/['’`]/g, '')
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizeSlugText(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/['’`]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
     .trim();
 }
 
@@ -184,6 +195,11 @@ function buildSearchQueries(providerKey, candidateTitles) {
       if (compact) {
         queries.add(compact);
       }
+
+      const slugLike = normalizeSlugText(title).replace(/-/g, ' ').trim();
+      if (slugLike) {
+        queries.add(slugLike);
+      }
     }
   }
 
@@ -227,12 +243,40 @@ function titleScore(resultTitle, candidates) {
   return best;
 }
 
+function providerIdScore(providerKey, providerId, providerTitle, candidates) {
+  const normalizedId = normalizeSlugText(providerId);
+  const normalizedTitle = normalizeSlugText(providerTitle);
+  let best = 0;
+
+  for (const candidate of candidates) {
+    const normalizedCandidate = normalizeSlugText(candidate);
+    if (!normalizedCandidate) continue;
+
+    if (normalizedId.includes(normalizedCandidate) || normalizedTitle.includes(normalizedCandidate)) {
+      best = Math.max(best, 18);
+    }
+
+    if (providerKey === 'comick') {
+      if (normalizedId.startsWith('01-')) {
+        best -= 6;
+      }
+      if (normalizedId.includes('official')) {
+        best += 2;
+      }
+    }
+  }
+
+  return best;
+}
+
 function buildSearchCandidateRecord(candidate, candidateTitles, query) {
   const providerId = String(candidate?.id || '').trim();
   if (!providerId) return null;
 
   const providerTitle = typeof candidate?.title === 'string' ? candidate.title : query;
-  const matchScore = titleScore(providerTitle, candidateTitles);
+  const matchScore =
+    titleScore(providerTitle, candidateTitles) +
+    providerIdScore(candidate?.providerKey || '', providerId, providerTitle, candidateTitles);
   if (matchScore < 55) {
     return null;
   }
@@ -253,6 +297,76 @@ function withTimeout(promise, timeoutMs, label) {
   ]);
 }
 
+function extractWeebCentralChapters(html) {
+  const $ = load(String(html || ''));
+  const seen = new Set();
+  return $('a[href*="/chapters/"]')
+    .map((_, element) => {
+      const href = String($(element).attr('href') || '').trim();
+      const id = href.split('/chapters/')[1] || '';
+      const title =
+        $(element).find('span.grow span').first().text().replace(/\s+/g, ' ').trim() ||
+        $(element).text().replace(/\s+/g, ' ').trim();
+      const releaseDate = $(element).find('time').attr('datetime') || null;
+      if (!id || seen.has(id)) {
+        return null;
+      }
+      seen.add(id);
+      return {
+        id,
+        title,
+        chapterNumber: parseChapterNumber(title),
+        releaseDate,
+        lang: 'en',
+      };
+    })
+    .get()
+    .filter(Boolean);
+}
+
+async function fetchWeebCentralInfo(mangaId) {
+  const fullId = String(mangaId || '').trim();
+  const cleanId = fullId.split('/')[0];
+  const canonicalId = fullId.includes('/') ? fullId : cleanId;
+  const headers = {
+    'User-Agent': 'Mozilla/5.0',
+    Referer: 'https://weebcentral.com/',
+    Accept: '*/*',
+    'HX-Request': 'true',
+    'HX-Target': 'chapter-list',
+    'HX-Current-URL': `https://weebcentral.com/series/${canonicalId}`,
+  };
+
+  const [mainResponse, chaptersResponse] = await Promise.all([
+    axios.get(`https://weebcentral.com/series/${canonicalId}`, {
+      headers: { 'User-Agent': 'Mozilla/5.0', Referer: 'https://weebcentral.com/' },
+    }),
+    axios.get(`https://weebcentral.com/series/${cleanId}/full-chapter-list`, {
+      headers,
+    }),
+  ]);
+
+  const mainHtml = String(mainResponse.data || '');
+  const chaptersHtml = String(chaptersResponse.data || '');
+  const title =
+    mainHtml.match(/<title>([^<|]+)\s*\|/i)?.[1]?.trim() ||
+    mainHtml.match(/<meta property="og:title" content="([^"|]+)\s*\|/i)?.[1]?.trim() ||
+    canonicalId;
+
+  const chapters = extractWeebCentralChapters(chaptersHtml);
+
+  return {
+    id: canonicalId,
+    title,
+    altTitles: [],
+    description: mainHtml.match(/<meta property="og:description" content="([^"]+)"/i)?.[1]?.trim() || '',
+    genres: [],
+    image: mainHtml.match(/<meta property="og:image" content="([^"]+)"/i)?.[1]?.trim() || '',
+    links: [],
+    chapters,
+  };
+}
+
 async function collectProviderCandidates(providerKey, candidateTitles) {
   const provider = providers[providerKey];
   const rankedMap = new Map();
@@ -267,7 +381,7 @@ async function collectProviderCandidates(providerKey, candidateTitles) {
     }
 
     for (const candidate of searchResults.slice(0, MAX_SEARCH_RESULTS_PER_QUERY)) {
-      const record = buildSearchCandidateRecord(candidate, candidateTitles, query);
+      const record = buildSearchCandidateRecord({ ...candidate, providerKey }, candidateTitles, query);
       if (!record) {
         continue;
       }
@@ -331,6 +445,10 @@ class FallbackProviderClient {
   async fetchInfo(id) {
     if (this.key === 'asurascans') {
       return fetchAsuraInfo(id);
+    }
+
+    if (this.key === 'weebcentral') {
+      return fetchWeebCentralInfo(id);
     }
 
     if (this.key === 'comick') {
