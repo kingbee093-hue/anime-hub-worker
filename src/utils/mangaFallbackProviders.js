@@ -40,6 +40,7 @@ const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_
 const PROVIDER_PAGES_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_PAGES_TIMEOUT_MS || 40000);
 const PROVIDER_PROBE_CHAPTER_LIMIT = Number(process.env.MANGA_PROVIDER_PROBE_CHAPTER_LIMIT || 1);
 const PROVIDER_RESOLUTION_BUDGET_MS = Number(process.env.MANGA_PROVIDER_RESOLUTION_BUDGET_MS || 120000);
+const MANGAHERE_CHAPTERFUN_CONCURRENCY = Number(process.env.MANGA_MANGAHERE_CHAPTERFUN_CONCURRENCY || 8);
 
 function normalizeText(value) {
   return String(value || '')
@@ -417,6 +418,77 @@ async function fetchMangaHereChapterPages(chapterId) {
     const imageUrls = [...new Set((unpacked.match(/\/\/[A-Za-z0-9._/-]+?\.jpg/g) || []))]
       .map((urlPart) => `https:${urlPart}`);
 
+    if (imageUrls.length > 0) {
+      return imageUrls.map((img, index) => ({
+        page: index,
+        img,
+        headerForImage: { Referer: url },
+      }));
+    }
+  }
+
+  const chapterIdMatch = data.match(/var\s+chapterid\s*=\s*(\d+)\s*;/i);
+  const imageCountMatch = data.match(/var\s+imagecount\s*=\s*(\d+)\s*;/i);
+  const dm5KeyMatch = data.match(/id="dm5_key"\s+value="([^"]*)"/i);
+  const chapterNumericId = chapterIdMatch ? Number(chapterIdMatch[1]) : 0;
+  const imageCount = imageCountMatch ? Number(imageCountMatch[1]) : 0;
+  const dm5Key = dm5KeyMatch ? String(dm5KeyMatch[1] || '') : '';
+
+  if (Number.isFinite(chapterNumericId) && chapterNumericId > 0 && Number.isFinite(imageCount) && imageCount > 0) {
+    const pageNumbers = Array.from({ length: imageCount }, (_, index) => index + 1);
+    const pageImages = new Array(imageCount).fill(null);
+    let cursor = 0;
+
+    async function worker() {
+      while (cursor < pageNumbers.length) {
+        const page = pageNumbers[cursor];
+        cursor += 1;
+
+        const { data: chapterFunPayload } = await axios.get('https://www.mangahere.cc/chapterfun.ashx', {
+          timeout: 30000,
+          params: {
+            cid: chapterNumericId,
+            page,
+            key: dm5Key,
+          },
+          headers: {
+            cookie: 'isAdult=1',
+            Referer: url,
+            'User-Agent': 'Mozilla/5.0',
+          },
+        });
+
+        const unpacked = safeUnpack(String(chapterFunPayload)) || '';
+        const pixMatch = unpacked.match(/var\s+pix\s*=\s*"([^"]+)"/);
+        const pixBaseRaw = pixMatch ? String(pixMatch[1]) : '';
+        const pixBase = pixBaseRaw.startsWith('//')
+          ? `https:${pixBaseRaw}`
+          : pixBaseRaw;
+        const pageMatch = unpacked.match(/var\s+pvalue\s*=\s*\[(.*?)\];/s);
+        if (!pageMatch) {
+          throw new Error(`MangaHere chapterfun parser missing pvalue for page ${page}`);
+        }
+
+        const urlMatches = [...pageMatch[1].matchAll(/"([^"]+?\.jpg)"/g)].map((match) => match[1]);
+        if (urlMatches.length === 0) {
+          throw new Error(`MangaHere chapterfun parser missing image URLs for page ${page}`);
+        }
+
+        const rawImage = String(urlMatches[0]);
+        const firstImage = rawImage.startsWith('//')
+          ? `https:${rawImage}`
+          : rawImage.startsWith('/')
+            ? `${pixBase}${rawImage}`
+            : rawImage;
+        pageImages[page - 1] = firstImage;
+      }
+    }
+
+    await Promise.all(
+      Array.from({ length: Math.min(MANGAHERE_CHAPTERFUN_CONCURRENCY, pageNumbers.length) }, () => worker()),
+    );
+
+    const imageUrls = pageImages.filter(Boolean);
     if (imageUrls.length > 0) {
       return imageUrls.map((img, index) => ({
         page: index,
