@@ -1,196 +1,56 @@
 {
-  "updatedAt": "2026-04-09T16:30:45.509Z",
+  "updatedAt": "2026-04-09T19:13:48.469Z",
   "sectionScope": "targeted",
   "catalogTotal": 951,
-  "indexedTitles": 443,
-  "pendingTitles": 515,
-  "selectedCount": 11,
-  "batchSize": 11,
+  "indexedTitles": 466,
+  "pendingTitles": 492,
+  "selectedCount": 0,
+  "batchSize": 1,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
   "targetIds": [
-    "120502",
-    "98370",
-    "116170",
-    "58533",
-    "109728",
-    "111258",
-    "100207",
-    "87234",
-    "86303",
-    "120440",
-    "128896"
+    "30703"
   ],
-  "selected": [
-    {
-      "mangadexId": "0f4e9922-e84f-46f2-958b-e34a4e27a4a8",
-      "title": "In the Clear Moonlit Dusk",
-      "score": 220795,
-      "format": "MANGA",
-      "year": 2020,
-      "popularity": 20795,
-      "chapters": 0,
-      "chapterIndexId": "0f4e9922-e84f-46f2-958b-e34a4e27a4a8",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "b603c211-d1f9-4145-a2ac-04dcd5f06329",
-      "title": "Sasaki and Miyano",
-      "score": 219320,
-      "format": "MANGA",
-      "year": 2016,
-      "popularity": 19320,
-      "chapters": 0,
-      "chapterIndexId": "b603c211-d1f9-4145-a2ac-04dcd5f06329",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "f439aae5-437f-4a67-bfde-157b85ac7d00",
-      "title": "Veil",
-      "score": 218756,
-      "format": "MANGA",
-      "year": 2018,
-      "popularity": 18756,
-      "chapters": 0,
-      "chapterIndexId": "f439aae5-437f-4a67-bfde-157b85ac7d00",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "e182b09f-09ab-4201-8f37-0ced6822eb39",
-      "title": "No Matter How I Look at It, It's You Guys' Fault I'm Not Popular!",
-      "score": 218733,
-      "format": "MANGA",
-      "year": 2011,
-      "popularity": 18733,
-      "chapters": 0,
-      "chapterIndexId": "e182b09f-09ab-4201-8f37-0ced6822eb39",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "fbc8e1e4-cba6-48ec-b828-d613fe3d93a6",
-      "title": "The Ice Guy and the Cool Girl",
-      "score": 218521,
-      "format": "MANGA",
-      "year": 2018,
-      "popularity": 18521,
-      "chapters": 0,
-      "chapterIndexId": "fbc8e1e4-cba6-48ec-b828-d613fe3d93a6",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "2e0fdb3b-632c-4f8f-a311-5b56952db647",
-      "title": "Bocchi the Rock!",
-      "score": 218520,
-      "format": "MANGA",
-      "year": 2018,
-      "popularity": 18520,
-      "chapters": 0,
-      "chapterIndexId": "2e0fdb3b-632c-4f8f-a311-5b56952db647",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "2f4e5f5b-d930-4266-8c8a-c4cf9a81e51f",
-      "title": "The Great Jahy Will Not Be Defeated!",
-      "score": 218350,
-      "format": "MANGA",
-      "year": 2017,
-      "popularity": 18350,
-      "chapters": 0,
-      "chapterIndexId": "2f4e5f5b-d930-4266-8c8a-c4cf9a81e51f",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "4052eaa7-966e-43c8-9b28-d7a79052ca1b",
-      "title": "The Elder Sister-Like One",
-      "score": 218328,
-      "format": "MANGA",
-      "year": 2016,
-      "popularity": 18328,
-      "chapters": 0,
-      "chapterIndexId": "4052eaa7-966e-43c8-9b28-d7a79052ca1b",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "67b35ba4-9c53-4957-91e7-4f7884e4b412",
-      "title": "Miss Kobayashi's Dragon Maid",
-      "score": 218279,
-      "format": "MANGA",
-      "year": 2013,
-      "popularity": 18279,
-      "chapters": 0,
-      "chapterIndexId": "67b35ba4-9c53-4957-91e7-4f7884e4b412",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "40da1219-1860-4d7f-b823-d3511ac67cac",
-      "title": "Positively Yours",
-      "score": 517752,
-      "format": "MANGA",
-      "year": 2020,
-      "popularity": 17670,
-      "chapters": 82,
-      "chapterIndexId": "40da1219-1860-4d7f-b823-d3511ac67cac",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": "2026-04-07T16:31:57.539Z"
-    },
-    {
-      "mangadexId": "4801f266-cc4e-4c3b-8d1d-f50f08b25b62",
-      "title": "WITCH WATCH",
-      "score": 216546,
-      "format": "MANGA",
-      "year": 2021,
-      "popularity": 16546,
-      "chapters": 0,
-      "chapterIndexId": "4801f266-cc4e-4c3b-8d1d-f50f08b25b62",
-      "currentEnglishCount": 0,
-      "currentArabicCount": 0,
-      "hasCoverage": false,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    }
-  ],
+  "selected": [],
   "nextSample": [
+    {
+      "mangadexId": "3f38adf6-145c-4a04-b220-1ed8b5a20b55",
+      "title": "Heavenly Demon Reborn!"
+    },
+    {
+      "mangadexId": "9342c30d-2f4b-4527-a66e-08616f348038",
+      "title": "Boundless Ascension"
+    },
+    {
+      "mangadexId": "3080a5e2-abc1-4682-92f5-7429428bc198",
+      "title": "PIGPEN"
+    },
+    {
+      "mangadexId": "28567105-e14a-49af-92c1-d3196dc6b446",
+      "title": "See You in My 19th Life"
+    },
+    {
+      "mangadexId": "45a1ac5c-8be7-4a5a-8610-ff6495a1e72c",
+      "title": "The Second Coming of Gluttony"
+    },
+    {
+      "mangadexId": "51a0cd0c-3254-47f0-a7fd-4b9bb178f813",
+      "title": "True Beauty"
+    },
+    {
+      "mangadexId": "42a24ea1-6035-4247-af1c-09963b5bff35",
+      "title": "Say \"I Love You\"."
+    },
+    {
+      "mangadexId": "a82fe527-9e74-48d0-9c5f-a5e788c0bd4a",
+      "title": "The Villainess is a Marionette"
+    },
+    {
+      "mangadexId": "84b933cb-a99a-4737-98bb-b38295087700",
+      "title": "Minamoto-kun Monogatari"
+    },
     {
       "mangadexId": "6c1eb4e1-95c5-466e-b4e6-ea545585d19a",
       "title": "Tsubaki-chou Lonely Planet"
@@ -204,10 +64,6 @@
       "title": "Magical Girl Site"
     },
     {
-      "mangadexId": "7b4abd68-7d0b-40c7-9fe9-10e7f097a1c2",
-      "title": "Black Torch"
-    },
-    {
       "mangadexId": "16800ea3-d7cb-4a03-801e-bfbb4dc12bea",
       "title": "My Wife is the Demon Queen"
     },
@@ -218,143 +74,11 @@
     {
       "mangadexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
       "title": "Boku Girl"
-    },
-    {
-      "mangadexId": "94a7d0d5-18c6-4f24-826c-4157e36608e6",
-      "title": "RAINBOW: Nisha Rokubou no Shichinin"
-    },
-    {
-      "mangadexId": "a919bb04-b128-4c22-9703-f2b1c56eab82",
-      "title": "ORIGIN"
-    },
-    {
-      "mangadexId": "9d563964-e935-47d4-812a-abfd2f625384",
-      "title": "Shijou Saikyou no Deshi Kenichi"
-    },
-    {
-      "mangadexId": "d08a69ee-9f90-439a-b17d-da561eda2c66",
-      "title": "Negima! Magister Negi Magi"
-    },
-    {
-      "mangadexId": "a81e63a3-83f1-4da5-95a4-ba431e830ce9",
-      "title": "Shamo"
-    },
-    {
-      "mangadexId": "d5cdc845-fd5d-4497-a993-131d65e00e97",
-      "title": "Flirting with The Villain's Dad"
-    },
-    {
-      "mangadexId": "a3d681d7-a239-45a9-8446-5bfc61ca48fa",
-      "title": "Wake up, Sleeping Beauty"
-    },
-    {
-      "mangadexId": "93398095-659d-4137-a630-5961c82a1f97",
-      "title": "Hardcore Leveling Warrior"
     }
   ],
-  "status": "completed",
-  "completedCount": 11,
+  "status": "idle",
+  "completedCount": 0,
   "failedCount": 0,
-  "completed": [
-    {
-      "chapterIndexId": "0f4e9922-e84f-46f2-958b-e34a4e27a4a8",
-      "mangadexId": "0f4e9922-e84f-46f2-958b-e34a4e27a4a8",
-      "title": "In the Clear Moonlit Dusk",
-      "englishCount": 52,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-09T16:18:19.178Z"
-    },
-    {
-      "chapterIndexId": "b603c211-d1f9-4145-a2ac-04dcd5f06329",
-      "mangadexId": "b603c211-d1f9-4145-a2ac-04dcd5f06329",
-      "title": "Sasaki and Miyano",
-      "englishCount": 91,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-09T16:18:20.821Z"
-    },
-    {
-      "chapterIndexId": "f439aae5-437f-4a67-bfde-157b85ac7d00",
-      "mangadexId": "f439aae5-437f-4a67-bfde-157b85ac7d00",
-      "title": "Veil",
-      "englishCount": 78,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-09T16:19:34.955Z"
-    },
-    {
-      "chapterIndexId": "e182b09f-09ab-4201-8f37-0ced6822eb39",
-      "mangadexId": "e182b09f-09ab-4201-8f37-0ced6822eb39",
-      "title": "No Matter How I Look at It, It's You Guys' Fault I'm Not Popular!",
-      "englishCount": 24,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-09T16:19:36.577Z"
-    },
-    {
-      "chapterIndexId": "fbc8e1e4-cba6-48ec-b828-d613fe3d93a6",
-      "mangadexId": "fbc8e1e4-cba6-48ec-b828-d613fe3d93a6",
-      "title": "The Ice Guy and the Cool Girl",
-      "englishCount": 116,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-09T16:25:35.280Z"
-    },
-    {
-      "chapterIndexId": "2e0fdb3b-632c-4f8f-a311-5b56952db647",
-      "mangadexId": "2e0fdb3b-632c-4f8f-a311-5b56952db647",
-      "title": "Bocchi the Rock!",
-      "englishCount": 101,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-09T16:25:37.027Z"
-    },
-    {
-      "chapterIndexId": "2f4e5f5b-d930-4266-8c8a-c4cf9a81e51f",
-      "mangadexId": "2f4e5f5b-d930-4266-8c8a-c4cf9a81e51f",
-      "title": "The Great Jahy Will Not Be Defeated!",
-      "englishCount": 114,
-      "arabicCount": 2,
-      "fallback": null,
-      "updatedAt": "2026-04-09T16:25:39.041Z"
-    },
-    {
-      "chapterIndexId": "4052eaa7-966e-43c8-9b28-d7a79052ca1b",
-      "mangadexId": "4052eaa7-966e-43c8-9b28-d7a79052ca1b",
-      "title": "The Elder Sister-Like One",
-      "englishCount": 57,
-      "arabicCount": 30,
-      "fallback": null,
-      "updatedAt": "2026-04-09T16:25:41.086Z"
-    },
-    {
-      "chapterIndexId": "67b35ba4-9c53-4957-91e7-4f7884e4b412",
-      "mangadexId": "67b35ba4-9c53-4957-91e7-4f7884e4b412",
-      "title": "Miss Kobayashi's Dragon Maid",
-      "englishCount": 190,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-09T16:25:42.790Z"
-    },
-    {
-      "chapterIndexId": "40da1219-1860-4d7f-b823-d3511ac67cac",
-      "mangadexId": "40da1219-1860-4d7f-b823-d3511ac67cac",
-      "title": "Positively Yours",
-      "englishCount": 92,
-      "arabicCount": 0,
-      "fallback": "weebcentral",
-      "updatedAt": "2026-04-09T16:27:14.598Z"
-    },
-    {
-      "chapterIndexId": "4801f266-cc4e-4c3b-8d1d-f50f08b25b62",
-      "mangadexId": "4801f266-cc4e-4c3b-8d1d-f50f08b25b62",
-      "title": "WITCH WATCH",
-      "englishCount": 242,
-      "arabicCount": 0,
-      "fallback": "mangapill",
-      "updatedAt": "2026-04-09T16:30:45.446Z"
-    }
-  ],
+  "completed": [],
   "failed": []
 }
