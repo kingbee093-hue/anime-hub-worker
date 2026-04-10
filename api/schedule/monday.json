@@ -21,7 +21,10 @@
     "seasonInt": 262,
     "episodes": 12,
     "duration": 24,
-    "genres": [],
+    "genres": [
+      "Fantasy",
+      "Slice of Life"
+    ],
     "tags": [
       {
         "id": 909,
@@ -131,7 +134,7 @@
     "meanScore": 77,
     "popularity": 20555,
     "trending": 5,
-    "favourites": 392,
+    "favourites": 400,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -265,9 +268,9 @@
         "isAdult": false
       },
       {
-        "id": 1277,
-        "name": "Found Family",
-        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
         "category": "Theme-Other",
         "rank": 84,
         "isGeneralSpoiler": false,
@@ -275,11 +278,11 @@
         "isAdult": false
       },
       {
-        "id": 1310,
-        "name": "Travel",
-        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
         "category": "Theme-Other",
-        "rank": 84,
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -349,7 +352,7 @@
         "name": "Teacher",
         "description": "Protagonist is an educator, usually in a school setting.",
         "category": "Cast-Traits",
-        "rank": 66,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -359,7 +362,7 @@
         "name": "Disability",
         "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
         "category": "Cast-Traits",
-        "rank": 65,
+        "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -369,7 +372,7 @@
         "name": "Politics",
         "description": "Centers around politics, politicians, or government activities.",
         "category": "Theme-Other",
-        "rank": 60,
+        "rank": 62,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -409,7 +412,7 @@
         "name": "Revenge",
         "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
         "category": "Theme-Drama",
-        "rank": 20,
+        "rank": 33,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -420,6 +423,16 @@
         "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
         "category": "Theme-Slice of Life",
         "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 13,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -443,16 +456,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
-      },
-      {
-        "id": 494,
-        "name": "Twins",
-        "description": "Prominently features two or more siblings that were born at one birth.",
-        "category": "Cast-Traits",
-        "rank": 10,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
       }
     ],
     "studios": [
@@ -472,7 +475,7 @@
     "meanScore": 86,
     "popularity": 80770,
     "trending": 32,
-    "favourites": 1522,
+    "favourites": 1610,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -679,7 +682,7 @@
     "meanScore": 74,
     "popularity": 11337,
     "trending": 4,
-    "favourites": 103,
+    "favourites": 108,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -864,7 +867,7 @@
     "meanScore": 66,
     "popularity": 20942,
     "trending": 11,
-    "favourites": 158,
+    "favourites": 160,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
