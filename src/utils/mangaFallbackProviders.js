@@ -34,7 +34,7 @@ const PROVIDER_LABELS = {
   mangahere: 'MangaHere',
   asurascans: 'AsuraScans',
 };
-const MAX_SEARCH_RESULTS_PER_QUERY = 3;
+const MAX_SEARCH_RESULTS_PER_QUERY = 20;
 const MAX_PROVIDER_CANDIDATES = 4;
 const PROVIDER_SEARCH_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_SEARCH_TIMEOUT_MS || 30000);
 const PROVIDER_INFO_TIMEOUT_MS = Number(process.env.MANGA_PROVIDER_INFO_TIMEOUT_MS || 40000);
@@ -269,6 +269,12 @@ function providerIdScore(providerKey, providerId, providerTitle, candidates) {
   return best;
 }
 
+function isEnglishLikeChapter(chapter) {
+  const lang = String(chapter?.lang || chapter?.language || '').trim().toLowerCase();
+  if (!lang) return true;
+  return ['en', 'gb', 'uk', 'us'].includes(lang);
+}
+
 function buildSearchCandidateRecord(candidate, candidateTitles, query) {
   const providerId = String(candidate?.id || '').trim();
   if (!providerId) return null;
@@ -367,6 +373,77 @@ async function fetchWeebCentralInfo(mangaId) {
   };
 }
 
+async function fetchMangaHereInfo(mangaId) {
+  const cleanId = String(mangaId || '').trim();
+  const url = `https://www.mangahere.cc/manga/${cleanId}/`;
+  const { data } = await axios.get(url, {
+    headers: {
+      cookie: 'isAdult=1',
+      Referer: 'https://www.mangahere.cc/',
+      'User-Agent': 'Mozilla/5.0',
+    },
+  });
+
+  const html = String(data || '');
+  const $ = load(html);
+  const title =
+    $('meta[property="og:title"]').attr('content')?.trim() ||
+    $('title').text().replace(/\s*Manga.*$/i, '').trim() ||
+    cleanId;
+  const description =
+    $('meta[name="description"]').attr('content')?.trim() ||
+    $('meta[property="og:description"]').attr('content')?.trim() ||
+    '';
+  const image =
+    $('meta[property="og:image"]').attr('content')?.trim() ||
+    $('.manga-info-pic img').attr('src')?.trim() ||
+    '';
+
+  const chapterMap = new Map();
+  $('a').each((_, anchor) => {
+    const href = String($(anchor).attr('href') || '').trim();
+    const text = String($(anchor).text() || '').replace(/\s+/g, ' ').trim();
+    const match = href.match(/\/manga\/([^/]+\/v\d+\/c\d+)\/1\.html/i);
+    if (!match) {
+      return;
+    }
+
+    const chapterId = match[1];
+    if (chapterMap.has(chapterId)) {
+      return;
+    }
+
+    const volumeMatch = chapterId.match(/\/v(\d+)\//i);
+    const chapterMatch = chapterId.match(/\/c(\d+)/i);
+    const chapterNumber = chapterMatch ? Number.parseInt(chapterMatch[1], 10) : parseChapterNumber(text);
+    if (!Number.isFinite(chapterNumber)) {
+      return;
+    }
+
+    chapterMap.set(chapterId, {
+      id: chapterId,
+      title: text || `Chapter ${chapterNumber}`,
+      chapterNumber,
+      volumeNumber: volumeMatch ? Number.parseInt(volumeMatch[1], 10) : null,
+      releaseDate: null,
+      lang: 'en',
+    });
+  });
+
+  const chapters = Array.from(chapterMap.values()).sort((a, b) => Number(b.chapterNumber || 0) - Number(a.chapterNumber || 0));
+
+  return {
+    id: cleanId,
+    title,
+    altTitles: [],
+    description,
+    genres: [],
+    image,
+    links: [],
+    chapters,
+  };
+}
+
 async function collectProviderCandidates(providerKey, candidateTitles) {
   const provider = providers[providerKey];
   const rankedMap = new Map();
@@ -380,12 +457,13 @@ async function collectProviderCandidates(providerKey, candidateTitles) {
       continue;
     }
 
-    for (const candidate of searchResults.slice(0, MAX_SEARCH_RESULTS_PER_QUERY)) {
-      const record = buildSearchCandidateRecord({ ...candidate, providerKey }, candidateTitles, query);
-      if (!record) {
-        continue;
-      }
+    const scoredResults = searchResults
+      .map((candidate) => buildSearchCandidateRecord({ ...candidate, providerKey }, candidateTitles, query))
+      .filter(Boolean)
+      .sort((a, b) => b.matchScore - a.matchScore)
+      .slice(0, MAX_SEARCH_RESULTS_PER_QUERY);
 
+    for (const record of scoredResults) {
       const existing = rankedMap.get(record.providerId);
       if (!existing || record.matchScore > existing.matchScore) {
         rankedMap.set(record.providerId, record);
@@ -453,6 +531,27 @@ class FallbackProviderClient {
 
     if (this.key === 'comick') {
       return fetchComicKInfo(id);
+    }
+
+    if (this.key === 'mangahere') {
+      try {
+        const info = await withTimeout(
+          this.client.fetchMangaInfo(id),
+          PROVIDER_INFO_TIMEOUT_MS,
+          `${this.label} fetchInfo`,
+        );
+        if (Array.isArray(info?.chapters) && info.chapters.length > 0) {
+          return info;
+        }
+      } catch (_) {
+        // Fall back to direct page scraping below.
+      }
+
+      return withTimeout(
+        fetchMangaHereInfo(id),
+        PROVIDER_INFO_TIMEOUT_MS,
+        `${this.label} fetchInfoFallback`,
+      );
     }
 
     return withTimeout(
@@ -1040,6 +1139,7 @@ module.exports = {
   buildCandidateTitles,
   buildProviderChapterContext,
   discoverProviderTitlesForManga,
+  isEnglishLikeChapter,
   parseChapterNumber,
   parseProviderChapterNumber,
   resolveBestFallbackProvider,

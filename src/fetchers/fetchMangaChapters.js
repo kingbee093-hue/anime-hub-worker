@@ -8,6 +8,7 @@ const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
   buildProviderChapterContext,
   PROVIDER_LABELS,
+  isEnglishLikeChapter,
   parseChapterNumber,
   parseProviderChapterNumber,
   resolveFallbackProviderCandidates,
@@ -219,6 +220,38 @@ function writeFallbackMappingMap(mappingMap) {
     updatedAt: new Date().toISOString(),
     items,
   });
+}
+
+function extractComicKLanguageToken(value) {
+  const raw = String(value || '').toLowerCase();
+  const marker = raw.split('-chapter-')[1];
+  if (!marker) return null;
+  const firstDash = marker.indexOf('-');
+  if (firstDash < 0) return null;
+  return marker.slice(firstDash + 1).trim() || null;
+}
+
+function isEffectivelyEnglishStoredChapter(chapter) {
+  const language = String(chapter?.language || '').trim().toLowerCase();
+  const provider = String(chapter?.provider || '').trim().toLowerCase();
+  const providerChapterId = String(chapter?.providerChapterId || chapter?.id || '').trim();
+
+  if (language && language !== 'en') {
+    return false;
+  }
+
+  if (provider === 'comick') {
+    const token = extractComicKLanguageToken(providerChapterId);
+    if (token && token !== 'en') {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function sanitizeEnglishChapterList(chapters) {
+  return (Array.isArray(chapters) ? chapters : []).filter(isEffectivelyEnglishStoredChapter);
 }
 
 function buildRefreshPlan(entries, manifestMap, forceFullRefresh, forceTargeted = false) {
@@ -463,7 +496,10 @@ async function buildEnglishFallbackChapters(
   previousEnglish,
   fallbackMappingMap,
 ) {
-  const baseEnglish = dedupeChapters([...(previousEnglish || []), ...(currentEnglish || [])]);
+  const baseEnglish = dedupeChapters([
+    ...sanitizeEnglishChapterList(previousEnglish),
+    ...sanitizeEnglishChapterList(currentEnglish),
+  ]);
   const cachedMapping = fallbackMappingMap.get(entry.chapterIndexId);
   const freshCached = isMappingFresh(cachedMapping) ? cachedMapping : null;
   const cachedChapterTarget = Number(freshCached?.chapterCount || 0);
@@ -507,7 +543,10 @@ async function buildEnglishFallbackChapters(
       continue;
     }
 
-    const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+    const englishLikeChapters = Array.isArray(info?.chapters)
+      ? info.chapters.filter(isEnglishLikeChapter)
+      : [];
+    const chapterCount = englishLikeChapters.length;
     console.log(
       `Fallback candidate ready for ${entry.title}: ${PROVIDER_LABELS[mapping.provider] || mapping.provider} -> "${mapping.providerTitle || mapping.providerId}" with ${chapterCount} chapter candidate(s).`,
     );
@@ -515,10 +554,10 @@ async function buildEnglishFallbackChapters(
     providerEntries.push({
       mapping,
       provider,
-      chapters: Array.isArray(info?.chapters) ? info.chapters : [],
+      chapters: englishLikeChapters,
       providerChapterContext: buildProviderChapterContext(
         mapping.provider,
-        Array.isArray(info?.chapters) ? info.chapters : [],
+        englishLikeChapters,
       ),
     });
   }
@@ -548,7 +587,10 @@ async function buildEnglishFallbackChapters(
 
       try {
         const info = await provider.fetchInfo(mapping.providerId);
-        const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        const englishLikeChapters = Array.isArray(info?.chapters)
+          ? info.chapters.filter(isEnglishLikeChapter)
+          : [];
+        const chapterCount = englishLikeChapters.length;
         if (chapterCount <= 0) {
           continue;
         }
@@ -558,10 +600,10 @@ async function buildEnglishFallbackChapters(
             chapterCount,
           },
           provider,
-          chapters: Array.isArray(info?.chapters) ? info.chapters : [],
+          chapters: englishLikeChapters,
           providerChapterContext: buildProviderChapterContext(
             mapping.provider,
-            Array.isArray(info?.chapters) ? info.chapters : [],
+            englishLikeChapters,
           ),
         });
       } catch (error) {
@@ -866,7 +908,7 @@ async function buildProviderOnlyEnglishChapters(
 
   const existingChapterIndex = getExistingChapterIndex(entry.chapterIndexId);
   const persistedEnglish = Array.isArray(existingChapterIndex?.languages?.en)
-    ? existingChapterIndex.languages.en.map(normalizeStoredChapter)
+    ? sanitizeEnglishChapterList(existingChapterIndex.languages.en.map(normalizeStoredChapter))
     : [];
   const persistedMapping =
     buildStoredProviderMapping(entry, existingChapterIndex) ||
@@ -936,7 +978,10 @@ async function buildProviderOnlyEnglishChapters(
       continue;
     }
 
-    const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+    const englishLikeChapters = Array.isArray(info?.chapters)
+      ? info.chapters.filter(isEnglishLikeChapter)
+      : [];
+    const chapterCount = englishLikeChapters.length;
     if (chapterCount <= 0) {
       continue;
     }
@@ -951,10 +996,10 @@ async function buildProviderOnlyEnglishChapters(
         chapterCount,
       },
       provider,
-      chapters: Array.isArray(info?.chapters) ? info.chapters : [],
+      chapters: englishLikeChapters,
       providerChapterContext: buildProviderChapterContext(
         mapping.provider,
-        Array.isArray(info?.chapters) ? info.chapters : [],
+        englishLikeChapters,
       ),
     });
   }
