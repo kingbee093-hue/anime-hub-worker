@@ -6732,6 +6732,16 @@
     ],
     "tags": [
       {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 1433,
         "name": "Marriage",
         "description": "Centers around marriage between two or more characters.",
@@ -6742,21 +6752,11 @@
         "isAdult": false
       },
       {
-        "id": 322,
-        "name": "Assassins",
-        "description": "Centers around characters who murder people as a profession.",
-        "category": "Theme-Other-Organisations",
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
         "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 281,
-        "name": "Surreal Comedy",
-        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
-        "category": "Theme-Comedy",
-        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6766,6 +6766,16 @@
         "name": "Crime",
         "description": "Centers around unlawful activities punishable by the state or other authority.",
         "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
         "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6802,11 +6812,11 @@
         "isAdult": false
       },
       {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
-        "rank": 79,
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6816,16 +6826,6 @@
         "name": "Super Power",
         "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
         "category": "Theme-Fantasy",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
         "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6836,7 +6836,7 @@
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
         "category": "Theme-Romance",
-        "rank": 70,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6846,7 +6846,7 @@
         "name": "LGBTQ+ Themes",
         "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
         "category": "Theme-Other",
-        "rank": 66,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6856,7 +6856,7 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6866,16 +6866,6 @@
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 157,
-        "name": "Guns",
-        "description": "Prominently features the use of guns in combat.",
-        "category": "Theme-Action",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -6906,7 +6896,17 @@
         "name": "Anti-Hero",
         "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
         "category": "Cast-Main Cast",
-        "rank": 46,
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
