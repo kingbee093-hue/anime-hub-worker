@@ -1,110 +1,21 @@
 {
-  "updatedAt": "2026-04-09T20:38:50.716Z",
-  "sectionScope": "targeted",
-  "catalogTotal": 951,
+  "updatedAt": "2026-04-10T12:14:12.351Z",
+  "sectionScope": "trending",
+  "catalogTotal": 24,
   "indexedTitles": 483,
-  "pendingTitles": 474,
-  "selectedCount": 1,
-  "batchSize": 1,
+  "pendingTitles": 0,
+  "selectedCount": 0,
+  "batchSize": 12,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
-  "targetIds": [
-    "44440"
-  ],
-  "selected": [
-    {
-      "mangadexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
-      "title": "I Am a Hero",
-      "score": -1,
-      "format": "MANGA",
-      "year": 2009,
-      "popularity": 40300,
-      "chapters": 265,
-      "chapterIndexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
-      "currentEnglishCount": 164,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": "2026-04-09T19:52:36.078Z",
-      "lastFailureAt": null
-    }
-  ],
-  "nextSample": [
-    {
-      "mangadexId": "9342c30d-2f4b-4527-a66e-08616f348038",
-      "title": "Boundless Ascension"
-    },
-    {
-      "mangadexId": "28567105-e14a-49af-92c1-d3196dc6b446",
-      "title": "See You in My 19th Life"
-    },
-    {
-      "mangadexId": "45a1ac5c-8be7-4a5a-8610-ff6495a1e72c",
-      "title": "The Second Coming of Gluttony"
-    },
-    {
-      "mangadexId": "51a0cd0c-3254-47f0-a7fd-4b9bb178f813",
-      "title": "True Beauty"
-    },
-    {
-      "mangadexId": "42a24ea1-6035-4247-af1c-09963b5bff35",
-      "title": "Say \"I Love You\"."
-    },
-    {
-      "mangadexId": "a82fe527-9e74-48d0-9c5f-a5e788c0bd4a",
-      "title": "The Villainess is a Marionette"
-    },
-    {
-      "mangadexId": "84b933cb-a99a-4737-98bb-b38295087700",
-      "title": "Minamoto-kun Monogatari"
-    },
-    {
-      "mangadexId": "6c1eb4e1-95c5-466e-b4e6-ea545585d19a",
-      "title": "Tsubaki-chou Lonely Planet"
-    },
-    {
-      "mangadexId": "16800ea3-d7cb-4a03-801e-bfbb4dc12bea",
-      "title": "My Wife is the Demon Queen"
-    },
-    {
-      "mangadexId": "36754a57-473d-44df-bde0-4d3ff29b922e",
-      "title": "GREEN BLOOD"
-    },
-    {
-      "mangadexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
-      "title": "Boku Girl"
-    },
-    {
-      "mangadexId": "94a7d0d5-18c6-4f24-826c-4157e36608e6",
-      "title": "RAINBOW: Nisha Rokubou no Shichinin"
-    },
-    {
-      "mangadexId": "9d563964-e935-47d4-812a-abfd2f625384",
-      "title": "Shijou Saikyou no Deshi Kenichi"
-    },
-    {
-      "mangadexId": "d08a69ee-9f90-439a-b17d-da561eda2c66",
-      "title": "Negima! Magister Negi Magi"
-    },
-    {
-      "mangadexId": "a81e63a3-83f1-4da5-95a4-ba431e830ce9",
-      "title": "Shamo"
-    }
-  ],
-  "status": "completed",
-  "completedCount": 1,
+  "targetIds": [],
+  "selected": [],
+  "nextSample": [],
+  "status": "idle",
+  "completedCount": 0,
   "failedCount": 0,
-  "completed": [
-    {
-      "chapterIndexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
-      "mangadexId": "ff5ef336-72d7-45a2-bc69-c2ae8fbfeec8",
-      "title": "I Am a Hero",
-      "englishCount": 164,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-09T20:38:50.648Z"
-    }
-  ],
+  "completed": [],
   "failed": []
 }
