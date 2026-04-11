@@ -375,6 +375,16 @@
         "isAdult": false
       },
       {
+        "id": 137,
+        "name": "Large Breasts",
+        "description": "Features a character with larger-than-average breasts.",
+        "category": "Sexual Content",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
         "id": 83,
         "name": "Slapstick",
         "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
@@ -435,16 +445,6 @@
         "isAdult": false
       },
       {
-        "id": 137,
-        "name": "Large Breasts",
-        "description": "Features a character with larger-than-average breasts.",
-        "category": "Sexual Content",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": true
-      },
-      {
         "id": 86,
         "name": "Primarily Female Cast",
         "description": "Main cast is mostly composed of female characters.",
@@ -479,7 +479,7 @@
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
         "category": "Theme-Romance",
-        "rank": 33,
+        "rank": 30,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2033,16 +2033,6 @@
         "isAdult": false
       },
       {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 281,
         "name": "Surreal Comedy",
         "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
@@ -2068,6 +2058,16 @@
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
         "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -13963,16 +13963,6 @@
         "isAdult": false
       },
       {
-        "id": 291,
-        "name": "Samurai",
-        "description": "Prominently features warriors of medieval Japanese nobility bound by a code of honor.",
-        "category": "Cast-Traits",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 499,
         "name": "Skeleton",
         "description": "Prominently features skeleton(s) as a character.",
@@ -13987,6 +13977,16 @@
         "name": "Medicine",
         "description": "Centered around the activities of people working in the field of medicine.",
         "category": "Theme-Other",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 291,
+        "name": "Samurai",
+        "description": "Prominently features warriors of medieval Japanese nobility bound by a code of honor.",
+        "category": "Cast-Traits",
         "rank": 63,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -14233,16 +14233,6 @@
         "isAdult": false
       },
       {
-        "id": 77,
-        "name": "Gender Bending",
-        "description": "Prominently features a character who dresses and behaves in a way characteristic of another gender, or has been transformed into a person of another gender.",
-        "category": "Theme-Other",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1681,
         "name": "Aromantic",
         "description": "Features a character who experiences little to no romantic attraction.",
@@ -14258,6 +14248,16 @@
         "description": "Prominently features the traditional Japanese theater art of kabuki.",
         "category": "Theme-Arts",
         "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 77,
+        "name": "Gender Bending",
+        "description": "Prominently features a character who dresses and behaves in a way characteristic of another gender, or has been transformed into a person of another gender.",
+        "category": "Theme-Other",
+        "rank": 49,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -14327,7 +14327,7 @@
         "name": "Trains",
         "description": "Prominently features trains.",
         "category": "Theme-Other-Vehicle",
-        "rank": 44,
+        "rank": 42,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
