@@ -419,7 +419,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 18518,
+    "popularity": 18524,
     "trending": 0,
     "favourites": 965,
     "source": "MANGA",
@@ -579,7 +579,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 77,
-    "popularity": 7102,
+    "popularity": 7105,
     "trending": 0,
     "favourites": 355,
     "source": "MANGA",
@@ -1261,7 +1261,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 82,
-    "popularity": 74557,
+    "popularity": 74576,
     "trending": 7,
     "favourites": 5600,
     "source": "MANGA",
@@ -1700,6 +1700,16 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
       }
     ],
     "studios": [
@@ -1755,11 +1765,11 @@
     "synopsis": "Juuzou Oogami is a legendary hitman who has never failed an assignment, no matter how impossible. One day, after wiping out a powerful organization, he is stung by a mysterious wasp and collapses. When he wakes up, the fearsome 39-year-old assassin has been transformed into a 13-year-old boy! Before he can even process what happened, his boss delivers a new order: “In that body, infiltrate a middle school.” What awaits him is an unexpected school life filled with colorful classmates, youthful chaos, and looming danger. Can Juuzou ever return to his original form? Or will the assassins closing in on him end his second life before it even begins!? (Source: Official Site)",
     "type": "ANIME",
     "format": "TV",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
+    "episodes": 12,
     "duration": 0,
     "genres": [
       "Action",
@@ -1772,6 +1782,16 @@
         "description": "Prominently features a character who was returned to a younger state.",
         "category": "Cast-Traits",
         "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1791,6 +1811,16 @@
         "name": "School Club",
         "description": "Partly or completely set in a school club scene.",
         "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1817,6 +1847,16 @@
         "isAdult": false
       },
       {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 322,
         "name": "Assassins",
         "description": "Centers around characters who murder people as a profession.",
@@ -1837,9 +1877,19 @@
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 446,
+        "name": "Primarily Child Cast",
+        "description": "Main cast is mostly composed of characters below a high school age.",
         "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
@@ -1851,16 +1901,6 @@
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 157,
-        "name": "Guns",
-        "description": "Prominently features the use of guns in combat.",
-        "category": "Theme-Action",
         "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2921,16 +2961,6 @@
         "isAdult": false
       },
       {
-        "id": 155,
-        "name": "Rape",
-        "description": "Features non-consensual sexual penetration.",
-        "category": "Sexual Content",
-        "rank": 62,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": true
-      },
-      {
         "id": 90,
         "name": "CGI",
         "description": "Prominently features scenes created with computer-generated imagery.",
@@ -2949,6 +2979,16 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
       },
       {
         "id": 1046,
@@ -3451,6 +3491,16 @@
         "isAdult": false
       },
       {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 33,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 139,
         "name": "Love Triangle",
         "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
@@ -3486,16 +3536,6 @@
         "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
         "category": "Setting-Universe",
         "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 10,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3698,7 +3738,7 @@
     "synopsis": "A high school girl a manga cafe! Meiko, a countryside girl, enrolls in a rich girls' school. She is told that if she does volunteer work, her tuition will be free... but in reality, she will be living and working in a \"manga cafe\"!? Living in a small manga cafe booth turns out to be not so bad! Why not try enjoying a manga cafe filled with cute high school girls as staff? (Source: Bookwalker, translated)",
     "type": "ANIME",
     "format": "TV",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -3715,16 +3755,6 @@
         "name": "Cute Girls Doing Cute Things",
         "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
         "category": "Theme-Slice of Life",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1647,
-        "name": "Restaurant",
-        "description": "Features a business that prepares and serves food and drinks to customers. Also encompasses cafes and bistros.",
-        "category": "Setting-Scene",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -3771,11 +3801,21 @@
         "isAdult": false
       },
       {
+        "id": 1647,
+        "name": "Restaurant",
+        "description": "Features a business that prepares and serves food and drinks to customers. Also encompasses cafes and bistros.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 76,
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
         "category": "Theme-Romance",
-        "rank": 20,
+        "rank": 10,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
