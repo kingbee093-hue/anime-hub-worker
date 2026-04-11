@@ -1,5 +1,162 @@
 [
   {
+    "animeId": 56566,
+    "anilistId": 165159,
+    "title": "BEYBLADE X",
+    "titleRomaji": "BEYBLADE X",
+    "titleEnglish": "BEYBLADE X",
+    "titleNative": "BEYBLADE X",
+    "synonyms": [
+      "ベイブレードエックス",
+      "ベイブレイド X"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx165159-aCFC9Sng7t4M.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx165159-aCFC9Sng7t4M.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx165159-aCFC9Sng7t4M.png",
+    "coverImageColor": "#28aee4",
+    "bannerImage": "",
+    "synopsis": "Bird Kazami, aiming to become a pro Blader, meets former champion Ekusu Kurosu, also known as 'Kamen X', and forms a team so that they can aim for the \"top\" of the X Tower. But what awaits them is a spectacular battle that no one has ever seen before. The yet unseen 'X'. The super accelerated (Xtreme) Beyblade runs through a new era! (Source: Official website)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "RELEASING",
+    "season": "FALL",
+    "seasonYear": 2023,
+    "seasonInt": 234,
+    "episodes": 0,
+    "duration": 22,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sports"
+    ],
+    "tags": [
+      {
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 446,
+        "name": "Primarily Child Cast",
+        "description": "Main cast is mostly composed of characters below a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1490,
+        "name": "Proxy Battle",
+        "description": "A proxy battle is a battle where humans use creatures/robots to do the fighting for them, either by commanding those creatures/robots or by simply evolving them/changing them into battle mode.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 328,
+        "name": "Cosplay",
+        "description": "Features dressing up as a different character or profession.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 28,
+        "name": "OLM",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/28"
+      }
+    ],
+    "studiosNames": [
+      "OLM"
+    ],
+    "rating": 6.3,
+    "averageScore": 63,
+    "meanScore": 65,
+    "popularity": 3801,
+    "trending": 2,
+    "favourites": 128,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#BeybladeX #ベイブレードX",
+    "startDate": "2023-10-06",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/56566",
+    "anilist_url": "https://anilist.co/anime/165159",
+    "trailer": {
+      "id": "SXdTmFshlFs",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=SXdTmFshlFs"
+    },
+    "nextEpisode": 123,
+    "nextAiringAt": 1776417900
+  },
+  {
     "animeId": 53876,
     "anilistId": 158871,
     "title": "Pokémon Horizons: The Series",
@@ -111,16 +268,6 @@
         "isAdult": false
       },
       {
-        "id": 28,
-        "name": "Kids",
-        "description": "Target demographic is young children.",
-        "category": "Demographic",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 252,
         "name": "Revenge",
         "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
@@ -128,6 +275,16 @@
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -161,16 +318,6 @@
         "isAdult": false
       },
       {
-        "id": 586,
-        "name": "Cult",
-        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
-        "category": "Theme-Other-Organisations",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 224,
         "name": "Dragons",
         "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
@@ -178,6 +325,16 @@
         "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -251,6 +408,16 @@
         "isAdult": false
       },
       {
+        "id": 1616,
+        "name": "Snowscape",
+        "description": "Prominently or partially set in a snowy environment.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 115,
         "name": "Idol",
         "description": "Centers around the life and activities of an idol.",
@@ -265,16 +432,6 @@
         "name": "Superhero",
         "description": "Prominently features super-powered humans who aim to serve the greater good.",
         "category": "Theme-Fantasy",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1616,
-        "name": "Snowscape",
-        "description": "Prominently or partially set in a snowy environment.",
-        "category": "Setting-Scene",
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -328,7 +485,7 @@
     "meanScore": 74,
     "popularity": 21914,
     "trending": 8,
-    "favourites": 706,
+    "favourites": 707,
     "source": "VIDEO_GAME",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -343,8 +500,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_c_hMehCORQ"
     },
-    "nextEpisode": 133,
-    "nextAiringAt": 1775814900
+    "nextEpisode": 134,
+    "nextAiringAt": 1776419700
   },
   {
     "animeId": 61687,
@@ -388,10 +545,10 @@
         "isAdult": false
       },
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -408,10 +565,10 @@
         "isAdult": false
       },
       {
-        "id": 1327,
-        "name": "Royal Affairs",
-        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
-        "category": "Theme-Other",
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -455,7 +612,7 @@
     "meanScore": 71,
     "popularity": 10423,
     "trending": 0,
-    "favourites": 115,
+    "favourites": 120,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -470,8 +627,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=r6RkeRy4B4c"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1775826000
+    "nextEpisode": 3,
+    "nextAiringAt": 1776430800
   },
   {
     "animeId": 56876,
@@ -529,20 +686,20 @@
         "isAdult": false
       },
       {
-        "id": 779,
-        "name": "Kuudere",
-        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
-        "category": "Cast-Traits",
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
         "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
         "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -606,7 +763,7 @@
     "meanScore": 83,
     "popularity": 45334,
     "trending": 13,
-    "favourites": 1099,
+    "favourites": 1122,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -621,8 +778,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=8Gtb1uhjPKs"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1775827800
+    "nextEpisode": 3,
+    "nextAiringAt": 1776432600
   },
   {
     "animeId": 59970,
@@ -728,20 +885,20 @@
         "isAdult": false
       },
       {
-        "id": 1752,
-        "name": "Medieval",
-        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
-        "category": "Setting-Time",
+        "id": 1456,
+        "name": "Femboy",
+        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
+        "category": "Cast-Traits",
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1456,
-        "name": "Femboy",
-        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
-        "category": "Cast-Traits",
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -765,7 +922,7 @@
     "meanScore": 81,
     "popularity": 59666,
     "trending": 24,
-    "favourites": 1192,
+    "favourites": 1211,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -780,8 +937,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=ikxIrDr72iA"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1775829600
+    "nextEpisode": 3,
+    "nextAiringAt": 1776434400
   },
   {
     "animeId": 62068,
@@ -874,20 +1031,20 @@
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
         "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 191,
-        "name": "Aliens",
-        "description": "Prominently features extraterrestrial lifeforms.",
-        "category": "Cast-Traits",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
         "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -951,7 +1108,7 @@
     "meanScore": 65,
     "popularity": 5837,
     "trending": 2,
-    "favourites": 50,
+    "favourites": 54,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -966,8 +1123,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=0vTK8SWTgws"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1775831400
+    "nextEpisode": 3,
+    "nextAiringAt": 1776436200
   },
   {
     "animeId": 62981,
@@ -1001,10 +1158,10 @@
     ],
     "tags": [
       {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1021,10 +1178,10 @@
         "isAdult": false
       },
       {
-        "id": 142,
-        "name": "Food",
-        "description": "Centers around cooking or food appraisal.",
-        "category": "Theme-Arts",
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1048,7 +1205,7 @@
     "meanScore": 0,
     "popularity": 2461,
     "trending": 2,
-    "favourites": 12,
+    "favourites": 16,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1063,8 +1220,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=Oz5EkYVJbBc"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775831400
+    "nextEpisode": 2,
+    "nextAiringAt": 1776436200
   },
   {
     "animeId": 61186,
@@ -1155,11 +1312,21 @@
         "isAdult": false
       },
       {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 161,
         "name": "Bar",
         "description": "Partly or completely set in a bar.",
         "category": "Setting-Scene",
-        "rank": 86,
+        "rank": 85,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1180,16 +1347,6 @@
         "description": "Centers around character(s) moving between places a significant distance apart.",
         "category": "Theme-Other",
         "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1242,7 +1399,7 @@
     "meanScore": 0,
     "popularity": 9462,
     "trending": 3,
-    "favourites": 52,
+    "favourites": 75,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1257,8 +1414,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=XX90FklAWsc"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775833200
+    "nextEpisode": 2,
+    "nextAiringAt": 1776438000
   },
   {
     "animeId": 56646,
@@ -1309,16 +1466,6 @@
         "isAdult": false
       },
       {
-        "id": 90,
-        "name": "CGI",
-        "description": "Prominently features scenes created with computer-generated imagery.",
-        "category": "Technical",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 56,
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
@@ -1329,11 +1476,11 @@
         "isAdult": false
       },
       {
-        "id": 93,
-        "name": "Post-Apocalyptic",
-        "description": "Partly or completely set in a world or civilization after a global disaster.",
-        "category": "Setting-Universe",
-        "rank": 75,
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1343,6 +1490,16 @@
         "name": "Martial Arts",
         "description": "Centers around the use of traditional hand-to-hand combat.",
         "category": "Theme-Action",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
         "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1376,7 +1533,7 @@
     "meanScore": 0,
     "popularity": 3824,
     "trending": 0,
-    "favourites": 36,
+    "favourites": 41,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1391,8 +1548,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=Gux_dYHDMK4"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1775836800
+    "nextEpisode": 3,
+    "nextAiringAt": 1776441600
   },
   {
     "animeId": 50418,
@@ -1443,20 +1600,20 @@
         "isAdult": false
       },
       {
-        "id": 488,
-        "name": "Age Regression",
-        "description": "Prominently features a character who was returned to a younger state.",
-        "category": "Cast-Traits",
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1493,16 +1650,6 @@
         "isAdult": false
       },
       {
-        "id": 191,
-        "name": "Aliens",
-        "description": "Prominently features extraterrestrial lifeforms.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 96,
         "name": "Time Manipulation",
         "description": "Prominently features time-traveling or other time-warping phenomena.",
@@ -1510,6 +1657,16 @@
         "rank": 20,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
@@ -1541,95 +1698,7 @@
     "mal_url": "https://myanimelist.net/anime/50418",
     "anilist_url": "https://anilist.co/anime/142274",
     "trailer": null,
-    "nextEpisode": 211,
-    "nextAiringAt": 1775860200
-  },
-  {
-    "animeId": 62649,
-    "anilistId": 203296,
-    "title": "CARDFIGHT!! VANGUARD Divinez Parallactic Clash",
-    "titleRomaji": "Cardfight!! Vanguard: Divinez - Genma Seisen-hen",
-    "titleEnglish": "CARDFIGHT!! VANGUARD Divinez Parallactic Clash",
-    "titleNative": "カードファイト!! ヴァンガード Divinez 幻真星戦編",
-    "synonyms": [
-      "CARDFIGHT!! VANGUARD Divinez Parallactic Clash"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx203296-LYXWSdP4N4YF.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx203296-LYXWSdP4N4YF.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx203296-LYXWSdP4N4YF.jpg",
-    "coverImageColor": "#4393e4",
-    "bannerImage": "",
-    "synopsis": "The fifth season of Cardfight!! Vanguard: Divinez. Akina and his friends, having strayed into the Fantasma, find their path blocked by \"Fantôme Fighters\". The only ones who can stand against them are the special \"Mythisch Fighters\" chosen by the cards. What is a Fantôme Fighter— The collective name for those who confront reality and fight to protect the fabricated. What is a Mythisch Fighter— The collective name for those who withstand the Fantôme and fight to protect the real. Will the parallactic be erased, or will it become the verity? —Stand up and fight with your existence on the line. (Source: cf-vanguard.com)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "RELEASING",
-    "season": "WINTER",
-    "seasonYear": 2026,
-    "seasonInt": 261,
-    "episodes": 12,
-    "duration": 24,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 178,
-        "name": "Card Battle",
-        "description": "Centers around individuals competing in card games.",
-        "category": "Theme-Game-Card & Board Game",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 6712,
-        "name": "Gift-o’-Animation",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6712"
-      },
-      {
-        "id": 290,
-        "name": "Kinema Citrus",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/290"
-      },
-      {
-        "id": 6589,
-        "name": "Studio JEMI",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6589"
-      }
-    ],
-    "studiosNames": [
-      "Gift-o’-Animation",
-      "Kinema Citrus",
-      "Studio JEMI"
-    ],
-    "rating": 5.1,
-    "averageScore": 51,
-    "meanScore": 60,
-    "popularity": 701,
-    "trending": 1,
-    "favourites": 12,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2026-01-10",
-    "endDate": "2026-04-11",
-    "mal_url": "https://myanimelist.net/anime/62649",
-    "anilist_url": "https://anilist.co/anime/203296",
-    "trailer": null,
-    "nextEpisode": 12,
-    "nextAiringAt": 1775862000
+    "nextEpisode": 212,
+    "nextAiringAt": 1776465000
   }
 ]
