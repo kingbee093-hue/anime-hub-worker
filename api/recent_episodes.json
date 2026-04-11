@@ -11300,7 +11300,7 @@
         "name": "Assassins",
         "description": "Centers around characters who murder people as a profession.",
         "category": "Theme-Other-Organisations",
-        "rank": 96,
+        "rank": 97,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -11310,7 +11310,7 @@
         "name": "Marriage",
         "description": "Centers around marriage between two or more characters.",
         "category": "Theme-Other",
-        "rank": 95,
+        "rank": 96,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -11320,7 +11320,7 @@
         "name": "Urban",
         "description": "Partly or completely set in a city.",
         "category": "Setting-Scene",
-        "rank": 95,
+        "rank": 96,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -11330,7 +11330,7 @@
         "name": "Crime",
         "description": "Centers around unlawful activities punishable by the state or other authority.",
         "category": "Theme-Other",
-        "rank": 90,
+        "rank": 91,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -11340,7 +11340,17 @@
         "name": "Surreal Comedy",
         "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
         "category": "Theme-Comedy",
-        "rank": 88,
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -11356,16 +11366,6 @@
         "isAdult": false
       },
       {
-        "id": 294,
-        "name": "Bisexual",
-        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
-        "category": "Cast-Traits",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1456,
         "name": "Femboy",
         "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
@@ -11376,6 +11376,16 @@
         "isAdult": false
       },
       {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 75,
         "name": "Boys' Love",
         "description": "Prominently features romance between two males, not inherently sexual.",
@@ -11383,16 +11393,6 @@
         "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
