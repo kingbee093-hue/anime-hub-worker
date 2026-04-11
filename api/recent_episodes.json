@@ -78,21 +78,21 @@
         "isAdult": false
       },
       {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1647,
         "name": "Restaurant",
         "description": "Features a business that prepares and serves food and drinks to customers. Also encompasses cafes and bistros.",
         "category": "Setting-Scene",
         "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 10,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1935,7 +1935,7 @@
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
+    "episodes": 12,
     "duration": 0,
     "genres": [
       "Action",
