@@ -265,6 +265,16 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
       }
     ],
     "studios": [
@@ -6513,7 +6523,7 @@
         "name": "Gyaru",
         "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
         "category": "Cast-Traits",
-        "rank": 92,
+        "rank": 93,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6579,16 +6589,6 @@
         "isAdult": false
       },
       {
-        "id": 1459,
-        "name": "Polyamorous",
-        "description": "Features a character who is in a consenting relationship with multiple people at one time.",
-        "category": "Theme-Romance",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 50,
         "name": "Seinen",
         "description": "Target demographic is adult males.",
@@ -6596,6 +6596,16 @@
         "rank": 45,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1459,
+        "name": "Polyamorous",
+        "description": "Features a character who is in a consenting relationship with multiple people at one time.",
+        "category": "Theme-Romance",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       }
     ],
