@@ -43,7 +43,7 @@
         "name": "Large Breasts",
         "description": "Features a character with larger-than-average breasts.",
         "category": "Sexual Content",
-        "rank": 60,
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": true
@@ -53,7 +53,7 @@
         "name": "Primarily Female Cast",
         "description": "Main cast is mostly composed of female characters.",
         "category": "Cast-Main Cast",
-        "rank": 20,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -63,7 +63,37 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 20,
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 187,
+        "name": "MILF",
+        "description": "Features sexual intercourse with older women.",
+        "category": "Sexual Content",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 1367,
+        "name": "Hypersexuality",
+        "description": "Portrays a character with a hypersexuality disorder, compulsive sexual behavior, or sex addiction.",
+        "category": "Sexual Content",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 99,
+        "name": "Henshin",
+        "description": "Prominently features character or costume transformations which often grant special abilities.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -89,16 +119,6 @@
         "isAdult": false
       },
       {
-        "id": 1367,
-        "name": "Hypersexuality",
-        "description": "Portrays a character with a hypersexuality disorder, compulsive sexual behavior, or sex addiction.",
-        "category": "Sexual Content",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": true
-      },
-      {
         "id": 1709,
         "name": "Cheating",
         "description": "Features a character with a partner shown being intimate with someone else consensually.",
@@ -107,16 +127,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": true
-      },
-      {
-        "id": 99,
-        "name": "Henshin",
-        "description": "Prominently features character or costume transformations which often grant special abilities.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
       },
       {
         "id": 1146,
@@ -132,16 +142,6 @@
         "id": 131,
         "name": "Masturbation",
         "description": "Features erotic stimulation of one's own genitalia or other erogenous regions.",
-        "category": "Sexual Content",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": true
-      },
-      {
-        "id": 187,
-        "name": "MILF",
-        "description": "Features sexual intercourse with older women.",
         "category": "Sexual Content",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -323,6 +323,7 @@
     "genres": [
       "Comedy",
       "Drama",
+      "Ecchi",
       "Romance",
       "Supernatural"
     ],
@@ -2038,7 +2039,7 @@
     "rating": 5.5,
     "averageScore": 55,
     "meanScore": 57,
-    "popularity": 2322,
+    "popularity": 2321,
     "trending": 0,
     "favourites": 48,
     "source": "MANGA",
