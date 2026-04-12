@@ -3386,7 +3386,7 @@
         "name": "Female Protagonist",
         "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 89,
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3396,7 +3396,7 @@
         "name": "Coming of Age",
         "description": "Centers around a character's transition from childhood to adulthood.",
         "category": "Theme-Drama",
-        "rank": 82,
+        "rank": 85,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3406,7 +3406,7 @@
         "name": "Acting",
         "description": "Centers around actors or the acting industry.",
         "category": "Theme-Arts",
-        "rank": 80,
+        "rank": 82,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3416,7 +3416,7 @@
         "name": "Revenge",
         "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
         "category": "Theme-Drama",
-        "rank": 68,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3426,7 +3426,7 @@
         "name": "Found Family",
         "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
         "category": "Theme-Other",
-        "rank": 65,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3436,7 +3436,7 @@
         "name": "Primarily Adult Cast",
         "description": "Main cast is mostly composed of characters above a high school age.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3446,7 +3446,7 @@
         "name": "Work",
         "description": "Centers around the activities of a certain occupation.",
         "category": "Setting-Scene",
-        "rank": 53,
+        "rank": 65,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3456,7 +3456,7 @@
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
-        "rank": 50,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3466,7 +3466,7 @@
         "name": "Family Life",
         "description": "Centers around the activities of a family unit.",
         "category": "Theme-Slice of Life",
-        "rank": 46,
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3482,23 +3482,23 @@
         "isAdult": false
       },
       {
-        "id": 153,
-        "name": "Time Skip",
-        "description": "Features a gap in time used to advance the story.",
-        "category": "Setting-Time",
-        "rank": 33,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 215,
         "name": "POV",
         "description": "Point of View; features scenes shown from the perspective of the series protagonist.",
         "category": "Technical",
-        "rank": 33,
+        "rank": 35,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 30,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
         "isAdult": false
       }
     ],
