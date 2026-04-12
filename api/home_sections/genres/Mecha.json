@@ -6506,16 +6506,6 @@
         "isAdult": false
       },
       {
-        "id": 342,
-        "name": "Environmental",
-        "description": "Concern with the state of the natural world and how humans interact with it.",
-        "category": "Theme-Other",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
@@ -6523,6 +6513,16 @@
         "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 342,
+        "name": "Environmental",
+        "description": "Concern with the state of the natural world and how humans interact with it.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -6536,16 +6536,6 @@
         "isAdult": false
       },
       {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 191,
         "name": "Aliens",
         "description": "Prominently features extraterrestrial lifeforms.",
@@ -6553,6 +6543,16 @@
         "rank": 77,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -6610,7 +6610,7 @@
         "name": "Terrorism",
         "description": "Centers around the activities of a terrorist or terrorist organization.",
         "category": "Theme-Other",
-        "rank": 65,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6620,7 +6620,7 @@
         "name": "Class Struggle",
         "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
         "category": "Theme-Drama",
-        "rank": 65,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6670,17 +6670,17 @@
         "name": "Alternate Universe",
         "description": "Features multiple alternate universes in the same series.",
         "category": "Setting-Universe",
-        "rank": 57,
+        "rank": 56,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 224,
-        "name": "Dragons",
-        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
-        "category": "Cast-Traits",
-        "rank": 51,
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 54,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -6696,21 +6696,21 @@
         "isAdult": false
       },
       {
-        "id": 483,
-        "name": "LGBTQ+ Themes",
-        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
-        "category": "Theme-Other",
-        "rank": 46,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 517,
         "name": "Artificial Intelligence",
         "description": "Intelligent non-organic machines that work and react similarly to humans.",
         "category": "Cast-Traits",
         "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "category": "Cast-Traits",
+        "rank": 42,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false

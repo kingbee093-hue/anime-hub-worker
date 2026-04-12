@@ -9513,18 +9513,8 @@
         "name": "Achronological Order",
         "description": "Chapters or episodes do not occur in chronological order.",
         "category": "Setting-Time",
-        "rank": 89,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
         "rank": 88,
-        "isGeneralSpoiler": true,
+        "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
       },
@@ -9546,6 +9536,16 @@
         "rank": 87,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 87,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -9653,7 +9653,7 @@
         "name": "Artificial Intelligence",
         "description": "Intelligent non-organic machines that work and react similarly to humans.",
         "category": "Cast-Traits",
-        "rank": 65,
+        "rank": 64,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -9729,21 +9729,21 @@
         "isAdult": false
       },
       {
-        "id": 1046,
-        "name": "Suicide",
-        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
-        "category": "Theme-Drama",
-        "rank": 52,
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 53,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
       },
       {
-        "id": 483,
-        "name": "LGBTQ+ Themes",
-        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
-        "category": "Theme-Other",
-        "rank": 51,
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 52,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -9759,6 +9759,16 @@
         "isAdult": false
       },
       {
+        "id": 1165,
+        "name": "Transgender",
+        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
+        "category": "Cast-Traits",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 98,
         "name": "Female Protagonist",
         "description": "Main character is female.",
@@ -9766,16 +9776,6 @@
         "rank": 46,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1165,
-        "name": "Transgender",
-        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
-        "category": "Cast-Traits",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
