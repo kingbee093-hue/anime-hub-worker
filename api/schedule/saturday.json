@@ -419,7 +419,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 18533,
+    "popularity": 18537,
     "trending": 0,
     "favourites": 964,
     "source": "MANGA",
@@ -1261,7 +1261,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 82,
-    "popularity": 74610,
+    "popularity": 74652,
     "trending": 7,
     "favourites": 5600,
     "source": "MANGA",
@@ -3853,7 +3853,38 @@
     "genres": [
       "Slice of Life"
     ],
-    "tags": [],
+    "tags": [
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1601,
+        "name": "Primarily Animal Cast",
+        "description": "Main cast is mostly composed animal or animal-like characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "studios": [
       {
         "id": 6292,
@@ -4003,6 +4034,26 @@
         "name": "Primarily Animal Cast",
         "description": "Main cast is mostly composed animal or animal-like characters.",
         "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
