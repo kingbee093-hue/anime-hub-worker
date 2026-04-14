@@ -273,9 +273,9 @@
     "rating": 8.8,
     "averageScore": 88,
     "meanScore": 88,
-    "popularity": 54661,
+    "popularity": 54694,
     "trending": 2,
-    "favourites": 5374,
+    "favourites": 5378,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -508,7 +508,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 51340,
+    "popularity": 51364,
     "trending": 0,
     "favourites": 2960,
     "source": "ORIGINAL",
@@ -734,9 +734,9 @@
     "rating": 8.2,
     "averageScore": 82,
     "meanScore": 83,
-    "popularity": 45576,
+    "popularity": 45615,
     "trending": 8,
-    "favourites": 4312,
+    "favourites": 4314,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -991,9 +991,9 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 84,
-    "popularity": 39633,
+    "popularity": 39644,
     "trending": 0,
-    "favourites": 2985,
+    "favourites": 2984,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -1234,7 +1234,7 @@
         "name": "Swimming",
         "description": "Centers around the sport of swimming.",
         "category": "Theme-Game-Sport",
-        "rank": 38,
+        "rank": 43,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1269,9 +1269,9 @@
     "rating": 8.6,
     "averageScore": 86,
     "meanScore": 86,
-    "popularity": 31280,
+    "popularity": 31295,
     "trending": 1,
-    "favourites": 2514,
+    "favourites": 2512,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -1468,7 +1468,7 @@
     "rating": 8,
     "averageScore": 80,
     "meanScore": 80,
-    "popularity": 29933,
+    "popularity": 29941,
     "trending": 0,
     "favourites": 1096,
     "source": "OTHER",
@@ -1662,9 +1662,9 @@
     "rating": 8,
     "averageScore": 80,
     "meanScore": 80,
-    "popularity": 27546,
+    "popularity": 27555,
     "trending": 1,
-    "favourites": 1418,
+    "favourites": 1417,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -1924,9 +1924,9 @@
     "rating": 8.8,
     "averageScore": 88,
     "meanScore": 88,
-    "popularity": 22989,
+    "popularity": 22996,
     "trending": 1,
-    "favourites": 2243,
+    "favourites": 2244,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -2005,6 +2005,16 @@
         "isAdult": false
       },
       {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
@@ -2015,21 +2025,11 @@
         "isAdult": false
       },
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 102,
         "name": "Coming of Age",
         "description": "Centers around a character's transition from childhood to adulthood.",
         "category": "Theme-Drama",
-        "rank": 82,
+        "rank": 84,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2039,7 +2039,7 @@
         "name": "Rehabilitation",
         "description": "Prominently features the recovery of a character who became incapable of social life or work.",
         "category": "Theme-Drama",
-        "rank": 76,
+        "rank": 78,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -2055,11 +2055,21 @@
         "isAdult": false
       },
       {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 68,
+        "rank": 72,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2069,17 +2079,7 @@
         "name": "Classical Music",
         "description": "Centers on the musical style of classical, not to be applied to anime that use classical in its soundtrack.",
         "category": "Theme-Arts-Music",
-        "rank": 64,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2104,9 +2104,9 @@
     "rating": 8.2,
     "averageScore": 82,
     "meanScore": 83,
-    "popularity": 21607,
+    "popularity": 21618,
     "trending": 1,
-    "favourites": 851,
+    "favourites": 853,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -2317,7 +2317,7 @@
     "rating": 7.7,
     "averageScore": 77,
     "meanScore": 77,
-    "popularity": 18940,
+    "popularity": 18942,
     "trending": 0,
     "favourites": 515,
     "source": "ORIGINAL",
@@ -2524,9 +2524,9 @@
     "rating": 8.2,
     "averageScore": 82,
     "meanScore": 83,
-    "popularity": 18569,
+    "popularity": 18582,
     "trending": 1,
-    "favourites": 1031,
+    "favourites": 1033,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -2707,9 +2707,9 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 85,
-    "popularity": 13604,
+    "popularity": 13613,
     "trending": 0,
-    "favourites": 624,
+    "favourites": 625,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -2902,7 +2902,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 85,
-    "popularity": 11905,
+    "popularity": 11913,
     "trending": 0,
     "favourites": 577,
     "source": "ORIGINAL",
@@ -2919,6 +2919,160 @@
     "chapterIndexId": "d58abdf4-9268-41d8-9920-f8fe8858a173",
     "mangadexId": "d58abdf4-9268-41d8-9920-f8fe8858a173",
     "mangadexUrl": "https://mangadex.org/title/d58abdf4-9268-41d8-9920-f8fe8858a173",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 156031,
+    "anilistId": 156031,
+    "idMal": 152907,
+    "title": "Choking on Love",
+    "titleRomaji": "Museru Kurai no Ai wo Ageru",
+    "titleEnglish": "Choking on Love",
+    "titleNative": "むせるくらいの愛をあげる",
+    "synonyms": [
+      "給你滿滿的愛",
+      "You rock me"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx156031-l7pm6Ki7YI7c.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx156031-l7pm6Ki7YI7c.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx156031-l7pm6Ki7YI7c.jpg",
+    "coverImageColor": "#e43586",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/156031-yUTQGAIa1Zlt.jpg",
+    "synopsis": "Opposites attract in this shojo romance manga about a career-focused artist and the bad-boy guitarist who turns her world upside down! Hibari, a single-minded art student with dreams of becoming a graphic designer, feels insecure about being “ordinary” compared to her peers. Gaku, a free-spirited guitarist from the same university, turns her world upside down after a chaotic encounter at a ramen shop. Hibari wants nothing more than to escape the disorder Gaku brings to her perfectly planned life. But as he slowly breaks down her walls, Hibari starts to realize that a little chaos might be just what she needs. (Source: Seven Seas Entertainment)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-10-24",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 404,
+        "name": "College",
+        "description": "Partly or completely set in a college or university.",
+        "category": "Setting-Scene",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 118,
+        "name": "Drawing",
+        "description": "Centers around the art of drawing, including manga and doujinshi.",
+        "category": "Theme-Arts",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Keiko Iwashita"
+    ],
+    "artists": [
+      "Keiko Iwashita"
+    ],
+    "rating": 7.8,
+    "averageScore": 78,
+    "meanScore": 79,
+    "popularity": 11481,
+    "trending": 0,
+    "favourites": 451,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/156031",
+    "mal_url": "https://myanimelist.net/manga/152907",
+    "externalLinks": [
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/316112896952107691"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kc.kodansha.co.jp/title?code=1000043791"
+      },
+      {
+        "site": "Seven Seas Entertainment",
+        "url": "https://sevenseasentertainment.com/series/choking-on-love/"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10593/episode/358830"
+      }
+    ],
+    "chapterIndexId": "3ac55057-52e9-471d-a208-7a684cad8ac6",
+    "mangadexId": "3ac55057-52e9-471d-a208-7a684cad8ac6",
+    "mangadexUrl": "https://mangadex.org/title/3ac55057-52e9-471d-a208-7a684cad8ac6",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -3089,7 +3243,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 82,
-    "popularity": 11476,
+    "popularity": 11480,
     "trending": 0,
     "favourites": 482,
     "source": "ORIGINAL",
@@ -3142,160 +3296,6 @@
     "chapterIndexId": "8cc979c5-9c2d-4c16-9e83-e0a30dbcc6c7",
     "mangadexId": "8cc979c5-9c2d-4c16-9e83-e0a30dbcc6c7",
     "mangadexUrl": "https://mangadex.org/title/8cc979c5-9c2d-4c16-9e83-e0a30dbcc6c7",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 156031,
-    "anilistId": 156031,
-    "idMal": 152907,
-    "title": "Choking on Love",
-    "titleRomaji": "Museru Kurai no Ai wo Ageru",
-    "titleEnglish": "Choking on Love",
-    "titleNative": "むせるくらいの愛をあげる",
-    "synonyms": [
-      "給你滿滿的愛",
-      "You rock me"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx156031-l7pm6Ki7YI7c.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx156031-l7pm6Ki7YI7c.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx156031-l7pm6Ki7YI7c.jpg",
-    "coverImageColor": "#e43586",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/156031-yUTQGAIa1Zlt.jpg",
-    "synopsis": "Opposites attract in this shojo romance manga about a career-focused artist and the bad-boy guitarist who turns her world upside down! Hibari, a single-minded art student with dreams of becoming a graphic designer, feels insecure about being “ordinary” compared to her peers. Gaku, a free-spirited guitarist from the same university, turns her world upside down after a chaotic encounter at a ramen shop. Hibari wants nothing more than to escape the disorder Gaku brings to her perfectly planned life. But as he slowly breaks down her walls, Hibari starts to realize that a little chaos might be just what she needs. (Source: Seven Seas Entertainment)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2022,
-    "startDate": "2022-10-24",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 53,
-        "name": "Shoujo",
-        "description": "Target demographic is teenage and young adult females.",
-        "category": "Demographic",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 404,
-        "name": "College",
-        "description": "Partly or completely set in a college or university.",
-        "category": "Setting-Scene",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 110,
-        "name": "Band",
-        "description": "Main cast is a group of musicians.",
-        "category": "Theme-Arts-Music",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 45,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 118,
-        "name": "Drawing",
-        "description": "Centers around the art of drawing, including manga and doujinshi.",
-        "category": "Theme-Arts",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 30,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 139,
-        "name": "Love Triangle",
-        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Keiko Iwashita"
-    ],
-    "artists": [
-      "Keiko Iwashita"
-    ],
-    "rating": 7.8,
-    "averageScore": 78,
-    "meanScore": 79,
-    "popularity": 11473,
-    "trending": 0,
-    "favourites": 452,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/156031",
-    "mal_url": "https://myanimelist.net/manga/152907",
-    "externalLinks": [
-      {
-        "site": "Comic Days",
-        "url": "https://comic-days.com/episode/316112896952107691"
-      },
-      {
-        "site": "Kodansha",
-        "url": "https://kc.kodansha.co.jp/title?code=1000043791"
-      },
-      {
-        "site": "Seven Seas Entertainment",
-        "url": "https://sevenseasentertainment.com/series/choking-on-love/"
-      },
-      {
-        "site": "K MANGA",
-        "url": "https://kmanga.kodansha.com/title/10593/episode/358830"
-      }
-    ],
-    "chapterIndexId": "3ac55057-52e9-471d-a208-7a684cad8ac6",
-    "mangadexId": "3ac55057-52e9-471d-a208-7a684cad8ac6",
-    "mangadexUrl": "https://mangadex.org/title/3ac55057-52e9-471d-a208-7a684cad8ac6",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -3494,7 +3494,7 @@
     "rating": 8.2,
     "averageScore": 82,
     "meanScore": 83,
-    "popularity": 9520,
+    "popularity": 9525,
     "trending": 1,
     "favourites": 381,
     "source": "ORIGINAL",
@@ -3680,7 +3680,7 @@
     "meanScore": 84,
     "popularity": 6103,
     "trending": 0,
-    "favourites": 274,
+    "favourites": 273,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
