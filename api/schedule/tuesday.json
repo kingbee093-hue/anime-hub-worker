@@ -379,7 +379,7 @@
         "name": "Assassins",
         "description": "Centers around characters who murder people as a profession.",
         "category": "Theme-Other-Organisations",
-        "rank": 97,
+        "rank": 98,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -425,11 +425,31 @@
         "isAdult": false
       },
       {
+        "id": 75,
+        "name": "Boys' Love",
+        "description": "Prominently features romance between two males, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 186,
         "name": "Crossdressing",
         "description": "Prominently features a character dressing up as the opposite sex.",
         "category": "Cast-Traits",
         "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1456,
+        "name": "Femboy",
+        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
+        "category": "Cast-Traits",
+        "rank": 81,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -445,16 +465,6 @@
         "isAdult": false
       },
       {
-        "id": 1456,
-        "name": "Femboy",
-        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
-        "category": "Cast-Traits",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 109,
         "name": "Primarily Adult Cast",
         "description": "Main cast is mostly composed of characters above a high school age.",
@@ -462,16 +472,6 @@
         "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 75,
-        "name": "Boys' Love",
-        "description": "Prominently features romance between two males, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -569,7 +569,7 @@
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 40,
+        "rank": 36,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -636,12 +636,12 @@
     "synopsis": "Childhood friends Yukiya and Miku share everything…except their feelings. Ever since sixth grade, they’ve played a “love game”: they take turns saying “I love you” and whoever gets flustered first loses. Now in high school, their hearts are closer than ever—but will they finally find the courage to confess? (Source: Crunchyroll)",
     "type": "ANIME",
     "format": "TV",
-    "status": "NOT_YET_RELEASED",
+    "status": "RELEASING",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
-    "duration": 0,
+    "episodes": 12,
+    "duration": 24,
     "genres": [
       "Comedy",
       "Romance"
@@ -673,6 +673,16 @@
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
         "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -752,7 +762,7 @@
     "isAdult": false,
     "hashtag": "#愛してるゲームを終わらせたい",
     "startDate": "2026-04-14",
-    "endDate": null,
+    "endDate": "2026-06-30",
     "mal_url": "https://myanimelist.net/anime/61839",
     "anilist_url": "https://anilist.co/anime/194393",
     "trailer": {
@@ -793,11 +803,21 @@
     ],
     "tags": [
       {
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
         "category": "Setting-Scene",
-        "rank": 80,
+        "rank": 82,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -833,16 +853,6 @@
         "isAdult": false
       },
       {
-        "id": 97,
-        "name": "Otaku Culture",
-        "description": "Centers around the culture of a fanatical fan-base.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1045,
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
@@ -867,7 +877,7 @@
         "name": "Chibi",
         "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
         "category": "Theme-Other",
-        "rank": 40,
+        "rank": 35,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
