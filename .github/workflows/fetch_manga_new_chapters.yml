@@ -1,0 +1,56 @@
+name: AnimeHub - Manga New Chapters
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [run-manga-new-chapters, run-all]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-manga-new-chapters
+  cancel-in-progress: false
+
+jobs:
+  fetch_manga_new_chapters:
+    name: Refresh Manga New Chapters
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Refresh New Chapters Feed
+        env:
+          MANGA_NEW_CHAPTERS_FRESH_HOURS: '48'
+          MANGA_NEW_CHAPTERS_MAX_ATTEMPTS: '4'
+          MANGA_NEW_CHAPTERS_RETRY_DELAY_MS: '3000'
+        run: npm run fetch:manga-new-chapters
+
+      - name: Commit API updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add api/manga/new_chapters.json
+          if git diff --staged --quiet; then
+            echo "No manga new chapters changes to commit."
+          else
+            git commit -m "api: refresh manga new chapters [skip ci]"
+            git pull --rebase origin main || git pull origin main
+            git push origin HEAD:main
+          fi
+
