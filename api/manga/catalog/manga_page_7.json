@@ -5994,7 +5994,7 @@
     "chapterSourceConfidence": 0,
     "chapterCountSource": "provider_fallback",
     "chapterConsensusProviders": [],
-    "chapterSourceUpdatedAt": "2026-04-15T15:06:25.081Z"
+    "chapterSourceUpdatedAt": "2026-04-15T21:39:41.655Z"
   },
   {
     "mangaId": 147102,
@@ -19241,11 +19241,11 @@
         "isAdult": false
       },
       {
-        "id": 622,
-        "name": "Asexual",
-        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
+        "id": 1681,
+        "name": "Aromantic",
+        "description": "Features a character who experiences little to no romantic attraction.",
         "category": "Cast-Traits",
-        "rank": 76,
+        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -19261,6 +19261,16 @@
         "isAdult": false
       },
       {
+        "id": 622,
+        "name": "Asexual",
+        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 1539,
         "name": "Unrequited Love",
         "description": "One or more characters are experiencing an unrequited love that may or may not be reciprocated.",
@@ -19268,16 +19278,6 @@
         "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1681,
-        "name": "Aromantic",
-        "description": "Features a character who experiences little to no romantic attraction.",
-        "category": "Cast-Traits",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -19440,7 +19440,7 @@
     "year": 2015,
     "startDate": "2015-08-19",
     "endDate": "2022-10-26",
-    "chapters": 309,
+    "chapters": 308,
     "volumes": 34,
     "genres": [
       "Slice of Life",
@@ -19565,19 +19565,11 @@
         "url": "https://kmanga.kodansha.com/title/10070/episode/309875"
       }
     ],
-    "chapterIndexId": "src-weebcentral-86569",
+    "chapterIndexId": "7bb7e5ae-a784-4009-98b2-8ad4a7541548",
     "mangadexId": "7bb7e5ae-a784-4009-98b2-8ad4a7541548",
     "mangadexUrl": "https://mangadex.org/title/7bb7e5ae-a784-4009-98b2-8ad4a7541548",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1,
-    "chapterSourceProvider": "weebcentral",
-    "chapterSourceId": "01J76XYBASVMF7XXJ2VMGC2RRT/Diamond-No-Ace-Act-I-I",
-    "chapterSourceTitle": "Diamond no Ace Act II",
-    "chapterSourceChapterCount": 309,
-    "chapterSourceConfidence": 0.98,
-    "chapterCountSource": "manual_provider_override",
-    "chapterConsensusProviders": [],
-    "chapterSourceUpdatedAt": "2026-04-07T00:00:00.000Z"
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 143099,
@@ -20235,7 +20227,7 @@
     "year": 2001,
     "startDate": "2001-06-25",
     "endDate": "2014-06-26",
-    "chapters": 102,
+    "chapters": 112,
     "volumes": 24,
     "genres": [
       "Action",
@@ -20375,19 +20367,11 @@
     "anilist_url": "https://anilist.co/manga/30214",
     "mal_url": "https://myanimelist.net/manga/214",
     "externalLinks": [],
-    "chapterIndexId": "src-weebcentral-30214",
+    "chapterIndexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexUrl": "https://mangadex.org/title/f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1,
-    "chapterSourceProvider": "weebcentral",
-    "chapterSourceId": "01J76XYBBFEGS03TAW21JKX3R3/Mobile-Suit-Gundam-The-Origin",
-    "chapterSourceTitle": "Mobile Suit Gundam: The Origin",
-    "chapterSourceChapterCount": 102,
-    "chapterSourceConfidence": 0.98,
-    "chapterCountSource": "manual_provider_override",
-    "chapterConsensusProviders": [],
-    "chapterSourceUpdatedAt": "2026-04-07T00:00:00.000Z"
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 172166,
