@@ -134,7 +134,7 @@
     "meanScore": 76,
     "popularity": 22504,
     "trending": 5,
-    "favourites": 429,
+    "favourites": 435,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -232,7 +232,7 @@
         "name": "Memory Manipulation",
         "description": "Prominently features a character(s) who has had their memories altered.",
         "category": "Theme-Other",
-        "rank": 91,
+        "rank": 92,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -348,16 +348,6 @@
         "isAdult": false
       },
       {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
@@ -365,6 +355,16 @@
         "rank": 64,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -392,7 +392,7 @@
         "name": "Body Horror",
         "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
         "category": "Theme-Other",
-        "rank": 53,
+        "rank": 55,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -475,7 +475,7 @@
     "meanScore": 86,
     "popularity": 91809,
     "trending": 32,
-    "favourites": 1941,
+    "favourites": 2054,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -536,20 +536,20 @@
         "isAdult": false
       },
       {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 95,
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 96,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 164,
-        "name": "Tsundere",
-        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
-        "category": "Cast-Traits",
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
         "rank": 95,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -596,21 +596,21 @@
         "isAdult": false
       },
       {
-        "id": 356,
-        "name": "Gyaru",
-        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
-        "category": "Cast-Traits",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
         "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 65,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -683,7 +683,7 @@
     "meanScore": 74,
     "popularity": 13279,
     "trending": 4,
-    "favourites": 128,
+    "favourites": 136,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -868,7 +868,7 @@
     "meanScore": 65,
     "popularity": 22664,
     "trending": 11,
-    "favourites": 174,
+    "favourites": 187,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1075,7 +1075,7 @@
     "meanScore": 78,
     "popularity": 7517,
     "trending": 16,
-    "favourites": 176,
+    "favourites": 185,
     "source": "OTHER",
     "countryOfOrigin": "CN",
     "isLicensed": true,
@@ -1282,7 +1282,7 @@
     "meanScore": 84,
     "popularity": 7892,
     "trending": 0,
-    "favourites": 801,
+    "favourites": 802,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
