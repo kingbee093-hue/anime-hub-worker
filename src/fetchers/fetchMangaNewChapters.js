@@ -10,6 +10,7 @@ const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const FRESH_HOURS = Number(process.env.MANGA_NEW_CHAPTERS_FRESH_HOURS || 48);
 const MAX_ATTEMPTS = Number(process.env.MANGA_NEW_CHAPTERS_MAX_ATTEMPTS || 4);
 const RETRY_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_RETRY_DELAY_MS || 3000);
+const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 
 function readJsonFile(filePath, fallback) {
   try {
@@ -31,6 +32,14 @@ function isWithinFreshWindow(updatedAt, cutoffMs) {
   return time >= cutoffMs;
 }
 
+function resolveSectionLimit(freshCount) {
+  if (Number.isFinite(SECTION_LIMIT_RAW) && SECTION_LIMIT_RAW > 0) {
+    return Math.floor(SECTION_LIMIT_RAW);
+  }
+  // 0 or invalid => effectively unbounded for this run
+  return Math.max(Number(freshCount || 0), DEFAULT_SECTION_LIMIT);
+}
+
 function collectFreshNewChapterItems() {
   const catalogEntries = getMangaCatalogEntries();
   const chapterManifest = getChapterManifest();
@@ -39,10 +48,12 @@ function collectFreshNewChapterItems() {
   const freshManifest = {
     items: manifestItems.filter((item) => isWithinFreshWindow(item.updatedAt, cutoffMs)),
   };
+  const sectionLimit = resolveSectionLimit(freshManifest.items.length);
 
-  const items = buildNewChaptersSection(catalogEntries, freshManifest, DEFAULT_SECTION_LIMIT);
+  const items = buildNewChaptersSection(catalogEntries, freshManifest, sectionLimit);
   return {
     items,
+    sectionLimit,
     catalogCount: catalogEntries.length,
     manifestCount: manifestItems.length,
     freshManifestCount: freshManifest.items.length,
@@ -68,7 +79,7 @@ async function fetchMangaNewChapters() {
     latestAttempt = collectFreshNewChapterItems();
 
     console.log(
-      `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, manifest=${latestAttempt.manifestCount}, fresh-window=${latestAttempt.freshManifestCount}, section=${latestAttempt.items.length}.`,
+      `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, manifest=${latestAttempt.manifestCount}, fresh-window=${latestAttempt.freshManifestCount}, limit=${latestAttempt.sectionLimit}, section=${latestAttempt.items.length}.`,
     );
 
     if (latestAttempt.items.length > 0) {
@@ -109,4 +120,3 @@ async function fetchMangaNewChapters() {
 }
 
 module.exports = fetchMangaNewChapters;
-

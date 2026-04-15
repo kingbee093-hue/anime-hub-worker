@@ -39,6 +39,7 @@ jobs:
           MANGA_NEW_CHAPTERS_FRESH_HOURS: '48'
           MANGA_NEW_CHAPTERS_MAX_ATTEMPTS: '4'
           MANGA_NEW_CHAPTERS_RETRY_DELAY_MS: '3000'
+          MANGA_NEW_CHAPTERS_LIMIT: '0'
         run: npm run fetch:manga-new-chapters
 
       - name: Commit API updates
@@ -53,4 +54,3 @@ jobs:
             git pull --rebase origin main || git pull origin main
             git push origin HEAD:main
           fi
-
