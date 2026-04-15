@@ -42,6 +42,7 @@ jobs:
         shell: bash
         env:
           MANGA_SKIP_CHAPTER_INDEX: '1'
+          MANGA_NEW_CHAPTERS_LIMIT: '0'
           FORCE_REFRESH_INPUT: ${{ github.event.inputs.full_refresh || 'false' }}
         run: |
           if [ "$FORCE_REFRESH_INPUT" = "true" ]; then

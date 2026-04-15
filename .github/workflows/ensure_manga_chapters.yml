@@ -61,6 +61,7 @@ jobs:
         shell: bash
         env:
           MANGA_ENABLE_ENGLISH_FALLBACK: '1'
+          MANGA_NEW_CHAPTERS_LIMIT: '0'
           FORCE_ALL_INPUT: ${{ github.event.inputs.force_all || 'false' }}
           BATCH_SIZE_INPUT: ${{ github.event.inputs.batch_size || '12' }}
           SECTION_SCOPE_INPUT: ${{ github.event.inputs.section_scope || 'releasing' }}

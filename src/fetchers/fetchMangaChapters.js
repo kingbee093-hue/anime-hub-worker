@@ -15,7 +15,7 @@ const {
   providers,
   normalizeProviderChapter,
 } = require('../utils/mangaFallbackProviders');
-const { writeNewChaptersSection, DEFAULT_SECTION_LIMIT } = require('../utils/mangaSections');
+const { writeNewChaptersSection } = require('../utils/mangaSections');
 const {
   getMangaCatalogEntries,
   buildChapterIndexId,
@@ -41,6 +41,7 @@ const FALLBACK_PAGE_TIMEOUT_MS = Number(process.env.MANGA_FALLBACK_PAGE_TIMEOUT_
 const FALLBACK_PROVIDER_FAILURE_LIMIT = Number(process.env.MANGA_FALLBACK_PROVIDER_FAILURE_LIMIT || 5);
 const FALLBACK_PROGRESS_EVERY = Number(process.env.MANGA_FALLBACK_PROGRESS_EVERY || 10);
 const FALLBACK_CHAPTER_BUDGET_MS = Number(process.env.MANGA_FALLBACK_CHAPTER_BUDGET_MS || 120000);
+const MANGA_NEW_CHAPTERS_LIMIT = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const UNKNOWN_TARGET_MIN_ENGLISH_COVERAGE = Number(
   process.env.MANGA_UNKNOWN_TARGET_MIN_ENGLISH_COVERAGE || 20,
 );
@@ -1479,7 +1480,7 @@ async function fetchMangaChapters() {
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
   writeFallbackMappingMap(fallbackMappingMap);
   const fullCatalogEntries = getMangaCatalogEntries();
-  const newChapterItems = writeNewChaptersSection(fullCatalogEntries, manifest, DEFAULT_SECTION_LIMIT);
+  const newChapterItems = writeNewChaptersSection(fullCatalogEntries, manifest, MANGA_NEW_CHAPTERS_LIMIT);
   console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
   console.log(`Saved chapter indexes for ${manifest.items.length} manga titles.`);
 }

@@ -16,7 +16,6 @@ const {
 const {
   writeNewChaptersSection,
   writeReleasingSection,
-  DEFAULT_SECTION_LIMIT,
 } = require('../utils/mangaSections');
 const { buildChapterIndexId } = require('../utils/mangaBackfillData');
 const manualMangaMappings = require('../config/manualMangaMappings.json');
@@ -31,6 +30,7 @@ const MANGADEX_DELAY_MS = 250;
 const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 220);
 const MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT = Number(process.env.MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT || 6);
 const MANGADEX_MAPPING_MAX_QUERY_PLANS = Number(process.env.MANGADEX_MAPPING_MAX_QUERY_PLANS || 10);
+const MANGA_NEW_CHAPTERS_LIMIT = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const VERBOSE_MAPPING_LOGS = process.env.MANGA_VERBOSE_MAPPING_LOGS === '1';
 
 const MANGA_CATALOG_SOURCES = [
@@ -1029,10 +1029,10 @@ async function fetchMangaCatalog() {
   try {
     // eslint-disable-next-line global-require, import/no-dynamic-require
     const existingChapterManifest = require(`../../api/${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
-    const newChapterItems = writeNewChaptersSection(catalog, existingChapterManifest, DEFAULT_SECTION_LIMIT);
+    const newChapterItems = writeNewChaptersSection(catalog, existingChapterManifest, MANGA_NEW_CHAPTERS_LIMIT);
     console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
   } catch (_) {
-    writeNewChaptersSection(catalog, { items: [] }, DEFAULT_SECTION_LIMIT);
+    writeNewChaptersSection(catalog, { items: [] }, MANGA_NEW_CHAPTERS_LIMIT);
     console.log('Manga new chapters section refreshed with 0 titles (chapter manifest unavailable yet).');
   }
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
