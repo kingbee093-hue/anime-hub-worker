@@ -61,7 +61,6 @@ jobs:
         shell: bash
         env:
           MANGA_ENABLE_ENGLISH_FALLBACK: '1'
-          MANGA_NEW_CHAPTERS_LIMIT: '0'
           FORCE_ALL_INPUT: ${{ github.event.inputs.force_all || 'false' }}
           BATCH_SIZE_INPUT: ${{ github.event.inputs.batch_size || '12' }}
           SECTION_SCOPE_INPUT: ${{ github.event.inputs.section_scope || 'releasing' }}
@@ -82,7 +81,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/manga/chapters api/manga/backfill api/manga/new_chapters.json api/manga/mangadex_mapping_fallback.json
+          git add api/manga/chapters api/manga/backfill api/manga/mangadex_mapping_fallback.json
           if git diff --staged --quiet; then
             echo "No chapter coverage changes to commit."
           else

@@ -14,7 +14,6 @@ const {
   validateProviderSourceMapping,
 } = require('../utils/mangaFallbackProviders');
 const {
-  writeNewChaptersSection,
   writeReleasingSection,
 } = require('../utils/mangaSections');
 const { buildChapterIndexId } = require('../utils/mangaBackfillData');
@@ -30,7 +29,6 @@ const MANGADEX_DELAY_MS = 250;
 const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 220);
 const MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT = Number(process.env.MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT || 6);
 const MANGADEX_MAPPING_MAX_QUERY_PLANS = Number(process.env.MANGADEX_MAPPING_MAX_QUERY_PLANS || 10);
-const MANGA_NEW_CHAPTERS_LIMIT = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const VERBOSE_MAPPING_LOGS = process.env.MANGA_VERBOSE_MAPPING_LOGS === '1';
 
 const MANGA_CATALOG_SOURCES = [
@@ -1026,15 +1024,7 @@ async function fetchMangaCatalog() {
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
   const releasingItems = writeReleasingSection(catalog, SECTION_ITEMS);
   console.log(`Manga releasing section refreshed with ${releasingItems.length} titles.`);
-  try {
-    // eslint-disable-next-line global-require, import/no-dynamic-require
-    const existingChapterManifest = require(`../../api/${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
-    const newChapterItems = writeNewChaptersSection(catalog, existingChapterManifest, MANGA_NEW_CHAPTERS_LIMIT);
-    console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
-  } catch (_) {
-    writeNewChaptersSection(catalog, { items: [] }, MANGA_NEW_CHAPTERS_LIMIT);
-    console.log('Manga new chapters section refreshed with 0 titles (chapter manifest unavailable yet).');
-  }
+  console.log('Manga new chapters feed is managed by the dedicated workflow only (fetch_manga_new_chapters.yml).');
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
   console.log(
     `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, manual: ${mappingStats.manualHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,
