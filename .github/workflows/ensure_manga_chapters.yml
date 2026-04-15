@@ -14,7 +14,7 @@ on:
         default: '12'
         type: string
       section_scope:
-        description: Section scope to process first (recommended: releasing for ongoing titles only)
+        description: "Section scope to process first (recommended: releasing for ongoing titles only)"
         required: false
         default: 'releasing'
         type: string
