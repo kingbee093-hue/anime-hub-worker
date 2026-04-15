@@ -1,21 +1,259 @@
 {
-  "updatedAt": "2026-04-15T12:14:29.871Z",
-  "sectionScope": "trending",
-  "catalogTotal": 24,
-  "indexedTitles": 483,
-  "pendingTitles": 0,
-  "selectedCount": 0,
-  "batchSize": 12,
+  "updatedAt": "2026-04-15T14:32:41.906Z",
+  "sectionScope": "targeted",
+  "catalogTotal": 954,
+  "indexedTitles": 926,
+  "pendingTitles": 33,
+  "selectedCount": 9,
+  "batchSize": 9,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
   "successCooldownReleasingHours": 24,
-  "targetIds": [],
-  "selected": [],
-  "nextSample": [],
-  "status": "idle",
+  "targetIds": [
+    "138705",
+    "147102",
+    "126986",
+    "195334",
+    "188346",
+    "185922",
+    "208208",
+    "202221",
+    "197840"
+  ],
+  "selected": [
+    {
+      "mangadexId": "38f386ce-f2dc-4f2b-99f9-522eab56078d",
+      "title": "Suyo Webtoon-ui Na Kang-Rim",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2021,
+      "popularity": 11665,
+      "chapters": 172,
+      "chapterIndexId": "38f386ce-f2dc-4f2b-99f9-522eab56078d",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:30:05.705Z"
+    },
+    {
+      "mangadexId": "3a7bd813-c6ea-4052-a6a9-6a5e617e27a6",
+      "title": "+99 Reinforced Wooden Stick",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2022,
+      "popularity": 10578,
+      "chapters": 0,
+      "chapterIndexId": "3a7bd813-c6ea-4052-a6a9-6a5e617e27a6",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:30:29.658Z"
+    },
+    {
+      "mangadexId": "1693697a-783c-4d3c-a2d3-dc069e137a23",
+      "title": "Jibi Eopseo",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2018,
+      "popularity": 7315,
+      "chapters": 269,
+      "chapterIndexId": "1693697a-783c-4d3c-a2d3-dc069e137a23",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:30:42.278Z"
+    },
+    {
+      "mangadexId": "6fa61a0f-95c5-453e-a410-0f458955e0a3",
+      "title": "The Apocalypse-Level Death Knight Returns",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2025,
+      "popularity": 3195,
+      "chapters": 0,
+      "chapterIndexId": "6fa61a0f-95c5-453e-a410-0f458955e0a3",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:30:54.028Z"
+    },
+    {
+      "mangadexId": "36e53c00-9825-4934-90c1-3a188fbdd605",
+      "title": "Mugi Meokneun Seojanim",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2025,
+      "popularity": 3025,
+      "chapters": 0,
+      "chapterIndexId": "36e53c00-9825-4934-90c1-3a188fbdd605",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:31:01.411Z"
+    },
+    {
+      "mangadexId": "aefc3f7f-e7fd-40d9-86ce-280ff9ac16de",
+      "title": "Miraereul Boneun Tujaja",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2024,
+      "popularity": 1939,
+      "chapters": 0,
+      "chapterIndexId": "aefc3f7f-e7fd-40d9-86ce-280ff9ac16de",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:31:08.459Z"
+    },
+    {
+      "mangadexId": "7c7e605b-3122-4be1-a14b-940729570d3e",
+      "title": "Yangchigi Mabeopsa",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2026,
+      "popularity": 1863,
+      "chapters": 0,
+      "chapterIndexId": "7c7e605b-3122-4be1-a14b-940729570d3e",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:31:15.568Z"
+    },
+    {
+      "mangadexId": "e1a38c51-4365-40b9-b992-e61878672fd9",
+      "title": "Conglíngkaishi Wuxian Jinhua",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2025,
+      "popularity": 1189,
+      "chapters": 0,
+      "chapterIndexId": "e1a38c51-4365-40b9-b992-e61878672fd9",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:31:24.546Z"
+    },
+    {
+      "mangadexId": "6ecef09c-11ab-4e4e-9dde-9d3b22698a12",
+      "title": "Why the Villainess Wields the Sword",
+      "score": -1,
+      "format": "MANGA",
+      "year": 2025,
+      "popularity": 874,
+      "chapters": 0,
+      "chapterIndexId": "6ecef09c-11ab-4e4e-9dde-9d3b22698a12",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": "2026-04-15T14:31:35.873Z"
+    }
+  ],
+  "nextSample": [
+    {
+      "mangadexId": "e1847df1-db22-4279-95e2-9dbbbd1bbfbc",
+      "title": "Father, I Don't Want this Marriage"
+    },
+    {
+      "mangadexId": "d8adcc66-b2a3-4c0c-a8b4-c6f2f0538b90",
+      "title": "Azumanga Daioh"
+    },
+    {
+      "mangadexId": "2d282b5e-599d-4915-83ba-42b69c42954b",
+      "title": "Kuzumi-kun, Can't You Read the Room?"
+    },
+    {
+      "mangadexId": "7bf163e3-123a-41c1-b2bc-8254dbe5a09b",
+      "title": "2.5 Dimensional Seduction"
+    },
+    {
+      "mangadexId": "5ed2558b-66e8-4413-aff8-0ff317f9f1d0",
+      "title": "I Am the Sorcerer King"
+    },
+    {
+      "mangadexId": "de9e3b62-eac5-4c0a-917d-ffccad694381",
+      "title": "Sometimes Even Reality Is a Lie!"
+    },
+    {
+      "mangadexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
+      "title": "Mieruko-chan"
+    },
+    {
+      "mangadexId": "d7037b2a-874a-4360-8a7b-07f2899152fd",
+      "title": "Welcome to Demon School! Iruma-kun"
+    },
+    {
+      "mangadexId": "3df1a9a3-a1be-47a3-9e90-9b3e55b1d0ac",
+      "title": "The Dangers in My Heart"
+    },
+    {
+      "mangadexId": "b4c93297-b32f-4f90-b619-55456a38b0aa",
+      "title": "More Than a Married Couple, but Not Lovers."
+    },
+    {
+      "mangadexId": "0ca1627e-95dd-4118-892a-f144adf02256",
+      "title": "March Comes in Like a Lion"
+    },
+    {
+      "mangadexId": "cedc7401-8c70-4057-b14a-4ecbbcd73945",
+      "title": "A Bride's Story"
+    },
+    {
+      "mangadexId": "5e3a710f-0b0d-482b-9e84-d9c91960c625",
+      "title": "Anjo the Mischievous Gal"
+    },
+    {
+      "mangadexId": "195023bf-cf9a-4772-94ef-09dd6eddea84",
+      "title": "The Ancient Magus' Bride"
+    },
+    {
+      "mangadexId": "46748d60-9b15-4647-8250-de0926b20268",
+      "title": "Please Put Them On, Takamine-san"
+    }
+  ],
+  "currentItem": {
+    "chapterIndexId": "6fa61a0f-95c5-453e-a410-0f458955e0a3",
+    "mangadexId": "6fa61a0f-95c5-453e-a410-0f458955e0a3",
+    "title": "The Apocalypse-Level Death Knight Returns",
+    "status": "failed",
+    "error": "No readable chapter coverage was produced for this title."
+  },
   "completedCount": 0,
-  "failedCount": 0,
+  "failedCount": 4,
   "completed": [],
-  "failed": []
+  "failed": [
+    {
+      "chapterIndexId": "38f386ce-f2dc-4f2b-99f9-522eab56078d",
+      "mangadexId": "38f386ce-f2dc-4f2b-99f9-522eab56078d",
+      "title": "Suyo Webtoon-ui Na Kang-Rim",
+      "error": "No readable chapter coverage was produced for this title."
+    },
+    {
+      "chapterIndexId": "3a7bd813-c6ea-4052-a6a9-6a5e617e27a6",
+      "mangadexId": "3a7bd813-c6ea-4052-a6a9-6a5e617e27a6",
+      "title": "+99 Reinforced Wooden Stick",
+      "error": "No readable chapter coverage was produced for this title."
+    },
+    {
+      "chapterIndexId": "1693697a-783c-4d3c-a2d3-dc069e137a23",
+      "mangadexId": "1693697a-783c-4d3c-a2d3-dc069e137a23",
+      "title": "Jibi Eopseo",
+      "error": "No readable chapter coverage was produced for this title."
+    },
+    {
+      "chapterIndexId": "6fa61a0f-95c5-453e-a410-0f458955e0a3",
+      "mangadexId": "6fa61a0f-95c5-453e-a410-0f458955e0a3",
+      "title": "The Apocalypse-Level Death Knight Returns",
+      "error": "No readable chapter coverage was produced for this title."
+    }
+  ]
 }

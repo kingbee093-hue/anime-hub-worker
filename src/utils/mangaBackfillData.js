@@ -107,22 +107,22 @@ function buildChapterIndexId(item) {
     return null;
   }
 
-  const direct = String(item.chapterIndexId || item.mangadexId || '').trim();
-  if (direct) {
-    return sanitizeFilePart(direct);
-  }
-
   const provider = String(
     item.chapterSourceProvider ||
       item.provider ||
       '',
   ).trim();
   const ownerId = String(item.anilistId || item.mangaId || '').trim();
-  if (!provider || !ownerId) {
-    return null;
+  if (provider && ownerId) {
+    return sanitizeFilePart(`src-${provider}-${ownerId}`);
   }
 
-  return sanitizeFilePart(`src-${provider}-${ownerId}`);
+  const direct = String(item.chapterIndexId || item.mangadexId || '').trim();
+  if (direct) {
+    return sanitizeFilePart(direct);
+  }
+
+  return null;
 }
 
 module.exports = {

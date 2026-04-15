@@ -31,6 +31,10 @@ function isChapterBearingFormat(item) {
   return format === 'MANGA' || format === 'ONE_SHOT' || format === '';
 }
 
+function isReleasingStatus(status) {
+  return String(status || '').trim().toUpperCase() === 'RELEASING';
+}
+
 function getScopeLabel() {
   if (TARGET_IDS.size > 0) {
     return 'targeted';
@@ -75,6 +79,71 @@ function getEntryIds(item) {
     .filter(Boolean);
 }
 
+function getStateRecency(stateItem) {
+  const stamps = [
+    stateItem?.lastAttemptAt,
+    stateItem?.lastSuccessAt,
+    stateItem?.lastFailureAt,
+  ]
+    .map((value) => new Date(value || 0).getTime())
+    .filter((value) => Number.isFinite(value) && value > 0);
+  return stamps.length > 0 ? Math.max(...stamps) : 0;
+}
+
+function getBestStateForItem(item, stateTitles) {
+  const itemIds = new Set(getEntryIds(item));
+  if (itemIds.size === 0) {
+    return null;
+  }
+
+  let best = null;
+  let bestRecency = -1;
+  for (const [key, stateItem] of Object.entries(stateTitles || {})) {
+    const stateIds = new Set(
+      [key, stateItem?.chapterIndexId, stateItem?.mangadexId, stateItem?.mangaId, stateItem?.anilistId]
+        .map((id) => String(id || ''))
+        .filter(Boolean),
+    );
+    let matches = false;
+    for (const id of itemIds) {
+      if (stateIds.has(id)) {
+        matches = true;
+        break;
+      }
+    }
+    if (!matches) continue;
+
+    const recency = getStateRecency(stateItem);
+    if (!best || recency >= bestRecency) {
+      best = stateItem;
+      bestRecency = recency;
+    }
+  }
+
+  return best;
+}
+
+function pruneStateAliases(item, stateTitles) {
+  const canonicalKey = String(item?.chapterIndexId || '').trim();
+  const itemIds = new Set(getEntryIds(item));
+  if (!canonicalKey || itemIds.size === 0) {
+    return;
+  }
+
+  for (const [key, stateItem] of Object.entries(stateTitles || {})) {
+    if (key === canonicalKey) continue;
+    const stateIds = new Set(
+      [key, stateItem?.chapterIndexId, stateItem?.mangadexId, stateItem?.mangaId, stateItem?.anilistId]
+        .map((id) => String(id || ''))
+        .filter(Boolean),
+    );
+    const overlaps = Array.from(itemIds).some((id) => stateIds.has(id));
+    if (overlaps) {
+      delete stateTitles[key];
+    }
+  }
+}
+
 function getManifestCounts(manifestItem) {
   const counts = manifestItem?.counts || {};
   const legacyEn = Number(manifestItem?.englishChapterCount || 0);
@@ -89,6 +158,14 @@ function getManifestCounts(manifestItem) {
       legacyEn + legacyAr,
     ),
   };
+}
+
+function getEffectiveExpectedChapterCount(item) {
+  const sourceCount = Number(item?.chapterSourceChapterCount || 0);
+  if (sourceCount > 0) {
+    return sourceCount;
+  }
+  return Number(item?.chapters || 0);
 }
 
 function getStoredChapterCounts(chapterIndexId) {
@@ -149,9 +226,9 @@ function isSuccessCoolingDown(item, stateItem, counts) {
   return getHoursSince(stateItem.lastSuccessAt) < cooldownHours;
 }
 
-function scoreCandidate(item, manifestItem, stateItem) {
+function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false) {
   const popularity = Number(item.popularity || 0);
-  const expected = Number(item.chapters || 0);
+  const expected = getEffectiveExpectedChapterCount(item);
   const manifestCounts = getManifestCounts(manifestItem);
   const storedCounts = getStoredChapterCounts(item.chapterIndexId);
   const counts = {
@@ -166,6 +243,10 @@ function scoreCandidate(item, manifestItem, stateItem) {
   }
 
   if (!FORCE_ALL && isSuccessCoolingDown(item, stateItem, counts)) {
+    return -1;
+  }
+
+  if (!allowNonReleasing && !isReleasingStatus(item.status)) {
     return -1;
   }
 
@@ -230,6 +311,7 @@ async function backfillMangaChapters() {
           mangadexId: item.mangadexId,
           chapterSourceProvider: item.chapterSourceProvider || '',
           chapterSourceId: item.chapterSourceId || '',
+          chapterSourceChapterCount: Number(item.chapterSourceChapterCount || 0),
           title: item.title || '',
           popularity: Number(item.popularity || 0),
           chapters: Number(item.chapters || 0),
@@ -242,6 +324,11 @@ async function backfillMangaChapters() {
     ).values(),
   );
   console.log(`Backfill scope: ${getScopeLabel()} (${catalogItems.length} title(s) in scope).`);
+  const releasingCount = catalogItems.filter((item) => isReleasingStatus(item.status)).length;
+  const nonReleasingCount = Math.max(0, catalogItems.length - releasingCount);
+  console.log(
+    `Routine chapter coverage target -> releasing: ${releasingCount}, non-releasing skipped unless targeted/forced: ${nonReleasingCount}.`,
+  );
   const chapterManifest = getChapterManifest();
   const chapterMap = new Map(
     (chapterManifest.items || [])
@@ -252,16 +339,17 @@ async function backfillMangaChapters() {
   const stateTitles = state.titles || {};
 
   const candidateEntries = catalogItems
-    .map((item) => ({
-      item,
-      manifestItem: chapterMap.get(item.chapterIndexId) || null,
-      stateItem: stateTitles[item.chapterIndexId] || null,
-      score: scoreCandidate(
+    .map((item) => {
+      const manifestItem = chapterMap.get(item.chapterIndexId) || null;
+      const stateItem = getBestStateForItem(item, stateTitles);
+      const allowNonReleasing = FORCE_ALL || TARGET_IDS.size > 0;
+      return {
         item,
-        chapterMap.get(item.chapterIndexId) || null,
-        stateTitles[item.chapterIndexId] || null,
-      ),
-    }));
+        manifestItem,
+        stateItem,
+        score: scoreCandidate(item, manifestItem, stateItem, allowNonReleasing),
+      };
+    });
 
   const candidates = candidateEntries
     .filter((entry) => entry.score >= 0)
@@ -328,7 +416,9 @@ async function backfillMangaChapters() {
       indexedTitles: refreshedManifest.items?.length || 0,
       pendingTitles: candidates.filter(({ item }) => {
         const manifestItem = refreshedMap.get(item.chapterIndexId);
-        return scoreCandidate(item, manifestItem, stateTitles[item.chapterIndexId] || null) >= 0;
+        const stateItem = getBestStateForItem(item, stateTitles);
+        const allowNonReleasing = FORCE_ALL || TARGET_IDS.size > 0;
+        return scoreCandidate(item, manifestItem, stateItem, allowNonReleasing) >= 0;
       }).length,
       completedCount: completed.length,
       failedCount: failed.length,
@@ -361,6 +451,7 @@ async function backfillMangaChapters() {
         if (!hasCoverage) {
           throw new Error('No readable chapter coverage was produced for this title.');
         }
+        pruneStateAliases(item, stateTitles);
         stateTitles[item.chapterIndexId] = {
           title: item.title,
           chapterIndexId: item.chapterIndexId,
@@ -395,6 +486,7 @@ async function backfillMangaChapters() {
         });
       } catch (error) {
         const previousFailures = Number(stateTitles[item.chapterIndexId]?.consecutiveFailures || 0);
+        pruneStateAliases(item, stateTitles);
         stateTitles[item.chapterIndexId] = {
           title: item.title,
           chapterIndexId: item.chapterIndexId,

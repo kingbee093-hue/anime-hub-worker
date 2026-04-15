@@ -3,13 +3,25 @@
     "provider": "mangahere",
     "providerId": "xxxholic",
     "providerTitle": "xxxHOLiC",
-    "chapterCount": 227,
+    "chapterCount": 217,
     "source": "manual_provider_override",
     "confidence": 0.98,
-    "updatedAt": "2026-04-09T00:00:00.000Z",
+    "updatedAt": "2026-04-12T00:00:00.000Z",
     "title": "xxxHOLiC",
     "mangaId": 30010,
     "anilistId": 30010
+  },
+  "30214": {
+    "provider": "weebcentral",
+    "providerId": "01J76XYBBFEGS03TAW21JKX3R3/Mobile-Suit-Gundam-The-Origin",
+    "providerTitle": "Mobile Suit Gundam: The Origin",
+    "chapterCount": 102,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-07T00:00:00.000Z",
+    "title": "Mobile Suit Gundam: The Origin",
+    "mangaId": 30214,
+    "anilistId": 30214
   },
   "30703": {
     "provider": "mangahere",
@@ -23,6 +35,30 @@
     "mangaId": 30703,
     "anilistId": 30703
   },
+  "30727": {
+    "provider": "mangapill",
+    "providerId": "3868/shamo",
+    "providerTitle": "Shamo",
+    "chapterCount": 334,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-13T00:00:00.000Z",
+    "title": "Shamo",
+    "mangaId": 30727,
+    "anilistId": 30727
+  },
+  "30756": {
+    "provider": "mangapill",
+    "providerId": "441/banana-fish",
+    "providerTitle": "Banana Fish",
+    "chapterCount": 20,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-12T00:00:00.000Z",
+    "title": "Banana Fish",
+    "mangaId": 30756,
+    "anilistId": 30756
+  },
   "31183": {
     "provider": "mangapill",
     "providerId": "859/cross-game",
@@ -34,6 +70,18 @@
     "title": "Cross Game",
     "mangaId": 31183,
     "anilistId": 31183
+  },
+  "31303": {
+    "provider": "mangahere",
+    "providerId": "ashita_no_joe",
+    "providerTitle": "Ashita no Joe",
+    "chapterCount": 108,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-13T00:00:00.000Z",
+    "title": "Ashita no Joe: Fighting for Tomorrow",
+    "mangaId": 31303,
+    "anilistId": 31303
   },
   "31325": {
     "provider": "comick",
@@ -59,6 +107,18 @@
     "mangaId": 36812,
     "anilistId": 36812
   },
+  "86569": {
+    "provider": "weebcentral",
+    "providerId": "01J76XYBASVMF7XXJ2VMGC2RRT/Diamond-No-Ace-Act-I-I",
+    "providerTitle": "Diamond no Ace Act II",
+    "chapterCount": 309,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-07T00:00:00.000Z",
+    "title": "Ace of the Diamond Act II",
+    "mangaId": 86569,
+    "anilistId": 86569
+  },
   "96426": {
     "provider": "mangapill",
     "providerId": "2591/levius-est",
@@ -77,11 +137,36 @@
     "providerTitle": "King's Maker ⟨Tappytoon ver.⟩",
     "chapterCount": 39,
     "probePageCount": 37,
-    "score": 308,
-    "updatedAt": "2026-04-08T14:01:01.536Z",
+    "score": 325,
+    "updatedAt": "2026-04-15T15:06:25.081Z",
+    "source": "provider_fallback",
     "title": "King's Maker",
     "mangaId": 98689,
     "anilistId": 98689
+  },
+  "112544": {
+    "provider": "mangahere",
+    "providerId": "kowloon_generic_romance",
+    "providerTitle": "Kowloon Generic Romance",
+    "chapterCount": 88,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-12T00:00:00.000Z",
+    "title": "Kowloon Generic Romance",
+    "mangaId": 112544,
+    "anilistId": 112544
+  },
+  "126986": {
+    "provider": "comick",
+    "providerId": "01-no-home",
+    "providerTitle": "No Home",
+    "chapterCount": 643,
+    "source": "manual_provider_override",
+    "confidence": 0.92,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "Jibi Eopseo",
+    "mangaId": 126986,
+    "anilistId": 126986
   },
   "130511": {
     "provider": "mangahere",
@@ -95,6 +180,30 @@
     "mangaId": 130511,
     "anilistId": 130511
   },
+  "147102": {
+    "provider": "mangahere",
+    "providerId": "99_reinforced_wood_stick",
+    "providerTitle": "+99 Reinforced Wooden Stick",
+    "chapterCount": 171,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "+99 Reinforced Wooden Stick",
+    "mangaId": 147102,
+    "anilistId": 147102
+  },
+  "147972": {
+    "provider": "mangahere",
+    "providerId": "one_shot",
+    "providerTitle": "One Shot",
+    "chapterCount": 2,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-13T00:00:00.000Z",
+    "title": "Haikyu!!: Special One-Shot - A Party Reignited",
+    "mangaId": 147972,
+    "anilistId": 147972
+  },
   "168843": {
     "provider": "comick",
     "providerId": "little-mushroom",
@@ -107,6 +216,18 @@
     "mangaId": 168843,
     "anilistId": 168843
   },
+  "185922": {
+    "provider": "comick",
+    "providerId": "the-investor-who-sees-the-future",
+    "providerTitle": "The Investor Who Sees The Future",
+    "chapterCount": 228,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "Miraereul Boneun Tujaja",
+    "mangaId": 185922,
+    "anilistId": 185922
+  },
   "186490": {
     "provider": "comick",
     "providerId": "space-cheon-ma-3077",
@@ -118,6 +239,54 @@
     "title": "Space Cheon-ma 3077",
     "mangaId": 186490,
     "anilistId": 186490
+  },
+  "188346": {
+    "provider": "mangahere",
+    "providerId": "the_illegitimate_who_devours_weapons",
+    "providerTitle": "The Illegitimate Who Devours Weapons",
+    "chapterCount": 81,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "Mugi Meokneun Seojanim",
+    "mangaId": 188346,
+    "anilistId": 188346
+  },
+  "195334": {
+    "provider": "comick",
+    "providerId": "return-of-the-apocalypse-class",
+    "providerTitle": "Return of the Apocalypse-Class Death Knight",
+    "chapterCount": 200,
+    "source": "manual_provider_override",
+    "confidence": 0.95,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "The Apocalypse-Level Death Knight Returns",
+    "mangaId": 195334,
+    "anilistId": 195334
+  },
+  "197840": {
+    "provider": "comick",
+    "providerId": "the-reason-the-villainess-took-up-the-sword",
+    "providerTitle": "The Reason the Villainess Took Up the Sword",
+    "chapterCount": 103,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "Why the Villainess Wields the Sword",
+    "mangaId": 197840,
+    "anilistId": 197840
+  },
+  "202221": {
+    "provider": "comick",
+    "providerId": "cong-ling-kaishi-wuxian-jinhua",
+    "providerTitle": "Cong Ling Kaishi Wuxian Jinhua",
+    "chapterCount": 79,
+    "source": "manual_provider_override",
+    "confidence": 0.98,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "Conglíngkaishi Wuxian Jinhua",
+    "mangaId": 202221,
+    "anilistId": 202221
   },
   "204435": {
     "provider": "comick",
@@ -155,14 +324,26 @@
     "mangaId": 207274,
     "anilistId": 207274
   },
+  "208208": {
+    "provider": "mangahere",
+    "providerId": "the_shepherd_wizard",
+    "providerTitle": "The Shepherd Wizard",
+    "chapterCount": 13,
+    "source": "manual_provider_override",
+    "confidence": 0.95,
+    "updatedAt": "2026-04-15T00:00:00.000Z",
+    "title": "Yangchigi Mabeopsa",
+    "mangaId": 208208,
+    "anilistId": 208208
+  },
   "210074": {
     "provider": "comick",
-    "providerId": "immortals-way-of-life",
-    "providerTitle": "Immortal’s Way of Life",
-    "chapterCount": 8,
-    "probePageCount": 11,
-    "score": 128,
-    "updatedAt": "2026-04-14T12:29:47.525Z",
+    "providerId": "immortal-s-way-of-life",
+    "providerTitle": "Immortal's Way of Life",
+    "chapterCount": 9,
+    "probePageCount": 86,
+    "score": 112,
+    "updatedAt": "2026-04-08T14:02:17.534Z",
     "title": "Bullobulsaro Sandaneun Geoseun",
     "mangaId": 210074,
     "anilistId": 210074

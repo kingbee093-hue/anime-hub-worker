@@ -298,7 +298,7 @@
     "rating": 8.5,
     "averageScore": 85,
     "meanScore": 85,
-    "popularity": 50690,
+    "popularity": 50714,
     "trending": 2,
     "favourites": 3230,
     "source": "ORIGINAL",
@@ -531,7 +531,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 74,
-    "popularity": 44348,
+    "popularity": 44364,
     "trending": 0,
     "favourites": 1208,
     "source": "LIGHT_NOVEL",
@@ -979,7 +979,7 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 84,
-    "popularity": 36652,
+    "popularity": 36659,
     "trending": 0,
     "favourites": 2718,
     "source": "OTHER",
@@ -1242,302 +1242,6 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 98610,
-    "anilistId": 98610,
-    "idMal": 104039,
-    "title": "86―EIGHTY-SIX",
-    "titleRomaji": "86: Eighty Six",
-    "titleEnglish": "86―EIGHTY-SIX",
-    "titleNative": "86―エイティシックス―",
-    "synonyms": [
-      "86 -เอทตี้ซิกซ์- ",
-      "86─不存在的戰區─"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98610-TIf7R1gkU0vc.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx98610-TIf7R1gkU0vc.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx98610-TIf7R1gkU0vc.jpg",
-    "coverImageColor": "#e46b28",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/98610-2DrWY14sn1s2.jpg",
-    "synopsis": "A War Without Casualties: The Republic of San Magnolia has long been under attack from the neighboring Giadian Empire's army of unmanned drones known as the Legion. After years of painstaking research, the Republic finally developed autonomous drones of their own, turning the one-sided struggle into a war without casualties-or at least, that's what the government claims. In truth, there is no such thing as a bloodless war. Beyond the fortified walls protecting the eighty-five Republic territories lies the \"nonexistent\" Eighty-Sixth Sector. The young men and women of this forsaken land are branded the Eighty-Six and, stripped of their humanity, pilot the \"unmanned\" weapons into battle... (Source: Yen Press)",
-    "type": "MANGA",
-    "format": "NOVEL",
-    "status": "RELEASING",
-    "year": 2017,
-    "startDate": "2017-02-10",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Sci-Fi"
-    ],
-    "tags": [
-      {
-        "id": 111,
-        "name": "War",
-        "description": "Partly or completely set during wartime.",
-        "category": "Theme-Other",
-        "rank": 93,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 217,
-        "name": "Dystopian",
-        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
-        "category": "Setting-Time",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 34,
-        "name": "Military",
-        "description": "Centered around the life and activities of military personnel.",
-        "category": "Theme-Other-Organisations",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 90,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 175,
-        "name": "Robots",
-        "description": "Prominently features humanoid machines.",
-        "category": "Cast-Traits",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1403,
-        "name": "Class Struggle",
-        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
-        "category": "Theme-Drama",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 143,
-        "name": "Survival",
-        "description": "Centers around the struggle to live in spite of extreme obstacles.",
-        "category": "Theme-Other",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 81,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 157,
-        "name": "Guns",
-        "description": "Prominently features the use of guns in combat.",
-        "category": "Theme-Action",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 74,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 305,
-        "name": "Ships",
-        "description": "Prominently features the use of sea-based transportation vessels.",
-        "category": "Theme-Other-Vehicle",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 220,
-        "name": "Ghost",
-        "description": "Prominently features a character who is a ghost.",
-        "category": "Cast-Traits",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 517,
-        "name": "Artificial Intelligence",
-        "description": "Intelligent non-organic machines that work and react similarly to humans.",
-        "category": "Cast-Traits",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 146,
-        "name": "Alternate Universe",
-        "description": "Features multiple alternate universes in the same series.",
-        "category": "Setting-Universe",
-        "rank": 53,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 153,
-        "name": "Time Skip",
-        "description": "Features a gap in time used to advance the story.",
-        "category": "Setting-Time",
-        "rank": 53,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Asato Asato"
-    ],
-    "artists": [
-      "Shirabi"
-    ],
-    "rating": 8.8,
-    "averageScore": 88,
-    "meanScore": 89,
-    "popularity": 20434,
-    "trending": 1,
-    "favourites": 2122,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/98610",
-    "mal_url": "https://myanimelist.net/manga/104039",
-    "externalLinks": [
-      {
-        "site": "Official Site",
-        "url": "http://dengekitaisho.jp/special/23/eighty-six/"
-      },
-      {
-        "site": "Yen Press",
-        "url": "https://yenpress.com/series/86-eighty-six-light-novel"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://www.maho-editions.com/catalogue/86-eighty-six"
-      }
-    ]
-  },
-  {
     "mangaId": 100937,
     "anilistId": 100937,
     "idMal": 111512,
@@ -1708,7 +1412,7 @@
     "rating": 7.1,
     "averageScore": 71,
     "meanScore": 71,
-    "popularity": 20145,
+    "popularity": 20151,
     "trending": 1,
     "favourites": 898,
     "source": "OTHER",
@@ -1755,7 +1459,7 @@
     "year": 2001,
     "startDate": "2001-06-25",
     "endDate": "2014-06-26",
-    "chapters": 112,
+    "chapters": 102,
     "volumes": 24,
     "genres": [
       "Action",
@@ -1886,7 +1590,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 85,
-    "popularity": 7336,
+    "popularity": 7337,
     "trending": 0,
     "favourites": 464,
     "source": "OTHER",
@@ -1895,11 +1599,19 @@
     "anilist_url": "https://anilist.co/manga/30214",
     "mal_url": "https://myanimelist.net/manga/214",
     "externalLinks": [],
-    "chapterIndexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
+    "chapterIndexId": "src-weebcentral-30214",
     "mangadexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexUrl": "https://mangadex.org/title/f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "mangadexMappingConfidence": 1,
+    "chapterSourceProvider": "weebcentral",
+    "chapterSourceId": "01J76XYBBFEGS03TAW21JKX3R3/Mobile-Suit-Gundam-The-Origin",
+    "chapterSourceTitle": "Mobile Suit Gundam: The Origin",
+    "chapterSourceChapterCount": 102,
+    "chapterSourceConfidence": 0.98,
+    "chapterCountSource": "manual_provider_override",
+    "chapterConsensusProviders": [],
+    "chapterSourceUpdatedAt": "2026-04-07T00:00:00.000Z"
   },
   {
     "mangaId": 96426,
@@ -1924,7 +1636,7 @@
     "year": 2015,
     "startDate": "2015-04-18",
     "endDate": "2021-06-18",
-    "chapters": 62,
+    "chapters": 61,
     "volumes": 10,
     "genres": [
       "Mecha",
@@ -2003,7 +1715,7 @@
     "rating": 7.3,
     "averageScore": 73,
     "meanScore": 77,
-    "popularity": 2474,
+    "popularity": 2478,
     "trending": 3,
     "favourites": 52,
     "source": "ORIGINAL",
@@ -2021,7 +1733,7 @@
         "url": "https://www.mangas.io/lire/levius-est"
       }
     ],
-    "chapterIndexId": "92b1f007-fe77-4fd5-8802-915e05b8d62b",
+    "chapterIndexId": "src-mangapill-96426",
     "mangadexId": "92b1f007-fe77-4fd5-8802-915e05b8d62b",
     "mangadexUrl": "https://mangadex.org/title/92b1f007-fe77-4fd5-8802-915e05b8d62b",
     "mangadexMappingSource": "al",
@@ -2031,6 +1743,8 @@
     "chapterSourceTitle": "Levius/est",
     "chapterSourceChapterCount": 61,
     "chapterSourceConfidence": 0.98,
+    "chapterCountSource": "manual_provider_override",
+    "chapterConsensusProviders": [],
     "chapterSourceUpdatedAt": "2026-04-09T00:00:00.000Z"
   }
 ]

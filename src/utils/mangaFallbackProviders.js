@@ -173,6 +173,17 @@ function buildCandidateTitles(manga) {
   ).slice(0, 5);
 }
 
+function buildCoreCandidateTitles(manga) {
+  return Array.from(
+    new Set(
+      [manga.titleEnglish, manga.title, manga.titleRomaji]
+        .filter(Boolean)
+        .map((title) => String(title).trim())
+        .filter((title) => title.length >= 2),
+    ),
+  );
+}
+
 function buildSearchQueries(providerKey, candidateTitles) {
   const queries = new Set();
 
@@ -279,7 +290,7 @@ function buildSearchCandidateRecord(candidate, candidateTitles, query) {
   const providerId = String(candidate?.id || '').trim();
   if (!providerId) return null;
 
-  const providerTitle = typeof candidate?.title === 'string' ? candidate.title : query;
+  const providerTitle = typeof candidate?.title === 'string' ? candidate.title.trim() : '';
   const matchScore =
     titleScore(providerTitle, candidateTitles) +
     providerIdScore(candidate?.providerKey || '', providerId, providerTitle, candidateTitles);
@@ -292,6 +303,51 @@ function buildSearchCandidateRecord(candidate, candidateTitles, query) {
     providerTitle,
     matchScore,
   };
+}
+
+function buildInfoTitleCandidates(info) {
+  const titles = [];
+  const push = (value) => {
+    const normalized = String(value || '').trim();
+    if (normalized) titles.push(normalized);
+  };
+
+  push(info?.title);
+  if (Array.isArray(info?.altTitles)) {
+    for (const value of info.altTitles) push(value);
+  }
+  if (Array.isArray(info?.alt_titles)) {
+    for (const value of info.alt_titles) push(value);
+  }
+
+  return Array.from(new Set(titles));
+}
+
+function isInfoTitleMatchStrongEnough(
+  providerKey,
+  info,
+  providerId,
+  searchProviderTitle,
+  candidateTitles,
+  coreCandidateTitles = [],
+) {
+  const infoTitles = buildInfoTitleCandidates(info);
+  const scoreFromInfoTitles = infoTitles.reduce(
+    (best, title) => Math.max(best, titleScore(title, candidateTitles)),
+    0,
+  );
+  const strictScoreFromInfoTitles = infoTitles.reduce(
+    (best, title) => Math.max(best, titleScore(title, coreCandidateTitles)),
+    0,
+  );
+  const fallbackSearchScore = titleScore(searchProviderTitle, candidateTitles);
+  const idScore = providerIdScore(providerKey, providerId, searchProviderTitle, candidateTitles);
+  const bestScore = Math.max(scoreFromInfoTitles, fallbackSearchScore + idScore);
+
+  // MangaPill sometimes returns noisy IDs; require stronger confidence there.
+  const threshold = providerKey === 'mangapill' ? 70 : 60;
+  const strictThreshold = providerKey === 'mangapill' ? 68 : 58;
+  return bestScore >= threshold && strictScoreFromInfoTitles >= strictThreshold;
 }
 
 function withTimeout(promise, timeoutMs, label) {
@@ -979,6 +1035,7 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
   }
 
   const candidateTitles = buildCandidateTitles(manga);
+  const coreCandidateTitles = buildCoreCandidateTitles(manga);
   if (candidateTitles.length === 0) return null;
 
   let best = null;
@@ -995,6 +1052,16 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
       try {
         const info = await provider.fetchInfo(candidate.providerId);
         const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        if (!isInfoTitleMatchStrongEnough(
+          providerKey,
+          info,
+          candidate.providerId,
+          candidate.providerTitle,
+          candidateTitles,
+          coreCandidateTitles,
+        )) {
+          continue;
+        }
         const probe = await probeReadableCandidate(providerKey, info);
         if (!probe?.pageCount) {
           continue;
@@ -1026,6 +1093,7 @@ async function resolveBestFallbackProvider(manga, cachedMapping = null) {
 
 async function resolveFallbackProviderCandidates(manga) {
   const candidateTitles = buildCandidateTitles(manga);
+  const coreCandidateTitles = buildCoreCandidateTitles(manga);
   if (candidateTitles.length === 0) return [];
 
   const ranked = [];
@@ -1042,6 +1110,16 @@ async function resolveFallbackProviderCandidates(manga) {
       try {
         const info = await provider.fetchInfo(candidate.providerId);
         const chapterCount = Array.isArray(info?.chapters) ? info.chapters.length : 0;
+        if (!isInfoTitleMatchStrongEnough(
+          providerKey,
+          info,
+          candidate.providerId,
+          candidate.providerTitle,
+          candidateTitles,
+          coreCandidateTitles,
+        )) {
+          continue;
+        }
         const probe = await probeReadableCandidate(providerKey, info);
         if (!probe?.pageCount) {
           continue;
@@ -1066,7 +1144,7 @@ async function resolveFallbackProviderCandidates(manga) {
     }
   }
 
-  return Array.from(
+  const rankedUnique = Array.from(
     new Map(
       ranked
         .sort((a, b) => {
@@ -1080,6 +1158,19 @@ async function resolveFallbackProviderCandidates(manga) {
         .map((item) => [`${item.provider}:${item.providerId}`, item]),
     ).values(),
   );
+
+  // Keep only the strongest candidate per provider to avoid mixing near-duplicate series.
+  const bestPerProvider = new Map();
+  for (const item of rankedUnique) {
+    const current = bestPerProvider.get(item.provider);
+    if (!current || item.score > current.score) {
+      bestPerProvider.set(item.provider, item);
+    }
+  }
+
+  return PROVIDER_PRIORITY
+    .map((providerKey) => bestPerProvider.get(providerKey))
+    .filter(Boolean);
 }
 
 async function discoverProviderTitlesForManga(manga, limit = 6) {

@@ -120,6 +120,67 @@ function getManifestMap() {
   return new Map(items.map((item) => [item.chapterIndexId || item.mangadexId, item]).filter(([key]) => Boolean(key)));
 }
 
+function getManifestItemIdentity(item) {
+  if (!item || typeof item !== 'object') return '';
+  const anilistId = String(item.anilistId || '').trim();
+  if (anilistId) return `al:${anilistId}`;
+  const mangaId = String(item.mangaId || '').trim();
+  if (mangaId) return `manga:${mangaId}`;
+  const mangadexId = String(item.mangadexId || '').trim();
+  if (mangadexId) return `md:${mangadexId}`;
+  const title = String(item.title || '').trim().toLowerCase();
+  return title ? `title:${title}` : '';
+}
+
+function getManifestItemRecency(item) {
+  const time = new Date(item?.updatedAt || 0).getTime();
+  return Number.isFinite(time) ? time : 0;
+}
+
+function getManifestItemCoverageScore(item) {
+  const counts = item?.counts || {};
+  const fallback = Number(item?.englishFallbackChapterCount || 0);
+  const totalFromCounts = Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0);
+  return Math.max(totalFromCounts, fallback);
+}
+
+function choosePreferredManifestItem(current, candidate) {
+  if (!current) return candidate;
+  if (!candidate) return current;
+
+  const currentCoverage = getManifestItemCoverageScore(current);
+  const candidateCoverage = getManifestItemCoverageScore(candidate);
+  if (candidateCoverage !== currentCoverage) {
+    return candidateCoverage > currentCoverage ? candidate : current;
+  }
+
+  const currentHasIndexId = Boolean(current.chapterIndexId);
+  const candidateHasIndexId = Boolean(candidate.chapterIndexId);
+  if (candidateHasIndexId !== currentHasIndexId) {
+    return candidateHasIndexId ? candidate : current;
+  }
+
+  return getManifestItemRecency(candidate) >= getManifestItemRecency(current) ? candidate : current;
+}
+
+function dedupeManifestItems(items) {
+  const byIdentity = new Map();
+  for (const item of items) {
+    const identity = getManifestItemIdentity(item);
+    if (!identity) {
+      const fallbackKey = `${item?.chapterIndexId || ''}|${item?.mangadexId || ''}|${item?.title || ''}`;
+      if (!byIdentity.has(fallbackKey)) {
+        byIdentity.set(fallbackKey, item);
+      } else {
+        byIdentity.set(fallbackKey, choosePreferredManifestItem(byIdentity.get(fallbackKey), item));
+      }
+      continue;
+    }
+    byIdentity.set(identity, choosePreferredManifestItem(byIdentity.get(identity), item));
+  }
+  return Array.from(byIdentity.values());
+}
+
 function getExistingChapterIndex(chapterIndexId) {
   const chapterPath = path.join(
     __dirname,
@@ -562,56 +623,6 @@ async function buildEnglishFallbackChapters(
     });
   }
 
-  if (providerEntries.length === 0 && persistedEnglish.length > 0) {
-    console.warn(
-      `Stored provider source could not be reopened for ${entry.title}; resolving recovery provider candidates.`,
-    );
-    const recoveryCandidates = await resolveFallbackProviderCandidates(entry);
-    for (const mapping of recoveryCandidates) {
-      if (!mapping?.provider || !mapping?.providerId) {
-        continue;
-      }
-      const key = `${mapping.provider}:${mapping.providerId}`;
-      if (seen.has(key)) {
-        continue;
-      }
-      seen.add(key);
-      const provider = providers[mapping.provider];
-      if (!provider) {
-        continue;
-      }
-
-      console.log(
-        `Evaluating recovery provider source ${PROVIDER_LABELS[mapping.provider] || mapping.provider} for ${entry.title}: ${mapping.providerTitle || mapping.providerId}.`,
-      );
-
-      try {
-        const info = await provider.fetchInfo(mapping.providerId);
-        const englishLikeChapters = Array.isArray(info?.chapters)
-          ? info.chapters.filter(isEnglishLikeChapter)
-          : [];
-        const chapterCount = englishLikeChapters.length;
-        if (chapterCount <= 0) {
-          continue;
-        }
-        providerEntries.push({
-          mapping: {
-            ...mapping,
-            chapterCount,
-          },
-          provider,
-          chapters: englishLikeChapters,
-          providerChapterContext: buildProviderChapterContext(
-            mapping.provider,
-            englishLikeChapters,
-          ),
-        });
-      } catch (error) {
-        console.error(`Failed recovery provider source info for ${entry.title} via ${mapping.provider}: ${error.message}`);
-      }
-    }
-  }
-
   if (providerEntries.length === 0) {
     console.warn(`No usable English fallback providers were found for ${entry.title}.`);
     return { chapters: baseEnglish, mapping: null };
@@ -632,14 +643,15 @@ async function buildEnglishFallbackChapters(
         chapter,
         chapterContext,
       );
-      if (chapterNumber == null) {
+      const chapterTitle = String(chapter.title || '').trim();
+      if (chapterNumber == null && !chapterTitle) {
         continue;
       }
 
       const tempChapter = {
         id: `${providerEntry.mapping.provider}:${chapter.id}`,
-        title: String(chapter.title || '').trim(),
-        chapter: String(chapterNumber),
+        title: chapterTitle,
+        chapter: chapterNumber == null ? '' : String(chapterNumber),
         volume: chapter.volumeNumber != null ? String(chapter.volumeNumber) : '',
         language: 'en',
         pages: 0,
@@ -1027,14 +1039,15 @@ async function buildProviderOnlyEnglishChapters(
         chapter,
         chapterContext,
       );
-      if (chapterNumber == null) {
+      const chapterTitle = String(chapter.title || '').trim();
+      if (chapterNumber == null && !chapterTitle) {
         continue;
       }
 
       const tempChapter = {
         id: `${providerEntry.mapping.provider}:${chapter.id}`,
-        title: String(chapter.title || '').trim(),
-        chapter: String(chapterNumber),
+        title: chapterTitle,
+        chapter: chapterNumber == null ? '' : String(chapterNumber),
         volume: chapter.volumeNumber != null ? String(chapter.volumeNumber) : '',
         language: 'en',
         pages: 0,
@@ -1296,12 +1309,14 @@ async function fetchMangaChapters() {
     forceFullRefresh,
     targetMangaIds.size > 0,
   );
+  const targetedIdentities = new Set(uniqueEntries.map((entry) => getManifestItemIdentity(entry)).filter(Boolean));
   const untouchedManifestItems = targetMangaIds.size > 0
     ? Array.from(existingManifestMap.values()).filter((item) =>
         !targetMangaIds.has(String(item.chapterIndexId || '')) &&
         !targetMangaIds.has(String(item.mangadexId || '')) &&
         !targetMangaIds.has(String(item.mangaId)) &&
-        !targetMangaIds.has(String(item.anilistId)),
+        !targetMangaIds.has(String(item.anilistId)) &&
+        !targetedIdentities.has(getManifestItemIdentity(item)),
       )
     : [];
 
@@ -1459,6 +1474,7 @@ async function fetchMangaChapters() {
     });
   }
 
+  manifest.items = dedupeManifestItems(manifest.items);
   manifest.items.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
   writeFallbackMappingMap(fallbackMappingMap);

@@ -1,5 +1,5 @@
 const ALLOWED_FORMATS = ['TV', 'TV_SHORT', 'OVA', 'ONA', 'SPECIAL', 'MOVIE'];
-const ALLOWED_MANGA_FORMATS = ['MANGA', 'NOVEL', 'ONE_SHOT'];
+const ALLOWED_MANGA_FORMATS = ['MANGA', 'ONE_SHOT'];
 
 const BLOCKED_GENRES = ['Hentai'];
 

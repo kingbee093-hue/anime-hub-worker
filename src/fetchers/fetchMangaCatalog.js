@@ -10,7 +10,7 @@ const { isAdultContent, isManga } = require('../utils/filters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
 const {
   discoverProviderTitlesForManga,
-  resolveBestFallbackProvider,
+  resolveFallbackProviderCandidates,
   validateProviderSourceMapping,
 } = require('../utils/mangaFallbackProviders');
 const {
@@ -566,13 +566,7 @@ async function resolveChapterSourceMapping(manga, existingSourceCache, stats = n
     return null;
   }
 
-  const cached = existingSourceCache[String(manga.anilistId || manga.mangaId)];
-  if (cached?.provider && cached?.providerId) {
-    if (stats) stats.providerCacheHits += 1;
-    console.log(`Chapter source cache hit: "${manga.title}" -> ${cached.provider} (${cached.providerId}).`);
-    return cached;
-  }
-
+  const anilistChapterCount = Number(manga.chapters || 0);
   const manualSource = getManualChapterSourceMapping(manga);
   if (manualSource?.provider && manualSource?.providerId) {
     if (stats) stats.providerManualHits += 1;
@@ -586,18 +580,108 @@ async function resolveChapterSourceMapping(manga, existingSourceCache, stats = n
     };
   }
 
-  const bestProvider = await resolveBestFallbackProvider(manga, null);
+  const cached = existingSourceCache[String(manga.anilistId || manga.mangaId)];
+  if (cached?.provider && cached?.providerId) {
+    const cachedChapterCount = Number(cached.chapterCount || 0);
+    const shouldReconcileCachedCounts =
+      cached.source !== 'manual_provider_override' &&
+      cached.source !== 'provider_consensus' &&
+      cachedChapterCount > 0 &&
+      anilistChapterCount > 0 &&
+      cachedChapterCount !== anilistChapterCount;
+
+    if (!shouldReconcileCachedCounts) {
+      if (stats) stats.providerCacheHits += 1;
+      console.log(`Chapter source cache hit: "${manga.title}" -> ${cached.provider} (${cached.providerId}).`);
+      return cached;
+    }
+
+    console.log(
+      `Chapter source cache recheck: "${manga.title}" -> cached=${cachedChapterCount}, AniList=${anilistChapterCount}; reviewing provider consensus.`,
+    );
+  }
+
+  const providerCandidates = await resolveFallbackProviderCandidates(manga);
+  const bestProvider = providerCandidates[0] || null;
+  const chapterCountBuckets = new Map();
+
+  for (const candidate of providerCandidates) {
+    const chapterCount = Number(candidate?.chapterCount || 0);
+    if (chapterCount <= 0) continue;
+
+    if (!chapterCountBuckets.has(chapterCount)) {
+      chapterCountBuckets.set(chapterCount, {
+        chapterCount,
+        providers: new Set(),
+        candidates: [],
+      });
+    }
+
+    const bucket = chapterCountBuckets.get(chapterCount);
+    bucket.providers.add(candidate.provider);
+    bucket.candidates.push(candidate);
+  }
+
+  const consensusBuckets = Array.from(chapterCountBuckets.values())
+    .filter((bucket) => bucket.providers.size >= 2 && bucket.chapterCount > 0)
+    .sort((a, b) => {
+      if (b.providers.size !== a.providers.size) {
+        return b.providers.size - a.providers.size;
+      }
+
+      const aDistance = Math.abs(a.chapterCount - anilistChapterCount);
+      const bDistance = Math.abs(b.chapterCount - anilistChapterCount);
+      if (aDistance !== bDistance) {
+        return aDistance - bDistance;
+      }
+
+      return b.chapterCount - a.chapterCount;
+    });
+  const consensusBucket = consensusBuckets[0] || null;
+  const consensusDiffersFromAniList =
+    consensusBucket &&
+    anilistChapterCount > 0 &&
+    consensusBucket.chapterCount !== anilistChapterCount;
+
+  if (consensusDiffersFromAniList && bestProvider) {
+    const preferredConsensusCandidate =
+      consensusBucket.candidates.find((candidate) => candidate.provider === bestProvider.provider)
+      || consensusBucket.candidates[0];
+
+    if (preferredConsensusCandidate?.provider && preferredConsensusCandidate?.providerId) {
+      if (stats) stats.providerResolvedHits += 1;
+      console.log(
+        `Chapter source consensus: "${manga.title}" -> AniList=${anilistChapterCount}, providers=${consensusBucket.chapterCount} via ${Array.from(consensusBucket.providers).join(', ')}.`,
+      );
+      return {
+        ...preferredConsensusCandidate,
+        source: 'provider_consensus',
+        consensusProviders: Array.from(consensusBucket.providers),
+        title: manga.title,
+        mangaId: manga.mangaId,
+        anilistId: manga.anilistId || manga.mangaId,
+      };
+    }
+  }
+
   if (bestProvider?.provider && bestProvider?.providerId && Number(bestProvider.chapterCount || 0) > 0) {
     if (stats) stats.providerResolvedHits += 1;
     console.log(
-      `Chapter source success: "${manga.title}" -> ${bestProvider.provider} (${bestProvider.chapterCount} chapter candidates).`,
+      `Chapter source success: "${manga.title}" -> ${bestProvider.provider} (${bestProvider.chapterCount} chapter candidates, AniList=${anilistChapterCount || 0}).`,
     );
     return {
       ...bestProvider,
+      source: 'provider_fallback',
       title: manga.title,
       mangaId: manga.mangaId,
       anilistId: manga.anilistId || manga.mangaId,
     };
+  }
+
+  if (cached?.provider && cached?.providerId) {
+    if (stats) stats.providerCacheHits += 1;
+    console.log(`Chapter source fallback to cached mapping: "${manga.title}" -> ${cached.provider} (${cached.providerId}).`);
+    return cached;
   }
 
   if (stats) stats.providerUnresolved += 1;
@@ -607,6 +691,9 @@ async function resolveChapterSourceMapping(manga, existingSourceCache, stats = n
 
 function attachChapterSource(manga, sourceMapping) {
   if (!sourceMapping?.provider || !sourceMapping?.providerId) return manga;
+  const shouldOverrideChapterCount =
+    ['manual_provider_override', 'provider_consensus'].includes(sourceMapping.source) &&
+    Number(sourceMapping.chapterCount || 0) > 0;
   return {
     ...manga,
     chapterIndexId: buildChapterIndexId({
@@ -618,7 +705,14 @@ function attachChapterSource(manga, sourceMapping) {
     chapterSourceTitle: sourceMapping.providerTitle || '',
     chapterSourceChapterCount: Number(sourceMapping.chapterCount || 0),
     chapterSourceConfidence: Number(sourceMapping.confidence || 0),
+    chapterCountSource: sourceMapping.source || 'anilist',
+    chapterConsensusProviders: Array.isArray(sourceMapping.consensusProviders)
+      ? sourceMapping.consensusProviders
+      : [],
     chapterSourceUpdatedAt: sourceMapping.updatedAt || null,
+    chapters: shouldOverrideChapterCount
+      ? Number(sourceMapping.chapterCount)
+      : manga.chapters,
   };
 }
 
@@ -716,9 +810,20 @@ async function fetchMangaCatalog() {
     processedMappingIds.add(processedKey);
 
     const cachedMapping = nextMappingCache[String(manga.anilistId || manga.mangaId)];
+    const manualChapterSource = getManualChapterSourceMapping(manga);
     let knownChapterSource =
-      nextChapterSourceCache[processedKey] ||
-      getManualChapterSourceMapping(manga);
+      manualChapterSource ||
+      nextChapterSourceCache[processedKey];
+    if (manualChapterSource?.provider && manualChapterSource?.providerId) {
+      nextChapterSourceCache[processedKey] = {
+        ...manualChapterSource,
+        title: manga.title,
+        mangaId: manga.mangaId,
+        anilistId: manga.anilistId || manga.mangaId,
+        updatedAt: manualChapterSource.updatedAt || new Date().toISOString(),
+      };
+      knownChapterSource = nextChapterSourceCache[processedKey];
+    }
     if (cachedMapping?.mangadexId) {
       mappingStats.cachedHits += 1;
       if (knownChapterSource?.provider && knownChapterSource?.providerId) {
@@ -802,11 +907,13 @@ async function fetchMangaCatalog() {
       nextMappingCache[processedKey] ||
       manualMangaMappings[processedKey] ||
       manualMangaMappings[String(manga.mangaId || '')];
-    let knownChapterSource =
-      nextChapterSourceCache[processedKey] ||
+    const manualChapterSource =
       manualMangaSourceMappings[processedKey] ||
       manualMangaSourceMappings[String(manga.mangaId || '')] ||
       getManualChapterSourceMapping(manga);
+    let knownChapterSource =
+      manualChapterSource ||
+      nextChapterSourceCache[processedKey];
 
     let enriched = manga;
     if (cachedMapping?.mangadexId) {
