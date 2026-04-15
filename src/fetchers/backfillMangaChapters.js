@@ -23,7 +23,7 @@ const TARGET_IDS = new Set(
     .map((item) => item.trim())
     .filter(Boolean),
 );
-const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || 'trending').trim();
+const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || '').trim();
 const ONLY_RELEASING_DEFAULT = process.env.MANGA_BACKFILL_ONLY_RELEASING !== '0';
 const chapterCountsCache = new Map();
 
