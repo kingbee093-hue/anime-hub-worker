@@ -24,6 +24,7 @@ const TARGET_IDS = new Set(
     .filter(Boolean),
 );
 const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || 'trending').trim();
+const ONLY_RELEASING_DEFAULT = process.env.MANGA_BACKFILL_ONLY_RELEASING !== '0';
 const chapterCountsCache = new Map();
 
 function isChapterBearingFormat(item) {
@@ -287,6 +288,8 @@ async function backfillMangaChapters() {
   console.log('========================================');
 
   const rawCatalogEntries = getMangaCatalogEntries();
+  const shouldRestrictToReleasing =
+    ONLY_RELEASING_DEFAULT && !FORCE_ALL && TARGET_IDS.size === 0;
   const shouldApplySectionScope = TARGET_IDS.size === 0 && Boolean(SECTION_SCOPE);
   const rawScopedEntries = shouldApplySectionScope
     ? getMangaSectionEntries(SECTION_SCOPE)
@@ -323,9 +326,21 @@ async function backfillMangaChapters() {
         .filter(([chapterIndexId]) => Boolean(chapterIndexId)),
     ).values(),
   );
+  const statusFilteredCatalogItems = shouldRestrictToReleasing
+    ? catalogItems.filter((item) => isReleasingStatus(item.status))
+    : catalogItems;
   console.log(`Backfill scope: ${getScopeLabel()} (${catalogItems.length} title(s) in scope).`);
-  const releasingCount = catalogItems.filter((item) => isReleasingStatus(item.status)).length;
+  const releasingCount = statusFilteredCatalogItems.filter((item) => isReleasingStatus(item.status)).length;
   const nonReleasingCount = Math.max(0, catalogItems.length - releasingCount);
+  if (shouldRestrictToReleasing) {
+    console.log(
+      `Status filter active: releasing only. Considered ${statusFilteredCatalogItems.length}/${catalogItems.length} title(s), skipped non-releasing: ${catalogItems.length - statusFilteredCatalogItems.length}.`,
+    );
+  } else {
+    console.log(
+      `Status filter disabled (force/targeted/manual override). Considering ${statusFilteredCatalogItems.length} title(s).`,
+    );
+  }
   console.log(
     `Routine chapter coverage target -> releasing: ${releasingCount}, non-releasing skipped unless targeted/forced: ${nonReleasingCount}.`,
   );
@@ -338,7 +353,7 @@ async function backfillMangaChapters() {
   const state = getState();
   const stateTitles = state.titles || {};
 
-  const candidateEntries = catalogItems
+  const candidateEntries = statusFilteredCatalogItems
     .map((item) => {
       const manifestItem = chapterMap.get(item.chapterIndexId) || null;
       const stateItem = getBestStateForItem(item, stateTitles);

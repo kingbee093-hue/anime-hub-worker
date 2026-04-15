@@ -14,9 +14,9 @@ on:
         default: '12'
         type: string
       section_scope:
-        description: Section scope to process first (e.g. trending, featured, top_rated, popular, releasing, new_chapters, genre:Action)
+        description: Section scope to process first (recommended: releasing for ongoing titles only)
         required: false
-        default: 'trending'
+        default: 'releasing'
         type: string
       target_ids:
         description: Optional comma-separated AniList or MangaDex IDs to process
@@ -63,7 +63,7 @@ jobs:
           MANGA_ENABLE_ENGLISH_FALLBACK: '1'
           FORCE_ALL_INPUT: ${{ github.event.inputs.force_all || 'false' }}
           BATCH_SIZE_INPUT: ${{ github.event.inputs.batch_size || '12' }}
-          SECTION_SCOPE_INPUT: ${{ github.event.inputs.section_scope || 'trending' }}
+          SECTION_SCOPE_INPUT: ${{ github.event.inputs.section_scope || 'releasing' }}
           TARGET_IDS_INPUT: ${{ github.event.inputs.target_ids || '' }}
         run: |
           export MANGA_BACKFILL_CHAPTER_BATCH="${BATCH_SIZE_INPUT}"
