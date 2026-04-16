@@ -55,7 +55,7 @@
     "rating": 7.2,
     "averageScore": 72,
     "meanScore": 79,
-    "popularity": 1559,
+    "popularity": 1562,
     "trending": 2,
     "favourites": 101,
     "source": "OTHER",
@@ -72,8 +72,67 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=a0N7s4OB0jA"
     },
-    "nextEpisode": 158,
-    "nextAiringAt": 1776218400
+    "nextEpisode": 159,
+    "nextAiringAt": 1776823200
+  },
+  {
+    "animeId": 163793,
+    "anilistId": 163793,
+    "title": "Cheongchun Blossom",
+    "titleRomaji": "Cheongchun Blossom",
+    "titleEnglish": "",
+    "titleNative": "청춘블라썸",
+    "synonyms": [
+      "Seasons of Blossom"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163793-dOI9QEcIrgBS.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163793-dOI9QEcIrgBS.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx163793-dOI9QEcIrgBS.jpg",
+    "coverImageColor": "#e45d93",
+    "bannerImage": "",
+    "synopsis": "Oh, to be young and in love. Oh, to be wild and carefree. The springtime of life is intense, tumultuous, and at times, oh so confusing. Spring, summer, fall and winter -- love blossoms in all seasons. (Source: WEBTOONS)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "RELEASING",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 12,
+    "duration": 24,
+    "genres": [
+      "Romance"
+    ],
+    "tags": [],
+    "studios": [
+      {
+        "id": 7399,
+        "name": "Xtorm",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/7399"
+      }
+    ],
+    "studiosNames": [
+      "Xtorm"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 2157,
+    "trending": 0,
+    "favourites": 14,
+    "source": "MANGA",
+    "countryOfOrigin": "KR",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-04-15",
+    "endDate": null,
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/163793",
+    "trailer": null,
+    "nextEpisode": 2,
+    "nextAiringAt": 1776845700
   },
   {
     "animeId": 61254,
@@ -200,7 +259,7 @@
     "rating": 5.2,
     "averageScore": 52,
     "meanScore": 62,
-    "popularity": 416,
+    "popularity": 421,
     "trending": 2,
     "favourites": 9,
     "source": "MANGA",
@@ -217,8 +276,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=n-jg8syMe08"
     },
-    "nextEpisode": 27,
-    "nextAiringAt": 1776250800
+    "nextEpisode": 28,
+    "nextAiringAt": 1776855600
   },
   {
     "animeId": 59708,
@@ -306,6 +365,16 @@
         "isAdult": false
       },
       {
+        "id": 1589,
+        "name": "Criminal Organization",
+        "description": "Prominently features a group of people who commit crimes for illicit or violent purposes.",
+        "category": "Theme-Other-Organisations",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
@@ -326,16 +395,6 @@
         "isAdult": false
       },
       {
-        "id": 1589,
-        "name": "Criminal Organization",
-        "description": "Prominently features a group of people who commit crimes for illicit or violent purposes.",
-        "category": "Theme-Other-Organisations",
-        "rank": 94,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 391,
         "name": "Philosophy",
         "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
@@ -350,7 +409,17 @@
         "name": "Martial Arts",
         "description": "Centers around the use of traditional hand-to-hand combat.",
         "category": "Theme-Action",
-        "rank": 90,
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 92,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -363,16 +432,6 @@
         "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 365,
-        "name": "Memory Manipulation",
-        "description": "Prominently features a character(s) who has had their memories altered.",
-        "category": "Theme-Other",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -490,7 +549,7 @@
         "name": "Love Triangle",
         "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
         "category": "Theme-Romance",
-        "rank": 35,
+        "rank": 48,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -500,7 +559,7 @@
         "name": "Female Harem",
         "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
         "category": "Theme-Romance",
-        "rank": 13,
+        "rank": 35,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -521,9 +580,9 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 80,
-    "popularity": 65043,
+    "popularity": 65694,
     "trending": 493,
-    "favourites": 1391,
+    "favourites": 1416,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -538,8 +597,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=kAncxuwCPZg"
     },
-    "nextEpisode": 6,
-    "nextAiringAt": 1776256200
+    "nextEpisode": 7,
+    "nextAiringAt": 1776861000
   },
   {
     "animeId": 63433,
@@ -612,12 +671,12 @@
       "Imagica Infos",
       "Imageworks Studio"
     ],
-    "rating": 4.3,
-    "averageScore": 43,
-    "meanScore": 45,
-    "popularity": 1268,
+    "rating": 4.2,
+    "averageScore": 42,
+    "meanScore": 43,
+    "popularity": 1358,
     "trending": 0,
-    "favourites": 32,
+    "favourites": 36,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -628,8 +687,8 @@
     "mal_url": "https://myanimelist.net/anime/63433",
     "anilist_url": "https://anilist.co/anime/210375",
     "trailer": null,
-    "nextEpisode": 3,
-    "nextAiringAt": 1776257700
+    "nextEpisode": 4,
+    "nextAiringAt": 1776862500
   },
   {
     "animeId": 61316,
@@ -795,20 +854,20 @@
         "isAdult": false
       },
       {
-        "id": 586,
-        "name": "Cult",
-        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
-        "category": "Theme-Other-Organisations",
+        "id": 598,
+        "name": "Elf",
+        "description": "Prominently features a character who is an elf.",
+        "category": "Cast-Traits",
         "rank": 74,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 598,
-        "name": "Elf",
-        "description": "Prominently features a character who is an elf.",
-        "category": "Cast-Traits",
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
         "rank": 74,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -835,13 +894,13 @@
         "isAdult": false
       },
       {
-        "id": 1771,
-        "name": "Creature Taming",
-        "description": "Features the taming of animals, monsters, or other creatures.",
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
         "category": "Theme-Other",
         "rank": 60,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -855,13 +914,13 @@
         "isAdult": false
       },
       {
-        "id": 1310,
-        "name": "Travel",
-        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "id": 1771,
+        "name": "Creature Taming",
+        "description": "Features the taming of animals, monsters, or other creatures.",
         "category": "Theme-Other",
         "rank": 60,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -939,10 +998,10 @@
     ],
     "rating": 8.5,
     "averageScore": 85,
-    "meanScore": 85,
-    "popularity": 68055,
+    "meanScore": 86,
+    "popularity": 68914,
     "trending": 19,
-    "favourites": 1574,
+    "favourites": 1609,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -957,8 +1016,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=i8EjBP85cCc"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776258000
+    "nextEpisode": 3,
+    "nextAiringAt": 1776862800
   },
   {
     "animeId": 62485,
@@ -991,6 +1050,16 @@
     ],
     "tags": [
       {
+        "id": 280,
+        "name": "Netorase",
+        "description": "Features characters in a romantic relationship who agree to be sexually intimate with others.",
+        "category": "Sexual Content",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
         "id": 1045,
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
@@ -1011,10 +1080,10 @@
         "isAdult": false
       },
       {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1031,31 +1100,21 @@
         "isAdult": false
       },
       {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 280,
-        "name": "Netorase",
-        "description": "Features characters in a romantic relationship who agree to be sexually intimate with others.",
-        "category": "Sexual Content",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": true
-      },
-      {
         "id": 1670,
         "name": "Psychosexual",
         "description": "Work that involves the psychological aspects of sexual impulses.",
         "category": "Theme-Other",
-        "rank": 20,
+        "rank": 30,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -1073,12 +1132,12 @@
     "studiosNames": [
       "TMS Entertainment"
     ],
-    "rating": 5.8,
-    "averageScore": 58,
-    "meanScore": 59,
-    "popularity": 11841,
+    "rating": 5.7,
+    "averageScore": 57,
+    "meanScore": 58,
+    "popularity": 12024,
     "trending": 3,
-    "favourites": 161,
+    "favourites": 162,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1093,8 +1152,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_yVyIweMYto"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776258000
+    "nextEpisode": 3,
+    "nextAiringAt": 1776862800
   },
   {
     "animeId": 62512,
@@ -1129,69 +1188,9 @@
     ],
     "tags": [
       {
-        "id": 1752,
-        "name": "Medieval",
-        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
-        "category": "Setting-Time",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 604,
-        "name": "Dungeon",
-        "description": "Prominently features a dungeon environment.",
-        "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1310,
-        "name": "Travel",
-        "description": "Centers around character(s) moving between places a significant distance apart.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1304,
-        "name": "Anthropomorphism",
-        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
-        "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1537,
-        "name": "Coastal",
-        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
-        "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 516,
-        "name": "Language Barrier",
-        "description": "A barrier to communication between people who are unable to speak a common language.",
+        "id": 248,
+        "name": "Economics",
+        "description": "Centers around the field of economics.",
         "category": "Theme-Other",
         "rank": 60,
         "isGeneralSpoiler": false,
@@ -1209,10 +1208,70 @@
         "isAdult": false
       },
       {
-        "id": 248,
-        "name": "Economics",
-        "description": "Centers around the field of economics.",
+        "id": 516,
+        "name": "Language Barrier",
+        "description": "A barrier to communication between people who are unable to speak a common language.",
         "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1537,
+        "name": "Coastal",
+        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 604,
+        "name": "Dungeon",
+        "description": "Prominently features a dungeon environment.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1241,10 +1300,10 @@
     ],
     "rating": 6.3,
     "averageScore": 63,
-    "meanScore": 66,
-    "popularity": 8244,
+    "meanScore": 65,
+    "popularity": 8398,
     "trending": 69,
-    "favourites": 103,
+    "favourites": 104,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1259,8 +1318,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pxeYbPg5JIA"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776258000
+    "nextEpisode": 4,
+    "nextAiringAt": 1776862800
   },
   {
     "animeId": 63830,
@@ -1345,10 +1404,10 @@
     "studiosNames": [
       "Studio PuYUKAI"
     ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 73,
-    "popularity": 699,
+    "rating": 5.7,
+    "averageScore": 57,
+    "meanScore": 71,
+    "popularity": 754,
     "trending": 0,
     "favourites": 5,
     "source": "LIGHT_NOVEL",
@@ -1361,8 +1420,8 @@
     "mal_url": "https://myanimelist.net/anime/63830",
     "anilist_url": "https://anilist.co/anime/210687",
     "trailer": null,
-    "nextEpisode": 2,
-    "nextAiringAt": 1776259800
+    "nextEpisode": 3,
+    "nextAiringAt": 1776864600
   },
   {
     "animeId": 57779,
@@ -1509,20 +1568,20 @@
         "isAdult": false
       },
       {
-        "id": 1090,
-        "name": "Monster Boy",
-        "description": "Prominently features a male character who is a part-monster.",
-        "category": "Cast-Traits",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
         "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
+        "id": 1090,
+        "name": "Monster Boy",
+        "description": "Prominently features a male character who is a part-monster.",
+        "category": "Cast-Traits",
         "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1584,9 +1643,9 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 80,
-    "popularity": 28061,
+    "popularity": 28324,
     "trending": 92,
-    "favourites": 450,
+    "favourites": 458,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1601,8 +1660,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=GHjCjHAKo9c"
     },
-    "nextEpisode": 5,
-    "nextAiringAt": 1776261600
+    "nextEpisode": 6,
+    "nextAiringAt": 1776866400
   },
   {
     "animeId": 61831,
@@ -1665,9 +1724,9 @@
         "isAdult": false
       },
       {
-        "id": 224,
-        "name": "Dragons",
-        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "id": 598,
+        "name": "Elf",
+        "description": "Prominently features a character who is an elf.",
         "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -1675,9 +1734,9 @@
         "isAdult": false
       },
       {
-        "id": 598,
-        "name": "Elf",
-        "description": "Prominently features a character who is an elf.",
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
         "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -1707,12 +1766,12 @@
     "studiosNames": [
       "studio A-CAT"
     ],
-    "rating": 5.7,
-    "averageScore": 57,
-    "meanScore": 58,
-    "popularity": 25289,
+    "rating": 5.6,
+    "averageScore": 56,
+    "meanScore": 57,
+    "popularity": 25574,
     "trending": 25,
-    "favourites": 422,
+    "favourites": 429,
     "source": "OTHER",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1727,8 +1786,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=embD4ae1ufk"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776263400
+    "nextEpisode": 4,
+    "nextAiringAt": 1776868200
   },
   {
     "animeId": 62604,
@@ -1775,7 +1834,7 @@
         "name": "Otaku Culture",
         "description": "Centers around the culture of a fanatical fan-base.",
         "category": "Theme-Other",
-        "rank": 85,
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1791,11 +1850,21 @@
         "isAdult": false
       },
       {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 1228,
         "name": "Primarily Teen Cast",
         "description": "Main cast is mostly composed of teen characters.",
         "category": "Cast-Main Cast",
-        "rank": 75,
+        "rank": 76,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1805,7 +1874,7 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 73,
+        "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1815,7 +1884,7 @@
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
         "category": "Setting-Scene",
-        "rank": 65,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1835,7 +1904,7 @@
         "name": "Seinen",
         "description": "Target demographic is adult males.",
         "category": "Demographic",
-        "rank": 45,
+        "rank": 55,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1865,10 +1934,10 @@
     ],
     "rating": 7.2,
     "averageScore": 72,
-    "meanScore": 73,
-    "popularity": 22292,
+    "meanScore": 74,
+    "popularity": 23011,
     "trending": 8,
-    "favourites": 254,
+    "favourites": 275,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1883,8 +1952,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pdWQUnshA4M"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776264300
+    "nextEpisode": 3,
+    "nextAiringAt": 1776869100
   },
   {
     "animeId": 63276,
@@ -1937,8 +2006,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 337,
+    "meanScore": 52,
+    "popularity": 363,
     "trending": 0,
     "favourites": 1,
     "source": "ORIGINAL",
@@ -1955,8 +2024,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=wM3E9LXHmu0"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1776264960
+    "nextEpisode": 2,
+    "nextAiringAt": 1776869760
   },
   {
     "animeId": 62893,
@@ -1993,20 +2062,20 @@
     ],
     "tags": [
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1327,
-        "name": "Royal Affairs",
-        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
-        "category": "Theme-Other",
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2078,9 +2147,9 @@
     "rating": 6.9,
     "averageScore": 69,
     "meanScore": 71,
-    "popularity": 9807,
+    "popularity": 10011,
     "trending": 3,
-    "favourites": 120,
+    "favourites": 131,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2095,8 +2164,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=d0LkNAqMrZw"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776265200
+    "nextEpisode": 4,
+    "nextAiringAt": 1776870000
   },
   {
     "animeId": 59551,
@@ -2139,16 +2208,6 @@
         "isAdult": false
       },
       {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1539,
         "name": "Unrequited Love",
         "description": "One or more characters are experiencing an unrequited love that may or may not be reciprocated.",
@@ -2164,6 +2223,16 @@
         "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
         "category": "Theme-Other",
         "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 91,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2199,9 +2268,9 @@
         "isAdult": false
       },
       {
-        "id": 88,
-        "name": "Primarily Male Cast",
-        "description": "Main cast is mostly composed of male characters.",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
         "category": "Cast-Main Cast",
         "rank": 80,
         "isGeneralSpoiler": false,
@@ -2209,11 +2278,11 @@
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
         "category": "Cast-Main Cast",
-        "rank": 78,
+        "rank": 72,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2263,10 +2332,10 @@
     ],
     "rating": 7.5,
     "averageScore": 75,
-    "meanScore": 76,
-    "popularity": 17299,
+    "meanScore": 77,
+    "popularity": 17515,
     "trending": 5,
-    "favourites": 318,
+    "favourites": 333,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2281,7 +2350,7 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=QivWH79PkcE"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776267000
+    "nextEpisode": 5,
+    "nextAiringAt": 1776871800
   }
 ]

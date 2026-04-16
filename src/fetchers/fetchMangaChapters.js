@@ -15,9 +15,7 @@ const {
   providers,
   normalizeProviderChapter,
 } = require('../utils/mangaFallbackProviders');
-const { writeNewChaptersSection, DEFAULT_SECTION_LIMIT } = require('../utils/mangaSections');
 const {
-  getMangaCatalogEntries,
   buildChapterIndexId,
 } = require('../utils/mangaBackfillData');
 
@@ -1478,9 +1476,6 @@ async function fetchMangaChapters() {
   manifest.items.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
   writeFallbackMappingMap(fallbackMappingMap);
-  const fullCatalogEntries = getMangaCatalogEntries();
-  const newChapterItems = writeNewChaptersSection(fullCatalogEntries, manifest, DEFAULT_SECTION_LIMIT);
-  console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
   console.log(`Saved chapter indexes for ${manifest.items.length} manga titles.`);
 }
 

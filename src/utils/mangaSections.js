@@ -50,7 +50,7 @@ function getManifestTotalCount(item) {
   return Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0);
 }
 
-function buildNewChaptersSection(catalogEntries, chapterManifest, limit = DEFAULT_SECTION_LIMIT) {
+function buildNewChaptersSection(catalogEntries, chapterManifest, limit = 0) {
   const manifestItems = Array.isArray(chapterManifest?.items) ? chapterManifest.items : [];
   const maps = buildCatalogEntryMaps(catalogEntries);
   const deduped = new Map();
@@ -85,15 +85,19 @@ function buildNewChaptersSection(catalogEntries, chapterManifest, limit = DEFAUL
       return Number(b.popularity || 0) - Number(a.popularity || 0);
     });
 
+  const effectiveLimit = Number.isFinite(Number(limit)) && Number(limit) > 0
+    ? Math.floor(Number(limit))
+    : Number.POSITIVE_INFINITY;
+
   for (const item of ranked) {
     deduped.set(String(item.mangaId), item);
-    if (deduped.size >= limit) break;
+    if (deduped.size >= effectiveLimit) break;
   }
 
   return Array.from(deduped.values());
 }
 
-function writeNewChaptersSection(catalogEntries, chapterManifest, limit = DEFAULT_SECTION_LIMIT) {
+function writeNewChaptersSection(catalogEntries, chapterManifest, limit = 0) {
   const items = buildNewChaptersSection(catalogEntries, chapterManifest, limit);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, items);
   return items;

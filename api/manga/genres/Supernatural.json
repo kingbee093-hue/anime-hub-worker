@@ -1985,7 +1985,7 @@
     "year": 2018,
     "startDate": "2018-11-02",
     "endDate": null,
-    "chapters": 0,
+    "chapters": 10,
     "volumes": 0,
     "genres": [
       "Comedy",
@@ -2025,16 +2025,6 @@
         "isAdult": false
       },
       {
-        "id": 233,
-        "name": "Youkai",
-        "description": "Prominently features supernatural creatures from Japanese folklore.",
-        "category": "Theme-Fantasy",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 253,
         "name": "Gods",
         "description": "Prominently features a character of divine or religious nature.",
@@ -2042,6 +2032,16 @@
         "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -2075,20 +2075,20 @@
         "isAdult": false
       },
       {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2105,13 +2105,13 @@
         "isAdult": false
       },
       {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
         "rank": 45,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2125,13 +2125,13 @@
         "isAdult": false
       },
       {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
         "rank": 45,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
+        "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
@@ -2170,11 +2170,15 @@
         "url": "https://comic.pixiv.net/works/5304"
       }
     ],
-    "chapterIndexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-    "mangadexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-    "mangadexUrl": "https://mangadex.org/title/6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "chapterIndexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "mangadexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "mangadexUrl": "https://mangadex.org/title/1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "chapterSourceTitle": "Hoppe ga Mochimochi na Imouto-chan",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 98328,
@@ -5412,6 +5416,199 @@
     ],
     "chapterIndexId": "4052eaa7-966e-43c8-9b28-d7a79052ca1b",
     "mangadexUrl": "https://mangadex.org/title/4052eaa7-966e-43c8-9b28-d7a79052ca1b",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
+  },
+  {
+    "mangaId": 151194,
+    "anilistId": 151194,
+    "idMal": 148353,
+    "title": "Just Listen to the Song",
+    "titleRomaji": "Futsuu ni Kiite Kure",
+    "titleEnglish": "Just Listen to the Song",
+    "titleNative": "フツーに聞いてくれ",
+    "synonyms": [
+      "Solamente Escúchala"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx151194-sP36vxnvOUGQ.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx151194-sP36vxnvOUGQ.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx151194-sP36vxnvOUGQ.jpg",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/151194-o8LmpgIxrtgd.jpg",
+    "synopsis": "A student presents his crush with a love song that he wrote, recorded himself performing, and uploaded to YouTube, and he tells her to watch it before giving him a reply. When he returns to school the next day, he finds that the girl has shown the video to the entire class over LINE. Amid the jeering of his classmates, she snidely apologizes to him and explains that his video was hilarious enough to warrant sharing. However, his decision to remove the upload is curbed after a ghost is spotted within the video, and a classmate advises against its deletion. His YouTube post eventually gains popularity as the growing audience discovers more anomalies, all intent on deciphering the hidden messages that its very uploader had not even intended. A unique one-shot from the mad genius behind Chainsaw Man and the rising star of To Strip the Flesh.",
+    "type": "MANGA",
+    "format": "ONE_SHOT",
+    "status": "FINISHED",
+    "year": 2022,
+    "startDate": "2022-07-04",
+    "endDate": "2022-07-04",
+    "chapters": 1,
+    "volumes": 0,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 80,
+        "name": "Satire",
+        "description": "Prominently features the use of comedy or ridicule to expose and criticise social phenomena.",
+        "category": "Theme-Comedy",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 37,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 35,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 118,
+        "name": "Drawing",
+        "description": "Centers around the art of drawing, including manga and doujinshi.",
+        "category": "Theme-Arts",
+        "rank": 32,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Tatsuki Fujimoto"
+    ],
+    "artists": [
+      "Oto Tooda"
+    ],
+    "rating": 7,
+    "averageScore": 70,
+    "meanScore": 70,
+    "popularity": 17997,
+    "trending": 0,
+    "favourites": 276,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/151194",
+    "mal_url": "https://myanimelist.net/manga/148353",
+    "externalLinks": [
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/3270375685315853257"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200096"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100201"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/just-listen-to-the-song"
+      }
+    ],
+    "chapterIndexId": "9ded1dbf-495b-43a2-a65c-6d220a67fc0e",
+    "mangadexId": "9ded1dbf-495b-43a2-a65c-6d220a67fc0e",
+    "mangadexUrl": "https://mangadex.org/title/9ded1dbf-495b-43a2-a65c-6d220a67fc0e",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },

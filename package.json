@@ -17,8 +17,7 @@
     "backfill:manga-pages": "node index.js mangapagesbackfill",
     "fetch:characters": "node index.js characters",
     "fetch:genres": "node index.js genres",
-    "fetch:news": "node scraper.js",
-    "backfill:news": "node backfill.js"
+    "fetch:news": "node scraper.js"
   },
   "keywords": [
     "anime",

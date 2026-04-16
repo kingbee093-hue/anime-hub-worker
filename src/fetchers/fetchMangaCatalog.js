@@ -14,9 +14,7 @@ const {
   validateProviderSourceMapping,
 } = require('../utils/mangaFallbackProviders');
 const {
-  writeNewChaptersSection,
   writeReleasingSection,
-  DEFAULT_SECTION_LIMIT,
 } = require('../utils/mangaSections');
 const { buildChapterIndexId } = require('../utils/mangaBackfillData');
 const manualMangaMappings = require('../config/manualMangaMappings.json');
@@ -725,6 +723,39 @@ function readObjectJson(relativePath) {
   }
 }
 
+function readArrayJson(relativePath) {
+  try {
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    const value = require(`../../api/${relativePath}.json`);
+    return Array.isArray(value) ? value : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function mergeDiscoveredCatalogEntries(catalogEntries) {
+  const discoveredEntries = readArrayJson(CONFIG.API_PATHS.MANGA_DISCOVERED_CATALOG);
+  if (!discoveredEntries.length) {
+    return catalogEntries;
+  }
+
+  const merged = new Map();
+  for (const item of catalogEntries || []) {
+    if (!item?.mangaId) continue;
+    merged.set(item.mangaId, item);
+  }
+
+  for (const discovered of discoveredEntries) {
+    if (!discovered?.mangaId) continue;
+    merged.set(
+      discovered.mangaId,
+      mergeManga(merged.get(discovered.mangaId), discovered),
+    );
+  }
+
+  return sortCatalog(Array.from(merged.values())).slice(0, CATALOG_MAX_ITEMS);
+}
+
 async function fetchMangaCatalog() {
   console.log('========================================');
   console.log('BUILDING: Manga Catalog');
@@ -974,6 +1005,7 @@ async function fetchMangaCatalog() {
     enrichedCatalog.push(enriched);
   }
   catalog = enrichedCatalog;
+  catalog = mergeDiscoveredCatalogEntries(catalog);
 
   const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
   const lookup = {};
@@ -1058,15 +1090,7 @@ async function fetchMangaCatalog() {
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
   const releasingItems = writeReleasingSection(catalog, SECTION_ITEMS);
   console.log(`Manga releasing section refreshed with ${releasingItems.length} titles.`);
-  try {
-    // eslint-disable-next-line global-require, import/no-dynamic-require
-    const existingChapterManifest = require(`../../api/${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
-    const newChapterItems = writeNewChaptersSection(catalog, existingChapterManifest, DEFAULT_SECTION_LIMIT);
-    console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
-  } catch (_) {
-    writeNewChaptersSection(catalog, { items: [] }, DEFAULT_SECTION_LIMIT);
-    console.log('Manga new chapters section refreshed with 0 titles (chapter manifest unavailable yet).');
-  }
+  console.log('Manga new chapters feed is managed by the dedicated workflow only (fetch_manga_new_chapters.yml).');
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
   console.log(
     `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, manual: ${mappingStats.manualHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,

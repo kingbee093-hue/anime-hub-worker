@@ -52,6 +52,7 @@ async function run() {
                 await fetchMangaChapters();
             }
         }
+        if (target === 'manganewchapters' || target === 'all') await fetchMangaNewChapters();
         if (target === 'mangachaptersbackfill' || target === 'all') await backfillMangaChapters();
         if (target === 'mangapagesbackfill' || target === 'all') await backfillMangaPages();
         if (target === 'characters' || target === 'all') await fetchCharacterCatalog();
