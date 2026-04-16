@@ -22,7 +22,7 @@ const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS 
 const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const FEED_PAGE_SIZE = Math.min(Number(process.env.MANGA_NEW_CHAPTERS_FEED_PAGE_SIZE || 100), 100);
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
-const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 40));
+const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
 const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 5));
 const FAILURE_COOLDOWN_HOURS = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS || 12));
 const ALLOWED_LANGUAGES = String(process.env.MANGA_NEW_CHAPTERS_LANGUAGES || 'en,ar')
@@ -866,7 +866,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       continue;
     }
 
-    if (attempted >= DISCOVERY_LIMIT) {
+    if (DISCOVERY_LIMIT > 0 && attempted >= DISCOVERY_LIMIT) {
       skippedByLimit += 1;
       report.skippedByLimit.push(summarizeRecentItem(recentItem, { reason: 'discovery_limit' }));
       continue;
