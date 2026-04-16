@@ -77,11 +77,13 @@ jobs:
             echo "No manga new chapters changes to commit."
           else
             git commit -m "api: independent manga new chapters refresh [skip ci]"
-            git add -A api/manga api/search
-            if ! git diff --quiet -- api/manga api/search; then
-              git commit --amend --no-edit
-            fi
-            git fetch origin main
-            git rebase origin/main
+            # Clean any remaining dirty working tree before pull --rebase.
+            # The fetcher script may leave modified tracked files outside
+            # api/manga/api/search (e.g. request health state files written
+            # by fetchHelper), which would cause `git rebase` to abort with
+            # "error: cannot rebase: You have unstaged changes."
+            git restore --staged . 2>/dev/null || true
+            git restore . 2>/dev/null || true
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
