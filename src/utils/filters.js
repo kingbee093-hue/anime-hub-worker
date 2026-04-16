@@ -1,28 +1,29 @@
 const ALLOWED_FORMATS = ['TV', 'TV_SHORT', 'OVA', 'ONA', 'SPECIAL', 'MOVIE'];
 const ALLOWED_MANGA_FORMATS = ['MANGA', 'ONE_SHOT'];
 
-const BLOCKED_GENRES = ['Hentai'];
+const BLOCKED_GENRES = ['Hentai', 'Ecchi'];
 
 const BLOCKED_TAGS = [
-  'Hentai', 'Explicit Sexual Content', 'Pornography'
+  'Hentai', 'Explicit Sexual Content', 'Pornography', 'Ecchi'
 ];
 
 const ALLOWED_COUNTRIES = ['JP', 'CN', 'KR', 'TW'];
 
 function isAdultContent(media) {
-  if (media.isAdult === true) return { blocked: true, reason: 'isAdult flag' };
+  if (media.isAdult === true) return { blocked: true, reason: 'Adult (+18)' };
 
   const genres = media.genres || [];
   for (const genre of genres) {
     if (BLOCKED_GENRES.includes(genre)) {
-      return { blocked: true, reason: `Blocked genre: ${genre}` };
+      return { blocked: true, reason: genre };
     }
   }
 
   const tags = media.tags || [];
   for (const tag of tags) {
-    if (BLOCKED_TAGS.includes(tag.name)) {
-      return { blocked: true, reason: `Blocked tag: ${tag.name}` };
+    const tagName = typeof tag === 'string' ? tag : tag.name;
+    if (BLOCKED_TAGS.includes(tagName)) {
+      return { blocked: true, reason: tagName };
     }
   }
 
