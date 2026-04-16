@@ -25,6 +25,11 @@ const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 2
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
 const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 5));
 const FAILURE_COOLDOWN_HOURS = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS || 12));
+const REQUEST_HOST_COOLDOWN_MS = Math.max(1000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_COOLDOWN_MS || 12000));
+const REQUEST_HOST_CIRCUIT_THRESHOLD = Math.max(2, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_THRESHOLD || 4));
+const REQUEST_HOST_CIRCUIT_MS = Math.max(10000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_MS || 180000));
+const REQUEST_HOST_PREWAIT_MAX_MS = Math.max(5000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_PREWAIT_MAX_MS || 90000));
+const REQUEST_HEALTH_PRUNE_HOURS = Math.max(12, Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_HEALTH_PRUNE_HOURS || 168));
 const ALLOWED_LANGUAGES = String(process.env.MANGA_NEW_CHAPTERS_LANGUAGES || 'en,ar')
   .split(',')
   .map((item) => item.trim().toLowerCase())
@@ -274,25 +279,178 @@ function writeDiscoveryReport(report) {
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_DISCOVERY_REPORT, report);
 }
 
+function readRequestHealth() {
+  const filePath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_REQUEST_HEALTH}.json`);
+  const parsed = readJsonFile(filePath, {});
+  return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+}
+
+function writeRequestHealth(state) {
+  writeJsonIfChanged(CONFIG.API_PATHS.MANGA_REQUEST_HEALTH, state);
+}
+
+const requestHealthState = readRequestHealth();
+let requestHealthDirty = false;
+
+function getRequestHostKey(url, fallbackLabel = 'request') {
+  try {
+    return new URL(url).host || fallbackLabel;
+  } catch (_) {
+    return fallbackLabel;
+  }
+}
+
+function getRequestHealthEntry(hostKey) {
+  if (!requestHealthState[hostKey] || typeof requestHealthState[hostKey] !== 'object') {
+    requestHealthState[hostKey] = {
+      host: hostKey,
+      consecutiveFailures: 0,
+      totalFailures: 0,
+      totalSuccesses: 0,
+      lastFailureAt: null,
+      lastSuccessAt: null,
+      lastStatus: null,
+      cooldownUntil: null,
+      circuitOpenUntil: null,
+      lastError: null,
+    };
+    requestHealthDirty = true;
+  }
+
+  return requestHealthState[hostKey];
+}
+
+function getRequestHealthWaitMs(entry) {
+  const now = Date.now();
+  const cooldownUntil = new Date(entry?.cooldownUntil || 0).getTime();
+  const circuitOpenUntil = new Date(entry?.circuitOpenUntil || 0).getTime();
+  return Math.max(
+    Number.isFinite(cooldownUntil) ? Math.max(0, cooldownUntil - now) : 0,
+    Number.isFinite(circuitOpenUntil) ? Math.max(0, circuitOpenUntil - now) : 0,
+  );
+}
+
+function pruneRequestHealthState() {
+  const cutoffMs = Date.now() - (REQUEST_HEALTH_PRUNE_HOURS * 60 * 60 * 1000);
+  for (const [hostKey, entry] of Object.entries(requestHealthState)) {
+    const lastTouchedMs = Math.max(
+      new Date(entry?.lastFailureAt || 0).getTime(),
+      new Date(entry?.lastSuccessAt || 0).getTime(),
+    );
+    const activeWaitMs = getRequestHealthWaitMs(entry);
+    if ((Number.isFinite(lastTouchedMs) && lastTouchedMs > 0 && lastTouchedMs < cutoffMs) && activeWaitMs <= 0) {
+      delete requestHealthState[hostKey];
+      requestHealthDirty = true;
+    }
+  }
+}
+
+async function waitForHostAvailability(hostKey, label) {
+  const entry = getRequestHealthEntry(hostKey);
+  const waitMs = getRequestHealthWaitMs(entry);
+  if (waitMs <= 0) {
+    return;
+  }
+
+  if (waitMs > REQUEST_HOST_PREWAIT_MAX_MS) {
+    throw new Error(
+      `host cooldown active for ${hostKey} before ${label}; remaining ${(waitMs / 1000).toFixed(1)}s exceeds prewait cap`,
+    );
+  }
+
+  console.log(
+    `Host ${hostKey} cooling down before ${label}; waiting ${(waitMs / 1000).toFixed(1)}s.`,
+  );
+  await delay(waitMs);
+}
+
+function markRequestSuccess(hostKey) {
+  const entry = getRequestHealthEntry(hostKey);
+  entry.consecutiveFailures = 0;
+  entry.totalSuccesses = Number(entry.totalSuccesses || 0) + 1;
+  entry.lastSuccessAt = new Date().toISOString();
+  entry.lastStatus = 200;
+  entry.cooldownUntil = null;
+  entry.circuitOpenUntil = null;
+  entry.lastError = null;
+  requestHealthDirty = true;
+}
+
+function markRequestFailure(hostKey, error, waitTimeMs) {
+  const entry = getRequestHealthEntry(hostKey);
+  const status = Number(error?.response?.status || 0) || null;
+  const nowIso = new Date().toISOString();
+  const isRateLimited = status === 429;
+  const isTemporary =
+    isRateLimited ||
+    status === 403 ||
+    status === 408 ||
+    status === 409 ||
+    status === 423 ||
+    status === 425 ||
+    status === 500 ||
+    status === 502 ||
+    status === 503 ||
+    status === 504 ||
+    !status;
+
+  entry.consecutiveFailures = Number(entry.consecutiveFailures || 0) + 1;
+  entry.totalFailures = Number(entry.totalFailures || 0) + 1;
+  entry.lastFailureAt = nowIso;
+  entry.lastStatus = status;
+  entry.lastError = String(error?.message || 'request_failed');
+
+  const cooldownMs = Math.max(waitTimeMs || 0, isTemporary ? REQUEST_HOST_COOLDOWN_MS : 0);
+  if (cooldownMs > 0) {
+    const nextIso = new Date(Date.now() + cooldownMs).toISOString();
+    if (!entry.cooldownUntil || new Date(entry.cooldownUntil).getTime() < new Date(nextIso).getTime()) {
+      entry.cooldownUntil = nextIso;
+    }
+  }
+
+  if (isTemporary && entry.consecutiveFailures >= REQUEST_HOST_CIRCUIT_THRESHOLD) {
+    entry.circuitOpenUntil = new Date(Date.now() + REQUEST_HOST_CIRCUIT_MS).toISOString();
+  }
+
+  requestHealthDirty = true;
+}
+
+function getRequestHealthSummary() {
+  const entries = Object.values(requestHealthState);
+  const now = Date.now();
+  const cooling = entries.filter((entry) => new Date(entry?.cooldownUntil || 0).getTime() > now).length;
+  const openCircuits = entries.filter((entry) => new Date(entry?.circuitOpenUntil || 0).getTime() > now).length;
+  return {
+    hosts: entries.length,
+    cooling,
+    openCircuits,
+  };
+}
+
 async function requestJsonWithRetries(url, options = {}, label = 'request') {
+  const hostKey = getRequestHostKey(url, label);
   let attempt = 0;
   while (attempt < MANGADEX_REQUEST_RETRIES) {
     try {
-      return await axios.get(url, {
+      await waitForHostAvailability(hostKey, label);
+      const response = await axios.get(url, {
         ...options,
         headers: {
           ...MANGADEX_HEADERS,
           ...(options.headers || {}),
         },
       });
+      markRequestSuccess(hostKey);
+      return response;
     } catch (error) {
       attempt += 1;
       const statusText = error.response ? `[${error.response.status}]` : '[Network]';
       console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
+      const waitTimeMs = computeRetryDelayMs(attempt, error);
+      markRequestFailure(hostKey, error, waitTimeMs);
       if (attempt >= MANGADEX_REQUEST_RETRIES) {
         throw error;
       }
-      const waitTimeMs = computeRetryDelayMs(attempt, error);
       console.log(`Retrying ${label} in ${(waitTimeMs / 1000).toFixed(1)}s...`);
       await delay(waitTimeMs);
     }
@@ -1099,6 +1257,11 @@ async function fetchMangaNewChapters() {
   console.log('========================================');
   console.log('REFRESHING MANGA NEW CHAPTERS');
   console.log('========================================');
+  pruneRequestHealthState();
+  const requestHealthBefore = getRequestHealthSummary();
+  console.log(
+    `Request health before run: hosts=${requestHealthBefore.hosts}, cooling=${requestHealthBefore.cooling}, open-circuits=${requestHealthBefore.openCircuits}.`,
+  );
 
   const outputPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_NEW_CHAPTERS}.json`);
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
@@ -1106,57 +1269,69 @@ async function fetchMangaNewChapters() {
   const previousItems = parseExistingItems(outputPath);
   console.log(`Window: last ${FRESH_HOURS} hours. Previous file entries: ${previousItems.length}.`);
 
-  let latestAttempt = null;
-  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    latestAttempt = await collectFreshNewChapterItems();
+  try {
+    let latestAttempt = null;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      latestAttempt = await collectFreshNewChapterItems();
 
-    console.log(
-      `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, feed-pages=${latestAttempt.feedPages}, feed-rows=${latestAttempt.feedRows}, fresh-feed=${latestAttempt.freshFeedItems}, discovered=${latestAttempt.discoveredCount}, matched=${latestAttempt.matchedCount}, limit=${latestAttempt.sectionLimit}, section=${latestAttempt.items.length}.`,
-    );
-
-    console.log(
-      `Discovery details: already-known=${latestAttempt.discoveryAlreadyKnown}, failed=${latestAttempt.discoveryFailedCount}, skipped-recent-failure=${latestAttempt.discoverySkippedRecentFailure}, skipped-limit=${latestAttempt.discoverySkippedByLimit}.`,
-    );
-
-    if (latestAttempt.discoverySkippedByLimit > 0) {
       console.log(
-        `Discovery limit reached in this run: skipped ${latestAttempt.discoverySkippedByLimit} unmatched recent title(s) after ${latestAttempt.discoveryAttempts} attempts.`,
+        `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, feed-pages=${latestAttempt.feedPages}, feed-rows=${latestAttempt.feedRows}, fresh-feed=${latestAttempt.freshFeedItems}, discovered=${latestAttempt.discoveredCount}, matched=${latestAttempt.matchedCount}, limit=${latestAttempt.sectionLimit}, section=${latestAttempt.items.length}.`,
       );
-    }
 
-    if (latestAttempt.items.length > 0) {
-      if (attempt > 1) {
-        console.log(`Recovered non-empty new chapters section on attempt ${attempt}.`);
+      console.log(
+        `Discovery details: already-known=${latestAttempt.discoveryAlreadyKnown}, failed=${latestAttempt.discoveryFailedCount}, skipped-recent-failure=${latestAttempt.discoverySkippedRecentFailure}, skipped-limit=${latestAttempt.discoverySkippedByLimit}.`,
+      );
+
+      if (latestAttempt.discoverySkippedByLimit > 0) {
+        console.log(
+          `Discovery limit reached in this run: skipped ${latestAttempt.discoverySkippedByLimit} unmatched recent title(s) after ${latestAttempt.discoveryAttempts} attempts.`,
+        );
       }
-      break;
+
+      if (latestAttempt.items.length > 0) {
+        if (attempt > 1) {
+          console.log(`Recovered non-empty new chapters section on attempt ${attempt}.`);
+        }
+        break;
+      }
+
+      if (attempt < MAX_ATTEMPTS) {
+        console.warn(
+          `New chapters result is empty (attempt ${attempt}/${MAX_ATTEMPTS}). Retrying in ${RETRY_DELAY_MS}ms...`,
+        );
+        await delay(RETRY_DELAY_MS);
+      }
     }
 
-    if (attempt < MAX_ATTEMPTS) {
+    const finalItems = Array.isArray(latestAttempt?.items) ? latestAttempt.items : [];
+
+    if (finalItems.length === 0 && previousItems.length > 0) {
       console.warn(
-        `New chapters result is empty (attempt ${attempt}/${MAX_ATTEMPTS}). Retrying in ${RETRY_DELAY_MS}ms...`,
+        `New chapters still empty after ${MAX_ATTEMPTS} attempts. Keeping previous file with ${previousItems.length} entries.`,
       );
-      await delay(RETRY_DELAY_MS);
+      return;
     }
-  }
 
-  const finalItems = Array.isArray(latestAttempt?.items) ? latestAttempt.items : [];
+    if (finalItems.length === 0) {
+      console.warn(
+        `New chapters empty after ${MAX_ATTEMPTS} attempts and no previous cache exists. Skipping write to avoid publishing empty feed.`,
+      );
+      return;
+    }
 
-  if (finalItems.length === 0 && previousItems.length > 0) {
-    console.warn(
-      `New chapters still empty after ${MAX_ATTEMPTS} attempts. Keeping previous file with ${previousItems.length} entries.`,
+    writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
+    console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
+  } finally {
+    pruneRequestHealthState();
+    if (requestHealthDirty) {
+      writeRequestHealth(requestHealthState);
+      requestHealthDirty = false;
+    }
+    const requestHealthAfter = getRequestHealthSummary();
+    console.log(
+      `Request health after run: hosts=${requestHealthAfter.hosts}, cooling=${requestHealthAfter.cooling}, open-circuits=${requestHealthAfter.openCircuits}.`,
     );
-    return;
   }
-
-  if (finalItems.length === 0) {
-    console.warn(
-      `New chapters empty after ${MAX_ATTEMPTS} attempts and no previous cache exists. Skipping write to avoid publishing empty feed.`,
-    );
-    return;
-  }
-
-  writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
-  console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
 }
 
 module.exports = fetchMangaNewChapters;

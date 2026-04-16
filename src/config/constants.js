@@ -31,6 +31,7 @@ const CONFIG = {
     MANGA_DISCOVERED_CATALOG: 'manga/catalog/discovered_entries',
     MANGA_DISCOVERY_STATE: 'manga/catalog/discovery_state',
     MANGA_DISCOVERY_REPORT: 'manga/catalog/discovery_report',
+    MANGA_REQUEST_HEALTH: 'manga/catalog/request_health',
     MANGA_CHAPTERS: 'manga/chapters',
     MANGA_MAPPING: 'manga/mangadex_mapping',
     MANGA_CHAPTER_SOURCE_MAPPING: 'manga/chapter_source_mapping',
