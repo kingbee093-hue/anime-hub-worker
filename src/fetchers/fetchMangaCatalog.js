@@ -723,6 +723,39 @@ function readObjectJson(relativePath) {
   }
 }
 
+function readArrayJson(relativePath) {
+  try {
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    const value = require(`../../api/${relativePath}.json`);
+    return Array.isArray(value) ? value : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function mergeDiscoveredCatalogEntries(catalogEntries) {
+  const discoveredEntries = readArrayJson(CONFIG.API_PATHS.MANGA_DISCOVERED_CATALOG);
+  if (!discoveredEntries.length) {
+    return catalogEntries;
+  }
+
+  const merged = new Map();
+  for (const item of catalogEntries || []) {
+    if (!item?.mangaId) continue;
+    merged.set(item.mangaId, item);
+  }
+
+  for (const discovered of discoveredEntries) {
+    if (!discovered?.mangaId) continue;
+    merged.set(
+      discovered.mangaId,
+      mergeManga(merged.get(discovered.mangaId), discovered),
+    );
+  }
+
+  return sortCatalog(Array.from(merged.values())).slice(0, CATALOG_MAX_ITEMS);
+}
+
 async function fetchMangaCatalog() {
   console.log('========================================');
   console.log('BUILDING: Manga Catalog');
@@ -940,6 +973,7 @@ async function fetchMangaCatalog() {
     enrichedCatalog.push(enriched);
   }
   catalog = enrichedCatalog;
+  catalog = mergeDiscoveredCatalogEntries(catalog);
 
   const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
   const lookup = {};

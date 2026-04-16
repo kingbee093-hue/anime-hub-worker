@@ -28,6 +28,7 @@ const CONFIG = {
     MANGA_POPULAR: 'manga/popular',
     MANGA_BY_GENRE: 'manga/genres',
     MANGA_CATALOG: 'manga/catalog',
+    MANGA_DISCOVERED_CATALOG: 'manga/catalog/discovered_entries',
     MANGA_CHAPTERS: 'manga/chapters',
     MANGA_MAPPING: 'manga/mangadex_mapping',
     MANGA_CHAPTER_SOURCE_MAPPING: 'manga/chapter_source_mapping',
