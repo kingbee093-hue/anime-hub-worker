@@ -23,8 +23,9 @@ const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const FEED_PAGE_SIZE = Math.min(Number(process.env.MANGA_NEW_CHAPTERS_FEED_PAGE_SIZE || 100), 100);
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
-const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 5));
+const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 10));
 const FAILURE_COOLDOWN_HOURS = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS || 12));
+const MATCHER_VERSION = Number(process.env.MANGA_NEW_CHAPTERS_MATCHER_VERSION || 2);
 const REQUEST_HOST_COOLDOWN_MS = Math.max(1000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_COOLDOWN_MS || 12000));
 const REQUEST_HOST_CIRCUIT_THRESHOLD = Math.max(2, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_THRESHOLD || 4));
 const REQUEST_HOST_CIRCUIT_MS = Math.max(10000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_MS || 180000));
@@ -176,10 +177,49 @@ function compareChapterRecency(current, candidate) {
 
 function normalizeSearchText(value) {
   return String(value || '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9\u0600-\u06FF\u3040-\u30ff\u3400-\u9fff\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function buildSearchTitleVariants(titles) {
+  const variants = new Set();
+
+  function addVariant(value) {
+    const raw = String(value || '').trim();
+    if (raw.length < 2) return;
+    variants.add(raw);
+
+    const stripped = [
+      raw.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim(),
+      raw.replace(/\[[^\]]*\]/g, ' ').replace(/\s+/g, ' ').trim(),
+      raw.replace(/["'`“”‘’]/g, '').trim(),
+    ];
+
+    for (const candidate of stripped) {
+      if (candidate.length >= 2) {
+        variants.add(candidate);
+      }
+    }
+
+    const separators = [' : ', ':', ' - ', '-', ' ~ ', '~', ' @', '@', ' | ', '|'];
+    for (const separator of separators) {
+      if (!raw.includes(separator)) continue;
+      const left = raw.split(separator)[0].trim();
+      const right = raw.split(separator).slice(1).join(separator).trim();
+      if (left.length >= 3) variants.add(left);
+      if (right.length >= 3 && right.split(/\s+/).length <= 6) variants.add(right);
+    }
+  }
+
+  for (const title of titles || []) {
+    addVariant(title);
+  }
+
+  return Array.from(variants);
 }
 
 function getSearchShardKey(term) {
@@ -474,6 +514,7 @@ function summarizeRecentItem(recentItem, extra = {}) {
 function isRecentFailureState(stateEntry, recentItem) {
   if (!stateEntry || stateEntry.status !== 'failed') return false;
   if (String(stateEntry.lastChapterId || '') !== String(recentItem.chapterId || '')) return false;
+  if (Number(stateEntry.matcherVersion || 1) !== MATCHER_VERSION) return false;
   const lastAttemptMs = new Date(stateEntry.lastAttemptAt || 0).getTime();
   if (!Number.isFinite(lastAttemptMs) || lastAttemptMs <= 0) return false;
   return (Date.now() - lastAttemptMs) < (FAILURE_COOLDOWN_HOURS * 60 * 60 * 1000);
@@ -541,6 +582,15 @@ function buildTitleScore(media, titles, year) {
         score += 120;
       } else if (candidate.includes(searchTitle) || searchTitle.includes(candidate)) {
         score += 60;
+      } else {
+        const searchTokens = searchTitle.split(' ').filter((token) => token.length >= 3);
+        const candidateTokens = candidate.split(' ').filter((token) => token.length >= 3);
+        const overlap = searchTokens.filter((token) => candidateTokens.includes(token)).length;
+        if (overlap >= 2) {
+          score += overlap * 18;
+        } else if (overlap === 1) {
+          score += 8;
+        }
       }
     }
   }
@@ -726,7 +776,7 @@ async function fetchAniListMediaByIds({ anilistId = null, malId = null }) {
 }
 
 async function searchAniListMediaByTitles(titles, year) {
-  const uniqueTitles = Array.from(new Set((titles || []).filter(Boolean))).slice(0, 6);
+  const uniqueTitles = buildSearchTitleVariants(titles).slice(0, 12);
   let best = null;
   let bestScore = -1;
 
@@ -756,7 +806,7 @@ async function searchAniListMediaByTitles(titles, year) {
     }
   }
 
-  return bestScore >= 60 ? best : null;
+  return bestScore >= 45 ? best : null;
 }
 
 async function fetchChapterPages(chapterId) {
@@ -1073,6 +1123,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
           lastChapter: recentItem.chapter || '',
           lastAttemptAt: new Date().toISOString(),
           reason: discovered?.reason || 'unknown_discovery_failure',
+          matcherVersion: MATCHER_VERSION,
         };
         report.failed.push(summarizeRecentItem(recentItem, {
           reason: discovered?.reason || 'unknown_discovery_failure',
@@ -1101,6 +1152,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
         lastAttemptAt: new Date().toISOString(),
         lastSuccessAt: new Date().toISOString(),
         reason: null,
+        matcherVersion: MATCHER_VERSION,
       };
       report.discovered.push(summarizeRecentItem(recentItem, {
         title: entry.title,
@@ -1121,6 +1173,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
         lastChapter: recentItem.chapter || '',
         lastAttemptAt: new Date().toISOString(),
         reason: error.message,
+        matcherVersion: MATCHER_VERSION,
       };
       report.failed.push(summarizeRecentItem(recentItem, {
         reason: 'exception',
