@@ -272,12 +272,17 @@
     "reason": null
   },
   "4ac7fba3-ff00-4f7a-ba53-eb2b4824007b": {
-    "status": "failed",
-    "title": "Episode 2 \"Investigation Begins\" Part 1",
+    "status": "discovered",
+    "title": "Kimi no Yokogao shika Mirenai",
+    "mangaId": 125316,
+    "anilistId": 125316,
+    "chapterIndexId": "4ac7fba3-ff00-4f7a-ba53-eb2b4824007b",
     "lastChapterId": "6f3928e8-eec2-46b3-88de-6ca4e1d3a316",
     "lastChapter": "2",
-    "lastAttemptAt": "2026-04-16T11:53:59.922Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T16:06:31.237Z",
+    "lastSuccessAt": "2026-04-16T16:06:31.237Z",
+    "reason": null,
+    "matcherVersion": 2
   },
   "912fd3b2-dda9-4ffb-ab85-955f67dafd7f": {
     "status": "discovered",
@@ -376,9 +381,9 @@
   "439a50ea-40f1-4e90-9a50-e1aa36f110f2": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "bcf86d38-149c-4d1a-98f4-e280eace465e",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-16T15:51:08.005Z",
+    "lastChapterId": "7501516b-b7d7-4423-a1c8-3732908f3acd",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-16T16:05:36.262Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1921,8 +1926,9 @@
     "title": "",
     "lastChapterId": "122a2faf-b51b-4a3d-ad13-fddfff9dd78f",
     "lastChapter": "10",
-    "lastAttemptAt": "2026-04-16T12:28:25.898Z",
-    "reason": "adult_blocked"
+    "lastAttemptAt": "2026-04-16T16:05:36.645Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   },
   "b4825c93-1103-4530-86e3-443bff508419": {
     "status": "discovered",
