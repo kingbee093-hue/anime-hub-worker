@@ -464,7 +464,11 @@ async function backfillMangaChapters() {
   }
 
   try {
+    let currentIndex = 0;
+    const totalSelected = selected.length;
     for (const { item } of selected) {
+      currentIndex++;
+      console.log(`\n[${currentIndex} / ${totalSelected}] Processing: ${item.title}`);
       try {
         process.env.MANGA_TARGET_IDS = item.chapterIndexId;
         await fetchMangaChapters();
