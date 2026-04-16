@@ -2,7 +2,7 @@ name: AnimeHub - Manga New Chapters
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [run-manga-new-chapters, run-all]
@@ -37,9 +37,35 @@ jobs:
       - name: Build New Chapters Feed (48h Window)
         env:
           MANGA_NEW_CHAPTERS_FRESH_HOURS: '48'
-          MANGA_NEW_CHAPTERS_MAX_ATTEMPTS: '4'
-          MANGA_NEW_CHAPTERS_RETRY_DELAY_MS: '3000'
+          MANGA_NEW_CHAPTERS_MAX_ATTEMPTS: '3'
+          MANGA_NEW_CHAPTERS_RETRY_DELAY_MS: '5000'
           MANGA_NEW_CHAPTERS_LIMIT: '0'
+          # ── MangaDex request pacing ────────────────────────────────────
+          # MangaDex enforces ~5 req/s. 800ms = ~1.25 req/s (safe margin).
+          MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS: '800'
+          MANGA_NEW_CHAPTERS_FEED_PAGE_SIZE: '100'
+          # 10 pages × 100 rows = 1000 rows is more than enough for 48h window.
+          # Previous value of 20 doubled MangaDex calls unnecessarily.
+          MANGA_NEW_CHAPTERS_MAX_FEED_PAGES: '10'
+          # ── AniList flood protection ───────────────────────────────────
+          # AniList rate limit: 90 req/min. Discovery of unknown titles
+          # triggers up to N AniList search requests per manga title.
+          # Limiting discovery to 5 titles per run prevents a single run
+          # from consuming the entire per-minute AniList quota.
+          MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT: '5'
+          MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT: '5'
+          # Fail fast and move on — hammering a rate-limited API wastes time.
+          MANGA_NEW_CHAPTERS_REQUEST_RETRIES: '2'
+          # ── Host circuit-breaker tuning ────────────────────────────────
+          MANGA_NEW_CHAPTERS_HOST_COOLDOWN_MS: '20000'
+          MANGA_NEW_CHAPTERS_HOST_CIRCUIT_THRESHOLD: '3'
+          MANGA_NEW_CHAPTERS_HOST_CIRCUIT_MS: '300000'
+          MANGA_NEW_CHAPTERS_HOST_PREWAIT_MAX_MS: '120000'
+          MANGA_NEW_CHAPTERS_REQUEST_HEALTH_PRUNE_HOURS: '168'
+          # ── Discovery failure memory ───────────────────────────────────
+          # Keep failed manga in cooldown for 24h (was 12h) to avoid
+          # re-attempting known-failed titles every other run.
+          MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS: '24'
         run: npm run fetch:manga-new-chapters
 
       - name: Commit API updates
