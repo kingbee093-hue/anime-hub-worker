@@ -232,18 +232,17 @@ function flushRequestHealthState() {
 /** 🚀 ADVANCED STEALTH / BYPASS UTILITIES 🚀 **/
 
 async function getStealthDelay(baseDelayMs) {
-  const multiplier = 0.3 + (Math.random() * 1.5);
+  const multiplier = 0.4 + (Math.random() * 1.6);
   const finalDelay = Math.floor(baseDelayMs * multiplier);
   return finalDelay;
 }
 
 async function performCamouflageRequest() {
   const roll = Math.random();
-  if (roll > 0.08) return;
+  if (roll > 0.1) return;
 
   const targets = [
     { url: 'https://api.mangadex.org/manga/tag', label: 'camouflage_tags' },
-    { url: 'https://api.mangadex.org/manga/random', label: 'camouflage_random' },
   ];
 
   const target = targets[Math.floor(Math.random() * targets.length)];
@@ -281,8 +280,13 @@ async function fetchGraphQL(query, variables) {
       flushRequestHealthState();
       return response.data?.data;
     } catch (error) {
-      retries += 1;
       const status = error.response ? error.response.status : 0;
+      if (status === 404) {
+        console.error(`AniList GraphQL returned 404 - giving up on this item.`);
+        return null;
+      }
+
+      retries += 1;
       const isRateLimited = status === 429 || status === 403;
       const statusText = error.response ? `[${status}]` : '[Network]';
       console.error(`API request failed ${statusText} (Attempt ${retries}/${CONFIG.MAX_RETRIES}): ${error.message}`);
