@@ -2407,20 +2407,20 @@
         "isAdult": false
       },
       {
-        "id": 191,
-        "name": "Aliens",
-        "description": "Prominently features extraterrestrial lifeforms.",
-        "category": "Cast-Traits",
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
         "rank": 91,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 94,
-        "name": "Gore",
-        "description": "Prominently features graphic bloodshed and violence.",
-        "category": "Theme-Other",
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
         "rank": 91,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2467,9 +2467,9 @@
         "isAdult": false
       },
       {
-        "id": 636,
-        "name": "Cosmic Horror",
-        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
         "category": "Theme-Other",
         "rank": 80,
         "isGeneralSpoiler": false,
@@ -2477,9 +2477,9 @@
         "isAdult": false
       },
       {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
         "category": "Theme-Other",
         "rank": 80,
         "isGeneralSpoiler": false,
@@ -2607,16 +2607,6 @@
         "isAdult": false
       },
       {
-        "id": 704,
-        "name": "Dinosaurs",
-        "description": "Prominently features Dinosaurs, prehistoric reptiles that went extinct millions of years ago.",
-        "category": "Cast-Traits",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 90,
         "name": "CGI",
         "description": "Prominently features scenes created with computer-generated imagery.",
@@ -2624,6 +2614,16 @@
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 704,
+        "name": "Dinosaurs",
+        "description": "Prominently features Dinosaurs, prehistoric reptiles that went extinct millions of years ago.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2710,11 +2710,15 @@
         "url": "https://piccoma.com/web/product/4172"
       }
     ],
-    "chapterIndexId": "c196dcc8-d942-4abf-987f-bfa244650585",
-    "mangadexId": "c196dcc8-d942-4abf-987f-bfa244650585",
-    "mangadexUrl": "https://mangadex.org/title/c196dcc8-d942-4abf-987f-bfa244650585",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "chapterIndexId": "f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "mangadexId": "f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "mangadexUrl": "https://mangadex.org/title/f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "chapterSourceTitle": "Gantz Color Ban",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 86310,
@@ -19669,6 +19673,130 @@
     "mangadexMappingConfidence": 1
   },
   {
+    "mangaId": 97698,
+    "anilistId": 97698,
+    "idMal": 85205,
+    "title": "Only Sense Online",
+    "titleRomaji": "Only Sense Online",
+    "titleEnglish": "Only Sense Online",
+    "titleNative": "オンリーセンス・オンライン-",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx97698-SGqOoahr1uRr.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx97698-SGqOoahr1uRr.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx97698-SGqOoahr1uRr.jpg",
+    "coverImageColor": "#e45dbb",
+    "bannerImage": "",
+    "synopsis": "Utilizing a system called \"Sense,\" each player aims to create their unique character in the VRMMORPG \"Only Sense Online.\" Joining this realm is Yun, an absolute beginner in the world of gaming, equipped with some of the worst customized \"Sense\" ever. While his two sisters, both veterans in this world, criticize his choices of equipment, he continues to delve into the skill sets he has acquired. Along his way, he meets the art of \"production\" and people that have mastered this art. Watch as a total novice creates a revolution in the gaming world and create the \"ultimate\" support class.",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2014,
+    "startDate": "2014-12-09",
+    "endDate": null,
+    "chapters": 107,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 308,
+        "name": "Video Games",
+        "description": "Centers around characters playing video games.",
+        "category": "Theme-Game",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 112,
+        "name": "Virtual World",
+        "description": "Partly or completely set in the world inside a video game.",
+        "category": "Setting-Universe",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 251,
+        "name": "Archery",
+        "description": "Centers around the sport of archery, or prominently features the use of archery in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 77,
+        "name": "Gender Bending",
+        "description": "Prominently features a character who dresses and behaves in a way characteristic of another gender, or has been transformed into a person of another gender.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 248,
+        "name": "Economics",
+        "description": "Centers around the field of economics.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Aloha Zachou",
+      "Un Hanikura"
+    ],
+    "artists": [
+      "Un Hanikura"
+    ],
+    "rating": 6.8,
+    "averageScore": 68,
+    "meanScore": 70,
+    "popularity": 4130,
+    "trending": 0,
+    "favourites": 80,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/97698",
+    "mal_url": "https://myanimelist.net/manga/85205",
+    "externalLinks": [
+      {
+        "site": "Kadocomi",
+        "url": "https://comic-walker.com/contents/detail/KDCW_FS02000015010000_68/"
+      }
+    ],
+    "mangadexId": "67ca1083-ec62-4f66-a2f5-355a2702f6e3",
+    "mangadexUrl": "https://mangadex.org/title/67ca1083-ec62-4f66-a2f5-355a2702f6e3",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "67ca1083-ec62-4f66-a2f5-355a2702f6e3",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "67ca1083-ec62-4f66-a2f5-355a2702f6e3",
+    "chapterSourceTitle": "Only Sense Online",
+    "chapterSourceConfidence": 1
+  },
+  {
     "mangaId": 106835,
     "anilistId": 106835,
     "idMal": 127788,
@@ -20375,6 +20503,132 @@
     "chapterSourceUpdatedAt": "2026-04-09T00:00:00.000Z"
   },
   {
+    "mangaId": 123454,
+    "anilistId": 123454,
+    "idMal": 132397,
+    "title": "Mechanical Marie",
+    "titleRomaji": "Kikaijikake no Marie",
+    "titleEnglish": "Mechanical Marie",
+    "titleNative": "機械じかけのマリー",
+    "synonyms": [
+      "Mechanically Marie",
+      "Mechanical Marie",
+      "Kikaiji Kake no Marii",
+      "Kikai Jikake no Marie",
+      "Kikai Jikake no Marii",
+      "기계 인간 마리",
+      "Mechanical Marie – Mein Hausmädchen ist (k)ein Roboter!"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx123454-GZ3aELuaDwi7.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx123454-GZ3aELuaDwi7.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx123454-GZ3aELuaDwi7.jpg",
+    "coverImageColor": "#e4a11a",
+    "bannerImage": "",
+    "synopsis": "He was a boy. She was a robot. Well...not really. In all actuality, Marie is completely, totally, 100 percent human, but because her strange new employer seemingly despises humans, the powers-that-be are paying a handsome sum for her to pretend she's the latest and greatest android while protecting said eccentric master from the seemingly endless attempts on his life. Which is fine, but they forgot to mention one tiny seemingly insignificant detail-this dude absolutely dotes on inanimate objects like Marie can't believe. She's not sure what will kill her first, the assassins or his affections...? (Source: Yen Press) Note: Began as a one-shot published in the May 2020 issue of LaLa on March 24, 2020. A three-chapter series ran from the August to October 2020 issues. They were collected and released as Volume 1, as the extended serialization continued in the January 2021 issue of LaLa on November 24, 2020. Chapter count includes three special chapters.",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2020,
+    "startDate": "2020-03-24",
+    "endDate": "2023-08-24",
+    "chapters": 31,
+    "volumes": 6,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Aki Akimoto"
+    ],
+    "artists": [
+      "Aki Akimoto"
+    ],
+    "rating": 6.9,
+    "averageScore": 69,
+    "meanScore": 73,
+    "popularity": 2392,
+    "trending": 0,
+    "favourites": 41,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/123454",
+    "mal_url": "https://myanimelist.net/manga/132397",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://lala.ne.jp/sakuhin/?id=40"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/mechanical-marie"
+      }
+    ],
+    "mangadexId": "935c50ba-91ce-4fda-852a-a3755e7b5f05",
+    "mangadexUrl": "https://mangadex.org/title/935c50ba-91ce-4fda-852a-a3755e7b5f05",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "935c50ba-91ce-4fda-852a-a3755e7b5f05",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "935c50ba-91ce-4fda-852a-a3755e7b5f05",
+    "chapterSourceTitle": "Kikaiji Kake no Marii",
+    "chapterSourceConfidence": 1
+  },
+  {
     "mangaId": 95170,
     "anilistId": 95170,
     "idMal": 89995,
@@ -20730,6 +20984,526 @@
     "chapterSourceConfidence": 1
   },
   {
+    "mangaId": 49292,
+    "anilistId": 49292,
+    "idMal": 19292,
+    "title": "The Heroes of Galaxy Wars",
+    "titleRomaji": "Ginga Sengoku Gunyuuden Rai",
+    "titleEnglish": "The Heroes of Galaxy Wars",
+    "titleNative": "銀河戦國群雄伝ライ",
+    "synonyms": [
+      "Galaxy Warring State Chronicles",
+      "Ginga Sengoku Gun Yuuden Rai",
+      "Galaxy Warring State Chronicle Rai",
+      "Rai - La leggenda degli eroi delle guerre galattiche"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx49292-P6cWx6ihqdn7.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx49292-P6cWx6ihqdn7.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx49292-P6cWx6ihqdn7.jpg",
+    "coverImageColor": "#fed650",
+    "bannerImage": "",
+    "synopsis": "Rai is a space opera that fuses feudal Chinese and Japanese customs with vast galaxy spanning empires and space-going societies. The story follows the life and times of the samurai Rai, and the quest of several spacefaring factions for control of territory and, of course, the Empire.",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 1989,
+    "startDate": "1989-11-01",
+    "endDate": "2001-11-01",
+    "chapters": 263,
+    "volumes": 27,
+    "genres": [
+      "Action",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 291,
+        "name": "Samurai",
+        "description": "Prominently features warriors of medieval Japanese nobility bound by a code of honor.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Jouji Manabe"
+    ],
+    "artists": [
+      "Jouji Manabe"
+    ],
+    "rating": 6.2,
+    "averageScore": 62,
+    "meanScore": 84,
+    "popularity": 318,
+    "trending": 0,
+    "favourites": 13,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/49292",
+    "mal_url": "https://myanimelist.net/manga/19292",
+    "externalLinks": [],
+    "mangadexId": "03708800-ca65-441f-968e-b8dc33951c9a",
+    "mangadexUrl": "https://mangadex.org/title/03708800-ca65-441f-968e-b8dc33951c9a",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "03708800-ca65-441f-968e-b8dc33951c9a",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "03708800-ca65-441f-968e-b8dc33951c9a",
+    "chapterSourceTitle": "Ginga Sengoku Gunyuuden Rai",
+    "chapterSourceConfidence": 1
+  },
+  {
+    "mangaId": 144559,
+    "anilistId": 144559,
+    "idMal": 178131,
+    "title": "HANA",
+    "titleRomaji": "HANA",
+    "titleEnglish": "",
+    "titleNative": "HANA",
+    "synonyms": [
+      "하나"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144559-e8nhpkxGTtDF.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx144559-e8nhpkxGTtDF.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx144559-e8nhpkxGTtDF.jpg",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/144559-wcB7fpDuP50Z.jpg",
+    "synopsis": "The story of Hana, a genetically engineered mouse who escapes from a laboratory. (Source: Naver, translated)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2013,
+    "startDate": "2013-05-14",
+    "endDate": "2017-01-10",
+    "chapters": 192,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Wanan"
+    ],
+    "artists": [
+      "Wanan"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 70,
+    "popularity": 317,
+    "trending": 0,
+    "favourites": 3,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "KR",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/144559",
+    "mal_url": "https://myanimelist.net/manga/178131",
+    "externalLinks": [
+      {
+        "site": "Naver Webtoon",
+        "url": "https://series.naver.com/comic/detail.series?productNo=641919"
+      },
+      {
+        "site": "Naver Webtoon",
+        "url": "https://comic.naver.com/webtoon/list?titleId=557675"
+      }
+    ],
+    "mangadexId": "985480b8-cda1-4411-8d4f-5174a0045837",
+    "mangadexUrl": "https://mangadex.org/title/985480b8-cda1-4411-8d4f-5174a0045837",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "985480b8-cda1-4411-8d4f-5174a0045837",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "985480b8-cda1-4411-8d4f-5174a0045837",
+    "chapterSourceTitle": "HANA",
+    "chapterSourceConfidence": 1
+  },
+  {
+    "mangaId": 201610,
+    "anilistId": 201610,
+    "idMal": 188768,
+    "title": "Ginga Tokkyuu Milky☆Subway",
+    "titleRomaji": "Ginga Tokkyuu Milky☆Subway",
+    "titleEnglish": "",
+    "titleNative": "銀河特急 ミルキー☆サブウェイ",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx201610-KHzpHky1Xalr.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx201610-KHzpHky1Xalr.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx201610-KHzpHky1Xalr.jpg",
+    "coverImageColor": "#e4bb35",
+    "bannerImage": "",
+    "synopsis": "Chiharu the cyborg and Makina the cyborg are arrested for violating the Galactic Road Traffic Act. At the same time, the police also arrest two other eccentric duos: Akane and Kanata the cyborgs, and Kurt and Max the cyborgs. Police officer Ryoko gathers them all together and assigns them a volunteer task: cleaning the interplanetary train known as the \"Milky☆Subway.\" It was supposed to be a simple mission, but before long, they find themselves embroiled in a major incident. (Source: Kadokawa, translated)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2025,
+    "startDate": "2025-09-18",
+    "endDate": null,
+    "chapters": 10,
+    "volumes": 0,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 10,
+        "name": "Cars",
+        "description": "Centers around the use of automotive vehicles.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 226,
+        "name": "Fugitive",
+        "description": "Prominently features a character evading capture by an individual or organization.",
+        "category": "Theme-Action",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 122,
+        "name": "Trains",
+        "description": "Prominently features trains.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 801,
+        "name": "Cyborg",
+        "description": "Prominently features a human character whose physiological functions are aided or enhanced by artificial means.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 108,
+        "name": "Cyberpunk",
+        "description": "Set in a future of advanced technological and scientific achievements that have resulted in social disorder.",
+        "category": "Theme-Sci-Fi",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1589,
+        "name": "Criminal Organization",
+        "description": "Prominently features a group of people who commit crimes for illicit or violent purposes.",
+        "category": "Theme-Other-Organisations",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Youhei Kameyama"
+    ],
+    "artists": [
+      "Don Kouya"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 71,
+    "popularity": 254,
+    "trending": 0,
+    "favourites": 5,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/201610",
+    "mal_url": "https://myanimelist.net/manga/188768",
+    "externalLinks": [
+      {
+        "site": "Kadocomi",
+        "url": "https://comic-walker.com/detail/KC_007032_S?episodeType=first"
+      },
+      {
+        "site": "Nico Nico Seiga",
+        "url": "https://manga.nicovideo.jp/comic/74345"
+      }
+    ],
+    "mangadexId": "7f4c3baf-2551-4bc6-9084-9514f9954d8c",
+    "mangadexUrl": "https://mangadex.org/title/7f4c3baf-2551-4bc6-9084-9514f9954d8c",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "7f4c3baf-2551-4bc6-9084-9514f9954d8c",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "7f4c3baf-2551-4bc6-9084-9514f9954d8c",
+    "chapterSourceTitle": "Ginga Tokkyuu: Milky☆Subway",
+    "chapterSourceConfidence": 1
+  },
+  {
     "mangaId": 108552,
     "anilistId": 108552,
     "idMal": 99498,
@@ -20836,6 +21610,93 @@
     "chapterSourceConfidence": 1
   },
   {
+    "mangaId": 191768,
+    "anilistId": 191768,
+    "idMal": 182217,
+    "title": "Godzilla Galaxy Odyssey",
+    "titleRomaji": "Godzilla Galaxy Odyssey",
+    "titleEnglish": "",
+    "titleNative": "ゴジラ ギャラクシーオデッセイ",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx191768-olgiSDFxTq2r.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx191768-olgiSDFxTq2r.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx191768-olgiSDFxTq2r.jpg",
+    "coverImageColor": "#f1a11a",
+    "bannerImage": "",
+    "synopsis": "A brand new Godzilla manga, serialized in the seinen Manga magazine \"Young Champion\".",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2025,
+    "startDate": "2025-05-27",
+    "endDate": null,
+    "chapters": 20,
+    "volumes": 0,
+    "genres": [
+      "Action",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 513,
+        "name": "Tokusatsu",
+        "description": "Prominently features elements that resemble special effects in Japanese live-action shows",
+        "category": "Theme-Sci-Fi",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Juu Ishiguchi"
+    ],
+    "artists": [
+      "Juu Ishiguchi"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 47,
+    "popularity": 118,
+    "trending": 0,
+    "favourites": 1,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/191768",
+    "mal_url": "https://myanimelist.net/manga/182217",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://x.com/g_comic_yc"
+      },
+      {
+        "site": "Young Champion Web",
+        "url": "https://youngchampion.jp/series/20a59d2babf28"
+      }
+    ],
+    "mangadexId": "760f2141-28f8-471b-8951-bcf7f936809c",
+    "mangadexUrl": "https://mangadex.org/title/760f2141-28f8-471b-8951-bcf7f936809c",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "760f2141-28f8-471b-8951-bcf7f936809c",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "760f2141-28f8-471b-8951-bcf7f936809c",
+    "chapterSourceTitle": "Godzilla Galaxy Odyssey",
+    "chapterSourceConfidence": 1
+  },
+  {
     "mangaId": 170751,
     "anilistId": 170751,
     "idMal": null,
@@ -20930,6 +21791,152 @@
     "chapterSourceProvider": "mangadex",
     "chapterSourceId": "0ddf9ab6-081a-4d19-a3d0-72630555d70c",
     "chapterSourceTitle": "Transformers Legends",
+    "chapterSourceConfidence": 1
+  },
+  {
+    "mangaId": 194475,
+    "anilistId": 194475,
+    "idMal": null,
+    "title": "Kaitei Seisounin Matataburris",
+    "titleRomaji": "Kaitei Seisounin Matataburris",
+    "titleEnglish": "",
+    "titleNative": "海底清掃人マタタビュリス",
+    "synonyms": [
+      "Matataburris diving in the apocalypse."
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx194475-kFZVJUJn4ign.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx194475-kFZVJUJn4ign.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx194475-kFZVJUJn4ign.jpg",
+    "coverImageColor": "#e4c928",
+    "bannerImage": "",
+    "synopsis": "Matataburris is a girl who retrieves requested items from a polluted sea. People who have extended their lifespans through body mechanization seek her out to recover mementos left behind on the ocean floor. (Source: Harta, translated)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2025,
+    "startDate": "2025-06-13",
+    "endDate": null,
+    "chapters": 2,
+    "volumes": 0,
+    "genres": [
+      "Sci-Fi",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 811,
+        "name": "Scuba Diving",
+        "description": "Prominently features characters diving with the aid of special breathing equipment.",
+        "category": "Theme-Game-Sport",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Torajiro Motoyama"
+    ],
+    "artists": [
+      "Torajiro Motoyama"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 40,
+    "popularity": 17,
+    "trending": 0,
+    "favourites": 0,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/194475",
+    "mal_url": "",
+    "externalLinks": [],
+    "mangadexId": "bf019252-5aa8-4c8a-bae8-d05c44114b1e",
+    "mangadexUrl": "https://mangadex.org/title/bf019252-5aa8-4c8a-bae8-d05c44114b1e",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "bf019252-5aa8-4c8a-bae8-d05c44114b1e",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "bf019252-5aa8-4c8a-bae8-d05c44114b1e",
+    "chapterSourceTitle": "Kaitei Seisounin Matataburris",
+    "chapterSourceConfidence": 1
+  },
+  {
+    "mangaId": 208938,
+    "anilistId": 208938,
+    "idMal": null,
+    "title": "Missileman Mammy",
+    "titleRomaji": "Missileman Mammy",
+    "titleEnglish": "",
+    "titleNative": "ミサイルマンマミー",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b208938-LopFu1HYvS17.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b208938-LopFu1HYvS17.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b208938-LopFu1HYvS17.jpg",
+    "coverImageColor": "#e45028",
+    "bannerImage": "",
+    "synopsis": "",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 1966,
+    "startDate": "1966-01-01",
+    "endDate": "1966-12-01",
+    "chapters": 20,
+    "volumes": 2,
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Minoru Kume"
+    ],
+    "artists": [
+      "Daiji Kazumine"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 2,
+    "trending": 0,
+    "favourites": 0,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/208938",
+    "mal_url": "",
+    "externalLinks": [],
+    "mangadexId": "37561c94-4903-45ee-ac89-d1b69fd11a23",
+    "mangadexUrl": "https://mangadex.org/title/37561c94-4903-45ee-ac89-d1b69fd11a23",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "37561c94-4903-45ee-ac89-d1b69fd11a23",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "37561c94-4903-45ee-ac89-d1b69fd11a23",
+    "chapterSourceTitle": "Missileman Mammy",
     "chapterSourceConfidence": 1
   }
 ]
