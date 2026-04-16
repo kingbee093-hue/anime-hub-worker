@@ -24,11 +24,11 @@ const manualMangaSourceMappings = require('../config/manualMangaSourceMappings.j
 
 const MANGADEX_API = 'https://api.mangadex.org';
 const CATALOG_PAGE_SIZE = 120;
-const CATALOG_MAX_ITEMS = 2200;
+const CATALOG_MAX_ITEMS = 100000;
 const GENRE_MAX_ITEMS = 120;
 const SECTION_ITEMS = 24;
 const MANGADEX_DELAY_MS = 250;
-const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 220);
+const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 100);
 const MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT = Number(process.env.MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT || 6);
 const MANGADEX_MAPPING_MAX_QUERY_PLANS = Number(process.env.MANGADEX_MAPPING_MAX_QUERY_PLANS || 10);
 const VERBOSE_MAPPING_LOGS = process.env.MANGA_VERBOSE_MAPPING_LOGS === '1';
@@ -38,7 +38,7 @@ const MANGA_CATALOG_SOURCES = [
     label: 'featured',
     sectionPath: CONFIG.API_PATHS.MANGA_FEATURED,
     limit: 12,
-    pages: 10,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['FAVOURITES_DESC', 'POPULARITY_DESC'],
@@ -48,7 +48,7 @@ const MANGA_CATALOG_SOURCES = [
     label: 'popular',
     sectionPath: CONFIG.API_PATHS.MANGA_POPULAR,
     limit: SECTION_ITEMS,
-    pages: 20,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['POPULARITY_DESC'],
@@ -58,7 +58,7 @@ const MANGA_CATALOG_SOURCES = [
     label: 'top-rated',
     sectionPath: CONFIG.API_PATHS.MANGA_TOP_RATED,
     limit: SECTION_ITEMS,
-    pages: 12,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['SCORE_DESC', 'POPULARITY_DESC'],
@@ -68,7 +68,7 @@ const MANGA_CATALOG_SOURCES = [
     label: 'trending',
     sectionPath: CONFIG.API_PATHS.MANGA_TRENDING,
     limit: SECTION_ITEMS,
-    pages: 10,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['TRENDING_DESC', 'POPULARITY_DESC'],
@@ -78,7 +78,7 @@ const MANGA_CATALOG_SOURCES = [
     label: 'releasing',
     sectionPath: CONFIG.API_PATHS.MANGA_RELEASING,
     limit: SECTION_ITEMS,
-    pages: 8,
+    pages: 1,
     variables: {
       perPage: 35,
       status: 'RELEASING',
@@ -730,10 +730,41 @@ async function fetchMangaCatalog() {
   console.log('BUILDING: Manga Catalog');
   console.log('========================================');
 
+  const existingCatalog = readObjectJson(CONFIG.API_PATHS.MANGA_SEARCH_INDEX);
   const deduped = new Map();
+
+  if (Array.isArray(existingCatalog)) {
+    console.log(`📡 Resuming with ${existingCatalog.length} existing catalog entries...`);
+    for (const item of existingCatalog) {
+      if (item && item.mangaId) {
+        // Convert search index items back to a format suitable for merging if necessary
+        // or just use them as-is
+        deduped.set(String(item.mangaId), item);
+      }
+    }
+  }
+
   const sectionBuckets = new Map();
 
+  const GAP_THRESHOLD = Number(process.env.MANGA_GAP_THRESHOLD || 100);
+  const missingChapters = Array.from(deduped.values()).filter(m => !m.chapters || m.chapters === 0);
+  const gapRatio = (missingChapters.length / (deduped.size || 1)) * 100;
+
+  let skipDiscovery = false;
+  if (missingChapters.length > GAP_THRESHOLD && process.env.MANGA_FORCE_DISCOVERY !== '1') {
+    console.warn('\n⚠️ [GAP PROTECTION ACTIVE]');
+    console.warn(`Found ${missingChapters.length} titles without chapters (${gapRatio.toFixed(1)}% of catalog).`);
+    console.warn(`Exceeds threshold of ${GAP_THRESHOLD}. Skipping new title discovery from AniList.`);
+    console.warn('Goal: Focus on Stage 2 (Chapter & Image Backfilling) to ensure data integrity.');
+    console.log('Canceling Stage 1 (Catalog Builder) to prioritize fill operations...\n');
+    return; // [GAP PROTECTION] Exit Stage 1 immediately
+  }
+
   for (const source of MANGA_CATALOG_SOURCES) {
+    if (skipDiscovery) {
+      console.log(`Skipping discovery for source: ${source.label} (Gap Protection)`);
+      continue;
+    }
     console.log(`Collecting manga source: ${source.label}`);
     const sourceItems = new Map();
 
@@ -803,6 +834,7 @@ async function fetchMangaCatalog() {
   const processedMappingIds = new Set();
 
   for (const { manga, index } of prioritizedIndexes) {
+    if (skipDiscovery) break; // [GAP PROTECTION] Skip time-consuming mapping
     const processedKey = String(manga.anilistId || manga.mangaId);
     if (processedMappingIds.has(processedKey)) {
       continue;

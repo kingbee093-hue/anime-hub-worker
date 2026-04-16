@@ -34,9 +34,13 @@ const CONFIG = {
     MANGA_UNIVERSE: 'manga/universe',
     MANGA_PAGES: 'manga/pages',
     MANGA_BACKFILL: 'manga/backfill',
+    MANGA_DISCOVERY_STATE: 'manga/discovery_state',
+    MANGA_DISCOVERY_REPORT: 'manga/discovery_report',
+    MANGA_REQUEST_HEALTH: 'manga/request_health',
     MANGA_SEARCH_INDEX: 'search/manga_index',
     NEWS: 'news' 
   }
+
 };
 
 module.exports = CONFIG;

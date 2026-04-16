@@ -9,7 +9,8 @@ const { fetchFeatured, fetchTrending, fetchTopRated, fetchPopularSeason, fetchUp
 const fetchSchedule = require('./src/fetchers/fetchSchedule');
 const fetchAnimeCatalog = require('./src/fetchers/fetchAnimeCatalog');
 const fetchMangaCatalog = require('./src/fetchers/fetchMangaCatalog');
-const fetchMangaChapters = require('./src/fetchers/fetchMangaChapters');
+const fetchMangaChapters = require('./fetchMangaNewChapters_stealth');
+
 const fetchMangaUniverse = require('./src/fetchers/fetchMangaUniverse');
 const backfillMangaChapters = require('./src/fetchers/backfillMangaChapters');
 const backfillMangaPages = require('./src/fetchers/backfillMangaPages');
@@ -44,8 +45,8 @@ async function run() {
             }
         }
         if (target === 'mangauniverse' || target === 'all') await fetchMangaUniverse();
-        if (target === 'mangachapters' || target === 'all') {
-            if (skipMangaChapters && target !== 'mangachapters') {
+        if (target === 'mangachapters' || target === 'manganewchapters' || target === 'all') {
+            if (skipMangaChapters && target !== 'mangachapters' && target !== 'manganewchapters') {
                 console.log('Skipping MangaDex chapter index build (MANGA_SKIP_CHAPTER_INDEX=1).');
             } else {
                 await fetchMangaChapters();

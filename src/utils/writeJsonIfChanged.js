@@ -19,4 +19,14 @@ function writeJsonIfChanged(relativeApiPath, data) {
   return { changed: true, file: apiFile };
 }
 
-module.exports = { writeJsonIfChanged };
+function readJson(relativeApiPath) {
+  const apiFile = path.join(__dirname, '../../api', `${relativeApiPath}.json`);
+  if (!fs.existsSync(apiFile)) return null;
+  try {
+    return JSON.parse(fs.readFileSync(apiFile, 'utf8'));
+  } catch (e) {
+    return null;
+  }
+}
+
+module.exports = { writeJsonIfChanged, readJson };

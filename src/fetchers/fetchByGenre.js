@@ -21,7 +21,7 @@ async function fetchByGenre() {
             perPage: 40, // Expanded to top 40 for each genre
             genre: genre,
             sort: ['POPULARITY_DESC', 'SCORE_DESC']
-        }, `Genre: ${genre}`);
+        }, `Genre: ${genre}`, { accumulate: true });
 
         // Rate limit between multiple GraphQL queries
         await delay(CONFIG.RATE_LIMIT_DELAY); 

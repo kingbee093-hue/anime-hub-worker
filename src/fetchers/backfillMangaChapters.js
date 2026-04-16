@@ -238,6 +238,14 @@ function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false
   };
   const hasUsableCoverage = counts.total >= MIN_AVAILABLE_CHAPTERS;
 
+  // SMART SKIP: If manga is FINISHED and we already have all expected chapters, skip it entirely.
+  const isFinished = !isReleasingStatus(item.status);
+  if (isFinished && expected > 0 && counts.en >= expected) {
+    if (!FORCE_ALL && TARGET_IDS.size === 0) {
+      return -1;
+    }
+  }
+
   if (!FORCE_ALL && isFailureCoolingDown(stateItem)) {
     return -1;
   }
@@ -269,6 +277,11 @@ function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false
   if (expected > 0 && counts.en < expected) {
     const gap = expected - counts.en;
     const ratio = expected > 0 ? counts.en / expected : 1;
+    // Don't waste time on tiny gaps for finished manga unless forced
+    if (isFinished && ratio >= 0.98 && !FORCE_ALL) {
+      return -1;
+    }
+    
     if (gap >= 5 && ratio < 0.97) {
       return 350000 + gap * 1000 + popularity;
     }
@@ -282,9 +295,9 @@ function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false
 }
 
 async function backfillMangaChapters() {
-  console.log('========================================');
-  console.log('BACKFILL: Manga Chapters');
-  console.log('========================================');
+  console.log('\n' + '⭐'.repeat(40));
+  console.log('🚀 STAGE 2: SMART GAP-FILLING SYSTEM (Chapters & Images)');
+  console.log('⭐'.repeat(40) + '\n');
 
   const rawCatalogEntries = getMangaCatalogEntries();
   const shouldApplySectionScope = TARGET_IDS.size === 0 && Boolean(SECTION_SCOPE);

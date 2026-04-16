@@ -1,28 +1,22 @@
-name: AnimeHub - Manga Catalog
+name: Refresh Manga New Chapters
 
 on:
   workflow_dispatch:
-    inputs:
-      full_refresh:
-        description: Force a full manga catalog refresh
-        required: false
-        default: false
-        type: boolean
   repository_dispatch:
-    types: [run-manga, run-all]
+    types: [run-manga-new-chapters, run-all]
 
 permissions:
   contents: write
 
 concurrency:
-  group: fetch-manga
+  group: fetch-manga-new-chapters
   cancel-in-progress: true
 
 jobs:
-  fetch_manga:
-    name: Build Manga Catalog and Search Index
+  refresh_manga_new_chapters:
+    name: Build New Chapters Feed (48h Window)
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -38,29 +32,20 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run Manga Builder
+      - name: Build New Chapters Feed (48h Window)
         shell: bash
-        env:
-          MANGA_SKIP_CHAPTER_INDEX: '1'
-          FORCE_REFRESH_INPUT: ${{ github.event.inputs.full_refresh || 'false' }}
         run: |
-          if [ "$FORCE_REFRESH_INPUT" = "true" ]; then
-            export MANGA_FORCE_FULL_REFRESH=1
-            echo "Running full manga catalog refresh."
-          else
-            echo "Running incremental manga catalog refresh."
-          fi
-          npm run fetch:manga
+          npm run fetch:manga-new-chapters
 
       - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/manga api/search
+          git add api/manga/new_chapters.json api/manga/discovery_state.json api/manga/discovery_report.json api/manga/request_health.json
           if git diff --staged --quiet; then
             echo "No API changes to commit."
           else
-            git commit -m "api: rebuild manga catalog [skip ci]"
+            git commit -m "api: independent manga new chapters refresh [skip ci]"
             git pull --rebase origin main || git pull origin main
             git push origin HEAD:main
           fi

@@ -4,21 +4,31 @@
   "anilistId": 132029,
   "mangadexId": "68112dc1-2b80-4f20-beb8-2f2a8716a430",
   "title": "Dandadan",
-  "updatedAt": "2026-04-08T10:47:36.893Z",
+  "updatedAt": "2026-04-16T22:16:31.873Z",
   "availableLanguages": [
     "en",
     "ar"
   ],
   "counts": {
-    "en": 241,
-    "ar": 7
+    "en": 245,
+    "ar": 8
   },
   "languages": {
     "en": [
       {
+        "id": "46b45e58-b592-4e18-a486-c28e0f73c839",
+        "title": "Special Illustration",
+        "chapter": "231.1",
+        "volume": "",
+        "language": "en",
+        "pages": 0,
+        "publishedAt": "2026-04-13T15:05:34+00:00",
+        "externalUrl": "https://mangaplus.shueisha.co.jp/viewer/1028848",
+        "scanlationGroup": "MangaPlus",
+        "sourceType": "official_external"
+      },
+      {
         "id": "mangapill:5460-10231000/dandadan-chapter-231",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10231000/dandadan-chapter-231",
         "title": "Chapter 231",
         "chapter": "231",
         "volume": "",
@@ -52,12 +62,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10231000/dandadan-chapter-231"
       },
       {
         "id": "mangapill:5460-10230000/dandadan-chapter-230",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10230000/dandadan-chapter-230",
         "title": "Chapter 230",
         "chapter": "230",
         "volume": "",
@@ -90,12 +100,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10230000/dandadan-chapter-230"
       },
       {
         "id": "mangapill:5460-10229000/dandadan-chapter-229",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10229000/dandadan-chapter-229",
         "title": "Chapter 229",
         "chapter": "229",
         "volume": "",
@@ -129,12 +139,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10229000/dandadan-chapter-229"
       },
       {
         "id": "mangapill:5460-10228000/dandadan-chapter-228",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10228000/dandadan-chapter-228",
         "title": "Chapter 228",
         "chapter": "228",
         "volume": "",
@@ -166,12 +176,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10228000/dandadan-chapter-228"
       },
       {
         "id": "mangapill:5460-10227000/dandadan-chapter-227",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10227000/dandadan-chapter-227",
         "title": "Chapter 227",
         "chapter": "227",
         "volume": "",
@@ -205,12 +215,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10227000/dandadan-chapter-227"
       },
       {
         "id": "mangapill:5460-10226000/dandadan-chapter-226",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10226000/dandadan-chapter-226",
         "title": "Chapter 226",
         "chapter": "226",
         "volume": "",
@@ -243,12 +253,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10226000/dandadan-chapter-226"
       },
       {
         "id": "mangapill:5460-10225000/dandadan-chapter-225",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10225000/dandadan-chapter-225",
         "title": "Chapter 225",
         "chapter": "225",
         "volume": "",
@@ -281,12 +291,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10225000/dandadan-chapter-225"
       },
       {
         "id": "mangapill:5460-10224000/dandadan-chapter-224",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10224000/dandadan-chapter-224",
         "title": "Chapter 224",
         "chapter": "224",
         "volume": "",
@@ -320,12 +330,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10224000/dandadan-chapter-224"
       },
       {
         "id": "mangapill:5460-10223000/dandadan-chapter-223",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10223000/dandadan-chapter-223",
         "title": "Chapter 223",
         "chapter": "223",
         "volume": "",
@@ -358,12 +368,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10223000/dandadan-chapter-223"
       },
       {
         "id": "mangapill:5460-10222000/dandadan-chapter-222",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10222000/dandadan-chapter-222",
         "title": "Chapter 222",
         "chapter": "222",
         "volume": "",
@@ -395,12 +405,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10222000/dandadan-chapter-222"
       },
       {
         "id": "mangapill:5460-10221000/dandadan-chapter-221",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10221000/dandadan-chapter-221",
         "title": "Chapter 221",
         "chapter": "221",
         "volume": "",
@@ -436,12 +446,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10221000/dandadan-chapter-221"
       },
       {
         "id": "mangapill:5460-10220000/dandadan-chapter-220",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10220000/dandadan-chapter-220",
         "title": "Chapter 220",
         "chapter": "220",
         "volume": "",
@@ -475,12 +485,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10220000/dandadan-chapter-220"
       },
       {
         "id": "mangapill:5460-10219000/dandadan-chapter-219",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10219000/dandadan-chapter-219",
         "title": "Chapter 219",
         "chapter": "219",
         "volume": "",
@@ -514,12 +524,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10219000/dandadan-chapter-219"
       },
       {
         "id": "mangapill:5460-10218000/dandadan-chapter-218",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10218000/dandadan-chapter-218",
         "title": "Chapter 218",
         "chapter": "218",
         "volume": "",
@@ -557,12 +567,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10218000/dandadan-chapter-218"
       },
       {
         "id": "mangapill:5460-10217000/dandadan-chapter-217",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10217000/dandadan-chapter-217",
         "title": "Chapter 217",
         "chapter": "217",
         "volume": "",
@@ -597,12 +607,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10217000/dandadan-chapter-217"
       },
       {
         "id": "mangapill:5460-10216000/dandadan-chapter-216",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10216000/dandadan-chapter-216",
         "title": "Chapter 216",
         "chapter": "216",
         "volume": "",
@@ -637,12 +647,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10216000/dandadan-chapter-216"
       },
       {
         "id": "mangapill:5460-10215000/dandadan-chapter-215",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10215000/dandadan-chapter-215",
         "title": "Chapter 215",
         "chapter": "215",
         "volume": "",
@@ -678,12 +688,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10215000/dandadan-chapter-215"
       },
       {
         "id": "mangapill:5460-10214000/dandadan-chapter-214",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10214000/dandadan-chapter-214",
         "title": "Chapter 214",
         "chapter": "214",
         "volume": "",
@@ -718,12 +728,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10214000/dandadan-chapter-214"
       },
       {
         "id": "mangapill:5460-10213000/dandadan-chapter-213",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10213000/dandadan-chapter-213",
         "title": "Chapter 213",
         "chapter": "213",
         "volume": "",
@@ -758,12 +768,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10213000/dandadan-chapter-213"
       },
       {
         "id": "mangapill:5460-10212000/dandadan-chapter-212",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10212000/dandadan-chapter-212",
         "title": "Chapter 212",
         "chapter": "212",
         "volume": "",
@@ -798,12 +808,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10212000/dandadan-chapter-212"
       },
       {
         "id": "mangapill:5460-10211000/dandadan-chapter-211",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10211000/dandadan-chapter-211",
         "title": "Chapter 211",
         "chapter": "211",
         "volume": "",
@@ -837,12 +847,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10211000/dandadan-chapter-211"
       },
       {
         "id": "mangapill:5460-10210000/dandadan-chapter-210",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10210000/dandadan-chapter-210",
         "title": "Chapter 210",
         "chapter": "210",
         "volume": "",
@@ -876,12 +886,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10210000/dandadan-chapter-210"
       },
       {
         "id": "mangapill:5460-10209000/dandadan-chapter-209",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10209000/dandadan-chapter-209",
         "title": "Chapter 209",
         "chapter": "209",
         "volume": "",
@@ -918,12 +928,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10209000/dandadan-chapter-209"
       },
       {
         "id": "mangapill:5460-10208000/dandadan-chapter-208",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10208000/dandadan-chapter-208",
         "title": "Chapter 208",
         "chapter": "208",
         "volume": "",
@@ -957,12 +967,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10208000/dandadan-chapter-208"
       },
       {
         "id": "mangapill:5460-10207000/dandadan-chapter-207",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10207000/dandadan-chapter-207",
         "title": "Chapter 207",
         "chapter": "207",
         "volume": "",
@@ -996,12 +1006,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10207000/dandadan-chapter-207"
       },
       {
         "id": "mangapill:5460-10206000/dandadan-chapter-206",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10206000/dandadan-chapter-206",
         "title": "Chapter 206",
         "chapter": "206",
         "volume": "",
@@ -1035,12 +1045,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10206000/dandadan-chapter-206"
       },
       {
         "id": "mangapill:5460-10205000/dandadan-chapter-205",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10205000/dandadan-chapter-205",
         "title": "Chapter 205",
         "chapter": "205",
         "volume": "",
@@ -1074,12 +1084,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10205000/dandadan-chapter-205"
       },
       {
         "id": "mangapill:5460-10204000/dandadan-chapter-204",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10204000/dandadan-chapter-204",
         "title": "Chapter 204",
         "chapter": "204",
         "volume": "",
@@ -1113,12 +1123,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10204000/dandadan-chapter-204"
       },
       {
         "id": "mangapill:5460-10203000/dandadan-chapter-203",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10203000/dandadan-chapter-203",
         "title": "Chapter 203",
         "chapter": "203",
         "volume": "",
@@ -1155,12 +1165,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10203000/dandadan-chapter-203"
       },
       {
         "id": "mangapill:5460-10202000/dandadan-chapter-202",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10202000/dandadan-chapter-202",
         "title": "Chapter 202",
         "chapter": "202",
         "volume": "",
@@ -1194,12 +1204,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10202000/dandadan-chapter-202"
       },
       {
         "id": "mangapill:5460-10201000/dandadan-chapter-201",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10201000/dandadan-chapter-201",
         "title": "Chapter 201",
         "chapter": "201",
         "volume": "",
@@ -1233,12 +1243,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10201000/dandadan-chapter-201"
       },
       {
         "id": "mangapill:5460-10200000/dandadan-chapter-200",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10200000/dandadan-chapter-200",
         "title": "Chapter 200",
         "chapter": "200",
         "volume": "",
@@ -1272,12 +1282,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10200000/dandadan-chapter-200"
       },
       {
         "id": "mangapill:5460-10199000/dandadan-chapter-199",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10199000/dandadan-chapter-199",
         "title": "Chapter 199",
         "chapter": "199",
         "volume": "",
@@ -1315,12 +1325,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10199000/dandadan-chapter-199"
       },
       {
         "id": "mangapill:5460-10198000/dandadan-chapter-198",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10198000/dandadan-chapter-198",
         "title": "Chapter 198",
         "chapter": "198",
         "volume": "",
@@ -1360,12 +1370,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10198000/dandadan-chapter-198"
       },
       {
         "id": "mangapill:5460-10197000/dandadan-chapter-197",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10197000/dandadan-chapter-197",
         "title": "Chapter 197",
         "chapter": "197",
         "volume": "",
@@ -1401,12 +1411,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10197000/dandadan-chapter-197"
       },
       {
         "id": "mangapill:5460-10196000/dandadan-chapter-196",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10196000/dandadan-chapter-196",
         "title": "Chapter 196",
         "chapter": "196",
         "volume": "",
@@ -1440,12 +1450,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10196000/dandadan-chapter-196"
       },
       {
         "id": "mangapill:5460-10195000/dandadan-chapter-195",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10195000/dandadan-chapter-195",
         "title": "Chapter 195",
         "chapter": "195",
         "volume": "",
@@ -1480,12 +1490,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10195000/dandadan-chapter-195"
       },
       {
         "id": "mangapill:5460-10194000/dandadan-chapter-194",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10194000/dandadan-chapter-194",
         "title": "Chapter 194",
         "chapter": "194",
         "volume": "",
@@ -1521,12 +1531,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10194000/dandadan-chapter-194"
       },
       {
         "id": "mangapill:5460-10193100/dandadan-chapter-193.1",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10193100/dandadan-chapter-193.1",
         "title": "Chapter 193.1",
         "chapter": "193.1",
         "volume": "",
@@ -1549,12 +1559,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10193100/dandadan-chapter-193.1"
       },
       {
         "id": "mangapill:5460-10193000/dandadan-chapter-193",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10193000/dandadan-chapter-193",
         "title": "Chapter 193",
         "chapter": "193",
         "volume": "",
@@ -1588,12 +1598,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10193000/dandadan-chapter-193"
       },
       {
         "id": "mangapill:5460-10192000/dandadan-chapter-192",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10192000/dandadan-chapter-192",
         "title": "Chapter 192",
         "chapter": "192",
         "volume": "",
@@ -1627,12 +1637,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10192000/dandadan-chapter-192"
       },
       {
         "id": "mangapill:5460-10191000/dandadan-chapter-191",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10191000/dandadan-chapter-191",
         "title": "Chapter 191",
         "chapter": "191",
         "volume": "",
@@ -1666,12 +1676,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10191000/dandadan-chapter-191"
       },
       {
         "id": "mangapill:5460-10190000/dandadan-chapter-190",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10190000/dandadan-chapter-190",
         "title": "Chapter 190",
         "chapter": "190",
         "volume": "",
@@ -1705,12 +1715,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10190000/dandadan-chapter-190"
       },
       {
         "id": "mangapill:5460-10189000/dandadan-chapter-189",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10189000/dandadan-chapter-189",
         "title": "Chapter 189",
         "chapter": "189",
         "volume": "",
@@ -1744,12 +1754,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10189000/dandadan-chapter-189"
       },
       {
         "id": "mangapill:5460-10188000/dandadan-chapter-188",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10188000/dandadan-chapter-188",
         "title": "Chapter 188",
         "chapter": "188",
         "volume": "",
@@ -1783,12 +1793,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10188000/dandadan-chapter-188"
       },
       {
         "id": "mangapill:5460-10187000/dandadan-chapter-187",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10187000/dandadan-chapter-187",
         "title": "Chapter 187",
         "chapter": "187",
         "volume": "",
@@ -1826,12 +1836,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10187000/dandadan-chapter-187"
       },
       {
         "id": "mangapill:5460-10186000/dandadan-chapter-186",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10186000/dandadan-chapter-186",
         "title": "Chapter 186",
         "chapter": "186",
         "volume": "",
@@ -1871,12 +1881,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10186000/dandadan-chapter-186"
       },
       {
         "id": "mangapill:5460-10185000/dandadan-chapter-185",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10185000/dandadan-chapter-185",
         "title": "Chapter 185",
         "chapter": "185",
         "volume": "",
@@ -1911,12 +1921,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10185000/dandadan-chapter-185"
       },
       {
         "id": "mangapill:5460-10184000/dandadan-chapter-184",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10184000/dandadan-chapter-184",
         "title": "Chapter 184",
         "chapter": "184",
         "volume": "",
@@ -1951,12 +1961,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10184000/dandadan-chapter-184"
       },
       {
         "id": "mangapill:5460-10183000/dandadan-chapter-183",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10183000/dandadan-chapter-183",
         "title": "Chapter 183",
         "chapter": "183",
         "volume": "",
@@ -1990,12 +2000,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10183000/dandadan-chapter-183"
       },
       {
         "id": "mangapill:5460-10182000/dandadan-chapter-182",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10182000/dandadan-chapter-182",
         "title": "Chapter 182",
         "chapter": "182",
         "volume": "",
@@ -2030,12 +2040,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10182000/dandadan-chapter-182"
       },
       {
         "id": "mangapill:5460-10181000/dandadan-chapter-181",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10181000/dandadan-chapter-181",
         "title": "Chapter 181",
         "chapter": "181",
         "volume": "",
@@ -2069,12 +2079,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10181000/dandadan-chapter-181"
       },
       {
         "id": "mangapill:5460-10180000/dandadan-chapter-180",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10180000/dandadan-chapter-180",
         "title": "Chapter 180",
         "chapter": "180",
         "volume": "",
@@ -2109,12 +2119,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10180000/dandadan-chapter-180"
       },
       {
         "id": "mangapill:5460-10179000/dandadan-chapter-179",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10179000/dandadan-chapter-179",
         "title": "Chapter 179",
         "chapter": "179",
         "volume": "",
@@ -2148,12 +2158,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10179000/dandadan-chapter-179"
       },
       {
         "id": "mangapill:5460-10178000/dandadan-chapter-178",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10178000/dandadan-chapter-178",
         "title": "Chapter 178",
         "chapter": "178",
         "volume": "",
@@ -2191,12 +2201,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10178000/dandadan-chapter-178"
       },
       {
         "id": "mangapill:5460-10177000/dandadan-chapter-177",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10177000/dandadan-chapter-177",
         "title": "Chapter 177",
         "chapter": "177",
         "volume": "",
@@ -2232,12 +2242,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10177000/dandadan-chapter-177"
       },
       {
         "id": "mangapill:5460-10176000/dandadan-chapter-176",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10176000/dandadan-chapter-176",
         "title": "Chapter 176",
         "chapter": "176",
         "volume": "",
@@ -2271,12 +2281,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10176000/dandadan-chapter-176"
       },
       {
         "id": "mangapill:5460-10175000/dandadan-chapter-175",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10175000/dandadan-chapter-175",
         "title": "Chapter 175",
         "chapter": "175",
         "volume": "",
@@ -2310,12 +2320,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10175000/dandadan-chapter-175"
       },
       {
         "id": "mangapill:5460-10174000/dandadan-chapter-174",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10174000/dandadan-chapter-174",
         "title": "Chapter 174",
         "chapter": "174",
         "volume": "",
@@ -2349,12 +2359,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10174000/dandadan-chapter-174"
       },
       {
         "id": "mangapill:5460-10173000/dandadan-chapter-173",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10173000/dandadan-chapter-173",
         "title": "Chapter 173",
         "chapter": "173",
         "volume": "",
@@ -2388,12 +2398,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10173000/dandadan-chapter-173"
       },
       {
         "id": "mangapill:5460-10172000/dandadan-chapter-172",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10172000/dandadan-chapter-172",
         "title": "Chapter 172",
         "chapter": "172",
         "volume": "",
@@ -2427,12 +2437,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10172000/dandadan-chapter-172"
       },
       {
         "id": "mangapill:5460-10171000/dandadan-chapter-171",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10171000/dandadan-chapter-171",
         "title": "Chapter 171",
         "chapter": "171",
         "volume": "",
@@ -2466,12 +2476,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10171000/dandadan-chapter-171"
       },
       {
         "id": "mangapill:5460-10170000/dandadan-chapter-170",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10170000/dandadan-chapter-170",
         "title": "Chapter 170",
         "chapter": "170",
         "volume": "",
@@ -2506,12 +2516,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10170000/dandadan-chapter-170"
       },
       {
         "id": "mangapill:5460-10169000/dandadan-chapter-169",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10169000/dandadan-chapter-169",
         "title": "Chapter 169",
         "chapter": "169",
         "volume": "",
@@ -2545,12 +2555,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10169000/dandadan-chapter-169"
       },
       {
         "id": "mangapill:5460-10168000/dandadan-chapter-168",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10168000/dandadan-chapter-168",
         "title": "Chapter 168",
         "chapter": "168",
         "volume": "",
@@ -2584,12 +2594,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10168000/dandadan-chapter-168"
       },
       {
         "id": "mangapill:5460-10167000/dandadan-chapter-167",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10167000/dandadan-chapter-167",
         "title": "Chapter 167",
         "chapter": "167",
         "volume": "",
@@ -2623,12 +2633,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10167000/dandadan-chapter-167"
       },
       {
         "id": "mangapill:5460-10166000/dandadan-chapter-166",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10166000/dandadan-chapter-166",
         "title": "Chapter 166",
         "chapter": "166",
         "volume": "",
@@ -2662,12 +2672,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10166000/dandadan-chapter-166"
       },
       {
         "id": "mangapill:5460-10165000/dandadan-chapter-165",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10165000/dandadan-chapter-165",
         "title": "Chapter 165",
         "chapter": "165",
         "volume": "",
@@ -2704,12 +2714,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10165000/dandadan-chapter-165"
       },
       {
         "id": "mangapill:5460-10164000/dandadan-chapter-164",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10164000/dandadan-chapter-164",
         "title": "Chapter 164",
         "chapter": "164",
         "volume": "",
@@ -2744,12 +2754,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10164000/dandadan-chapter-164"
       },
       {
         "id": "mangapill:5460-10163000/dandadan-chapter-163",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10163000/dandadan-chapter-163",
         "title": "Chapter 163",
         "chapter": "163",
         "volume": "",
@@ -2787,12 +2797,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10163000/dandadan-chapter-163"
       },
       {
         "id": "mangapill:5460-10162000/dandadan-chapter-162",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10162000/dandadan-chapter-162",
         "title": "Chapter 162",
         "chapter": "162",
         "volume": "",
@@ -2828,12 +2838,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10162000/dandadan-chapter-162"
       },
       {
         "id": "mangapill:5460-10161000/dandadan-chapter-161",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10161000/dandadan-chapter-161",
         "title": "Chapter 161",
         "chapter": "161",
         "volume": "",
@@ -2867,12 +2877,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10161000/dandadan-chapter-161"
       },
       {
         "id": "mangapill:5460-10160000/dandadan-chapter-160",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10160000/dandadan-chapter-160",
         "title": "Chapter 160",
         "chapter": "160",
         "volume": "",
@@ -2907,12 +2917,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10160000/dandadan-chapter-160"
       },
       {
         "id": "mangapill:5460-10159000/dandadan-chapter-159",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10159000/dandadan-chapter-159",
         "title": "Chapter 159",
         "chapter": "159",
         "volume": "",
@@ -2952,12 +2962,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10159000/dandadan-chapter-159"
       },
       {
         "id": "mangapill:5460-10158000/dandadan-chapter-158",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10158000/dandadan-chapter-158",
         "title": "Chapter 158",
         "chapter": "158",
         "volume": "",
@@ -2992,12 +3002,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10158000/dandadan-chapter-158"
       },
       {
         "id": "mangapill:5460-10157000/dandadan-chapter-157",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10157000/dandadan-chapter-157",
         "title": "Chapter 157",
         "chapter": "157",
         "volume": "",
@@ -3033,12 +3043,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10157000/dandadan-chapter-157"
       },
       {
         "id": "mangapill:5460-10156000/dandadan-chapter-156",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10156000/dandadan-chapter-156",
         "title": "Chapter 156",
         "chapter": "156",
         "volume": "",
@@ -3075,12 +3085,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10156000/dandadan-chapter-156"
       },
       {
         "id": "mangapill:5460-10155000/dandadan-chapter-155",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10155000/dandadan-chapter-155",
         "title": "Chapter 155",
         "chapter": "155",
         "volume": "",
@@ -3115,12 +3125,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10155000/dandadan-chapter-155"
       },
       {
         "id": "mangapill:5460-10154000/dandadan-chapter-154",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10154000/dandadan-chapter-154",
         "title": "Chapter 154",
         "chapter": "154",
         "volume": "",
@@ -3154,12 +3164,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10154000/dandadan-chapter-154"
       },
       {
         "id": "mangapill:5460-10153000/dandadan-chapter-153",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10153000/dandadan-chapter-153",
         "title": "Chapter 153",
         "chapter": "153",
         "volume": "",
@@ -3193,12 +3203,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10153000/dandadan-chapter-153"
       },
       {
         "id": "mangapill:5460-10152000/dandadan-chapter-152",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10152000/dandadan-chapter-152",
         "title": "Chapter 152",
         "chapter": "152",
         "volume": "",
@@ -3233,12 +3243,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10152000/dandadan-chapter-152"
       },
       {
         "id": "mangapill:5460-10151000/dandadan-chapter-151",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10151000/dandadan-chapter-151",
         "title": "Chapter 151",
         "chapter": "151",
         "volume": "",
@@ -3273,12 +3283,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10151000/dandadan-chapter-151"
       },
       {
         "id": "mangapill:5460-10150000/dandadan-chapter-150",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10150000/dandadan-chapter-150",
         "title": "Chapter 150",
         "chapter": "150",
         "volume": "",
@@ -3311,12 +3321,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10150000/dandadan-chapter-150"
       },
       {
         "id": "mangapill:5460-10149000/dandadan-chapter-149",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10149000/dandadan-chapter-149",
         "title": "Chapter 149",
         "chapter": "149",
         "volume": "",
@@ -3350,12 +3360,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10149000/dandadan-chapter-149"
       },
       {
         "id": "mangapill:5460-10148000/dandadan-chapter-148",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10148000/dandadan-chapter-148",
         "title": "Chapter 148",
         "chapter": "148",
         "volume": "",
@@ -3389,12 +3399,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10148000/dandadan-chapter-148"
       },
       {
         "id": "mangapill:5460-10147000/dandadan-chapter-147",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10147000/dandadan-chapter-147",
         "title": "Chapter 147",
         "chapter": "147",
         "volume": "",
@@ -3428,12 +3438,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10147000/dandadan-chapter-147"
       },
       {
         "id": "mangapill:5460-10146000/dandadan-chapter-146",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10146000/dandadan-chapter-146",
         "title": "Chapter 146",
         "chapter": "146",
         "volume": "",
@@ -3466,12 +3476,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10146000/dandadan-chapter-146"
       },
       {
         "id": "mangapill:5460-10145000/dandadan-chapter-145",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10145000/dandadan-chapter-145",
         "title": "Chapter 145",
         "chapter": "145",
         "volume": "",
@@ -3505,12 +3515,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10145000/dandadan-chapter-145"
       },
       {
         "id": "mangapill:5460-10144000/dandadan-chapter-144",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10144000/dandadan-chapter-144",
         "title": "Chapter 144",
         "chapter": "144",
         "volume": "",
@@ -3544,12 +3554,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10144000/dandadan-chapter-144"
       },
       {
         "id": "mangapill:5460-10143000/dandadan-chapter-143",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10143000/dandadan-chapter-143",
         "title": "Chapter 143",
         "chapter": "143",
         "volume": "",
@@ -3583,12 +3593,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10143000/dandadan-chapter-143"
       },
       {
         "id": "mangapill:5460-10142000/dandadan-chapter-142",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10142000/dandadan-chapter-142",
         "title": "Chapter 142",
         "chapter": "142",
         "volume": "",
@@ -3622,12 +3632,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10142000/dandadan-chapter-142"
       },
       {
         "id": "mangapill:5460-10141000/dandadan-chapter-141",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10141000/dandadan-chapter-141",
         "title": "Chapter 141",
         "chapter": "141",
         "volume": "",
@@ -3661,12 +3671,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10141000/dandadan-chapter-141"
       },
       {
         "id": "mangapill:5460-10140000/dandadan-chapter-140",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10140000/dandadan-chapter-140",
         "title": "Chapter 140",
         "chapter": "140",
         "volume": "",
@@ -3700,12 +3710,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10140000/dandadan-chapter-140"
       },
       {
         "id": "mangapill:5460-10139000/dandadan-chapter-139",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10139000/dandadan-chapter-139",
         "title": "Chapter 139",
         "chapter": "139",
         "volume": "",
@@ -3738,12 +3748,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10139000/dandadan-chapter-139"
       },
       {
         "id": "mangapill:5460-10138000/dandadan-chapter-138",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10138000/dandadan-chapter-138",
         "title": "Chapter 138",
         "chapter": "138",
         "volume": "",
@@ -3776,12 +3786,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10138000/dandadan-chapter-138"
       },
       {
         "id": "mangapill:5460-10137000/dandadan-chapter-137",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10137000/dandadan-chapter-137",
         "title": "Chapter 137",
         "chapter": "137",
         "volume": "",
@@ -3815,12 +3825,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10137000/dandadan-chapter-137"
       },
       {
         "id": "mangapill:5460-10136000/dandadan-chapter-136",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10136000/dandadan-chapter-136",
         "title": "Chapter 136",
         "chapter": "136",
         "volume": "",
@@ -3853,12 +3863,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10136000/dandadan-chapter-136"
       },
       {
         "id": "mangapill:5460-10135000/dandadan-chapter-135",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10135000/dandadan-chapter-135",
         "title": "Chapter 135",
         "chapter": "135",
         "volume": "",
@@ -3890,12 +3900,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10135000/dandadan-chapter-135"
       },
       {
         "id": "mangapill:5460-10134000/dandadan-chapter-134",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10134000/dandadan-chapter-134",
         "title": "Chapter 134",
         "chapter": "134",
         "volume": "",
@@ -3929,12 +3939,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10134000/dandadan-chapter-134"
       },
       {
         "id": "mangapill:5460-10133000/dandadan-chapter-133",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10133000/dandadan-chapter-133",
         "title": "Chapter 133",
         "chapter": "133",
         "volume": "",
@@ -3968,12 +3978,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10133000/dandadan-chapter-133"
       },
       {
         "id": "mangapill:5460-10132000/dandadan-chapter-132",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10132000/dandadan-chapter-132",
         "title": "Chapter 132",
         "chapter": "132",
         "volume": "",
@@ -4007,12 +4017,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10132000/dandadan-chapter-132"
       },
       {
         "id": "mangapill:5460-10131000/dandadan-chapter-131",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10131000/dandadan-chapter-131",
         "title": "Chapter 131",
         "chapter": "131",
         "volume": "",
@@ -4046,12 +4056,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10131000/dandadan-chapter-131"
       },
       {
         "id": "mangapill:5460-10130000/dandadan-chapter-130",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10130000/dandadan-chapter-130",
         "title": "Chapter 130",
         "chapter": "130",
         "volume": "",
@@ -4085,12 +4095,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10130000/dandadan-chapter-130"
       },
       {
         "id": "mangapill:5460-10129000/dandadan-chapter-129",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10129000/dandadan-chapter-129",
         "title": "Chapter 129",
         "chapter": "129",
         "volume": "",
@@ -4124,12 +4134,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10129000/dandadan-chapter-129"
       },
       {
         "id": "mangapill:5460-10128000/dandadan-chapter-128",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10128000/dandadan-chapter-128",
         "title": "Chapter 128",
         "chapter": "128",
         "volume": "",
@@ -4166,12 +4176,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10128000/dandadan-chapter-128"
       },
       {
         "id": "mangapill:5460-10127000/dandadan-chapter-127",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10127000/dandadan-chapter-127",
         "title": "Chapter 127",
         "chapter": "127",
         "volume": "",
@@ -4203,12 +4213,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10127000/dandadan-chapter-127"
       },
       {
         "id": "mangapill:5460-10126000/dandadan-chapter-126",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10126000/dandadan-chapter-126",
         "title": "Chapter 126",
         "chapter": "126",
         "volume": "",
@@ -4242,12 +4252,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10126000/dandadan-chapter-126"
       },
       {
         "id": "mangapill:5460-10125000/dandadan-chapter-125",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10125000/dandadan-chapter-125",
         "title": "Chapter 125",
         "chapter": "125",
         "volume": "",
@@ -4280,12 +4290,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10125000/dandadan-chapter-125"
       },
       {
         "id": "mangapill:5460-10124000/dandadan-chapter-124",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10124000/dandadan-chapter-124",
         "title": "Chapter 124",
         "chapter": "124",
         "volume": "",
@@ -4322,12 +4332,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10124000/dandadan-chapter-124"
       },
       {
         "id": "mangapill:5460-10123000/dandadan-chapter-123",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10123000/dandadan-chapter-123",
         "title": "Chapter 123",
         "chapter": "123",
         "volume": "",
@@ -4361,12 +4371,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10123000/dandadan-chapter-123"
       },
       {
         "id": "mangapill:5460-10122000/dandadan-chapter-122",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10122000/dandadan-chapter-122",
         "title": "Chapter 122",
         "chapter": "122",
         "volume": "",
@@ -4401,12 +4411,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10122000/dandadan-chapter-122"
       },
       {
         "id": "mangapill:5460-10121000/dandadan-chapter-121",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10121000/dandadan-chapter-121",
         "title": "Chapter 121",
         "chapter": "121",
         "volume": "",
@@ -4441,12 +4451,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10121000/dandadan-chapter-121"
       },
       {
         "id": "mangapill:5460-10120000/dandadan-chapter-120",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10120000/dandadan-chapter-120",
         "title": "Chapter 120",
         "chapter": "120",
         "volume": "",
@@ -4483,12 +4493,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10120000/dandadan-chapter-120"
       },
       {
         "id": "mangapill:5460-10119000/dandadan-chapter-119",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10119000/dandadan-chapter-119",
         "title": "Chapter 119",
         "chapter": "119",
         "volume": "",
@@ -4522,12 +4532,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10119000/dandadan-chapter-119"
       },
       {
         "id": "mangapill:5460-10118000/dandadan-chapter-118",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10118000/dandadan-chapter-118",
         "title": "Chapter 118",
         "chapter": "118",
         "volume": "",
@@ -4560,12 +4570,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10118000/dandadan-chapter-118"
       },
       {
         "id": "mangapill:5460-10117000/dandadan-chapter-117",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10117000/dandadan-chapter-117",
         "title": "Chapter 117",
         "chapter": "117",
         "volume": "",
@@ -4598,12 +4608,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10117000/dandadan-chapter-117"
       },
       {
         "id": "mangapill:5460-10116000/dandadan-chapter-116",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10116000/dandadan-chapter-116",
         "title": "Chapter 116",
         "chapter": "116",
         "volume": "",
@@ -4641,12 +4651,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10116000/dandadan-chapter-116"
       },
       {
         "id": "mangapill:5460-10115000/dandadan-chapter-115",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10115000/dandadan-chapter-115",
         "title": "Chapter 115",
         "chapter": "115",
         "volume": "",
@@ -4678,12 +4688,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10115000/dandadan-chapter-115"
       },
       {
         "id": "mangapill:5460-10114000/dandadan-chapter-114",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10114000/dandadan-chapter-114",
         "title": "Chapter 114",
         "chapter": "114",
         "volume": "",
@@ -4717,12 +4727,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10114000/dandadan-chapter-114"
       },
       {
         "id": "mangapill:5460-10113000/dandadan-chapter-113",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10113000/dandadan-chapter-113",
         "title": "Chapter 113",
         "chapter": "113",
         "volume": "",
@@ -4758,12 +4768,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10113000/dandadan-chapter-113"
       },
       {
         "id": "mangapill:5460-10112000/dandadan-chapter-112",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10112000/dandadan-chapter-112",
         "title": "Chapter 112",
         "chapter": "112",
         "volume": "",
@@ -4796,12 +4806,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10112000/dandadan-chapter-112"
       },
       {
         "id": "mangapill:5460-10111000/dandadan-chapter-111",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10111000/dandadan-chapter-111",
         "title": "Chapter 111",
         "chapter": "111",
         "volume": "",
@@ -4836,12 +4846,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10111000/dandadan-chapter-111"
       },
       {
         "id": "mangapill:5460-10110000/dandadan-chapter-110",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10110000/dandadan-chapter-110",
         "title": "Chapter 110",
         "chapter": "110",
         "volume": "",
@@ -4874,12 +4884,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10110000/dandadan-chapter-110"
       },
       {
         "id": "mangapill:5460-10109000/dandadan-chapter-109",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10109000/dandadan-chapter-109",
         "title": "Chapter 109",
         "chapter": "109",
         "volume": "",
@@ -4914,12 +4924,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10109000/dandadan-chapter-109"
       },
       {
         "id": "mangapill:5460-10108000/dandadan-chapter-108",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10108000/dandadan-chapter-108",
         "title": "Chapter 108",
         "chapter": "108",
         "volume": "",
@@ -4954,12 +4964,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10108000/dandadan-chapter-108"
       },
       {
         "id": "mangapill:5460-10107000/dandadan-chapter-107",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10107000/dandadan-chapter-107",
         "title": "Chapter 107",
         "chapter": "107",
         "volume": "",
@@ -4993,12 +5003,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10107000/dandadan-chapter-107"
       },
       {
         "id": "mangapill:5460-10106000/dandadan-chapter-106",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10106000/dandadan-chapter-106",
         "title": "Chapter 106",
         "chapter": "106",
         "volume": "",
@@ -5035,12 +5045,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10106000/dandadan-chapter-106"
       },
       {
         "id": "mangapill:5460-10105000/dandadan-chapter-105",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10105000/dandadan-chapter-105",
         "title": "Chapter 105",
         "chapter": "105",
         "volume": "",
@@ -5077,12 +5087,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10105000/dandadan-chapter-105"
       },
       {
         "id": "mangapill:5460-10104000/dandadan-chapter-104",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10104000/dandadan-chapter-104",
         "title": "Chapter 104",
         "chapter": "104",
         "volume": "",
@@ -5118,12 +5128,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10104000/dandadan-chapter-104"
       },
       {
         "id": "mangapill:5460-10103000/dandadan-chapter-103",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10103000/dandadan-chapter-103",
         "title": "Chapter 103",
         "chapter": "103",
         "volume": "",
@@ -5158,12 +5168,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10103000/dandadan-chapter-103"
       },
       {
         "id": "mangapill:5460-10102000/dandadan-chapter-102",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10102000/dandadan-chapter-102",
         "title": "Chapter 102",
         "chapter": "102",
         "volume": "",
@@ -5199,12 +5209,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10102000/dandadan-chapter-102"
       },
       {
         "id": "mangapill:5460-10101000/dandadan-chapter-101",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10101000/dandadan-chapter-101",
         "title": "Chapter 101",
         "chapter": "101",
         "volume": "",
@@ -5242,12 +5252,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10101000/dandadan-chapter-101"
       },
       {
         "id": "mangapill:5460-10100000/dandadan-chapter-100",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10100000/dandadan-chapter-100",
         "title": "Chapter 100",
         "chapter": "100",
         "volume": "",
@@ -5282,12 +5292,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10100000/dandadan-chapter-100"
       },
       {
         "id": "mangapill:5460-10099000/dandadan-chapter-99",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10099000/dandadan-chapter-99",
         "title": "Chapter 99",
         "chapter": "99",
         "volume": "",
@@ -5323,12 +5333,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10099000/dandadan-chapter-99"
       },
       {
         "id": "mangapill:5460-10098000/dandadan-chapter-98",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10098000/dandadan-chapter-98",
         "title": "Chapter 98",
         "chapter": "98",
         "volume": "",
@@ -5364,12 +5374,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10098000/dandadan-chapter-98"
       },
       {
         "id": "mangapill:5460-10097000/dandadan-chapter-97",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10097000/dandadan-chapter-97",
         "title": "Chapter 97",
         "chapter": "97",
         "volume": "",
@@ -5403,12 +5413,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10097000/dandadan-chapter-97"
       },
       {
         "id": "mangapill:5460-10096000/dandadan-chapter-96",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10096000/dandadan-chapter-96",
         "title": "Chapter 96",
         "chapter": "96",
         "volume": "",
@@ -5443,12 +5453,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10096000/dandadan-chapter-96"
       },
       {
         "id": "mangapill:5460-10095000/dandadan-chapter-95",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10095000/dandadan-chapter-95",
         "title": "Chapter 95",
         "chapter": "95",
         "volume": "",
@@ -5483,12 +5493,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10095000/dandadan-chapter-95"
       },
       {
         "id": "mangapill:5460-10094000/dandadan-chapter-94",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10094000/dandadan-chapter-94",
         "title": "Chapter 94",
         "chapter": "94",
         "volume": "",
@@ -5523,12 +5533,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10094000/dandadan-chapter-94"
       },
       {
         "id": "mangapill:5460-10093000/dandadan-chapter-93",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10093000/dandadan-chapter-93",
         "title": "Chapter 93",
         "chapter": "93",
         "volume": "",
@@ -5562,12 +5572,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10093000/dandadan-chapter-93"
       },
       {
         "id": "mangahere:dandadan/c092.5",
-        "provider": "mangahere",
-        "providerChapterId": "dandadan/c092.5",
         "title": "Ch.092.5",
         "chapter": "92.5",
         "volume": "",
@@ -5586,12 +5596,60 @@
         "publishedAt": "Feb 09,2023",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "dandadan/c092.5"
+      },
+      {
+        "id": "comick:dandadan/NMYXAqf-chapter-92.4-en",
+        "provider": "comick",
+        "providerChapterId": "dandadan/NMYXAqf-chapter-92.4-en",
+        "title": "",
+        "chapter": "92.4",
+        "volume": "",
+        "language": "en",
+        "pages": 4,
+        "pageUrls": [
+          "https://cdn2.comicknew.pictures/dandadan/0_92.4/en/64be7829/0.webp",
+          "https://cdn2.comicknew.pictures/dandadan/0_92.4/en/64be7829/1.webp",
+          "https://cdn2.comicknew.pictures/dandadan/0_92.4/en/64be7829/2.webp",
+          "https://cdn2.comicknew.pictures/dandadan/0_92.4/en/64be7829/3.webp"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2026-04-06T17:33:00.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
+        "sourceType": "fallback_reader"
+      },
+      {
+        "id": "comick:dandadan/NBlrBHF-chapter-92.3-en",
+        "provider": "comick",
+        "providerChapterId": "dandadan/NBlrBHF-chapter-92.3-en",
+        "title": "",
+        "chapter": "92.3",
+        "volume": "",
+        "language": "en",
+        "pages": 4,
+        "pageUrls": [
+          "https://cdn2.comicknew.pictures/dandadan/0_92.3/en/64be7829/0.webp",
+          "https://cdn2.comicknew.pictures/dandadan/0_92.3/en/64be7829/1.webp",
+          "https://cdn2.comicknew.pictures/dandadan/0_92.3/en/64be7829/2.webp",
+          "https://cdn2.comicknew.pictures/dandadan/0_92.3/en/64be7829/3.webp"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2026-03-30T18:01:57.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
         "sourceType": "fallback_reader"
       },
       {
         "id": "mangahere:dandadan/c092.1",
-        "provider": "mangahere",
-        "providerChapterId": "dandadan/c092.1",
         "title": "Ch.092.1",
         "chapter": "92.1",
         "volume": "",
@@ -5610,12 +5668,12 @@
         "publishedAt": "Feb 21,2023",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "dandadan/c092.1"
       },
       {
         "id": "mangapill:5460-10092000/dandadan-chapter-92",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10092000/dandadan-chapter-92",
         "title": "Chapter 92",
         "chapter": "92",
         "volume": "",
@@ -5650,12 +5708,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10092000/dandadan-chapter-92"
       },
       {
         "id": "mangapill:5460-10091000/dandadan-chapter-91",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10091000/dandadan-chapter-91",
         "title": "Chapter 91",
         "chapter": "91",
         "volume": "",
@@ -5688,12 +5746,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10091000/dandadan-chapter-91"
       },
       {
         "id": "mangapill:5460-10090000/dandadan-chapter-90",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10090000/dandadan-chapter-90",
         "title": "Chapter 90",
         "chapter": "90",
         "volume": "",
@@ -5726,12 +5784,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10090000/dandadan-chapter-90"
       },
       {
         "id": "mangahere:dandadan/c089.5",
-        "provider": "mangahere",
-        "providerChapterId": "dandadan/c089.5",
         "title": "Ch.089.5",
         "chapter": "89.5",
         "volume": "",
@@ -5753,12 +5811,12 @@
         "publishedAt": "Jul 20,2024",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "dandadan/c089.5"
       },
       {
         "id": "mangahere:dandadan/c089.1",
-        "provider": "mangahere",
-        "providerChapterId": "dandadan/c089.1",
         "title": "Ch.089.1",
         "chapter": "89.1",
         "volume": "",
@@ -5779,12 +5837,12 @@
         "publishedAt": "Jan 10,2023",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "dandadan/c089.1"
       },
       {
         "id": "mangapill:5460-10089000/dandadan-chapter-89",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10089000/dandadan-chapter-89",
         "title": "Chapter 89",
         "chapter": "89",
         "volume": "",
@@ -5819,12 +5877,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10089000/dandadan-chapter-89"
       },
       {
         "id": "mangapill:5460-10088000/dandadan-chapter-88",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10088000/dandadan-chapter-88",
         "title": "Chapter 88",
         "chapter": "88",
         "volume": "",
@@ -5858,12 +5916,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10088000/dandadan-chapter-88"
       },
       {
         "id": "mangapill:5460-10087000/dandadan-chapter-87",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10087000/dandadan-chapter-87",
         "title": "Chapter 87",
         "chapter": "87",
         "volume": "",
@@ -5897,12 +5955,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10087000/dandadan-chapter-87"
       },
       {
         "id": "mangapill:5460-10086000/dandadan-chapter-86",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10086000/dandadan-chapter-86",
         "title": "Chapter 86",
         "chapter": "86",
         "volume": "",
@@ -5936,12 +5994,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10086000/dandadan-chapter-86"
       },
       {
         "id": "mangapill:5460-10085000/dandadan-chapter-85",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10085000/dandadan-chapter-85",
         "title": "Chapter 85",
         "chapter": "85",
         "volume": "",
@@ -5974,12 +6032,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10085000/dandadan-chapter-85"
       },
       {
         "id": "mangapill:5460-10084000/dandadan-chapter-84",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10084000/dandadan-chapter-84",
         "title": "Chapter 84",
         "chapter": "84",
         "volume": "",
@@ -6013,12 +6071,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10084000/dandadan-chapter-84"
       },
       {
         "id": "mangapill:5460-10083000/dandadan-chapter-83",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10083000/dandadan-chapter-83",
         "title": "Chapter 83",
         "chapter": "83",
         "volume": "",
@@ -6052,12 +6110,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10083000/dandadan-chapter-83"
       },
       {
         "id": "mangapill:5460-10082000/dandadan-chapter-82",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10082000/dandadan-chapter-82",
         "title": "Chapter 82",
         "chapter": "82",
         "volume": "",
@@ -6090,12 +6148,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10082000/dandadan-chapter-82"
       },
       {
         "id": "mangapill:5460-10081000/dandadan-chapter-81",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10081000/dandadan-chapter-81",
         "title": "Chapter 81",
         "chapter": "81",
         "volume": "",
@@ -6129,12 +6187,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10081000/dandadan-chapter-81"
       },
       {
         "id": "mangapill:5460-10080000/dandadan-chapter-80",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10080000/dandadan-chapter-80",
         "title": "Chapter 80",
         "chapter": "80",
         "volume": "",
@@ -6169,12 +6227,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10080000/dandadan-chapter-80"
       },
       {
         "id": "mangapill:5460-10079000/dandadan-chapter-79",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10079000/dandadan-chapter-79",
         "title": "Chapter 79",
         "chapter": "79",
         "volume": "",
@@ -6213,12 +6271,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10079000/dandadan-chapter-79"
       },
       {
         "id": "mangapill:5460-10078000/dandadan-chapter-78",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10078000/dandadan-chapter-78",
         "title": "Chapter 78",
         "chapter": "78",
         "volume": "",
@@ -6253,12 +6311,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10078000/dandadan-chapter-78"
       },
       {
         "id": "mangapill:5460-10077000/dandadan-chapter-77",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10077000/dandadan-chapter-77",
         "title": "Chapter 77",
         "chapter": "77",
         "volume": "",
@@ -6293,12 +6351,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10077000/dandadan-chapter-77"
       },
       {
         "id": "mangapill:5460-10076000/dandadan-chapter-76",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10076000/dandadan-chapter-76",
         "title": "Chapter 76",
         "chapter": "76",
         "volume": "",
@@ -6340,12 +6398,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10076000/dandadan-chapter-76"
       },
       {
         "id": "mangapill:5460-10075000/dandadan-chapter-75",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10075000/dandadan-chapter-75",
         "title": "Chapter 75",
         "chapter": "75",
         "volume": "",
@@ -6378,12 +6436,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10075000/dandadan-chapter-75"
       },
       {
         "id": "mangapill:5460-10074000/dandadan-chapter-74",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10074000/dandadan-chapter-74",
         "title": "Chapter 74",
         "chapter": "74",
         "volume": "",
@@ -6417,12 +6475,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10074000/dandadan-chapter-74"
       },
       {
         "id": "mangapill:5460-10073000/dandadan-chapter-73",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10073000/dandadan-chapter-73",
         "title": "Chapter 73",
         "chapter": "73",
         "volume": "",
@@ -6455,12 +6513,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10073000/dandadan-chapter-73"
       },
       {
         "id": "mangapill:5460-10072000/dandadan-chapter-72",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10072000/dandadan-chapter-72",
         "title": "Chapter 72",
         "chapter": "72",
         "volume": "",
@@ -6495,12 +6553,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10072000/dandadan-chapter-72"
       },
       {
         "id": "mangapill:5460-10071000/dandadan-chapter-71",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10071000/dandadan-chapter-71",
         "title": "Chapter 71",
         "chapter": "71",
         "volume": "",
@@ -6535,12 +6593,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10071000/dandadan-chapter-71"
       },
       {
         "id": "mangapill:5460-10070000/dandadan-chapter-70",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10070000/dandadan-chapter-70",
         "title": "Chapter 70",
         "chapter": "70",
         "volume": "",
@@ -6576,12 +6634,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10070000/dandadan-chapter-70"
       },
       {
         "id": "mangapill:5460-10069000/dandadan-chapter-69",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10069000/dandadan-chapter-69",
         "title": "Chapter 69",
         "chapter": "69",
         "volume": "",
@@ -6616,12 +6674,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10069000/dandadan-chapter-69"
       },
       {
         "id": "mangapill:5460-10068000/dandadan-chapter-68",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10068000/dandadan-chapter-68",
         "title": "Chapter 68",
         "chapter": "68",
         "volume": "",
@@ -6660,12 +6718,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10068000/dandadan-chapter-68"
       },
       {
         "id": "mangapill:5460-10067000/dandadan-chapter-67",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10067000/dandadan-chapter-67",
         "title": "Chapter 67",
         "chapter": "67",
         "volume": "",
@@ -6707,12 +6765,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10067000/dandadan-chapter-67"
       },
       {
         "id": "mangapill:5460-10066000/dandadan-chapter-66",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10066000/dandadan-chapter-66",
         "title": "Chapter 66",
         "chapter": "66",
         "volume": "",
@@ -6746,12 +6804,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10066000/dandadan-chapter-66"
       },
       {
         "id": "mangapill:5460-10065000/dandadan-chapter-65",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10065000/dandadan-chapter-65",
         "title": "Chapter 65",
         "chapter": "65",
         "volume": "",
@@ -6785,12 +6843,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10065000/dandadan-chapter-65"
       },
       {
         "id": "mangapill:5460-10064000/dandadan-chapter-64",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10064000/dandadan-chapter-64",
         "title": "Chapter 64",
         "chapter": "64",
         "volume": "",
@@ -6825,12 +6883,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10064000/dandadan-chapter-64"
       },
       {
         "id": "mangapill:5460-10063000/dandadan-chapter-63",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10063000/dandadan-chapter-63",
         "title": "Chapter 63",
         "chapter": "63",
         "volume": "",
@@ -6865,12 +6923,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10063000/dandadan-chapter-63"
       },
       {
         "id": "mangapill:5460-10062000/dandadan-chapter-62",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10062000/dandadan-chapter-62",
         "title": "Chapter 62",
         "chapter": "62",
         "volume": "",
@@ -6904,12 +6962,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10062000/dandadan-chapter-62"
       },
       {
         "id": "mangapill:5460-10061000/dandadan-chapter-61",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10061000/dandadan-chapter-61",
         "title": "Chapter 61",
         "chapter": "61",
         "volume": "",
@@ -6944,12 +7002,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10061000/dandadan-chapter-61"
       },
       {
         "id": "mangapill:5460-10060000/dandadan-chapter-60",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10060000/dandadan-chapter-60",
         "title": "Chapter 60",
         "chapter": "60",
         "volume": "",
@@ -6983,12 +7041,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10060000/dandadan-chapter-60"
       },
       {
         "id": "mangapill:5460-10059000/dandadan-chapter-59",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10059000/dandadan-chapter-59",
         "title": "Chapter 59",
         "chapter": "59",
         "volume": "",
@@ -7027,12 +7085,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10059000/dandadan-chapter-59"
       },
       {
         "id": "mangapill:5460-10058000/dandadan-chapter-58",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10058000/dandadan-chapter-58",
         "title": "Chapter 58",
         "chapter": "58",
         "volume": "",
@@ -7071,12 +7129,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10058000/dandadan-chapter-58"
       },
       {
         "id": "mangapill:5460-10057000/dandadan-chapter-57",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10057000/dandadan-chapter-57",
         "title": "Chapter 57",
         "chapter": "57",
         "volume": "",
@@ -7110,12 +7168,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10057000/dandadan-chapter-57"
       },
       {
         "id": "mangapill:5460-10056000/dandadan-chapter-56",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10056000/dandadan-chapter-56",
         "title": "Chapter 56",
         "chapter": "56",
         "volume": "",
@@ -7152,12 +7210,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10056000/dandadan-chapter-56"
       },
       {
         "id": "mangapill:5460-10055000/dandadan-chapter-55",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10055000/dandadan-chapter-55",
         "title": "Chapter 55",
         "chapter": "55",
         "volume": "",
@@ -7192,12 +7250,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10055000/dandadan-chapter-55"
       },
       {
         "id": "mangapill:5460-10054000/dandadan-chapter-54",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10054000/dandadan-chapter-54",
         "title": "Chapter 54",
         "chapter": "54",
         "volume": "",
@@ -7232,12 +7290,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10054000/dandadan-chapter-54"
       },
       {
         "id": "mangapill:5460-10053000/dandadan-chapter-53",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10053000/dandadan-chapter-53",
         "title": "Chapter 53",
         "chapter": "53",
         "volume": "",
@@ -7272,12 +7330,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10053000/dandadan-chapter-53"
       },
       {
         "id": "mangapill:5460-10052000/dandadan-chapter-52",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10052000/dandadan-chapter-52",
         "title": "Chapter 52",
         "chapter": "52",
         "volume": "",
@@ -7310,12 +7368,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10052000/dandadan-chapter-52"
       },
       {
         "id": "mangapill:5460-10051000/dandadan-chapter-51",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10051000/dandadan-chapter-51",
         "title": "Chapter 51",
         "chapter": "51",
         "volume": "",
@@ -7349,12 +7407,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10051000/dandadan-chapter-51"
       },
       {
         "id": "mangapill:5460-10050000/dandadan-chapter-50",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10050000/dandadan-chapter-50",
         "title": "Chapter 50",
         "chapter": "50",
         "volume": "",
@@ -7396,12 +7454,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10050000/dandadan-chapter-50"
       },
       {
         "id": "mangapill:5460-10049000/dandadan-chapter-49",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10049000/dandadan-chapter-49",
         "title": "Chapter 49",
         "chapter": "49",
         "volume": "",
@@ -7439,12 +7497,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10049000/dandadan-chapter-49"
       },
       {
         "id": "mangapill:5460-10048000/dandadan-chapter-48",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10048000/dandadan-chapter-48",
         "title": "Chapter 48",
         "chapter": "48",
         "volume": "",
@@ -7478,12 +7536,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10048000/dandadan-chapter-48"
       },
       {
         "id": "mangapill:5460-10047000/dandadan-chapter-47",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10047000/dandadan-chapter-47",
         "title": "Chapter 47",
         "chapter": "47",
         "volume": "",
@@ -7519,12 +7577,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10047000/dandadan-chapter-47"
       },
       {
         "id": "mangapill:5460-10046000/dandadan-chapter-46",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10046000/dandadan-chapter-46",
         "title": "Chapter 46",
         "chapter": "46",
         "volume": "",
@@ -7557,12 +7615,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10046000/dandadan-chapter-46"
       },
       {
         "id": "mangapill:5460-10045000/dandadan-chapter-45",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10045000/dandadan-chapter-45",
         "title": "Chapter 45",
         "chapter": "45",
         "volume": "",
@@ -7596,12 +7654,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10045000/dandadan-chapter-45"
       },
       {
         "id": "mangapill:5460-10044000/dandadan-chapter-44",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10044000/dandadan-chapter-44",
         "title": "Chapter 44",
         "chapter": "44",
         "volume": "",
@@ -7633,12 +7691,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10044000/dandadan-chapter-44"
       },
       {
         "id": "mangapill:5460-10043000/dandadan-chapter-43",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10043000/dandadan-chapter-43",
         "title": "Chapter 43",
         "chapter": "43",
         "volume": "",
@@ -7671,12 +7729,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10043000/dandadan-chapter-43"
       },
       {
         "id": "mangapill:5460-10042000/dandadan-chapter-42",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10042000/dandadan-chapter-42",
         "title": "Chapter 42",
         "chapter": "42",
         "volume": "",
@@ -7711,12 +7769,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10042000/dandadan-chapter-42"
       },
       {
         "id": "mangapill:5460-10041000/dandadan-chapter-41",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10041000/dandadan-chapter-41",
         "title": "Chapter 41",
         "chapter": "41",
         "volume": "",
@@ -7755,12 +7813,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10041000/dandadan-chapter-41"
       },
       {
         "id": "mangapill:5460-10040500/dandadan-chapter-40.5",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10040500/dandadan-chapter-40.5",
         "title": "Chapter 40.5",
         "chapter": "40.5",
         "volume": "",
@@ -7810,12 +7868,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10040500/dandadan-chapter-40.5"
       },
       {
         "id": "mangapill:5460-10040000/dandadan-chapter-40",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10040000/dandadan-chapter-40",
         "title": "Chapter 40",
         "chapter": "40",
         "volume": "",
@@ -7859,12 +7917,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10040000/dandadan-chapter-40"
       },
       {
         "id": "mangapill:5460-10039000/dandadan-chapter-39",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10039000/dandadan-chapter-39",
         "title": "Chapter 39",
         "chapter": "39",
         "volume": "",
@@ -7899,12 +7957,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10039000/dandadan-chapter-39"
       },
       {
         "id": "mangapill:5460-10038000/dandadan-chapter-38",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10038000/dandadan-chapter-38",
         "title": "Chapter 38",
         "chapter": "38",
         "volume": "",
@@ -7939,12 +7997,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10038000/dandadan-chapter-38"
       },
       {
         "id": "mangapill:5460-10037000/dandadan-chapter-37",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10037000/dandadan-chapter-37",
         "title": "Chapter 37",
         "chapter": "37",
         "volume": "",
@@ -7977,12 +8035,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10037000/dandadan-chapter-37"
       },
       {
         "id": "mangapill:5460-10036000/dandadan-chapter-36",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10036000/dandadan-chapter-36",
         "title": "Chapter 36",
         "chapter": "36",
         "volume": "",
@@ -8016,12 +8074,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10036000/dandadan-chapter-36"
       },
       {
         "id": "mangapill:5460-10035000/dandadan-chapter-35",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10035000/dandadan-chapter-35",
         "title": "Chapter 35",
         "chapter": "35",
         "volume": "",
@@ -8056,12 +8114,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10035000/dandadan-chapter-35"
       },
       {
         "id": "mangapill:5460-10034000/dandadan-chapter-34",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10034000/dandadan-chapter-34",
         "title": "Chapter 34",
         "chapter": "34",
         "volume": "",
@@ -8096,12 +8154,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10034000/dandadan-chapter-34"
       },
       {
         "id": "mangapill:5460-10033000/dandadan-chapter-33",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10033000/dandadan-chapter-33",
         "title": "Chapter 33",
         "chapter": "33",
         "volume": "",
@@ -8143,12 +8201,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10033000/dandadan-chapter-33"
       },
       {
         "id": "mangapill:5460-10032500/dandadan-chapter-32.5",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10032500/dandadan-chapter-32.5",
         "title": "Chapter 32.5",
         "chapter": "32.5",
         "volume": "",
@@ -8174,12 +8232,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10032500/dandadan-chapter-32.5"
       },
       {
         "id": "mangapill:5460-10032000/dandadan-chapter-32",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10032000/dandadan-chapter-32",
         "title": "Chapter 32",
         "chapter": "32",
         "volume": "",
@@ -8214,12 +8272,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10032000/dandadan-chapter-32"
       },
       {
         "id": "mangapill:5460-10031000/dandadan-chapter-31",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10031000/dandadan-chapter-31",
         "title": "Chapter 31",
         "chapter": "31",
         "volume": "",
@@ -8256,12 +8314,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10031000/dandadan-chapter-31"
       },
       {
         "id": "mangapill:5460-10030000/dandadan-chapter-30",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10030000/dandadan-chapter-30",
         "title": "Chapter 30",
         "chapter": "30",
         "volume": "",
@@ -8294,12 +8352,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10030000/dandadan-chapter-30"
       },
       {
         "id": "mangapill:5460-10029000/dandadan-chapter-29",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10029000/dandadan-chapter-29",
         "title": "Chapter 29",
         "chapter": "29",
         "volume": "",
@@ -8334,12 +8392,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10029000/dandadan-chapter-29"
       },
       {
         "id": "mangapill:5460-10028000/dandadan-chapter-28",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10028000/dandadan-chapter-28",
         "title": "Chapter 28",
         "chapter": "28",
         "volume": "",
@@ -8374,12 +8432,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10028000/dandadan-chapter-28"
       },
       {
         "id": "mangapill:5460-10027000/dandadan-chapter-27",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10027000/dandadan-chapter-27",
         "title": "Chapter 27",
         "chapter": "27",
         "volume": "",
@@ -8417,12 +8475,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10027000/dandadan-chapter-27"
       },
       {
         "id": "mangapill:5460-10026500/dandadan-chapter-26.5",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10026500/dandadan-chapter-26.5",
         "title": "Chapter 26.5",
         "chapter": "26.5",
         "volume": "",
@@ -8470,12 +8528,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10026500/dandadan-chapter-26.5"
       },
       {
         "id": "mangahere:dandadan/c026.1",
-        "provider": "mangahere",
-        "providerChapterId": "dandadan/c026.1",
         "title": "Ch.026.1",
         "chapter": "26.1",
         "volume": "",
@@ -8524,12 +8582,12 @@
         "publishedAt": "Nov 05,2024",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "dandadan/c026.1"
       },
       {
         "id": "mangapill:5460-10026000/dandadan-chapter-26",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10026000/dandadan-chapter-26",
         "title": "Chapter 26",
         "chapter": "26",
         "volume": "",
@@ -8564,12 +8622,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10026000/dandadan-chapter-26"
       },
       {
         "id": "mangapill:5460-10025000/dandadan-chapter-25",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10025000/dandadan-chapter-25",
         "title": "Chapter 25",
         "chapter": "25",
         "volume": "",
@@ -8603,12 +8661,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10025000/dandadan-chapter-25"
       },
       {
         "id": "mangapill:5460-10024000/dandadan-chapter-24",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10024000/dandadan-chapter-24",
         "title": "Chapter 24",
         "chapter": "24",
         "volume": "",
@@ -8655,12 +8713,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10024000/dandadan-chapter-24"
       },
       {
         "id": "mangapill:5460-10023000/dandadan-chapter-23",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10023000/dandadan-chapter-23",
         "title": "Chapter 23",
         "chapter": "23",
         "volume": "",
@@ -8708,12 +8766,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10023000/dandadan-chapter-23"
       },
       {
         "id": "mangapill:5460-10022000/dandadan-chapter-22",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10022000/dandadan-chapter-22",
         "title": "Chapter 22",
         "chapter": "22",
         "volume": "",
@@ -8747,12 +8805,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10022000/dandadan-chapter-22"
       },
       {
         "id": "mangapill:5460-10021000/dandadan-chapter-21",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10021000/dandadan-chapter-21",
         "title": "Chapter 21",
         "chapter": "21",
         "volume": "",
@@ -8785,12 +8843,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10021000/dandadan-chapter-21"
       },
       {
         "id": "mangapill:5460-10020000/dandadan-chapter-20",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10020000/dandadan-chapter-20",
         "title": "Chapter 20",
         "chapter": "20",
         "volume": "",
@@ -8823,12 +8881,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10020000/dandadan-chapter-20"
       },
       {
         "id": "mangahere:dandadan/c019.5",
-        "provider": "mangahere",
-        "providerChapterId": "dandadan/c019.5",
         "title": "Ch.019.5",
         "chapter": "19.5",
         "volume": "",
@@ -8850,12 +8908,12 @@
         "publishedAt": "Aug 14,2021",
         "externalUrl": null,
         "scanlationGroup": "MangaHere",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangahere",
+        "providerChapterId": "dandadan/c019.5"
       },
       {
         "id": "mangapill:5460-10019000/dandadan-chapter-19",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10019000/dandadan-chapter-19",
         "title": "Chapter 19",
         "chapter": "19",
         "volume": "",
@@ -8890,12 +8948,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10019000/dandadan-chapter-19"
       },
       {
         "id": "mangapill:5460-10018000/dandadan-chapter-18",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10018000/dandadan-chapter-18",
         "title": "Chapter 18",
         "chapter": "18",
         "volume": "",
@@ -8930,12 +8988,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10018000/dandadan-chapter-18"
       },
       {
         "id": "mangapill:5460-10017000/dandadan-chapter-17",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10017000/dandadan-chapter-17",
         "title": "Chapter 17",
         "chapter": "17",
         "volume": "",
@@ -8972,12 +9030,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10017000/dandadan-chapter-17"
       },
       {
         "id": "mangapill:5460-10016000/dandadan-chapter-16",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10016000/dandadan-chapter-16",
         "title": "Chapter 16",
         "chapter": "16",
         "volume": "",
@@ -9014,12 +9072,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10016000/dandadan-chapter-16"
       },
       {
         "id": "mangapill:5460-10015000/dandadan-chapter-15",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10015000/dandadan-chapter-15",
         "title": "Chapter 15",
         "chapter": "15",
         "volume": "",
@@ -9060,12 +9118,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10015000/dandadan-chapter-15"
       },
       {
         "id": "mangapill:5460-10014000/dandadan-chapter-14",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10014000/dandadan-chapter-14",
         "title": "Chapter 14",
         "chapter": "14",
         "volume": "",
@@ -9106,12 +9164,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10014000/dandadan-chapter-14"
       },
       {
         "id": "mangapill:5460-10013000/dandadan-chapter-13",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10013000/dandadan-chapter-13",
         "title": "Chapter 13",
         "chapter": "13",
         "volume": "",
@@ -9148,12 +9206,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10013000/dandadan-chapter-13"
       },
       {
         "id": "mangapill:5460-10012000/dandadan-chapter-12",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10012000/dandadan-chapter-12",
         "title": "Chapter 12",
         "chapter": "12",
         "volume": "",
@@ -9188,12 +9246,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10012000/dandadan-chapter-12"
       },
       {
         "id": "mangapill:5460-10011000/dandadan-chapter-11",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10011000/dandadan-chapter-11",
         "title": "Chapter 11",
         "chapter": "11",
         "volume": "",
@@ -9228,12 +9286,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10011000/dandadan-chapter-11"
       },
       {
         "id": "mangapill:5460-10010000/dandadan-chapter-10",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10010000/dandadan-chapter-10",
         "title": "Chapter 10",
         "chapter": "10",
         "volume": "",
@@ -9268,12 +9326,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10010000/dandadan-chapter-10"
       },
       {
         "id": "mangapill:5460-10009000/dandadan-chapter-9",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10009000/dandadan-chapter-9",
         "title": "Chapter 9",
         "chapter": "9",
         "volume": "",
@@ -9308,12 +9366,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10009000/dandadan-chapter-9"
       },
       {
         "id": "mangapill:5460-10008000/dandadan-chapter-8",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10008000/dandadan-chapter-8",
         "title": "Chapter 8",
         "chapter": "8",
         "volume": "",
@@ -9348,12 +9406,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10008000/dandadan-chapter-8"
       },
       {
         "id": "mangapill:5460-10007000/dandadan-chapter-7",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10007000/dandadan-chapter-7",
         "title": "Chapter 7",
         "chapter": "7",
         "volume": "",
@@ -9387,12 +9445,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10007000/dandadan-chapter-7"
       },
       {
         "id": "mangapill:5460-10006000/dandadan-chapter-6",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10006000/dandadan-chapter-6",
         "title": "Chapter 6",
         "chapter": "6",
         "volume": "",
@@ -9436,12 +9494,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10006000/dandadan-chapter-6"
       },
       {
         "id": "mangapill:5460-10005000/dandadan-chapter-5",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10005000/dandadan-chapter-5",
         "title": "Chapter 5",
         "chapter": "5",
         "volume": "",
@@ -9486,12 +9544,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10005000/dandadan-chapter-5"
       },
       {
         "id": "mangapill:5460-10004000/dandadan-chapter-4",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10004000/dandadan-chapter-4",
         "title": "Chapter 4",
         "chapter": "4",
         "volume": "",
@@ -9526,12 +9584,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10004000/dandadan-chapter-4"
       },
       {
         "id": "mangapill:5460-10003000/dandadan-chapter-3",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10003000/dandadan-chapter-3",
         "title": "Chapter 3",
         "chapter": "3",
         "volume": "",
@@ -9586,12 +9644,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10003000/dandadan-chapter-3"
       },
       {
         "id": "mangapill:5460-10002000/dandadan-chapter-2",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10002000/dandadan-chapter-2",
         "title": "Chapter 2",
         "chapter": "2",
         "volume": "",
@@ -9656,12 +9714,12 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
-        "sourceType": "fallback_reader"
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10002000/dandadan-chapter-2"
       },
       {
         "id": "mangapill:5460-10001000/dandadan-chapter-1",
-        "provider": "mangapill",
-        "providerChapterId": "5460-10001000/dandadan-chapter-1",
         "title": "Chapter 1",
         "chapter": "1",
         "volume": "",
@@ -9743,10 +9801,250 @@
         "publishedAt": null,
         "externalUrl": null,
         "scanlationGroup": "MangaPill",
+        "sourceType": "fallback_reader",
+        "provider": "mangapill",
+        "providerChapterId": "5460-10001000/dandadan-chapter-1"
+      },
+      {
+        "id": "comick:dandadan/LODpv-chapter-0-en",
+        "provider": "comick",
+        "providerChapterId": "dandadan/LODpv-chapter-0-en",
+        "title": ".Volume 01",
+        "chapter": "0",
+        "volume": "",
+        "language": "en",
+        "pages": 206,
+        "pageUrls": [
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/0.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/1.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/2.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/3.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/4.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/5.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/6.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/7.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/8.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/9.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/10.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/11.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/12.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/13.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/14.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/15.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/16.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/17.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/18.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/19.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/20.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/21.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/22.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/23.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/24.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/25.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/26.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/27.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/28.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/29.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/30.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/31.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/32.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/33.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/34.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/35.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/36.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/37.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/38.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/39.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/40.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/41.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/42.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/43.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/44.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/45.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/46.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/47.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/48.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/49.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/50.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/51.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/52.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/53.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/54.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/55.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/56.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/57.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/58.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/59.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/60.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/61.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/62.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/63.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/64.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/65.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/66.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/67.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/68.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/69.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/70.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/71.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/72.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/73.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/74.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/75.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/76.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/77.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/78.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/79.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/80.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/81.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/82.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/83.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/84.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/85.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/86.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/87.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/88.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/89.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/90.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/91.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/92.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/93.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/94.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/95.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/96.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/97.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/98.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/99.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/100.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/101.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/102.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/103.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/104.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/105.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/106.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/107.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/108.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/109.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/110.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/111.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/112.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/113.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/114.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/115.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/116.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/117.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/118.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/119.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/120.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/121.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/122.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/123.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/124.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/125.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/126.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/127.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/128.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/129.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/130.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/131.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/132.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/133.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/134.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/135.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/136.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/137.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/138.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/139.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/140.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/141.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/142.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/143.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/144.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/145.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/146.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/147.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/148.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/149.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/150.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/151.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/152.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/153.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/154.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/155.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/156.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/157.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/158.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/159.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/160.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/161.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/162.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/163.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/164.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/165.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/166.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/167.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/168.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/169.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/170.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/171.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/172.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/173.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/174.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/175.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/176.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/177.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/178.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/179.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/180.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/181.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/182.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/183.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/184.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/185.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/186.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/187.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/188.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/189.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/190.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/191.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/192.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/193.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/194.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/195.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/196.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/197.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/198.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/199.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/200.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/201.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/202.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/203.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/204.webp",
+          "https://cdn1.comicknew.pictures/dandadan/0_0.0/en/ae440ae5/205.webp"
+        ],
+        "imageHeaders": {
+          "Referer": "https://comick.io/",
+          "User-Agent": "Mozilla/5.0"
+        },
+        "publishedAt": "2025-08-12T00:51:54.000000Z",
+        "externalUrl": null,
+        "scanlationGroup": "ComicK",
         "sourceType": "fallback_reader"
       }
     ],
     "ar": [
+      {
+        "id": "d9b0ee50-4600-477e-b828-8dec28496ec4",
+        "title": "",
+        "chapter": "231.1",
+        "volume": "",
+        "language": "ar",
+        "pages": 1,
+        "publishedAt": "2026-04-14T16:50:27+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Akatsushin Subs",
+        "sourceType": "reader"
+      },
       {
         "id": "ccaadbf9-dc0e-4670-bc1d-3e5c7e9b403f",
         "title": "ما الذي يحدث هنا؟",
@@ -9833,10 +10131,10 @@
       }
     ]
   },
-  "chapterSourceProvider": "mangapill",
-  "chapterSourceId": "5460/dandadan",
+  "chapterSourceProvider": "comick",
+  "chapterSourceId": "dandadan",
   "chapterSourceTitle": "Dandadan",
-  "englishFallbackProvider": "mangapill",
+  "englishFallbackProvider": "comick",
   "englishFallbackProviderTitle": "Dandadan",
-  "englishFallbackChapterCount": 235
+  "englishFallbackChapterCount": 1187
 }
