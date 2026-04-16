@@ -465,10 +465,11 @@ async function backfillMangaChapters() {
 
   try {
     let currentIndex = 0;
+    const totalSelected = selected.length;
     const totalRemaining = candidates.length;
     for (const { item } of selected) {
       currentIndex++;
-      process.env.MANGA_PROGRESS_LABEL = `[ ${currentIndex} / ${totalRemaining} ]`;
+      process.env.MANGA_PROGRESS_LABEL = `[ ${currentIndex} / ${totalSelected} (${totalRemaining}) ]`;
       try {
         process.env.MANGA_TARGET_IDS = item.chapterIndexId;
         await fetchMangaChapters();
