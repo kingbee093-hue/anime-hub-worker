@@ -8,7 +8,7 @@ const {
 } = require('../utils/mangaBackfillData');
 const fetchMangaChapters = require('./fetchMangaChapters');
 
-const CHAPTER_BATCH_SIZE = Number(process.env.MANGA_BACKFILL_CHAPTER_BATCH || 12);
+const CHAPTER_BATCH_SIZE = Number(process.env.MANGA_BACKFILL_CHAPTER_BATCH || 50);
 const CHAPTER_STALE_HOURS = Number(process.env.MANGA_BACKFILL_CHAPTER_STALE_HOURS || 24 * 14);
 const FORCE_ALL = process.env.MANGA_BACKFILL_FORCE_ALL === '1';
 const FAILURE_COOLDOWN_HOURS = Number(process.env.MANGA_BACKFILL_FAILURE_COOLDOWN_HOURS || 24);
