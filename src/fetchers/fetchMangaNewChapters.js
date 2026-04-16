@@ -24,14 +24,14 @@ const MANGADEX_API = 'https://api.mangadex.org';
 const FRESH_HOURS = Number(process.env.MANGA_NEW_CHAPTERS_FRESH_HOURS || 48);
 const MAX_ATTEMPTS = Number(process.env.MANGA_NEW_CHAPTERS_MAX_ATTEMPTS || 4);
 const RETRY_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_RETRY_DELAY_MS || 3000);
-const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 650); // Increased safety margin
+const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 350);
 const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
 const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 10));
 const FAILURE_COOLDOWN_HOURS = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS || 12));
 const MATCHER_VERSION = Number(process.env.MANGA_NEW_CHAPTERS_MATCHER_VERSION || 2);
-const REQUEST_HOST_COOLDOWN_MS = Math.max(1000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_COOLDOWN_MS || 15000));
+const REQUEST_HOST_COOLDOWN_MS = Math.max(1000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_COOLDOWN_MS || 12000));
 const REQUEST_HOST_CIRCUIT_THRESHOLD = Math.max(2, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_THRESHOLD || 4));
 const REQUEST_HOST_CIRCUIT_MS = Math.max(10000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_MS || 180000));
 const REQUEST_HOST_PREWAIT_MAX_MS = Math.max(5000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_PREWAIT_MAX_MS || 90000));
@@ -116,6 +116,7 @@ function shuffleArray(array) {
 }
 
 function getRandomFeedPageSize() {
+  // Randomize between 70 and 100 to change request signature
   return Math.floor(Math.random() * 31) + 70;
 }
 
@@ -200,17 +201,12 @@ function normalizeSearchText(value) {
     .trim();
 }
 
-function isMostlyASCII(str) {
+function isPureASCII(str) {
   return /^[\x00-\x7F]*$/.test(str);
 }
 
 function buildSearchTitleVariants(titles) {
   const variants = new Set();
-  const asciiTitles = (titles || []).filter(isMostlyASCII);
-  const nonAsciiTitles = (titles || []).filter(t => !isMostlyASCII(t));
-  
-  // Prioritize ASCII titles to avoid Cloudflare WAF issues with Japanese chars in queries
-  const sortedTitles = [...asciiTitles, ...nonAsciiTitles];
 
   function addVariant(value) {
     const raw = String(value || '').trim();
@@ -220,6 +216,7 @@ function buildSearchTitleVariants(titles) {
     const stripped = [
       raw.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim(),
       raw.replace(/\[[^\]]*\]/g, ' ').replace(/\s+/g, ' ').trim(),
+      raw.replace(/["'`“”‘’]/g, '').trim(),
     ];
 
     for (const candidate of stripped) {
@@ -227,9 +224,18 @@ function buildSearchTitleVariants(titles) {
         variants.add(candidate);
       }
     }
+
+    const separators = [' : ', ':', ' - ', '-', ' ~ ', '~', ' @', '@', ' | ', '|'];
+    for (const separator of separators) {
+      if (!raw.includes(separator)) continue;
+      const left = raw.split(separator)[0].trim();
+      const right = raw.split(separator).slice(1).join(separator).trim();
+      if (left.length >= 3) variants.add(left);
+      if (right.length >= 3 && right.split(/\s+/).length <= 6) variants.add(right);
+    }
   }
 
-  for (const title of sortedTitles) {
+  for (const title of titles || []) {
     addVariant(title);
   }
 
@@ -500,20 +506,11 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
       markRequestSuccess(hostKey);
       return response;
     } catch (error) {
-      const status = error.response ? error.response.status : 0;
-      const statusText = error.response ? `[${status}]` : '[Network]';
-      
-      console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt + 1}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
-      
-      if (status === 404) {
-        console.error(`  Endpoint returned 404 for ${url}. Skipping item.`);
-        throw error; // Fatal for this attempt
-      }
-
       attempt += 1;
+      const statusText = error.response ? `[${error.response.status}]` : '[Network]';
+      console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
       const waitTimeMs = computeRetryDelayMs(attempt, error);
       markRequestFailure(hostKey, error, waitTimeMs);
-
       if (attempt >= MANGADEX_REQUEST_RETRIES) {
         throw error;
       }
@@ -521,6 +518,7 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
       await delay(waitTimeMs);
     }
   }
+  throw new Error(`${label} failed after ${MANGADEX_REQUEST_RETRIES} attempts`);
 }
 
 function summarizeRecentItem(recentItem, extra = {}) {
@@ -697,6 +695,7 @@ async function fetchRecentMangaDexFeed() {
   let fetchedPages = 0;
 
   for (let page = 0; page < MAX_FEED_PAGES; page++) {
+    const offset = page * 100; // Original was FEED_PAGE_SIZE, we use 100 for safety but limit loop
     const limit = getRandomFeedPageSize();
     
     const response = await requestJsonWithRetries(`${MANGADEX_API}/chapter`, {
@@ -804,15 +803,33 @@ async function fetchAniListMediaByIds({ anilistId = null, malId = null }) {
 }
 
 async function searchAniListMediaByTitles(titles, year) {
-  const uniqueTitles = shuffleArray(buildSearchTitleVariants(titles)).slice(0, 3);
+  // Prioritize ASCII titles to avoid Cloudflare WAF issues with Japanese characters
+  // Also reduce variants to 1 for Discovery to minimize rate limit pressure
+  const variants = buildSearchTitleVariants(titles);
+  const asciiVariants = variants.filter(isPureASCII);
+  const nonAsciiVariants = variants.filter(v => !isPureASCII(v));
+  
+  const searchCandidates = [
+    ...shuffleArray(asciiVariants), 
+    ...shuffleArray(nonAsciiVariants)
+  ].slice(0, 2); // Reduced from 3 to 2 to save requests
+
   let best = null;
   let bestScore = -1;
 
-  for (const title of uniqueTitles) {
+  for (const title of searchCandidates) {
+    if (!title || title.length < 2) continue;
+    
+    // Explicitly log for diagnostics since we see rejections
+    console.log(`[AniList] Searching with term: "${title}"`);
+
     const data = await fetchGraphQL(ANILIST_MANGA_SEARCH_QUERY, {
       search: title,
       perPage: SEARCH_RESULTS_LIMIT,
     });
+    
+    if (!data) continue; // Skip if request failed or was blocked
+
     const candidates = Array.isArray(data?.Page?.media) ? data.Page.media : [];
 
     for (const media of candidates) {
@@ -822,7 +839,7 @@ async function searchAniListMediaByTitles(titles, year) {
         continue;
       }
 
-      const score = buildTitleScore(media, uniqueTitles, year);
+      const score = buildTitleScore(media, variants, year);
       if (score > bestScore) {
         best = media;
         bestScore = score;
@@ -832,32 +849,28 @@ async function searchAniListMediaByTitles(titles, year) {
     if (bestScore >= 120) {
       break;
     }
+    
+    // Safety delay between title variations
+    await delay(1200);
   }
 
   return bestScore >= 45 ? best : null;
 }
 
 async function fetchChapterPages(chapterId) {
-  try {
-    const response = await requestJsonWithRetries(`${MANGADEX_API}/at-home/server/${chapterId}`, {
-      timeout: 30000,
-    }, `mangadex chapter pages ${chapterId}`);
+  const response = await requestJsonWithRetries(`${MANGADEX_API}/at-home/server/${chapterId}`, {
+    timeout: 30000,
+  }, `mangadex chapter pages ${chapterId}`);
 
-    const baseUrl = String(response.data?.baseUrl || '');
-    const chapter = response.data?.chapter || {};
-    const hash = String(chapter.hash || '');
-    const files = Array.isArray(chapter.data) ? chapter.data : [];
-    if (!baseUrl || !hash || files.length === 0) {
-      return [];
-    }
-
-    return files.map((file) => `${baseUrl}/data/${hash}/${file}`);
-  } catch (error) {
-    if (error.response?.status === 404) {
-      return []; // Return empty on 404
-    }
-    throw error;
+  const baseUrl = String(response.data?.baseUrl || '');
+  const chapter = response.data?.chapter || {};
+  const hash = String(chapter.hash || '');
+  const files = Array.isArray(chapter.data) ? chapter.data : [];
+  if (!baseUrl || !hash || files.length === 0) {
+    return [];
   }
+
+  return files.map((file) => `${baseUrl}/data/${hash}/${file}`);
 }
 
 function writeDiscoveredChapterIndex(entry, recentItem, pageUrls, manifest) {
@@ -901,7 +914,6 @@ function writeDiscoveredChapterIndex(entry, recentItem, pageUrls, manifest) {
     availableLanguages: chapterIndex.availableLanguages,
     counts: chapterIndex.counts,
     englishFallbackProvider: null,
-    englishFallbackProviderTitle: null,
     englishFallbackChapterCount: null,
     latestKnownChapterNumber: recentItem.chapter || null,
     latestKnownChapterNumberInt: latestKnownChapterNumber,
@@ -955,76 +967,69 @@ function buildCatalogEntryFromAniList(media, mangadexDetails, recentItem) {
 }
 
 async function discoverCatalogEntryForRecentItem(recentItem, caches) {
-  try {
-    const mangadexDetails = await fetchMangaDexMangaDetails(recentItem.mangaId, caches.mangadexDetails);
-    if (!mangadexDetails?.attributes) {
-      return { reason: 'mangadex_details_missing' };
-    }
-
-    const titles = extractMangadexTitles(mangadexDetails);
-    const year = Number(mangadexDetails.attributes?.year || 0) || null;
-
-    let media = null;
-    const linkedAniListId = extractAniListLinkId(mangadexDetails);
-    const linkedMalId = extractMalLinkId(mangadexDetails);
-    if (linkedAniListId) {
-      media = await fetchAniListMediaByIds({ anilistId: linkedAniListId });
-    }
-
-    if (!media && linkedMalId) {
-      media = await fetchAniListMediaByIds({ malId: linkedMalId });
-    }
-
-    if (!media) {
-      media = await searchAniListMediaByTitles(titles, year);
-    }
-
-    if (!media) {
-      return {
-        reason: 'anilist_match_not_found',
-        candidateTitles: titles.slice(0, 6),
-        year,
-      };
-    }
-
-    const adult = isAdultContent(media);
-    const manga = isManga(media);
-    if (adult.blocked || !manga.allowed) {
-      return {
-        reason: adult.blocked ? 'adult_blocked' : 'non_manga_filtered',
-        anilistId: media?.id || null,
-      };
-    }
-
-    const entry = buildCatalogEntryFromAniList(media, mangadexDetails, recentItem);
-    if (!entry) {
-      return {
-        reason: 'catalog_entry_build_failed',
-        anilistId: media?.id || null,
-      };
-    }
-
-    const pageUrls = await fetchChapterPages(recentItem.chapterId);
-    if (!Array.isArray(pageUrls) || pageUrls.length === 0) {
-      return {
-        reason: 'chapter_pages_missing',
-        anilistId: media?.id || null,
-        entry,
-      };
-    }
-
-    return {
-      entry,
-      pageUrls,
-      title: entry.title,
-      reason: null,
-    };
-  } catch (error) {
-    if (error.response?.status === 404) {
-      return { reason: 'api_404' };
-    }
-    throw error;
+  const mangadexDetails = await fetchMangaDexMangaDetails(recentItem.mangaId, caches.mangadexDetails);
+  if (!mangadexDetails?.attributes) {
+    return { reason: 'mangadex_details_missing' };
   }
+
+  const titles = extractMangadexTitles(mangadexDetails);
+  const year = Number(mangadexDetails.attributes?.year || 0) || null;
+
+  let media = null;
+  const linkedAniListId = extractAniListLinkId(mangadexDetails);
+  const linkedMalId = extractMalLinkId(mangadexDetails);
+  if (linkedAniListId) {
+    media = await fetchAniListMediaByIds({ anilistId: linkedAniListId });
+  }
+
+  if (!media && linkedMalId) {
+    media = await fetchAniListMediaByIds({ malId: linkedMalId });
+  }
+
+  if (!media) {
+    media = await searchAniListMediaByTitles(titles, year);
+  }
+
+  if (!media) {
+    return {
+      reason: 'anilist_match_not_found',
+      candidateTitles: titles.slice(0, 6),
+      year,
+    };
+  }
+
+  const adult = isAdultContent(media);
+  const manga = isManga(media);
+  if (adult.blocked || !manga.allowed) {
+    return {
+      reason: adult.blocked ? 'adult_blocked' : 'non_manga_filtered',
+      anilistId: media?.id || null,
+    };
+  }
+
+  const entry = buildCatalogEntryFromAniList(media, mangadexDetails, recentItem);
+  if (!entry) {
+    return {
+      reason: 'catalog_entry_build_failed',
+      anilistId: media?.id || null,
+    };
+  }
+
+  const pageUrls = await fetchChapterPages(recentItem.chapterId);
+  if (!Array.isArray(pageUrls) || pageUrls.length === 0) {
+    return {
+      reason: 'chapter_pages_missing',
+      anilistId: media?.id || null,
+      entry,
+    };
+  }
+
+  return {
+    entry,
+    pageUrls,
+    title: entry.title,
+    reason: null,
+  };
 }
 
 function writeCatalogArtifacts(catalogEntries) {
@@ -1066,7 +1071,7 @@ function writeCatalogArtifacts(catalogEntries) {
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_page_${pageNumber}`, pageItems);
   }
 
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_lookup`, lookup);
+  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_lookup}`, lookup);
 
   for (const [genre, items] of genreBuckets.entries()) {
     const sortedItems = sortCatalog(
@@ -1090,7 +1095,6 @@ function writeCatalogArtifacts(catalogEntries) {
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/shards/${shardKey}`, shardItems);
   }
 
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/manifest`, searchManifest);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
   writeJsonIfChanged(
     CONFIG.API_PATHS.MANGA_RELEASING,
@@ -1132,6 +1136,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
     skippedAlreadyKnown: [],
   };
 
+  // Shuffle feed items to change processing pattern each run
   const shuffledItems = shuffleArray(recentFeedItems);
 
   for (const recentItem of shuffledItems) {
@@ -1159,7 +1164,6 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
 
     attempted += 1;
     try {
-      console.log(`[Discover] Processing: "${recentItem.title || recentItem.mangaId}"...`);
       const discovered = await discoverCatalogEntryForRecentItem(recentItem, caches);
       if (!discovered?.entry) {
         discoveryState[recentKey] = {
@@ -1357,9 +1361,14 @@ async function collectFreshNewChapterItems() {
 
 async function fetchMangaNewChapters() {
   console.log('========================================');
-  console.log('REFRESHING MANGA NEW CHAPTERS [ULTRA-STEALTH]');
+  console.log('REFRESHING MANGA NEW CHAPTERS [STEALTH MODE]');
   console.log('========================================');
-  
+  pruneRequestHealthState();
+  const requestHealthBefore = getRequestHealthSummary();
+  console.log(
+    `Request health before run: hosts=${requestHealthBefore.hosts}, cooling=${requestHealthBefore.cooling}, open-circuits=${requestHealthBefore.openCircuits}.`,
+  );
+
   const outputPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_NEW_CHAPTERS}.json`);
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
@@ -1374,6 +1383,16 @@ async function fetchMangaNewChapters() {
       console.log(
         `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, feed-pages=${latestAttempt.feedPages}, feed-rows=${latestAttempt.feedRows}, fresh-feed=${latestAttempt.freshFeedItems}, discovered=${latestAttempt.discoveredCount}, matched=${latestAttempt.matchedCount}, limit=${latestAttempt.sectionLimit}, section=${latestAttempt.items.length}.`,
       );
+
+      console.log(
+        `Discovery details: already-known=${latestAttempt.discoveryAlreadyKnown}, failed=${latestAttempt.discoveryFailedCount}, skipped-recent-failure=${latestAttempt.discoverySkippedRecentFailure}, skipped-limit=${latestAttempt.discoverySkippedByLimit}.`,
+      );
+
+      if (latestAttempt.discoverySkippedByLimit > 0) {
+        console.log(
+          `Discovery limit reached in this run: skipped ${latestAttempt.discoverySkippedByLimit} unmatched recent title(s) after ${latestAttempt.discoveryAttempts} attempts.`,
+        );
+      }
 
       if (latestAttempt.items.length > 0) {
         if (attempt > 1) {
@@ -1409,7 +1428,15 @@ async function fetchMangaNewChapters() {
     writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
     console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
   } finally {
-    // End run cleanup
+    pruneRequestHealthState();
+    if (requestHealthDirty) {
+      writeRequestHealth(requestHealthState);
+      requestHealthDirty = false;
+    }
+    const requestHealthAfter = getRequestHealthSummary();
+    console.log(
+      `Request health after run: hosts=${requestHealthAfter.hosts}, cooling=${requestHealthAfter.cooling}, open-circuits=${requestHealthAfter.openCircuits}.`,
+    );
   }
 }
 
