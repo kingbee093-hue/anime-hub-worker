@@ -34,12 +34,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Refresh Manga Catalog (Direct AniList Pull)
-        env:
-          MANGA_SKIP_CHAPTER_INDEX: '1'
-          MANGA_FORCE_FULL_REFRESH: '0'
-        run: npm run fetch:manga
-
       - name: Build New Chapters Feed (48h Window)
         env:
           MANGA_NEW_CHAPTERS_FRESH_HOURS: '48'
