@@ -468,7 +468,7 @@ async function backfillMangaChapters() {
     const totalRemaining = candidates.length;
     for (const { item } of selected) {
       currentIndex++;
-      console.log(`\n[ ${currentIndex} / ${totalRemaining} ] Processing: ${item.title}`);
+      process.env.MANGA_PROGRESS_LABEL = `[ ${currentIndex} / ${totalRemaining} ]`;
       try {
         process.env.MANGA_TARGET_IDS = item.chapterIndexId;
         await fetchMangaChapters();

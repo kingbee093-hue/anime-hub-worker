@@ -1253,8 +1253,9 @@ async function buildProviderOnlyEnglishChapters(
 }
 
 async function fetchMangaChapters() {
+  const progressLabel = process.env.MANGA_PROGRESS_LABEL ? ` ${process.env.MANGA_PROGRESS_LABEL}` : '';
   console.log('========================================');
-  console.log('BUILDING: Manga Chapter Index');
+  console.log(`BUILDING: Manga Chapter Index${progressLabel}`);
   console.log('========================================');
 
   const forceFullRefresh = isForceFullRefresh();
