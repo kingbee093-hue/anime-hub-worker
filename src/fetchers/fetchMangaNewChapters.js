@@ -4,7 +4,13 @@ const axios = require('axios');
 
 const CONFIG = require('../config/constants');
 const { delay, convertMangaToFirestoreFormat } = require('../utils/formatters');
-const { getSecureHeaders, computeRetryDelayMs, fetchGraphQL } = require('../utils/fetchHelper');
+const { 
+  getSecureHeaders, 
+  computeRetryDelayMs, 
+  getStealthDelay, 
+  performCamouflageRequest,
+  fetchGraphQL 
+} = require('../utils/fetchHelper');
 const { isAdultContent, isManga } = require('../utils/filters');
 const {
   getMangaCatalogEntries,
@@ -20,7 +26,6 @@ const MAX_ATTEMPTS = Number(process.env.MANGA_NEW_CHAPTERS_MAX_ATTEMPTS || 4);
 const RETRY_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_RETRY_DELAY_MS || 3000);
 const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 350);
 const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
-const FEED_PAGE_SIZE = Math.min(Number(process.env.MANGA_NEW_CHAPTERS_FEED_PAGE_SIZE || 100), 100);
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
 const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 10));
@@ -98,6 +103,21 @@ query ($search: String, $perPage: Int) {
   }
 }
 `;
+
+/** 🚀 STEALTH UTILITIES 🚀 **/
+
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+function getRandomFeedPageSize() {
+  return Math.floor(Math.random() * 31) + 70;
+}
 
 function readJsonFile(filePath, fallback) {
   try {
@@ -469,6 +489,8 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
   while (attempt < MANGADEX_REQUEST_RETRIES) {
     try {
       await waitForHostAvailability(hostKey, label);
+      await performCamouflageRequest();
+
       const response = await axios.get(url, {
         ...options,
         headers: {
@@ -668,11 +690,12 @@ async function fetchRecentMangaDexFeed() {
   let fetchedPages = 0;
 
   for (let page = 0; page < MAX_FEED_PAGES; page++) {
-    const offset = page * FEED_PAGE_SIZE;
+    const limit = getRandomFeedPageSize();
+    
     const response = await requestJsonWithRetries(`${MANGADEX_API}/chapter`, {
       params: {
-        limit: FEED_PAGE_SIZE,
-        offset,
+        limit: limit,
+        offset: page * limit,
         'order[publishAt]': 'desc',
         'order[createdAt]': 'desc',
         includeFuturePublishAt: 0,
@@ -731,7 +754,8 @@ async function fetchRecentMangaDexFeed() {
       break;
     }
 
-    await delay(REQUEST_DELAY_MS);
+    const stealthDelay = await getStealthDelay(REQUEST_DELAY_MS);
+    await delay(stealthDelay);
   }
 
   return {
@@ -773,7 +797,7 @@ async function fetchAniListMediaByIds({ anilistId = null, malId = null }) {
 }
 
 async function searchAniListMediaByTitles(titles, year) {
-  const uniqueTitles = buildSearchTitleVariants(titles).slice(0, 3);
+  const uniqueTitles = shuffleArray(buildSearchTitleVariants(titles)).slice(0, 3);
   let best = null;
   let bestScore = -1;
 
@@ -1086,7 +1110,9 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
     skippedAlreadyKnown: [],
   };
 
-  for (const recentItem of recentFeedItems) {
+  const shuffledItems = shuffleArray(recentFeedItems);
+
+  for (const recentItem of shuffledItems) {
     const recentKey = String(recentItem.mangaId);
     if (catalogMaps.byMangadexId.has(recentKey)) {
       alreadyKnown += 1;
@@ -1161,7 +1187,9 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       console.log(
         `Discovered new manga from recent feed: "${entry.title}" (AniList=${entry.anilistId}, MangaDex=${entry.mangadexId}, latest ch=${recentItem.chapter || '?'})`,
       );
-      await delay(REQUEST_DELAY_MS);
+      
+      const stealthDelay = await getStealthDelay(REQUEST_DELAY_MS);
+      await delay(stealthDelay);
     } catch (error) {
       discoveryState[recentKey] = {
         status: 'failed',
@@ -1306,14 +1334,9 @@ async function collectFreshNewChapterItems() {
 
 async function fetchMangaNewChapters() {
   console.log('========================================');
-  console.log('REFRESHING MANGA NEW CHAPTERS');
+  console.log('REFRESHING MANGA NEW CHAPTERS [STEALTH MODE]');
   console.log('========================================');
-  pruneRequestHealthState();
-  const requestHealthBefore = getRequestHealthSummary();
-  console.log(
-    `Request health before run: hosts=${requestHealthBefore.hosts}, cooling=${requestHealthBefore.cooling}, open-circuits=${requestHealthBefore.openCircuits}.`,
-  );
-
+  
   const outputPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_NEW_CHAPTERS}.json`);
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
@@ -1328,16 +1351,6 @@ async function fetchMangaNewChapters() {
       console.log(
         `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, feed-pages=${latestAttempt.feedPages}, feed-rows=${latestAttempt.feedRows}, fresh-feed=${latestAttempt.freshFeedItems}, discovered=${latestAttempt.discoveredCount}, matched=${latestAttempt.matchedCount}, limit=${latestAttempt.sectionLimit}, section=${latestAttempt.items.length}.`,
       );
-
-      console.log(
-        `Discovery details: already-known=${latestAttempt.discoveryAlreadyKnown}, failed=${latestAttempt.discoveryFailedCount}, skipped-recent-failure=${latestAttempt.discoverySkippedRecentFailure}, skipped-limit=${latestAttempt.discoverySkippedByLimit}.`,
-      );
-
-      if (latestAttempt.discoverySkippedByLimit > 0) {
-        console.log(
-          `Discovery limit reached in this run: skipped ${latestAttempt.discoverySkippedByLimit} unmatched recent title(s) after ${latestAttempt.discoveryAttempts} attempts.`,
-        );
-      }
 
       if (latestAttempt.items.length > 0) {
         if (attempt > 1) {
@@ -1373,15 +1386,7 @@ async function fetchMangaNewChapters() {
     writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
     console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
   } finally {
-    pruneRequestHealthState();
-    if (requestHealthDirty) {
-      writeRequestHealth(requestHealthState);
-      requestHealthDirty = false;
-    }
-    const requestHealthAfter = getRequestHealthSummary();
-    console.log(
-      `Request health after run: hosts=${requestHealthAfter.hosts}, cooling=${requestHealthAfter.cooling}, open-circuits=${requestHealthAfter.openCircuits}.`,
-    );
+    // End run cleanup
   }
 }
 

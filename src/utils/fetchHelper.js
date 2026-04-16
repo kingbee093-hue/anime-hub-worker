@@ -229,12 +229,41 @@ function flushRequestHealthState() {
   requestHealthDirty = false;
 }
 
+/** 🚀 ADVANCED STEALTH / BYPASS UTILITIES 🚀 **/
+
+async function getStealthDelay(baseDelayMs) {
+  const multiplier = 0.3 + (Math.random() * 1.5);
+  const finalDelay = Math.floor(baseDelayMs * multiplier);
+  return finalDelay;
+}
+
+async function performCamouflageRequest() {
+  const roll = Math.random();
+  if (roll > 0.08) return;
+
+  const targets = [
+    { url: 'https://api.mangadex.org/manga/tag', label: 'camouflage_tags' },
+    { url: 'https://api.mangadex.org/manga/random', label: 'camouflage_random' },
+  ];
+
+  const target = targets[Math.floor(Math.random() * targets.length)];
+  try {
+    await axios.get(target.url, {
+      headers: getSecureHeaders(target.url),
+      timeout: 10000
+    });
+    console.log(`[Stealth] Camouflage: ${target.label} triggered`);
+  } catch (_) { /* ignore */ }
+}
+
 async function fetchGraphQL(query, variables) {
   const hostKey = getRequestHostKey(CONFIG.ANILIST_API, 'graphql.anilist.co');
   let retries = 0;
   while (retries < CONFIG.MAX_RETRIES) {
     try {
       await waitForHostAvailability(hostKey, 'AniList GraphQL');
+      await performCamouflageRequest();
+
       const response = await axios.post(
         CONFIG.ANILIST_API,
         { query, variables },
@@ -279,5 +308,7 @@ module.exports = {
   DEFAULT_HTTP_HEADERS,
   getSecureHeaders,
   computeRetryDelayMs,
+  getStealthDelay,
+  performCamouflageRequest,
   fetchGraphQL,
 };
