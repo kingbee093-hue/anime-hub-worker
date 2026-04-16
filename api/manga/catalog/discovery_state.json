@@ -381,9 +381,9 @@
   "439a50ea-40f1-4e90-9a50-e1aa36f110f2": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "7501516b-b7d7-4423-a1c8-3732908f3acd",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-16T21:34:28.806Z",
+    "lastChapterId": "bcf86d38-149c-4d1a-98f4-e280eace465e",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-16T22:00:34.116Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -2707,6 +2707,15 @@
     "lastAttemptAt": "2026-04-16T21:51:24.793Z",
     "lastSuccessAt": "2026-04-16T21:51:24.793Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "4af56a6b-5baf-4fb3-a693-4530cb50bfbe": {
+    "status": "failed",
+    "title": "Yankee JK's Wedding Ceremony",
+    "lastChapterId": "54efe1b9-1b8a-4dbc-8df1-773928627ca6",
+    "lastChapter": "81",
+    "lastAttemptAt": "2026-04-16T22:00:34.312Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
