@@ -626,10 +626,11 @@
   "d0cb80c6-e982-4283-9c22-3954bf74c3b0": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "b75ad3b7-8786-4d97-8517-b4a75bfbea57",
-    "lastChapter": "8",
-    "lastAttemptAt": "2026-04-16T12:19:50.397Z",
-    "reason": "anilist_match_not_found"
+    "lastChapterId": "25bc525b-0662-4447-9465-0e4959e1e43f",
+    "lastChapter": "9",
+    "lastAttemptAt": "2026-04-16T14:27:24.939Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "18cce48d-3267-4bb5-9892-3de448fe2846": {
     "status": "failed",
@@ -1036,8 +1037,9 @@
     "title": "A Young Mother",
     "lastChapterId": "02295b91-563f-4a02-a47d-7a07aacc4d90",
     "lastChapter": "2542",
-    "lastAttemptAt": "2026-04-16T13:30:10.537Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T14:27:25.716Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "cfa52b0c-fdf9-452b-939d-e3e85f5c09d1": {
     "status": "failed",
@@ -1597,11 +1599,12 @@
   },
   "5f0d09f9-e99d-49c1-89b6-57242dcb2c21": {
     "status": "failed",
-    "title": "Stand aloof",
-    "lastChapterId": "55c572f5-1098-404a-a047-2ffe4c9b0ef9",
-    "lastChapter": "31.50",
-    "lastAttemptAt": "2026-04-16T12:27:25.349Z",
-    "reason": "anilist_match_not_found"
+    "title": "A day in the life of the Manager",
+    "lastChapterId": "977946bc-d040-4138-8dad-32ecca4f72f8",
+    "lastChapter": "32",
+    "lastAttemptAt": "2026-04-16T14:27:18.343Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "f20a797a-e709-400c-8d32-4cd6330cb9b5": {
     "status": "discovered",
@@ -2170,5 +2173,27 @@
     "lastAttemptAt": "2026-04-16T13:30:10.031Z",
     "lastSuccessAt": "2026-04-16T13:30:10.031Z",
     "reason": null
+  },
+  "484ce390-f74b-46d1-9840-3b285d2b372e": {
+    "status": "discovered",
+    "title": "Koisuru Asteroid",
+    "mangaId": 108091,
+    "anilistId": 108091,
+    "chapterIndexId": "484ce390-f74b-46d1-9840-3b285d2b372e",
+    "lastChapterId": "c5b4d923-fafd-495f-8f35-8be4cf36a183",
+    "lastChapter": "50",
+    "lastAttemptAt": "2026-04-16T14:27:18.772Z",
+    "lastSuccessAt": "2026-04-16T14:27:18.772Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "8f1c66ee-1df7-44cb-82b0-046417041095": {
+    "status": "failed",
+    "title": "Things That Continue to Change",
+    "lastChapterId": "cf995437-dfc1-4fc2-aacd-bafa35e1eb6c",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-04-16T14:27:22.551Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   }
 }

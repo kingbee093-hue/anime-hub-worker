@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-16T13:30:10.775Z",
-  "totalItems": 1127,
+  "generatedAt": "2026-04-16T14:27:26.129Z",
+  "totalItems": 1128,
   "shards": {
     "c": {
-      "count": 101,
+      "count": 100,
       "path": "search/manga_index/shards/c.json"
     },
     "other": {
-      "count": 1099,
+      "count": 1100,
       "path": "search/manga_index/shards/other.json"
     },
     "arabic": {
@@ -15,27 +15,27 @@
       "path": "search/manga_index/shards/arabic.json"
     },
     "t": {
-      "count": 354,
+      "count": 353,
       "path": "search/manga_index/shards/t.json"
     },
     "s": {
-      "count": 246,
+      "count": 247,
       "path": "search/manga_index/shards/s.json"
     },
     "n": {
-      "count": 97,
+      "count": 94,
       "path": "search/manga_index/shards/n.json"
     },
     "i": {
-      "count": 124,
+      "count": 125,
       "path": "search/manga_index/shards/i.json"
     },
     "o": {
-      "count": 90,
+      "count": 91,
       "path": "search/manga_index/shards/o.json"
     },
     "j": {
-      "count": 59,
+      "count": 58,
       "path": "search/manga_index/shards/j.json"
     },
     "g": {
@@ -43,23 +43,27 @@
       "path": "search/manga_index/shards/g.json"
     },
     "b": {
-      "count": 134,
+      "count": 133,
       "path": "search/manga_index/shards/b.json"
     },
     "a": {
-      "count": 157,
+      "count": 159,
       "path": "search/manga_index/shards/a.json"
     },
     "l": {
-      "count": 162,
+      "count": 161,
       "path": "search/manga_index/shards/l.json"
+    },
+    "u": {
+      "count": 58,
+      "path": "search/manga_index/shards/u.json"
     },
     "d": {
       "count": 138,
       "path": "search/manga_index/shards/d.json"
     },
     "k": {
-      "count": 156,
+      "count": 157,
       "path": "search/manga_index/shards/k.json"
     },
     "m": {
@@ -67,7 +71,7 @@
       "path": "search/manga_index/shards/m.json"
     },
     "z": {
-      "count": 20,
+      "count": 21,
       "path": "search/manga_index/shards/z.json"
     },
     "h": {
@@ -102,20 +106,16 @@
       "count": 87,
       "path": "search/manga_index/shards/r.json"
     },
-    "u": {
-      "count": 57,
-      "path": "search/manga_index/shards/u.json"
-    },
-    "e": {
-      "count": 80,
-      "path": "search/manga_index/shards/e.json"
-    },
     "x": {
       "count": 4,
       "path": "search/manga_index/shards/x.json"
     },
+    "e": {
+      "count": 79,
+      "path": "search/manga_index/shards/e.json"
+    },
     "q": {
-      "count": 14,
+      "count": 13,
       "path": "search/manga_index/shards/q.json"
     }
   }
