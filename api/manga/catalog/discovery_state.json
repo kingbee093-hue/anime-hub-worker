@@ -2717,5 +2717,80 @@
     "lastAttemptAt": "2026-04-16T22:00:34.312Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
+  },
+  "07dcd201-fe35-46cd-8931-e1445efbe469": {
+    "status": "discovered",
+    "title": "Kakure Tensei @COMIC",
+    "mangaId": 200269,
+    "anilistId": 200269,
+    "chapterIndexId": "07dcd201-fe35-46cd-8931-e1445efbe469",
+    "lastChapterId": "cc41e125-2d68-45b1-82d7-5149e4cc42f3",
+    "lastChapter": "19",
+    "lastAttemptAt": "2026-04-16T22:34:27.988Z",
+    "lastSuccessAt": "2026-04-16T22:34:27.988Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "275c3ee8-bdeb-4070-a333-6add23a8415a": {
+    "status": "failed",
+    "title": "Malatang!",
+    "lastChapterId": "a18f4e13-e0b8-4861-abca-6316466f6f2d",
+    "lastChapter": "54",
+    "lastAttemptAt": "2026-04-16T22:34:29.103Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "3cf1a8fc-2a14-41e3-8bc8-a7201a9f2dc0": {
+    "status": "failed",
+    "title": "Super Mom Mode",
+    "lastChapterId": "fd3f8f0e-3f93-4696-a961-c3500476c646",
+    "lastChapter": "7",
+    "lastAttemptAt": "2026-04-16T22:34:32.056Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "ead3f958-0d01-4c1f-b605-620eacb8ead0": {
+    "status": "discovered",
+    "title": "My Teasing Fiancée",
+    "mangaId": 176739,
+    "anilistId": 176739,
+    "chapterIndexId": "ead3f958-0d01-4c1f-b605-620eacb8ead0",
+    "lastChapterId": "d06bbd9c-5fb7-409f-a73e-4e5805e8b328",
+    "lastChapter": "21.1",
+    "lastAttemptAt": "2026-04-16T22:34:32.714Z",
+    "lastSuccessAt": "2026-04-16T22:34:32.714Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "6d619a62-5f43-4b48-b14b-f6924025167f": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c8967b50-bf3b-474b-8f3c-f303d339f516",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-16T22:34:36.848Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "defce2ff-db4c-425d-be37-be0a3bcfde23": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "377d3bf0-7d98-4446-9971-1e987666b866",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-16T22:35:30.311Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "ae60aa84-3c58-40f1-935b-c7cdd1d5af6b": {
+    "status": "discovered",
+    "title": "GaCen Shoujo to Ibunka Kouryuu",
+    "mangaId": 125580,
+    "anilistId": 125580,
+    "chapterIndexId": "ae60aa84-3c58-40f1-935b-c7cdd1d5af6b",
+    "lastChapterId": "545d8964-f33a-4fd2-b4da-320237452be8",
+    "lastChapter": "144",
+    "lastAttemptAt": "2026-04-16T22:35:30.983Z",
+    "lastSuccessAt": "2026-04-16T22:35:30.983Z",
+    "reason": null,
+    "matcherVersion": 2
   }
 }
