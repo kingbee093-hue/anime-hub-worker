@@ -381,9 +381,9 @@
   "439a50ea-40f1-4e90-9a50-e1aa36f110f2": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "7501516b-b7d7-4423-a1c8-3732908f3acd",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-16T16:05:36.262Z",
+    "lastChapterId": "bcf86d38-149c-4d1a-98f4-e280eace465e",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-16T16:23:55.059Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1460,10 +1460,10 @@
   },
   "86209d1b-8d66-44b1-86e5-912e07f040fe": {
     "status": "failed",
-    "title": "The Second Being",
-    "lastChapterId": "eca88301-43d2-4b6a-a3ed-1eebf61b9466",
-    "lastChapter": "10.3",
-    "lastAttemptAt": "2026-04-16T15:50:06.939Z",
+    "title": "The Legendary Redeemer",
+    "lastChapterId": "8c90dc65-6972-4159-8b15-e05ec076f8b2",
+    "lastChapter": "6.3",
+    "lastAttemptAt": "2026-04-16T16:23:28.761Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1886,16 +1886,18 @@
     "title": "",
     "lastChapterId": "2b2c9592-cf5a-4a68-a417-52253bb7e50a",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-16T12:27:52.452Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T16:23:31.925Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "7b8b6e71-2fc9-4219-b2a0-53af9b78384b": {
     "status": "failed",
     "title": "",
     "lastChapterId": "02887404-bcf3-4f5a-8e38-f79c7a8183ad",
     "lastChapter": "85",
-    "lastAttemptAt": "2026-04-16T12:27:52.550Z",
-    "reason": "adult_blocked"
+    "lastAttemptAt": "2026-04-16T16:23:28.920Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   },
   "0121587d-69ee-40d7-8488-f2ef66e293ce": {
     "status": "discovered",
@@ -2378,6 +2380,37 @@
     "lastChapter": "",
     "lastAttemptAt": "2026-04-16T15:51:18.038Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "7256a246-1b88-4d32-b6af-432d4eb609d5": {
+    "status": "failed",
+    "title": "A Spoonful of Courage Aimed at the Stars꞉ Junna's Side",
+    "lastChapterId": "6675828c-d165-4b45-a63c-3f6c4cfb42bd",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-16T16:23:25.823Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "2fe5571f-ecc9-4a26-9a50-cfa09757a735": {
+    "status": "failed",
+    "title": "You're Not Allowed to Strip Them Naked",
+    "lastChapterId": "9d264364-d7d4-4d4a-a5f5-b7d5ed07c681",
+    "lastChapter": "115",
+    "lastAttemptAt": "2026-04-16T16:23:58.190Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "c3295871-b930-4ee3-ac0f-ff7102ecec4e": {
+    "status": "discovered",
+    "title": "Sasha-chan to Classmate Otaku-kun",
+    "mangaId": 138818,
+    "anilistId": 138818,
+    "chapterIndexId": "c3295871-b930-4ee3-ac0f-ff7102ecec4e",
+    "lastChapterId": "79f656e8-62fd-40d3-8b82-2a47c84aaac4",
+    "lastChapter": "97",
+    "lastAttemptAt": "2026-04-16T16:23:58.678Z",
+    "lastSuccessAt": "2026-04-16T16:23:58.678Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
