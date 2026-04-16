@@ -24,7 +24,7 @@ const MANGADEX_API = 'https://api.mangadex.org';
 const FRESH_HOURS = Number(process.env.MANGA_NEW_CHAPTERS_FRESH_HOURS || 48);
 const MAX_ATTEMPTS = Number(process.env.MANGA_NEW_CHAPTERS_MAX_ATTEMPTS || 4);
 const RETRY_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_RETRY_DELAY_MS || 3000);
-const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 550); // Increased base delay
+const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 650); // Increased safety margin
 const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
@@ -200,8 +200,17 @@ function normalizeSearchText(value) {
     .trim();
 }
 
+function isMostlyASCII(str) {
+  return /^[\x00-\x7F]*$/.test(str);
+}
+
 function buildSearchTitleVariants(titles) {
   const variants = new Set();
+  const asciiTitles = (titles || []).filter(isMostlyASCII);
+  const nonAsciiTitles = (titles || []).filter(t => !isMostlyASCII(t));
+  
+  // Prioritize ASCII titles to avoid Cloudflare WAF issues with Japanese chars in queries
+  const sortedTitles = [...asciiTitles, ...nonAsciiTitles];
 
   function addVariant(value) {
     const raw = String(value || '').trim();
@@ -211,7 +220,6 @@ function buildSearchTitleVariants(titles) {
     const stripped = [
       raw.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim(),
       raw.replace(/\[[^\]]*\]/g, ' ').replace(/\s+/g, ' ').trim(),
-      raw.replace(/["'`“”‘’]/g, '').trim(),
     ];
 
     for (const candidate of stripped) {
@@ -219,18 +227,9 @@ function buildSearchTitleVariants(titles) {
         variants.add(candidate);
       }
     }
-
-    const separators = [' : ', ':', ' - ', '-', ' ~ ', '~', ' @', '@', ' | ', '|'];
-    for (const separator of separators) {
-      if (!raw.includes(separator)) continue;
-      const left = raw.split(separator)[0].trim();
-      const right = raw.split(separator).slice(1).join(separator).trim();
-      if (left.length >= 3) variants.add(left);
-      if (right.length >= 3 && right.split(/\s+/).length <= 6) variants.add(right);
-    }
   }
 
-  for (const title of titles || []) {
+  for (const title of sortedTitles) {
     addVariant(title);
   }
 
@@ -503,14 +502,11 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
     } catch (error) {
       const status = error.response ? error.response.status : 0;
       const statusText = error.response ? `[${status}]` : '[Network]';
-      const safeHeaders = { ...getSecureHeaders(url) };
-      delete safeHeaders['Authorization']; // just in case
-
+      
       console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt + 1}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
-      console.error(`  URL: ${url}`);
       
       if (status === 404) {
-        console.error(`  Endpoint returned 404. Skipping item immediately.`);
+        console.error(`  Endpoint returned 404 for ${url}. Skipping item.`);
         throw error; // Fatal for this attempt
       }
 
@@ -1163,7 +1159,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
 
     attempted += 1;
     try {
-      console.log(`[Discover] Processing title: "${recentItem.title || recentItem.mangaId}"...`);
+      console.log(`[Discover] Processing: "${recentItem.title || recentItem.mangaId}"...`);
       const discovered = await discoverCatalogEntryForRecentItem(recentItem, caches);
       if (!discovered?.entry) {
         discoveryState[recentKey] = {
@@ -1361,7 +1357,7 @@ async function collectFreshNewChapterItems() {
 
 async function fetchMangaNewChapters() {
   console.log('========================================');
-  console.log('REFRESHING MANGA NEW CHAPTERS [DIAGNOSTIC]');
+  console.log('REFRESHING MANGA NEW CHAPTERS [ULTRA-STEALTH]');
   console.log('========================================');
   
   const outputPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_NEW_CHAPTERS}.json`);
