@@ -26,8 +26,8 @@ const MAX_ATTEMPTS = Number(process.env.MANGA_NEW_CHAPTERS_MAX_ATTEMPTS || 4);
 const RETRY_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_RETRY_DELAY_MS || 3000);
 const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 350);
 const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
-const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
-const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
+const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 100);
+const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 300));
 const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 10));
 const FAILURE_COOLDOWN_HOURS = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS || 12));
 const MATCHER_VERSION = Number(process.env.MANGA_NEW_CHAPTERS_MATCHER_VERSION || 2);
@@ -914,6 +914,7 @@ function writeDiscoveredChapterIndex(entry, recentItem, pageUrls, manifest) {
     availableLanguages: chapterIndex.availableLanguages,
     counts: chapterIndex.counts,
     englishFallbackProvider: null,
+    englishFallbackProviderTitle: null,
     englishFallbackChapterCount: null,
     latestKnownChapterNumber: recentItem.chapter || null,
     latestKnownChapterNumberInt: latestKnownChapterNumber,
