@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const CONFIG = require('../config/constants');
 const { delay, convertMangaToFirestoreFormat } = require('../utils/formatters');
-const { DEFAULT_HTTP_HEADERS, computeRetryDelayMs, fetchGraphQL } = require('../utils/fetchHelper');
+const { getSecureHeaders, computeRetryDelayMs, fetchGraphQL } = require('../utils/fetchHelper');
 const { isAdultContent, isManga } = require('../utils/filters');
 const {
   getMangaCatalogEntries,
@@ -24,9 +24,8 @@ const FEED_PAGE_SIZE = Math.min(Number(process.env.MANGA_NEW_CHAPTERS_FEED_PAGE_
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
 const SEARCH_RESULTS_LIMIT = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_SEARCH_RESULTS_LIMIT || 10));
-const MAX_SEARCH_VARIANTS = Math.max(3, Number(process.env.MANGA_NEW_CHAPTERS_MAX_SEARCH_VARIANTS || 4));
 const FAILURE_COOLDOWN_HOURS = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_FAILURE_COOLDOWN_HOURS || 12));
-const MATCHER_VERSION = Number(process.env.MANGA_NEW_CHAPTERS_MATCHER_VERSION || 3);
+const MATCHER_VERSION = Number(process.env.MANGA_NEW_CHAPTERS_MATCHER_VERSION || 2);
 const REQUEST_HOST_COOLDOWN_MS = Math.max(1000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_COOLDOWN_MS || 12000));
 const REQUEST_HOST_CIRCUIT_THRESHOLD = Math.max(2, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_THRESHOLD || 4));
 const REQUEST_HOST_CIRCUIT_MS = Math.max(10000, Number(process.env.MANGA_NEW_CHAPTERS_HOST_CIRCUIT_MS || 180000));
@@ -41,11 +40,6 @@ const CATALOG_PAGE_SIZE = 120;
 const GENRE_MAX_ITEMS = 120;
 const DEFAULT_SECTION_LIMIT = 24;
 const MANGADEX_REQUEST_RETRIES = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_RETRIES || 3));
-
-const MANGADEX_HEADERS = {
-  ...DEFAULT_HTTP_HEADERS,
-  Referer: 'https://mangadex.org/',
-};
 
 const ANILIST_MANGA_FRAGMENT = `
   id
@@ -186,47 +180,6 @@ function normalizeSearchText(value) {
     .trim();
 }
 
-function tokenizeSearchText(value) {
-  return normalizeSearchText(value)
-    .split(' ')
-    .map((token) => token.trim())
-    .filter((token) => token.length >= 2);
-}
-
-function buildCompactSearchText(value) {
-  return normalizeSearchText(value).replace(/\s+/g, '');
-}
-
-function buildTitleAcronym(value) {
-  const tokens = tokenizeSearchText(value)
-    .filter((token) => /[a-z\u0600-\u06FF\u3040-\u30ff\u3400-\u9fff]/.test(token));
-  if (tokens.length < 2 || tokens.length > 8) {
-    return '';
-  }
-  return tokens.map((token) => token[0]).join('');
-}
-
-function scoreSearchVariant(value) {
-  const raw = String(value || '').trim();
-  const normalized = normalizeSearchText(raw);
-  const tokens = tokenizeSearchText(raw);
-  let score = 0;
-
-  if (!normalized || raw.length < 2) {
-    return -1;
-  }
-
-  if (/^[a-z0-9\s:~@|&+\-]+$/i.test(raw)) score += 28;
-  if (tokens.length >= 2 && tokens.length <= 6) score += 20;
-  if (tokens.length === 1) score += 8;
-  if (raw.length >= 4 && raw.length <= 42) score += 16;
-  if (!/[~@|]/.test(raw)) score += 8;
-  if (!/[:]/.test(raw)) score += 4;
-  if (/^[a-z0-9\s]+$/i.test(normalized)) score += 6;
-
-  return score;
-}
-
 function buildSearchTitleVariants(titles) {
   const variants = new Set();
 
@@ -235,46 +188,25 @@ function buildSearchTitleVariants(titles) {
     if (raw.length < 2) return;
     variants.add(raw);
 
-    const normalized = normalizeSearchText(raw);
-    if (normalized.length >= 2) {
-      variants.add(normalized);
-    }
-
-    const compact = normalized.replace(/\s+/g, ' ').trim();
-    if (compact.length >= 2) {
-      variants.add(compact);
-    }
-
     const stripped = [
       raw.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim(),
       raw.replace(/\[[^\]]*\]/g, ' ').replace(/\s+/g, ' ').trim(),
       raw.replace(/["'`“”‘’]/g, '').trim(),
-      raw.replace(/[,:;!?]/g, ' ').replace(/\s+/g, ' ').trim(),
     ];
 
     for (const candidate of stripped) {
       if (candidate.length >= 2) {
         variants.add(candidate);
-        const candidateNormalized = normalizeSearchText(candidate);
-        if (candidateNormalized.length >= 2) {
-          variants.add(candidateNormalized);
-        }
       }
     }
 
-    const separators = [' : ', ':', ' - ', '-', ' ~ ', '~', ' @', '@', ' | ', '|', ' / ', '/'];
+    const separators = [' : ', ':', ' - ', '-', ' ~ ', '~', ' @', '@', ' | ', '|'];
     for (const separator of separators) {
       if (!raw.includes(separator)) continue;
       const left = raw.split(separator)[0].trim();
       const right = raw.split(separator).slice(1).join(separator).trim();
       if (left.length >= 3) variants.add(left);
-      if (right.length >= 3 && right.split(/\s+/).length <= 8) variants.add(right);
-    }
-
-    const tokens = tokenizeSearchText(raw);
-    if (tokens.length >= 4) {
-      variants.add(tokens.slice(0, 4).join(' '));
-      variants.add(tokens.slice(0, 5).join(' '));
+      if (right.length >= 3 && right.split(/\s+/).length <= 6) variants.add(right);
     }
   }
 
@@ -282,13 +214,7 @@ function buildSearchTitleVariants(titles) {
     addVariant(title);
   }
 
-  return Array.from(variants)
-    .filter((value) => String(value || '').trim().length >= 2)
-    .sort((a, b) => {
-      const scoreDelta = scoreSearchVariant(b) - scoreSearchVariant(a);
-      if (scoreDelta !== 0) return scoreDelta;
-      return String(a).length - String(b).length;
-    });
+  return Array.from(variants);
 }
 
 function getSearchShardKey(term) {
@@ -482,6 +408,7 @@ function markRequestSuccess(hostKey) {
   entry.cooldownUntil = null;
   entry.circuitOpenUntil = null;
   entry.lastError = null;
+
   requestHealthDirty = true;
 }
 
@@ -545,7 +472,7 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
       const response = await axios.get(url, {
         ...options,
         headers: {
-          ...MANGADEX_HEADERS,
+          ...getSecureHeaders(url),
           ...(options.headers || {}),
         },
       });
@@ -604,6 +531,7 @@ function mergeCatalogEntries(baseEntries, discoveredEntries) {
 function extractMangadexTitles(details) {
   const attributes = details?.attributes || {};
   const directTitles = Object.values(attributes.title || {}).map((value) => String(value || '').trim());
+
   const altTitles = (attributes.altTitles || [])
     .flatMap((item) => Object.values(item || {}))
     .map((value) => String(value || '').trim());
@@ -638,56 +566,29 @@ function buildTitleScore(media, titles, year) {
     media?.title?.romaji,
     media?.title?.native,
     ...(media?.synonyms || []),
-  ].filter(Boolean);
-
-  const normalizedCandidates = candidateTitles
+  ]
     .map((value) => normalizeSearchText(value))
     .filter(Boolean);
-  const compactCandidates = candidateTitles
-    .map((value) => buildCompactSearchText(value))
-    .filter(Boolean);
-  const candidateAcronyms = candidateTitles
-    .map((value) => buildTitleAcronym(value))
-    .filter(Boolean);
 
-  const searchTitles = titles.filter(Boolean);
+  const searchTitles = titles.map((value) => normalizeSearchText(value)).filter(Boolean);
   let score = 0;
 
-  for (const searchTitleRaw of searchTitles) {
-    const searchTitle = normalizeSearchText(searchTitleRaw);
-    const searchCompact = buildCompactSearchText(searchTitleRaw);
-    const searchTokens = tokenizeSearchText(searchTitleRaw).filter((token) => token.length >= 3);
-    const searchAcronym = buildTitleAcronym(searchTitleRaw);
-
-    for (const candidate of normalizedCandidates) {
+  for (const searchTitle of searchTitles) {
+    for (const candidate of candidateTitles) {
       if (candidate === searchTitle) {
-        score += 140;
-        continue;
+        score += 120;
+      } else if (candidate.includes(searchTitle) || searchTitle.includes(candidate)) {
+        score += 60;
+      } else {
+        const searchTokens = searchTitle.split(' ').filter((token) => token.length >= 3);
+        const candidateTokens = candidate.split(' ').filter((token) => token.length >= 3);
+        const overlap = searchTokens.filter((token) => candidateTokens.includes(token)).length;
+        if (overlap >= 2) {
+          score += overlap * 18;
+        } else if (overlap === 1) {
+          score += 8;
+        }
       }
-
-      if (candidate.includes(searchTitle) || searchTitle.includes(candidate)) {
-        score += 72;
-      }
-
-      const candidateTokens = candidate.split(' ').filter((token) => token.length >= 3);
-      const overlap = searchTokens.filter((token) => candidateTokens.includes(token)).length;
-      if (overlap > 0) {
-        const coverage = overlap / Math.max(1, Math.min(searchTokens.length, candidateTokens.length));
-        score += overlap * 14;
-        score += coverage * 26;
-      }
-    }
-
-    for (const candidateCompact of compactCandidates) {
-      if (candidateCompact && searchCompact && candidateCompact === searchCompact) {
-        score += 64;
-      } else if (candidateCompact && searchCompact && (candidateCompact.includes(searchCompact) || searchCompact.includes(candidateCompact))) {
-        score += 28;
-      }
-    }
-
-    if (searchAcronym && candidateAcronyms.includes(searchAcronym)) {
-      score += 22;
     }
   }
 
@@ -695,7 +596,6 @@ function buildTitleScore(media, titles, year) {
     const delta = Math.abs(Number(media.startDate.year) - Number(year));
     if (delta === 0) score += 30;
     else if (delta <= 1) score += 15;
-    else if (delta <= 2) score += 5;
   }
 
   score += Number(media?.popularity || 0) / 1000;
@@ -873,8 +773,7 @@ async function fetchAniListMediaByIds({ anilistId = null, malId = null }) {
 }
 
 async function searchAniListMediaByTitles(titles, year) {
-  const uniqueTitles = buildSearchTitleVariants(titles).slice(0, MAX_SEARCH_VARIANTS);
-  const seenIds = new Set();
+  const uniqueTitles = buildSearchTitleVariants(titles).slice(0, 3);
   let best = null;
   let bestScore = -1;
 
@@ -883,15 +782,9 @@ async function searchAniListMediaByTitles(titles, year) {
       search: title,
       perPage: SEARCH_RESULTS_LIMIT,
     });
-    await delay(600); // Rate-limit guard: 600ms between AniList search calls
     const candidates = Array.isArray(data?.Page?.media) ? data.Page.media : [];
 
     for (const media of candidates) {
-      if (seenIds.has(String(media?.id || ''))) {
-        continue;
-      }
-      seenIds.add(String(media?.id || ''));
-
       const adult = isAdultContent(media);
       const manga = isManga(media);
       if (adult.blocked || !manga.allowed) {
@@ -905,12 +798,12 @@ async function searchAniListMediaByTitles(titles, year) {
       }
     }
 
-    if (bestScore >= 135) {
+    if (bestScore >= 120) {
       break;
     }
   }
 
-  return bestScore >= 42 ? best : null;
+  return bestScore >= 45 ? best : null;
 }
 
 async function fetchChapterPages(chapterId) {
@@ -1268,7 +1161,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       console.log(
         `Discovered new manga from recent feed: "${entry.title}" (AniList=${entry.anilistId}, MangaDex=${entry.mangadexId}, latest ch=${recentItem.chapter || '?'})`,
       );
-      await delay(Math.max(REQUEST_DELAY_MS, 1500)); // min 1.5s between manga discovery
+      await delay(REQUEST_DELAY_MS);
     } catch (error) {
       discoveryState[recentKey] = {
         status: 'failed',
@@ -1331,6 +1224,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
 
 function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap, discoveredMangaIds = new Set()) {
   const catalogMaps = buildCatalogMaps(catalogEntries);
+
   const effectiveManifestMap = manifestMap || getChapterManifestMap();
   const enriched = [];
 
