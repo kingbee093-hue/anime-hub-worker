@@ -765,6 +765,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
   const discoveredEntries = readDiscoveredCatalogEntries();
   const catalog = mergeCatalogEntries(catalogEntries, discoveredEntries);
   const catalogMaps = buildCatalogMaps(catalog);
+  const discoveredMangaIds = new Set();
   const nextDiscoveredMap = new Map(
     discoveredEntries
       .filter((item) => item?.mangaId)
@@ -802,6 +803,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       catalogMaps.byMangadexId.set(String(entry.mangadexId), entry);
       catalogMaps.byChapterIndexId.set(String(entry.chapterIndexId), entry);
       catalogMaps.byMangaId.set(String(entry.mangaId), entry);
+      discoveredMangaIds.add(String(entry.mangaId));
       writeDiscoveredChapterIndex(entry, recentItem, discovered.pageUrls, manifest);
       created += 1;
       console.log(
@@ -834,12 +836,13 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
     catalogEntries: mergedCatalog,
     manifestMap: getChapterManifestMap(manifest),
     discoveredCount: created,
+    discoveredMangaIds,
     discoveryAttempts: attempted,
     skippedByLimit,
   };
 }
 
-function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap) {
+function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap, discoveredMangaIds = new Set()) {
   const catalogMaps = buildCatalogMaps(catalogEntries);
   const effectiveManifestMap = manifestMap || getChapterManifestMap();
   const enriched = [];
@@ -866,6 +869,9 @@ function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap) {
       chapterCoverageLanguages: Array.isArray(manifestItem?.availableLanguages)
         ? manifestItem.availableLanguages
         : [],
+      discoveredFromRecentFeed:
+        Boolean(catalogEntry.discoveredFromRecentFeed) ||
+        discoveredMangaIds.has(String(catalogEntry.mangaId)),
     });
   }
 
@@ -899,6 +905,7 @@ async function collectFreshNewChapterItems() {
     recentFeed.items,
     discovery.catalogEntries,
     discovery.manifestMap,
+    discovery.discoveredMangaIds,
   );
 
   return {
