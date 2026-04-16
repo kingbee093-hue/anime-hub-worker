@@ -3617,7 +3617,7 @@
     "year": 2018,
     "startDate": "2018-11-02",
     "endDate": null,
-    "chapters": 0,
+    "chapters": 10,
     "volumes": 0,
     "genres": [
       "Comedy",
@@ -3657,16 +3657,6 @@
         "isAdult": false
       },
       {
-        "id": 233,
-        "name": "Youkai",
-        "description": "Prominently features supernatural creatures from Japanese folklore.",
-        "category": "Theme-Fantasy",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 253,
         "name": "Gods",
         "description": "Prominently features a character of divine or religious nature.",
@@ -3674,6 +3664,16 @@
         "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -3707,20 +3707,20 @@
         "isAdult": false
       },
       {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -3737,13 +3737,13 @@
         "isAdult": false
       },
       {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
         "rank": 45,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -3757,13 +3757,13 @@
         "isAdult": false
       },
       {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
         "rank": 45,
         "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
+        "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
@@ -3802,11 +3802,15 @@
         "url": "https://comic.pixiv.net/works/5304"
       }
     ],
-    "chapterIndexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-    "mangadexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-    "mangadexUrl": "https://mangadex.org/title/6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "chapterIndexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "mangadexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "mangadexUrl": "https://mangadex.org/title/1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+    "chapterSourceTitle": "Hoppe ga Mochimochi na Imouto-chan",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 99022,
