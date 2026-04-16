@@ -30,20 +30,21 @@ function getSecureHeaders(url = '') {
     'Accept-Language': 'en-US,en;q=0.9',
     'Accept-Encoding': 'gzip, deflate, br',
     'Connection': 'keep-alive',
-    'DNT': '1',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'same-site',
-    'Pragma': 'no-cache',
-    'Cache-Control': 'no-cache',
   };
 
   if (host.includes('anilist')) {
     headers['Origin'] = 'https://anilist.co';
     headers['Referer'] = 'https://anilist.co/';
+    // Anilist is sensitive to some extra headers
   } else if (host.includes('mangadex')) {
     headers['Origin'] = 'https://mangadex.org';
     headers['Referer'] = 'https://mangadex.org/';
+    headers['DNT'] = '1';
+    headers['Sec-Fetch-Dest'] = 'empty';
+    headers['Sec-Fetch-Mode'] = 'cors';
+    headers['Sec-Fetch-Site'] = 'same-site';
+    headers['Pragma'] = 'no-cache';
+    headers['Cache-Control'] = 'no-cache';
   }
 
   return headers;
@@ -232,24 +233,25 @@ function flushRequestHealthState() {
 /** 🚀 ADVANCED STEALTH / BYPASS UTILITIES 🚀 **/
 
 async function getStealthDelay(baseDelayMs) {
-  const multiplier = 0.4 + (Math.random() * 1.6);
+  const multiplier = 0.6 + (Math.random() * 1.4);
   const finalDelay = Math.floor(baseDelayMs * multiplier);
   return finalDelay;
 }
 
 async function performCamouflageRequest() {
   const roll = Math.random();
-  if (roll > 0.1) return;
+  if (roll > 0.04) return; // Reduced camouflage frequency (4%) to avoid spamming md tags
 
   const targets = [
     { url: 'https://api.mangadex.org/manga/tag', label: 'camouflage_tags' },
+    { url: 'https://api.mangadex.org/manga/random', label: 'camouflage_random' },
   ];
 
   const target = targets[Math.floor(Math.random() * targets.length)];
   try {
     await axios.get(target.url, {
       headers: getSecureHeaders(target.url),
-      timeout: 10000
+      timeout: 15000
     });
     console.log(`[Stealth] Camouflage: ${target.label} triggered`);
   } catch (_) { /* ignore */ }
@@ -261,13 +263,14 @@ async function fetchGraphQL(query, variables) {
   while (retries < CONFIG.MAX_RETRIES) {
     try {
       await waitForHostAvailability(hostKey, 'AniList GraphQL');
-      await performCamouflageRequest();
+      // skip camouflage for GraphQL to reduce total requests
 
+      const headers = getSecureHeaders(CONFIG.ANILIST_API);
       const response = await axios.post(
         CONFIG.ANILIST_API,
         { query, variables },
         {
-          headers: getSecureHeaders(CONFIG.ANILIST_API),
+          headers,
           timeout: 30000,
         },
       );
@@ -281,15 +284,19 @@ async function fetchGraphQL(query, variables) {
       return response.data?.data;
     } catch (error) {
       const status = error.response ? error.response.status : 0;
+      const statusText = error.response ? `[${status}]` : '[Network]';
+      
+      console.error(`AniList GraphQL failed ${statusText} (Attempt ${retries + 1}/${CONFIG.MAX_RETRIES}): ${error.message}`);
+      if (variables && variables.search) console.error(`  Search Term: "${variables.search}"`);
+      if (variables && variables.id) console.error(`  ID: ${variables.id}`);
+      
       if (status === 404) {
-        console.error(`AniList GraphQL returned 404 - giving up on this item.`);
+        console.error(`  AniList endpoint returned 404. This often means the request was blocked by Cloudflare.`);
         return null;
       }
 
       retries += 1;
       const isRateLimited = status === 429 || status === 403;
-      const statusText = error.response ? `[${status}]` : '[Network]';
-      console.error(`API request failed ${statusText} (Attempt ${retries}/${CONFIG.MAX_RETRIES}): ${error.message}`);
       const waitTimeMs = computeRetryDelayMs(retries, error);
       markRequestFailure(hostKey, error, waitTimeMs);
       flushRequestHealthState();

@@ -24,7 +24,7 @@ const MANGADEX_API = 'https://api.mangadex.org';
 const FRESH_HOURS = Number(process.env.MANGA_NEW_CHAPTERS_FRESH_HOURS || 48);
 const MAX_ATTEMPTS = Number(process.env.MANGA_NEW_CHAPTERS_MAX_ATTEMPTS || 4);
 const RETRY_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_RETRY_DELAY_MS || 3000);
-const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 450);
+const REQUEST_DELAY_MS = Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_DELAY_MS || 550); // Increased base delay
 const SECTION_LIMIT_RAW = Number(process.env.MANGA_NEW_CHAPTERS_LIMIT || 0);
 const MAX_FEED_PAGES = Number(process.env.MANGA_NEW_CHAPTERS_MAX_FEED_PAGES || 20);
 const DISCOVERY_LIMIT = Math.max(0, Number(process.env.MANGA_NEW_CHAPTERS_DISCOVERY_LIMIT || 0));
@@ -502,14 +502,19 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
       return response;
     } catch (error) {
       const status = error.response ? error.response.status : 0;
+      const statusText = error.response ? `[${status}]` : '[Network]';
+      const safeHeaders = { ...getSecureHeaders(url) };
+      delete safeHeaders['Authorization']; // just in case
+
+      console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt + 1}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
+      console.error(`  URL: ${url}`);
+      
       if (status === 404) {
-        console.error(`API request returned 404 for ${label} (${url}) - skipping.`);
-        throw error; // Fatal for this attempt, don't retry 404
+        console.error(`  Endpoint returned 404. Skipping item immediately.`);
+        throw error; // Fatal for this attempt
       }
 
       attempt += 1;
-      const statusText = error.response ? `[${status}]` : '[Network]';
-      console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
       const waitTimeMs = computeRetryDelayMs(attempt, error);
       markRequestFailure(hostKey, error, waitTimeMs);
 
@@ -1158,6 +1163,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
 
     attempted += 1;
     try {
+      console.log(`[Discover] Processing title: "${recentItem.title || recentItem.mangaId}"...`);
       const discovered = await discoverCatalogEntryForRecentItem(recentItem, caches);
       if (!discovered?.entry) {
         discoveryState[recentKey] = {
@@ -1355,7 +1361,7 @@ async function collectFreshNewChapterItems() {
 
 async function fetchMangaNewChapters() {
   console.log('========================================');
-  console.log('REFRESHING MANGA NEW CHAPTERS [STEALTH MODE]');
+  console.log('REFRESHING MANGA NEW CHAPTERS [DIAGNOSTIC]');
   console.log('========================================');
   
   const outputPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_NEW_CHAPTERS}.json`);
