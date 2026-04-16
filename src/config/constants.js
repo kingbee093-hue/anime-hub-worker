@@ -7,6 +7,7 @@ const CONFIG = {
   RETRY_DELAY: 2000,      // 2 seconds
   RATE_LIMIT_DELAY: 700,  // milliseconds between requests
   API_PATHS: {
+    REQUEST_HEALTH: 'worker/request_health',
     RECENT_EPISODES: 'recent_episodes',
     FEATURED: 'home_sections/featured',
     TRENDING: 'home_sections/trending',
