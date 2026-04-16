@@ -300,7 +300,7 @@
     "meanScore": 85,
     "popularity": 50714,
     "trending": 2,
-    "favourites": 3230,
+    "favourites": 3231,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -533,7 +533,7 @@
     "meanScore": 74,
     "popularity": 44364,
     "trending": 0,
-    "favourites": 1208,
+    "favourites": 1209,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -981,7 +981,7 @@
     "meanScore": 84,
     "popularity": 36659,
     "trending": 0,
-    "favourites": 2718,
+    "favourites": 2720,
     "source": "OTHER",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -1215,7 +1215,7 @@
     "meanScore": 73,
     "popularity": 21270,
     "trending": 4,
-    "favourites": 693,
+    "favourites": 695,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -1414,7 +1414,7 @@
     "meanScore": 71,
     "popularity": 20151,
     "trending": 1,
-    "favourites": 898,
+    "favourites": 900,
     "source": "OTHER",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -1459,7 +1459,7 @@
     "year": 2001,
     "startDate": "2001-06-25",
     "endDate": "2014-06-26",
-    "chapters": 102,
+    "chapters": 112,
     "volumes": 24,
     "genres": [
       "Action",
@@ -1599,19 +1599,11 @@
     "anilist_url": "https://anilist.co/manga/30214",
     "mal_url": "https://myanimelist.net/manga/214",
     "externalLinks": [],
-    "chapterIndexId": "src-weebcentral-30214",
+    "chapterIndexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexId": "f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexUrl": "https://mangadex.org/title/f36895e4-5045-4a5c-a8ec-c073d8958433",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1,
-    "chapterSourceProvider": "weebcentral",
-    "chapterSourceId": "01J76XYBBFEGS03TAW21JKX3R3/Mobile-Suit-Gundam-The-Origin",
-    "chapterSourceTitle": "Mobile Suit Gundam: The Origin",
-    "chapterSourceChapterCount": 102,
-    "chapterSourceConfidence": 0.98,
-    "chapterCountSource": "manual_provider_override",
-    "chapterConsensusProviders": [],
-    "chapterSourceUpdatedAt": "2026-04-07T00:00:00.000Z"
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 96426,
@@ -1746,5 +1738,102 @@
     "chapterCountSource": "manual_provider_override",
     "chapterConsensusProviders": [],
     "chapterSourceUpdatedAt": "2026-04-09T00:00:00.000Z"
+  },
+  {
+    "mangaId": 170751,
+    "anilistId": 170751,
+    "idMal": null,
+    "title": "Transformers Legends",
+    "titleRomaji": "Transformers Legends",
+    "titleEnglish": "",
+    "titleNative": "トランスフォーマーレジェンズ",
+    "synonyms": [
+      "TF Legends",
+      "Transformers Legends Pack-In Comics"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx170751-Vv0y5Oizmjv9.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx170751-Vv0y5Oizmjv9.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx170751-Vv0y5Oizmjv9.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "Starting off as 4koma and published online to promote the titular Transformers Legends toyline, with special Bonus Edition (出張版 Shutchōban) chapters of the comic packed with the toys themselves, it Initially showcased the misadventures of the Beast Wars cast re-imagined as adult Transformers fans, before eventually taking a more story-driven approach and attempting to connect all the entries of the Japanese Generation 1 anime and manga continuity into one storyline. Heavily marketed towards adult collectors and otaku in the face of the brand's dwindling popularity with children after TakaraTomy's largely unsuccessful first attempt in the mid-2000s, it attempted to change the image of the Transformers franchise, with much more \"adult\", often ecchi-filled humour and numerous references to fan culture. Ulltimately concluded when TakaraTomy began a brand unification with Hasbro starting with Power of the Primes, deciding to mainly sell Hasbro toys as is with minimal changes to packaging. It was eventually succeeded by the more action-oriented Generations Selects Special Comic promoting Hasbro and TakaraTomy's joint Generations Selects imprint. (Source: TFwiki, edited)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2014,
+    "startDate": "2014-05-31",
+    "endDate": "2019-06-07",
+    "chapters": 54,
+    "volumes": 0,
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Hayato Sakamoto"
+    ],
+    "artists": [
+      "Hayato Sakamoto"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 69,
+    "popularity": 31,
+    "trending": 0,
+    "favourites": 0,
+    "source": "",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/170751",
+    "mal_url": "",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://tf.takaratomy.co.jp/products/tf_lg/tf_lg_comic"
+      }
+    ],
+    "mangadexId": "0ddf9ab6-081a-4d19-a3d0-72630555d70c",
+    "mangadexUrl": "https://mangadex.org/title/0ddf9ab6-081a-4d19-a3d0-72630555d70c",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "0ddf9ab6-081a-4d19-a3d0-72630555d70c",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "0ddf9ab6-081a-4d19-a3d0-72630555d70c",
+    "chapterSourceTitle": "Transformers Legends",
+    "chapterSourceConfidence": 1
   }
 ]
