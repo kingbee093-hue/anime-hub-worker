@@ -340,12 +340,17 @@
     "reason": null
   },
   "99be9421-682c-4218-afff-58e33b449756": {
-    "status": "failed",
-    "title": "To somewhere that isn't here",
+    "status": "discovered",
+    "title": "Danshi Koukousei, Otome Game no Akuyaku Reijou ni Tensei suru.",
+    "mangaId": 180109,
+    "anilistId": 180109,
+    "chapterIndexId": "99be9421-682c-4218-afff-58e33b449756",
     "lastChapterId": "92170aee-18ff-4071-8bf4-05f554b75b2f",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-16T11:54:04.499Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:18.625Z",
+    "lastSuccessAt": "2026-04-16T15:51:18.625Z",
+    "reason": null,
+    "matcherVersion": 2
   },
   "db90d832-59a6-4f1a-97cc-84226bdd5d12": {
     "status": "discovered",
@@ -364,15 +369,16 @@
     "title": "Dad and dungeon",
     "lastChapterId": "61b4279b-160a-4e45-9468-bf0420d821e3",
     "lastChapter": "12",
-    "lastAttemptAt": "2026-04-16T11:54:05.954Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:05.112Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "439a50ea-40f1-4e90-9a50-e1aa36f110f2": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "7501516b-b7d7-4423-a1c8-3732908f3acd",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-16T15:38:25.719Z",
+    "lastChapterId": "bcf86d38-149c-4d1a-98f4-e280eace465e",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-16T15:51:08.005Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1275,16 +1281,18 @@
     "title": "",
     "lastChapterId": "b2638f9b-77f9-4adc-8198-08b8186346f3",
     "lastChapter": "16.1",
-    "lastAttemptAt": "2026-04-16T12:24:13.323Z",
-    "reason": "adult_blocked"
+    "lastAttemptAt": "2026-04-16T15:51:02.233Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   },
   "a6215f18-1c6f-432d-99ac-f181a181fd18": {
     "status": "failed",
     "title": "Loneliness",
     "lastChapterId": "d8e4ef6f-1794-4918-baea-d3c45cc29610",
     "lastChapter": "13",
-    "lastAttemptAt": "2026-04-16T12:24:13.394Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:09.476Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "bca1dd57-7591-44e5-8e6f-1ef632b8f52f": {
     "status": "discovered",
@@ -1303,8 +1311,9 @@
     "title": "",
     "lastChapterId": "32b407a7-1563-4a6d-8907-868693a727c4",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-16T12:24:14.356Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:23.018Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "4809bb6c-1af2-41c5-9291-983027602d7f": {
     "status": "discovered",
@@ -1323,8 +1332,9 @@
     "title": "",
     "lastChapterId": "6ab61f31-66f8-4709-b363-8b38c60cf705",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-16T12:24:15.434Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:14.720Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "85ce7857-3d01-4b0a-adff-7a4cba347ced": {
     "status": "discovered",
@@ -1439,16 +1449,18 @@
     "title": "One Trouble After Another",
     "lastChapterId": "fa05ceac-5ad0-4cae-93e1-4ae87e70f236",
     "lastChapter": "4",
-    "lastAttemptAt": "2026-04-16T12:25:08.454Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:02.005Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "86209d1b-8d66-44b1-86e5-912e07f040fe": {
     "status": "failed",
     "title": "The Second Being",
     "lastChapterId": "eca88301-43d2-4b6a-a3ed-1eebf61b9466",
     "lastChapter": "10.3",
-    "lastAttemptAt": "2026-04-16T12:26:09.326Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:50:06.939Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "eaf8386b-0fca-4aff-a0c4-8260c65d820c": {
     "status": "discovered",
@@ -1527,8 +1539,9 @@
     "title": "",
     "lastChapterId": "7f1ac7c4-a47b-4135-890e-a6e7ea12bd78",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-16T12:26:14.615Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:25.964Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "151bca3e-db98-4ad2-8d8d-239943b91437": {
     "status": "discovered",
@@ -1571,16 +1584,18 @@
     "title": "Beyond Rage",
     "lastChapterId": "389be7a1-84ab-4943-ab5a-4559d13e6578",
     "lastChapter": "322",
-    "lastAttemptAt": "2026-04-16T12:26:17.350Z",
-    "reason": "adult_blocked"
+    "lastAttemptAt": "2026-04-16T15:51:11.575Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   },
   "df8aac0c-31ea-4e4a-8daa-f0167c2aeda7": {
     "status": "failed",
     "title": "Prequel: Hina & Meari",
     "lastChapterId": "306fa67b-f6ee-4062-afaa-85ff27e626fc",
     "lastChapter": "7.5",
-    "lastAttemptAt": "2026-04-16T12:26:17.736Z",
-    "reason": "adult_blocked"
+    "lastAttemptAt": "2026-04-16T15:50:03.815Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   },
   "ed792d74-2a27-4fe9-936f-b448a7283792": {
     "status": "discovered",
@@ -1611,8 +1626,9 @@
     "title": "",
     "lastChapterId": "ef78f0fb-c222-4c51-b0d1-ed640c864367",
     "lastChapter": "24",
-    "lastAttemptAt": "2026-04-16T12:26:20.260Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:51:28.995Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "16dcfceb-4382-45f1-adb0-d57fc5ea0d06": {
     "status": "discovered",
@@ -1712,8 +1728,9 @@
     "title": "",
     "lastChapterId": "3a84ad60-1d00-4125-b183-8c51ec322e6f",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-16T12:27:40.738Z",
-    "reason": "anilist_match_not_found"
+    "lastAttemptAt": "2026-04-16T15:50:08.378Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   },
   "760f2141-28f8-471b-8951-bcf7f936809c": {
     "status": "discovered",
@@ -2333,6 +2350,28 @@
     "lastAttemptAt": "2026-04-16T15:39:35.983Z",
     "lastSuccessAt": "2026-04-16T15:39:35.983Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "77296cee-0b74-415f-914d-6f29036d3906": {
+    "status": "discovered",
+    "title": "Haunted Peak",
+    "mangaId": 209863,
+    "anilistId": 209863,
+    "chapterIndexId": "77296cee-0b74-415f-914d-6f29036d3906",
+    "lastChapterId": "1e618ab6-c885-4526-b00d-5516c2f39d5d",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-16T15:51:10.154Z",
+    "lastSuccessAt": "2026-04-16T15:51:10.154Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "185c7716-6925-42b3-9d3c-06791a6217b2": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "e51f6a55-dc1a-492f-b935-568870ce4148",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-16T15:51:18.038Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
