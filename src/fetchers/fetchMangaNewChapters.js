@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const CONFIG = require('../config/constants');
 const { delay, convertMangaToFirestoreFormat } = require('../utils/formatters');
-const { fetchGraphQL } = require('../utils/fetchHelper');
+const { DEFAULT_HTTP_HEADERS, computeRetryDelayMs, fetchGraphQL } = require('../utils/fetchHelper');
 const { isAdultContent, isManga } = require('../utils/filters');
 const {
   getMangaCatalogEntries,
@@ -33,6 +33,12 @@ const ALLOWED_LANGUAGES = String(process.env.MANGA_NEW_CHAPTERS_LANGUAGES || 'en
 const CATALOG_PAGE_SIZE = 120;
 const GENRE_MAX_ITEMS = 120;
 const DEFAULT_SECTION_LIMIT = 24;
+const MANGADEX_REQUEST_RETRIES = Math.max(1, Number(process.env.MANGA_NEW_CHAPTERS_REQUEST_RETRIES || 3));
+
+const MANGADEX_HEADERS = {
+  ...DEFAULT_HTTP_HEADERS,
+  Referer: 'https://mangadex.org/',
+};
 
 const ANILIST_MANGA_FRAGMENT = `
   id
@@ -268,6 +274,32 @@ function writeDiscoveryReport(report) {
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_DISCOVERY_REPORT, report);
 }
 
+async function requestJsonWithRetries(url, options = {}, label = 'request') {
+  let attempt = 0;
+  while (attempt < MANGADEX_REQUEST_RETRIES) {
+    try {
+      return await axios.get(url, {
+        ...options,
+        headers: {
+          ...MANGADEX_HEADERS,
+          ...(options.headers || {}),
+        },
+      });
+    } catch (error) {
+      attempt += 1;
+      const statusText = error.response ? `[${error.response.status}]` : '[Network]';
+      console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
+      if (attempt >= MANGADEX_REQUEST_RETRIES) {
+        throw error;
+      }
+      const waitTimeMs = computeRetryDelayMs(attempt, error);
+      console.log(`Retrying ${label} in ${(waitTimeMs / 1000).toFixed(1)}s...`);
+      await delay(waitTimeMs);
+    }
+  }
+  throw new Error(`${label} failed after ${MANGADEX_REQUEST_RETRIES} attempts`);
+}
+
 function summarizeRecentItem(recentItem, extra = {}) {
   return {
     mangadexId: String(recentItem?.mangaId || ''),
@@ -432,7 +464,7 @@ async function fetchRecentMangaDexFeed() {
 
   for (let page = 0; page < MAX_FEED_PAGES; page++) {
     const offset = page * FEED_PAGE_SIZE;
-    const response = await axios.get(`${MANGADEX_API}/chapter`, {
+    const response = await requestJsonWithRetries(`${MANGADEX_API}/chapter`, {
       params: {
         limit: FEED_PAGE_SIZE,
         offset,
@@ -445,7 +477,7 @@ async function fetchRecentMangaDexFeed() {
         translatedLanguage: ALLOWED_LANGUAGES,
       },
       timeout: 45000,
-    });
+    }, `mangadex recent feed page ${page + 1}`);
 
     const rows = Array.isArray(response.data?.data) ? response.data.data : [];
     fetchedPages += 1;
@@ -510,12 +542,12 @@ async function fetchMangaDexMangaDetails(mangaId, cache) {
     return cache.get(mangaId);
   }
 
-  const response = await axios.get(`${MANGADEX_API}/manga/${mangaId}`, {
+  const response = await requestJsonWithRetries(`${MANGADEX_API}/manga/${mangaId}`, {
     params: {
       includes: ['cover_art', 'author', 'artist'],
     },
     timeout: 30000,
-  });
+  }, `mangadex manga details ${mangaId}`);
 
   const details = response.data?.data || null;
   cache.set(mangaId, details);
@@ -570,9 +602,9 @@ async function searchAniListMediaByTitles(titles, year) {
 }
 
 async function fetchChapterPages(chapterId) {
-  const response = await axios.get(`${MANGADEX_API}/at-home/server/${chapterId}`, {
+  const response = await requestJsonWithRetries(`${MANGADEX_API}/at-home/server/${chapterId}`, {
     timeout: 30000,
-  });
+  }, `mangadex chapter pages ${chapterId}`);
 
   const baseUrl = String(response.data?.baseUrl || '');
   const chapter = response.data?.chapter || {};
