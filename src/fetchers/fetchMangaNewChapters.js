@@ -776,7 +776,7 @@ async function fetchAniListMediaByIds({ anilistId = null, malId = null }) {
 }
 
 async function searchAniListMediaByTitles(titles, year) {
-  const uniqueTitles = buildSearchTitleVariants(titles).slice(0, 12);
+  const uniqueTitles = buildSearchTitleVariants(titles).slice(0, 3);
   let best = null;
   let bestScore = -1;
 
@@ -785,6 +785,7 @@ async function searchAniListMediaByTitles(titles, year) {
       search: title,
       perPage: SEARCH_RESULTS_LIMIT,
     });
+        await delay(600); // Rate-limit guard: 600ms between AniList search calls
     const candidates = Array.isArray(data?.Page?.media) ? data.Page.media : [];
 
     for (const media of candidates) {
@@ -1164,7 +1165,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       console.log(
         `Discovered new manga from recent feed: "${entry.title}" (AniList=${entry.anilistId}, MangaDex=${entry.mangadexId}, latest ch=${recentItem.chapter || '?'})`,
       );
-      await delay(REQUEST_DELAY_MS);
+      await delay(Math.max(REQUEST_DELAY_MS, 1500)); // min 1.5s between manga discovery
     } catch (error) {
       discoveryState[recentKey] = {
         status: 'failed',
