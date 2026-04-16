@@ -52,11 +52,15 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/manga api/search/manga_index
+          git add -A api/manga api/search
           if git diff --staged --quiet; then
             echo "No manga new chapters changes to commit."
           else
             git commit -m "api: independent manga new chapters refresh [skip ci]"
+            git add -A api/manga api/search
+            if ! git diff --quiet -- api/manga api/search; then
+              git commit --amend --no-edit
+            fi
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
