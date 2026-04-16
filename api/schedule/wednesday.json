@@ -72,8 +72,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=a0N7s4OB0jA"
     },
-    "nextEpisode": 158,
-    "nextAiringAt": 1776218400
+    "nextEpisode": 159,
+    "nextAiringAt": 1776823200
   },
   {
     "animeId": 61254,
@@ -217,8 +217,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=n-jg8syMe08"
     },
-    "nextEpisode": 27,
-    "nextAiringAt": 1776250800
+    "nextEpisode": 28,
+    "nextAiringAt": 1776855600
   },
   {
     "animeId": 59708,
@@ -523,7 +523,7 @@
     "meanScore": 80,
     "popularity": 65043,
     "trending": 493,
-    "favourites": 1391,
+    "favourites": 1416,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -538,8 +538,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=kAncxuwCPZg"
     },
-    "nextEpisode": 6,
-    "nextAiringAt": 1776256200
+    "nextEpisode": 7,
+    "nextAiringAt": 1776861000
   },
   {
     "animeId": 63433,
@@ -617,7 +617,7 @@
     "meanScore": 45,
     "popularity": 1268,
     "trending": 0,
-    "favourites": 32,
+    "favourites": 36,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -628,8 +628,8 @@
     "mal_url": "https://myanimelist.net/anime/63433",
     "anilist_url": "https://anilist.co/anime/210375",
     "trailer": null,
-    "nextEpisode": 3,
-    "nextAiringAt": 1776257700
+    "nextEpisode": 4,
+    "nextAiringAt": 1776862500
   },
   {
     "animeId": 61316,
@@ -942,7 +942,7 @@
     "meanScore": 85,
     "popularity": 68055,
     "trending": 19,
-    "favourites": 1574,
+    "favourites": 1609,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -957,8 +957,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=i8EjBP85cCc"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776258000
+    "nextEpisode": 3,
+    "nextAiringAt": 1776862800
   },
   {
     "animeId": 62485,
@@ -991,6 +991,16 @@
     ],
     "tags": [
       {
+        "id": 280,
+        "name": "Netorase",
+        "description": "Features characters in a romantic relationship who agree to be sexually intimate with others.",
+        "category": "Sexual Content",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
         "id": 1045,
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
@@ -1011,10 +1021,10 @@
         "isAdult": false
       },
       {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1031,31 +1041,21 @@
         "isAdult": false
       },
       {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 280,
-        "name": "Netorase",
-        "description": "Features characters in a romantic relationship who agree to be sexually intimate with others.",
-        "category": "Sexual Content",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": true
-      },
-      {
         "id": 1670,
         "name": "Psychosexual",
         "description": "Work that involves the psychological aspects of sexual impulses.",
         "category": "Theme-Other",
-        "rank": 20,
+        "rank": 30,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -1078,7 +1078,7 @@
     "meanScore": 59,
     "popularity": 11841,
     "trending": 3,
-    "favourites": 161,
+    "favourites": 162,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1093,8 +1093,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_yVyIweMYto"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776258000
+    "nextEpisode": 3,
+    "nextAiringAt": 1776862800
   },
   {
     "animeId": 62512,
@@ -1129,6 +1129,16 @@
     ],
     "tags": [
       {
+        "id": 248,
+        "name": "Economics",
+        "description": "Centers around the field of economics.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 1752,
         "name": "Medieval",
         "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
@@ -1159,10 +1169,10 @@
         "isAdult": false
       },
       {
-        "id": 1304,
-        "name": "Anthropomorphism",
-        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
-        "category": "Cast-Traits",
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1189,29 +1199,19 @@
         "isAdult": false
       },
       {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 516,
         "name": "Language Barrier",
         "description": "A barrier to communication between people who are unable to speak a common language.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 142,
-        "name": "Food",
-        "description": "Centers around cooking or food appraisal.",
-        "category": "Theme-Arts",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 248,
-        "name": "Economics",
-        "description": "Centers around the field of economics.",
         "category": "Theme-Other",
         "rank": 60,
         "isGeneralSpoiler": false,
@@ -1244,7 +1244,7 @@
     "meanScore": 66,
     "popularity": 8244,
     "trending": 69,
-    "favourites": 103,
+    "favourites": 104,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1259,8 +1259,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pxeYbPg5JIA"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776258000
+    "nextEpisode": 4,
+    "nextAiringAt": 1776862800
   },
   {
     "animeId": 63830,
@@ -1361,8 +1361,8 @@
     "mal_url": "https://myanimelist.net/anime/63830",
     "anilist_url": "https://anilist.co/anime/210687",
     "trailer": null,
-    "nextEpisode": 2,
-    "nextAiringAt": 1776259800
+    "nextEpisode": 3,
+    "nextAiringAt": 1776864600
   },
   {
     "animeId": 57779,
@@ -1509,20 +1509,20 @@
         "isAdult": false
       },
       {
-        "id": 1090,
-        "name": "Monster Boy",
-        "description": "Prominently features a male character who is a part-monster.",
-        "category": "Cast-Traits",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
         "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
+        "id": 1090,
+        "name": "Monster Boy",
+        "description": "Prominently features a male character who is a part-monster.",
+        "category": "Cast-Traits",
         "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1586,7 +1586,7 @@
     "meanScore": 80,
     "popularity": 28061,
     "trending": 92,
-    "favourites": 450,
+    "favourites": 458,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1601,8 +1601,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=GHjCjHAKo9c"
     },
-    "nextEpisode": 5,
-    "nextAiringAt": 1776261600
+    "nextEpisode": 6,
+    "nextAiringAt": 1776866400
   },
   {
     "animeId": 61831,
@@ -1635,20 +1635,20 @@
     ],
     "tags": [
       {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1712,7 +1712,7 @@
     "meanScore": 58,
     "popularity": 25289,
     "trending": 25,
-    "favourites": 422,
+    "favourites": 429,
     "source": "OTHER",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1727,8 +1727,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=embD4ae1ufk"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776263400
+    "nextEpisode": 4,
+    "nextAiringAt": 1776868200
   },
   {
     "animeId": 62604,
@@ -1868,7 +1868,7 @@
     "meanScore": 73,
     "popularity": 22292,
     "trending": 8,
-    "favourites": 254,
+    "favourites": 275,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1883,8 +1883,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pdWQUnshA4M"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776264300
+    "nextEpisode": 3,
+    "nextAiringAt": 1776869100
   },
   {
     "animeId": 63276,
@@ -1955,8 +1955,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=wM3E9LXHmu0"
     },
-    "nextEpisode": 1,
-    "nextAiringAt": 1776264960
+    "nextEpisode": 2,
+    "nextAiringAt": 1776869760
   },
   {
     "animeId": 62893,
@@ -2080,7 +2080,7 @@
     "meanScore": 71,
     "popularity": 9807,
     "trending": 3,
-    "favourites": 120,
+    "favourites": 131,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2095,8 +2095,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=d0LkNAqMrZw"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776265200
+    "nextEpisode": 4,
+    "nextAiringAt": 1776870000
   },
   {
     "animeId": 59551,
@@ -2266,7 +2266,7 @@
     "meanScore": 76,
     "popularity": 17299,
     "trending": 5,
-    "favourites": 318,
+    "favourites": 333,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2281,7 +2281,7 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=QivWH79PkcE"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776267000
+    "nextEpisode": 5,
+    "nextAiringAt": 1776871800
   }
 ]

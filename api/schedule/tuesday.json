@@ -324,7 +324,7 @@
     "meanScore": 72,
     "popularity": 11447,
     "trending": 0,
-    "favourites": 143,
+    "favourites": 146,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -445,16 +445,6 @@
         "isAdult": false
       },
       {
-        "id": 294,
-        "name": "Bisexual",
-        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
-        "category": "Cast-Traits",
-        "rank": 81,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1456,
         "name": "Femboy",
         "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
@@ -462,6 +452,16 @@
         "rank": 81,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -602,7 +602,7 @@
     "meanScore": 75,
     "popularity": 30763,
     "trending": 15,
-    "favourites": 306,
+    "favourites": 328,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -688,20 +688,20 @@
         "isAdult": false
       },
       {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
-        "category": "Theme-Drama",
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -755,7 +755,7 @@
     "meanScore": 73,
     "popularity": 18825,
     "trending": 14,
-    "favourites": 198,
+    "favourites": 229,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -823,9 +823,9 @@
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
         "category": "Cast-Main Cast",
         "rank": 80,
         "isGeneralSpoiler": false,
@@ -833,9 +833,9 @@
         "isAdult": false
       },
       {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
         "category": "Cast-Main Cast",
         "rank": 80,
         "isGeneralSpoiler": false,
@@ -910,7 +910,7 @@
     "meanScore": 75,
     "popularity": 28120,
     "trending": 18,
-    "favourites": 410,
+    "favourites": 436,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1007,30 +1007,10 @@
         "isAdult": false
       },
       {
-        "id": 175,
-        "name": "Robots",
-        "description": "Prominently features humanoid machines.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 84,
-        "name": "School Club",
-        "description": "Partly or completely set in a school club scene.",
-        "category": "Setting-Scene",
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1047,10 +1027,30 @@
         "isAdult": false
       },
       {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1149,6 +1149,16 @@
         "isAdult": false
       },
       {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 56,
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
@@ -1159,11 +1169,11 @@
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1179,29 +1189,9 @@
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
         "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -1237,6 +1227,16 @@
         "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
       }
     ],
     "studios": [
@@ -1264,7 +1264,7 @@
     "meanScore": 60,
     "popularity": 5844,
     "trending": 3,
-    "favourites": 40,
+    "favourites": 39,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1370,20 +1370,20 @@
         "isAdult": false
       },
       {
-        "id": 324,
-        "name": "Chibi",
-        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
-        "category": "Theme-Other",
+        "id": 1753,
+        "name": "Cohabitation",
+        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
+        "category": "Theme-Romance",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1753,
-        "name": "Cohabitation",
-        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
-        "category": "Theme-Romance",
+        "id": 324,
+        "name": "Chibi",
+        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
+        "category": "Theme-Other",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1407,7 +1407,7 @@
     "meanScore": 64,
     "popularity": 5438,
     "trending": 1,
-    "favourites": 49,
+    "favourites": 50,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1457,20 +1457,20 @@
     ],
     "tags": [
       {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
+        "id": 1742,
+        "name": "Mixed Media",
+        "description": "Features a combination of different media and animation techniques. Often seen with puppetry, textiles, live action footage, stop motion, and more. This does not include works with normal usage of CGI in their production.",
+        "category": "Technical",
         "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1742,
-        "name": "Mixed Media",
-        "description": "Features a combination of different media and animation techniques. Often seen with puppetry, textiles, live action footage, stop motion, and more. This does not include works with normal usage of CGI in their production.",
-        "category": "Technical",
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
         "rank": 100,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1562,7 +1562,7 @@
     "meanScore": 60,
     "popularity": 7290,
     "trending": 2,
-    "favourites": 82,
+    "favourites": 86,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1611,20 +1611,20 @@
     ],
     "tags": [
       {
-        "id": 276,
-        "name": "Kaiju",
-        "description": "Prominently features giant monsters.",
-        "category": "Theme-Fantasy",
+        "id": 324,
+        "name": "Chibi",
+        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
+        "category": "Theme-Other",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 324,
-        "name": "Chibi",
-        "description": "Features \"super deformed\" character designs with smaller, rounder proportions and a cute look.",
-        "category": "Theme-Other",
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1735,19 +1735,19 @@
         "isAdult": false
       },
       {
-        "id": 1052,
-        "name": "Adoption",
-        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
-        "category": "Theme-Other",
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 193,
-        "name": "Episodic",
-        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
         "category": "Technical",
         "rank": 20,
         "isGeneralSpoiler": false,
@@ -1765,10 +1765,10 @@
         "isAdult": false
       },
       {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
+        "id": 1052,
+        "name": "Adoption",
+        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
+        "category": "Theme-Other",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
