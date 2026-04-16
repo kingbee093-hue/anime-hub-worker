@@ -40,15 +40,6 @@ jobs:
           MANGA_FORCE_FULL_REFRESH: '0'
         run: npm run fetch:manga
 
-      - name: Refresh Releasing Chapter Coverage (Direct MangaDex + Fallback Providers)
-        env:
-          MANGA_ENABLE_ENGLISH_FALLBACK: '1'
-          MANGA_BACKFILL_SECTION: ''
-          MANGA_BACKFILL_ONLY_RELEASING: '1'
-          MANGA_BACKFILL_CHAPTER_BATCH: '80'
-          MANGA_BACKFILL_FORCE_ALL: '0'
-        run: npm run backfill:manga-chapters
-
       - name: Build New Chapters Feed (48h Window)
         env:
           MANGA_NEW_CHAPTERS_FRESH_HOURS: '48'
@@ -61,11 +52,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/manga/catalog api/manga/releasing.json api/manga/chapters api/manga/backfill api/manga/new_chapters.json api/manga/mangadex_mapping.json api/manga/mangadex_mapping_fallback.json api/manga/chapter_source_mapping.json api/search/manga_index
+          git add api/manga api/search/manga_index
           if git diff --staged --quiet; then
             echo "No manga new chapters changes to commit."
           else
             git commit -m "api: independent manga new chapters refresh [skip ci]"
-            git pull --rebase origin main || git pull origin main
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main
           fi
