@@ -690,7 +690,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 84,
-    "popularity": 7933,
+    "popularity": 7951,
     "trending": 0,
     "favourites": 806,
     "source": "MANGA",
@@ -5451,7 +5451,7 @@
     "latestEpisodeTitle": "Episode 27"
   },
   {
-    "animeId": 163793,
+    "animeId": 63964,
     "anilistId": 163793,
     "title": "Cheongchun Blossom",
     "titleRomaji": "Cheongchun Blossom",
@@ -5503,7 +5503,7 @@
     "hashtag": "",
     "startDate": "2026-04-15",
     "endDate": null,
-    "mal_url": "",
+    "mal_url": "https://myanimelist.net/anime/63964",
     "anilist_url": "https://anilist.co/anime/163793",
     "trailer": null,
     "latestEpisode": 1,
@@ -7593,7 +7593,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 78,
-    "popularity": 7854,
+    "popularity": 7996,
     "trending": 16,
     "favourites": 192,
     "source": "OTHER",
@@ -8327,7 +8327,7 @@
     "rating": 8.6,
     "averageScore": 86,
     "meanScore": 86,
-    "popularity": 95107,
+    "popularity": 96288,
     "trending": 32,
     "favourites": 2221,
     "source": "MANGA",
@@ -13412,7 +13412,17 @@
         "name": "Mythology",
         "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
         "category": "Theme-Fantasy",
-        "rank": 95,
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -13438,11 +13448,11 @@
         "isAdult": false
       },
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 76,
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -13452,17 +13462,7 @@
         "name": "Shoujo",
         "description": "Target demographic is teenage and young adult females.",
         "category": "Demographic",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 43,
-        "name": "Swordplay",
-        "description": "Prominently features the use of swords in combat.",
-        "category": "Theme-Action",
-        "rank": 70,
+        "rank": 74,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -13472,8 +13472,28 @@
         "name": "Gods",
         "description": "Prominently features a character of divine or religious nature.",
         "category": "Cast-Traits",
-        "rank": 60,
+        "rank": 66,
         "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -13488,6 +13508,16 @@
         "isAdult": false
       },
       {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 85,
         "name": "Tragedy",
         "description": "Centers around tragic events and unhappy endings.",
@@ -13495,26 +13525,6 @@
         "rank": 60,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 66,
-        "name": "Super Power",
-        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
-        "category": "Theme-Fantasy",
-        "rank": 53,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 138,
-        "name": "Age Gap",
-        "description": "Prominently features romantic relations between people with a significant age difference.",
-        "category": "Theme-Romance",
-        "rank": 40,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -13565,16 +13575,6 @@
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
@@ -16061,7 +16061,7 @@
     "rating": 4.6,
     "averageScore": 46,
     "meanScore": 48,
-    "popularity": 1282,
+    "popularity": 1284,
     "trending": 0,
     "favourites": 32,
     "source": "VIDEO_GAME",
