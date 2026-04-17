@@ -26,7 +26,7 @@ const CATALOG_MAX_ITEMS = 100000;
 const GENRE_MAX_ITEMS = 120;
 const SECTION_ITEMS = 24;
 const MANGADEX_DELAY_MS = 250;
-const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 100);
+const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 90);
 const MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT = Number(process.env.MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT || 6);
 const MANGADEX_MAPPING_MAX_QUERY_PLANS = Number(process.env.MANGADEX_MAPPING_MAX_QUERY_PLANS || 10);
 const VERBOSE_MAPPING_LOGS = process.env.MANGA_VERBOSE_MAPPING_LOGS === '1';
@@ -35,7 +35,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'featured',
     sectionPath: CONFIG.API_PATHS.MANGA_FEATURED,
-    limit: 10,
+    limit: 5,
     pages: 1,
     variables: {
       perPage: 35,
@@ -45,7 +45,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'popular',
     sectionPath: CONFIG.API_PATHS.MANGA_POPULAR,
-    limit: 10,
+    limit: 5,
     pages: 1,
     variables: {
       perPage: 35,
@@ -55,7 +55,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'top-rated',
     sectionPath: CONFIG.API_PATHS.MANGA_TOP_RATED,
-    limit: 10,
+    limit: 5,
     pages: 1,
     variables: {
       perPage: 35,
@@ -65,7 +65,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'trending',
     sectionPath: CONFIG.API_PATHS.MANGA_TRENDING,
-    limit: 10,
+    limit: 5,
     pages: 1,
     variables: {
       perPage: 35,
@@ -75,7 +75,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'releasing',
     sectionPath: CONFIG.API_PATHS.MANGA_RELEASING,
-    limit: 10,
+    limit: 5,
     pages: 1,
     variables: {
       perPage: 35,
@@ -90,7 +90,7 @@ const MANGA_CATALOG_SOURCES = [
   ].map(genre => ({
     label: `genre-${genre.toLowerCase().replace(/\s+/g, '-')}`,
     sectionPath: `${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genre.toLowerCase().replace(/\s+/g, '-')}`,
-    limit: SECTION_ITEMS,
+    limit: 5,
     pages: 1,
     variables: {
       perPage: 35,
