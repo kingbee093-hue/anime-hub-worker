@@ -972,7 +972,12 @@ async function fetchMangaCatalog() {
     }
 
     const progress = `[${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN}]`;
-    const titleShort = (manga.title || 'Unknown Title').slice(0, 35);
+    const getTitle = (m) => {
+      if (typeof m.title === 'string') return m.title;
+      if (m.title && typeof m.title === 'object') return m.title.userPreferred || m.title.english || m.title.romaji;
+      return 'Unknown Title';
+    };
+    const titleShort = getTitle(manga).slice(0, 35);
     process.stdout.write(`  ⏳ ${progress} Resolving: ${titleShort}... \r`);
     const resolved = await resolveMangaDexMapping(manga, nextMappingCache, mappingStats);
     mappingAttempts += 1;
