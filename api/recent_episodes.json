@@ -4742,7 +4742,8 @@
     "titleNative": "オタクに優しいギャルはいない!?",
     "synonyms": [
       "OtaGal",
-      "オタギャル"
+      "オタギャル",
+      "OtaGyaru"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199588-M2vtWicvqNbU.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199588-M2vtWicvqNbU.jpg",
@@ -8338,18 +8339,18 @@
   {
     "animeId": 63469,
     "anilistId": 207675,
-    "title": "Hyakki Yakou Shou",
+    "title": "Hyakki Yakoushou",
     "titleRomaji": "Hyakki Yakou Shou",
-    "titleEnglish": "",
+    "titleEnglish": "Hyakki Yakoushou",
     "titleNative": "百鬼夜行抄",
     "synonyms": [
       "Selected Pandemonium",
-      "Hyakki Yakoushou",
       "Tales of a Hundred Ghosts Traveling by the Night",
       "Hyakkiyakou Shou",
       "Beyond Twilight",
       "Le Cortège des cent démons",
-      "La Corte dei Cento Demoni"
+      "La Corte dei Cento Demoni",
+      "บันทึกขบวนร้อยอสูรแห่งรัตติกาล"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207675-h3TZK82jG5aD.png",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207675-h3TZK82jG5aD.png",
@@ -8364,7 +8365,7 @@
     "seasonYear": 2026,
     "seasonInt": 262,
     "episodes": 0,
-    "duration": 0,
+    "duration": 4,
     "genres": [
       "Horror",
       "Mystery",
@@ -8427,7 +8428,11 @@
     "endDate": null,
     "mal_url": "https://myanimelist.net/anime/63469",
     "anilist_url": "https://anilist.co/anime/207675",
-    "trailer": null,
+    "trailer": {
+      "id": "gUKK4uohtgE",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=gUKK4uohtgE"
+    },
     "latestEpisode": 2,
     "latestEpisodeTitle": "Episode 2"
   },
