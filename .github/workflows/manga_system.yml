@@ -41,7 +41,7 @@ jobs:
       # ستبدأ هذه الخطوة فوراً بعد المرحلة الأولى لسد أي نقص في البيانات.
       - name: Stage 2 - Chapter & Image Backfill
         env:
-          MANGA_BACKFILL_CHAPTER_BATCH: '20' # معالجة 20 عنوان في كل مرة
+          MANGA_BACKFILL_CHAPTER_BATCH: ${{ github.event.inputs.batch_size || '50' }}
         run: node index.js mangachaptersbackfill
 
       - name: Commit and Push Changes
