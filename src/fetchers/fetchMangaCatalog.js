@@ -1004,7 +1004,7 @@ async function fetchMangaCatalog() {
     }
   }
   
-  if (totalMappingToAttempt > 0) {
+  if (MANGADEX_MAPPING_ATTEMPTS_PER_RUN > 0) {
     console.log(`\n🎉 Step 2 Complete! Resolved ${mappingAttempts} titles.`);
   }
 
