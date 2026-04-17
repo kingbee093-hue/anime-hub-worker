@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-04-17T00:23:40.665Z",
+  "updatedAt": "2026-04-17T00:36:31.343Z",
   "sectionScope": "all",
   "catalogTotal": 1152,
   "indexedTitles": 1172,
-  "pendingTitles": 93,
-  "selectedCount": 10,
-  "batchSize": 10,
+  "pendingTitles": 88,
+  "selectedCount": 5,
+  "batchSize": 5,
   "forceAll": false,
   "failureCooldownHours": 24,
   "successCooldownHours": 168,
@@ -13,149 +13,74 @@
   "targetIds": [],
   "selected": [
     {
-      "mangadexId": "151bca3e-db98-4ad2-8d8d-239943b91437",
-      "title": "You Shou Yan",
-      "score": 1528266,
-      "format": "MANGA",
-      "year": 2017,
-      "popularity": 266,
-      "chapters": 1179,
-      "chapterIndexId": "151bca3e-db98-4ad2-8d8d-239943b91437",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "728698ee-f78f-4257-8b8d-212e0b3a6037",
-      "title": "Battle Studies",
-      "score": 848174,
-      "format": "MANGA",
-      "year": 2015,
-      "popularity": 1174,
-      "chapters": 498,
-      "chapterIndexId": "728698ee-f78f-4257-8b8d-212e0b3a6037",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "05e36dbe-ddf2-45e4-8d12-1f45d8397817",
-      "title": "123 Luode Dao!?",
-      "score": 659146,
-      "format": "MANGA",
-      "year": 2022,
-      "popularity": 146,
-      "chapters": 310,
-      "chapterIndexId": "05e36dbe-ddf2-45e4-8d12-1f45d8397817",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "a3c09565-47aa-410c-a137-a3a6e6bfa8a8",
-      "title": "Manager Kim",
-      "score": 596030,
-      "format": "MANGA",
-      "year": 2021,
-      "popularity": 9030,
-      "chapters": 238,
-      "chapterIndexId": "a3c09565-47aa-410c-a137-a3a6e6bfa8a8",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "9f03fd07-8012-4032-ad95-31458704b601",
-      "title": "Oishinbo",
-      "score": 588225,
-      "format": "MANGA",
-      "year": 1983,
-      "popularity": 1225,
-      "chapters": 238,
-      "chapterIndexId": "9f03fd07-8012-4032-ad95-31458704b601",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "8685b705-d626-44a0-b449-2ccd5ae5959d",
-      "title": "Mujikbaeksu Gye Baek-Sun",
-      "score": 574497,
-      "format": "MANGA",
-      "year": 2023,
-      "popularity": 2497,
-      "chapters": 223,
-      "chapterIndexId": "8685b705-d626-44a0-b449-2ccd5ae5959d",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "6576ac4c-0251-4978-ace8-70c675cb3b86",
-      "title": "Seeds of Anxiety: Asterisk",
-      "score": 570914,
-      "format": "MANGA",
-      "year": 2019,
-      "popularity": 914,
-      "chapters": 221,
-      "chapterIndexId": "6576ac4c-0251-4978-ace8-70c675cb3b86",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "e5f26bd4-c91f-4a2f-a9bc-3791c03caf0e",
-      "title": "Plastic Nee-san",
-      "score": 566657,
-      "format": "MANGA",
-      "year": 2009,
-      "popularity": 2657,
-      "chapters": 215,
-      "chapterIndexId": "e5f26bd4-c91f-4a2f-a9bc-3791c03caf0e",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "dbbca2b5-bdd1-4f2b-8b2e-d72bf7fd89a0",
-      "title": "I’m Really Not the Devil’s Lackey",
-      "score": 547499,
-      "format": "MANGA",
-      "year": 2021,
-      "popularity": 9499,
-      "chapters": 189,
-      "chapterIndexId": "dbbca2b5-bdd1-4f2b-8b2e-d72bf7fd89a0",
-      "currentEnglishCount": 1,
-      "currentArabicCount": 0,
-      "hasCoverage": true,
-      "lastSuccessAt": null,
-      "lastFailureAt": null
-    },
-    {
-      "mangadexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
+      "mangadexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
       "title": "Mieruko-chan",
       "score": 544016,
       "format": "MANGA",
       "year": 2018,
       "popularity": 44006,
       "chapters": 10,
-      "chapterIndexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
+      "chapterIndexId": "src-mangadex-105097",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": "2026-04-17T00:23:40.611Z",
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "0b03a6de-56a5-4f3f-bf1f-d893b8da05d3",
+      "title": "Starting Today, We’re Childhood Friends",
+      "score": 518859,
+      "format": "MANGA",
+      "year": 2021,
+      "popularity": 3859,
+      "chapters": 166,
+      "chapterIndexId": "0b03a6de-56a5-4f3f-bf1f-d893b8da05d3",
+      "currentEnglishCount": 1,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "084f390c-e8b1-471a-aa68-2aa29d454ec6",
+      "title": "Azur Lane: Bisoku Zenshin!",
+      "score": 511074,
+      "format": "MANGA",
+      "year": 2018,
+      "popularity": 1074,
+      "chapters": 161,
+      "chapterIndexId": "084f390c-e8b1-471a-aa68-2aa29d454ec6",
+      "currentEnglishCount": 1,
+      "currentArabicCount": 0,
+      "hasCoverage": true,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "8d163365-15a6-4031-8671-29a11e3b6d69",
+      "title": "Accomplishments of the Duke's Daughter",
+      "score": 508918,
+      "format": "MANGA",
+      "year": 2015,
+      "popularity": 8913,
+      "chapters": 5,
+      "chapterIndexId": "8d163365-15a6-4031-8671-29a11e3b6d69",
+      "currentEnglishCount": 0,
+      "currentArabicCount": 0,
+      "hasCoverage": false,
+      "lastSuccessAt": null,
+      "lastFailureAt": null
+    },
+    {
+      "mangadexId": "901da7d9-8742-4f1a-9432-b7c1e67a5daf",
+      "title": "Ryuu to Ayumu Nariagari Boukensha-dou: Youzumi to shite S-Rank Party kara Tsuihou Sareta Kaifuku Majutsushi, Suterareta Saki de Saikyou no Shinryuu wo Fukkatsu Saseteshimau",
+      "score": 505627,
+      "format": "MANGA",
+      "year": 2021,
+      "popularity": 5601,
+      "chapters": 26,
+      "chapterIndexId": "901da7d9-8742-4f1a-9432-b7c1e67a5daf",
       "currentEnglishCount": 0,
       "currentArabicCount": 0,
       "hasCoverage": false,
@@ -164,26 +89,6 @@
     }
   ],
   "nextSample": [
-    {
-      "mangadexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
-      "title": "Mieruko-chan"
-    },
-    {
-      "mangadexId": "0b03a6de-56a5-4f3f-bf1f-d893b8da05d3",
-      "title": "Starting Today, We’re Childhood Friends"
-    },
-    {
-      "mangadexId": "084f390c-e8b1-471a-aa68-2aa29d454ec6",
-      "title": "Azur Lane: Bisoku Zenshin!"
-    },
-    {
-      "mangadexId": "8d163365-15a6-4031-8671-29a11e3b6d69",
-      "title": "Accomplishments of the Duke's Daughter"
-    },
-    {
-      "mangadexId": "901da7d9-8742-4f1a-9432-b7c1e67a5daf",
-      "title": "Ryuu to Ayumu Nariagari Boukensha-dou: Youzumi to shite S-Rank Party kara Tsuihou Sareta Kaifuku Majutsushi, Suterareta Saki de Saikyou no Shinryuu wo Fukkatsu Saseteshimau"
-    },
     {
       "mangadexId": "0cfcda3b-0dcb-459b-9931-aa823e7bf403",
       "title": "NINE PEAKS"
@@ -223,101 +128,76 @@
     {
       "mangadexId": "1116821f-0141-45ef-b91d-a8131343dd87",
       "title": "The Mask of Truth"
+    },
+    {
+      "mangadexId": "7c471acd-55f1-4ead-84a3-9cc4a8a02c3f",
+      "title": "Zhang De Tai Xiang BOSS, Jieguo Shì Ren Zhen De Xin Le."
+    },
+    {
+      "mangadexId": "b366b58a-d3e2-483e-a6cc-672ef2370d72",
+      "title": "Replica: Revenge of the Ex-Wife"
+    },
+    {
+      "mangadexId": "67ca1083-ec62-4f66-a2f5-355a2702f6e3",
+      "title": "Only Sense Online"
+    },
+    {
+      "mangadexId": "fb15cd42-cf00-480b-a6c6-12b61fe6a1ac",
+      "title": "Love Live! Nijigasaki Gakuen School Idol Doukoukai: Hangyaku no Nijigasaki"
+    },
+    {
+      "mangadexId": "d0f9e331-e022-4b49-8399-e14091d8b703",
+      "title": "Ting Xing"
     }
   ],
   "status": "completed",
-  "completedCount": 10,
+  "completedCount": 5,
   "failedCount": 0,
   "completed": [
     {
-      "chapterIndexId": "151bca3e-db98-4ad2-8d8d-239943b91437",
-      "mangadexId": "151bca3e-db98-4ad2-8d8d-239943b91437",
-      "title": "You Shou Yan",
-      "englishCount": 1182,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:22:11.284Z"
-    },
-    {
-      "chapterIndexId": "728698ee-f78f-4257-8b8d-212e0b3a6037",
-      "mangadexId": "728698ee-f78f-4257-8b8d-212e0b3a6037",
-      "title": "Battle Studies",
-      "englishCount": 540,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:22:13.628Z"
-    },
-    {
-      "chapterIndexId": "05e36dbe-ddf2-45e4-8d12-1f45d8397817",
-      "mangadexId": "05e36dbe-ddf2-45e4-8d12-1f45d8397817",
-      "title": "123 Luode Dao!?",
-      "englishCount": 196,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:22:18.706Z"
-    },
-    {
-      "chapterIndexId": "a3c09565-47aa-410c-a137-a3a6e6bfa8a8",
-      "mangadexId": "a3c09565-47aa-410c-a137-a3a6e6bfa8a8",
-      "title": "Manager Kim",
-      "englishCount": 66,
+      "chapterIndexId": "src-mangadex-105097",
+      "mangadexId": "1d6abf8e-550c-4a73-b193-f3b02d628ae3",
+      "title": "Mieruko-chan",
+      "englishCount": 115,
       "arabicCount": 0,
       "fallback": "mangahere",
-      "updatedAt": "2026-04-17T00:23:29.960Z"
+      "updatedAt": "2026-04-17T00:33:53.830Z"
     },
     {
-      "chapterIndexId": "9f03fd07-8012-4032-ad95-31458704b601",
-      "mangadexId": "9f03fd07-8012-4032-ad95-31458704b601",
-      "title": "Oishinbo",
-      "englishCount": 272,
+      "chapterIndexId": "0b03a6de-56a5-4f3f-bf1f-d893b8da05d3",
+      "mangadexId": "0b03a6de-56a5-4f3f-bf1f-d893b8da05d3",
+      "title": "Starting Today, We’re Childhood Friends",
+      "englishCount": 226,
+      "arabicCount": 0,
+      "fallback": "comick",
+      "updatedAt": "2026-04-17T00:34:30.112Z"
+    },
+    {
+      "chapterIndexId": "084f390c-e8b1-471a-aa68-2aa29d454ec6",
+      "mangadexId": "084f390c-e8b1-471a-aa68-2aa29d454ec6",
+      "title": "Azur Lane: Bisoku Zenshin!",
+      "englishCount": 188,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-17T00:23:32.201Z"
+      "updatedAt": "2026-04-17T00:34:31.759Z"
     },
     {
-      "chapterIndexId": "8685b705-d626-44a0-b449-2ccd5ae5959d",
-      "mangadexId": "8685b705-d626-44a0-b449-2ccd5ae5959d",
-      "title": "Mujikbaeksu Gye Baek-Sun",
-      "englishCount": 223,
+      "chapterIndexId": "8d163365-15a6-4031-8671-29a11e3b6d69",
+      "mangadexId": "8d163365-15a6-4031-8671-29a11e3b6d69",
+      "title": "Accomplishments of the Duke's Daughter",
+      "englishCount": 84,
+      "arabicCount": 0,
+      "fallback": "mangapill",
+      "updatedAt": "2026-04-17T00:36:29.728Z"
+    },
+    {
+      "chapterIndexId": "901da7d9-8742-4f1a-9432-b7c1e67a5daf",
+      "mangadexId": "901da7d9-8742-4f1a-9432-b7c1e67a5daf",
+      "title": "Ryuu to Ayumu Nariagari Boukensha-dou: Youzumi to shite S-Rank Party kara Tsuihou Sareta Kaifuku Majutsushi, Suterareta Saki de Saikyou no Shinryuu wo Fukkatsu Saseteshimau",
+      "englishCount": 43,
       "arabicCount": 0,
       "fallback": null,
-      "updatedAt": "2026-04-17T00:23:33.763Z"
-    },
-    {
-      "chapterIndexId": "6576ac4c-0251-4978-ace8-70c675cb3b86",
-      "mangadexId": "6576ac4c-0251-4978-ace8-70c675cb3b86",
-      "title": "Seeds of Anxiety: Asterisk",
-      "englishCount": 225,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:23:35.333Z"
-    },
-    {
-      "chapterIndexId": "e5f26bd4-c91f-4a2f-a9bc-3791c03caf0e",
-      "mangadexId": "e5f26bd4-c91f-4a2f-a9bc-3791c03caf0e",
-      "title": "Plastic Nee-san",
-      "englishCount": 217,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:23:36.993Z"
-    },
-    {
-      "chapterIndexId": "dbbca2b5-bdd1-4f2b-8b2e-d72bf7fd89a0",
-      "mangadexId": "dbbca2b5-bdd1-4f2b-8b2e-d72bf7fd89a0",
-      "title": "I’m Really Not the Devil’s Lackey",
-      "englishCount": 204,
-      "arabicCount": 0,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:23:38.664Z"
-    },
-    {
-      "chapterIndexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-      "mangadexId": "6670ee28-f26d-4b61-b49c-d71149cd5a6e",
-      "title": "Mieruko-chan",
-      "englishCount": 96,
-      "arabicCount": 4,
-      "fallback": null,
-      "updatedAt": "2026-04-17T00:23:40.598Z"
+      "updatedAt": "2026-04-17T00:36:31.278Z"
     }
   ],
   "failed": []
