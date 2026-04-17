@@ -1116,6 +1116,8 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       .map((item) => [String(item.mangaId), item]),
   );
 
+  const effectiveManifestMap = getChapterManifestMap(manifest);
+
   const caches = {
     mangadexDetails: new Map(),
   };
@@ -1140,10 +1142,76 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
   // Shuffle feed items to change processing pattern each run
   const shuffledItems = shuffleArray(recentFeedItems);
 
+  let quickSyncCount = 0;
+
   for (const recentItem of shuffledItems) {
     const recentKey = String(recentItem.mangaId);
     if (catalogMaps.byMangadexId.has(recentKey)) {
+      const existingEntry = catalogMaps.byMangadexId.get(recentKey);
       alreadyKnown += 1;
+      
+      const manifestItem =
+        effectiveManifestMap.get(String(existingEntry.chapterIndexId || '')) ||
+        effectiveManifestMap.get(String(existingEntry.mangadexId || '')) ||
+        null;
+        
+      const recentCh = parseIntegerChapter(recentItem.chapter) ?? parseFloat(recentItem.chapter);
+      const knownCh = parseFloat(manifestItem?.latestKnownChapterNumber || '0');
+      
+      if (!isNaN(recentCh) && !isNaN(knownCh) && recentCh > knownCh) {
+        try {
+          const pageUrls = await fetchChapterPages(recentItem.chapterId);
+          if (Array.isArray(pageUrls) && pageUrls.length > 0) {
+            const idxPath = path.join(__dirname, '../../api', CONFIG.API_PATHS.MANGA_CHAPTERS, `${existingEntry.chapterIndexId}.json`);
+            let idxData = null;
+            if (fs.existsSync(idxPath)) {
+              idxData = JSON.parse(fs.readFileSync(idxPath, 'utf8'));
+            }
+            if (idxData && idxData.languages) {
+              const lang = recentItem.language;
+              if (!idxData.languages[lang]) idxData.languages[lang] = [];
+              const exists = idxData.languages[lang].find((c) => String(c.id) === String(recentItem.chapterId));
+              if (!exists) {
+                const chapterPayload = normalizeStoredChapter({
+                  id: recentItem.chapterId,
+                  title: recentItem.title,
+                  chapter: recentItem.chapter,
+                  volume: '',
+                  language: recentItem.language,
+                  pages: pageUrls.length,
+                  pageUrls,
+                  imageHeaders: {},
+                  publishedAt: recentItem.publishedAt,
+                  externalUrl: null,
+                  scanlationGroup: 'MangaDex',
+                  sourceType: 'reader',
+                  provider: 'mangadex',
+                  providerChapterId: recentItem.chapterId,
+                });
+                idxData.languages[lang].unshift(chapterPayload);
+                idxData.counts[lang] = idxData.languages[lang].length;
+                if (!idxData.availableLanguages.includes(lang)) {
+                  idxData.availableLanguages.push(lang);
+                }
+                idxData.updatedAt = new Date().toISOString();
+                fs.writeFileSync(idxPath, JSON.stringify(idxData, null, 2));
+                
+                if (manifestItem) {
+                  manifestItem.latestKnownChapterNumber = recentItem.chapter;
+                  manifestItem.latestKnownChapterNumberInt = Math.floor(recentCh);
+                  manifestItem.counts = idxData.counts;
+                  manifestItem.availableLanguages = idxData.availableLanguages;
+                }
+                quickSyncCount += 1;
+                console.log(`[Quick Sync] appended new chapter ${recentItem.chapter} for already known manga: "${existingEntry.title}"`);
+              }
+            }
+          }
+        } catch (e) {
+          console.warn(`[Quick Sync] Failed for ${recentKey} ch ${recentItem.chapter}: ${e.message}`);
+        }
+      }
+
       report.skippedAlreadyKnown.push(summarizeRecentItem(recentItem, { reason: 'already_in_catalog' }));
       continue;
     }
@@ -1241,6 +1309,9 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
   const nextDiscoveredEntries = sortCatalog(Array.from(nextDiscoveredMap.values()));
   if (created > 0) {
     writeDiscoveredCatalogEntries(nextDiscoveredEntries);
+  }
+  
+  if (created > 0 || quickSyncCount > 0) {
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, {
       generatedAt: new Date().toISOString(),
       totalTitles: Array.isArray(manifest.items) ? manifest.items.length : 0,
@@ -1294,6 +1365,16 @@ function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap, disc
       effectiveManifestMap.get(String(catalogEntry.chapterIndexId || '')) ||
       effectiveManifestMap.get(String(catalogEntry.mangadexId || '')) ||
       null;
+
+    const recentChapterDouble = parseIntegerChapter(recentItem.chapter) ?? parseFloat(recentItem.chapter);
+    const knownHighestDouble = parseFloat(manifestItem?.latestKnownChapterNumber || '0');
+
+    // Filter out old uploads for existing manga to avoid "CH 88" popping up when we have "CH 327"
+    if (!isNaN(recentChapterDouble) && !isNaN(knownHighestDouble)) {
+      if (recentChapterDouble < knownHighestDouble) {
+        continue;
+      }
+    }
 
     enriched.push({
       ...catalogEntry,
