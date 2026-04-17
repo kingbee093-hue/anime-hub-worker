@@ -572,9 +572,9 @@
   "c1d6d092-811d-49d2-b143-0d12bc3fd9dd": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "0bde8b07-f259-44fc-8db4-cb71c3a0ecd5",
-    "lastChapter": "8.3",
-    "lastAttemptAt": "2026-04-17T00:18:25.868Z",
+    "lastChapterId": "21e1dc4e-655a-48e0-bd80-cb6dc49c822a",
+    "lastChapter": "9.1",
+    "lastAttemptAt": "2026-04-17T00:34:34.738Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -986,8 +986,8 @@
     "chapterIndexId": "51c40a98-ae76-40ae-9732-1b83b690c510",
     "lastChapterId": "209501a5-5b22-4c5a-9948-1eace2dd2dc6",
     "lastChapter": "33",
-    "lastAttemptAt": "2026-04-17T00:18:35.668Z",
-    "lastSuccessAt": "2026-04-17T00:18:35.668Z",
+    "lastAttemptAt": "2026-04-17T00:34:30.863Z",
+    "lastSuccessAt": "2026-04-17T00:34:30.863Z",
     "reason": null,
     "matcherVersion": 2
   },
@@ -1684,8 +1684,8 @@
     "chapterIndexId": "d69d9c47-a3ab-41ac-bdcc-9cfcf226c88d",
     "lastChapterId": "a0fa0d8c-637e-4204-b850-fab35fba0eca",
     "lastChapter": "25",
-    "lastAttemptAt": "2026-04-17T00:18:32.220Z",
-    "lastSuccessAt": "2026-04-17T00:18:32.220Z",
+    "lastAttemptAt": "2026-04-17T00:34:33.239Z",
+    "lastSuccessAt": "2026-04-17T00:34:33.239Z",
     "reason": null,
     "matcherVersion": 2
   },
@@ -1697,21 +1697,21 @@
     "chapterIndexId": "4735297c-7843-450f-b2e0-721fca7e2844",
     "lastChapterId": "b0136a1f-8301-41f5-953b-0aed7c933801",
     "lastChapter": "61",
-    "lastAttemptAt": "2026-04-17T00:18:36.304Z",
-    "lastSuccessAt": "2026-04-17T00:18:36.304Z",
+    "lastAttemptAt": "2026-04-17T00:34:35.240Z",
+    "lastSuccessAt": "2026-04-17T00:34:35.240Z",
     "reason": null,
     "matcherVersion": 2
   },
   "9e484709-84c7-4d47-8278-46f8c69f844b": {
     "status": "discovered",
-    "title": "Gozen 0-ji no Ookami Koushi",
-    "mangaId": 101461,
-    "anilistId": 101461,
+    "title": "Jujutsu Kaisen 0",
+    "mangaId": 105469,
+    "anilistId": 105469,
     "chapterIndexId": "9e484709-84c7-4d47-8278-46f8c69f844b",
     "lastChapterId": "e45dc2f0-6616-4135-b51c-ff4d98d2d115",
     "lastChapter": "2",
-    "lastAttemptAt": "2026-04-17T00:19:30.954Z",
-    "lastSuccessAt": "2026-04-17T00:19:30.954Z",
+    "lastAttemptAt": "2026-04-17T00:34:37.427Z",
+    "lastSuccessAt": "2026-04-17T00:34:37.427Z",
     "reason": null,
     "matcherVersion": 2
   },
@@ -1723,9 +1723,40 @@
     "chapterIndexId": "2c4b353f-d968-461b-be49-4f2599189a79",
     "lastChapterId": "b8d276f0-d960-444b-b41f-8ee63167ecd6",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-17T00:19:31.718Z",
-    "lastSuccessAt": "2026-04-17T00:19:31.718Z",
+    "lastAttemptAt": "2026-04-17T00:34:27.471Z",
+    "lastSuccessAt": "2026-04-17T00:34:27.471Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "c619f7c0-43db-44ca-93bc-bfe88d6408f2": {
+    "status": "failed",
+    "title": "Better, Harder, Faster, Stronger",
+    "lastChapterId": "7450c147-6429-4ee2-9ea5-5616227dcc23",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-04-17T00:34:32.793Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "a4db5c3b-dde1-4b1c-bee9-0e72b572b640": {
+    "status": "discovered",
+    "title": "Heion Sedai no Idaten-tachi",
+    "mangaId": 113450,
+    "anilistId": 113450,
+    "chapterIndexId": "a4db5c3b-dde1-4b1c-bee9-0e72b572b640",
+    "lastChapterId": "0f6d3d3c-54fd-4501-910c-8c7642a45115",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-17T00:34:34.428Z",
+    "lastSuccessAt": "2026-04-17T00:34:34.428Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "3f5a53ca-c9af-4843-9dd5-33b797dc7b9e": {
+    "status": "failed",
+    "title": "A Night of Healing",
+    "lastChapterId": "3742549e-bc36-417e-abed-f9ec54cb8fab",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-04-17T00:34:34.827Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
