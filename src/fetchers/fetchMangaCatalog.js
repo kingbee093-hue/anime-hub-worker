@@ -859,7 +859,6 @@ async function fetchMangaCatalog() {
   }
   process.stdout.write('\x1b[2K'); // Clear line
   console.log(`✅ Discovery Complete: ${newDiscoveries} new titles found. (Total Library: ${deduped.size} titles)`);
-  }
 
   let catalog = sortCatalog(Array.from(deduped.values())).slice(0, CATALOG_MAX_ITEMS);
   const mappingCache = readObjectJson(CONFIG.API_PATHS.MANGA_MAPPING);
