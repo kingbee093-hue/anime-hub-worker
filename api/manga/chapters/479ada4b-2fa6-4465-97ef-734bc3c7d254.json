@@ -4,12 +4,12 @@
   "anilistId": 163597,
   "mangadexId": "479ada4b-2fa6-4465-97ef-734bc3c7d254",
   "title": "Gachikoi Maou-sama",
-  "updatedAt": "2026-04-16T17:07:27.524Z",
+  "updatedAt": "2026-04-17T01:16:45.891Z",
   "availableLanguages": [
     "en"
   ],
   "counts": {
-    "en": 1
+    "en": 3
   },
   "languages": {
     "en": [
@@ -44,15 +44,37 @@
         "sourceType": "reader",
         "provider": "mangadex",
         "providerChapterId": "9b1b8a89-8647-46dd-8e5f-8ca2c6009da6"
+      },
+      {
+        "id": "a8071cfb-d3c3-4a33-b283-53a55dd15eea",
+        "title": "",
+        "chapter": "25",
+        "volume": "",
+        "language": "en",
+        "pages": 28,
+        "publishedAt": "2025-12-19T17:29:03+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "BedroomScans",
+        "sourceType": "reader"
+      },
+      {
+        "id": "94e2a045-e814-403a-8373-c4cb58b1d298",
+        "title": "",
+        "chapter": "24",
+        "volume": "",
+        "language": "en",
+        "pages": 18,
+        "publishedAt": "2025-05-11T08:16:10+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "BedroomScans",
+        "sourceType": "reader"
       }
     ]
   },
-  "chapterSourceProvider": "mangadex",
-  "chapterSourceId": "479ada4b-2fa6-4465-97ef-734bc3c7d254",
-  "chapterSourceTitle": "Gachi Koi Maou-sama",
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
   "englishFallbackProvider": null,
   "englishFallbackProviderTitle": null,
-  "englishFallbackChapterCount": null,
-  "latestKnownChapterNumber": "26",
-  "latestKnownChapterNumberInt": 26
+  "englishFallbackChapterCount": null
 }
