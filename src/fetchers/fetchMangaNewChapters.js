@@ -509,8 +509,15 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
       attempt += 1;
       const statusText = error.response ? `[${error.response.status}]` : '[Network]';
       console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
+      
+      if (error.response && error.response.status === 404) {
+        console.warn(`API returned 404 Not Found for ${label}. Skipping retries.`);
+        throw error;
+      }
+
       const waitTimeMs = computeRetryDelayMs(attempt, error);
       markRequestFailure(hostKey, error, waitTimeMs);
+
       if (attempt >= MANGADEX_REQUEST_RETRIES) {
         throw error;
       }

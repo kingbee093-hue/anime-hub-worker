@@ -285,6 +285,12 @@ async function fetchGraphQL(query, variables) {
       const isRateLimited = status === 429 || status === 403;
       const statusText = error.response ? `[${status}]` : '[Network]';
       console.error(`API request failed ${statusText} (Attempt ${retries}/${CONFIG.MAX_RETRIES}): ${error.message}`);
+      
+      if (status === 404) {
+        console.warn(`API returned 404 Not Found. Skipping retries.`);
+        return null; // ID doesn't exist, retrying is pointless, don't punish host
+      }
+
       const waitTimeMs = computeRetryDelayMs(retries, error);
       markRequestFailure(hostKey, error, waitTimeMs);
       flushRequestHealthState();
