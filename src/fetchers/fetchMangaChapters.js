@@ -1252,16 +1252,22 @@ async function buildProviderOnlyEnglishChapters(
   return { chapters: [], mapping: null };
 }
 
-async function fetchMangaChapters() {
+async function fetchMangaChapters(options = {}) {
   const progressLabel = process.env.MANGA_PROGRESS_LABEL ? ` ${process.env.MANGA_PROGRESS_LABEL}` : '';
   console.log('========================================');
   console.log(`BUILDING: Manga Chapter Index${progressLabel}`);
   console.log('========================================');
 
-  const forceFullRefresh = isForceFullRefresh();
-  const targetMangaIds = getTargetMangaIds();
+  const forceFullRefresh = isForceFullRefresh() || options.forceFull === true;
+  const targetMangaIds = new Set([
+    ...getTargetMangaIds(),
+    ...(options.forceIds || [])
+  ]);
 
-  const rawCatalogEntries = getCatalogEntries()
+  const rawCatalogEntries = [
+    ...getCatalogEntries(),
+    ...(options.forceEntries || [])
+  ]
     .filter((item) => item && (item.mangadexId || (item.chapterSourceProvider && item.chapterSourceId)))
     .map((item) => ({
       mangaId: item.mangaId,
