@@ -46,14 +46,16 @@ async function run() {
             }
         }
         if (target === 'mangauniverse' || target === 'all') await fetchMangaUniverse();
-        if (target === 'mangachapters' || target === 'manganewchapters' || target === 'all') {
-            if (skipMangaChapters && target !== 'mangachapters' && target !== 'manganewchapters') {
+        if (target === 'mangachapters' || target === 'all') {
+            if (skipMangaChapters && target !== 'mangachapters') {
                 console.log('Skipping MangaDex chapter index build (MANGA_SKIP_CHAPTER_INDEX=1).');
             } else {
                 await fetchMangaChapters();
             }
         }
-        if (target === 'manganewchapters' || target === 'all') await fetchMangaNewChapters();
+        if (target === 'manganewchapters' || target === 'all') {
+            await fetchMangaNewChapters();
+        }
         if (target === 'mangachaptersbackfill' || target === 'all') await backfillMangaChapters();
         if (target === 'mangapagesbackfill' || target === 'all') await backfillMangaPages();
         if (target === 'characters' || target === 'all') await fetchCharacterCatalog();
