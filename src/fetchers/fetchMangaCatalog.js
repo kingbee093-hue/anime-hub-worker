@@ -84,12 +84,16 @@ const MANGA_CATALOG_SOURCES = [
     },
   },
   // --- GENRES ---
+  // NOTE: sectionPath intentionally omitted. Genre files (manga/genres/Action.json etc.)
+  // are written by the genreBuckets pass below from the full enriched catalog, using
+  // the original AniList casing that the Flutter app reads. Writing a lowercase
+  // sectionPath here would create orphan files (manga/genres/action) on the
+  // case-sensitive Linux filesystem of GitHub Actions.
   ...[
     'Action', 'Romance', 'Fantasy', 'Comedy', 'Drama', 'Slice of Life',
     'Sci-Fi', 'Horror', 'Mystery', 'Adventure', 'Sports', 'Supernatural', 'Psychological'
   ].map(genre => ({
     label: `genre-${genre.toLowerCase().replace(/\s+/g, '-')}`,
-    sectionPath: `${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genre.toLowerCase().replace(/\s+/g, '-')}`,
     limit: 5,
     pages: 1,
     variables: {
