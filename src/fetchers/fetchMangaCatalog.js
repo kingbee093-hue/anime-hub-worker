@@ -838,12 +838,15 @@ async function fetchMangaCatalog() {
         const formatted = convertMangaToFirestoreFormat(media);
         if (!formatted) continue;
 
-        if (!deduped.has(formatted.mangaId)) newDiscoveries++;
-
-        deduped.set(
-          formatted.mangaId,
-          mergeManga(deduped.get(formatted.mangaId), formatted),
-        );
+        if (!deduped.has(formatted.mangaId)) {
+          newDiscoveries++;
+          deduped.set(formatted.mangaId, formatted);
+        } else {
+          deduped.set(
+            formatted.mangaId,
+            mergeManga(deduped.get(formatted.mangaId), formatted),
+          );
+        }
         sourceItems.set(
           formatted.mangaId,
           mergeManga(sourceItems.get(formatted.mangaId), formatted),
@@ -969,7 +972,7 @@ async function fetchMangaCatalog() {
     }
 
     const progress = `[${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN}]`;
-    const titleShort = (manga.title.userPreferred || manga.title.english || 'Unknown').slice(0, 35);
+    const titleShort = (manga.title || 'Unknown Title').slice(0, 35);
     process.stdout.write(`  ⏳ ${progress} Resolving: ${titleShort}... \r`);
     const resolved = await resolveMangaDexMapping(manga, nextMappingCache, mappingStats);
     mappingAttempts += 1;
