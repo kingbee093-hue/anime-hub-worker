@@ -816,12 +816,11 @@ async function fetchMangaCatalog() {
     return; // [GAP PROTECTION] Exit Stage 1 immediately
   }
 
+  console.log(`\n🔍 [STEP 1/2] Discovering titles from ${MANGA_CATALOG_SOURCES.length} sources...`);
+  let newDiscoveries = 0;
+  
   for (const source of MANGA_CATALOG_SOURCES) {
-    if (skipDiscovery) {
-      console.log(`Skipping discovery for source: ${source.label} (Gap Protection)`);
-      continue;
-    }
-    console.log(`Collecting manga source: ${source.label}`);
+    process.stdout.write(`  📡 Collecting: ${source.label.padEnd(20)} \r`);
     const sourceItems = new Map();
 
     for (let page = 1; page <= source.pages; page++) {
@@ -830,10 +829,7 @@ async function fetchMangaCatalog() {
         ...source.variables,
       });
 
-      if (!data || !data.Page) {
-        console.error(`Failed to fetch manga source ${source.label} page ${page}`);
-        continue;
-      }
+      if (!data || !data.Page) continue;
 
       for (const media of data.Page.media || []) {
         if (!media || !media.id) continue;
@@ -841,6 +837,8 @@ async function fetchMangaCatalog() {
 
         const formatted = convertMangaToFirestoreFormat(media);
         if (!formatted) continue;
+
+        if (!deduped.has(formatted.mangaId)) newDiscoveries++;
 
         deduped.set(
           formatted.mangaId,
@@ -851,14 +849,16 @@ async function fetchMangaCatalog() {
           mergeManga(sourceItems.get(formatted.mangaId), formatted),
         );
       }
-
       await delay(CONFIG.RATE_LIMIT_DELAY);
     }
 
     sectionBuckets.set(
-      source.label,
-      sortCatalog(Array.from(sourceItems.values())).slice(0, source.limit || SECTION_ITEMS),
+        source.label,
+        sortCatalog(Array.from(sourceItems.values())).slice(0, source.limit || SECTION_ITEMS),
     );
+  }
+  process.stdout.write('\x1b[2K'); // Clear line
+  console.log(`✅ Discovery Complete: ${newDiscoveries} new titles found. (Total Library: ${deduped.size} titles)`);
   }
 
   let catalog = sortCatalog(Array.from(deduped.values())).slice(0, CATALOG_MAX_ITEMS);
@@ -888,6 +888,7 @@ async function fetchMangaCatalog() {
     .map((manga, index) => ({ manga, index }))
     .sort((a, b) => mappingPriorityScore(b.manga) - mappingPriorityScore(a.manga));
   const processedMappingIds = new Set();
+  console.log(`\n🔗 [STEP 2/2] Resolving Links for candidates...`);
 
   for (const { manga, index } of prioritizedIndexes) {
     if (skipDiscovery) break; // [GAP PROTECTION] Skip time-consuming mapping
@@ -968,12 +969,13 @@ async function fetchMangaCatalog() {
       continue;
     }
 
-    console.log(
-      `Mapping attempt ${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN}: "${manga.title}" (${manga.format || 'UNKNOWN'}, year=${manga.year || 0}, popularity=${manga.popularity || 0}).`,
-    );
+    const progress = `[${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN}]`;
+    const titleShort = (manga.title.userPreferred || manga.title.english || 'Unknown').slice(0, 35);
+    process.stdout.write(`  ⏳ ${progress} Resolving: ${titleShort}... \r`);
     const resolved = await resolveMangaDexMapping(manga, nextMappingCache, mappingStats);
     mappingAttempts += 1;
     if (resolved?.mangadexId) {
+      process.stdout.write(`  ✅ ${progress} Linked (MangaDex): ${titleShort.padEnd(35)}\n`);
       nextMappingCache[String(manga.anilistId || manga.mangaId)] = resolved;
       delete nextChapterSourceCache[processedKey];
       catalog[index] = attachMapping(manga, resolved);
@@ -982,10 +984,15 @@ async function fetchMangaCatalog() {
 
     const chapterSource = await resolveChapterSourceMapping(manga, nextChapterSourceCache, mappingStats);
     if (chapterSource?.provider && chapterSource?.providerId) {
+      process.stdout.write(`  🌐 ${progress} Tied (Fallback): ${titleShort.padEnd(35)}\n`);
       nextChapterSourceCache[processedKey] = chapterSource;
       catalog[index] = attachChapterSource(manga, chapterSource);
       validatedChapterSources.set(`${chapterSource.provider}:${chapterSource.providerId}`, true);
     }
+  }
+  
+  if (totalMappingToAttempt > 0) {
+    console.log(`\n🎉 Step 2 Complete! Resolved ${mappingAttempts} titles.`);
   }
 
   const enrichedCatalog = [];
