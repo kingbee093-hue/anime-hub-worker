@@ -778,7 +778,17 @@ async function fetchMangaCatalog() {
   const sectionBuckets = new Map();
 
   const GAP_THRESHOLD = Number(process.env.MANGA_GAP_THRESHOLD || 100);
-  const missingChapters = Array.from(deduped.values()).filter(m => !m.chapters || m.chapters === 0);
+  
+  // Use the actual manifest to check which titles REALLY have chapters
+  const { getChapterManifest } = require('../utils/mangaBackfillData');
+  const manifest = getChapterManifest();
+  const indexedIds = new Set((manifest.items || []).map(item => String(item.mangaId || item.anilistId)));
+  
+  const missingChapters = Array.from(deduped.values()).filter(m => {
+    const id = String(m.anilistId || m.mangaId);
+    return !indexedIds.has(id);
+  });
+  
   const gapRatio = (missingChapters.length / (deduped.size || 1)) * 100;
 
   let skipDiscovery = false;
