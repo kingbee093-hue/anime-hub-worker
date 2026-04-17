@@ -35,7 +35,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'featured',
     sectionPath: CONFIG.API_PATHS.MANGA_FEATURED,
-    limit: 12,
+    limit: 10,
     pages: 1,
     variables: {
       perPage: 35,
@@ -45,7 +45,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'popular',
     sectionPath: CONFIG.API_PATHS.MANGA_POPULAR,
-    limit: SECTION_ITEMS,
+    limit: 10,
     pages: 1,
     variables: {
       perPage: 35,
@@ -55,7 +55,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'top-rated',
     sectionPath: CONFIG.API_PATHS.MANGA_TOP_RATED,
-    limit: SECTION_ITEMS,
+    limit: 10,
     pages: 1,
     variables: {
       perPage: 35,
@@ -65,7 +65,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'trending',
     sectionPath: CONFIG.API_PATHS.MANGA_TRENDING,
-    limit: SECTION_ITEMS,
+    limit: 10,
     pages: 1,
     variables: {
       perPage: 35,
@@ -75,7 +75,7 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'releasing',
     sectionPath: CONFIG.API_PATHS.MANGA_RELEASING,
-    limit: SECTION_ITEMS,
+    limit: 10,
     pages: 1,
     variables: {
       perPage: 35,
@@ -83,6 +83,21 @@ const MANGA_CATALOG_SOURCES = [
       sort: ['POPULARITY_DESC'],
     },
   },
+  // --- GENRES ---
+  ...[
+    'Action', 'Romance', 'Fantasy', 'Comedy', 'Drama', 'Slice of Life',
+    'Sci-Fi', 'Horror', 'Mystery', 'Adventure', 'Sports', 'Supernatural', 'Psychological'
+  ].map(genre => ({
+    label: `genre-${genre.toLowerCase().replace(/\s+/g, '-')}`,
+    sectionPath: `${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genre.toLowerCase().replace(/\s+/g, '-')}`,
+    limit: SECTION_ITEMS,
+    pages: 1,
+    variables: {
+      perPage: 35,
+      genre: genre,
+      sort: ['POPULARITY_DESC'],
+    },
+  })),
 ];
 
 function normalizeSearchText(value) {
