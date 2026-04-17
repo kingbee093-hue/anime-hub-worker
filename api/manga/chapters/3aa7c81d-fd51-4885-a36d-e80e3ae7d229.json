@@ -4,12 +4,12 @@
   "anilistId": 181478,
   "mangadexId": "3aa7c81d-fd51-4885-a36d-e80e3ae7d229",
   "title": "Tetsu Sabi to 1000 Carat",
-  "updatedAt": "2026-04-16T17:55:58.113Z",
+  "updatedAt": "2026-04-17T01:22:04.640Z",
   "availableLanguages": [
     "en"
   ],
   "counts": {
-    "en": 1
+    "en": 8
   },
   "languages": {
     "en": [
@@ -67,15 +67,97 @@
         "sourceType": "reader",
         "provider": "mangadex",
         "providerChapterId": "fdfac7b8-ceef-4955-ac2c-909726ca2e8e"
+      },
+      {
+        "id": "ec6e2b26-28aa-4083-947b-e5a415d9bbaf",
+        "title": "",
+        "chapter": "5",
+        "volume": "2",
+        "language": "en",
+        "pages": 43,
+        "publishedAt": "2026-03-18T15:34:26+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
+      },
+      {
+        "id": "50f86997-61ba-4189-b754-b67919d8f075",
+        "title": "",
+        "chapter": "4.5",
+        "volume": "1",
+        "language": "en",
+        "pages": 7,
+        "publishedAt": "2026-02-18T16:30:50+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
+      },
+      {
+        "id": "6b2057cf-81e8-4519-8dd9-a478c5b50b5e",
+        "title": "",
+        "chapter": "4",
+        "volume": "1",
+        "language": "en",
+        "pages": 40,
+        "publishedAt": "2026-02-18T16:30:33+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
+      },
+      {
+        "id": "3f32f6b4-a34e-4d24-a83e-dcb151f6c93e",
+        "title": "",
+        "chapter": "3",
+        "volume": "1",
+        "language": "en",
+        "pages": 47,
+        "publishedAt": "2026-01-21T16:42:30+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
+      },
+      {
+        "id": "91af6187-8e67-4a90-8d74-6fb7f65fb1a3",
+        "title": "",
+        "chapter": "2",
+        "volume": "1",
+        "language": "en",
+        "pages": 27,
+        "publishedAt": "2025-12-25T16:30:02+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
+      },
+      {
+        "id": "f0e9619f-ab42-4d43-9d62-e251b3cd24fc",
+        "title": "",
+        "chapter": "1",
+        "volume": "1",
+        "language": "en",
+        "pages": 75,
+        "publishedAt": "2025-08-27T15:32:36+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
+      },
+      {
+        "id": "7e204959-de50-4f0e-81dd-caba94452ced",
+        "title": "",
+        "chapter": "0",
+        "volume": "1",
+        "language": "en",
+        "pages": 13,
+        "publishedAt": "2025-08-27T15:29:39+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Gabai Scanlators",
+        "sourceType": "reader"
       }
     ]
   },
-  "chapterSourceProvider": "mangadex",
-  "chapterSourceId": "3aa7c81d-fd51-4885-a36d-e80e3ae7d229",
-  "chapterSourceTitle": "Tetsu Sabi to 1000 Carat",
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
   "englishFallbackProvider": null,
   "englishFallbackProviderTitle": null,
-  "englishFallbackChapterCount": null,
-  "latestKnownChapterNumber": "6",
-  "latestKnownChapterNumberInt": 6
+  "englishFallbackChapterCount": null
 }

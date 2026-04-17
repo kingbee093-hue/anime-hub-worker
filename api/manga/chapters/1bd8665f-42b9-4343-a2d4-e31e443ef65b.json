@@ -4,12 +4,12 @@
   "anilistId": 193674,
   "mangadexId": "1bd8665f-42b9-4343-a2d4-e31e443ef65b",
   "title": "Houseki wo Kau",
-  "updatedAt": "2026-04-16T16:47:52.300Z",
+  "updatedAt": "2026-04-17T01:22:06.116Z",
   "availableLanguages": [
     "en"
   ],
   "counts": {
-    "en": 1
+    "en": 6
   },
   "languages": {
     "en": [
@@ -55,15 +55,73 @@
         "sourceType": "reader",
         "provider": "mangadex",
         "providerChapterId": "54e6d7e3-91df-4848-b605-0b6360193d3d"
+      },
+      {
+        "id": "216a4917-be78-4e1e-abfb-8d5d10b422df",
+        "title": "",
+        "chapter": "5",
+        "volume": "1",
+        "language": "en",
+        "pages": 25,
+        "publishedAt": "2026-02-01T10:28:25+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Rehashed Scans",
+        "sourceType": "reader"
+      },
+      {
+        "id": "36f9278e-4147-4af7-bf41-3a27b0e69b5f",
+        "title": "",
+        "chapter": "4",
+        "volume": "1",
+        "language": "en",
+        "pages": 26,
+        "publishedAt": "2026-01-06T22:18:55+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Rehashed Scans",
+        "sourceType": "reader"
+      },
+      {
+        "id": "7a4427de-ef57-44d7-993f-8a9cdc5797cb",
+        "title": "",
+        "chapter": "3",
+        "volume": "1",
+        "language": "en",
+        "pages": 26,
+        "publishedAt": "2025-11-10T13:55:15+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Rehashed Scans",
+        "sourceType": "reader"
+      },
+      {
+        "id": "96932b97-d611-4ceb-bd7b-99012bde4d97",
+        "title": "",
+        "chapter": "2",
+        "volume": "1",
+        "language": "en",
+        "pages": 24,
+        "publishedAt": "2025-08-23T19:19:03+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Rehashed Scans",
+        "sourceType": "reader"
+      },
+      {
+        "id": "fbaea84a-a210-40c2-aee9-65a5fe08a65d",
+        "title": "",
+        "chapter": "1",
+        "volume": "1",
+        "language": "en",
+        "pages": 38,
+        "publishedAt": "2025-06-07T22:22:13+00:00",
+        "externalUrl": null,
+        "scanlationGroup": "Rehashed Scans",
+        "sourceType": "reader"
       }
     ]
   },
-  "chapterSourceProvider": "mangadex",
-  "chapterSourceId": "1bd8665f-42b9-4343-a2d4-e31e443ef65b",
-  "chapterSourceTitle": "Houseki wo Kau",
+  "chapterSourceProvider": null,
+  "chapterSourceId": null,
+  "chapterSourceTitle": null,
   "englishFallbackProvider": null,
   "englishFallbackProviderTitle": null,
-  "englishFallbackChapterCount": null,
-  "latestKnownChapterNumber": "6",
-  "latestKnownChapterNumberInt": 6
+  "englishFallbackChapterCount": null
 }
