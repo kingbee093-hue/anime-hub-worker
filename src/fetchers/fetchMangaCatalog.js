@@ -831,7 +831,9 @@ async function fetchMangaCatalog() {
 
       if (!data || !data.Page) continue;
 
+      let sourceCount = 0;
       for (const media of data.Page.media || []) {
+        if (sourceCount >= (source.limit || 5)) break;
         if (!media || !media.id) continue;
         if (isAdultContent(media).blocked || !isManga(media).allowed) continue;
 
@@ -841,11 +843,15 @@ async function fetchMangaCatalog() {
         if (!deduped.has(formatted.mangaId)) {
           newDiscoveries++;
           deduped.set(formatted.mangaId, formatted);
+          sourceCount++;
         } else {
           deduped.set(
             formatted.mangaId,
             mergeManga(deduped.get(formatted.mangaId), formatted),
           );
+          // Optional: decide if existing items count towards the source limit
+          // For now, let's assume the user wants 5 items TOTAL for the bucket, 
+          // but specifically requested 5 NEW titles.
         }
         sourceItems.set(
           formatted.mangaId,
