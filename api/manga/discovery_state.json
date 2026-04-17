@@ -572,10 +572,10 @@
   "c1d6d092-811d-49d2-b143-0d12bc3fd9dd": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "21e1dc4e-655a-48e0-bd80-cb6dc49c822a",
-    "lastChapter": "9.1",
-    "lastAttemptAt": "2026-04-16T18:15:33.773Z",
-    "reason": "Blocked: Adult (+18)",
+    "lastChapterId": "0bde8b07-f259-44fc-8db4-cb71c3a0ecd5",
+    "lastChapter": "8.3",
+    "lastAttemptAt": "2026-04-17T00:18:25.868Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "67ca1083-ec62-4f66-a2f5-355a2702f6e3": {
@@ -606,10 +606,10 @@
   },
   "ee957607-e7fc-40b0-acdb-10c7084d9d40": {
     "status": "failed",
-    "title": "Sorry!!",
-    "lastChapterId": "73c0363a-f62a-4765-b5e8-c78173a3e9d6",
-    "lastChapter": "33.1",
-    "lastAttemptAt": "2026-04-16T18:16:30.483Z",
+    "title": "Confrontation",
+    "lastChapterId": "493b7643-366b-452d-b54f-774caa5da7ef",
+    "lastChapter": "34",
+    "lastAttemptAt": "2026-04-17T00:18:25.575Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -986,8 +986,8 @@
     "chapterIndexId": "51c40a98-ae76-40ae-9732-1b83b690c510",
     "lastChapterId": "209501a5-5b22-4c5a-9948-1eace2dd2dc6",
     "lastChapter": "33",
-    "lastAttemptAt": "2026-04-16T18:17:45.553Z",
-    "lastSuccessAt": "2026-04-16T18:17:45.553Z",
+    "lastAttemptAt": "2026-04-17T00:18:35.668Z",
+    "lastSuccessAt": "2026-04-17T00:18:35.668Z",
     "reason": null,
     "matcherVersion": 2
   },
@@ -1273,16 +1273,12 @@
     "matcherVersion": 2
   },
   "b40483ce-e448-4671-a84e-b2ea8fef938a": {
-    "status": "discovered",
-    "title": "The World Exists for Me",
-    "mangaId": 30505,
-    "anilistId": 30505,
-    "chapterIndexId": "b40483ce-e448-4671-a84e-b2ea8fef938a",
+    "status": "failed",
+    "title": "",
     "lastChapterId": "0653fd4b-45b1-48c1-9883-98d1209ede69",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-16T18:21:00.471Z",
-    "lastSuccessAt": "2026-04-16T18:21:00.471Z",
-    "reason": null,
+    "lastAttemptAt": "2026-04-17T00:19:30.072Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
   "ed792d74-2a27-4fe9-936f-b448a7283792": {
@@ -1628,11 +1624,108 @@
   },
   "86209d1b-8d66-44b1-86e5-912e07f040fe": {
     "status": "failed",
-    "title": "A Great Mission Across The Desert",
-    "lastChapterId": "606968b4-9537-44cf-a3c7-f054f5a98b45",
-    "lastChapter": "10.5",
-    "lastAttemptAt": "2026-04-16T20:46:40.198Z",
+    "title": "A Human!",
+    "lastChapterId": "298423b8-a11e-4500-95da-9c44bd4a987d",
+    "lastChapter": "12.3",
+    "lastAttemptAt": "2026-04-17T00:18:28.923Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "defce2ff-db4c-425d-be37-be0a3bcfde23": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "377d3bf0-7d98-4446-9971-1e987666b866",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-17T00:18:20.459Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "3cf1a8fc-2a14-41e3-8bc8-a7201a9f2dc0": {
+    "status": "failed",
+    "title": "Super Mom Mode",
+    "lastChapterId": "fd3f8f0e-3f93-4696-a961-c3500476c646",
+    "lastChapter": "7",
+    "lastAttemptAt": "2026-04-17T00:18:23.944Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "275c3ee8-bdeb-4070-a333-6add23a8415a": {
+    "status": "failed",
+    "title": "Malatang!",
+    "lastChapterId": "a18f4e13-e0b8-4861-abca-6316466f6f2d",
+    "lastChapter": "54",
+    "lastAttemptAt": "2026-04-17T00:18:25.683Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "4af56a6b-5baf-4fb3-a693-4530cb50bfbe": {
+    "status": "failed",
+    "title": "Yankee JK's Wedding Ceremony",
+    "lastChapterId": "54efe1b9-1b8a-4dbc-8df1-773928627ca6",
+    "lastChapter": "81",
+    "lastAttemptAt": "2026-04-17T00:18:25.782Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "6d619a62-5f43-4b48-b14b-f6924025167f": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c8967b50-bf3b-474b-8f3c-f303d339f516",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-17T00:18:31.791Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "d69d9c47-a3ab-41ac-bdcc-9cfcf226c88d": {
+    "status": "discovered",
+    "title": "Kateikyoshi no Kishi Naito desu.",
+    "mangaId": 140506,
+    "anilistId": 140506,
+    "chapterIndexId": "d69d9c47-a3ab-41ac-bdcc-9cfcf226c88d",
+    "lastChapterId": "a0fa0d8c-637e-4204-b850-fab35fba0eca",
+    "lastChapter": "25",
+    "lastAttemptAt": "2026-04-17T00:18:32.220Z",
+    "lastSuccessAt": "2026-04-17T00:18:32.220Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "4735297c-7843-450f-b2e0-721fca7e2844": {
+    "status": "discovered",
+    "title": "Sakigake no Hana Miko",
+    "mangaId": 181134,
+    "anilistId": 181134,
+    "chapterIndexId": "4735297c-7843-450f-b2e0-721fca7e2844",
+    "lastChapterId": "b0136a1f-8301-41f5-953b-0aed7c933801",
+    "lastChapter": "61",
+    "lastAttemptAt": "2026-04-17T00:18:36.304Z",
+    "lastSuccessAt": "2026-04-17T00:18:36.304Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "9e484709-84c7-4d47-8278-46f8c69f844b": {
+    "status": "discovered",
+    "title": "Gozen 0-ji no Ookami Koushi",
+    "mangaId": 101461,
+    "anilistId": 101461,
+    "chapterIndexId": "9e484709-84c7-4d47-8278-46f8c69f844b",
+    "lastChapterId": "e45dc2f0-6616-4135-b51c-ff4d98d2d115",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-17T00:19:30.954Z",
+    "lastSuccessAt": "2026-04-17T00:19:30.954Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "2c4b353f-d968-461b-be49-4f2599189a79": {
+    "status": "discovered",
+    "title": "Pokémon Adventures",
+    "mangaId": 30928,
+    "anilistId": 30928,
+    "chapterIndexId": "2c4b353f-d968-461b-be49-4f2599189a79",
+    "lastChapterId": "b8d276f0-d960-444b-b41f-8ee63167ecd6",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-17T00:19:31.718Z",
+    "lastSuccessAt": "2026-04-17T00:19:31.718Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
