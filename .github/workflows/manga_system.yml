@@ -2,8 +2,6 @@ name: AnimeHub - Manga System
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [run-manga-system, run-all]
     inputs:
       force_discovery:
         description: 'Force new title discovery (1 to ignore gap protection)'
@@ -13,6 +11,8 @@ on:
         description: 'Batch size for Stage 2 (How many titles to process)'
         required: false
         default: '50'
+  repository_dispatch:
+    types: [run-manga-system, run-all]
 
 jobs:
   manga-process:
