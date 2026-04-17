@@ -1,9 +1,9 @@
 name: AnimeHub - Manga System
 
 on:
-  schedule:
-    - cron: '0 */6 * * *' # كل 6 ساعات لضمان النمو المستمر
   workflow_dispatch:
+  repository_dispatch:
+    types: [run-manga-system, run-all]
     inputs:
       force_discovery:
         description: 'Force new title discovery (1 to ignore gap protection)'
