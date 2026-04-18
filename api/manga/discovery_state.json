@@ -3518,5 +3518,23 @@
     "lastSuccessAt": "2026-04-18T19:51:26.394Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "7c5ba525-4888-4b80-8117-46fc7d9fe9ac": {
+    "status": "failed",
+    "title": "The Blade of Revenge!",
+    "lastChapterId": "55e65abe-3e3e-4b3b-9cad-8b00e7bbcac5",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-04-18T20:17:21.684Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "ff78afd7-6298-4ab0-8d45-9bd2660fa66f": {
+    "status": "failed",
+    "title": "(200-208)",
+    "lastChapterId": "081ffb05-ad5d-49a4-9e42-8e2225a7c287",
+    "lastChapter": "47",
+    "lastAttemptAt": "2026-04-18T20:17:24.547Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   }
 }
