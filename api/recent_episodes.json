@@ -442,7 +442,7 @@
         "name": "VTuber",
         "description": "Prominently features a character who is either an actual or fictive VTuber.",
         "category": "Cast-Traits",
-        "rank": 70,
+        "rank": 69,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1685,16 +1685,6 @@
         "isAdult": false
       },
       {
-        "id": 100,
-        "name": "Nudity",
-        "description": "Features a character wearing no clothing or exposing intimate body parts.",
-        "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 598,
         "name": "Elf",
         "description": "Prominently features a character who is an elf.",
@@ -1719,6 +1709,16 @@
         "name": "Medieval",
         "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
         "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
