@@ -138,7 +138,7 @@
     "meanScore": 65,
     "popularity": 3824,
     "trending": 2,
-    "favourites": 126,
+    "favourites": 127,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -153,8 +153,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=SXdTmFshlFs"
     },
-    "nextEpisode": 123,
-    "nextAiringAt": 1776417900
+    "nextEpisode": 124,
+    "nextAiringAt": 1777022700
   },
   {
     "animeId": 53876,
@@ -485,7 +485,7 @@
     "meanScore": 74,
     "popularity": 22003,
     "trending": 8,
-    "favourites": 708,
+    "favourites": 707,
     "source": "VIDEO_GAME",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -500,8 +500,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_c_hMehCORQ"
     },
-    "nextEpisode": 134,
-    "nextAiringAt": 1776419700
+    "nextEpisode": 135,
+    "nextAiringAt": 1777024500
   },
   {
     "animeId": 61687,
@@ -623,7 +623,7 @@
     "meanScore": 71,
     "popularity": 12063,
     "trending": 0,
-    "favourites": 142,
+    "favourites": 153,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -638,8 +638,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=r6RkeRy4B4c"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776430800
+    "nextEpisode": 4,
+    "nextAiringAt": 1777035600
   },
   {
     "animeId": 56876,
@@ -774,7 +774,7 @@
     "meanScore": 81,
     "popularity": 47980,
     "trending": 13,
-    "favourites": 1199,
+    "favourites": 1213,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -789,8 +789,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=8Gtb1uhjPKs"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776432600
+    "nextEpisode": 4,
+    "nextAiringAt": 1777037400
   },
   {
     "animeId": 59970,
@@ -933,7 +933,7 @@
     "meanScore": 81,
     "popularity": 64030,
     "trending": 24,
-    "favourites": 1345,
+    "favourites": 1370,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -948,8 +948,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=ikxIrDr72iA"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776434400
+    "nextEpisode": 4,
+    "nextAiringAt": 1777039200
   },
   {
     "animeId": 62068,
@@ -1119,7 +1119,7 @@
     "meanScore": 63,
     "popularity": 6617,
     "trending": 2,
-    "favourites": 58,
+    "favourites": 60,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1134,8 +1134,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=0vTK8SWTgws"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776436200
+    "nextEpisode": 4,
+    "nextAiringAt": 1777041000
   },
   {
     "animeId": 62981,
@@ -1252,8 +1252,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=Oz5EkYVJbBc"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776436200
+    "nextEpisode": 3,
+    "nextAiringAt": 1777041000
   },
   {
     "animeId": 61186,
@@ -1326,6 +1326,16 @@
         "isAdult": false
       },
       {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 76,
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
@@ -1336,11 +1346,11 @@
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 92,
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1350,17 +1360,7 @@
         "name": "College",
         "description": "Partly or completely set in a college or university.",
         "category": "Setting-Scene",
-        "rank": 87,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
-        "rank": 86,
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1370,7 +1370,7 @@
         "name": "Bar",
         "description": "Partly or completely set in a bar.",
         "category": "Setting-Scene",
-        "rank": 74,
+        "rank": 76,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1380,17 +1380,7 @@
         "name": "LGBTQ+ Themes",
         "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
         "category": "Theme-Other",
-        "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 65,
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1400,7 +1390,7 @@
         "name": "Food",
         "description": "Centers around cooking or food appraisal.",
         "category": "Theme-Arts",
-        "rank": 64,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1410,7 +1400,17 @@
         "name": "Travel",
         "description": "Centers around character(s) moving between places a significant distance apart.",
         "category": "Theme-Other",
-        "rank": 62,
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 67,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1443,7 +1443,7 @@
     "meanScore": 75,
     "popularity": 14846,
     "trending": 3,
-    "favourites": 133,
+    "favourites": 142,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1458,8 +1458,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=XX90FklAWsc"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776438000
+    "nextEpisode": 3,
+    "nextAiringAt": 1777042800
   },
   {
     "animeId": 56646,
@@ -1594,8 +1594,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=Gux_dYHDMK4"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776441600
+    "nextEpisode": 5,
+    "nextAiringAt": 1777046400
   },
   {
     "animeId": 50418,
@@ -1744,7 +1744,7 @@
     "mal_url": "https://myanimelist.net/anime/50418",
     "anilist_url": "https://anilist.co/anime/142274",
     "trailer": null,
-    "nextEpisode": 212,
-    "nextAiringAt": 1776465000
+    "nextEpisode": 213,
+    "nextAiringAt": 1777069800
   }
 ]

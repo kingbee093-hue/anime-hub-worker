@@ -495,7 +495,7 @@
         "name": "Female Protagonist",
         "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 90,
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -515,7 +515,7 @@
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
         "category": "Demographic",
-        "rank": 84,
+        "rank": 86,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -535,7 +535,7 @@
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 53,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -648,7 +648,7 @@
     "meanScore": 68,
     "popularity": 23337,
     "trending": 6,
-    "favourites": 289,
+    "favourites": 305,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -776,7 +776,7 @@
     "meanScore": 83,
     "popularity": 42962,
     "trending": 9,
-    "favourites": 565,
+    "favourites": 572,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1195,7 +1195,7 @@
     "meanScore": 57,
     "popularity": 3277,
     "trending": 2,
-    "favourites": 15,
+    "favourites": 16,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1373,7 +1373,7 @@
     "meanScore": 77,
     "popularity": 26214,
     "trending": 6,
-    "favourites": 310,
+    "favourites": 324,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1756,7 +1756,7 @@
     "meanScore": 60,
     "popularity": 6020,
     "trending": 5,
-    "favourites": 45,
+    "favourites": 48,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1902,7 +1902,7 @@
     "meanScore": 63,
     "popularity": 19655,
     "trending": 9,
-    "favourites": 201,
+    "favourites": 202,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1951,10 +1951,10 @@
     ],
     "tags": [
       {
-        "id": 242,
-        "name": "Flash",
-        "description": "Created using Flash animation techniques.",
-        "category": "Technical",
+        "id": 604,
+        "name": "Dungeon",
+        "description": "Prominently features a dungeon environment.",
+        "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1971,10 +1971,10 @@
         "isAdult": false
       },
       {
-        "id": 604,
-        "name": "Dungeon",
-        "description": "Prominently features a dungeon environment.",
-        "category": "Setting-Scene",
+        "id": 242,
+        "name": "Flash",
+        "description": "Created using Flash animation techniques.",
+        "category": "Technical",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2006,7 +2006,7 @@
     "meanScore": 37,
     "popularity": 2918,
     "trending": 0,
-    "favourites": 55,
+    "favourites": 54,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2074,22 +2074,22 @@
         "isAdult": false
       },
       {
-        "id": 311,
-        "name": "Rehabilitation",
-        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
-        "category": "Theme-Drama",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 96,
         "name": "Time Manipulation",
         "description": "Prominently features time-traveling or other time-warping phenomena.",
         "category": "Theme-Sci-Fi",
         "rank": 79,
         "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 311,
+        "name": "Rehabilitation",
+        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -2161,7 +2161,7 @@
     "meanScore": 65,
     "popularity": 11164,
     "trending": 4,
-    "favourites": 140,
+    "favourites": 146,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2211,16 +2211,6 @@
     ],
     "tags": [
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 86,
         "name": "Primarily Female Cast",
         "description": "Main cast is mostly composed of female characters.",
@@ -2231,11 +2221,11 @@
         "isAdult": false
       },
       {
-        "id": 193,
-        "name": "Episodic",
-        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
-        "category": "Technical",
-        "rank": 75,
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2245,6 +2235,16 @@
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
         "category": "Setting-Scene",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
         "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2265,7 +2265,7 @@
         "name": "Josei",
         "description": "Target demographic is adult females.",
         "category": "Demographic",
-        "rank": 65,
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2275,7 +2275,7 @@
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
         "category": "Theme-Romance",
-        "rank": 62,
+        "rank": 65,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2298,6 +2298,16 @@
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2339,16 +2349,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 20,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
       }
     ],
     "studios": [
@@ -2368,7 +2368,7 @@
     "meanScore": 68,
     "popularity": 8682,
     "trending": 2,
-    "favourites": 36,
+    "favourites": 39,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2435,16 +2435,6 @@
         "isAdult": false
       },
       {
-        "id": 142,
-        "name": "Food",
-        "description": "Centers around cooking or food appraisal.",
-        "category": "Theme-Arts",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 98,
         "name": "Female Protagonist",
         "description": "Main character is female.",
@@ -2455,30 +2445,20 @@
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 140,
-        "name": "Educational",
-        "description": "Primary aim is to educate the audience.",
-        "category": "Theme-Other",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 505,
-        "name": "Advertisement",
-        "description": "Produced in order to promote the products of a certain company.",
-        "category": "Technical",
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2495,10 +2475,30 @@
         "isAdult": false
       },
       {
-        "id": 87,
-        "name": "Family Life",
-        "description": "Centers around the activities of a family unit.",
-        "category": "Theme-Slice of Life",
+        "id": 505,
+        "name": "Advertisement",
+        "description": "Produced in order to promote the products of a certain company.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 140,
+        "name": "Educational",
+        "description": "Primary aim is to educate the audience.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2640,7 +2640,7 @@
     "meanScore": 60,
     "popularity": 9578,
     "trending": 2,
-    "favourites": 105,
+    "favourites": 109,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2838,20 +2838,20 @@
         "isAdult": false
       },
       {
-        "id": 28,
-        "name": "Kids",
-        "description": "Target demographic is young children.",
-        "category": "Demographic",
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
         "rank": 71,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 217,
-        "name": "Dystopian",
-        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
-        "category": "Setting-Time",
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
         "rank": 71,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2925,7 +2925,7 @@
     "meanScore": 84,
     "popularity": 7951,
     "trending": 0,
-    "favourites": 806,
+    "favourites": 809,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,

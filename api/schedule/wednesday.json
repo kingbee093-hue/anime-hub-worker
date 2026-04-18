@@ -120,7 +120,7 @@
     "meanScore": 69,
     "popularity": 2195,
     "trending": 0,
-    "favourites": 16,
+    "favourites": 17,
     "source": "MANGA",
     "countryOfOrigin": "KR",
     "isLicensed": true,
@@ -582,7 +582,7 @@
     "meanScore": 80,
     "popularity": 66274,
     "trending": 493,
-    "favourites": 1441,
+    "favourites": 1454,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -874,21 +874,31 @@
         "isAdult": false
       },
       {
-        "id": 1310,
-        "name": "Travel",
-        "description": "Centers around character(s) moving between places a significant distance apart.",
-        "category": "Theme-Other",
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
         "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
         "category": "Theme-Romance",
-        "rank": 69,
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -904,6 +914,16 @@
         "isAdult": false
       },
       {
+        "id": 623,
+        "name": "Astronomy",
+        "description": "Relating or centered around the study of celestial objects and phenomena, space, or the universe.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 1771,
         "name": "Creature Taming",
         "description": "Features the taming of animals, monsters, or other creatures.",
@@ -911,26 +931,6 @@
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 623,
-        "name": "Astronomy",
-        "description": "Relating or centered around the study of celestial objects and phenomena, space, or the universe.",
-        "category": "Theme-Other",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 249,
-        "name": "Maids",
-        "description": "Prominently features a character who is a maid.",
-        "category": "Cast-Traits",
-        "rank": 56,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -944,11 +944,11 @@
         "isAdult": false
       },
       {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
-        "rank": 55,
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
+        "category": "Cast-Traits",
+        "rank": 53,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -978,7 +978,7 @@
         "name": "Twins",
         "description": "Prominently features two or more siblings that were born at one birth.",
         "category": "Cast-Traits",
-        "rank": 50,
+        "rank": 46,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1001,7 +1001,7 @@
     "meanScore": 86,
     "popularity": 69600,
     "trending": 19,
-    "favourites": 1662,
+    "favourites": 1686,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1645,7 +1645,7 @@
     "meanScore": 80,
     "popularity": 28554,
     "trending": 92,
-    "favourites": 470,
+    "favourites": 474,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1771,7 +1771,7 @@
     "meanScore": 56,
     "popularity": 25789,
     "trending": 25,
-    "favourites": 431,
+    "favourites": 435,
     "source": "OTHER",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1798,7 +1798,8 @@
     "titleNative": "オタクに優しいギャルはいない!?",
     "synonyms": [
       "OtaGal",
-      "オタギャル"
+      "オタギャル",
+      "OtaGyaru"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199588-M2vtWicvqNbU.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199588-M2vtWicvqNbU.jpg",
@@ -1937,7 +1938,7 @@
     "meanScore": 74,
     "popularity": 23717,
     "trending": 8,
-    "favourites": 298,
+    "favourites": 311,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2159,7 +2160,7 @@
     "meanScore": 72,
     "popularity": 10168,
     "trending": 3,
-    "favourites": 135,
+    "favourites": 138,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2345,7 +2346,7 @@
     "meanScore": 77,
     "popularity": 17691,
     "trending": 5,
-    "favourites": 346,
+    "favourites": 354,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
