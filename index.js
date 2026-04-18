@@ -10,6 +10,8 @@ const fetchSchedule = require('./src/fetchers/fetchSchedule');
 const fetchAnimeCatalog = require('./src/fetchers/fetchAnimeCatalog');
 const fetchMangaCatalog = require('./src/fetchers/fetchMangaCatalog');
 const fetchMangaChapters = require('./src/fetchers/fetchMangaChapters');
+const fetchMangaNewChapters = require('./src/fetchers/fetchMangaNewChapters');
+
 const fetchMangaUniverse = require('./src/fetchers/fetchMangaUniverse');
 const backfillMangaChapters = require('./src/fetchers/backfillMangaChapters');
 const backfillMangaPages = require('./src/fetchers/backfillMangaPages');
@@ -50,6 +52,9 @@ async function run() {
             } else {
                 await fetchMangaChapters();
             }
+        }
+        if (target === 'manganewchapters' || target === 'all') {
+            await fetchMangaNewChapters();
         }
         if (target === 'mangachaptersbackfill' || target === 'all') await backfillMangaChapters();
         if (target === 'mangapagesbackfill' || target === 'all') await backfillMangaPages();

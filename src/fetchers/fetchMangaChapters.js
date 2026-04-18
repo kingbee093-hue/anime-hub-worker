@@ -15,9 +15,7 @@ const {
   providers,
   normalizeProviderChapter,
 } = require('../utils/mangaFallbackProviders');
-const { writeNewChaptersSection, DEFAULT_SECTION_LIMIT } = require('../utils/mangaSections');
 const {
-  getMangaCatalogEntries,
   buildChapterIndexId,
 } = require('../utils/mangaBackfillData');
 
@@ -1254,15 +1252,22 @@ async function buildProviderOnlyEnglishChapters(
   return { chapters: [], mapping: null };
 }
 
-async function fetchMangaChapters() {
+async function fetchMangaChapters(options = {}) {
+  const progressLabel = process.env.MANGA_PROGRESS_LABEL ? ` ${process.env.MANGA_PROGRESS_LABEL}` : '';
   console.log('========================================');
-  console.log('BUILDING: Manga Chapter Index');
+  console.log(`BUILDING: Manga Chapter Index${progressLabel}`);
   console.log('========================================');
 
-  const forceFullRefresh = isForceFullRefresh();
-  const targetMangaIds = getTargetMangaIds();
+  const forceFullRefresh = isForceFullRefresh() || options.forceFull === true;
+  const targetMangaIds = new Set([
+    ...getTargetMangaIds(),
+    ...(options.forceIds || [])
+  ]);
 
-  const rawCatalogEntries = getCatalogEntries()
+  const rawCatalogEntries = [
+    ...getCatalogEntries(),
+    ...(options.forceEntries || [])
+  ]
     .filter((item) => item && (item.mangadexId || (item.chapterSourceProvider && item.chapterSourceId)))
     .map((item) => ({
       mangaId: item.mangaId,
@@ -1478,9 +1483,6 @@ async function fetchMangaChapters() {
   manifest.items.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
   writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, manifest);
   writeFallbackMappingMap(fallbackMappingMap);
-  const fullCatalogEntries = getMangaCatalogEntries();
-  const newChapterItems = writeNewChaptersSection(fullCatalogEntries, manifest, DEFAULT_SECTION_LIMIT);
-  console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
   console.log(`Saved chapter indexes for ${manifest.items.length} manga titles.`);
 }
 

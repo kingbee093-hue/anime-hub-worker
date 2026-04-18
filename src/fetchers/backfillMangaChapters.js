@@ -8,7 +8,7 @@ const {
 } = require('../utils/mangaBackfillData');
 const fetchMangaChapters = require('./fetchMangaChapters');
 
-const CHAPTER_BATCH_SIZE = Number(process.env.MANGA_BACKFILL_CHAPTER_BATCH || 12);
+const CHAPTER_BATCH_SIZE = Number(process.env.MANGA_BACKFILL_CHAPTER_BATCH || 50);
 const CHAPTER_STALE_HOURS = Number(process.env.MANGA_BACKFILL_CHAPTER_STALE_HOURS || 24 * 14);
 const FORCE_ALL = process.env.MANGA_BACKFILL_FORCE_ALL === '1';
 const FAILURE_COOLDOWN_HOURS = Number(process.env.MANGA_BACKFILL_FAILURE_COOLDOWN_HOURS || 24);
@@ -23,7 +23,8 @@ const TARGET_IDS = new Set(
     .map((item) => item.trim())
     .filter(Boolean),
 );
-const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || 'trending').trim();
+const SECTION_SCOPE = String(process.env.MANGA_BACKFILL_SECTION || '').trim();
+const ONLY_RELEASING_DEFAULT = process.env.MANGA_BACKFILL_ONLY_RELEASING !== '0';
 const chapterCountsCache = new Map();
 
 function isChapterBearingFormat(item) {
@@ -238,6 +239,14 @@ function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false
   };
   const hasUsableCoverage = counts.total >= MIN_AVAILABLE_CHAPTERS;
 
+  // SMART SKIP: If manga is FINISHED and we already have all expected chapters, skip it entirely.
+  const isFinished = !isReleasingStatus(item.status);
+  if (isFinished && expected > 0 && counts.en >= expected) {
+    if (!FORCE_ALL && TARGET_IDS.size === 0) {
+      return -1;
+    }
+  }
+
   if (!FORCE_ALL && isFailureCoolingDown(stateItem)) {
     return -1;
   }
@@ -269,6 +278,11 @@ function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false
   if (expected > 0 && counts.en < expected) {
     const gap = expected - counts.en;
     const ratio = expected > 0 ? counts.en / expected : 1;
+    // Don't waste time on tiny gaps for finished manga unless forced
+    if (isFinished && ratio >= 0.98 && !FORCE_ALL) {
+      return -1;
+    }
+    
     if (gap >= 5 && ratio < 0.97) {
       return 350000 + gap * 1000 + popularity;
     }
@@ -282,11 +296,13 @@ function scoreCandidate(item, manifestItem, stateItem, allowNonReleasing = false
 }
 
 async function backfillMangaChapters() {
-  console.log('========================================');
-  console.log('BACKFILL: Manga Chapters');
-  console.log('========================================');
+  console.log('\n' + '⭐'.repeat(40));
+  console.log('🚀 STAGE 2: SMART GAP-FILLING SYSTEM (Chapters & Images)');
+  console.log('⭐'.repeat(40) + '\n');
 
   const rawCatalogEntries = getMangaCatalogEntries();
+  const shouldRestrictToReleasing =
+    ONLY_RELEASING_DEFAULT && !FORCE_ALL && TARGET_IDS.size === 0;
   const shouldApplySectionScope = TARGET_IDS.size === 0 && Boolean(SECTION_SCOPE);
   const rawScopedEntries = shouldApplySectionScope
     ? getMangaSectionEntries(SECTION_SCOPE)
@@ -323,9 +339,21 @@ async function backfillMangaChapters() {
         .filter(([chapterIndexId]) => Boolean(chapterIndexId)),
     ).values(),
   );
+  const statusFilteredCatalogItems = shouldRestrictToReleasing
+    ? catalogItems.filter((item) => isReleasingStatus(item.status))
+    : catalogItems;
   console.log(`Backfill scope: ${getScopeLabel()} (${catalogItems.length} title(s) in scope).`);
-  const releasingCount = catalogItems.filter((item) => isReleasingStatus(item.status)).length;
+  const releasingCount = statusFilteredCatalogItems.filter((item) => isReleasingStatus(item.status)).length;
   const nonReleasingCount = Math.max(0, catalogItems.length - releasingCount);
+  if (shouldRestrictToReleasing) {
+    console.log(
+      `Status filter active: releasing only. Considered ${statusFilteredCatalogItems.length}/${catalogItems.length} title(s), skipped non-releasing: ${catalogItems.length - statusFilteredCatalogItems.length}.`,
+    );
+  } else {
+    console.log(
+      `Status filter disabled (force/targeted/manual override). Considering ${statusFilteredCatalogItems.length} title(s).`,
+    );
+  }
   console.log(
     `Routine chapter coverage target -> releasing: ${releasingCount}, non-releasing skipped unless targeted/forced: ${nonReleasingCount}.`,
   );
@@ -338,7 +366,7 @@ async function backfillMangaChapters() {
   const state = getState();
   const stateTitles = state.titles || {};
 
-  const candidateEntries = catalogItems
+  const candidateEntries = statusFilteredCatalogItems
     .map((item) => {
       const manifestItem = chapterMap.get(item.chapterIndexId) || null;
       const stateItem = getBestStateForItem(item, stateTitles);
@@ -436,7 +464,12 @@ async function backfillMangaChapters() {
   }
 
   try {
+    let currentIndex = 0;
+    const totalSelected = selected.length;
+    const totalRemaining = candidates.length;
     for (const { item } of selected) {
+      currentIndex++;
+      process.env.MANGA_PROGRESS_LABEL = `[ ${currentIndex} / ${totalSelected} (${totalRemaining}) ]`;
       try {
         process.env.MANGA_TARGET_IDS = item.chapterIndexId;
         await fetchMangaChapters();

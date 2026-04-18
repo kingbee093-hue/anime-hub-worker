@@ -1,0 +1,54 @@
+name: AnimeHub - Manga System
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_discovery:
+        description: 'Force new title discovery (1 to ignore gap protection)'
+        required: false
+        default: '0'
+      batch_size:
+        description: 'Batch size for Stage 2 (How many titles to process)'
+        required: false
+        default: '50'
+  repository_dispatch:
+    types: [run-manga-system, run-all]
+
+jobs:
+  manga-process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      # المرحلة الأولى: بناء الكتالوج (Catalog Builder)
+      # ستقوم هذه الخطوة بفحص الفجوات تلقائياً؛ إذا كانت > 100 ستلغي نفسها في ثوانٍ.
+      - name: Stage 1 - Catalog Discovery
+        env:
+          MANGA_FORCE_DISCOVERY: ${{ github.event.inputs.force_discovery || '0' }}
+          MANGA_BACKFILL_CHAPTER_BATCH: ${{ github.event.inputs.batch_size || '50' }}
+          MANGA_SKIP_CHAPTER_INDEX: '1'
+        run: node index.js manga
+
+      # المرحلة الثانية: جلب الفصول والصور (Smart Backfill)
+      # ستبدأ هذه الخطوة فوراً بعد المرحلة الأولى لسد أي نقص في البيانات.
+      - name: Stage 2 - Chapter & Image Backfill
+        env:
+          MANGA_BACKFILL_CHAPTER_BATCH: ${{ github.event.inputs.batch_size || '50' }}
+        run: node index.js mangachaptersbackfill
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Manga System: Unified Catalog update & Chapter backfill [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push origin main

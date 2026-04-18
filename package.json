@@ -11,13 +11,13 @@
     "fetch:catalog": "node index.js catalog",
     "fetch:manga": "node index.js manga",
     "fetch:manga-chapters": "node index.js mangachapters",
+    "fetch:manga-new-chapters": "node index.js manganewchapters",
     "fetch:manga-universe": "node index.js mangauniverse",
     "backfill:manga-chapters": "node index.js mangachaptersbackfill",
     "backfill:manga-pages": "node index.js mangapagesbackfill",
     "fetch:characters": "node index.js characters",
     "fetch:genres": "node index.js genres",
-    "fetch:news": "node scraper.js",
-    "backfill:news": "node backfill.js"
+    "fetch:news": "node scraper.js"
   },
   "keywords": [
     "anime",

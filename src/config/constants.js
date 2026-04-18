@@ -7,6 +7,7 @@ const CONFIG = {
   RETRY_DELAY: 2000,      // 2 seconds
   RATE_LIMIT_DELAY: 700,  // milliseconds between requests
   API_PATHS: {
+    REQUEST_HEALTH: 'worker/request_health',
     RECENT_EPISODES: 'recent_episodes',
     FEATURED: 'home_sections/featured',
     TRENDING: 'home_sections/trending',
@@ -28,15 +29,23 @@ const CONFIG = {
     MANGA_POPULAR: 'manga/popular',
     MANGA_BY_GENRE: 'manga/genres',
     MANGA_CATALOG: 'manga/catalog',
+    MANGA_DISCOVERED_CATALOG: 'manga/catalog/discovered_entries',
+    MANGA_DISCOVERY_STATE: 'manga/catalog/discovery_state',
+    MANGA_DISCOVERY_REPORT: 'manga/catalog/discovery_report',
+    MANGA_REQUEST_HEALTH: 'manga/catalog/request_health',
     MANGA_CHAPTERS: 'manga/chapters',
     MANGA_MAPPING: 'manga/mangadex_mapping',
     MANGA_CHAPTER_SOURCE_MAPPING: 'manga/chapter_source_mapping',
     MANGA_UNIVERSE: 'manga/universe',
     MANGA_PAGES: 'manga/pages',
     MANGA_BACKFILL: 'manga/backfill',
+    MANGA_DISCOVERY_STATE: 'manga/discovery_state',
+    MANGA_DISCOVERY_REPORT: 'manga/discovery_report',
+    MANGA_REQUEST_HEALTH: 'manga/request_health',
     MANGA_SEARCH_INDEX: 'search/manga_index',
     NEWS: 'news' 
   }
+
 };
 
 module.exports = CONFIG;

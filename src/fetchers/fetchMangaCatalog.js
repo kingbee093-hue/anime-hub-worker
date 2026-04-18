@@ -14,9 +14,7 @@ const {
   validateProviderSourceMapping,
 } = require('../utils/mangaFallbackProviders');
 const {
-  writeNewChaptersSection,
   writeReleasingSection,
-  DEFAULT_SECTION_LIMIT,
 } = require('../utils/mangaSections');
 const { buildChapterIndexId } = require('../utils/mangaBackfillData');
 const manualMangaMappings = require('../config/manualMangaMappings.json');
@@ -24,11 +22,11 @@ const manualMangaSourceMappings = require('../config/manualMangaSourceMappings.j
 
 const MANGADEX_API = 'https://api.mangadex.org';
 const CATALOG_PAGE_SIZE = 120;
-const CATALOG_MAX_ITEMS = 2200;
+const CATALOG_MAX_ITEMS = 100000;
 const GENRE_MAX_ITEMS = 120;
 const SECTION_ITEMS = 24;
 const MANGADEX_DELAY_MS = 250;
-const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 220);
+const MANGADEX_MAPPING_ATTEMPTS_PER_RUN = Number(process.env.MANGADEX_MAPPING_ATTEMPTS_PER_RUN || 90);
 const MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT = Number(process.env.MANGADEX_MAPPING_PROVIDER_TITLE_LIMIT || 6);
 const MANGADEX_MAPPING_MAX_QUERY_PLANS = Number(process.env.MANGADEX_MAPPING_MAX_QUERY_PLANS || 10);
 const VERBOSE_MAPPING_LOGS = process.env.MANGA_VERBOSE_MAPPING_LOGS === '1';
@@ -37,8 +35,8 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'featured',
     sectionPath: CONFIG.API_PATHS.MANGA_FEATURED,
-    limit: 12,
-    pages: 10,
+    limit: 5,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['FAVOURITES_DESC', 'POPULARITY_DESC'],
@@ -47,8 +45,8 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'popular',
     sectionPath: CONFIG.API_PATHS.MANGA_POPULAR,
-    limit: SECTION_ITEMS,
-    pages: 20,
+    limit: 5,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['POPULARITY_DESC'],
@@ -57,8 +55,8 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'top-rated',
     sectionPath: CONFIG.API_PATHS.MANGA_TOP_RATED,
-    limit: SECTION_ITEMS,
-    pages: 12,
+    limit: 5,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['SCORE_DESC', 'POPULARITY_DESC'],
@@ -67,8 +65,8 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'trending',
     sectionPath: CONFIG.API_PATHS.MANGA_TRENDING,
-    limit: SECTION_ITEMS,
-    pages: 10,
+    limit: 5,
+    pages: 1,
     variables: {
       perPage: 35,
       sort: ['TRENDING_DESC', 'POPULARITY_DESC'],
@@ -77,14 +75,33 @@ const MANGA_CATALOG_SOURCES = [
   {
     label: 'releasing',
     sectionPath: CONFIG.API_PATHS.MANGA_RELEASING,
-    limit: SECTION_ITEMS,
-    pages: 8,
+    limit: 5,
+    pages: 1,
     variables: {
       perPage: 35,
       status: 'RELEASING',
       sort: ['POPULARITY_DESC'],
     },
   },
+  // --- GENRES ---
+  // NOTE: sectionPath intentionally omitted. Genre files (manga/genres/Action.json etc.)
+  // are written by the genreBuckets pass below from the full enriched catalog, using
+  // the original AniList casing that the Flutter app reads. Writing a lowercase
+  // sectionPath here would create orphan files (manga/genres/action) on the
+  // case-sensitive Linux filesystem of GitHub Actions.
+  ...[
+    'Action', 'Romance', 'Fantasy', 'Comedy', 'Drama', 'Slice of Life',
+    'Sci-Fi', 'Horror', 'Mystery', 'Adventure', 'Sports', 'Supernatural', 'Psychological'
+  ].map(genre => ({
+    label: `genre-${genre.toLowerCase().replace(/\s+/g, '-')}`,
+    limit: 5,
+    pages: 1,
+    variables: {
+      perPage: 35,
+      genre: genre,
+      sort: ['POPULARITY_DESC'],
+    },
+  })),
 ];
 
 function normalizeSearchText(value) {
@@ -725,16 +742,89 @@ function readObjectJson(relativePath) {
   }
 }
 
+function readArrayJson(relativePath) {
+  try {
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    const value = require(`../../api/${relativePath}.json`);
+    return Array.isArray(value) ? value : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function mergeDiscoveredCatalogEntries(catalogEntries) {
+  const discoveredEntries = readArrayJson(CONFIG.API_PATHS.MANGA_DISCOVERED_CATALOG);
+  if (!discoveredEntries.length) {
+    return catalogEntries;
+  }
+
+  const merged = new Map();
+  for (const item of catalogEntries || []) {
+    if (!item?.mangaId) continue;
+    merged.set(item.mangaId, item);
+  }
+
+  for (const discovered of discoveredEntries) {
+    if (!discovered?.mangaId) continue;
+    merged.set(
+      discovered.mangaId,
+      mergeManga(merged.get(discovered.mangaId), discovered),
+    );
+  }
+
+  return sortCatalog(Array.from(merged.values())).slice(0, CATALOG_MAX_ITEMS);
+}
+
 async function fetchMangaCatalog() {
   console.log('========================================');
   console.log('BUILDING: Manga Catalog');
   console.log('========================================');
 
+  const existingCatalog = readObjectJson(CONFIG.API_PATHS.MANGA_SEARCH_INDEX);
   const deduped = new Map();
+
+  if (Array.isArray(existingCatalog)) {
+    console.log(`📡 Resuming with ${existingCatalog.length} existing catalog entries...`);
+    for (const item of existingCatalog) {
+      if (item && item.mangaId) {
+        // Convert search index items back to a format suitable for merging if necessary
+        // or just use them as-is
+        deduped.set(String(item.mangaId), item);
+      }
+    }
+  }
+
   const sectionBuckets = new Map();
 
+  const GAP_THRESHOLD = Number(process.env.MANGA_GAP_THRESHOLD || 100);
+  
+  // Use the actual manifest to check which titles REALLY have chapters
+  const { getChapterManifest } = require('../utils/mangaBackfillData');
+  const manifest = getChapterManifest();
+  const indexedIds = new Set((manifest.items || []).map(item => String(item.mangaId || item.anilistId)));
+  
+  const missingChapters = Array.from(deduped.values()).filter(m => {
+    const id = String(m.anilistId || m.mangaId);
+    return !indexedIds.has(id);
+  });
+  
+  const gapRatio = (missingChapters.length / (deduped.size || 1)) * 100;
+
+  let skipDiscovery = false;
+  if (missingChapters.length > GAP_THRESHOLD && process.env.MANGA_FORCE_DISCOVERY !== '1') {
+    console.warn('\n⚠️ [GAP PROTECTION ACTIVE]');
+    console.warn(`Found ${missingChapters.length} titles without chapters (${gapRatio.toFixed(1)}% of catalog).`);
+    console.warn(`Exceeds threshold of ${GAP_THRESHOLD}. Skipping new title discovery from AniList.`);
+    console.warn('Goal: Focus on Stage 2 (Chapter & Image Backfilling) to ensure data integrity.');
+    console.log('Canceling Stage 1 (Catalog Builder) to prioritize fill operations...\n');
+    return; // [GAP PROTECTION] Exit Stage 1 immediately
+  }
+
+  console.log(`\n🔍 [STEP 1/2] Discovering titles from ${MANGA_CATALOG_SOURCES.length} sources...`);
+  let newDiscoveries = 0;
+  
   for (const source of MANGA_CATALOG_SOURCES) {
-    console.log(`Collecting manga source: ${source.label}`);
+    process.stdout.write(`  📡 Collecting: ${source.label.padEnd(20)} \r`);
     const sourceItems = new Map();
 
     for (let page = 1; page <= source.pages; page++) {
@@ -743,36 +833,45 @@ async function fetchMangaCatalog() {
         ...source.variables,
       });
 
-      if (!data || !data.Page) {
-        console.error(`Failed to fetch manga source ${source.label} page ${page}`);
-        continue;
-      }
+      if (!data || !data.Page) continue;
 
+      let sourceCount = 0;
       for (const media of data.Page.media || []) {
+        if (sourceCount >= (source.limit || 5)) break;
         if (!media || !media.id) continue;
         if (isAdultContent(media).blocked || !isManga(media).allowed) continue;
 
         const formatted = convertMangaToFirestoreFormat(media);
         if (!formatted) continue;
 
-        deduped.set(
-          formatted.mangaId,
-          mergeManga(deduped.get(formatted.mangaId), formatted),
-        );
+        if (!deduped.has(formatted.mangaId)) {
+          newDiscoveries++;
+          deduped.set(formatted.mangaId, formatted);
+          sourceCount++;
+        } else {
+          deduped.set(
+            formatted.mangaId,
+            mergeManga(deduped.get(formatted.mangaId), formatted),
+          );
+          // Optional: decide if existing items count towards the source limit
+          // For now, let's assume the user wants 5 items TOTAL for the bucket, 
+          // but specifically requested 5 NEW titles.
+        }
         sourceItems.set(
           formatted.mangaId,
           mergeManga(sourceItems.get(formatted.mangaId), formatted),
         );
       }
-
       await delay(CONFIG.RATE_LIMIT_DELAY);
     }
 
     sectionBuckets.set(
-      source.label,
-      sortCatalog(Array.from(sourceItems.values())).slice(0, source.limit || SECTION_ITEMS),
+        source.label,
+        sortCatalog(Array.from(sourceItems.values())).slice(0, source.limit || SECTION_ITEMS),
     );
   }
+  process.stdout.write('\x1b[2K'); // Clear line
+  console.log(`✅ Discovery Complete: ${newDiscoveries} new titles found. (Total Library: ${deduped.size} titles)`);
 
   let catalog = sortCatalog(Array.from(deduped.values())).slice(0, CATALOG_MAX_ITEMS);
   const mappingCache = readObjectJson(CONFIG.API_PATHS.MANGA_MAPPING);
@@ -801,8 +900,10 @@ async function fetchMangaCatalog() {
     .map((manga, index) => ({ manga, index }))
     .sort((a, b) => mappingPriorityScore(b.manga) - mappingPriorityScore(a.manga));
   const processedMappingIds = new Set();
+  console.log(`\n🔗 [STEP 2/2] Resolving Links for candidates...`);
 
   for (const { manga, index } of prioritizedIndexes) {
+    if (skipDiscovery) break; // [GAP PROTECTION] Skip time-consuming mapping
     const processedKey = String(manga.anilistId || manga.mangaId);
     if (processedMappingIds.has(processedKey)) {
       continue;
@@ -880,12 +981,18 @@ async function fetchMangaCatalog() {
       continue;
     }
 
-    console.log(
-      `Mapping attempt ${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN}: "${manga.title}" (${manga.format || 'UNKNOWN'}, year=${manga.year || 0}, popularity=${manga.popularity || 0}).`,
-    );
+    const progress = `[${mappingAttempts + 1}/${MANGADEX_MAPPING_ATTEMPTS_PER_RUN}]`;
+    const getTitle = (m) => {
+      if (typeof m.title === 'string') return m.title;
+      if (m.title && typeof m.title === 'object') return m.title.userPreferred || m.title.english || m.title.romaji;
+      return 'Unknown Title';
+    };
+    const titleShort = getTitle(manga).slice(0, 35);
+    process.stdout.write(`  ⏳ ${progress} Resolving: ${titleShort}... \r`);
     const resolved = await resolveMangaDexMapping(manga, nextMappingCache, mappingStats);
     mappingAttempts += 1;
     if (resolved?.mangadexId) {
+      process.stdout.write(`  ✅ ${progress} Linked (MangaDex): ${titleShort.padEnd(35)}\n`);
       nextMappingCache[String(manga.anilistId || manga.mangaId)] = resolved;
       delete nextChapterSourceCache[processedKey];
       catalog[index] = attachMapping(manga, resolved);
@@ -894,10 +1001,15 @@ async function fetchMangaCatalog() {
 
     const chapterSource = await resolveChapterSourceMapping(manga, nextChapterSourceCache, mappingStats);
     if (chapterSource?.provider && chapterSource?.providerId) {
+      process.stdout.write(`  🌐 ${progress} Tied (Fallback): ${titleShort.padEnd(35)}\n`);
       nextChapterSourceCache[processedKey] = chapterSource;
       catalog[index] = attachChapterSource(manga, chapterSource);
       validatedChapterSources.set(`${chapterSource.provider}:${chapterSource.providerId}`, true);
     }
+  }
+  
+  if (MANGADEX_MAPPING_ATTEMPTS_PER_RUN > 0) {
+    console.log(`\n🎉 Step 2 Complete! Resolved ${mappingAttempts} titles.`);
   }
 
   const enrichedCatalog = [];
@@ -942,6 +1054,7 @@ async function fetchMangaCatalog() {
     enrichedCatalog.push(enriched);
   }
   catalog = enrichedCatalog;
+  catalog = mergeDiscoveredCatalogEntries(catalog);
 
   const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
   const lookup = {};
@@ -1026,15 +1139,7 @@ async function fetchMangaCatalog() {
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
   const releasingItems = writeReleasingSection(catalog, SECTION_ITEMS);
   console.log(`Manga releasing section refreshed with ${releasingItems.length} titles.`);
-  try {
-    // eslint-disable-next-line global-require, import/no-dynamic-require
-    const existingChapterManifest = require(`../../api/${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest.json`);
-    const newChapterItems = writeNewChaptersSection(catalog, existingChapterManifest, DEFAULT_SECTION_LIMIT);
-    console.log(`Manga new chapters section refreshed with ${newChapterItems.length} titles.`);
-  } catch (_) {
-    writeNewChaptersSection(catalog, { items: [] }, DEFAULT_SECTION_LIMIT);
-    console.log('Manga new chapters section refreshed with 0 titles (chapter manifest unavailable yet).');
-  }
+  console.log('Manga new chapters feed is managed by the dedicated workflow only (fetch_manga_new_chapters.yml).');
   console.log(`Manga catalog built with ${catalog.length} items across ${totalPages} pages.`);
   console.log(
     `Manga mapping summary -> attempts: ${mappingAttempts}, cache hits: ${mappingStats.cachedHits}, manual: ${mappingStats.manualHits}, AniList direct: ${mappingStats.directExternalHits}, AL link: ${mappingStats.alHits}, MAL bridge: ${mappingStats.malHits}, other direct: ${mappingStats.otherDirectHits}, fuzzy: ${mappingStats.fuzzyHits}, unresolved: ${mappingStats.unmapped}.`,
