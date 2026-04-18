@@ -1632,10 +1632,10 @@
   },
   "86209d1b-8d66-44b1-86e5-912e07f040fe": {
     "status": "failed",
-    "title": "A Human!",
-    "lastChapterId": "298423b8-a11e-4500-95da-9c44bd4a987d",
-    "lastChapter": "12.3",
-    "lastAttemptAt": "2026-04-18T18:34:26.102Z",
+    "title": "A Great Mission Across The Desert",
+    "lastChapterId": "a5993a19-24ae-43eb-89ec-ecd9ac905254",
+    "lastChapter": "10.6",
+    "lastAttemptAt": "2026-04-18T19:00:29.205Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -3456,6 +3456,32 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-18T18:34:23.010Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "6178d612-20f0-4eb0-9af1-b7bf32c66a28": {
+    "status": "discovered",
+    "title": "Inu ni Naritai",
+    "mangaId": 93729,
+    "anilistId": 93729,
+    "chapterIndexId": "6178d612-20f0-4eb0-9af1-b7bf32c66a28",
+    "lastChapterId": "b541cca7-edbd-4dbb-a6c7-cf965fd4f51b",
+    "lastChapter": "10",
+    "lastAttemptAt": "2026-04-18T19:00:25.503Z",
+    "lastSuccessAt": "2026-04-18T19:00:25.503Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "af0f31a0-372d-4aa5-a632-f2e2b769ab83": {
+    "status": "discovered",
+    "title": "Inazuma Eleven",
+    "mangaId": 49315,
+    "anilistId": 49315,
+    "chapterIndexId": "af0f31a0-372d-4aa5-a632-f2e2b769ab83",
+    "lastChapterId": "c3a45dc2-d845-4f8b-a6b2-405b3bda5929",
+    "lastChapter": "21",
+    "lastAttemptAt": "2026-04-18T19:00:26.181Z",
+    "lastSuccessAt": "2026-04-18T19:00:26.181Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
