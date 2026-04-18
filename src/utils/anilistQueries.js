@@ -138,10 +138,21 @@ query ($page: Int, $perPage: Int) {
 }
 `;
 
+const MANGA_BY_IDS_QUERY = `
+query ($ids: [Int]) {
+  Page(page: 1, perPage: 50) {
+    media(type: MANGA, id_in: $ids) {
+      ${MANGA_MEDIA_FRAGMENT}
+    }
+  }
+}
+`;
+
 module.exports = {
   AIRING_ANIME_QUERY,
   GENERIC_MEDIA_QUERY,
   GENERIC_MANGA_QUERY,
+  MANGA_BY_IDS_QUERY,
   AIRING_SCHEDULE_WINDOW_QUERY,
   POPULAR_CHARACTERS_QUERY,
 };

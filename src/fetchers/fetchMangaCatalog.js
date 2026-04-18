@@ -1,13 +1,13 @@
 const axios = require('axios');
 const CONFIG = require('../config/constants');
 const { fetchGraphQL } = require('../utils/fetchHelper');
-const { GENERIC_MANGA_QUERY } = require('../utils/anilistQueries');
+const { GENERIC_MANGA_QUERY, MANGA_BY_IDS_QUERY } = require('../utils/anilistQueries');
 const {
   convertMangaToFirestoreFormat,
   delay,
 } = require('../utils/formatters');
 const { isAdultContent, isManga } = require('../utils/filters');
-const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
+const { writeJsonIfChanged, readJson } = require('../utils/writeJsonIfChanged');
 const {
   discoverProviderTitlesForManga,
   resolveFallbackProviderCandidates,
@@ -814,10 +814,17 @@ async function fetchMangaCatalog() {
   if (missingChapters.length > GAP_THRESHOLD && process.env.MANGA_FORCE_DISCOVERY !== '1') {
     console.warn('\n⚠️ [GAP PROTECTION ACTIVE]');
     console.warn(`Found ${missingChapters.length} titles without chapters (${gapRatio.toFixed(1)}% of catalog).`);
-    console.warn(`Exceeds threshold of ${GAP_THRESHOLD}. Skipping new title discovery from AniList.`);
-    console.warn('Goal: Focus on Stage 2 (Chapter & Image Backfilling) to ensure data integrity.');
-    console.log('Canceling Stage 1 (Catalog Builder) to prioritize fill operations...\n');
-    return; // [GAP PROTECTION] Exit Stage 1 immediately
+    console.warn(`Exceeds threshold of ${GAP_THRESHOLD}. Relaxing discovery to avoid starvation.`);
+    // We allow discovery but maybe reduce pages or specific sources if needed.
+    // For now, we just proceed but with a warning.
+  }
+
+  // Pre-Stage: Sync Orphaned Discoveries
+  // If we have entries in the chapter manifest that are missing from the catalog, fetch them now.
+  try {
+    await syncOrphanedManifestEntries(deduped);
+  } catch (syncError) {
+    console.error(`Orphan sync failed: ${syncError.message}`);
   }
 
   console.log(`\n🔍 [STEP 1/2] Discovering titles from ${MANGA_CATALOG_SOURCES.length} sources...`);
@@ -1078,8 +1085,17 @@ async function fetchMangaCatalog() {
         searchItem.titleNative,
         ...((item.synonyms || []).slice(0, 8)),
       ]);
-      for (const term of shardTerms) {
+
+      // Add individual words to shards for better discoverability
+      for (const term of Array.from(shardTerms)) {
+        if (!term) continue;
         addToShard(searchShards, getSearchShardKey(term), searchItem);
+        
+        // Index by individual words too
+        const words = String(term).split(/\s+/).filter(w => w.length >= 3);
+        for (const word of words) {
+          addToShard(searchShards, getSearchShardKey(word), searchItem);
+        }
       }
 
       for (const genre of item.genres || []) {
@@ -1148,8 +1164,45 @@ async function fetchMangaCatalog() {
     `Manga mapping skipped non-chapter formats: ${mappingStats.skippedNonChapterFormats}.`,
   );
   console.log(
-    `Chapter source mapping summary -> cache hits: ${mappingStats.providerCacheHits}, manual: ${mappingStats.providerManualHits}, resolved: ${mappingStats.providerResolvedHits}, unresolved: ${mappingStats.providerUnresolved}.`,
+    `Chapter source mapping summary -> cache hits: ${mappingStats.providerCacheHits}, manual: ${mappingStats.providerManualHits}, resolved: ${mappingStats.providerResolvedHits}, unresolved: ${mappingStats.providerUnresolved}.`
   );
+}
+
+async function syncOrphanedManifestEntries(dedupedMap) {
+  const manifest = readJson(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`);
+  const items = Array.isArray(manifest.items) ? manifest.items : [];
+  const orphanIds = [];
+
+  for (const item of items) {
+    const anilistId = item.chapterIndexId;
+    if (anilistId && !dedupedMap.has(String(anilistId))) {
+      orphanIds.push(parseInt(anilistId, 10));
+    }
+  }
+
+  if (orphanIds.length === 0) return;
+
+  console.log(`🔍 Found ${orphanIds.length} orphaned titles in manifest. Syncing metadata...`);
+
+  // Process in batches of 50 (AniList perPage limit)
+  for (let i = 0; i < orphanIds.length; i += 50) {
+    const batch = orphanIds.slice(i, i + 50);
+    try {
+      const data = await fetchGraphQL(MANGA_BY_IDS_QUERY, { ids: batch });
+      if (data?.Page?.media) {
+        for (const media of data.Page.media) {
+          const formatted = convertMangaToFirestoreFormat(media);
+          if (formatted) {
+            dedupedMap.set(String(formatted.mangaId), formatted);
+            console.log(`✅ Recovered orphan: ${formatted.title} (${formatted.mangaId})`);
+          }
+        }
+      }
+    } catch (err) {
+      console.error(`Error syncing orphan batch: ${err.message}`);
+    }
+    await delay(CONFIG.RATE_LIMIT_DELAY);
+  }
 }
 
 module.exports = fetchMangaCatalog;

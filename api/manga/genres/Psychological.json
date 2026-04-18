@@ -4,11 +4,36 @@
     "anilistId": 30002,
     "idMal": 2,
     "title": "Berserk",
-    "titleEnglish": "Berserk",
     "titleRomaji": "Berserk",
+    "titleEnglish": "Berserk",
     "titleNative": "ベルセルク",
+    "synonyms": [
+      "بيرسيرك",
+      "Beruseruku",
+      "Берсерк",
+      "ברזרק",
+      "برزرک",
+      "เบอร์เซิร์ก",
+      "烙印勇士",
+      "烙印战士",
+      "베르세르크",
+      "Berserk Max",
+      "烙印戰士"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30002-Cul4OeN7bYtn.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30002-Cul4OeN7bYtn.jpg",
+    "coverImageColor": "#d6861a",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30002-3TuoSMl20fUX.jpg",
     "synopsis": "His name is Guts, the Black Swordsman, a feared warrior spoken of only in whispers. Bearer of a gigantic sword, an iron hand, and the scars of countless battles and tortures, his flesh is also indelibly marked with The Brand, an unholy symbol that draws the fo",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 1989,
+    "startDate": "1989-08-25",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Action",
       "Adventure",
@@ -16,6 +41,658 @@
       "Fantasy",
       "Horror",
       "Psychological"
+    ],
+    "tags": [
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 96,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 311,
+        "name": "Rehabilitation",
+        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
+        "category": "Theme-Drama",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1689,
+        "name": "Curses",
+        "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
+        "category": "Theme-Fantasy",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1455,
+        "name": "Fairy",
+        "description": "Prominently features a character who is a fairy.",
+        "category": "Cast-Traits",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 71,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1121,
+        "name": "Torture",
+        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
+        "category": "Theme-Other",
+        "rank": 69,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 179,
+        "name": "Witch",
+        "description": "Prominently features a character who is a witch.",
+        "category": "Cast-Traits",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 598,
+        "name": "Elf",
+        "description": "Prominently features a character who is an elf.",
+        "category": "Cast-Traits",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 723,
+        "name": "Sadism",
+        "description": "Prominently features characters deriving pleasure, especially sexual gratification, from inflicting pain, suffering, or humiliation on others.",
+        "category": "Sexual Content",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 499,
+        "name": "Skeleton",
+        "description": "Prominently features skeleton(s) as a character.",
+        "category": "Cast-Traits",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 931,
+        "name": "Tomboy",
+        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1052,
+        "name": "Adoption",
+        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
+        "category": "Theme-Other",
+        "rank": 58,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 604,
+        "name": "Dungeon",
+        "description": "Prominently features a dungeon environment.",
+        "category": "Setting-Scene",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1419,
+        "name": "Kingdom Management",
+        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
+        "category": "Theme-Drama",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 247,
+        "name": "Slavery",
+        "description": "Prominently features slaves, slavery, or slave trade.",
+        "category": "Theme-Other",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 397,
+        "name": "Pregnancy",
+        "description": "Features pregnant female characters or discusses the topic of pregnancy.",
+        "category": "Theme-Other",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 190,
+        "name": "Prostitution",
+        "description": "Features characters who are paid for sexual favors.",
+        "category": "Sexual Content",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 830,
+        "name": "Group Sex",
+        "description": "Features more than two participants engaged in sex simultaneously.",
+        "category": "Sexual Content",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "category": "Cast-Traits",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 128,
+        "name": "Incest",
+        "description": "Features sexual or romantic relations between characters who are related by blood.",
+        "category": "Sexual Content",
+        "rank": 51,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 259,
+        "name": "Monster Girl",
+        "description": "Prominently features a female character who is part-monster.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 305,
+        "name": "Ships",
+        "description": "Prominently features the use of sea-based transportation vessels.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 624,
+        "name": "Vore",
+        "description": "Features a character being swallowed or swallowing another creature whole.",
+        "category": "Sexual Content",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 1090,
+        "name": "Monster Boy",
+        "description": "Prominently features a male character who is a part-monster.",
+        "category": "Cast-Traits",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 558,
+        "name": "Mermaid",
+        "description": "A mythological creature with the body of a human and the tail of a fish.",
+        "category": "Cast-Traits",
+        "rank": 42,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 131,
+        "name": "Masturbation",
+        "description": "Features erotic stimulation of one's own genitalia or other erogenous regions.",
+        "category": "Sexual Content",
+        "rank": 38,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 134,
+        "name": "Fellatio",
+        "description": "Blowjob; features oral sex performed on male genitalia.",
+        "category": "Sexual Content",
+        "rank": 35,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      }
     ],
     "authors": [
       "Kentarou Miura",
@@ -25,14 +702,64 @@
       "Kentarou Miura",
       "Studio Gaga"
     ],
-    "popularity": 231784,
+    "rating": 9.2,
     "averageScore": 92,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 1989,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 92,
+    "popularity": 231784,
+    "trending": 10,
+    "favourites": 38784,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30002",
+    "mal_url": "https://myanimelist.net/manga/2",
+    "externalLinks": [
+      {
+        "site": "Young Animal",
+        "url": "https://younganimal.com/series/f68f676b354d4/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.darkhorse.com/books/12-705/berserk-volume-1-tpb/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.glenat.com/glenat-manga/series-berserk-prestige/"
+      },
+      {
+        "site": "Lezhin",
+        "url": "https://www.lezhin.com/ko/comic/berserk"
+      },
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=8285283"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://magazine.younganimal.com/title/?id=32"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/berserk_project"
+      },
+      {
+        "site": "Manga Park",
+        "url": "https://manga-park.com/title/151"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/28600?etype=episode"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://zebrack-comic.shueisha.co.jp/title/4876"
+      }
+    ],
+    "chapterIndexId": "801513ba-a712-498c-8f57-cae55b38cc92",
     "mangadexId": "801513ba-a712-498c-8f57-cae55b38cc92",
+    "mangadexUrl": "https://mangadex.org/title/801513ba-a712-498c-8f57-cae55b38cc92",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Berserk",
@@ -45,22 +772,40 @@
       "Psychological",
       "Kentarou Miura",
       "Studio Gaga"
-    ],
-    "chapterIndexId": "801513ba-a712-498c-8f57-cae55b38cc92",
-    "mangadexUrl": "https://mangadex.org/title/801513ba-a712-498c-8f57-cae55b38cc92",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 63327,
     "anilistId": 63327,
     "idMal": 33327,
     "title": "Tokyo Ghoul",
-    "titleEnglish": "Tokyo Ghoul",
     "titleRomaji": "Tokyo Ghoul",
+    "titleEnglish": "Tokyo Ghoul",
     "titleNative": "東京喰種 トーキョーグール",
+    "synonyms": [
+      "Toukyou Kushu",
+      "Tokyo Guru",
+      "Tokyo Gûl",
+      "Tokijský ghúl",
+      "Токийский гуль",
+      "도쿄 구울",
+      "Tokijski gul",
+      "東京喰種"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63327-glC9cDxYBja9.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63327-glC9cDxYBja9.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx63327-glC9cDxYBja9.png",
+    "coverImageColor": "#e46b5d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/63327-uaFaG1HAJ0tK.jpg",
     "synopsis": "Shy Ken Kaneki is thrilled to go on a date with the beautiful Rize. But it turns out that she’s only interested in his body—eating it, that is. When a morally questionable rescue transforms him into the first half-human half-Ghoul hybrid, Ken is drawn into the",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2011,
+    "startDate": "2011-09-22",
+    "endDate": "2014-09-18",
+    "chapters": 144,
+    "volumes": 14,
     "genres": [
       "Action",
       "Horror",
@@ -68,20 +813,282 @@
       "Psychological",
       "Supernatural"
     ],
+    "tags": [
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 97,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 772,
+        "name": "Shapeshifting",
+        "description": "Features character(s) who changes one's appearance or form.",
+        "category": "Theme-Fantasy",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1121,
+        "name": "Torture",
+        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
+        "category": "Theme-Other",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 774,
+        "name": "Chimera",
+        "description": "Features a beast made by combining animals, usually with humans.",
+        "category": "Cast-Traits",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Sui Ishida"
     ],
     "artists": [
       "Sui Ishida"
     ],
-    "popularity": 185534,
+    "rating": 8.4,
     "averageScore": 84,
-    "chapters": 144,
-    "volumes": 14,
-    "year": 2011,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 84,
+    "popularity": 185534,
+    "trending": 9,
+    "favourites": 17605,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/63327",
+    "mal_url": "https://myanimelist.net/manga/33327",
+    "externalLinks": [
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100027"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/13932016480028833022"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200006"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/tokyo-ghoul"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/tokyo-ghoul"
+      }
+    ],
+    "chapterIndexId": "6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
     "mangadexId": "6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
+    "mangadexUrl": "https://mangadex.org/title/6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Tokyo Ghoul",
@@ -92,26 +1099,292 @@
       "Psychological",
       "Supernatural",
       "Sui Ishida"
-    ],
-    "chapterIndexId": "6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
-    "mangadexUrl": "https://mangadex.org/title/6a1d1cb1-ecd5-40d9-89ff-9d88e40b136b",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 34632,
     "anilistId": 34632,
     "idMal": 4632,
     "title": "Goodnight Punpun",
-    "titleEnglish": "Goodnight Punpun",
     "titleRomaji": "Oyasumi Punpun",
+    "titleEnglish": "Goodnight Punpun",
     "titleNative": "おやすみプンプン",
+    "synonyms": [
+      "Dobranoc, Punpunie",
+      "Bonne nuit Punpun!",
+      "Boa Noite Punpun",
+      "Bona nit, Punpun",
+      "Buenas noches, Punpun",
+      "Gute Nacht, Punpun",
+      "잘자 뿡뿡",
+      "晚安布布",
+      "לילה טוב, פונפון",
+      "Buonanotte, Punpun",
+      "İyi Geceler, Punpun",
+      "ฝันดีนะปุนปุน",
+      "Laku noć, Punpune",
+      "Добраніч, Пунпуне"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34632-5xMDkx3pXsEh.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx34632-5xMDkx3pXsEh.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx34632-5xMDkx3pXsEh.png",
+    "coverImageColor": "#e4c943",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/34632-JULTgA6q6jAH.jpg",
     "synopsis": "Meet Punpun Punyama. He’s an average kid in an average town. He wants to win a Nobel Prize and save the world. He wants the girl he has a crush on to like him back. He wants to find some porn. That’s what he wants, but what does he get…? (Source: VIZ Media)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2007,
+    "startDate": "2007-03-15",
+    "endDate": "2013-11-02",
+    "chapters": 147,
+    "volumes": 13,
     "genres": [
       "Drama",
       "Psychological",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 98,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 90,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1670,
+        "name": "Psychosexual",
+        "description": "Work that involves the psychological aspects of sexual impulses.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 72,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 226,
+        "name": "Fugitive",
+        "description": "Prominently features a character evading capture by an individual or organization.",
+        "category": "Theme-Action",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 51,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 49,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Inio Asano"
@@ -119,14 +1392,44 @@
     "artists": [
       "Inio Asano"
     ],
-    "popularity": 176432,
+    "rating": 8.8,
     "averageScore": 88,
-    "chapters": 147,
-    "volumes": 13,
-    "year": 2007,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 88,
+    "popularity": 176432,
+    "trending": 4,
+    "favourites": 20922,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/34632",
+    "mal_url": "https://myanimelist.net/manga/4632",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/goodnight-punpun"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://shogakukan-comic.jp/book?isbn=9784091512185"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/vizmanga/chapters/goodnight-punpun"
+      },
+      {
+        "site": "Kana",
+        "url": "https://www.kana.fr/series/bonne-nuit-punpun/"
+      },
+      {
+        "site": "Big Comics",
+        "url": "https://bigcomics.jp/series/ed6abb572575e"
+      }
+    ],
+    "chapterIndexId": "4301d363-ee02-43f4-ae24-4cbf29a74830",
     "mangadexId": "4301d363-ee02-43f4-ae24-4cbf29a74830",
+    "mangadexUrl": "https://mangadex.org/title/4301d363-ee02-43f4-ae24-4cbf29a74830",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Goodnight Punpun",
@@ -136,22 +1439,42 @@
       "Psychological",
       "Slice of Life",
       "Inio Asano"
-    ],
-    "chapterIndexId": "4301d363-ee02-43f4-ae24-4cbf29a74830",
-    "mangadexUrl": "https://mangadex.org/title/4301d363-ee02-43f4-ae24-4cbf29a74830",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 87423,
     "anilistId": 87423,
     "idMal": 100128,
     "title": "The Promised Neverland",
-    "titleEnglish": "The Promised Neverland",
     "titleRomaji": "Yakusoku no Neverland",
+    "titleEnglish": "The Promised Neverland",
     "titleNative": "約束のネバーランド",
+    "synonyms": [
+      "YakuNeba",
+      "Vadedilmiş Yokyer",
+      "TPN",
+      "Zaslíbená Země Nezemě",
+      "Miền đất hứa",
+      "Обещанная страна грёз",
+      "พันธสัญญาเนเวอร์แลนด์ ",
+      "約定的夢幻島",
+      "Obećana Nedođija",
+      "약속의 네버랜드"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87423-gPNtu8QbGped.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87423-gPNtu8QbGped.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87423-gPNtu8QbGped.jpg",
+    "coverImageColor": "#e4d650",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/n87423-n5n0LZu9Gs5H.jpg",
     "synopsis": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could ",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2016,
+    "startDate": "2016-08-01",
+    "endDate": "2020-06-15",
+    "chapters": 181,
+    "volumes": 20,
     "genres": [
       "Drama",
       "Fantasy",
@@ -160,20 +1483,338 @@
       "Psychological",
       "Thriller"
     ],
+    "tags": [
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 446,
+        "name": "Primarily Child Cast",
+        "description": "Main cast is mostly composed of characters below a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 146,
+        "name": "Alternate Universe",
+        "description": "Features multiple alternate universes in the same series.",
+        "category": "Setting-Universe",
+        "rank": 75,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 66,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1427,
+        "name": "Prison",
+        "description": "Partly or completely set in a prison.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 250,
+        "name": "Rural",
+        "description": "Partly or completely set in the countryside.",
+        "category": "Setting-Scene",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 364,
+        "name": "Augmented Reality",
+        "description": "Prominently features events with augmented reality as the main setting.",
+        "category": "Setting-Universe",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 15,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Kaiu Shirai"
     ],
     "artists": [
       "Posuka Demizu"
     ],
-    "popularity": 129282,
+    "rating": 7.9,
     "averageScore": 79,
-    "chapters": 181,
-    "volumes": 20,
-    "year": 2016,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 79,
+    "popularity": 129282,
+    "trending": 3,
+    "favourites": 8464,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/87423",
+    "mal_url": "https://myanimelist.net/manga/100128",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/yakuneba_staff"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100026"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200017"
+      },
+      {
+        "site": "Shonen Jump",
+        "url": "https://www.shonenjump.com/j/rensai/neverland.html"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/the-promised-neverland"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/the-promised-neverland"
+      },
+      {
+        "site": "Mangas.io",
+        "url": "https://www.mangas.io/lire/the-promised-neverland"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/13932016480029012521"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.shueisha.co.jp/books/search/search.html?seriesid=37198"
+      }
+    ],
+    "chapterIndexId": "46e9cae5-4407-4576-9b9e-4c517ae9298e",
     "mangadexId": "46e9cae5-4407-4576-9b9e-4c517ae9298e",
+    "mangadexUrl": "https://mangadex.org/title/46e9cae5-4407-4576-9b9e-4c517ae9298e",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "The Promised Neverland",
@@ -187,27 +1828,289 @@
       "Thriller",
       "Kaiu Shirai",
       "Posuka Demizu"
-    ],
-    "chapterIndexId": "46e9cae5-4407-4576-9b9e-4c517ae9298e",
-    "mangadexUrl": "https://mangadex.org/title/46e9cae5-4407-4576-9b9e-4c517ae9298e",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 86635,
     "anilistId": 86635,
     "idMal": 90125,
     "title": "Kaguya-sama: Love is War",
-    "titleEnglish": "Kaguya-sama: Love is War",
     "titleRomaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+    "titleEnglish": "Kaguya-sama: Love is War",
     "titleNative": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+    "synonyms": [
+      "Kaguya Wants to be Confessed To: The Geniuses' War of Love and Brains",
+      "카구야 님은 고백받고 싶어 ~천재들의 연애 두뇌전~",
+      "Miłość to wojna",
+      "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+      "Госпожа Кагуя: В любви как на войне. Любовная битва двух гениев",
+      "สารภาพรักกับคุณคางุยะซะดีๆ ~สงครามประสาทความรักของเหล่าอัจฉริยะ~ ",
+      "Kaguya-sama: Cuộc chiến tỏ tình",
+      "辉夜大小姐想让我告白 ~天才们的恋爱头脑战",
+      "輝夜姬想讓人告白~天才們的戀愛頭腦戰~",
+      "Kaguya-sama: Aşk Savaştır"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86635-EdaLQmsn86Fy.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86635-EdaLQmsn86Fy.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86635-EdaLQmsn86Fy.png",
+    "coverImageColor": "#d61a35",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/86635-qjRKbsrM3U9F.jpg",
     "synopsis": "As leaders of their prestigious academy’s student council, Kaguya and Miyuki are the elite of the elite! But it’s lonely at the top… Luckily for them, they’ve fallen in love! There’s just one problem—they both have too much pride to admit it. And so begins the",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2015,
+    "startDate": "2015-05-19",
+    "endDate": "2022-11-02",
+    "chapters": 281,
+    "volumes": 28,
     "genres": [
       "Comedy",
       "Psychological",
       "Romance",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 780,
+        "name": "Ojou-sama",
+        "description": "Features a wealthy, high-class, oftentimes stuck up and demanding female character.",
+        "category": "Cast-Traits",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 39,
+        "name": "Parody",
+        "description": "Features deliberate exaggeration of popular tropes or a particular genre to comedic effect.",
+        "category": "Theme-Comedy",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1047,
+        "name": "VTuber",
+        "description": "Prominently features a character who is either an actual or fictive VTuber.",
+        "category": "Cast-Traits",
+        "rank": 39,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 35,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 32,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Aka Akasaka"
@@ -215,14 +2118,44 @@
     "artists": [
       "Aka Akasaka"
     ],
-    "popularity": 114806,
+    "rating": 8.7,
     "averageScore": 87,
-    "chapters": 281,
-    "volumes": 28,
-    "year": 2015,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 87,
+    "popularity": 114806,
+    "trending": 5,
+    "favourites": 13868,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/86635",
+    "mal_url": "https://myanimelist.net/manga/90125",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://youngjump.jp/kaguyasama/"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/kaguya-sama-love-is-war"
+      },
+      {
+        "site": "Tonari no Young Jump",
+        "url": "https://tonarinoyj.jp/episode/13932016480028986551?manga=yj_mj"
+      },
+      {
+        "site": "Bilibili",
+        "url": "https://manga.bilibili.com/detail/mc26009"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/kaguya-sama-love-is-war"
+      }
+    ],
+    "chapterIndexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
     "mangadexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
+    "mangadexUrl": "https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
+    "mangadexMappingSource": "mal",
+    "mangadexMappingConfidence": 0.98,
     "detailPage": 1,
     "searchTerms": [
       "Kaguya-sama: Love is War",
@@ -233,27 +2166,371 @@
       "Romance",
       "Slice of Life",
       "Aka Akasaka"
-    ],
-    "chapterIndexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
-    "mangadexUrl": "https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
-    "mangadexMappingSource": "mal",
-    "mangadexMappingConfidence": 0.98
+    ]
   },
   {
     "mangaId": 117195,
     "anilistId": 117195,
     "idMal": 126146,
     "title": "[Oshi no Ko]",
-    "titleEnglish": "[Oshi no Ko]",
     "titleRomaji": "[Oshi no Ko]",
+    "titleEnglish": "[Oshi no Ko]",
     "titleNative": "【推しの子】",
+    "synonyms": [
+      "Favorite Girl",
+      "My Idol's Child",
+      "[Mein*Star]",
+      "[เกิดใหม่เป็นลูกโอชิ]",
+      "Anak Idola",
+      "【OSHI NO KO】",
+      "【MOJA GWIAZDA】",
+      "【我推的孩子】",
+      "OSHI NO KO - DƯỚI ÁNH HÀO QUANG",
+      "Oshi no Ko: Minha Estrela Preferida",
+      "[Moje hvězda]",
+      "【OSHI NO KO】Mi Idol Favorita"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117195-r3kf8eF0xkDJ.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117195-r3kf8eF0xkDJ.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx117195-r3kf8eF0xkDJ.png",
+    "coverImageColor": "#e450a1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/117195-VVYq1EEOwR0K.jpg",
     "synopsis": "Gorou is a gynecologist and idol fan who’s in shock after his favorite star, Ai, announces an impromptu hiatus. Little does Gorou realize that he’s about to forge a bond with her that defies all common sense! Lies are an idol’s weapon! (Source: Yen Press) Note",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2020,
+    "startDate": "2020-04-23",
+    "endDate": "2024-11-14",
+    "chapters": 171,
+    "volumes": 16,
     "genres": [
       "Drama",
       "Mystery",
       "Psychological",
       "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 548,
+        "name": "Acting",
+        "description": "Centers around actors or the acting industry.",
+        "category": "Theme-Arts",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 87,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 86,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 71,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 140,
+        "name": "Educational",
+        "description": "Primary aim is to educate the audience.",
+        "category": "Theme-Other",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 59,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1422,
+        "name": "Filmmaking",
+        "description": "Centers around the art of filmmaking.",
+        "category": "Theme-Other",
+        "rank": 58,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 397,
+        "name": "Pregnancy",
+        "description": "Features pregnant female characters or discusses the topic of pregnancy.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 128,
+        "name": "Incest",
+        "description": "Features sexual or romantic relations between characters who are related by blood.",
+        "category": "Sexual Content",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 1047,
+        "name": "VTuber",
+        "description": "Prominently features a character who is either an actual or fictive VTuber.",
+        "category": "Cast-Traits",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 328,
+        "name": "Cosplay",
+        "description": "Features dressing up as a different character or profession.",
+        "category": "Cast-Traits",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Aka Akasaka"
@@ -261,14 +2538,56 @@
     "artists": [
       "Mengo Yokoyari"
     ],
-    "popularity": 102076,
+    "rating": 7.8,
     "averageScore": 78,
-    "chapters": 171,
-    "volumes": 16,
-    "year": 2020,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 78,
+    "popularity": 102076,
+    "trending": 4,
+    "favourites": 8172,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/117195",
+    "mal_url": "https://myanimelist.net/manga/126146",
+    "externalLinks": [
+      {
+        "site": "Tonari no Young Jump",
+        "url": "https://tonarinoyj.jp/episode/13933686331626273051"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/oshinoko_comic"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/13933686331680004464"
+      },
+      {
+        "site": "Bilibili",
+        "url": "https://manga.bilibili.com/detail/mc30125"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100191"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/oshi-no-ko"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/oshinoko_global"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/300006"
+      }
+    ],
+    "chapterIndexId": "296cbc31-af1a-4b5b-a34b-fee2b4cad542",
     "mangadexId": "296cbc31-af1a-4b5b-a34b-fee2b4cad542",
+    "mangadexUrl": "https://mangadex.org/title/296cbc31-af1a-4b5b-a34b-fee2b4cad542",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "[Oshi no Ko]",
@@ -279,27 +2598,320 @@
       "Supernatural",
       "Aka Akasaka",
       "Mengo Yokoyari"
-    ],
-    "chapterIndexId": "296cbc31-af1a-4b5b-a34b-fee2b4cad542",
-    "mangadexUrl": "https://mangadex.org/title/296cbc31-af1a-4b5b-a34b-fee2b4cad542",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 30001,
     "anilistId": 30001,
     "idMal": 1,
     "title": "Monster",
-    "titleEnglish": "Monster",
     "titleRomaji": "MONSTER",
+    "titleEnglish": "Monster",
     "titleNative": "MONSTER",
+    "synonyms": [
+      "몬스터"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Knby7l1jevE7.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30001-Knby7l1jevE7.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30001-Knby7l1jevE7.jpg",
+    "coverImageColor": "#50a1e4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/1-x9ksIvb9cKK2.jpg",
     "synopsis": "Everyone faces uncertainty at some point in their lives. Even a brilliant surgeon like Kenzo Tenma is no exception. But there’s no way he could have known that his decision to stop chasing professional success and instead concentrate on his oath to save people",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 1994,
+    "startDate": "1994-12-05",
+    "endDate": "2001-12-20",
+    "chapters": 162,
+    "volumes": 18,
     "genres": [
       "Drama",
       "Mystery",
       "Psychological",
       "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 89,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 327,
+        "name": "Noir",
+        "description": "Stylized as a cynical crime drama with low-key visuals.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 226,
+        "name": "Fugitive",
+        "description": "Prominently features a character evading capture by an individual or organization.",
+        "category": "Theme-Action",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 659,
+        "name": "Medicine",
+        "description": "Centered around the activities of people working in the field of medicine.",
+        "category": "Theme-Other",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 66,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1052,
+        "name": "Adoption",
+        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
+        "category": "Theme-Other",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1121,
+        "name": "Torture",
+        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
+        "category": "Theme-Other",
+        "rank": 42,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 37,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Naoki Urasawa"
@@ -307,14 +2919,36 @@
     "artists": [
       "Naoki Urasawa"
     ],
-    "popularity": 101655,
+    "rating": 9,
     "averageScore": 90,
-    "chapters": 162,
-    "volumes": 18,
-    "year": 1994,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 90,
+    "popularity": 101655,
+    "trending": 3,
+    "favourites": 10712,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30001",
+    "mal_url": "https://myanimelist.net/manga/1",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/monster"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.shogakukan.co.jp/books/volume/16927"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.kana.fr/series/monster-integrale-deluxe/"
+      }
+    ],
+    "chapterIndexId": "d9e30523-9d65-469e-92a2-302995770950",
     "mangadexId": "d9e30523-9d65-469e-92a2-302995770950",
+    "mangadexUrl": "https://mangadex.org/title/d9e30523-9d65-469e-92a2-302995770950",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Monster",
@@ -324,22 +2958,37 @@
       "Psychological",
       "Thriller",
       "Naoki Urasawa"
-    ],
-    "chapterIndexId": "d9e30523-9d65-469e-92a2-302995770950",
-    "mangadexUrl": "https://mangadex.org/title/d9e30523-9d65-469e-92a2-302995770950",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 30003,
     "anilistId": 30003,
     "idMal": 3,
     "title": "20th Century Boys",
-    "titleEnglish": "20th Century Boys",
     "titleRomaji": "20 Seiki Shounen",
+    "titleEnglish": "20th Century Boys",
     "titleNative": "20世紀少年",
+    "synonyms": [
+      "Nijuu Seiki Shounen",
+      "Nijuusseiki Shounen",
+      "20thCB",
+      "20th Century Boys - Chłopaki z dwudziestego wieku",
+      "فتيان القرن 20"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30003-E84fwIh22LAQ.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30003-E84fwIh22LAQ.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30003-E84fwIh22LAQ.jpg",
+    "coverImageColor": "#e4c943",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30003-MBm3u1K1uHsi.jpg",
     "synopsis": "Humanity, having faced extinction at the end of the 20th century, would not have entered the new millennium if it weren't for them. In 1969, during their youth, they created a symbol. In 1997, as the coming disaster slowly starts to unfold, that symbol returns",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 1999,
+    "startDate": "1999-09-27",
+    "endDate": "2006-04-24",
+    "chapters": 249,
+    "volumes": 22,
     "genres": [
       "Drama",
       "Mystery",
@@ -347,20 +2996,420 @@
       "Sci-Fi",
       "Thriller"
     ],
+    "tags": [
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 226,
+        "name": "Fugitive",
+        "description": "Prominently features a character evading capture by an individual or organization.",
+        "category": "Theme-Action",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 874,
+        "name": "Pandemic",
+        "description": "Prominently features a disease prevalent over a whole country or the world.",
+        "category": "Theme-Other",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 83,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 65,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 265,
+        "name": "Musical Theater",
+        "description": "Features a performance that combines songs, spoken dialogue, acting, and dance.",
+        "category": "Theme-Arts-Music",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 364,
+        "name": "Augmented Reality",
+        "description": "Prominently features events with augmented reality as the main setting.",
+        "category": "Setting-Universe",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1063,
+        "name": "Cute Boys Doing Cute Things",
+        "description": "Centers around male characters doing cute activities, usually with little to no emphasis on drama and conflict.",
+        "category": "Theme-Slice of Life",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1165,
+        "name": "Transgender",
+        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1674,
+        "name": "Rock Music",
+        "description": "Centers on the musical style of rock, not to be applied to anime that use rock in its soundtrack.",
+        "category": "Theme-Arts-Music",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 37,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1379,
+        "name": "Homeless",
+        "description": "Prominently features a character that is homeless.",
+        "category": "Cast-Traits",
+        "rank": 35,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 32,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1632,
+        "name": "Bowling",
+        "description": "Centers around the sport of Bowling.",
+        "category": "Theme-Game-Sport",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Naoki Urasawa"
     ],
     "artists": [
       "Naoki Urasawa"
     ],
-    "popularity": 101346,
+    "rating": 8.8,
     "averageScore": 88,
-    "chapters": 249,
-    "volumes": 22,
-    "year": 1999,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 88,
+    "popularity": 101346,
+    "trending": 4,
+    "favourites": 8208,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30003",
+    "mal_url": "https://myanimelist.net/manga/3",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/naoki-urasawa-s-20th-century-boys"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.shogakukan.co.jp/books/volume/12404"
+      }
+    ],
+    "chapterIndexId": "ad06790a-01e3-400c-a449-0ec152d6756a",
     "mangadexId": "ad06790a-01e3-400c-a449-0ec152d6756a",
+    "mangadexUrl": "https://mangadex.org/title/ad06790a-01e3-400c-a449-0ec152d6756a",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "20th Century Boys",
@@ -372,22 +3421,33 @@
       "Sci-Fi",
       "Thriller",
       "Naoki Urasawa"
-    ],
-    "chapterIndexId": "ad06790a-01e3-400c-a449-0ec152d6756a",
-    "mangadexUrl": "https://mangadex.org/title/ad06790a-01e3-400c-a449-0ec152d6756a",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 87170,
     "anilistId": 87170,
     "idMal": 98270,
     "title": "Fire Punch",
-    "titleEnglish": "Fire Punch",
     "titleRomaji": "Fire Punch",
+    "titleEnglish": "Fire Punch",
     "titleNative": "ファイアパンチ",
+    "synonyms": [
+      "파이어 펀치"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87170-nyuwcN7rU4pc.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87170-nyuwcN7rU4pc.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87170-nyuwcN7rU4pc.jpg",
+    "coverImageColor": "#e4a15d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/87170-gsBzHdIHoyEk.jpg",
     "synopsis": "Orphaned siblings Agni and Luna, like the Ice Witch who cursed their world, are two of the “blessed,” humans who hold special abilities. However, not all who are blessed are friendly, and after another of their kind attacks Agni and decimates the orphans' vill",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2016,
+    "startDate": "2016-04-18",
+    "endDate": "2018-01-01",
+    "chapters": 83,
+    "volumes": 8,
     "genres": [
       "Action",
       "Drama",
@@ -396,20 +3456,442 @@
       "Supernatural",
       "Thriller"
     ],
+    "tags": [
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 98,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 94,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1121,
+        "name": "Torture",
+        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1422,
+        "name": "Filmmaking",
+        "description": "Centers around the art of filmmaking.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 548,
+        "name": "Acting",
+        "description": "Centers around actors or the acting industry.",
+        "category": "Theme-Arts",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1616,
+        "name": "Snowscape",
+        "description": "Prominently or partially set in a snowy environment.",
+        "category": "Setting-Scene",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 74,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 128,
+        "name": "Incest",
+        "description": "Features sexual or romantic relations between characters who are related by blood.",
+        "category": "Sexual Content",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 247,
+        "name": "Slavery",
+        "description": "Prominently features slaves, slavery, or slave trade.",
+        "category": "Theme-Other",
+        "rank": 69,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1165,
+        "name": "Transgender",
+        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 652,
+        "name": "Amputation",
+        "description": "Features amputation or amputees.",
+        "category": "Sexual Content",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 51,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1670,
+        "name": "Psychosexual",
+        "description": "Work that involves the psychological aspects of sexual impulses.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Tatsuki Fujimoto"
     ],
     "artists": [
       "Tatsuki Fujimoto"
     ],
-    "popularity": 98390,
+    "rating": 7.9,
     "averageScore": 79,
-    "chapters": 83,
-    "volumes": 8,
-    "year": 2016,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 79,
+    "popularity": 98390,
+    "trending": 6,
+    "favourites": 6516,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/87170",
+    "mal_url": "https://myanimelist.net/manga/98270",
+    "externalLinks": [
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/10833497643049550135"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/fire-punch"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200122"
+      },
+      {
+        "site": "Mangas.io",
+        "url": "https://www.mangas.io/lire/fire-punch"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/fire-punch"
+      }
+    ],
+    "chapterIndexId": "6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
     "mangadexId": "6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
+    "mangadexUrl": "https://mangadex.org/title/6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Fire Punch",
@@ -421,22 +3903,36 @@
       "Supernatural",
       "Thriller",
       "Tatsuki Fujimoto"
-    ],
-    "chapterIndexId": "6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
-    "mangadexUrl": "https://mangadex.org/title/6fef1f74-a0ad-4f0d-99db-d32a7cd24098",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 85611,
     "anilistId": 85611,
     "idMal": 81117,
     "title": "Tokyo Ghoul:re",
-    "titleEnglish": "Tokyo Ghoul:re",
     "titleRomaji": "Tokyo Ghoul:re",
+    "titleEnglish": "Tokyo Ghoul:re",
     "titleNative": "東京喰種-トーキョーグール-:re",
+    "synonyms": [
+      "Tokyo Gûl: RE",
+      "Tokijský ghúl: re",
+      "Токийский гуль: re",
+      "도쿄 구울:re"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85611-Asb0BNP23NsJ.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85611-Asb0BNP23NsJ.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85611-Asb0BNP23NsJ.png",
+    "coverImageColor": "#e4431a",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/85611-xK7DMNtc0MNZ.jpg",
     "synopsis": "In Tokyo, an unchanging despair is lurking. Mysterious man-eating beings, ghouls, run rampant in Tokyo. Living hidden during everyday life, the existence of ghouls, whose true identities are shrouded in mystery, permanently terrorizes Tokyo's residents. At CCG",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2014,
+    "startDate": "2014-10-16",
+    "endDate": "2018-07-05",
+    "chapters": 181,
+    "volumes": 16,
     "genres": [
       "Action",
       "Drama",
@@ -445,20 +3941,376 @@
       "Psychological",
       "Supernatural"
     ],
+    "tags": [
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 92,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 772,
+        "name": "Shapeshifting",
+        "description": "Features character(s) who changes one's appearance or form.",
+        "category": "Theme-Fantasy",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 311,
+        "name": "Rehabilitation",
+        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
+        "category": "Theme-Drama",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1923,
+        "name": "Human Experimentation",
+        "description": "Features experiments that use human and humanoid beings as test subjects.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 41,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1165,
+        "name": "Transgender",
+        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 128,
+        "name": "Incest",
+        "description": "Features sexual or romantic relations between characters who are related by blood.",
+        "category": "Sexual Content",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 77,
+        "name": "Gender Bending",
+        "description": "Prominently features a character who dresses and behaves in a way characteristic of another gender, or has been transformed into a person of another gender.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Sui Ishida"
     ],
     "artists": [
       "Sui Ishida"
     ],
-    "popularity": 98303,
+    "rating": 8.3,
     "averageScore": 83,
-    "chapters": 181,
-    "volumes": 16,
-    "year": 2014,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 83,
+    "popularity": 98303,
+    "trending": 3,
+    "favourites": 9314,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/85611",
+    "mal_url": "https://myanimelist.net/manga/81117",
+    "externalLinks": [
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100177"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200079"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/read/manga/tokyo-ghoul-re/all"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/tokyo-ghoul-re"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/4227?etype=episode"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/3269754496641954125"
+      }
+    ],
+    "chapterIndexId": "59f47645-66a9-443e-8228-788313c3ae3c",
     "mangadexId": "59f47645-66a9-443e-8228-788313c3ae3c",
+    "mangadexUrl": "https://mangadex.org/title/59f47645-66a9-443e-8228-788313c3ae3c",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Tokyo Ghoul:re",
@@ -470,28 +4322,228 @@
       "Psychological",
       "Supernatural",
       "Sui Ishida"
-    ],
-    "chapterIndexId": "59f47645-66a9-443e-8228-788313c3ae3c",
-    "mangadexUrl": "https://mangadex.org/title/59f47645-66a9-443e-8228-788313c3ae3c",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 30021,
     "anilistId": 30021,
     "idMal": 21,
     "title": "Death Note",
-    "titleEnglish": "Death Note",
     "titleRomaji": "DEATH NOTE",
+    "titleEnglish": "Death Note",
     "titleNative": "DEATH NOTE",
+    "synonyms": [
+      "デスノート",
+      "Ölüm Defteri",
+      "Death Note - Zápisník smrti",
+      "Beležnica smrti",
+      "Τετράδιο θανάτου",
+      "Death Note: Тетрадка на смъртта",
+      "死亡筆記本",
+      "데스노트"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30021-FE6kmrfpuKyb.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30021-FE6kmrfpuKyb.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30021-FE6kmrfpuKyb.jpg",
+    "coverImageColor": "#f1e4ae",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/n30021-eZbrTpIjv10E.jpg",
     "synopsis": "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed ",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2003,
+    "startDate": "2003-12-01",
+    "endDate": "2006-05-15",
+    "chapters": 108,
+    "volumes": 12,
     "genres": [
       "Drama",
       "Mystery",
       "Psychological",
       "Supernatural",
       "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 92,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
+        "category": "Cast-Main Cast",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 310,
+        "name": "Espionage",
+        "description": "Prominently features characters infiltrating an organization in order to steal sensitive information.",
+        "category": "Theme-Action",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 67,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 49,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Tsugumi Ooba"
@@ -500,14 +4552,64 @@
       "Takeshi Obata",
       "Gia Cam Luc"
     ],
-    "popularity": 94990,
+    "rating": 8.4,
     "averageScore": 84,
-    "chapters": 108,
-    "volumes": 12,
-    "year": 2003,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 84,
+    "popularity": 94990,
+    "trending": 0,
+    "favourites": 6114,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30021",
+    "mal_url": "https://myanimelist.net/manga/21",
+    "externalLinks": [
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100008"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/death-note"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200009"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/10833519556325021815"
+      },
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=2549418"
+      },
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/47557740"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.shueisha.co.jp/books/search/search.html?seriesid=35213"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/30348"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/manga-books/manga/death-note/all"
+      },
+      {
+        "site": "Kana",
+        "url": "https://www.kana.fr/series/death-note/"
+      }
+    ],
+    "chapterIndexId": "75ee72ab-c6bf-4b87-badd-de839156934c",
     "mangadexId": "75ee72ab-c6bf-4b87-badd-de839156934c",
+    "mangadexUrl": "https://mangadex.org/title/75ee72ab-c6bf-4b87-badd-de839156934c",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Death Note",
@@ -520,11 +4622,7 @@
       "Tsugumi Ooba",
       "Takeshi Obata",
       "Gia Cam Luc"
-    ],
-    "chapterIndexId": "75ee72ab-c6bf-4b87-badd-de839156934c",
-    "mangadexUrl": "https://mangadex.org/title/75ee72ab-c6bf-4b87-badd-de839156934c",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 30436,
@@ -673,11 +4771,38 @@
     "anilistId": 74489,
     "idMal": 44489,
     "title": "Land of the Lustrous",
-    "titleEnglish": "Land of the Lustrous",
     "titleRomaji": "Houseki no Kuni",
+    "titleEnglish": "Land of the Lustrous",
     "titleNative": "宝石の国",
+    "synonyms": [
+      "La Tierra de las Gemas",
+      "L'Ère des Cristaux",
+      "Das Land der Juwelen",
+      "Terra das Gemas",
+      "Vương quốc bảo thạch",
+      "HNK",
+      "LOTL",
+      "Kraina klejnotów",
+      "寶石之國",
+      "宝石之国",
+      "보석의 나라",
+      "Страна самоцветов",
+      "Край самоцвітів"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx74489-5HtDCFfut8Be.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx74489-5HtDCFfut8Be.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx74489-5HtDCFfut8Be.jpg",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/74489-iAeCc8td3qWX.jpg",
     "synopsis": "In a world inhabited by crystalline lifeforms called The Lustrous, every unique gem must fight for their way of life against the threat of lunarians who would turn them into decorations. Phosphophyllite, the most fragile and brittle of gems, longs to join the ",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2012,
+    "startDate": "2012-10-25",
+    "endDate": "2024-04-25",
+    "chapters": 108,
+    "volumes": 13,
     "genres": [
       "Action",
       "Drama",
@@ -686,20 +4811,354 @@
       "Psychological",
       "Sci-Fi"
     ],
+    "tags": [
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 94,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 772,
+        "name": "Shapeshifting",
+        "description": "Features character(s) who changes one's appearance or form.",
+        "category": "Theme-Fantasy",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 334,
+        "name": "Agender",
+        "description": "Prominently features agender characters.",
+        "category": "Cast-Traits",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 622,
+        "name": "Asexual",
+        "description": "Features a character who isn't sexually attracted to people of any sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 61,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 42,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 12,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Haruko Ichikawa"
     ],
     "artists": [
       "Haruko Ichikawa"
     ],
-    "popularity": 77662,
+    "rating": 8.9,
     "averageScore": 89,
-    "chapters": 108,
-    "volumes": 13,
-    "year": 2012,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 89,
+    "popularity": 77662,
+    "trending": 5,
+    "favourites": 12127,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/74489",
+    "mal_url": "https://myanimelist.net/manga/44489",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://afternoon.kodansha.co.jp/c/housekinokuni/"
+      },
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/13932016480029605220"
+      },
+      {
+        "site": "Pixiv Comic",
+        "url": "https://comic.pixiv.net/works/600"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10234/episode/324630"
+      },
+      {
+        "site": "INKR",
+        "url": "https://comics.inkr.com/title/1124-land-of-the-lustrous"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/land-of-the-lustrous/"
+      },
+      {
+        "site": "Mangas.io",
+        "url": "https://www.mangas.io/lire/lere-des-cristaux"
+      },
+      {
+        "site": "Omoi",
+        "url": "https://www.omoi.com/series/land-of-the-lustrous"
+      }
+    ],
+    "chapterIndexId": "cade38b7-64c4-4a29-8e3c-8c283291d6c6",
     "mangadexId": "cade38b7-64c4-4a29-8e3c-8c283291d6c6",
+    "mangadexUrl": "https://mangadex.org/title/cade38b7-64c4-4a29-8e3c-8c283291d6c6",
+    "mangadexMappingSource": "fuzzy",
+    "mangadexMappingConfidence": 0.95,
     "detailPage": 1,
     "searchTerms": [
       "Land of the Lustrous",
@@ -712,11 +5171,7 @@
       "Psychological",
       "Sci-Fi",
       "Haruko Ichikawa"
-    ],
-    "chapterIndexId": "cade38b7-64c4-4a29-8e3c-8c283291d6c6",
-    "mangadexUrl": "https://mangadex.org/title/cade38b7-64c4-4a29-8e3c-8c283291d6c6",
-    "mangadexMappingSource": "fuzzy",
-    "mangadexMappingConfidence": 0.95
+    ]
   },
   {
     "mangaId": 86964,
@@ -869,7 +5324,7 @@
     "titleRomaji": "GANTZ",
     "titleNative": "GANTZ",
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30564-RbyFbLzbnKea.jpg",
-    "synopsis": "Tokyo teens Kei and Masaru are killed by a subway train but awaken in a room with an ominous black orb that gives them weapons, suits and orders. Fighting bizarre alien monstrosities in a deadly game, will they win their freedom or die for the final time? (Sou",
+    "synopsis": "Tokyo teens Kei and Masaru are killed by a subway train but awaken in a room with an ominous black orb that gives them weapons, suits and orders. Fighting bizarre alien monstrosities in a deadly game, will they win their freedom or die for the final time? (Source: Dark Horse)",
     "genres": [
       "Action",
       "Drama",
@@ -892,7 +5347,7 @@
     "year": 2000,
     "format": "MANGA",
     "status": "FINISHED",
-    "mangadexId": "c196dcc8-d942-4abf-987f-bfa244650585",
+    "mangadexId": "f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
     "detailPage": 1,
     "searchTerms": [
       "Gantz",
@@ -906,10 +5361,342 @@
       "Supernatural",
       "Hiroya Oku"
     ],
-    "chapterIndexId": "c196dcc8-d942-4abf-987f-bfa244650585",
-    "mangadexUrl": "https://mangadex.org/title/c196dcc8-d942-4abf-987f-bfa244650585",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "chapterIndexId": "f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "mangadexUrl": "https://mangadex.org/title/f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "synonyms": [
+      "ガンツ",
+      "Gantz/Osaka"
+    ],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30564-RbyFbLzbnKea.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30564-RbyFbLzbnKea.jpg",
+    "coverImageColor": "#6b1a1a",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30564-kRtGCFJctwXJ.jpg",
+    "type": "MANGA",
+    "startDate": "2000-07-13",
+    "endDate": "2013-06-20",
+    "tags": [
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 99,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 88,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 615,
+        "name": "Death Game",
+        "description": "Features characters participating in a game, where failure results in death.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 101,
+        "name": "Battle Royale",
+        "description": "Centers around a fierce group competition, often violent and with only one winner.",
+        "category": "Theme-Action",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 74,
+        "name": "Vampire",
+        "description": "Prominently features a character who is a vampire.",
+        "category": "Cast-Traits",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 51,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1342,
+        "name": "Clone",
+        "description": "Prominently features a character who is an artificial exact copy of another organism.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 704,
+        "name": "Dinosaurs",
+        "description": "Prominently features Dinosaurs, prehistoric reptiles that went extinct millions of years ago.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 122,
+        "name": "Trains",
+        "description": "Prominently features trains.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "rating": 7.7,
+    "meanScore": 77,
+    "trending": 2,
+    "favourites": 4043,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30564",
+    "mal_url": "https://myanimelist.net/manga/564",
+    "externalLinks": [
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/10834108156628773289"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.darkhorse.com/Books/30-524/Gantz-Omnibus-Volume-1-TPB"
+      },
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=5431943"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.cross-cult.de/produkte/details/gantz-1/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.shueisha.co.jp/books/search/search.html?seriesid=38400"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/4172"
+      }
+    ],
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "f7268daa-9d63-4e3b-9d2a-97b85b39d0cd",
+    "chapterSourceTitle": "Gantz Color Ban",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 37375,
@@ -1587,15 +6374,190 @@
     "anilistId": 30657,
     "idMal": 657,
     "title": "Real",
-    "titleEnglish": "Real",
     "titleRomaji": "Real",
+    "titleEnglish": "Real",
     "titleNative": "リアル",
+    "synonyms": [],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30657-AzyyUOWMJ6fd.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30657-AzyyUOWMJ6fd.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30657-AzyyUOWMJ6fd.png",
+    "coverImageColor": "#f16b28",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30657-jK5aBm6e15lB.jpg",
     "synopsis": "A motorcycle accident, bone cancer, a speeding truck crashing into a boy on a stolen bicycle--tragic life-changing events turn the worlds of three young men upside down. These three very different personalities have only one thing in common--their passion for ",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 1999,
+    "startDate": "1999-11-11",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Drama",
       "Psychological",
       "Sports"
+    ],
+    "tags": [
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 99,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 98,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 311,
+        "name": "Rehabilitation",
+        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
+        "category": "Theme-Drama",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 192,
+        "name": "Basketball",
+        "description": "Centers around the sport of basketball.",
+        "category": "Theme-Game-Sport",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 87,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
+        "category": "Cast-Main Cast",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 264,
+        "name": "Athletics",
+        "description": "Centers around sporting events that involve competitive running, jumping, throwing, or walking.",
+        "category": "Theme-Game-Sport",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 170,
+        "name": "Fitness",
+        "description": "Centers around exercise with the aim of improving physical health.",
+        "category": "Theme-Game-Sport",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 231,
+        "name": "Wrestling",
+        "description": "Centers around the sport of wrestling.",
+        "category": "Theme-Game-Sport",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Takehiko Inoue"
@@ -1603,14 +6565,32 @@
     "artists": [
       "Takehiko Inoue"
     ],
-    "popularity": 47265,
+    "rating": 8.9,
     "averageScore": 89,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 1999,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 89,
+    "popularity": 47265,
+    "trending": 1,
+    "favourites": 3653,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30657",
+    "mal_url": "https://myanimelist.net/manga/657",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/real"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://ynjn.jp/title/994"
+      }
+    ],
+    "chapterIndexId": "62b74aa6-24df-4b91-b76d-39e7ab3c3ca5",
     "mangadexId": "62b74aa6-24df-4b91-b76d-39e7ab3c3ca5",
+    "mangadexUrl": "https://mangadex.org/title/62b74aa6-24df-4b91-b76d-39e7ab3c3ca5",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Real",
@@ -1619,11 +6599,7 @@
       "Psychological",
       "Sports",
       "Takehiko Inoue"
-    ],
-    "chapterIndexId": "62b74aa6-24df-4b91-b76d-39e7ab3c3ca5",
-    "mangadexUrl": "https://mangadex.org/title/62b74aa6-24df-4b91-b76d-39e7ab3c3ca5",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 38967,
@@ -1674,34 +6650,57 @@
     "anilistId": 126693,
     "idMal": 131403,
     "title": "Choujin X",
-    "titleRomaji": "Choujin X",
     "titleEnglish": "Choujin X",
+    "titleRomaji": "Choujin X",
     "titleNative": "超人X",
-    "synonyms": [
-      "Superman X",
-      "Superhuman X",
-      "초인X"
-    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126693-hEqUWtBfUHyc.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126693-hEqUWtBfUHyc.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126693-hEqUWtBfUHyc.jpg",
-    "coverImageColor": "",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/126693-MuGVrfQfbEx8.jpg",
     "synopsis": "Best friends Tokio and Azuma do everything together, even if most of the time it feels like Tokio is just stumbling along in Azuma’s cooler, more talented footsteps. But when they’re attacked one night by a superhuman mutant called a choujin, Tokio finally has a chance to shine—by turning into a choujin himself! Being a superpowered creature isn’t all it’s cracked up to be, though. Tokio has to hide his transformation from his family and dodge a truancy charge at school, all while dealing with the increasingly odd incidents happening around town! (Source: VIZ Media) Note: The manga chapters are irregularly released on Tonari no Young Jump. At the same time, it received a serialization in Weekly Young Jump, starting from chapter 1. Some chapters receive a version with fewer pages in the magazine, also counting with additions of new pages in certain situations. After chapter 15, the manga went back to being exclusive to Tonari no YJ, ending the serialization in the magazine.",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2021,
-    "startDate": "2021-05-10",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
     "genres": [
       "Action",
       "Drama",
       "Fantasy",
       "Psychological"
     ],
+    "authors": [
+      "Sui Ishida"
+    ],
+    "artists": [
+      "Sui Ishida"
+    ],
+    "popularity": 45545,
+    "averageScore": 76,
+    "chapters": 0,
+    "volumes": 0,
+    "year": 2021,
+    "format": "MANGA",
+    "status": "RELEASING",
+    "mangadexId": "11b74211-f4c0-4f08-b5a4-c491da0d0c0b",
+    "detailPage": 2,
+    "searchTerms": [
+      "Choujin X",
+      "超人X",
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Psychological",
+      "Sui Ishida"
+    ],
+    "chapterIndexId": "11b74211-f4c0-4f08-b5a4-c491da0d0c0b",
+    "mangadexUrl": "https://mangadex.org/title/11b74211-f4c0-4f08-b5a4-c491da0d0c0b",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
+    "synonyms": [
+      "Superman X",
+      "Superhuman X",
+      "초인X"
+    ],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126693-hEqUWtBfUHyc.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126693-hEqUWtBfUHyc.jpg",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/126693-MuGVrfQfbEx8.jpg",
+    "type": "MANGA",
+    "startDate": "2021-05-10",
+    "endDate": null,
     "tags": [
       {
         "id": 321,
@@ -1904,16 +6903,8 @@
         "isAdult": false
       }
     ],
-    "authors": [
-      "Sui Ishida"
-    ],
-    "artists": [
-      "Sui Ishida"
-    ],
     "rating": 7.6,
-    "averageScore": 76,
     "meanScore": 76,
-    "popularity": 45545,
     "trending": 5,
     "favourites": 1477,
     "source": "ORIGINAL",
@@ -1946,12 +6937,7 @@
         "site": "VIZ",
         "url": "https://www.viz.com/choujin-x"
       }
-    ],
-    "chapterIndexId": "11b74211-f4c0-4f08-b5a4-c491da0d0c0b",
-    "mangadexId": "11b74211-f4c0-4f08-b5a4-c491da0d0c0b",
-    "mangadexUrl": "https://mangadex.org/title/11b74211-f4c0-4f08-b5a4-c491da0d0c0b",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 30664,
@@ -3749,220 +8735,6 @@
     ],
     "chapterIndexId": "6ecc62e4-25ad-4102-b0d8-580a8023d2fb",
     "mangadexUrl": "https://mangadex.org/title/6ecc62e4-25ad-4102-b0d8-580a8023d2fb",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 126135,
-    "anilistId": 126135,
-    "idMal": null,
-    "title": "Bibliomania",
-    "titleRomaji": "Bibliomania",
-    "titleEnglish": "",
-    "titleNative": "ビブリオマニア",
-    "synonyms": [
-      "Бібліоманія"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126135-63wqdasXoXsD.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126135-63wqdasXoXsD.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx126135-63wqdasXoXsD.jpg",
-    "coverImageColor": "",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/126135-ulHOMfQt8Lnt.jpg",
-    "synopsis": "Alice had woken up in Room 431 of a mysterious manor. \"You must not leave this room,\" warned the Serpent, but she paid it no heed and her body began to rot... Will she be able to escape the cursed manor? Note: Nominated for the 2019 Japan Media Arts Festival Awards in the Manga category.",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 2016,
-    "startDate": "2016-09-05",
-    "endDate": "2018-04-16",
-    "chapters": 12,
-    "volumes": 1,
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Horror",
-      "Psychological",
-      "Supernatural"
-    ],
-    "tags": [
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 93,
-        "name": "Post-Apocalyptic",
-        "description": "Partly or completely set in a world or civilization after a global disaster.",
-        "category": "Setting-Universe",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 93,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 92,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 639,
-        "name": "Body Horror",
-        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
-        "category": "Theme-Other",
-        "rank": 88,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 88,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 636,
-        "name": "Cosmic Horror",
-        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
-        "category": "Theme-Other",
-        "rank": 88,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 111,
-        "name": "War",
-        "description": "Partly or completely set during wartime.",
-        "category": "Theme-Other",
-        "rank": 81,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 321,
-        "name": "Urban Fantasy",
-        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
-        "category": "Setting-Universe",
-        "rank": 63,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 62,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1091,
-        "name": "Religion",
-        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
-        "category": "Theme-Other",
-        "rank": 55,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1689,
-        "name": "Curses",
-        "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
-        "category": "Theme-Fantasy",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 291,
-        "name": "Samurai",
-        "description": "Prominently features warriors of medieval Japanese nobility bound by a code of honor.",
-        "category": "Cast-Traits",
-        "rank": 32,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 28,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Obaru"
-    ],
-    "artists": [
-      "Macchiro"
-    ],
-    "rating": 7.8,
-    "averageScore": 78,
-    "meanScore": 78,
-    "popularity": 21774,
-    "trending": 1,
-    "favourites": 1172,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/126135",
-    "mal_url": "",
-    "externalLinks": [
-      {
-        "site": "Official Site",
-        "url": "https://kai-you.net/series/94"
-      }
-    ],
-    "chapterIndexId": "d22ae7a1-cfae-475a-a8fc-589ef85eece4",
-    "mangadexId": "d22ae7a1-cfae-475a-a8fc-589ef85eece4",
-    "mangadexUrl": "https://mangadex.org/title/d22ae7a1-cfae-475a-a8fc-589ef85eece4",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },

@@ -4,15 +4,195 @@
     "anilistId": 72451,
     "idMal": 42451,
     "title": "Horimiya",
-    "titleEnglish": "Horimiya",
     "titleRomaji": "Horimiya",
+    "titleEnglish": "Horimiya",
     "titleNative": "ホリミヤ",
+    "synonyms": [
+      "โฮริมิยะ สาวมั่นกับนายมืดมน",
+      "Horimiya - Hori and Miyamura",
+      "Хорімія",
+      "호리미야"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx72451-vVXtRwyttjGG.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx72451-vVXtRwyttjGG.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx72451-vVXtRwyttjGG.png",
+    "coverImageColor": "#e45d93",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/42451-shG1Ksjxm3pw.jpg",
     "synopsis": "At school, Kyouko Hori is known for being smart, attractive, and popular. On the other hand, her classmate, the boring, gloomy Izumi Miyamura tends to get painted as a \"loser fanboy.\" But when a liberally pierced and tattooed (not to mention downright gorgeous",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2011,
+    "startDate": "2011-10-18",
+    "endDate": "2023-07-18",
+    "chapters": 152,
+    "volumes": 17,
     "genres": [
       "Comedy",
       "Romance",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 48,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
     ],
     "authors": [
       "HERO"
@@ -20,14 +200,40 @@
     "artists": [
       "Daisuke Hagiwara"
     ],
-    "popularity": 118410,
+    "rating": 8.2,
     "averageScore": 82,
-    "chapters": 152,
-    "volumes": 17,
-    "year": 2011,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 82,
+    "popularity": 118410,
+    "trending": 2,
+    "favourites": 9220,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/72451",
+    "mal_url": "https://myanimelist.net/manga/42451",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://magazine.jp.square-enix.com/gfantasy/story/horimiya/"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/horimiya"
+      },
+      {
+        "site": "Manga UP!",
+        "url": "https://global.manga-up.com/manga/122"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.nobi-nobi.fr/livres-series-horimiya/"
+      }
+    ],
+    "chapterIndexId": "a25e46ec-30f7-4db6-89df-cacbc1d9a900",
     "mangadexId": "a25e46ec-30f7-4db6-89df-cacbc1d9a900",
+    "mangadexUrl": "https://mangadex.org/title/a25e46ec-30f7-4db6-89df-cacbc1d9a900",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Horimiya",
@@ -37,27 +243,289 @@
       "Slice of Life",
       "HERO",
       "Daisuke Hagiwara"
-    ],
-    "chapterIndexId": "a25e46ec-30f7-4db6-89df-cacbc1d9a900",
-    "mangadexUrl": "https://mangadex.org/title/a25e46ec-30f7-4db6-89df-cacbc1d9a900",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 86635,
     "anilistId": 86635,
     "idMal": 90125,
     "title": "Kaguya-sama: Love is War",
-    "titleEnglish": "Kaguya-sama: Love is War",
     "titleRomaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+    "titleEnglish": "Kaguya-sama: Love is War",
     "titleNative": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+    "synonyms": [
+      "Kaguya Wants to be Confessed To: The Geniuses' War of Love and Brains",
+      "카구야 님은 고백받고 싶어 ~천재들의 연애 두뇌전~",
+      "Miłość to wojna",
+      "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+      "Госпожа Кагуя: В любви как на войне. Любовная битва двух гениев",
+      "สารภาพรักกับคุณคางุยะซะดีๆ ~สงครามประสาทความรักของเหล่าอัจฉริยะ~ ",
+      "Kaguya-sama: Cuộc chiến tỏ tình",
+      "辉夜大小姐想让我告白 ~天才们的恋爱头脑战",
+      "輝夜姬想讓人告白~天才們的戀愛頭腦戰~",
+      "Kaguya-sama: Aşk Savaştır"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86635-EdaLQmsn86Fy.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86635-EdaLQmsn86Fy.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86635-EdaLQmsn86Fy.png",
+    "coverImageColor": "#d61a35",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/86635-qjRKbsrM3U9F.jpg",
     "synopsis": "As leaders of their prestigious academy’s student council, Kaguya and Miyuki are the elite of the elite! But it’s lonely at the top… Luckily for them, they’ve fallen in love! There’s just one problem—they both have too much pride to admit it. And so begins the",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2015,
+    "startDate": "2015-05-19",
+    "endDate": "2022-11-02",
+    "chapters": 281,
+    "volumes": 28,
     "genres": [
       "Comedy",
       "Psychological",
       "Romance",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 780,
+        "name": "Ojou-sama",
+        "description": "Features a wealthy, high-class, oftentimes stuck up and demanding female character.",
+        "category": "Cast-Traits",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 39,
+        "name": "Parody",
+        "description": "Features deliberate exaggeration of popular tropes or a particular genre to comedic effect.",
+        "category": "Theme-Comedy",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1047,
+        "name": "VTuber",
+        "description": "Prominently features a character who is either an actual or fictive VTuber.",
+        "category": "Cast-Traits",
+        "rank": 39,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 35,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 32,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Aka Akasaka"
@@ -65,14 +533,44 @@
     "artists": [
       "Aka Akasaka"
     ],
-    "popularity": 114806,
+    "rating": 8.7,
     "averageScore": 87,
-    "chapters": 281,
-    "volumes": 28,
-    "year": 2015,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 87,
+    "popularity": 114806,
+    "trending": 5,
+    "favourites": 13868,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/86635",
+    "mal_url": "https://myanimelist.net/manga/90125",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://youngjump.jp/kaguyasama/"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/kaguya-sama-love-is-war"
+      },
+      {
+        "site": "Tonari no Young Jump",
+        "url": "https://tonarinoyj.jp/episode/13932016480028986551?manga=yj_mj"
+      },
+      {
+        "site": "Bilibili",
+        "url": "https://manga.bilibili.com/detail/mc26009"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/kaguya-sama-love-is-war"
+      }
+    ],
+    "chapterIndexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
     "mangadexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
+    "mangadexUrl": "https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
+    "mangadexMappingSource": "mal",
+    "mangadexMappingConfidence": 0.98,
     "detailPage": 1,
     "searchTerms": [
       "Kaguya-sama: Love is War",
@@ -83,27 +581,288 @@
       "Romance",
       "Slice of Life",
       "Aka Akasaka"
-    ],
-    "chapterIndexId": "37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
-    "mangadexUrl": "https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9",
-    "mangadexMappingSource": "mal",
-    "mangadexMappingConfidence": 0.98
+    ]
   },
   {
     "mangaId": 102988,
     "anilistId": 102988,
     "idMal": 104565,
     "title": "Tokyo Revengers",
-    "titleEnglish": "Tokyo Revengers",
     "titleRomaji": "Tokyo卍Revengers",
+    "titleEnglish": "Tokyo Revengers",
     "titleNative": "東京卍リベンジャーズ",
+    "synonyms": [
+      "Toukyou卍Revengers",
+      "Tokyo Manji Revengers",
+      "โตเกียว卍รีเวนเจอร์ส",
+      "โตเกียว รีเวนเจอร์ส",
+      "Токійські месники",
+      "Токийские мстители",
+      "Tokijski osvetnici",
+      "Justițiarii din Tokio",
+      "도쿄 리벤저스"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx102988-OoVJxQCH6fbR.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx102988-OoVJxQCH6fbR.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx102988-OoVJxQCH6fbR.jpg",
+    "coverImageColor": "#e45d50",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/102988-T9bMDQxSyGpv.jpg",
     "synopsis": "Hanagaki Takemichi was once a low-life punk, but after biting off more than he could chew with a gang in middle school, he ran away from his old life. Now that he’s an adult, the gang that once terrorized him has grown into the largest gang in Tokyo, and they’",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2017,
+    "startDate": "2017-03-01",
+    "endDate": "2022-11-16",
+    "chapters": 279,
+    "volumes": 31,
     "genres": [
       "Action",
       "Drama",
       "Romance",
       "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 99,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 106,
+        "name": "Gangs",
+        "description": "Centers around gang organizations.",
+        "category": "Theme-Other-Organisations",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 93,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 92,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 90,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 173,
+        "name": "Motorcycles",
+        "description": "Prominently features the use of motorcycles.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 310,
+        "name": "Espionage",
+        "description": "Prominently features characters infiltrating an organization in order to steal sensitive information.",
+        "category": "Theme-Action",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 176,
+        "name": "Mopeds",
+        "description": "Prominently features mopeds.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 51,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 42,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1052,
+        "name": "Adoption",
+        "description": "Features a character who has been adopted by someone who is neither of their biological parents.",
+        "category": "Theme-Other",
+        "rank": 41,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Ken Wakui"
@@ -111,14 +870,64 @@
     "artists": [
       "Ken Wakui"
     ],
-    "popularity": 114436,
+    "rating": 7.4,
     "averageScore": 74,
-    "chapters": 279,
-    "volumes": 31,
-    "year": 2017,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 74,
+    "popularity": 114436,
+    "trending": 1,
+    "favourites": 8831,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/102988",
+    "mal_url": "https://myanimelist.net/manga/104565",
+    "externalLinks": [
+      {
+        "site": "Pocket Magazine",
+        "url": "https://pocket.shonenmagazine.com/episode/13932016480029113171"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://shonenmagazine.com/special_page/tokyorevegers"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/tokyo-revengers/"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/toman_official"
+      },
+      {
+        "site": "MangaPlaza",
+        "url": "https://mangaplaza.com/title/0303001586/"
+      },
+      {
+        "site": "INKR",
+        "url": "https://comics.inkr.com/title/314-tokyo-revengers"
+      },
+      {
+        "site": "Seven Seas Entertainment",
+        "url": "https://sevenseasentertainment.com/series/tokyo-revengers-omnibus/"
+      },
+      {
+        "site": "Coolmic",
+        "url": "https://coolmic.me/titles/592"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10075/episode/311605"
+      },
+      {
+        "site": "Omoi",
+        "url": "https://www.omoi.com/series/tokyo-revengers"
+      }
+    ],
+    "chapterIndexId": "59b36734-f2d6-46d7-97c0-06cfd2380852",
     "mangadexId": "59b36734-f2d6-46d7-97c0-06cfd2380852",
+    "mangadexUrl": "https://mangadex.org/title/59b36734-f2d6-46d7-97c0-06cfd2380852",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Tokyo Revengers",
@@ -129,22 +938,35 @@
       "Romance",
       "Supernatural",
       "Ken Wakui"
-    ],
-    "chapterIndexId": "59b36734-f2d6-46d7-97c0-06cfd2380852",
-    "mangadexUrl": "https://mangadex.org/title/59b36734-f2d6-46d7-97c0-06cfd2380852",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 132029,
     "anilistId": 132029,
     "idMal": 135496,
     "title": "Dandadan",
-    "titleEnglish": "Dandadan",
     "titleRomaji": "Dandadan",
+    "titleEnglish": "Dandadan",
     "titleNative": "ダンダダン",
+    "synonyms": [
+      "ดันดาดัน",
+      "膽大黨",
+      "단다단"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx132029-prGF4gePdSKv.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132029-prGF4gePdSKv.jpg",
+    "coverImageColor": "#f1d60d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/132029-V1x9JAh3G8QK.jpg",
     "synopsis": "Momo Ayase strikes up an unusual friendship with her school’s UFO fanatic, whom she nicknames “Okarun” because he has a name that is not to be said aloud. While Momo believes in spirits, she thinks aliens are nothing but nonsense. Her new friend, meanwhile, th",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-04-06",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Action",
       "Comedy",
@@ -153,20 +975,454 @@
       "Sci-Fi",
       "Supernatural"
     ],
+    "tags": [
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 513,
+        "name": "Tokusatsu",
+        "description": "Prominently features elements that resemble special effects in Japanese live-action shows",
+        "category": "Theme-Sci-Fi",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 99,
+        "name": "Henshin",
+        "description": "Prominently features character or costume transformations which often grant special abilities.",
+        "category": "Theme-Fantasy",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 772,
+        "name": "Shapeshifting",
+        "description": "Features character(s) who changes one's appearance or form.",
+        "category": "Theme-Fantasy",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1719,
+        "name": "Exorcism",
+        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
+        "category": "Theme-Fantasy",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1689,
+        "name": "Curses",
+        "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 55,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 267,
+        "name": "Chuunibyou",
+        "description": "Prominently features a character with \"Middle School 2nd Year Syndrome\", who either acts like a know-it-all adult or falsely believes they have special powers.",
+        "category": "Cast-Traits",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 476,
+        "name": "Circus",
+        "description": "Prominently features a circus.",
+        "category": "Setting-Scene",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 44,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 44,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1612,
+        "name": "Acrobatics",
+        "description": "The art of jumping, tumbling, and balancing. Often paired with trapeze, trampolining, tightropes, or general gymnastics.",
+        "category": "Theme-Game-Sport",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 33,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
     "authors": [
       "Yukinobu Tatsu"
     ],
     "artists": [
       "Yukinobu Tatsu"
     ],
-    "popularity": 108905,
+    "rating": 8.2,
     "averageScore": 82,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2021,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 82,
+    "popularity": 108905,
+    "trending": 26,
+    "favourites": 8955,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/132029",
+    "mal_url": "https://myanimelist.net/manga/135496",
+    "externalLinks": [
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/3269632237310729754"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100171"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/300001"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200084"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/700015"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/dandadan"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/dandadan"
+      },
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=6435693"
+      }
+    ],
+    "chapterIndexId": "68112dc1-2b80-4f20-beb8-2f2a8716a430",
     "mangadexId": "68112dc1-2b80-4f20-beb8-2f2a8716a430",
+    "mangadexUrl": "https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Dandadan",
@@ -178,26 +1434,254 @@
       "Sci-Fi",
       "Supernatural",
       "Yukinobu Tatsu"
-    ],
-    "chapterIndexId": "68112dc1-2b80-4f20-beb8-2f2a8716a430",
-    "mangadexUrl": "https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 97852,
     "anilistId": 97852,
     "idMal": 99007,
     "title": "Komi Can't Communicate",
-    "titleEnglish": "Komi Can't Communicate",
     "titleRomaji": "Komi-san wa, Komyushou desu.",
+    "titleEnglish": "Komi Can't Communicate",
     "titleNative": "古見さんは、コミュ症です。",
+    "synonyms": [
+      "Comi san ha Comyusho desu",
+      "Komi-san wa Communication Shougai desu.",
+      "Komi-san wa Comyushou desu.",
+      "Miss Komi is Bad at Communication.",
+      "Komi-san Can't Communicate",
+      "Komi-san Has a Communication Disorder",
+      "Komi-san no puede comunicarse",
+      "古见同学有交流障碍症",
+      "โฉมงามพูดไม่เก่งกับผองเพื่อนไม่เต็มเต็ง",
+      "Komi cherche ses mots",
+      "Komi - Nữ thần sợ giao tiếp",
+      "Komi Não Consegue se Comunicar",
+      "Komi Konuşmaktan Korkuyor",
+      "코미 양은 커뮤증입니다",
+      "Komi Sulit Berkomunikasi",
+      "Komi ne ume da komunicira"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx97852-M7vlc2OGR2gp.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx97852-M7vlc2OGR2gp.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx97852-M7vlc2OGR2gp.jpg",
+    "coverImageColor": "#e4aea1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/97852-wHsdcKYktdp5.jpg",
     "synopsis": "Timid Tadano is a total wallflower, and that’s just the way he likes it. But all that changes when he finds himself alone in a classroom on the first day of high school with the legendary Komi. He quickly realizes she isn’t aloof—she’s just super awkward. Now ",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "year": 2016,
+    "startDate": "2016-05-18",
+    "endDate": "2025-01-29",
+    "chapters": 537,
+    "volumes": 37,
     "genres": [
       "Comedy",
       "Romance",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 69,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 206,
+        "name": "4-koma",
+        "description": "A manga in the 'yonkoma' format, which consists of four equal-sized panels arranged in a vertical strip.",
+        "category": "Technical",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 334,
+        "name": "Agender",
+        "description": "Prominently features agender characters.",
+        "category": "Cast-Traits",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 267,
+        "name": "Chuunibyou",
+        "description": "Prominently features a character with \"Middle School 2nd Year Syndrome\", who either acts like a know-it-all adult or falsely believes they have special powers.",
+        "category": "Cast-Traits",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 39,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Tomohito Oda"
@@ -207,14 +1691,56 @@
       "Erwan Lossois",
       "Eve Grandt"
     ],
-    "popularity": 103458,
+    "rating": 7.7,
     "averageScore": 77,
-    "chapters": 537,
-    "volumes": 37,
-    "year": 2016,
-    "format": "MANGA",
-    "status": "FINISHED",
+    "meanScore": 77,
+    "popularity": 103458,
+    "trending": 2,
+    "favourites": 6046,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/97852",
+    "mal_url": "https://myanimelist.net/manga/99007",
+    "externalLinks": [
+      {
+        "site": "Pixiv Comic",
+        "url": "https://comic.pixiv.net/works/6154"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://shogakukan-comic.jp/book-series?cd=45156"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/vizmanga/chapters/komi-cant-communicate"
+      },
+      {
+        "site": "Sunday Webry",
+        "url": "https://www.sunday-webry.com/episode/3269754496548997841"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/komi-can-t-communicate"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/4810?etype=episode"
+      },
+      {
+        "site": "TOKYOPOP",
+        "url": "https://tokyopop.de/Komi-can-t-communicate-Band-32/TP-978-3-7593-1406-2"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.pika.fr/livres-series-komi-cherche-ses-mots/"
+      }
+    ],
+    "chapterIndexId": "a96676e5-8ae2-425e-b549-7f15dd34a6d8",
     "mangadexId": "a96676e5-8ae2-425e-b549-7f15dd34a6d8",
+    "mangadexUrl": "https://mangadex.org/title/a96676e5-8ae2-425e-b549-7f15dd34a6d8",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Komi Can't Communicate",
@@ -226,11 +1752,7 @@
       "Tomohito Oda",
       "Erwan Lossois",
       "Eve Grandt"
-    ],
-    "chapterIndexId": "a96676e5-8ae2-425e-b549-7f15dd34a6d8",
-    "mangadexUrl": "https://mangadex.org/title/a96676e5-8ae2-425e-b549-7f15dd34a6d8",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 101583,
@@ -524,15 +2046,182 @@
     "anilistId": 140475,
     "idMal": 144267,
     "title": "The Fragrant Flower Blooms With Dignity",
-    "titleEnglish": "The Fragrant Flower Blooms With Dignity",
     "titleRomaji": "Kaoru Hana wa Rin to Saku",
+    "titleEnglish": "The Fragrant Flower Blooms With Dignity",
     "titleNative": "薫る花は凛と咲く",
+    "synonyms": [
+      "薰香花朵凛然綻放",
+      "Kaoruhana",
+      "La Nobleza de las Flores",
+      "Kaoru und Rin: So nah und doch so fern",
+      "Kaoru i Rin. Rozkwitając z tobą",
+      "Bloom",
+      "The Fragrant Flower Blooms With Dignity - Kaoru & Rin",
+      "A Nobreza das Flores",
+      "Güzel Kokulu Çiçekler Zarafetle Açar",
+      "향기로운 꽃은 늠름하게 핀다",
+      "Hoa thơm kiêu hãnh"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx140475-QEGtrmdvbpOv.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx140475-QEGtrmdvbpOv.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx140475-QEGtrmdvbpOv.jpg",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/140475-FgBKTTJY7Ry6.jpg",
     "synopsis": "This story takes place in a particular town with two infamous schools in constant dispute: Chidori High, a boys' school predominantly attended by low-class students with damning grades, and its neighbor Kikyo Girls' High, with most of its female students comin",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-10-21",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Comedy",
       "Drama",
       "Romance"
+    ],
+    "tags": [
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Saka Mikami"
@@ -540,14 +2229,72 @@
     "artists": [
       "Saka Mikami"
     ],
-    "popularity": 71029,
+    "rating": 8.7,
     "averageScore": 87,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2021,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 87,
+    "popularity": 71029,
+    "trending": 15,
+    "favourites": 7863,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/140475",
+    "mal_url": "https://myanimelist.net/manga/144267",
+    "externalLinks": [
+      {
+        "site": "Pocket Magazine",
+        "url": "https://pocket.shonenmagazine.com/episode/3269754496548746310"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/kaoruhana_mp"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10023/episode/320130"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/the-fragrant-flower-blooms-with-dignity/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.nobi-nobi.fr/livre/bloom-t01-9782373499759/"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kc.kodansha.co.jp/title?code=1000041711"
+      },
+      {
+        "site": "Coolmic",
+        "url": "https://coolmic.me/titles/3953"
+      },
+      {
+        "site": "MangaPlaza",
+        "url": "https://mangaplaza.com/title/0303008897/"
+      },
+      {
+        "site": "Omoi",
+        "url": "https://www.omoi.com/series/the-fragrant-flower-blooms-with-dignity"
+      },
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/62936672"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://shonenmagazine.com/special_page/kaoruhana/"
+      },
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/14079602755421864479"
+      }
+    ],
+    "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
     "mangadexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
+    "mangadexUrl": "https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "The Fragrant Flower Blooms With Dignity",
@@ -557,11 +2304,7 @@
       "Drama",
       "Romance",
       "Saka Mikami"
-    ],
-    "chapterIndexId": "418791c0-35cf-4f87-936b-acd9cddf0989",
-    "mangadexUrl": "https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 54705,
@@ -706,16 +2449,255 @@
     "anilistId": 87395,
     "idMal": 70345,
     "title": "Grand Blue Dreaming",
-    "titleEnglish": "Grand Blue Dreaming",
     "titleRomaji": "Grand Blue",
+    "titleEnglish": "Grand Blue Dreaming",
     "titleNative": "ぐらんぶる",
+    "synonyms": [
+      "Необъятный океан",
+      "Неосяжна блакить",
+      "ก๊วนป่วนชวนบุ๋งบุ๋ง"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87395-axsA49kSZp72.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87395-axsA49kSZp72.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx87395-axsA49kSZp72.jpg",
+    "coverImageColor": "#e4a15d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/87395-oSAhMYznMKAE.jpg",
     "synopsis": "After moving out on his own to a seaside town, Iori Kitahara makes a college debut he never anticipated. A new chapter of his life unfolds, full of diving with beautiful girls and shenanigans with a gaggle of lovable bastards! Idiot-expert Kenji Inoue and au n",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2014,
+    "startDate": "2014-04-07",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Comedy",
       "Romance",
       "Slice of Life",
       "Sports"
+    ],
+    "tags": [
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 404,
+        "name": "College",
+        "description": "Partly or completely set in a college or university.",
+        "category": "Setting-Scene",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1537,
+        "name": "Coastal",
+        "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
+        "category": "Setting-Scene",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 161,
+        "name": "Bar",
+        "description": "Partly or completely set in a bar.",
+        "category": "Setting-Scene",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 811,
+        "name": "Scuba Diving",
+        "description": "Prominently features characters diving with the aid of special breathing equipment.",
+        "category": "Theme-Game-Sport",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 97,
+        "name": "Otaku Culture",
+        "description": "Centers around the culture of a fanatical fan-base.",
+        "category": "Theme-Other",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 144,
+        "name": "Meta",
+        "description": "Features fourth wall-breaking references to itself or genre tropes.",
+        "category": "Theme-Other",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Kenji Inoue"
@@ -723,14 +2705,56 @@
     "artists": [
       "Kimitake Yoshioka"
     ],
-    "popularity": 64899,
+    "rating": 8.8,
     "averageScore": 88,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2014,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 89,
+    "popularity": 64899,
+    "trending": 1,
+    "favourites": 7215,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/87395",
+    "mal_url": "https://myanimelist.net/manga/70345",
+    "externalLinks": [
+      {
+        "site": "Kodansha",
+        "url": "https://afternoon.kodansha.co.jp/c/grandblue.html"
+      },
+      {
+        "site": "Comic Days",
+        "url": "https://comic-days.com/episode/10834108156628735743"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kc.kodansha.co.jp/title?code=1000016540"
+      },
+      {
+        "site": "Kodansha",
+        "url": "https://kodansha.us/series/grand-blue-dreaming/"
+      },
+      {
+        "site": "INKR",
+        "url": "https://comics.inkr.com/title/306-grand-blue-dreaming"
+      },
+      {
+        "site": "Pocket Magazine",
+        "url": "https://pocket.shonenmagazine.com/episode/10834108156631336064"
+      },
+      {
+        "site": "K MANGA",
+        "url": "https://kmanga.kodansha.com/title/10058/episode/318585"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/sakazukiwohosu"
+      }
+    ],
+    "chapterIndexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
     "mangadexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
+    "mangadexUrl": "https://mangadex.org/title/fffbfac3-b7ad-41ee-9581-b4d90ecec941",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Grand Blue Dreaming",
@@ -742,11 +2766,7 @@
       "Sports",
       "Kenji Inoue",
       "Kimitake Yoshioka"
-    ],
-    "chapterIndexId": "fffbfac3-b7ad-41ee-9581-b4d90ecec941",
-    "mangadexUrl": "https://mangadex.org/title/fffbfac3-b7ad-41ee-9581-b4d90ecec941",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 86218,
@@ -1076,16 +3096,264 @@
     "anilistId": 30028,
     "idMal": 28,
     "title": "Nana",
-    "titleEnglish": "Nana",
     "titleRomaji": "NANA",
+    "titleEnglish": "Nana",
     "titleNative": "NANA",
+    "synonyms": [
+      "ナナ",
+      "나나"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30028-VJqBC1ar6AxE.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30028-VJqBC1ar6AxE.png",
+    "coverImageColor": "#781a6b",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30028-42xc4ztbqalW.jpg",
     "synopsis": "Nana Komatsu is a young woman who's endured an unending string of boyfriend problems. Moving to Tokyo, she's hoping to take control of her life and put all those messy misadventures behind her. She's looking for love and she's hoping to find it in the big city",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2000,
+    "startDate": "2000-05-15",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Drama",
       "Music",
       "Romance",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 84,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 397,
+        "name": "Pregnancy",
+        "description": "Features pregnant female characters or discusses the topic of pregnancy.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 78,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 124,
+        "name": "Netorare",
+        "description": "Netorare is what happens when the protagonist gets their partner stolen from them by someone else. It is a sexual fetish designed to cause sexual jealousy by way of having the partner indulge in sexual activity with someone other than the protagonist.",
+        "category": "Sexual Content",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1674,
+        "name": "Rock Music",
+        "description": "Centers on the musical style of rock, not to be applied to anime that use rock in its soundtrack.",
+        "category": "Theme-Arts-Music",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1709,
+        "name": "Cheating",
+        "description": "Features a character with a partner shown being intimate with someone else consensually.",
+        "category": "Sexual Content",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 56,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 161,
+        "name": "Bar",
+        "description": "Partly or completely set in a bar.",
+        "category": "Setting-Scene",
+        "rank": 33,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Ai Yazawa"
@@ -1094,14 +3362,60 @@
       "Ai Yazawa",
       "Sabrina Heep"
     ],
-    "popularity": 54744,
+    "rating": 8.8,
     "averageScore": 88,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2000,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 88,
+    "popularity": 54744,
+    "trending": 2,
+    "favourites": 5387,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30028",
+    "mal_url": "https://myanimelist.net/manga/28",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/nana"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.editions-delcourt.fr/mangas/series/serie-nana"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/vizmanga/chapters/nana"
+      },
+      {
+        "site": "Manga Mee",
+        "url": "https://manga-mee.jp/detail/50004"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/volume/4856001361007341286"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/4120?etype=episode"
+      },
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=4655207"
+      },
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/54152112"
+      },
+      {
+        "site": "Rimacomi Plus",
+        "url": "https://rimacomiplus.jp/cookie/series/5c0218016964e?s=0"
+      }
+    ],
+    "chapterIndexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
     "mangadexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
+    "mangadexUrl": "https://mangadex.org/title/7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Nana",
@@ -1112,11 +3426,7 @@
       "Slice of Life",
       "Ai Yazawa",
       "Sabrina Heep"
-    ],
-    "chapterIndexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-    "mangadexUrl": "https://mangadex.org/title/7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 61499,
@@ -1215,17 +3525,331 @@
     "anilistId": 51525,
     "idMal": 21525,
     "title": "Yona of the Dawn",
-    "titleEnglish": "Yona of the Dawn",
     "titleRomaji": "Akatsuki no Yona",
+    "titleEnglish": "Yona of the Dawn",
     "titleNative": "暁のヨナ",
+    "synonyms": [
+      "AkaYona",
+      "Yona: The Girl Standing in the Blush of Dawn",
+      "Yona, Princesa del Amanecer",
+      "Yona w blasku świtu",
+      "Yona - Prinzessin der Morgendämmerung",
+      "Yona - Công chúa bình minh",
+      "Yona, Princesse de l'Aube",
+      "Yona: A Princesa do Alvorecer"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx51525-wZ1AjkbXrKns.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx51525-wZ1AjkbXrKns.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx51525-wZ1AjkbXrKns.png",
+    "coverImageColor": "#f18643",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/51525-WMZWU0tOPxKR.jpg",
     "synopsis": "A red-haired princess loses her family and her kingdom—now she must rise and fight for her throne! Princess Yona lives an ideal life as the only princess of her kingdom. Doted on by her father, the king, and protected by her faithful guard Hak, she cherishes t",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2009,
+    "startDate": "2009-08-05",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 48,
     "genres": [
       "Action",
       "Adventure",
       "Drama",
       "Fantasy",
       "Romance"
+    ],
+    "tags": [
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "category": "Cast-Traits",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 226,
+        "name": "Fugitive",
+        "description": "Prominently features a character evading capture by an individual or organization.",
+        "category": "Theme-Action",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1419,
+        "name": "Kingdom Management",
+        "description": "Characters in these series take on the responsibility of running a town or kingdom, whether they take control of an existing one, or build their own from the ground up.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 78,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 72,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 251,
+        "name": "Archery",
+        "description": "Centers around the sport of archery, or prominently features the use of archery in combat.",
+        "category": "Theme-Action",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 123,
+        "name": "Male Harem",
+        "description": "Main cast features the protagonist plus several male characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 659,
+        "name": "Medicine",
+        "description": "Centered around the activities of people working in the field of medicine.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 34,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 201,
+        "name": "Pirates",
+        "description": "Prominently features sea-faring adventurers branded as criminals by the law.",
+        "category": "Cast-Traits",
+        "rank": 29,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 28,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 28,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Mizuho Kusanagi"
@@ -1234,14 +3858,44 @@
       "Mizuho Kusanagi",
       "Lys Blakeslee"
     ],
-    "popularity": 51720,
+    "rating": 8.7,
     "averageScore": 87,
-    "chapters": 0,
-    "volumes": 48,
-    "year": 2009,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 87,
+    "popularity": 51720,
+    "trending": 4,
+    "favourites": 6007,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/51525",
+    "mal_url": "https://myanimelist.net/manga/21525",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/yona-of-the-dawn"
+      },
+      {
+        "site": "Comico",
+        "url": "https://www.comico.jp/comic/7267"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.hanayume.com/sakuhin/?id=6"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.pika.fr/serie/yona-princesse-de-laube"
+      },
+      {
+        "site": "Manga Park",
+        "url": "https://manga-park.com/title/5"
+      }
+    ],
+    "chapterIndexId": "3bb0279f-a01d-4aa4-93e4-305800f4b83e",
     "mangadexId": "3bb0279f-a01d-4aa4-93e4-305800f4b83e",
+    "mangadexUrl": "https://mangadex.org/title/3bb0279f-a01d-4aa4-93e4-305800f4b83e",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Yona of the Dawn",
@@ -1254,27 +3908,175 @@
       "Romance",
       "Mizuho Kusanagi",
       "Lys Blakeslee"
-    ],
-    "chapterIndexId": "3bb0279f-a01d-4aa4-93e4-305800f4b83e",
-    "mangadexUrl": "https://mangadex.org/title/3bb0279f-a01d-4aa4-93e4-305800f4b83e",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 132182,
     "anilistId": 132182,
     "idMal": 135545,
     "title": "Blue Box",
-    "titleEnglish": "Blue Box",
     "titleRomaji": "Ao no Hako",
+    "titleEnglish": "Blue Box",
     "titleNative": "アオのハコ",
+    "synonyms": [
+      "青色之箱",
+      "กล่องรักวัยใส",
+      "Niebieskie pudełko",
+      "La caja azul",
+      "青春之箱",
+      "蓝箱"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132182-maXh2QzYPrqR.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx132182-maXh2QzYPrqR.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx132182-maXh2QzYPrqR.jpg",
+    "coverImageColor": "#e47843",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/132182-1jdVSMx8ShXd.jpg",
     "synopsis": "Taiki Inomata is on the boys' badminton team at sports powerhouse Eimei Junior and Senior High. He's in love with basketball player Chinatsu Kano, the older girl he trains alongside every morning in the gym. One Spring day, their relationship takes a sharp tur",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2021,
+    "startDate": "2021-04-12",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Drama",
       "Romance",
       "Slice of Life",
       "Sports"
+    ],
+    "tags": [
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 264,
+        "name": "Athletics",
+        "description": "Centers around sporting events that involve competitive running, jumping, throwing, or walking.",
+        "category": "Theme-Game-Sport",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 235,
+        "name": "Badminton",
+        "description": "Centers around the sport of badminton.",
+        "category": "Theme-Game-Sport",
+        "rank": 81,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 192,
+        "name": "Basketball",
+        "description": "Centers around the sport of basketball.",
+        "category": "Theme-Game-Sport",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1753,
+        "name": "Cohabitation",
+        "description": "Features two or more people who live in the same household and develop a romantic or sexual relationship.",
+        "category": "Theme-Romance",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Kouji Miura"
@@ -1282,14 +4084,64 @@
     "artists": [
       "Kouji Miura"
     ],
-    "popularity": 51078,
+    "rating": 8.1,
     "averageScore": 81,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2021,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 81,
+    "popularity": 51078,
+    "trending": 4,
+    "favourites": 3745,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/132182",
+    "mal_url": "https://myanimelist.net/manga/135545",
+    "externalLinks": [
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/100157"
+      },
+      {
+        "site": "Shonen Jump",
+        "url": "https://www.shonenjump.com/j/rensai/aonohako.html"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/aonohako_PR"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/200083"
+      },
+      {
+        "site": "MANGA Plus",
+        "url": "https://mangaplus.shueisha.co.jp/titles/300004"
+      },
+      {
+        "site": "Bilibili",
+        "url": "https://manga.bilibili.com/detail/mc32749"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.tongli.com.tw/BooksDetail.aspx?BD=JC1254001"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/shonenjump/chapters/blue-box"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/3270375685345219010"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/blue-box"
+      }
+    ],
+    "chapterIndexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
     "mangadexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
+    "mangadexUrl": "https://mangadex.org/title/ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Blue Box",
@@ -1300,11 +4152,7 @@
       "Slice of Life",
       "Sports",
       "Kouji Miura"
-    ],
-    "chapterIndexId": "ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
-    "mangadexUrl": "https://mangadex.org/title/ed5dddc0-999d-4fd2-a702-9fef1ec2c955",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 106064,
@@ -1452,14 +4300,193 @@
     "anilistId": 149544,
     "idMal": 155861,
     "title": "The Guy She Was Interested In Wasn't a Guy at All",
-    "titleEnglish": "The Guy She Was Interested In Wasn't a Guy at All",
     "titleRomaji": "Ki ni Natteru Hito ga Otoko ja Nakatta",
+    "titleEnglish": "The Guy She Was Interested In Wasn't a Guy at All",
     "titleNative": "気になってる人が男じゃなかった",
+    "synonyms": [
+      "The Person She Fell For Wasn't A Boy",
+      "คนที่เธอปิ๊ง ความจริงไม่ใช่ผู้ชาย",
+      "La persona che mi piace non è un ragazzo",
+      "我在意的對象並不是男人",
+      "Chłopak, który jej się spodobał wcale nie jest chłopakiem",
+      "O cara que estou a fim não é um cara?!",
+      "She Wasn't a Guy",
+      "El chico que me gusta no es un chico",
+      "TGSWIIWAGAA",
+      "KiniOto",
+      "Хлопець, який їй сподобався, — не хлопець",
+      "Người tôi để ý không phải là con trai",
+      "신경 쓰이는 사람이 남자가 아니었다"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149544-466pXfETA8oP.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx149544-466pXfETA8oP.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx149544-466pXfETA8oP.jpg",
+    "coverImageColor": "#aee428",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/149544-LYz4luvHDWxg.jpg",
     "synopsis": "Fashionable and upbeat high schooler Aya falls head over heels for an employee at a local CD shop. He's got an air of mystery about him, great style, and an impeccable music taste. Little does she know—this supposedly male employee is actually her female class",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-04-10",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Music",
       "Romance"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1674,
+        "name": "Rock Music",
+        "description": "Centers on the musical style of rock, not to be applied to anime that use rock in its soundtrack.",
+        "category": "Theme-Arts-Music",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 931,
+        "name": "Tomboy",
+        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
+        "category": "Cast-Traits",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 27,
+        "name": "Josei",
+        "description": "Target demographic is adult females.",
+        "category": "Demographic",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 410,
+        "name": "Fashion",
+        "description": "Centers around the fashion industry.",
+        "category": "Theme-Arts",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 206,
+        "name": "4-koma",
+        "description": "A manga in the 'yonkoma' format, which consists of four equal-sized panels arranged in a vertical strip.",
+        "category": "Technical",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Sumiko Arai"
@@ -1467,14 +4494,52 @@
     "artists": [
       "Sumiko Arai"
     ],
-    "popularity": 45650,
+    "rating": 8.2,
     "averageScore": 82,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2022,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 83,
+    "popularity": 45650,
+    "trending": 8,
+    "favourites": 4318,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/149544",
+    "mal_url": "https://myanimelist.net/manga/155861",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/agu_knzm/status/1512998788025110532"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.kadokawa.co.jp/product/322205000709/"
+      },
+      {
+        "site": "Kadocomi",
+        "url": "https://comic-walker.com/contents/detail/KDCW_CK01204024010000_68/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.kadokawa.com.tw/products/9786263784697"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://mangetsu-manga.fr/catalogue/9782382817759-she-wasnt-a-guy-t01/"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/the-guy-she-was-interested-in-wasn-t-a-guy-at-all"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/kinioto_PR"
+      }
+    ],
+    "chapterIndexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
     "mangadexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
+    "mangadexUrl": "https://mangadex.org/title/9d3d3403-1a87-4737-9803-bc3d99db1424",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 2,
     "searchTerms": [
       "The Guy She Was Interested In Wasn't a Guy at All",
@@ -1483,11 +4548,7 @@
       "Music",
       "Romance",
       "Sumiko Arai"
-    ],
-    "chapterIndexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
-    "mangadexUrl": "https://mangadex.org/title/9d3d3403-1a87-4737-9803-bc3d99db1424",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 86300,
@@ -2671,215 +5732,6 @@
     "mangadexMappingConfidence": 1
   },
   {
-    "mangaId": 113501,
-    "anilistId": 113501,
-    "idMal": 122353,
-    "title": "Please Go Home, Miss Akutsu!",
-    "titleRomaji": "Kaette Kudasai! Akutsu-san",
-    "titleEnglish": "Please Go Home, Miss Akutsu!",
-    "titleNative": "帰ってください! 阿久津さん",
-    "synonyms": [
-      "求妳快走吧，阿久津！",
-      "Please Go Home, Akutsu-san!",
-      "Yankee Musume",
-      "ヤンキー娘",
-      "Bitte geh heim, Akutsu-san!",
-      "กลับบ้านไปเถอะครับ! คุณอาคุตสึ"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113501-rVSt4fVTEAy2.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx113501-rVSt4fVTEAy2.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx113501-rVSt4fVTEAy2.jpg",
-    "coverImageColor": "#e4860d",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/113501-rKF3vGYKLLhE.jpg",
-    "synopsis": "Timid Ooyama keeps to himself at school, and he certainly never gets involved with Akutsu Riko, a delinquent as buxom as she is notorious. But when she turns up at his apartment out of the blue, what’s he supposed to do, kick her out? She’s gorgeous! And scary! But things get complicated when Akutsu asks to stay the night, then starts turning up over and over again after school–reading Ooyama’s manga, sprawling out on his bed, and digging up his smut stash. Why exactly is she claiming his life as her hangout?! She makes it clear there’s no way she could possibly like him, but the teasing threatens to boil over into something more in this sexy yet adorable slice-of-life rom-com! (Source: Seven Seas Entertainment)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2019,
-    "startDate": "2019-07-29",
-    "endDate": null,
-    "chapters": 0,
-    "volumes": 0,
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 164,
-        "name": "Tsundere",
-        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
-        "category": "Cast-Traits",
-        "rank": 87,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 356,
-        "name": "Gyaru",
-        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
-        "category": "Cast-Traits",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 395,
-        "name": "Delinquents",
-        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
-        "category": "Cast-Traits",
-        "rank": 81,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 193,
-        "name": "Episodic",
-        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
-        "category": "Technical",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 68,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 931,
-        "name": "Tomboy",
-        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
-        "category": "Cast-Traits",
-        "rank": 68,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 100,
-        "name": "Nudity",
-        "description": "Features a character wearing no clothing or exposing intimate body parts.",
-        "category": "Cast-Traits",
-        "rank": 51,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 46,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 33,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Taichi Nagaoka"
-    ],
-    "artists": [
-      "Taichi Nagaoka"
-    ],
-    "rating": 7.2,
-    "averageScore": 72,
-    "meanScore": 72,
-    "popularity": 32157,
-    "trending": 30,
-    "favourites": 1102,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/113501",
-    "mal_url": "https://myanimelist.net/manga/122353",
-    "externalLinks": [
-      {
-        "site": "Seven Seas Entertainment",
-        "url": "https://sevenseasentertainment.com/series/please-go-home-miss-akutsu/"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://www.kadokawa.com.tw/products/9789865248536"
-      },
-      {
-        "site": "Nico Nico Seiga",
-        "url": "https://manga.nicovideo.jp/comic/46155"
-      },
-      {
-        "site": "Kadocomi",
-        "url": "https://comic-walker.com/detail/KC_000694_S/episodes/KC_0006940000100011_E"
-      }
-    ],
-    "chapterIndexId": "737a846b-2e67-4d63-9f7e-f54b3beebac4",
-    "mangadexId": "737a846b-2e67-4d63-9f7e-f54b3beebac4",
-    "mangadexUrl": "https://mangadex.org/title/737a846b-2e67-4d63-9f7e-f54b3beebac4",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
     "mangaId": 76716,
     "anilistId": 76716,
     "idMal": 46716,
@@ -4019,7 +6871,7 @@
     "titleRomaji": "Namaiki Zakari.",
     "titleNative": "なまいきざかり。",
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85395-5FR6of9F1cTU.jpg",
-    "synopsis": "Basketball club manager Yuki has a secret—she’s in love with the team captain! But when Naruse discovers her secret, she’s in trouble! Just how long is he going to keep teasing her about it? Stupid pretty playboy… (Source: Yen Press) Note: Includes one extra c",
+    "synopsis": "Basketball club manager Yuki has a secret—she’s in love with the team captain! But when Naruse discovers her secret, she’s in trouble! Just how long is he going to keep teasing her about it? Stupid pretty playboy… (Source: Yen Press) Note: Includes one extra chapter.",
     "genres": [
       "Comedy",
       "Romance",
@@ -4052,7 +6904,175 @@
     "chapterIndexId": "787a9f0c-6f48-401c-8edc-d6ee07516c4f",
     "mangadexUrl": "https://mangadex.org/title/787a9f0c-6f48-401c-8edc-d6ee07516c4f",
     "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "mangadexMappingConfidence": 1,
+    "synonyms": [
+      "His Cheekiness is in Full Bloom.",
+      "Namaikizakari.",
+      "Full Bloom Cheekiness",
+      "Cheeky love"
+    ],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85395-5FR6of9F1cTU.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85395-5FR6of9F1cTU.jpg",
+    "coverImageColor": "#f1a150",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/85395-hCNTELaYrytQ.jpg",
+    "type": "MANGA",
+    "startDate": "2013-10-19",
+    "endDate": "2021-12-20",
+    "tags": [
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 192,
+        "name": "Basketball",
+        "description": "Centers around the sport of basketball.",
+        "category": "Theme-Game-Sport",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 404,
+        "name": "College",
+        "description": "Partly or completely set in a college or university.",
+        "category": "Setting-Scene",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 53,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "rating": 7.7,
+    "meanScore": 77,
+    "trending": 0,
+    "favourites": 1120,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/85395",
+    "mal_url": "https://myanimelist.net/manga/67645",
+    "externalLinks": [
+      {
+        "site": "Manga Park",
+        "url": "https://manga-park.com/title/34"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.hanayume.com/sakuhin/?id=3"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/cheeky-brat"
+      }
+    ]
   },
   {
     "mangaId": 30022,
@@ -4827,93 +7847,6 @@
     "anilistId": 75143,
     "idMal": 45143,
     "title": "Kono Oto Tomare!",
-    "titleEnglish": "",
-    "titleRomaji": "Kono Oto Tomare!",
-    "titleNative": "この音とまれ！",
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx75143-qPFON51fyZpt.png",
-    "synopsis": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has begun, Takezou will have to seek out new members into the club, or the c",
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance"
-    ],
-    "authors": [
-      "Amyuu Sakura"
-    ],
-    "artists": [
-      "Amyuu Sakura"
-    ],
-    "popularity": 23019,
-    "averageScore": 88,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2012,
-    "format": "MANGA",
-    "status": "RELEASING",
-    "mangadexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
-    "detailPage": 3,
-    "searchTerms": [
-      "Kono Oto Tomare!",
-      "この音とまれ！",
-      "Drama",
-      "Music",
-      "Romance",
-      "Amyuu Sakura"
-    ],
-    "chapterIndexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
-    "mangadexUrl": "https://mangadex.org/title/df9be021-ff37-419e-ba6e-dda3e28eb763",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 111149,
-    "anilistId": 111149,
-    "idMal": 121426,
-    "title": "Mission: Yozakura Family",
-    "titleEnglish": "Mission: Yozakura Family",
-    "titleRomaji": "Yozakura-san Chi no Daisakusen",
-    "titleNative": "夜桜さんちの大作戦",
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111149-cHYBsPbWIb3L.jpg",
-    "synopsis": "Taiyou Asano is a super shy high school student and the only person he can talk to is his childhood friend, Mutsumi Yozakura. It turns out that Mutsumi is the daughter of the ultimate spy family! Even worse, Mutsumi is being harassed by her overprotective, nig",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Romance"
-    ],
-    "authors": [
-      "Hitsuji Gondaira"
-    ],
-    "artists": [
-      "Hitsuji Gondaira"
-    ],
-    "popularity": 23015,
-    "averageScore": 76,
-    "chapters": 259,
-    "volumes": 29,
-    "year": 2019,
-    "format": "MANGA",
-    "status": "FINISHED",
-    "mangadexId": "ce7cd7b0-e595-4f0d-98e8-447da10d652d",
-    "detailPage": 3,
-    "searchTerms": [
-      "Mission: Yozakura Family",
-      "Yozakura-san Chi no Daisakusen",
-      "夜桜さんちの大作戦",
-      "Action",
-      "Comedy",
-      "Romance",
-      "Hitsuji Gondaira"
-    ],
-    "chapterIndexId": "ce7cd7b0-e595-4f0d-98e8-447da10d652d",
-    "mangadexUrl": "https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 75143,
-    "anilistId": 75143,
-    "idMal": 45143,
-    "title": "Kono Oto Tomare!",
     "titleRomaji": "Kono Oto Tomare!",
     "titleEnglish": "",
     "titleNative": "この音とまれ！",
@@ -4928,7 +7861,7 @@
     "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx75143-qPFON51fyZpt.png",
     "coverImageColor": "#e48643",
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/75143-1sdQNTbJxYXs.jpg",
-    "synopsis": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has begun, Takezou will have to seek out new members into the club, or the club will become terminated. Out of nowhere, a new member barges into the near-abandoned club room, demanding to join the club. How will Takezou be able to keep his club alive and deal with this rascal of a new member?",
+    "synopsis": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has begun, Takezou will have to seek out new members into the club, or the c",
     "type": "MANGA",
     "format": "MANGA",
     "status": "RELEASING",
@@ -5172,6 +8105,59 @@
     "chapterIndexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
     "mangadexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
     "mangadexUrl": "https://mangadex.org/title/df9be021-ff37-419e-ba6e-dda3e28eb763",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
+    "detailPage": 3,
+    "searchTerms": [
+      "Kono Oto Tomare!",
+      "この音とまれ！",
+      "Drama",
+      "Music",
+      "Romance",
+      "Amyuu Sakura"
+    ]
+  },
+  {
+    "mangaId": 111149,
+    "anilistId": 111149,
+    "idMal": 121426,
+    "title": "Mission: Yozakura Family",
+    "titleEnglish": "Mission: Yozakura Family",
+    "titleRomaji": "Yozakura-san Chi no Daisakusen",
+    "titleNative": "夜桜さんちの大作戦",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111149-cHYBsPbWIb3L.jpg",
+    "synopsis": "Taiyou Asano is a super shy high school student and the only person he can talk to is his childhood friend, Mutsumi Yozakura. It turns out that Mutsumi is the daughter of the ultimate spy family! Even worse, Mutsumi is being harassed by her overprotective, nig",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Romance"
+    ],
+    "authors": [
+      "Hitsuji Gondaira"
+    ],
+    "artists": [
+      "Hitsuji Gondaira"
+    ],
+    "popularity": 23015,
+    "averageScore": 76,
+    "chapters": 259,
+    "volumes": 29,
+    "year": 2019,
+    "format": "MANGA",
+    "status": "FINISHED",
+    "mangadexId": "ce7cd7b0-e595-4f0d-98e8-447da10d652d",
+    "detailPage": 3,
+    "searchTerms": [
+      "Mission: Yozakura Family",
+      "Yozakura-san Chi no Daisakusen",
+      "夜桜さんちの大作戦",
+      "Action",
+      "Comedy",
+      "Romance",
+      "Hitsuji Gondaira"
+    ],
+    "chapterIndexId": "ce7cd7b0-e595-4f0d-98e8-447da10d652d",
+    "mangadexUrl": "https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },
@@ -5494,232 +8480,6 @@
     ],
     "chapterIndexId": "d7d5f269-6969-4f86-af89-ee57a6180f36",
     "mangadexUrl": "https://mangadex.org/title/d7d5f269-6969-4f86-af89-ee57a6180f36",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
-    "mangaId": 117620,
-    "anilistId": 117620,
-    "idMal": 128365,
-    "title": "The Summer You Were There",
-    "titleRomaji": "Kimi to Tsuzuru Utakata",
-    "titleEnglish": "The Summer You Were There",
-    "titleNative": "君と綴るうたかた",
-    "synonyms": [
-      "KimiTsuzu",
-      "きみつづ",
-      "ร้อยเรียงรักไปกับเธอ",
-      "Notre été éphémère",
-      "Der Sommer, als du da warst",
-      "Un amor de tinta y espuma"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117620-cyvy8nO9GLm8.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117620-cyvy8nO9GLm8.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx117620-cyvy8nO9GLm8.jpg",
-    "coverImageColor": "",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/117620-hUfbQd7m83WC.jpg",
-    "synopsis": "Shizuku is a shy girl who hardly talks to other people. Instead, she loses herself in creative writing, crafting a novel that she never plans to show anyone. But when Kaori–Shizuku’s cute, popular classmate–gets her hands on Shizuku’s manuscript, everything changes. Kaori is a huge fan, and suggests that Shizuku can get inspiration for her writing if the two of them start dating! Can these very different young ladies create their own love story together? (Source: Seven Seas Entertainment)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 2020,
-    "startDate": "2020-05-18",
-    "endDate": "2024-01-18",
-    "chapters": 32,
-    "volumes": 6,
-    "genres": [
-      "Drama",
-      "Psychological",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 76,
-        "name": "Yuri",
-        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
-        "category": "Theme-Romance",
-        "rank": 96,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 95,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 394,
-        "name": "Writing",
-        "description": "Centers around the profession of writing books or novels.",
-        "category": "Theme-Arts",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 89,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 311,
-        "name": "Rehabilitation",
-        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
-        "category": "Theme-Drama",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 85,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
-        "rank": 78,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 483,
-        "name": "LGBTQ+ Themes",
-        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
-        "category": "Theme-Other",
-        "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1657,
-        "name": "Fake Relationship",
-        "description": "When two characters enter a fake relationship that mutually benefits one or both involved.",
-        "category": "Theme-Drama",
-        "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
-        "category": "Theme-Drama",
-        "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1046,
-        "name": "Suicide",
-        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
-        "category": "Theme-Drama",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Yuama"
-    ],
-    "artists": [
-      "Yuama"
-    ],
-    "rating": 8.6,
-    "averageScore": 86,
-    "meanScore": 87,
-    "popularity": 21962,
-    "trending": 1,
-    "favourites": 2071,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/117620",
-    "mal_url": "https://myanimelist.net/manga/128365",
-    "externalLinks": [
-      {
-        "site": "Pixiv Comic",
-        "url": "https://comic.pixiv.net/works/7077"
-      },
-      {
-        "site": "Seven Seas Entertainment",
-        "url": "https://sevenseasentertainment.com/series/the-summer-you-were-there/"
-      },
-      {
-        "site": "Ichijin Plus",
-        "url": "https://ichijin-plus.com/comics/2416566452280"
-      },
-      {
-        "site": "Nico Nico Seiga",
-        "url": "https://seiga.nicovideo.jp/comic/56191"
-      },
-      {
-        "site": "Pocket Magazine",
-        "url": "https://pocket.shonenmagazine.com/episode/3269754496777327537"
-      },
-      {
-        "site": "Comic Days",
-        "url": "https://comic-days.com/episode/3269754496636469072"
-      }
-    ],
-    "chapterIndexId": "6ecc62e4-25ad-4102-b0d8-580a8023d2fb",
-    "mangadexId": "6ecc62e4-25ad-4102-b0d8-580a8023d2fb",
-    "mangadexUrl": "https://mangadex.org/title/6ecc62e4-25ad-4102-b0d8-580a8023d2fb",
     "mangadexMappingSource": "al",
     "mangadexMappingConfidence": 1
   },

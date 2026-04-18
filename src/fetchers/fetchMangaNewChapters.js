@@ -1064,8 +1064,16 @@ function writeCatalogArtifacts(catalogEntries) {
         searchItem.titleNative,
         ...((item.synonyms || []).slice(0, 8)),
       ]);
-      for (const term of shardTerms) {
+      // Add individual words to shards for better discoverability
+      for (const term of Array.from(shardTerms)) {
+        if (!term) continue;
         addToShard(searchShards, getSearchShardKey(term), searchItem);
+        
+        // Index by individual words too
+        const words = String(term).split(/\s+/).filter(w => w.length >= 3);
+        for (const word of words) {
+          addToShard(searchShards, getSearchShardKey(word), searchItem);
+        }
       }
 
       for (const genre of item.genres || []) {
@@ -1079,7 +1087,7 @@ function writeCatalogArtifacts(catalogEntries) {
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_page_${pageNumber}`, pageItems);
   }
 
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_lookup}`, lookup);
+  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_lookup`, lookup);
 
   for (const [genre, items] of genreBuckets.entries()) {
     const sortedItems = sortCatalog(
@@ -1103,6 +1111,7 @@ function writeCatalogArtifacts(catalogEntries) {
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/shards/${shardKey}`, shardItems);
   }
 
+  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/manifest`, searchManifest);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
   writeJsonIfChanged(
     CONFIG.API_PATHS.MANGA_RELEASING,
@@ -1346,7 +1355,7 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
   }
 
   const mergedCatalog = mergeCatalogEntries(catalogEntries, nextDiscoveredEntries);
-  if (created > 0) {
+  if (created > 0 || discoveredEntries.length > 0) {
     writeCatalogArtifacts(mergedCatalog);
   }
 

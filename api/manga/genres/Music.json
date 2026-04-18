@@ -4,16 +4,264 @@
     "anilistId": 30028,
     "idMal": 28,
     "title": "Nana",
-    "titleEnglish": "Nana",
     "titleRomaji": "NANA",
+    "titleEnglish": "Nana",
     "titleNative": "NANA",
+    "synonyms": [
+      "ナナ",
+      "나나"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30028-VJqBC1ar6AxE.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx30028-VJqBC1ar6AxE.png",
+    "coverImageColor": "#781a6b",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30028-42xc4ztbqalW.jpg",
     "synopsis": "Nana Komatsu is a young woman who's endured an unending string of boyfriend problems. Moving to Tokyo, she's hoping to take control of her life and put all those messy misadventures behind her. She's looking for love and she's hoping to find it in the big city",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2000,
+    "startDate": "2000-05-15",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Drama",
       "Music",
       "Romance",
       "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 84,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 397,
+        "name": "Pregnancy",
+        "description": "Features pregnant female characters or discusses the topic of pregnancy.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 78,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 124,
+        "name": "Netorare",
+        "description": "Netorare is what happens when the protagonist gets their partner stolen from them by someone else. It is a sexual fetish designed to cause sexual jealousy by way of having the partner indulge in sexual activity with someone other than the protagonist.",
+        "category": "Sexual Content",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1674,
+        "name": "Rock Music",
+        "description": "Centers on the musical style of rock, not to be applied to anime that use rock in its soundtrack.",
+        "category": "Theme-Arts-Music",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1709,
+        "name": "Cheating",
+        "description": "Features a character with a partner shown being intimate with someone else consensually.",
+        "category": "Sexual Content",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 62,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 56,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 161,
+        "name": "Bar",
+        "description": "Partly or completely set in a bar.",
+        "category": "Setting-Scene",
+        "rank": 33,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Ai Yazawa"
@@ -22,14 +270,60 @@
       "Ai Yazawa",
       "Sabrina Heep"
     ],
-    "popularity": 54744,
+    "rating": 8.8,
     "averageScore": 88,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2000,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 88,
+    "popularity": 54744,
+    "trending": 2,
+    "favourites": 5387,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/30028",
+    "mal_url": "https://myanimelist.net/manga/28",
+    "externalLinks": [
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/nana"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.editions-delcourt.fr/mangas/series/serie-nana"
+      },
+      {
+        "site": "VIZ",
+        "url": "https://www.viz.com/vizmanga/chapters/nana"
+      },
+      {
+        "site": "Manga Mee",
+        "url": "https://manga-mee.jp/detail/50004"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/volume/4856001361007341286"
+      },
+      {
+        "site": "Piccoma",
+        "url": "https://piccoma.com/web/product/4120?etype=episode"
+      },
+      {
+        "site": "Naver Series",
+        "url": "https://series.naver.com/comic/detail.series?productNo=4655207"
+      },
+      {
+        "site": "KakaoPage",
+        "url": "https://page.kakao.com/content/54152112"
+      },
+      {
+        "site": "Rimacomi Plus",
+        "url": "https://rimacomiplus.jp/cookie/series/5c0218016964e?s=0"
+      }
+    ],
+    "chapterIndexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
     "mangadexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
+    "mangadexUrl": "https://mangadex.org/title/7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 1,
     "searchTerms": [
       "Nana",
@@ -40,11 +334,7 @@
       "Slice of Life",
       "Ai Yazawa",
       "Sabrina Heep"
-    ],
-    "chapterIndexId": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-    "mangadexUrl": "https://mangadex.org/title/7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 33731,
@@ -94,14 +384,193 @@
     "anilistId": 149544,
     "idMal": 155861,
     "title": "The Guy She Was Interested In Wasn't a Guy at All",
-    "titleEnglish": "The Guy She Was Interested In Wasn't a Guy at All",
     "titleRomaji": "Ki ni Natteru Hito ga Otoko ja Nakatta",
+    "titleEnglish": "The Guy She Was Interested In Wasn't a Guy at All",
     "titleNative": "気になってる人が男じゃなかった",
+    "synonyms": [
+      "The Person She Fell For Wasn't A Boy",
+      "คนที่เธอปิ๊ง ความจริงไม่ใช่ผู้ชาย",
+      "La persona che mi piace non è un ragazzo",
+      "我在意的對象並不是男人",
+      "Chłopak, który jej się spodobał wcale nie jest chłopakiem",
+      "O cara que estou a fim não é um cara?!",
+      "She Wasn't a Guy",
+      "El chico que me gusta no es un chico",
+      "TGSWIIWAGAA",
+      "KiniOto",
+      "Хлопець, який їй сподобався, — не хлопець",
+      "Người tôi để ý không phải là con trai",
+      "신경 쓰이는 사람이 남자가 아니었다"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149544-466pXfETA8oP.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx149544-466pXfETA8oP.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx149544-466pXfETA8oP.jpg",
+    "coverImageColor": "#aee428",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/149544-LYz4luvHDWxg.jpg",
     "synopsis": "Fashionable and upbeat high schooler Aya falls head over heels for an employee at a local CD shop. He's got an air of mystery about him, great style, and an impeccable music taste. Little does she know—this supposedly male employee is actually her female class",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2022,
+    "startDate": "2022-04-10",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Music",
       "Romance"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1674,
+        "name": "Rock Music",
+        "description": "Centers on the musical style of rock, not to be applied to anime that use rock in its soundtrack.",
+        "category": "Theme-Arts-Music",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 931,
+        "name": "Tomboy",
+        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
+        "category": "Cast-Traits",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 27,
+        "name": "Josei",
+        "description": "Target demographic is adult females.",
+        "category": "Demographic",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 356,
+        "name": "Gyaru",
+        "description": "Prominently features a female character who has a distinct American-emulated fashion style, such as tanned skin, bleached hair, and excessive makeup. Also known as gal.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 410,
+        "name": "Fashion",
+        "description": "Centers around the fashion industry.",
+        "category": "Theme-Arts",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 206,
+        "name": "4-koma",
+        "description": "A manga in the 'yonkoma' format, which consists of four equal-sized panels arranged in a vertical strip.",
+        "category": "Technical",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Sumiko Arai"
@@ -109,14 +578,52 @@
     "artists": [
       "Sumiko Arai"
     ],
-    "popularity": 45650,
+    "rating": 8.2,
     "averageScore": 82,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2022,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 83,
+    "popularity": 45650,
+    "trending": 8,
+    "favourites": 4318,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/149544",
+    "mal_url": "https://myanimelist.net/manga/155861",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/agu_knzm/status/1512998788025110532"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.kadokawa.co.jp/product/322205000709/"
+      },
+      {
+        "site": "Kadocomi",
+        "url": "https://comic-walker.com/contents/detail/KDCW_CK01204024010000_68/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.kadokawa.com.tw/products/9786263784697"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://mangetsu-manga.fr/catalogue/9782382817759-she-wasnt-a-guy-t01/"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/the-guy-she-was-interested-in-wasn-t-a-guy-at-all"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/kinioto_PR"
+      }
+    ],
+    "chapterIndexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
     "mangadexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
+    "mangadexUrl": "https://mangadex.org/title/9d3d3403-1a87-4737-9803-bc3d99db1424",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 2,
     "searchTerms": [
       "The Guy She Was Interested In Wasn't a Guy at All",
@@ -125,11 +632,7 @@
       "Music",
       "Romance",
       "Sumiko Arai"
-    ],
-    "chapterIndexId": "9d3d3403-1a87-4737-9803-bc3d99db1424",
-    "mangadexUrl": "https://mangadex.org/title/9d3d3403-1a87-4737-9803-bc3d99db1424",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 87347,
@@ -322,15 +825,225 @@
     "anilistId": 75143,
     "idMal": 45143,
     "title": "Kono Oto Tomare!",
-    "titleEnglish": "",
     "titleRomaji": "Kono Oto Tomare!",
+    "titleEnglish": "",
     "titleNative": "この音とまれ！",
+    "synonyms": [
+      "Stop this sound!",
+      "ฝากฝันไว้ที่เสียงโคโตะ!",
+      "Sounds of Life",
+      "一弦定音！"
+    ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx75143-qPFON51fyZpt.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx75143-qPFON51fyZpt.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx75143-qPFON51fyZpt.png",
+    "coverImageColor": "#e48643",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/75143-1sdQNTbJxYXs.jpg",
     "synopsis": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has begun, Takezou will have to seek out new members into the club, or the c",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2012,
+    "startDate": "2012-08-04",
+    "endDate": null,
+    "chapters": 0,
+    "volumes": 0,
     "genres": [
       "Drama",
       "Music",
       "Romance"
+    ],
+    "tags": [
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 65,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1564,
+        "name": "Estranged Family",
+        "description": "At least one family member of the MC intentionally distances themselves or a family distances themselves from a person related to the MC.",
+        "category": "Cast-Main Cast",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1277,
+        "name": "Found Family",
+        "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 165,
+        "name": "Teacher",
+        "description": "Protagonist is an educator, usually in a school setting.",
+        "category": "Cast-Traits",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 36,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
+        "category": "Cast-Traits",
+        "rank": 28,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
     "authors": [
       "Amyuu Sakura"
@@ -338,14 +1051,40 @@
     "artists": [
       "Amyuu Sakura"
     ],
-    "popularity": 23019,
+    "rating": 8.8,
     "averageScore": 88,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2012,
-    "format": "MANGA",
-    "status": "RELEASING",
+    "meanScore": 88,
+    "popularity": 23019,
+    "trending": 1,
+    "favourites": 2247,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/75143",
+    "mal_url": "https://myanimelist.net/manga/45143",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "http://jumpsq.shueisha.co.jp/rensai/konoototomare/"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.akata.fr/publications/sounds-life-t1"
+      },
+      {
+        "site": "Shonen Jump Plus",
+        "url": "https://shonenjumpplus.com/episode/13932016480028992984"
+      },
+      {
+        "site": "Manga Mee",
+        "url": "https://manga-mee.jp/detail/1032"
+      }
+    ],
+    "chapterIndexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
     "mangadexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
+    "mangadexUrl": "https://mangadex.org/title/df9be021-ff37-419e-ba6e-dda3e28eb763",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1,
     "detailPage": 3,
     "searchTerms": [
       "Kono Oto Tomare!",
@@ -354,11 +1093,7 @@
       "Music",
       "Romance",
       "Amyuu Sakura"
-    ],
-    "chapterIndexId": "df9be021-ff37-419e-ba6e-dda3e28eb763",
-    "mangadexUrl": "https://mangadex.org/title/df9be021-ff37-419e-ba6e-dda3e28eb763",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    ]
   },
   {
     "mangaId": 67707,
@@ -880,7 +1615,7 @@
     "titleRomaji": "BLUE GIANT SUPREME",
     "titleNative": "BLUE GIANT SUPREME",
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx112524-qsoMZT2ifWl9.jpg",
-    "synopsis": "The direct sequel to Blue Giant, a manga about the evolution of the young saxophonist Dai Miyamoto in the jazz world. Blue Giant Supreme sees the hero arrive in Europe! Freshly arrived in Munich without speaking a word of German and with an approximate English",
+    "synopsis": "The direct sequel to Blue Giant, a manga about the evolution of the young saxophonist Dai Miyamoto in the jazz world. Blue Giant Supreme sees the hero arrive in Europe! Freshly arrived in Munich without speaking a word of German and with an approximate English, he manages to find a roof over his head, a meal and a beer, but struggles to obtain the most important thing: a place where he can have his music heard! (Source: Glénat, translated)",
     "genres": [
       "Drama",
       "Music",
@@ -910,8 +1645,100 @@
     ],
     "chapterIndexId": "a2b2d55a-4ce8-44fe-9232-d07aad412f63",
     "mangadexUrl": "https://mangadex.org/title/a2b2d55a-4ce8-44fe-9232-d07aad412f63",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "synonyms": [
+      "블루 자이언트 슈프림",
+      "ブルージャイアントシュプリ―ム"
+    ],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112524-qsoMZT2ifWl9.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx112524-qsoMZT2ifWl9.jpg",
+    "coverImageColor": "#0daee4",
+    "bannerImage": "",
+    "type": "MANGA",
+    "startDate": "2016-09-10",
+    "endDate": "2020-04-25",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1672,
+        "name": "Jazz Music",
+        "description": "Centers on the musical style of jazz, not to be applied to anime that use jazz in its soundtrack.",
+        "category": "Theme-Arts-Music",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "rating": 8,
+    "meanScore": 84,
+    "trending": 0,
+    "favourites": 85,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/112524",
+    "mal_url": "https://myanimelist.net/manga/100922",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://bluegiant.jp/"
+      }
+    ],
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "a2b2d55a-4ce8-44fe-9232-d07aad412f63",
+    "chapterSourceTitle": "BLUE GIANT SUPREME",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 154014,
@@ -922,7 +1749,7 @@
     "titleRomaji": "IDOL×IDOL STORY!",
     "titleNative": "IDOL×IDOL STORY！",
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx154014-ar8pio4OUxLb.jpg",
-    "synopsis": "Meet Mimi, a college grad working part-time at a convenience store. Once an aspiring idol, she abandoned her dream when her group failed to make it big. Enter Ibuki, a rising star inspired by Mimi’s past. Their unexpected encounters reignite Mimi’s passion for",
+    "synopsis": "Meet Mimi, a college grad working part-time at a convenience store. Once an aspiring idol, she abandoned her dream when her group failed to make it big. Enter Ibuki, a rising star inspired by Mimi’s past. Their unexpected encounters reignite Mimi’s passion for the spotlight. Together, they decide to audition for a high-stakes idol competition show. Can they achieve their dreams and forge an unbreakable bond, or will the intense rivalry tear them apart? (Source: Seven Seas Entertainment)",
     "genres": [
       "Drama",
       "Music"
@@ -933,7 +1760,7 @@
     "artists": [
       "Shoutarou Tokunou"
     ],
-    "popularity": 2763,
+    "popularity": 2756,
     "averageScore": 73,
     "chapters": 0,
     "volumes": 0,
@@ -952,8 +1779,268 @@
     ],
     "chapterIndexId": "30b89356-952c-4a72-9d8c-cf44147e881a",
     "mangadexUrl": "https://mangadex.org/title/30b89356-952c-4a72-9d8c-cf44147e881a",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "synonyms": [
+      "アイドル×アイドル　ストーリー！",
+      "アイスト",
+      "AiSuto"
+    ],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx154014-ar8pio4OUxLb.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx154014-ar8pio4OUxLb.jpg",
+    "coverImageColor": "#e4d650",
+    "bannerImage": "",
+    "type": "MANGA",
+    "startDate": "2022-08-25",
+    "endDate": null,
+    "tags": [
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 305,
+        "name": "Ships",
+        "description": "Prominently features the use of sea-based transportation vessels.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 209,
+        "name": "Dancing",
+        "description": "Centers around the art of dance.",
+        "category": "Theme-Arts-Music",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 101,
+        "name": "Battle Royale",
+        "description": "Centers around a fierce group competition, often violent and with only one winner.",
+        "category": "Theme-Action",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "rating": 7.3,
+    "meanScore": 77,
+    "trending": 0,
+    "favourites": 67,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/154014",
+    "mal_url": "https://myanimelist.net/manga/150883",
+    "externalLinks": [
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/idol2story_info"
+      },
+      {
+        "site": "Comic Fuz",
+        "url": "https://comic-fuz.com/manga/3140"
+      },
+      {
+        "site": "Seven Seas Entertainment",
+        "url": "https://sevenseasentertainment.com/series/idol-x-idol-story/"
+      }
+    ],
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "30b89356-952c-4a72-9d8c-cf44147e881a",
+    "chapterSourceTitle": "IDOL×IDOL STORY!",
+    "chapterSourceConfidence": 1
+  },
+  {
+    "mangaId": 178230,
+    "anilistId": 178230,
+    "idMal": 172287,
+    "title": "Kimi ga Hoeru Tame no Uta wo,",
+    "titleRomaji": "Kimi ga Hoeru Tame no Uta wo,",
+    "titleEnglish": "",
+    "titleNative": "キミが吠えるための歌を、",
+    "synonyms": [
+      "Howling Song for Husky Girl"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b178230-gTULb9wRDQq9.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b178230-gTULb9wRDQq9.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/b178230-gTULb9wRDQq9.jpg",
+    "coverImageColor": "#e45d93",
+    "bannerImage": "",
+    "synopsis": "A girl who is troubled by her voice that doesn't match her appearance, and a girl who feels she has reached her limits in songwriting. The story of two young musicians. (Source: Ichijinsha, translated)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2024,
+    "startDate": "2024-07-18",
+    "endDate": null,
+    "chapters": 17,
+    "volumes": 0,
+    "genres": [
+      "Music",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Kashikaze"
+    ],
+    "artists": [
+      "Kashikaze"
+    ],
+    "rating": 7.2,
+    "averageScore": 72,
+    "meanScore": 78,
+    "popularity": 2389,
+    "trending": 0,
+    "favourites": 53,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/178230",
+    "mal_url": "https://myanimelist.net/manga/172287",
+    "externalLinks": [],
+    "mangadexId": "7e905fc7-d534-479e-9880-f89effbf30e2",
+    "mangadexUrl": "https://mangadex.org/title/7e905fc7-d534-479e-9880-f89effbf30e2",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "7e905fc7-d534-479e-9880-f89effbf30e2",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "7e905fc7-d534-479e-9880-f89effbf30e2",
+    "chapterSourceTitle": "Kimi ga Hoeru Tame no Uta wo,",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 185904,
@@ -964,7 +2051,7 @@
     "titleRomaji": "36: Sanjuu Roku",
     "titleNative": "３６－サンジュウロク－",
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx185904-FxLBeTnJoJi6.jpg",
-    "synopsis": "Anzu, a high school girl, lives in a household where her mother has created a \"perfectly controlled environment.\" Defying her mother’s wishes isn’t even an option. She has no smartphone, no allowance, and her only small escape is sneaking off to the listening ",
+    "synopsis": "Anzu, a high school girl, lives in a household where her mother has created a \"perfectly controlled environment.\" Defying her mother’s wishes isn’t even an option. She has no smartphone, no allowance, and her only small escape is sneaking off to the listening booths at a CD shop, hidden from her mother’s watchful gaze. One fateful night, at the station’s roundabout, she encounters someone unforgettable— A “dangerous guy” with a devilish face but an angel’s touch on the guitar. Feel the chills as you dive into this deeply moving story by a 22-year-old rising star.",
     "genres": [
       "Drama",
       "Music"
@@ -990,7 +2077,70 @@
       "Drama",
       "Music",
       "Soushi Nishiuma"
-    ]
+    ],
+    "synonyms": [],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx185904-FxLBeTnJoJi6.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx185904-FxLBeTnJoJi6.jpg",
+    "coverImageColor": "#e46b5d",
+    "bannerImage": "",
+    "type": "MANGA",
+    "startDate": "2024-06-27",
+    "endDate": null,
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 110,
+        "name": "Band",
+        "description": "Main cast is a group of musicians.",
+        "category": "Theme-Arts-Music",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "rating": 0,
+    "meanScore": 77,
+    "trending": 0,
+    "favourites": 6,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/185904",
+    "mal_url": "https://myanimelist.net/manga/171512",
+    "externalLinks": [
+      {
+        "site": "Big Comics",
+        "url": "https://bigcomics.jp/series/caf29fced5a6d"
+      }
+    ],
+    "mangadexUrl": "https://mangadex.org/title/67ffb21f-1351-4caf-be96-924c4df57341",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "67ffb21f-1351-4caf-be96-924c4df57341",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "67ffb21f-1351-4caf-be96-924c4df57341",
+    "chapterSourceTitle": "36",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 173509,
@@ -1001,7 +2151,7 @@
     "titleRomaji": "Love Live! flowers*: Hasu no Sora Jogakuin School Idol Club",
     "titleNative": "ラブライブ！flowers* -蓮ノ空女学院スクールアイドルクラブ-",
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx173509-8JF0ErnPm01L.jpg",
-    "synopsis": "The first \"Love Live!\" series comic adaptation by Shueisha! Hasunosora Girls' High School, located in a remote area of Kanazawa City, Ishikawa Prefecture, beside a lake with lotus flowers in bloom. At this high school, which was founded over 100 years ago, the",
+    "synopsis": "The first \"Love Live!\" series comic adaptation by Shueisha! Hasunosora Girls' High School, located in a remote area of Kanazawa City, Ishikawa Prefecture, beside a lake with lotus flowers in bloom. At this high school, which was founded over 100 years ago, the traditions handed down from long ago still live. This is where an energetic girl called Kaho Hinoshita enrolls with the goal of \"blossoming\". After being frustrated at first for not getting what she is looking for, she will discover something that will change her vision of Hasunosora: school idols.",
     "genres": [
       "Music",
       "Slice of Life"
@@ -1033,7 +2183,164 @@
       "Sakurako Kimino",
       "Tsumumi",
       "Ten Tanaka"
-    ]
+    ],
+    "synonyms": [
+      "Love Live! flowers* - Hasunosora Girls' High School Idol Club"
+    ],
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx173509-8JF0ErnPm01L.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx173509-8JF0ErnPm01L.jpg",
+    "coverImageColor": "#5dc9f1",
+    "bannerImage": "",
+    "type": "MANGA",
+    "startDate": "2023-11-17",
+    "endDate": null,
+    "tags": [
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 265,
+        "name": "Musical Theater",
+        "description": "Features a performance that combines songs, spoken dialogue, acting, and dance.",
+        "category": "Theme-Arts-Music",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 209,
+        "name": "Dancing",
+        "description": "Centers around the art of dance.",
+        "category": "Theme-Arts-Music",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 92,
+        "name": "Cute Girls Doing Cute Things",
+        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
+        "category": "Theme-Slice of Life",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "rating": 0,
+    "meanScore": 73,
+    "trending": 0,
+    "favourites": 10,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/173509",
+    "mal_url": "https://myanimelist.net/manga/164593",
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://ultra.shueisha.co.jp/manga/manga-6555/"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/hasunosora_SIC"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://www.lovelive-anime.jp/hasunosora/"
+      },
+      {
+        "site": "YouTube",
+        "url": "https://www.youtube.com/@lovelive_hasu"
+      }
+    ],
+    "mangadexUrl": "https://mangadex.org/title/6df81a90-22a1-4f01-b33d-e718d4e4430a",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "6df81a90-22a1-4f01-b33d-e718d4e4430a",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "6df81a90-22a1-4f01-b33d-e718d4e4430a",
+    "chapterSourceTitle": "Love Live! flowers* - Hasunosora Girls' High School Idol Club -",
+    "chapterSourceConfidence": 1
   },
   {
     "mangaId": 91308,
@@ -1070,45 +2377,69 @@
       "Drama",
       "Music",
       "Yuriko Takagami"
-    ]
-  },
-  {
-    "mangaId": 204552,
-    "anilistId": 204552,
-    "idMal": 192609,
-    "title": "Kiss toka Koi toka, NG nano ni",
-    "titleEnglish": "",
-    "titleRomaji": "Kiss toka Koi toka, NG nano ni",
-    "titleNative": "キスとか恋とか、NGなのに",
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx204552-7syFR4Zf0ptY.jpg",
-    "synopsis": "Rio and Yakumo are members of the idol group KEy, formed through an audition program. One day, while wishing to become closer to the cool Yakumo, an unexpected kiss completely changes their relationship! It turns out Yakumo was actually a super-devoted fan, ab",
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance"
     ],
-    "authors": [
-      "Nen Nenko"
+    "synonyms": [
+      "La Lune, le Monde et une Etoile",
+      "Tsuki to Sekai to Star",
+      "Tsuki to Sekai to Etoile",
+      "Moon, World and Stars"
     ],
-    "artists": [
-      "Nen Nenko"
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx91308-y6gP9iN9w7FB.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx91308-y6gP9iN9w7FB.jpg",
+    "coverImageColor": "#f15d86",
+    "bannerImage": "",
+    "type": "MANGA",
+    "startDate": "2012-09-18",
+    "endDate": "2015-01-17",
+    "tags": [
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
     ],
-    "popularity": 28,
-    "averageScore": 0,
-    "chapters": 11,
-    "volumes": 2,
-    "year": 2023,
-    "format": "MANGA",
-    "status": "FINISHED",
-    "mangadexId": "f1be49d7-3779-4898-9bfb-0d2405588362",
-    "detailPage": 10,
-    "searchTerms": [
-      "Kiss toka Koi toka, NG nano ni",
-      "キスとか恋とか、NGなのに",
-      "Drama",
-      "Music",
-      "Romance",
-      "Nen Nenko"
-    ]
+    "rating": 0,
+    "meanScore": 50,
+    "trending": 0,
+    "favourites": 0,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/91308",
+    "mal_url": "https://myanimelist.net/manga/71011",
+    "externalLinks": [],
+    "mangadexUrl": "https://mangadex.org/title/931fc89a-b427-4121-8e51-52fc428af193",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "931fc89a-b427-4121-8e51-52fc428af193",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "931fc89a-b427-4121-8e51-52fc428af193",
+    "chapterSourceTitle": "Tsuki to Sekai to Étoile",
+    "chapterSourceConfidence": 1
   }
 ]
