@@ -2969,5 +2969,27 @@
     "lastSuccessAt": "2026-04-18T07:00:28.688Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "351bb840-1819-469e-be70-abe38de6da5e": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "2479977d-1914-4df1-b75a-f5bf133ee991",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-18T07:17:25.169Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "42b7188b-8e95-4b7e-9177-5eb62938ffb4": {
+    "status": "discovered",
+    "title": "Made in Abyss",
+    "mangaId": 86551,
+    "anilistId": 86551,
+    "chapterIndexId": "42b7188b-8e95-4b7e-9177-5eb62938ffb4",
+    "lastChapterId": "9bb3d669-dacc-4fc2-8839-191364e45c8f",
+    "lastChapter": "8",
+    "lastAttemptAt": "2026-04-18T07:17:25.772Z",
+    "lastSuccessAt": "2026-04-18T07:17:25.772Z",
+    "reason": null,
+    "matcherVersion": 2
   }
 }
