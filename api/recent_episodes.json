@@ -2551,7 +2551,7 @@
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
         "category": "Theme-Romance",
-        "rank": 62,
+        "rank": 65,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2574,6 +2574,16 @@
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2614,16 +2624,6 @@
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 20,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
         "isAdult": false
       }
     ],
@@ -11047,9 +11047,9 @@
   {
     "animeId": 59176,
     "anilistId": 178749,
-    "title": "Mahou no Shimai LuluttoLilly",
+    "title": "Magical Sisters LuluttoLilly",
     "titleRomaji": "Mahou no Shimai LuluttoLilly",
-    "titleEnglish": "",
+    "titleEnglish": "Magical Sisters LuluttoLilly",
     "titleNative": "魔法の姉妹ルルットリリィ",
     "synonyms": [
       "Magical Sisters LuluttoLilly",
