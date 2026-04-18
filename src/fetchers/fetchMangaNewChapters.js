@@ -1157,6 +1157,11 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       const existingEntry = catalogMaps.byMangadexId.get(recentKey);
       alreadyKnown += 1;
       
+      // Backfill chapterIndexId for legacy entries
+      if (!existingEntry.chapterIndexId) {
+        existingEntry.chapterIndexId = buildChapterIndexId(existingEntry);
+      }
+
       const manifestItem =
         effectiveManifestMap.get(String(existingEntry.chapterIndexId || '')) ||
         effectiveManifestMap.get(String(existingEntry.mangadexId || '')) ||
@@ -1368,6 +1373,14 @@ function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap, disc
       continue;
     }
 
+    // Ensure chapterIndexId exists — some legacy catalog entries lack it
+    if (!catalogEntry.chapterIndexId) {
+      catalogEntry.chapterIndexId = buildChapterIndexId(catalogEntry);
+    }
+    if (!catalogEntry.chapterIndexId) {
+      continue; // Skip entries that can't produce a valid chapterIndexId
+    }
+
     const manifestItem =
       effectiveManifestMap.get(String(catalogEntry.chapterIndexId || '')) ||
       effectiveManifestMap.get(String(catalogEntry.mangadexId || '')) ||
@@ -1514,26 +1527,7 @@ async function fetchMangaNewChapters() {
       return;
     }
 
-    const needsQuickSync = finalItems.filter(item => {
-      const coverage = item.chapterCoverageCount || 0;
-      const latest = Number(item.latestChapterNumber) || 0;
-      // We also trigger quick sync if chapterCoverageCount is 0 (it means the file didn't exist at all or was empty)
-      return latest > coverage || coverage === 0;
-    });
 
-    if (needsQuickSync.length > 0) {
-      console.log(`\nTriggering quick chapter sync for ${needsQuickSync.length} out-of-sync or newly discovered manga...`);
-      try {
-        const fetchMangaChapters = require('./fetchMangaChapters');
-        await fetchMangaChapters({
-          forceEntries: needsQuickSync,
-          forceIds: needsQuickSync.map(i => i.mangadexId).filter(Boolean)
-        });
-        console.log(`Quick sync complete.`);
-      } catch (err) {
-        console.error('Quick sync failed:', err);
-      }
-    }
 
     writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
     console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
