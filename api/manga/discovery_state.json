@@ -874,10 +874,10 @@
   },
   "2fe5571f-ecc9-4a26-9a50-cfa09757a735": {
     "status": "failed",
-    "title": "You're Not Allowed to Strip Them Naked",
-    "lastChapterId": "9d264364-d7d4-4d4a-a5f5-b7d5ed07c681",
-    "lastChapter": "115",
-    "lastAttemptAt": "2026-04-18T15:46:39.226Z",
+    "title": "Can't Show This",
+    "lastChapterId": "f9091f3b-b3d4-4633-8a94-95054b826870",
+    "lastChapter": "116",
+    "lastAttemptAt": "2026-04-18T18:17:26.658Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1632,10 +1632,10 @@
   },
   "86209d1b-8d66-44b1-86e5-912e07f040fe": {
     "status": "failed",
-    "title": "A Human!",
-    "lastChapterId": "298423b8-a11e-4500-95da-9c44bd4a987d",
-    "lastChapter": "12.3",
-    "lastAttemptAt": "2026-04-18T17:51:41.601Z",
+    "title": "A Great Mission Across The Desert",
+    "lastChapterId": "606968b4-9537-44cf-a3c7-f054f5a98b45",
+    "lastChapter": "10.5",
+    "lastAttemptAt": "2026-04-18T18:17:29.775Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1939,11 +1939,11 @@
   },
   "ab3b2503-03bc-4326-abf4-c4ccac0240a1": {
     "status": "failed",
-    "title": "",
-    "lastChapterId": "54ed1880-c239-49b0-a49d-d23faa9654e7",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-18T15:48:34.331Z",
-    "reason": "Blocked: Adult (+18)",
+    "title": "…following an isekai transfer",
+    "lastChapterId": "9baceac3-95a2-4f13-84c5-053bcf863bbd",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-18T18:17:22.284Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "540f5728-6521-4a93-8eb1-059c1a6585e1": {
@@ -3389,6 +3389,45 @@
     "lastChapter": "18",
     "lastAttemptAt": "2026-04-18T18:00:23.711Z",
     "lastSuccessAt": "2026-04-18T18:00:23.711Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "8a5d11d6-cafd-41b1-adab-06e0bef692c6": {
+    "status": "discovered",
+    "title": "Golden Man",
+    "mangaId": 181407,
+    "anilistId": 181407,
+    "chapterIndexId": "8a5d11d6-cafd-41b1-adab-06e0bef692c6",
+    "lastChapterId": "4c8580ba-4a4e-440a-8c1d-62d1681a081e",
+    "lastChapter": "67",
+    "lastAttemptAt": "2026-04-18T18:17:20.744Z",
+    "lastSuccessAt": "2026-04-18T18:17:20.744Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "e4121f7e-41c1-448f-98df-a019d764c17a": {
+    "status": "discovered",
+    "title": "Dara-san of Reiwa",
+    "mangaId": 160722,
+    "anilistId": 160722,
+    "chapterIndexId": "e4121f7e-41c1-448f-98df-a019d764c17a",
+    "lastChapterId": "74ba7fbd-1b98-459e-a2b5-0fa72ecffbfd",
+    "lastChapter": "40",
+    "lastAttemptAt": "2026-04-18T18:17:21.781Z",
+    "lastSuccessAt": "2026-04-18T18:17:21.781Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "050e6ba9-df0f-4acb-90d9-f375710c4183": {
+    "status": "discovered",
+    "title": "Project Yuriforming!",
+    "mangaId": 181677,
+    "anilistId": 181677,
+    "chapterIndexId": "050e6ba9-df0f-4acb-90d9-f375710c4183",
+    "lastChapterId": "609c8ddc-26a7-406a-8e4c-097175b5440f",
+    "lastChapter": "23",
+    "lastAttemptAt": "2026-04-18T18:17:23.187Z",
+    "lastSuccessAt": "2026-04-18T18:17:23.187Z",
     "reason": null,
     "matcherVersion": 2
   }
