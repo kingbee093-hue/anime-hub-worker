@@ -704,9 +704,9 @@
   "d0cb80c6-e982-4283-9c22-3954bf74c3b0": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "25bc525b-0662-4447-9465-0e4959e1e43f",
-    "lastChapter": "9",
-    "lastAttemptAt": "2026-04-18T02:34:31.477Z",
+    "lastChapterId": "304a57c8-c352-45b0-b49e-b1f7c4eb7015",
+    "lastChapter": "10",
+    "lastAttemptAt": "2026-04-18T02:51:30.171Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -1707,7 +1707,7 @@
     "title": "A delinquent who becomes attached to a girl who is easily swayed",
     "lastChapterId": "e45dc2f0-6616-4135-b51c-ff4d98d2d115",
     "lastChapter": "2",
-    "lastAttemptAt": "2026-04-17T14:34:28.944Z",
+    "lastAttemptAt": "2026-04-18T02:51:27.307Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -2203,7 +2203,7 @@
     "title": "As Much As You LIke",
     "lastChapterId": "df412543-64b5-4028-acd6-c077578802b3",
     "lastChapter": "55",
-    "lastAttemptAt": "2026-04-17T14:18:58.605Z",
+    "lastAttemptAt": "2026-04-18T02:51:30.273Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -2212,8 +2212,8 @@
     "title": "…following an isekai transfer",
     "lastChapterId": "9baceac3-95a2-4f13-84c5-053bcf863bbd",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-17T14:34:25.461Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-18T02:51:30.678Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "27f8edcf-20b9-435a-9c4b-01049c026cfe": {
@@ -2806,6 +2806,32 @@
     "lastChapter": "6.1",
     "lastAttemptAt": "2026-04-18T01:37:10.412Z",
     "lastSuccessAt": "2026-04-18T01:37:10.412Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "a2f26a6c-2ebc-4aec-a5ef-e9968c9f85fb": {
+    "status": "discovered",
+    "title": "Douyara Ore wa Imadoki Gal na Toshiue Osananajimi kara Gekiomo Kanjou wo Mukerareteirurashii",
+    "mangaId": 184834,
+    "anilistId": 184834,
+    "chapterIndexId": "a2f26a6c-2ebc-4aec-a5ef-e9968c9f85fb",
+    "lastChapterId": "7c095eab-e245-45d7-a6ca-5f689ccc92b2",
+    "lastChapter": "12",
+    "lastAttemptAt": "2026-04-18T02:51:23.141Z",
+    "lastSuccessAt": "2026-04-18T02:51:23.141Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "cf7fb0ac-7733-490a-b2bd-26285c129737": {
+    "status": "discovered",
+    "title": "Itsuka, Nemuri ni Tsuku Hi",
+    "mangaId": 129065,
+    "anilistId": 129065,
+    "chapterIndexId": "cf7fb0ac-7733-490a-b2bd-26285c129737",
+    "lastChapterId": "0fc17a7d-a711-4555-af79-6e4a29f2e290",
+    "lastChapter": "6.1",
+    "lastAttemptAt": "2026-04-18T02:51:24.098Z",
+    "lastSuccessAt": "2026-04-18T02:51:24.098Z",
     "reason": null,
     "matcherVersion": 2
   }
