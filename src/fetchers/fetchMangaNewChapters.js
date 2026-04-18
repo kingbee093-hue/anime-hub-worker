@@ -1170,53 +1170,67 @@ async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntri
       const recentCh = parseIntegerChapter(recentItem.chapter) ?? parseFloat(recentItem.chapter);
       const knownCh = parseFloat(manifestItem?.latestKnownChapterNumber || '0');
       
-      if (!isNaN(recentCh) && !isNaN(knownCh) && recentCh > knownCh) {
+      if (!isNaN(recentCh) && !isNaN(knownCh) && recentCh >= knownCh) {
         try {
-          const pageUrls = await fetchChapterPages(recentItem.chapterId);
-          if (Array.isArray(pageUrls) && pageUrls.length > 0) {
-            const idxPath = path.join(__dirname, '../../api', CONFIG.API_PATHS.MANGA_CHAPTERS, `${existingEntry.chapterIndexId}.json`);
-            let idxData = null;
-            if (fs.existsSync(idxPath)) {
-              idxData = JSON.parse(fs.readFileSync(idxPath, 'utf8'));
+          const idxPath = path.join(__dirname, '../../api', CONFIG.API_PATHS.MANGA_CHAPTERS, `${existingEntry.chapterIndexId}.json`);
+          let idxData = null;
+          if (fs.existsSync(idxPath)) {
+            idxData = JSON.parse(fs.readFileSync(idxPath, 'utf8'));
+          }
+          
+          if (idxData && idxData.languages) {
+            const lang = recentItem.language;
+            if (!idxData.languages[lang]) idxData.languages[lang] = [];
+            
+            // 1. Check if the exact chapter ID exists
+            const existsId = idxData.languages[lang].find((c) => String(c.id) === String(recentItem.chapterId));
+            
+            // 2. Check if the explicit chapter number already exists 
+            const existingIndex = idxData.languages[lang].findIndex(c => {
+                const storedChNum = parseFloat(c.chapter);
+                return !isNaN(recentCh) && !isNaN(storedChNum) && recentCh === storedChNum;
+            });
+
+            if (existsId || existingIndex !== -1) {
+              // The worker was supposed to not download the chapter again if it exists.
+              report.skippedAlreadyKnown.push(summarizeRecentItem(recentItem, { reason: 'already_in_catalog_chapter_exists' }));
+              continue;
             }
-            if (idxData && idxData.languages) {
-              const lang = recentItem.language;
-              if (!idxData.languages[lang]) idxData.languages[lang] = [];
-              const exists = idxData.languages[lang].find((c) => String(c.id) === String(recentItem.chapterId));
-              if (!exists) {
-                const chapterPayload = normalizeStoredChapter({
-                  id: recentItem.chapterId,
-                  title: recentItem.title,
-                  chapter: recentItem.chapter,
-                  volume: '',
-                  language: recentItem.language,
-                  pages: pageUrls.length,
-                  pageUrls,
-                  imageHeaders: {},
-                  publishedAt: recentItem.publishedAt,
-                  externalUrl: null,
-                  scanlationGroup: 'MangaDex',
-                  sourceType: 'reader',
-                  provider: 'mangadex',
-                  providerChapterId: recentItem.chapterId,
-                });
-                idxData.languages[lang].unshift(chapterPayload);
-                idxData.counts[lang] = idxData.languages[lang].length;
-                if (!idxData.availableLanguages.includes(lang)) {
-                  idxData.availableLanguages.push(lang);
-                }
-                idxData.updatedAt = new Date().toISOString();
-                fs.writeFileSync(idxPath, JSON.stringify(idxData, null, 2));
-                
-                if (manifestItem) {
-                  manifestItem.latestKnownChapterNumber = recentItem.chapter;
-                  manifestItem.latestKnownChapterNumberInt = Math.floor(recentCh);
-                  manifestItem.counts = idxData.counts;
-                  manifestItem.availableLanguages = idxData.availableLanguages;
-                }
-                quickSyncCount += 1;
-                console.log(`[Quick Sync] appended new chapter ${recentItem.chapter} for already known manga: "${existingEntry.title}"`);
+
+            const pageUrls = await fetchChapterPages(recentItem.chapterId);
+            if (Array.isArray(pageUrls) && pageUrls.length > 0) {
+              const chapterPayload = normalizeStoredChapter({
+                id: recentItem.chapterId,
+                title: recentItem.title,
+                chapter: recentItem.chapter,
+                volume: '',
+                language: recentItem.language,
+                pages: pageUrls.length,
+                pageUrls,
+                imageHeaders: {},
+                publishedAt: recentItem.publishedAt,
+                externalUrl: null,
+                scanlationGroup: 'MangaDex',
+                sourceType: 'reader',
+                provider: 'mangadex',
+                providerChapterId: recentItem.chapterId,
+              });
+              idxData.languages[lang].unshift(chapterPayload);
+              idxData.counts[lang] = idxData.languages[lang].length;
+              if (!idxData.availableLanguages.includes(lang)) {
+                idxData.availableLanguages.push(lang);
               }
+              idxData.updatedAt = new Date().toISOString();
+              fs.writeFileSync(idxPath, JSON.stringify(idxData, null, 2));
+              
+              if (manifestItem) {
+                manifestItem.latestKnownChapterNumber = recentItem.chapter;
+                manifestItem.latestKnownChapterNumberInt = Math.floor(recentCh);
+                manifestItem.counts = idxData.counts;
+                manifestItem.availableLanguages = idxData.availableLanguages;
+              }
+              quickSyncCount += 1;
+              console.log(`[Quick Sync] appended new chapter ${recentItem.chapter} for already known manga: "${existingEntry.title}"`);
             }
           }
         } catch (e) {
