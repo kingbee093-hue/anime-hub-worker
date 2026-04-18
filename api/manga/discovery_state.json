@@ -2625,7 +2625,7 @@
     "title": "",
     "lastChapterId": "51a1dd90-e44b-408d-bbda-332ddc10f2a8",
     "lastChapter": "26",
-    "lastAttemptAt": "2026-04-17T21:53:36.359Z",
+    "lastAttemptAt": "2026-04-18T10:00:30.214Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3125,6 +3125,15 @@
     "lastAttemptAt": "2026-04-18T09:51:23.699Z",
     "lastSuccessAt": "2026-04-18T09:51:23.699Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "bbc14d56-b0c4-457d-ae6c-a795b818f833": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "530825ad-c066-413c-84ce-86cd01c74c12",
+    "lastChapter": "12",
+    "lastAttemptAt": "2026-04-18T10:00:33.228Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
