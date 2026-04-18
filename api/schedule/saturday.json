@@ -416,10 +416,10 @@
     "studiosNames": [
       "Shin-Ei Animation"
     ],
-    "rating": 7.7,
-    "averageScore": 77,
+    "rating": 7.6,
+    "averageScore": 76,
     "meanScore": 77,
-    "popularity": 7118,
+    "popularity": 7122,
     "trending": 0,
     "favourites": 355,
     "source": "MANGA",
@@ -1101,7 +1101,7 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 82,
-    "popularity": 74752,
+    "popularity": 74789,
     "trending": 7,
     "favourites": 5611,
     "source": "MANGA",
@@ -1713,16 +1713,6 @@
         "isAdult": false
       },
       {
-        "id": 250,
-        "name": "Rural",
-        "description": "Partly or completely set in the countryside.",
-        "category": "Setting-Scene",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 56,
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
@@ -1738,6 +1728,16 @@
         "description": "Prominently features supernatural creatures from Japanese folklore.",
         "category": "Theme-Fantasy",
         "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 250,
+        "name": "Rural",
+        "description": "Partly or completely set in the countryside.",
+        "category": "Setting-Scene",
+        "rank": 72,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2055,7 +2055,7 @@
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
-    "episodes": 0,
+    "episodes": 26,
     "duration": 25,
     "genres": [
       "Drama",
