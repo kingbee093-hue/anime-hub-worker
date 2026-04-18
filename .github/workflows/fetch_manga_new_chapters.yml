@@ -41,11 +41,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/manga/new_chapters.json api/manga/discovery_state.json api/manga/discovery_report.json api/manga/request_health.json
+          git add api/manga/new_chapters.json api/manga/discovery_state.json api/manga/discovery_report.json api/manga/request_health.json api/manga/chapters/ api/manga/catalog/ api/manga/discovered_entries.json api/manga/manifest
           if git diff --staged --quiet; then
             echo "No API changes to commit."
           else
             git commit -m "api: independent manga new chapters refresh [skip ci]"
+            git stash # Stash any leftover untracked/unstaged files temporarily so rebase works
             git pull --rebase origin main || git pull origin main
             git push origin HEAD:main
           fi
