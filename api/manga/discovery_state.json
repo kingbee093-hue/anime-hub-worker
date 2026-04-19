@@ -1024,9 +1024,9 @@
   "de0c8b12-2721-4a7c-a43e-82e452d62b9c": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "1ecf3e82-f6f0-4b0e-8d31-9d6013f5669a",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-19T08:17:21.512Z",
+    "lastChapterId": "ba53883d-4ae5-40d9-93d7-400cbcbe065c",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-19T08:34:29.404Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -3532,17 +3532,21 @@
     "title": "The Blade of Revenge!",
     "lastChapterId": "55e65abe-3e3e-4b3b-9cad-8b00e7bbcac5",
     "lastChapter": "11",
-    "lastAttemptAt": "2026-04-18T20:17:21.684Z",
+    "lastAttemptAt": "2026-04-19T08:34:26.167Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "ff78afd7-6298-4ab0-8d45-9bd2660fa66f": {
-    "status": "failed",
-    "title": "(200-208)",
+    "status": "discovered",
+    "title": "Cinderella Girls Gekijou",
+    "mangaId": 102184,
+    "anilistId": 102184,
+    "chapterIndexId": "ff78afd7-6298-4ab0-8d45-9bd2660fa66f",
     "lastChapterId": "081ffb05-ad5d-49a4-9e42-8e2225a7c287",
     "lastChapter": "47",
-    "lastAttemptAt": "2026-04-18T20:17:24.547Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-19T08:34:24.457Z",
+    "lastSuccessAt": "2026-04-19T08:34:24.457Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "0dce4eb6-8dae-4442-bfac-cd0a46add712": {
@@ -3840,6 +3844,19 @@
     "lastChapter": "2",
     "lastAttemptAt": "2026-04-19T07:17:24.244Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "0fa5d834-fdab-4ac4-b3c9-821f1580f991": {
+    "status": "discovered",
+    "title": "Kaisha To Shiseikatsu",
+    "mangaId": 164770,
+    "anilistId": 164770,
+    "chapterIndexId": "0fa5d834-fdab-4ac4-b3c9-821f1580f991",
+    "lastChapterId": "e2eefa73-2d97-4050-b94a-225d2b7a2af2",
+    "lastChapter": "198",
+    "lastAttemptAt": "2026-04-19T08:34:25.510Z",
+    "lastSuccessAt": "2026-04-19T08:34:25.510Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
