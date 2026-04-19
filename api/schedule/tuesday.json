@@ -328,7 +328,7 @@
     "meanScore": 72,
     "popularity": 11752,
     "trending": 0,
-    "favourites": 151,
+    "favourites": 152,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -429,16 +429,6 @@
         "isAdult": false
       },
       {
-        "id": 75,
-        "name": "Boys' Love",
-        "description": "Prominently features romance between two males, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 88,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 294,
         "name": "Bisexual",
         "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
@@ -446,6 +436,16 @@
         "rank": 87,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1456,
+        "name": "Femboy",
+        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
+        "category": "Cast-Traits",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -469,11 +469,11 @@
         "isAdult": false
       },
       {
-        "id": 1456,
-        "name": "Femboy",
-        "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
-        "category": "Cast-Traits",
-        "rank": 84,
+        "id": 75,
+        "name": "Boys' Love",
+        "description": "Prominently features romance between two males, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 76,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -559,6 +559,16 @@
         "isAdult": false
       },
       {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 76,
         "name": "Yuri",
         "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
@@ -576,16 +586,6 @@
         "rank": 42,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
-        "rank": 30,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       }
     ],
@@ -606,7 +606,7 @@
     "meanScore": 76,
     "popularity": 33188,
     "trending": 15,
-    "favourites": 346,
+    "favourites": 355,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -769,7 +769,7 @@
     "meanScore": 72,
     "popularity": 20645,
     "trending": 14,
-    "favourites": 248,
+    "favourites": 256,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -924,7 +924,7 @@
     "meanScore": 75,
     "popularity": 29665,
     "trending": 18,
-    "favourites": 452,
+    "favourites": 463,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1108,7 +1108,7 @@
     "meanScore": 67,
     "popularity": 8274,
     "trending": 3,
-    "favourites": 74,
+    "favourites": 73,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1278,7 +1278,7 @@
     "meanScore": 60,
     "popularity": 6009,
     "trending": 3,
-    "favourites": 40,
+    "favourites": 39,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1421,7 +1421,7 @@
     "meanScore": 64,
     "popularity": 5677,
     "trending": 1,
-    "favourites": 54,
+    "favourites": 56,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1576,7 +1576,7 @@
     "meanScore": 61,
     "popularity": 7904,
     "trending": 2,
-    "favourites": 91,
+    "favourites": 94,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,

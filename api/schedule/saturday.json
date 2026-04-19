@@ -73,8 +73,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=rV-fcFL5vtU"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776471960
+    "nextEpisode": 4,
+    "nextAiringAt": 1777076760
   },
   {
     "animeId": 62495,
@@ -147,8 +147,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_gP6XPIBgmo"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776472200
+    "nextEpisode": 4,
+    "nextAiringAt": 1777077000
   },
   {
     "animeId": 51836,
@@ -272,8 +272,8 @@
     "mal_url": "https://myanimelist.net/anime/51836",
     "anilist_url": "https://anilist.co/anime/137683",
     "trailer": null,
-    "nextEpisode": 149,
-    "nextAiringAt": 1776477600
+    "nextEpisode": 150,
+    "nextAiringAt": 1777082400
   },
   {
     "animeId": 8687,
@@ -421,7 +421,7 @@
     "meanScore": 77,
     "popularity": 7122,
     "trending": 0,
-    "favourites": 355,
+    "favourites": 354,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -432,8 +432,8 @@
     "mal_url": "https://myanimelist.net/anime/8687",
     "anilist_url": "https://anilist.co/anime/8687",
     "trailer": null,
-    "nextEpisode": 911,
-    "nextAiringAt": 1776499200
+    "nextEpisode": 912,
+    "nextAiringAt": 1777104000
   },
   {
     "animeId": 57466,
@@ -695,7 +695,7 @@
     "meanScore": 80,
     "popularity": 23166,
     "trending": 5,
-    "favourites": 354,
+    "favourites": 361,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -710,8 +710,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=rtPF6rjrdSU"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776501000
+    "nextEpisode": 4,
+    "nextAiringAt": 1777105800
   },
   {
     "animeId": 235,
@@ -1103,7 +1103,7 @@
     "meanScore": 82,
     "popularity": 74789,
     "trending": 7,
-    "favourites": 5611,
+    "favourites": 5614,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1114,8 +1114,8 @@
     "mal_url": "https://myanimelist.net/anime/235",
     "anilist_url": "https://anilist.co/anime/235",
     "trailer": null,
-    "nextEpisode": 1198,
-    "nextAiringAt": 1776502800
+    "nextEpisode": 1199,
+    "nextAiringAt": 1777107600
   },
   {
     "animeId": 60310,
@@ -1295,7 +1295,7 @@
     "meanScore": 80,
     "popularity": 22626,
     "trending": 4,
-    "favourites": 369,
+    "favourites": 372,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1310,8 +1310,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=6Lo1DUCY9nY"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776504360
+    "nextEpisode": 4,
+    "nextAiringAt": 1777109160
   },
   {
     "animeId": 62825,
@@ -1360,17 +1360,7 @@
         "name": "Isekai",
         "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
         "category": "Theme-Fantasy",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 100,
-        "name": "Nudity",
-        "description": "Features a character wearing no clothing or exposing intimate body parts.",
-        "category": "Cast-Traits",
-        "rank": 60,
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1380,7 +1370,7 @@
         "name": "Magic",
         "description": "Prominently features magical elements or the use of magic.",
         "category": "Theme-Fantasy",
-        "rank": 50,
+        "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1390,7 +1380,37 @@
         "name": "Elf",
         "description": "Prominently features a character who is an elf.",
         "category": "Cast-Traits",
-        "rank": 30,
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1414,26 +1434,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1752,
-        "name": "Medieval",
-        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
-        "category": "Setting-Time",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
       }
     ],
     "studios": [
@@ -1453,7 +1453,7 @@
     "meanScore": 61,
     "popularity": 16734,
     "trending": 83,
-    "favourites": 235,
+    "favourites": 242,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1468,8 +1468,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=f3QbevP2CG0"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776519000
+    "nextEpisode": 5,
+    "nextAiringAt": 1777123800
   },
   {
     "animeId": 62391,
@@ -1649,7 +1649,7 @@
     "meanScore": 72,
     "popularity": 10221,
     "trending": 1,
-    "favourites": 112,
+    "favourites": 121,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1664,8 +1664,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=9sEiONbweqI"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776520800
+    "nextEpisode": 3,
+    "nextAiringAt": 1777125600
   },
   {
     "animeId": 62001,
@@ -1820,7 +1820,7 @@
     "meanScore": 78,
     "popularity": 56912,
     "trending": 21,
-    "favourites": 724,
+    "favourites": 743,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1835,8 +1835,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=XCyj9KKKjUI"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776522600
+    "nextEpisode": 4,
+    "nextAiringAt": 1777127400
   },
   {
     "animeId": 62164,
@@ -2014,7 +2014,7 @@
     "meanScore": 79,
     "popularity": 24274,
     "trending": 6,
-    "favourites": 236,
+    "favourites": 241,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2029,8 +2029,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=PZJAOQ-7iJ8"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776522600
+    "nextEpisode": 4,
+    "nextAiringAt": 1777127400
   },
   {
     "animeId": 62048,
@@ -2192,7 +2192,7 @@
     "meanScore": 68,
     "popularity": 11165,
     "trending": 4,
-    "favourites": 100,
+    "favourites": 102,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2207,8 +2207,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=eVfpoS0rjw0"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776523560
+    "nextEpisode": 4,
+    "nextAiringAt": 1777128360
   },
   {
     "animeId": 61443,
@@ -2452,7 +2452,7 @@
     "meanScore": 77,
     "popularity": 24585,
     "trending": 29,
-    "favourites": 290,
+    "favourites": 303,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2467,8 +2467,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=3NdlPDtfZU4"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776524400
+    "nextEpisode": 5,
+    "nextAiringAt": 1777129200
   },
   {
     "animeId": 62913,
@@ -2508,7 +2508,7 @@
         "name": "Female Protagonist",
         "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 97,
+        "rank": 98,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2558,7 +2558,17 @@
         "name": "VTuber",
         "description": "Prominently features a character who is either an actual or fictive VTuber.",
         "category": "Cast-Traits",
-        "rank": 70,
+        "rank": 69,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 68,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -2570,16 +2580,6 @@
         "category": "Theme-Drama",
         "rank": 66,
         "isGeneralSpoiler": true,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 115,
-        "name": "Idol",
-        "description": "Centers around the life and activities of an idol.",
-        "category": "Cast-Traits",
-        "rank": 65,
-        "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -2721,7 +2721,7 @@
     "meanScore": 69,
     "popularity": 23903,
     "trending": 14,
-    "favourites": 354,
+    "favourites": 369,
     "source": "VIDEO_GAME",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2736,8 +2736,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=dxiVApAjPDg"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776526200
+    "nextEpisode": 4,
+    "nextAiringAt": 1777131000
   },
   {
     "animeId": 61217,
@@ -2945,8 +2945,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=Lh-0y-O7GIg"
     },
-    "nextEpisode": 14,
-    "nextAiringAt": 1776527760
+    "nextEpisode": 15,
+    "nextAiringAt": 1777132560
   },
   {
     "animeId": 62050,
@@ -3076,7 +3076,7 @@
     "meanScore": 71,
     "popularity": 8421,
     "trending": 0,
-    "favourites": 138,
+    "favourites": 142,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -3091,8 +3091,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=3FxoxWjrrVg"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776529800
+    "nextEpisode": 4,
+    "nextAiringAt": 1777134600
   },
   {
     "animeId": 63125,
@@ -3172,7 +3172,7 @@
     "meanScore": 67,
     "popularity": 424,
     "trending": 0,
-    "favourites": 3,
+    "favourites": 4,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -3187,8 +3187,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=Laf46YXDt68"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776549600
+    "nextEpisode": 3,
+    "nextAiringAt": 1777154400
   },
   {
     "animeId": 62933,
@@ -3249,8 +3249,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=cZftmR93acE"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776549600
+    "nextEpisode": 3,
+    "nextAiringAt": 1777154400
   },
   {
     "animeId": 63383,
@@ -3362,8 +3362,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=ZMbzOD0r_Us"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776549600
+    "nextEpisode": 3,
+    "nextAiringAt": 1777154400
   },
   {
     "animeId": 60534,
@@ -3504,8 +3504,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=L4wurjkd0JM"
     },
-    "nextEpisode": 55,
-    "nextAiringAt": 1776553200
+    "nextEpisode": 56,
+    "nextAiringAt": 1777158000
   },
   {
     "animeId": 63042,
@@ -3739,7 +3739,7 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=qjozo1fh7OI"
     },
-    "nextEpisode": 12,
-    "nextAiringAt": 1776555000
+    "nextEpisode": 13,
+    "nextAiringAt": 1777159800
   }
 ]
