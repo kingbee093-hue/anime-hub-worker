@@ -1026,7 +1026,7 @@
     "title": "",
     "lastChapterId": "ba53883d-4ae5-40d9-93d7-400cbcbe065c",
     "lastChapter": "4",
-    "lastAttemptAt": "2026-04-18T17:52:31.190Z",
+    "lastAttemptAt": "2026-04-19T06:00:34.466Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -3146,12 +3146,16 @@
     "matcherVersion": 2
   },
   "afab9260-24b4-4a57-b780-1d59b2d317b9": {
-    "status": "failed",
-    "title": "The Three Rain Making Taoists",
+    "status": "discovered",
+    "title": "Saiyuki",
+    "mangaId": 30509,
+    "anilistId": 30509,
+    "chapterIndexId": "afab9260-24b4-4a57-b780-1d59b2d317b9",
     "lastChapterId": "1811be42-74e7-4464-ab09-a60f938dffef",
     "lastChapter": "28",
-    "lastAttemptAt": "2026-04-18T17:51:35.111Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-19T06:00:38.487Z",
+    "lastSuccessAt": "2026-04-19T06:00:38.487Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "a920060c-7e39-4ac1-980c-f0e605a40ae4": {
@@ -3159,7 +3163,7 @@
     "title": "",
     "lastChapterId": "dbb6cede-c561-4c6c-8a86-2e867e0b1fba",
     "lastChapter": "51",
-    "lastAttemptAt": "2026-04-18T17:51:35.244Z",
+    "lastAttemptAt": "2026-04-19T06:00:34.624Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3168,7 +3172,7 @@
     "title": "Gyaru",
     "lastChapterId": "c53c75ee-7246-48c8-b62e-f6da44aefa94",
     "lastChapter": "156",
-    "lastAttemptAt": "2026-04-18T17:51:35.621Z",
+    "lastAttemptAt": "2026-04-19T06:00:34.830Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3177,7 +3181,7 @@
     "title": "First year of junior high school (Part 2)",
     "lastChapterId": "a0828fda-7c01-4ede-9c8f-89262619ad7e",
     "lastChapter": "9",
-    "lastAttemptAt": "2026-04-18T17:51:38.859Z",
+    "lastAttemptAt": "2026-04-19T06:00:28.605Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -3252,7 +3256,7 @@
     "title": "",
     "lastChapterId": "a3c7406a-8e42-4f49-8b71-386838fe85b7",
     "lastChapter": "9",
-    "lastAttemptAt": "2026-04-18T17:51:49.835Z",
+    "lastAttemptAt": "2026-04-19T06:00:28.688Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3322,7 +3326,7 @@
     "title": "Volume 3 Extras",
     "lastChapterId": "9089fc3f-8615-4031-92bf-c14827813e2e",
     "lastChapter": "15.5",
-    "lastAttemptAt": "2026-04-18T17:52:27.795Z",
+    "lastAttemptAt": "2026-04-19T06:00:34.729Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3749,6 +3753,15 @@
     "lastAttemptAt": "2026-04-19T05:17:24.109Z",
     "lastSuccessAt": "2026-04-19T05:17:24.109Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "3d72332e-ac26-4b6b-b154-68f9b544f7c6": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "a8bee0dc-c35f-49fa-a7b7-8275dcb1d384",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-04-19T06:00:31.337Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
