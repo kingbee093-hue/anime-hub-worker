@@ -3176,7 +3176,7 @@
     "title": "Gyaru",
     "lastChapterId": "c53c75ee-7246-48c8-b62e-f6da44aefa94",
     "lastChapter": "156",
-    "lastAttemptAt": "2026-04-19T06:00:34.830Z",
+    "lastAttemptAt": "2026-04-19T18:17:24.503Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3185,7 +3185,7 @@
     "title": "First year of junior high school (Part 2)",
     "lastChapterId": "a0828fda-7c01-4ede-9c8f-89262619ad7e",
     "lastChapter": "9",
-    "lastAttemptAt": "2026-04-19T06:00:28.605Z",
+    "lastAttemptAt": "2026-04-19T18:17:34.572Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -3768,12 +3768,16 @@
     "matcherVersion": 2
   },
   "3d72332e-ac26-4b6b-b154-68f9b544f7c6": {
-    "status": "failed",
-    "title": "",
+    "status": "discovered",
+    "title": "Shura Youjo no Eiyuutan: Hanpasha to Iwa Reta Youhei, Youjo ni Tensei Shite Nariagaru",
+    "mangaId": 206707,
+    "anilistId": 206707,
+    "chapterIndexId": "3d72332e-ac26-4b6b-b154-68f9b544f7c6",
     "lastChapterId": "a8bee0dc-c35f-49fa-a7b7-8275dcb1d384",
     "lastChapter": "11",
-    "lastAttemptAt": "2026-04-19T06:00:31.337Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-19T18:17:30.581Z",
+    "lastSuccessAt": "2026-04-19T18:17:30.581Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "7fd71d26-59bb-473d-8a2a-7db9f9fbc21d": {
@@ -4393,6 +4397,37 @@
     "lastChapter": "13",
     "lastAttemptAt": "2026-04-19T18:00:29.298Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "da25c95f-e062-48ea-b5a0-9b51aeeddc05": {
+    "status": "discovered",
+    "title": "Zeikin de Katta Hon",
+    "mangaId": 142165,
+    "anilistId": 142165,
+    "chapterIndexId": "da25c95f-e062-48ea-b5a0-9b51aeeddc05",
+    "lastChapterId": "f37a5e26-8ff3-4d6f-86d0-ae0c2701191d",
+    "lastChapter": "86.5",
+    "lastAttemptAt": "2026-04-19T18:17:23.651Z",
+    "lastSuccessAt": "2026-04-19T18:17:23.651Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "fb38e067-57f6-400d-a596-3ead523a62e2": {
+    "status": "failed",
+    "title": "The Lotus Generals Part 2",
+    "lastChapterId": "b3ab63f7-e7df-49e5-ab90-58bb8d206314",
+    "lastChapter": "26",
+    "lastAttemptAt": "2026-04-19T18:17:27.907Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "8fb6d1db-c0c5-4122-81fe-dd480bfdb6eb": {
+    "status": "failed",
+    "title": "Mamu-Mama's Ambition",
+    "lastChapterId": "43e74d6c-e0e7-4b7d-995f-f2bdd12ba220",
+    "lastChapter": "49",
+    "lastAttemptAt": "2026-04-19T18:17:34.802Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
