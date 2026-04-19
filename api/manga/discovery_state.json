@@ -606,10 +606,10 @@
   },
   "ee957607-e7fc-40b0-acdb-10c7084d9d40": {
     "status": "failed",
-    "title": "Bonus: We’re FRIED 😭🙏",
-    "lastChapterId": "fe6188dd-628e-4a44-affa-2825b06932ec",
-    "lastChapter": "34.1",
-    "lastAttemptAt": "2026-04-19T10:00:34.473Z",
+    "title": "Slash",
+    "lastChapterId": "989bc483-7b56-44a9-bb29-65a865d9d3da",
+    "lastChapter": "35",
+    "lastAttemptAt": "2026-04-19T22:17:31.631Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4694,6 +4694,41 @@
     "lastChapter": "2",
     "lastAttemptAt": "2026-04-19T21:34:28.017Z",
     "lastSuccessAt": "2026-04-19T21:34:28.017Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "c6c30be6-3ded-428b-8bcf-be81ab8f7d33": {
+    "status": "discovered",
+    "title": "Hero Ticket",
+    "mangaId": 118769,
+    "anilistId": 118769,
+    "chapterIndexId": "c6c30be6-3ded-428b-8bcf-be81ab8f7d33",
+    "lastChapterId": "08256454-8d06-4e22-bd66-405c44ad915d",
+    "lastChapter": "321",
+    "lastAttemptAt": "2026-04-19T22:17:29.616Z",
+    "lastSuccessAt": "2026-04-19T22:17:29.616Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "142cab1a-005c-499b-9bdf-ff73cf5abd4a": {
+    "status": "failed",
+    "title": "Uncensored",
+    "lastChapterId": "bf22fc5a-2cb8-46b4-a018-68b1e2ef1519",
+    "lastChapter": "16",
+    "lastAttemptAt": "2026-04-19T22:17:31.710Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "cc8d5baf-0088-4f19-a3c5-8660bea2f8e9": {
+    "status": "discovered",
+    "title": "Koushaku Shisoku no Shuuchaku Kara Nigerare Souninai node, Nigenai Koto ni Shimashita",
+    "mangaId": 202262,
+    "anilistId": 202262,
+    "chapterIndexId": "cc8d5baf-0088-4f19-a3c5-8660bea2f8e9",
+    "lastChapterId": "89ca5e92-f01b-4dee-a602-10ac5ed07577",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-19T22:17:32.095Z",
+    "lastSuccessAt": "2026-04-19T22:17:32.095Z",
     "reason": null,
     "matcherVersion": 2
   }
