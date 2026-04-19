@@ -3130,9 +3130,9 @@
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "44ce468f-27b9-4112-a2c6-710fb225ef1b",
-    "lastChapter": "1",
-    "lastAttemptAt": "2026-04-19T13:51:25.443Z",
+    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-19T14:00:30.654Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4100,6 +4100,58 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-19T13:34:25.226Z",
     "lastSuccessAt": "2026-04-19T13:34:25.226Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "0a95a2f4-f136-4179-9320-26bd66611f40": {
+    "status": "discovered",
+    "title": "Kyoushoku Jinshu",
+    "mangaId": 147370,
+    "anilistId": 147370,
+    "chapterIndexId": "0a95a2f4-f136-4179-9320-26bd66611f40",
+    "lastChapterId": "2c06b0a4-c995-4d91-b71a-c36de0f9ac55",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-19T14:00:26.806Z",
+    "lastSuccessAt": "2026-04-19T14:00:26.806Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "90b88312-18b2-4a87-99fd-ccca64288e7b": {
+    "status": "discovered",
+    "title": "Nukozuke!",
+    "mangaId": 75947,
+    "anilistId": 75947,
+    "chapterIndexId": "90b88312-18b2-4a87-99fd-ccca64288e7b",
+    "lastChapterId": "8598ef03-9d52-4794-914a-f5cf3e20851d",
+    "lastChapter": "297",
+    "lastAttemptAt": "2026-04-19T14:00:27.733Z",
+    "lastSuccessAt": "2026-04-19T14:00:27.733Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "3e55208a-76cc-4da7-bda3-c244976c99f4": {
+    "status": "discovered",
+    "title": "Tantei Akechi wa Kyouran su",
+    "mangaId": 106762,
+    "anilistId": 106762,
+    "chapterIndexId": "3e55208a-76cc-4da7-bda3-c244976c99f4",
+    "lastChapterId": "e7987e46-654b-4444-861b-d8f1099ed256",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-19T14:00:31.129Z",
+    "lastSuccessAt": "2026-04-19T14:00:31.129Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "b0ecd95c-06a3-4aa7-8dad-0e278515865f": {
+    "status": "discovered",
+    "title": "Renai Fushin na Reijou wa Reikoku Kishi-sama no Dekiai ni Kizukanai",
+    "mangaId": 209725,
+    "anilistId": 209725,
+    "chapterIndexId": "b0ecd95c-06a3-4aa7-8dad-0e278515865f",
+    "lastChapterId": "5274cfa5-8e7e-4b73-a4a5-417fa5fe09e0",
+    "lastChapter": "1.3",
+    "lastAttemptAt": "2026-04-19T14:00:31.640Z",
+    "lastSuccessAt": "2026-04-19T14:00:31.640Z",
     "reason": null,
     "matcherVersion": 2
   }
