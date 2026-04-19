@@ -966,7 +966,7 @@
         "name": "Time Manipulation",
         "description": "Prominently features time-traveling or other time-warping phenomena.",
         "category": "Theme-Sci-Fi",
-        "rank": 51,
+        "rank": 50,
         "isGeneralSpoiler": true,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -979,16 +979,6 @@
         "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1578,
-        "name": "Arranged Marriage",
-        "description": "Features two characters made to marry each other, usually by their family.",
-        "category": "Cast-Traits",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -1032,11 +1022,21 @@
         "isAdult": false
       },
       {
+        "id": 1578,
+        "name": "Arranged Marriage",
+        "description": "Features two characters made to marry each other, usually by their family.",
+        "category": "Cast-Traits",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 1342,
         "name": "Clone",
         "description": "Prominently features a character who is an artificial exact copy of another organism.",
         "category": "Cast-Traits",
-        "rank": 47,
+        "rank": 46,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1096,7 +1096,7 @@
         "name": "Unrequited Love",
         "description": "One or more characters are experiencing an unrequited love that may or may not be reciprocated.",
         "category": "Theme-Romance",
-        "rank": 38,
+        "rank": 36,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -7099,7 +7099,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 77,
-    "popularity": 7122,
+    "popularity": 7128,
     "trending": 0,
     "favourites": 354,
     "source": "MANGA",
