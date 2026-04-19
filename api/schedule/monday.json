@@ -132,7 +132,7 @@
     "rating": 7.4,
     "averageScore": 74,
     "meanScore": 76,
-    "popularity": 23475,
+    "popularity": 23658,
     "trending": 5,
     "favourites": 450,
     "source": "LIGHT_NOVEL",
@@ -222,7 +222,7 @@
         "name": "Drawing",
         "description": "Centers around the art of drawing, including manga and doujinshi.",
         "category": "Theme-Arts",
-        "rank": 93,
+        "rank": 92,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -238,19 +238,19 @@
         "isAdult": false
       },
       {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 91,
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
         "category": "Cast-Main Cast",
         "rank": 90,
         "isGeneralSpoiler": false,
@@ -272,7 +272,7 @@
         "name": "Found Family",
         "description": "Features a group of characters with no biological relations that are united in a group providing social support.",
         "category": "Theme-Other",
-        "rank": 84,
+        "rank": 82,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -302,7 +302,7 @@
         "name": "Philosophy",
         "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
         "category": "Theme-Other",
-        "rank": 76,
+        "rank": 78,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -358,6 +358,16 @@
         "isAdult": false
       },
       {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 46,
         "name": "School",
         "description": "Partly or completely set in a primary or secondary educational institution.",
@@ -365,16 +375,6 @@
         "rank": 64,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 63,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -473,7 +473,7 @@
     "rating": 8.6,
     "averageScore": 86,
     "meanScore": 86,
-    "popularity": 97353,
+    "popularity": 98586,
     "trending": 32,
     "favourites": 2326,
     "source": "MANGA",
@@ -680,8 +680,8 @@
     ],
     "rating": 7.2,
     "averageScore": 72,
-    "meanScore": 74,
-    "popularity": 14177,
+    "meanScore": 73,
+    "popularity": 14319,
     "trending": 4,
     "favourites": 148,
     "source": "MANGA",
@@ -866,7 +866,7 @@
     "rating": 6.3,
     "averageScore": 63,
     "meanScore": 64,
-    "popularity": 23399,
+    "popularity": 23572,
     "trending": 11,
     "favourites": 194,
     "source": "MANGA",
@@ -988,6 +988,16 @@
         "isAdult": false
       },
       {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 34,
         "name": "Military",
         "description": "Centered around the life and activities of military personnel.",
@@ -998,21 +1008,11 @@
         "isAdult": false
       },
       {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 490,
         "name": "Anachronism",
         "description": "Prominently features elements that are out of place in the historical period the work takes place in, particularly modern elements in a historical setting.",
         "category": "Setting-Time",
-        "rank": 70,
+        "rank": 74,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1042,7 +1042,7 @@
         "name": "Female Harem",
         "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
         "category": "Theme-Romance",
-        "rank": 58,
+        "rank": 56,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1073,7 +1073,7 @@
     "rating": 7.6,
     "averageScore": 76,
     "meanScore": 79,
-    "popularity": 8153,
+    "popularity": 8267,
     "trending": 16,
     "favourites": 202,
     "source": "OTHER",
@@ -1280,7 +1280,7 @@
     "rating": 8.3,
     "averageScore": 83,
     "meanScore": 84,
-    "popularity": 7966,
+    "popularity": 7973,
     "trending": 0,
     "favourites": 810,
     "source": "MANGA",

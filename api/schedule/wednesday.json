@@ -117,8 +117,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 69,
-    "popularity": 2204,
+    "meanScore": 67,
+    "popularity": 2218,
     "trending": 0,
     "favourites": 17,
     "source": "MANGA",
@@ -435,21 +435,21 @@
         "isAdult": false
       },
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
         "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 86,
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -580,7 +580,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 80,
-    "popularity": 66751,
+    "popularity": 67305,
     "trending": 493,
     "favourites": 1478,
     "source": "LIGHT_NOVEL",
@@ -684,7 +684,7 @@
     "rating": 4.3,
     "averageScore": 43,
     "meanScore": 44,
-    "popularity": 1447,
+    "popularity": 1482,
     "trending": 0,
     "favourites": 38,
     "source": "MANGA",
@@ -764,6 +764,16 @@
         "isAdult": false
       },
       {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 29,
         "name": "Magic",
         "description": "Prominently features magical elements or the use of magic.",
@@ -771,16 +781,6 @@
         "rank": 88,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 536,
-        "name": "Dissociative Identities",
-        "description": "A case where one or more people share the same body.",
-        "category": "Cast-Traits",
-        "rank": 88,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -804,21 +804,11 @@
         "isAdult": false
       },
       {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 83,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
         "id": 240,
         "name": "Amnesia",
         "description": "Prominently features a character(s) with memory loss.",
         "category": "Cast-Traits",
-        "rank": 82,
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -831,6 +821,16 @@
         "rank": 81,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 81,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -894,16 +894,6 @@
         "isAdult": false
       },
       {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1310,
         "name": "Travel",
         "description": "Centers around character(s) moving between places a significant distance apart.",
@@ -941,6 +931,16 @@
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
         "isAdult": false
       },
       {
@@ -1009,7 +1009,7 @@
     "rating": 8.5,
     "averageScore": 85,
     "meanScore": 86,
-    "popularity": 70153,
+    "popularity": 70767,
     "trending": 19,
     "favourites": 1717,
     "source": "LIGHT_NOVEL",
@@ -1074,7 +1074,7 @@
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 80,
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1084,7 +1084,17 @@
         "name": "Fake Relationship",
         "description": "When two characters enter a fake relationship that mutually benefits one or both involved.",
         "category": "Theme-Drama",
-        "rank": 73,
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1100,21 +1110,11 @@
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 109,
         "name": "Primarily Adult Cast",
         "description": "Main cast is mostly composed of characters above a high school age.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1134,7 +1134,7 @@
         "name": "Nudity",
         "description": "Features a character wearing no clothing or exposing intimate body parts.",
         "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 33,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1155,7 +1155,7 @@
     "rating": 5.7,
     "averageScore": 57,
     "meanScore": 58,
-    "popularity": 12261,
+    "popularity": 12367,
     "trending": 3,
     "favourites": 167,
     "source": "MANGA",
@@ -1321,7 +1321,7 @@
     "rating": 6.3,
     "averageScore": 63,
     "meanScore": 65,
-    "popularity": 8559,
+    "popularity": 8642,
     "trending": 69,
     "favourites": 103,
     "source": "LIGHT_NOVEL",
@@ -1427,7 +1427,7 @@
     "rating": 5.8,
     "averageScore": 58,
     "meanScore": 71,
-    "popularity": 815,
+    "popularity": 834,
     "trending": 0,
     "favourites": 5,
     "source": "LIGHT_NOVEL",
@@ -1663,7 +1663,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 80,
-    "popularity": 28746,
+    "popularity": 28956,
     "trending": 92,
     "favourites": 482,
     "source": "MANGA",
@@ -1789,7 +1789,7 @@
     "rating": 5.5,
     "averageScore": 55,
     "meanScore": 56,
-    "popularity": 25929,
+    "popularity": 26095,
     "trending": 25,
     "favourites": 435,
     "source": "OTHER",
@@ -1956,7 +1956,7 @@
     "rating": 7.3,
     "averageScore": 73,
     "meanScore": 74,
-    "popularity": 24326,
+    "popularity": 24970,
     "trending": 8,
     "favourites": 328,
     "source": "MANGA",
@@ -2027,8 +2027,8 @@
     ],
     "rating": 0,
     "averageScore": 0,
-    "meanScore": 56,
-    "popularity": 397,
+    "meanScore": 55,
+    "popularity": 404,
     "trending": 0,
     "favourites": 1,
     "source": "ORIGINAL",
@@ -2188,7 +2188,7 @@
     "rating": 7,
     "averageScore": 70,
     "meanScore": 72,
-    "popularity": 10324,
+    "popularity": 10521,
     "trending": 3,
     "favourites": 141,
     "source": "LIGHT_NOVEL",
@@ -2374,7 +2374,7 @@
     "rating": 7.5,
     "averageScore": 75,
     "meanScore": 77,
-    "popularity": 17829,
+    "popularity": 18013,
     "trending": 5,
     "favourites": 363,
     "source": "MANGA",
