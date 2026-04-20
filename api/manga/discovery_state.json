@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "",
-    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-20T13:00:37.475Z",
+    "title": "Pivix Extras",
+    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
+    "lastChapter": "2.1",
+    "lastAttemptAt": "2026-04-20T13:17:36.173Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5174,6 +5174,45 @@
     "lastChapter": "79",
     "lastAttemptAt": "2026-04-20T12:51:27.106Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "4e53b437-5884-4aa8-9ee1-be1028cba03f": {
+    "status": "discovered",
+    "title": "Ura Baito: Toubou Kinshi",
+    "mangaId": 125606,
+    "anilistId": 125606,
+    "chapterIndexId": "4e53b437-5884-4aa8-9ee1-be1028cba03f",
+    "lastChapterId": "6dd170a9-63ea-48d7-be39-478d0906d059",
+    "lastChapter": "234",
+    "lastAttemptAt": "2026-04-20T13:17:37.208Z",
+    "lastSuccessAt": "2026-04-20T13:17:37.208Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "046746c9-8872-4797-a112-318642fdb272": {
+    "status": "discovered",
+    "title": "The Delinquent Girl Beside Me Suddenly Dyed Her Hair Black",
+    "mangaId": 180547,
+    "anilistId": 180547,
+    "chapterIndexId": "046746c9-8872-4797-a112-318642fdb272",
+    "lastChapterId": "7af7ca61-f085-42f1-ae4c-df8129afdea5",
+    "lastChapter": "15",
+    "lastAttemptAt": "2026-04-20T13:17:38.013Z",
+    "lastSuccessAt": "2026-04-20T13:17:38.013Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "ea889b36-7159-44d0-9eef-1dda6125828e": {
+    "status": "discovered",
+    "title": "Yeonwoo's Innocence",
+    "mangaId": 125233,
+    "anilistId": 125233,
+    "chapterIndexId": "ea889b36-7159-44d0-9eef-1dda6125828e",
+    "lastChapterId": "112b959c-6cf5-4ea3-86cf-d05f4449904b",
+    "lastChapter": "217",
+    "lastAttemptAt": "2026-04-20T13:17:38.975Z",
+    "lastSuccessAt": "2026-04-20T13:17:38.975Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
