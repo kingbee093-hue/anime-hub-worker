@@ -5481,5 +5481,23 @@
     "lastSuccessAt": "2026-04-20T17:34:41.227Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "73914a43-82df-4bc0-b032-6551e59a4964": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "79323d39-1fd2-4ed7-ba90-f48932599c04",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-20T17:51:30.327Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "532ed0b4-08c2-4bc9-ba91-9d9ebd250f7f": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "b1beaf2e-1a10-47bd-95cb-41f98f230dab",
+    "lastChapter": "10",
+    "lastAttemptAt": "2026-04-20T17:51:33.020Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   }
 }
