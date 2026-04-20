@@ -4233,7 +4233,7 @@
     "title": "",
     "lastChapterId": "469cebf3-f08d-4894-9e13-75590700c229",
     "lastChapter": "2",
-    "lastAttemptAt": "2026-04-19T15:51:24.991Z",
+    "lastAttemptAt": "2026-04-20T03:51:32.993Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4301,9 +4301,9 @@
   "c8acddfb-8288-4780-8dcf-864f0bb81398": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "ed2253a1-81d9-4c29-8e96-63ba62420eeb",
-    "lastChapter": "65",
-    "lastAttemptAt": "2026-04-19T22:00:29.919Z",
+    "lastChapterId": "b682ce88-e288-4aec-baad-cd99edc7f8db",
+    "lastChapter": "60",
+    "lastAttemptAt": "2026-04-20T03:51:33.452Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4892,6 +4892,19 @@
     "lastChapter": "4",
     "lastAttemptAt": "2026-04-20T03:34:25.911Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "e156c7f8-5fa9-490b-98a9-a0696f5e7e3b": {
+    "status": "discovered",
+    "title": "Tamayomi",
+    "mangaId": 99115,
+    "anilistId": 99115,
+    "chapterIndexId": "e156c7f8-5fa9-490b-98a9-a0696f5e7e3b",
+    "lastChapterId": "b56bfa49-fc4c-40a0-8fc9-1c59031a1f41",
+    "lastChapter": "6",
+    "lastAttemptAt": "2026-04-20T03:51:29.541Z",
+    "lastSuccessAt": "2026-04-20T03:51:29.541Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
