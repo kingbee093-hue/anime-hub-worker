@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "",
-    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-20T15:34:35.469Z",
+    "title": "Pivix Extras",
+    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
+    "lastChapter": "2.1",
+    "lastAttemptAt": "2026-04-20T15:51:31.018Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4361,10 +4361,10 @@
   },
   "f40a542e-7a3d-49e4-a5f9-8c9bea3a90a6": {
     "status": "failed",
-    "title": "The Mom Meeting: Defining the Teaching Methods",
-    "lastChapterId": "a79fcdbb-68b1-4d78-aa41-0c1280c00fcb",
-    "lastChapter": "4",
-    "lastAttemptAt": "2026-04-20T11:51:30.946Z",
+    "title": "My Childhood Friend and I VS 4 Moms",
+    "lastChapterId": "1f048593-b8c9-41f3-98f8-c9490d6ecb6f",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-20T15:51:31.285Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5349,6 +5349,28 @@
     "lastAttemptAt": "2026-04-20T15:34:36.201Z",
     "lastSuccessAt": "2026-04-20T15:34:36.201Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "4e84b064-311e-4fa3-b7fc-f370ac3e9c6c": {
+    "status": "discovered",
+    "title": "Yankee Akuyaku Reijou: Tensei Tenka Yuiga Dokuson",
+    "mangaId": 135446,
+    "anilistId": 135446,
+    "chapterIndexId": "4e84b064-311e-4fa3-b7fc-f370ac3e9c6c",
+    "lastChapterId": "82f82f14-98d8-4b74-ad15-6b06b5165aa2",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-20T15:51:27.604Z",
+    "lastSuccessAt": "2026-04-20T15:51:27.604Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "a14a3d5b-8728-4eb7-8b4e-b8092f374a37": {
+    "status": "failed",
+    "title": "Crispy Gyoza bursting with love",
+    "lastChapterId": "00a6d54d-3f55-4257-a721-4fcd0719398f",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-20T15:51:31.152Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
