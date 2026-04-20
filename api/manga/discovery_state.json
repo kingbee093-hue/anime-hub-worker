@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "",
-    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-20T16:17:32.515Z",
+    "title": "Pivix Extras",
+    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
+    "lastChapter": "2.1",
+    "lastAttemptAt": "2026-04-20T17:34:29.496Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4355,7 +4355,7 @@
     "title": "",
     "lastChapterId": "8a3e4061-4842-4caa-99a5-086f4eb1d669",
     "lastChapter": "72",
-    "lastAttemptAt": "2026-04-20T05:34:27.690Z",
+    "lastAttemptAt": "2026-04-20T17:34:34.176Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4951,7 +4951,7 @@
     "title": "Crimson Moon Rises",
     "lastChapterId": "9933ac41-2b0b-4c8a-ae6f-57c9e9c59224",
     "lastChapter": "61.5",
-    "lastAttemptAt": "2026-04-20T05:34:27.360Z",
+    "lastAttemptAt": "2026-04-20T17:34:40.602Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4960,7 +4960,7 @@
     "title": "",
     "lastChapterId": "bacc1343-6093-4e72-b5de-cf61515d3e38",
     "lastChapter": "44.2",
-    "lastAttemptAt": "2026-04-20T05:34:27.512Z",
+    "lastAttemptAt": "2026-04-20T17:34:40.725Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5419,6 +5419,67 @@
     "lastChapter": "34",
     "lastAttemptAt": "2026-04-20T17:17:26.839Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "1e9f69ab-2107-44c2-a84c-78f3911cdea5": {
+    "status": "discovered",
+    "title": "Alma",
+    "mangaId": 112429,
+    "anilistId": 112429,
+    "chapterIndexId": "1e9f69ab-2107-44c2-a84c-78f3911cdea5",
+    "lastChapterId": "2e1d43d3-3b28-4390-823e-5024d4651324",
+    "lastChapter": "27",
+    "lastAttemptAt": "2026-04-20T17:34:29.952Z",
+    "lastSuccessAt": "2026-04-20T17:34:29.952Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "5d61265a-c4bd-487e-9b5a-6e8f4df9394b": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "6c1a93d0-86b7-4a07-939e-2bc9ee930ac2",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-20T17:34:33.028Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "8211bac6-a392-4e37-b3b6-dac0f4512d24": {
+    "status": "discovered",
+    "title": "Re:ZERO -Starting Life in Another World- Chapter 4: The Sanctuary and the Witch of Greed",
+    "mangaId": 112218,
+    "anilistId": 112218,
+    "chapterIndexId": "8211bac6-a392-4e37-b3b6-dac0f4512d24",
+    "lastChapterId": "dcecce84-04ed-49b0-a23c-236a350417a0",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-20T17:34:33.418Z",
+    "lastSuccessAt": "2026-04-20T17:34:33.418Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "214a2f14-7a60-4748-ace4-47c04f1c2a19": {
+    "status": "discovered",
+    "title": "The Fragrant Flower Blooms With Dignity",
+    "mangaId": 140475,
+    "anilistId": 140475,
+    "chapterIndexId": "214a2f14-7a60-4748-ace4-47c04f1c2a19",
+    "lastChapterId": "45bcf1bd-6b70-4af6-972a-7ddc077c345c",
+    "lastChapter": "45",
+    "lastAttemptAt": "2026-04-20T17:34:37.345Z",
+    "lastSuccessAt": "2026-04-20T17:34:37.345Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "8849487d-4018-49ac-81d2-4522ae538bc9": {
+    "status": "discovered",
+    "title": "Shinrei Shashin Mitsubai Manual",
+    "mangaId": 190766,
+    "anilistId": 190766,
+    "chapterIndexId": "8849487d-4018-49ac-81d2-4522ae538bc9",
+    "lastChapterId": "bf1fa881-936a-4818-ac6d-f6cab964e54f",
+    "lastChapter": "6",
+    "lastAttemptAt": "2026-04-20T17:34:41.227Z",
+    "lastSuccessAt": "2026-04-20T17:34:41.227Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
