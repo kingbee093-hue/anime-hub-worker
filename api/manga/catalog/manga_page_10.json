@@ -1,5 +1,238 @@
 [
   {
+    "mangaId": 161300,
+    "anilistId": 161300,
+    "idMal": 155889,
+    "title": "Animan",
+    "titleRomaji": "Doubutsu Ningen",
+    "titleEnglish": "Animan",
+    "titleNative": "動物人間",
+    "synonyms": [
+      "Die Gesellschaft der Tiere",
+      "Animal Human"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx161300-sYhZHSepxj15.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx161300-sYhZHSepxj15.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx161300-sYhZHSepxj15.png",
+    "coverImageColor": "#6b1a28",
+    "bannerImage": "",
+    "synopsis": "Are we the predators or the prey? When an unsuspecting father and daughter stumble upon a strange gathering of humanoid animals with a taste for fine cuisine, their worst nightmare is about to begin. Here, creatures who are not quite human-and not quite animal at that-raise humans as livestock and slaughter them to put meat on the table. Through this bizarre and horrific tale, society's morals are put to the ultimate test: What does it truly mean to consume another living being? (Source: Yen Press)",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "RELEASING",
+    "year": 2023,
+    "startDate": "2023-02-10",
+    "endDate": null,
+    "chapters": 18,
+    "volumes": 0,
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 254,
+        "name": "Kemonomimi",
+        "description": "Prominently features humanoid characters with animal ears.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1601,
+        "name": "Primarily Animal Cast",
+        "description": "Main cast is mostly composed animal or animal-like characters.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1121,
+        "name": "Torture",
+        "description": "The act of deliberately inflicting severe pain or suffering upon another individual or oneself as a punishment or with a specific purpose.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 247,
+        "name": "Slavery",
+        "description": "Prominently features slaves, slavery, or slave trade.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "authors": [
+      "Okada Takuya"
+    ],
+    "artists": [
+      "Okada Takuya"
+    ],
+    "rating": 5.7,
+    "averageScore": 57,
+    "meanScore": 62,
+    "popularity": 1375,
+    "trending": 0,
+    "favourites": 24,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isAdult": false,
+    "anilist_url": "https://anilist.co/manga/161300",
+    "mal_url": "https://myanimelist.net/manga/155889",
+    "externalLinks": [
+      {
+        "site": "Young Animal",
+        "url": "https://younganimal.com/series/587ac21d326af"
+      },
+      {
+        "site": "Manga Park",
+        "url": "https://manga-park.com/title/70075"
+      },
+      {
+        "site": "Yen Press",
+        "url": "https://yenpress.com/series/animan"
+      }
+    ],
+    "mangadexId": "f23acee8-46a0-404f-9483-95b5dc26b20d",
+    "mangadexUrl": "https://mangadex.org/title/f23acee8-46a0-404f-9483-95b5dc26b20d",
+    "mangadexMappingSource": "recent_chapter_discovery",
+    "mangadexMappingConfidence": 0.98,
+    "chapterIndexId": "f23acee8-46a0-404f-9483-95b5dc26b20d",
+    "chapterSourceProvider": "mangadex",
+    "chapterSourceId": "f23acee8-46a0-404f-9483-95b5dc26b20d",
+    "chapterSourceTitle": "Doubutsu Ningen",
+    "chapterSourceConfidence": 1
+  },
+  {
     "mangaId": 179146,
     "anilistId": 179146,
     "idMal": 169407,
@@ -12980,127 +13213,6 @@
     "chapterSourceProvider": "mangadex",
     "chapterSourceId": "3aa7c81d-fd51-4885-a36d-e80e3ae7d229",
     "chapterSourceTitle": "Tetsu Sabi to 1000 Carat",
-    "chapterSourceConfidence": 1
-  },
-  {
-    "mangaId": 43168,
-    "anilistId": 43168,
-    "idMal": 13168,
-    "title": "Tetsuya: Jansei to Yobareta Otoko",
-    "titleRomaji": "Tetsuya: Jansei to Yobareta Otoko",
-    "titleEnglish": "",
-    "titleNative": "哲也～雀聖と呼ばれた男～",
-    "synonyms": [
-      "てつや じゃんせいとよばれたおとこ",
-      "哲也 雀聖と呼ばれた男",
-      "哲也 ―雀聖と呼ばれた男―",
-      "Legendary Gambler Tetsuya"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx43168-iPcKRrWqv3f7.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx43168-iPcKRrWqv3f7.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx43168-iPcKRrWqv3f7.png",
-    "coverImageColor": "#f1ae5d",
-    "bannerImage": "",
-    "synopsis": "In the year 1947, the people of Shinjuku are down on their luck. With little money to buy food or necessities, some resort to gambling in order to survive. Traveling Tetsuya chooses to spend his time at Mahjong parlors where he is wiping the floor clean with his adversaries. However, Tetsuya meets the intensely-skilled Boushu-san, this is when he realizes that his skills are still lacking. (Source: Anime News Network)",
-    "type": "MANGA",
-    "format": "MANGA",
-    "status": "FINISHED",
-    "year": 1997,
-    "startDate": "1997-07-16",
-    "endDate": "2004-12-08",
-    "chapters": 339,
-    "volumes": 41,
-    "genres": [
-      "Drama"
-    ],
-    "tags": [
-      {
-        "id": 91,
-        "name": "Gambling",
-        "description": "Centers around the act of gambling.",
-        "category": "Theme-Other",
-        "rank": 100,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 117,
-        "name": "Mahjong",
-        "description": "Centered around the game of mahjong.",
-        "category": "Theme-Game-Card & Board Game",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 25,
-        "name": "Historical",
-        "description": "Partly or completely set during a real period of world history.",
-        "category": "Setting-Time",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1492,
-        "name": "Board Game",
-        "description": "Centers around characters playing board games.",
-        "category": "Theme-Game",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "authors": [
-      "Fuumei Sai"
-    ],
-    "artists": [
-      "Yasushi Hoshino"
-    ],
-    "rating": 5.7,
-    "averageScore": 57,
-    "meanScore": 70,
-    "popularity": 507,
-    "trending": 0,
-    "favourites": 8,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/43168",
-    "mal_url": "https://myanimelist.net/manga/13168",
-    "externalLinks": [],
-    "mangadexId": "7496677d-1202-4593-9811-9e6ea050470b",
-    "mangadexUrl": "https://mangadex.org/title/7496677d-1202-4593-9811-9e6ea050470b",
-    "mangadexMappingSource": "recent_chapter_discovery",
-    "mangadexMappingConfidence": 0.98,
-    "chapterIndexId": "7496677d-1202-4593-9811-9e6ea050470b",
-    "chapterSourceProvider": "mangadex",
-    "chapterSourceId": "7496677d-1202-4593-9811-9e6ea050470b",
-    "chapterSourceTitle": "Tetsuya - The Man Called Mahjong Master",
     "chapterSourceConfidence": 1
   }
 ]
