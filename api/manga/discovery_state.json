@@ -1856,9 +1856,9 @@
   "8e5ff937-0d9a-40d5-b7ed-9f37a70901fb": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "abed0de2-b9e6-4e92-ae02-dfa613870bc7",
-    "lastChapter": "1",
-    "lastAttemptAt": "2026-04-20T13:51:29.546Z",
+    "lastChapterId": "c7d33fe7-1252-46b4-9e79-8198ef8c80c4",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-20T19:34:37.130Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4474,7 +4474,7 @@
     "title": "Kanna's Squad",
     "lastChapterId": "9ad84ae1-c42a-4869-a249-b06f3c50f50d",
     "lastChapter": "52",
-    "lastAttemptAt": "2026-04-20T07:34:28.539Z",
+    "lastAttemptAt": "2026-04-20T19:34:32.510Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5555,6 +5555,15 @@
     "lastAttemptAt": "2026-04-20T19:17:34.509Z",
     "lastSuccessAt": "2026-04-20T19:17:34.509Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "f4f2816b-d5a6-4101-9349-02b9ca0808fd": {
+    "status": "failed",
+    "title": "Mirrors",
+    "lastChapterId": "7e7db909-9911-40e6-8fc7-f7a4e1cfbd8c",
+    "lastChapter": "7",
+    "lastAttemptAt": "2026-04-20T19:34:33.865Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
