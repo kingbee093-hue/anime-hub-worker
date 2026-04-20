@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "Pivix Extras",
-    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
-    "lastChapter": "2.1",
-    "lastAttemptAt": "2026-04-20T12:17:37.978Z",
+    "title": "",
+    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-20T12:34:28.988Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5121,6 +5121,37 @@
     "lastChapter": "",
     "lastAttemptAt": "2026-04-20T12:17:35.000Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "31067b1a-f95e-4c09-b4d6-26373118a9f2": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "471edcce-7ccb-44b0-9944-4f0ebe377252",
+    "lastChapter": "62",
+    "lastAttemptAt": "2026-04-20T12:34:25.562Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "c098d85a-54a1-45dd-9921-d8ab3dd26d0b": {
+    "status": "discovered",
+    "title": "LORD",
+    "mangaId": 33741,
+    "anilistId": 33741,
+    "chapterIndexId": "c098d85a-54a1-45dd-9921-d8ab3dd26d0b",
+    "lastChapterId": "9ad074af-ec40-49d4-b4e8-c088974d386d",
+    "lastChapter": "54",
+    "lastAttemptAt": "2026-04-20T12:34:25.992Z",
+    "lastSuccessAt": "2026-04-20T12:34:25.992Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "7b8b6e71-2fc9-4219-b2a0-53af9b78384b": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "9df7d060-ea51-4c4d-b15a-1417573e4b56",
+    "lastChapter": "86",
+    "lastAttemptAt": "2026-04-20T12:34:26.177Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
