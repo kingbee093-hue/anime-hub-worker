@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "",
-    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-20T18:51:39.186Z",
+    "title": "Pivix Extras",
+    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
+    "lastChapter": "2.1",
+    "lastAttemptAt": "2026-04-20T19:17:32.568Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5004,7 +5004,7 @@
     "title": "Volume 8 extras",
     "lastChapterId": "ea385484-c9c4-4d2c-904a-725f5e34e065",
     "lastChapter": "47.5",
-    "lastAttemptAt": "2026-04-20T07:17:28.416Z",
+    "lastAttemptAt": "2026-04-20T19:17:38.744Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5013,7 +5013,7 @@
     "title": "Warrior-Eater",
     "lastChapterId": "57a5cc52-2a1a-4847-a5f7-31855f2ea91b",
     "lastChapter": "3",
-    "lastAttemptAt": "2026-04-20T07:17:31.749Z",
+    "lastAttemptAt": "2026-04-20T19:17:38.518Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5529,6 +5529,32 @@
     "lastChapter": "130",
     "lastAttemptAt": "2026-04-20T18:51:33.480Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "de491df4-153f-44e8-96d2-7c53d11c3dcf": {
+    "status": "discovered",
+    "title": "Hellper 2: Killberos",
+    "mangaId": 103634,
+    "anilistId": 103634,
+    "chapterIndexId": "de491df4-153f-44e8-96d2-7c53d11c3dcf",
+    "lastChapterId": "ce9fb371-2090-4867-aae6-2a2eeec1b3a5",
+    "lastChapter": "165",
+    "lastAttemptAt": "2026-04-20T19:17:33.456Z",
+    "lastSuccessAt": "2026-04-20T19:17:33.456Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "97824518-814b-4bb2-8699-9dc09c7ef555": {
+    "status": "discovered",
+    "title": "Kikkai-kun   ",
+    "mangaId": 150095,
+    "anilistId": 150095,
+    "chapterIndexId": "97824518-814b-4bb2-8699-9dc09c7ef555",
+    "lastChapterId": "a13617ee-a21f-4170-bc2e-4cc5da70982e",
+    "lastChapter": "47",
+    "lastAttemptAt": "2026-04-20T19:17:34.509Z",
+    "lastSuccessAt": "2026-04-20T19:17:34.509Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
