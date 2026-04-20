@@ -877,7 +877,7 @@
     "title": "Can't Show This",
     "lastChapterId": "f9091f3b-b3d4-4633-8a94-95054b826870",
     "lastChapter": "116",
-    "lastAttemptAt": "2026-04-19T18:51:29.608Z",
+    "lastAttemptAt": "2026-04-20T06:51:35.023Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -982,7 +982,7 @@
     "title": "The battle of yoga has begun",
     "lastChapterId": "52f47207-904c-458d-81b5-2b88ab567dda",
     "lastChapter": "76",
-    "lastAttemptAt": "2026-04-19T18:34:32.708Z",
+    "lastAttemptAt": "2026-04-20T06:51:23.322Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -3189,7 +3189,7 @@
     "title": "First year of junior high school (Part 2)",
     "lastChapterId": "a0828fda-7c01-4ede-9c8f-89262619ad7e",
     "lastChapter": "9",
-    "lastAttemptAt": "2026-04-19T18:17:34.572Z",
+    "lastAttemptAt": "2026-04-20T06:51:26.647Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -3361,7 +3361,7 @@
     "title": "Awakening",
     "lastChapterId": "08dab086-73ad-45e1-a4b2-5fe75509de14",
     "lastChapter": "23",
-    "lastAttemptAt": "2026-04-19T18:34:33.986Z",
+    "lastAttemptAt": "2026-04-20T06:51:35.965Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4435,12 +4435,16 @@
     "matcherVersion": 2
   },
   "f13ab102-fc55-4afc-8cd8-d2515c28eb10": {
-    "status": "failed",
-    "title": "Ring game",
+    "status": "discovered",
+    "title": "Danshi Koukousei, Otome Game no Akuyaku Reijou ni Tensei suru.",
+    "mangaId": 180109,
+    "anilistId": 180109,
+    "chapterIndexId": "f13ab102-fc55-4afc-8cd8-d2515c28eb10",
     "lastChapterId": "e275f545-d316-4cdc-9c48-391fb0755f5d",
     "lastChapter": "31.2",
-    "lastAttemptAt": "2026-04-19T18:34:32.418Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-20T06:51:30.401Z",
+    "lastSuccessAt": "2026-04-20T06:51:30.401Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "6061a00a-3820-419a-be11-200294182dd2": {
@@ -4979,6 +4983,19 @@
     "lastChapter": "5",
     "lastAttemptAt": "2026-04-20T06:34:31.388Z",
     "lastSuccessAt": "2026-04-20T06:34:31.388Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "8b34f37a-0181-4f0b-8ce3-01217e9a602c": {
+    "status": "discovered",
+    "title": "Please Bully Me, Miss Villainess!",
+    "mangaId": 141756,
+    "anilistId": 141756,
+    "chapterIndexId": "8b34f37a-0181-4f0b-8ce3-01217e9a602c",
+    "lastChapterId": "d13467ce-b322-44b7-b401-3e7599a21a8d",
+    "lastChapter": "151",
+    "lastAttemptAt": "2026-04-20T06:51:31.264Z",
+    "lastSuccessAt": "2026-04-20T06:51:31.264Z",
     "reason": null,
     "matcherVersion": 2
   }
