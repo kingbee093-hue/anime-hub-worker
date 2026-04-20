@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "",
-    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-20T11:51:36.938Z",
+    "title": "Pivix Extras",
+    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
+    "lastChapter": "2.1",
+    "lastAttemptAt": "2026-04-20T12:17:37.978Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5077,6 +5077,50 @@
     "lastChapter": "12",
     "lastAttemptAt": "2026-04-20T11:51:30.818Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "0149575f-3bad-4d08-95da-3f15ace1b6f7": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c03ed995-f529-434a-93e5-ba442db18d7d",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-04-20T12:17:28.902Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "0872d21b-c403-4284-a00b-091b005ce925": {
+    "status": "discovered",
+    "title": "Hyper Senshi Gundam Boy",
+    "mangaId": 202633,
+    "anilistId": 202633,
+    "chapterIndexId": "0872d21b-c403-4284-a00b-091b005ce925",
+    "lastChapterId": "f9097a09-1610-477c-9e9d-c917c56b9c06",
+    "lastChapter": "55",
+    "lastAttemptAt": "2026-04-20T12:17:29.710Z",
+    "lastSuccessAt": "2026-04-20T12:17:29.710Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "e4395ecd-68ff-4067-b2bd-3c9643ed70fa": {
+    "status": "discovered",
+    "title": "Uglyhood",
+    "mangaId": 107861,
+    "anilistId": 107861,
+    "chapterIndexId": "e4395ecd-68ff-4067-b2bd-3c9643ed70fa",
+    "lastChapterId": "1643ca47-afde-459a-930c-efba35a70092",
+    "lastChapter": "89",
+    "lastAttemptAt": "2026-04-20T12:17:31.186Z",
+    "lastSuccessAt": "2026-04-20T12:17:31.186Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "c23ac8ea-2d6e-4acd-91f6-9c3dd796dda9": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "94cf7d91-dbb7-440a-b9ca-a56e615021d1",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-20T12:17:35.000Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
