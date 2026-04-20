@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "Pivix Extras",
-    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
-    "lastChapter": "2.1",
-    "lastAttemptAt": "2026-04-20T15:51:31.018Z",
+    "title": "",
+    "lastChapterId": "fe06221d-72e5-40f5-8d07-618e679d39ce",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-20T16:17:32.515Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4361,10 +4361,10 @@
   },
   "f40a542e-7a3d-49e4-a5f9-8c9bea3a90a6": {
     "status": "failed",
-    "title": "My Childhood Friend and I VS 4 Moms",
-    "lastChapterId": "1f048593-b8c9-41f3-98f8-c9490d6ecb6f",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-20T15:51:31.285Z",
+    "title": "The Mom Meeting: Defining the Teaching Methods",
+    "lastChapterId": "a79fcdbb-68b1-4d78-aa41-0c1280c00fcb",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-20T16:17:33.042Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4920,7 +4920,7 @@
     "title": "",
     "lastChapterId": "1d4db287-a325-45f6-81bb-fc469a3601cd",
     "lastChapter": "133.5",
-    "lastAttemptAt": "2026-04-20T04:17:29.446Z",
+    "lastAttemptAt": "2026-04-20T16:17:32.967Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5371,6 +5371,32 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-20T15:51:31.152Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "0854fa2a-aa41-4ba7-9946-23562f747718": {
+    "status": "discovered",
+    "title": "Qing Ting Wo De Shengyin!!",
+    "mangaId": 158972,
+    "anilistId": 158972,
+    "chapterIndexId": "0854fa2a-aa41-4ba7-9946-23562f747718",
+    "lastChapterId": "6fab9799-95e7-458d-8dce-48376d8da87b",
+    "lastChapter": "26",
+    "lastAttemptAt": "2026-04-20T16:17:29.479Z",
+    "lastSuccessAt": "2026-04-20T16:17:29.479Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "9d2bccba-33b3-4c95-a4bf-8cdea584a32a": {
+    "status": "discovered",
+    "title": "TSUYOSHI: Daremo Katenai, Aitsu ni wa",
+    "mangaId": 109901,
+    "anilistId": 109901,
+    "chapterIndexId": "9d2bccba-33b3-4c95-a4bf-8cdea584a32a",
+    "lastChapterId": "59375851-ef72-4891-8914-62c1c606ddbb",
+    "lastChapter": "341",
+    "lastAttemptAt": "2026-04-20T16:17:33.445Z",
+    "lastSuccessAt": "2026-04-20T16:17:33.445Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
