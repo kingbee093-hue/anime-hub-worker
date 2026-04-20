@@ -3137,10 +3137,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "Pivix Extras",
-    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
-    "lastChapter": "2.1",
-    "lastAttemptAt": "2026-04-20T14:17:36.727Z",
+    "title": "",
+    "lastChapterId": "44ce468f-27b9-4112-a2c6-710fb225ef1b",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-20T15:17:31.048Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5314,6 +5314,28 @@
     "lastAttemptAt": "2026-04-20T15:00:50.491Z",
     "lastSuccessAt": "2026-04-20T15:00:50.491Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "2461504b-e7f3-4903-8851-c47d9817f557": {
+    "status": "discovered",
+    "title": "Ijime no Jikan",
+    "mangaId": 122895,
+    "anilistId": 122895,
+    "chapterIndexId": "2461504b-e7f3-4903-8851-c47d9817f557",
+    "lastChapterId": "7aa46ca2-0d50-4cf7-9810-8a2ac906a643",
+    "lastChapter": "34",
+    "lastAttemptAt": "2026-04-20T15:17:31.510Z",
+    "lastSuccessAt": "2026-04-20T15:17:31.510Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "4f803f4d-ade4-4742-b337-0dfdf2fb9877": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "8f909361-1e04-4860-ade9-bacc59c89e9c",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-20T15:17:35.448Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
