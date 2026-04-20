@@ -4998,5 +4998,23 @@
     "lastSuccessAt": "2026-04-20T06:51:31.264Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "f6aae3a6-536f-4cdc-94b4-deccbedda939": {
+    "status": "failed",
+    "title": "Volume 8 extras",
+    "lastChapterId": "ea385484-c9c4-4d2c-904a-725f5e34e065",
+    "lastChapter": "47.5",
+    "lastAttemptAt": "2026-04-20T07:17:28.416Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "cb9de964-2995-4d80-91a4-a0b89a13107d": {
+    "status": "failed",
+    "title": "Warrior-Eater",
+    "lastChapterId": "57a5cc52-2a1a-4847-a5f7-31855f2ea91b",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-20T07:17:31.749Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   }
 }
