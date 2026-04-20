@@ -4305,9 +4305,9 @@
   "c8acddfb-8288-4780-8dcf-864f0bb81398": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "6338db56-bbd2-44e9-9c5c-708ef3f98b16",
-    "lastChapter": "66",
-    "lastAttemptAt": "2026-04-20T17:00:36.223Z",
+    "lastChapterId": "ed2253a1-81d9-4c29-8e96-63ba62420eeb",
+    "lastChapter": "65",
+    "lastAttemptAt": "2026-04-20T17:17:29.860Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4942,7 +4942,7 @@
     "title": "AMALGAM",
     "lastChapterId": "12fd9217-92b4-4583-bdbb-a2aab178b146",
     "lastChapter": "5.2",
-    "lastAttemptAt": "2026-04-20T05:17:26.063Z",
+    "lastAttemptAt": "2026-04-20T17:17:29.701Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5410,6 +5410,15 @@
     "lastAttemptAt": "2026-04-20T17:00:35.507Z",
     "lastSuccessAt": "2026-04-20T17:00:35.507Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "08ae88c7-7507-40a6-ad7c-491dcb428c0c": {
+    "status": "failed",
+    "title": "Perfect Timing",
+    "lastChapterId": "67614b76-94e6-4c24-a4b5-4aee2bce4d8d",
+    "lastChapter": "34",
+    "lastAttemptAt": "2026-04-20T17:17:26.839Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
