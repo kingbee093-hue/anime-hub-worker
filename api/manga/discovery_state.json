@@ -4918,9 +4918,9 @@
   "bd38c075-8b12-450a-aeee-125e3ac5da4b": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "1d4db287-a325-45f6-81bb-fc469a3601cd",
-    "lastChapter": "133.5",
-    "lastAttemptAt": "2026-04-21T21:17:22.164Z",
+    "lastChapterId": "3067a77b-0baa-4ea8-a11c-434a35dd5763",
+    "lastChapter": "125.6",
+    "lastAttemptAt": "2026-04-21T22:00:30.463Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -6175,9 +6175,9 @@
   "3305b072-54a4-4448-bcdf-5972f630d65c": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "d9542561-5aa8-4b3b-a1b6-e2f595a32fe6",
-    "lastChapter": "4",
-    "lastAttemptAt": "2026-04-21T18:00:38.443Z",
+    "lastChapterId": "05663477-152a-4491-9725-1d26748b6571",
+    "lastChapter": "4.2",
+    "lastAttemptAt": "2026-04-21T22:00:30.103Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -6634,6 +6634,19 @@
     "lastChapter": "15",
     "lastAttemptAt": "2026-04-21T21:34:25.429Z",
     "lastSuccessAt": "2026-04-21T21:34:25.429Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "16df95f5-2734-452c-aac5-38b06799d7ff": {
+    "status": "discovered",
+    "title": "Collector",
+    "mangaId": 37637,
+    "anilistId": 37637,
+    "chapterIndexId": "16df95f5-2734-452c-aac5-38b06799d7ff",
+    "lastChapterId": "66a7787a-e734-40ba-aa4c-63a0d889804b",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-21T22:00:26.158Z",
+    "lastSuccessAt": "2026-04-21T22:00:26.158Z",
     "reason": null,
     "matcherVersion": 2
   }
