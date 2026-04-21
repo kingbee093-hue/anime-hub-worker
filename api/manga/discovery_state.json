@@ -1856,9 +1856,9 @@
   "8e5ff937-0d9a-40d5-b7ed-9f37a70901fb": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "c7d33fe7-1252-46b4-9e79-8198ef8c80c4",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-20T19:34:37.130Z",
+    "lastChapterId": "abed0de2-b9e6-4e92-ae02-dfa613870bc7",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T04:17:31.613Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4305,9 +4305,9 @@
   "c8acddfb-8288-4780-8dcf-864f0bb81398": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "ed2253a1-81d9-4c29-8e96-63ba62420eeb",
-    "lastChapter": "65",
-    "lastAttemptAt": "2026-04-21T04:00:37.485Z",
+    "lastChapterId": "510ba89b-3f40-4e8b-95b0-5f4bc405a7f1",
+    "lastChapter": "67",
+    "lastAttemptAt": "2026-04-21T04:17:28.364Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4920,7 +4920,7 @@
     "title": "",
     "lastChapterId": "1d4db287-a325-45f6-81bb-fc469a3601cd",
     "lastChapter": "133.5",
-    "lastAttemptAt": "2026-04-20T16:17:32.967Z",
+    "lastAttemptAt": "2026-04-21T04:17:44.521Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5891,6 +5891,32 @@
     "lastChapter": "3",
     "lastAttemptAt": "2026-04-21T03:51:31.255Z",
     "lastSuccessAt": "2026-04-21T03:51:31.255Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "491aba94-e971-4911-8a93-0b1200403f4b": {
+    "status": "discovered",
+    "title": "Major",
+    "mangaId": 40978,
+    "anilistId": 40978,
+    "chapterIndexId": "491aba94-e971-4911-8a93-0b1200403f4b",
+    "lastChapterId": "21111301-b35e-4712-8860-124bd85a06a4",
+    "lastChapter": "607",
+    "lastAttemptAt": "2026-04-21T04:17:27.774Z",
+    "lastSuccessAt": "2026-04-21T04:17:27.774Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "5de1e60c-92ce-40d0-bb02-63ee22217dbd": {
+    "status": "discovered",
+    "title": "Okaa-san Boukensha, Login Bonus de Skill [Shufu] ni Mezamemashita. Shuuichi Moraeru Chirashi de Boukensha Seikatsu Ganbarimasu!",
+    "mangaId": 204008,
+    "anilistId": 204008,
+    "chapterIndexId": "5de1e60c-92ce-40d0-bb02-63ee22217dbd",
+    "lastChapterId": "9b2c0634-d940-44b4-8d2d-53c28d5108df",
+    "lastChapter": "26",
+    "lastAttemptAt": "2026-04-21T04:17:44.103Z",
+    "lastSuccessAt": "2026-04-21T04:17:44.103Z",
     "reason": null,
     "matcherVersion": 2
   }
