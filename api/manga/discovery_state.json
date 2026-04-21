@@ -5255,7 +5255,7 @@
     "title": "Sunset",
     "lastChapterId": "1aedcd16-a217-4587-a2b7-0f92fbb3c15a",
     "lastChapter": "30",
-    "lastAttemptAt": "2026-04-20T14:34:36.913Z",
+    "lastAttemptAt": "2026-04-21T02:51:29.827Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5844,6 +5844,15 @@
     "lastAttemptAt": "2026-04-21T02:34:28.733Z",
     "lastSuccessAt": "2026-04-21T02:34:28.733Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "6f003727-741d-44aa-8c0f-9e4ec0055b9c": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c104337c-376c-499b-a2af-54b746d60d6a",
+    "lastChapter": "6.6",
+    "lastAttemptAt": "2026-04-21T02:51:26.705Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
