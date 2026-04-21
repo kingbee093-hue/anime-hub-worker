@@ -6381,5 +6381,76 @@
     "lastSuccessAt": "2026-04-21T18:00:39.866Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "340aa554-4b29-4238-b713-f245c6995d1c": {
+    "status": "failed",
+    "title": "New Student",
+    "lastChapterId": "fe3ef668-c78f-4dc7-bb5f-40c9c3b4f373",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T18:17:26.636Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "5481cc01-723b-4caf-8634-928382876a51": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "22888a20-cc8c-4044-8fc1-d14f450792db",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-21T18:17:29.983Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "fa0fb27a-d1db-4826-b400-fa3375468353": {
+    "status": "discovered",
+    "title": "Re:Zero kara Hajimeru Isekai Seikatsu: Dai-5 Shou - Mizu no Machi to Eiyuu no Uta",
+    "mangaId": 175172,
+    "anilistId": 175172,
+    "chapterIndexId": "fa0fb27a-d1db-4826-b400-fa3375468353",
+    "lastChapterId": "ece9ee5f-3c17-42ad-b326-7c2b06f2973f",
+    "lastChapter": "9",
+    "lastAttemptAt": "2026-04-21T18:17:30.481Z",
+    "lastSuccessAt": "2026-04-21T18:17:30.481Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "baf824f8-0cb7-4d57-b434-5790a27bf593": {
+    "status": "discovered",
+    "title": "Hinmin, Seihitsu, Daifugou",
+    "mangaId": 101276,
+    "anilistId": 101276,
+    "chapterIndexId": "baf824f8-0cb7-4d57-b434-5790a27bf593",
+    "lastChapterId": "023ec82b-2f2a-4723-98a5-8786da10ef4a",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-21T18:17:31.384Z",
+    "lastSuccessAt": "2026-04-21T18:17:31.384Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "eb74f521-8fcc-4119-ac8d-fdf928255b24": {
+    "status": "failed",
+    "title": "Bus For Two",
+    "lastChapterId": "fbacaaa6-db35-4801-9c3e-5c94327fdf4e",
+    "lastChapter": "24",
+    "lastAttemptAt": "2026-04-21T18:17:34.298Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "e0221566-f26d-4bbe-a160-09d79f5b828d": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "5b1c20e2-6350-443a-9ce9-4f2b3c1d638e",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T18:17:37.330Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "c290f769-70b8-47a5-a372-1c9788bc12a7": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "60c7d621-d044-4709-bed9-71ace1d0b0da",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T18:17:40.144Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
   }
 }
