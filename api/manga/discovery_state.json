@@ -4305,9 +4305,9 @@
   "c8acddfb-8288-4780-8dcf-864f0bb81398": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "510ba89b-3f40-4e8b-95b0-5f4bc405a7f1",
-    "lastChapter": "67",
-    "lastAttemptAt": "2026-04-21T14:34:25.974Z",
+    "lastChapterId": "ed2253a1-81d9-4c29-8e96-63ba62420eeb",
+    "lastChapter": "65",
+    "lastAttemptAt": "2026-04-21T16:51:28.889Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4361,10 +4361,10 @@
   },
   "f40a542e-7a3d-49e4-a5f9-8c9bea3a90a6": {
     "status": "failed",
-    "title": "My Childhood Friend and I VS 4 Moms",
-    "lastChapterId": "1f048593-b8c9-41f3-98f8-c9490d6ecb6f",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-21T16:34:25.737Z",
+    "title": "The Mom Meeting: Defining the Teaching Methods",
+    "lastChapterId": "a79fcdbb-68b1-4d78-aa41-0c1280c00fcb",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-21T16:51:33.725Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -4920,7 +4920,7 @@
     "title": "",
     "lastChapterId": "3067a77b-0baa-4ea8-a11c-434a35dd5763",
     "lastChapter": "125.6",
-    "lastAttemptAt": "2026-04-21T04:34:26.597Z",
+    "lastAttemptAt": "2026-04-21T16:51:33.610Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -6169,6 +6169,46 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-21T16:34:25.318Z",
     "lastSuccessAt": "2026-04-21T16:34:25.318Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "3305b072-54a4-4448-bcdf-5972f630d65c": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "773dadd6-459e-4ebb-8646-ebcfcf828e95",
+    "lastChapter": "4.1",
+    "lastAttemptAt": "2026-04-21T16:51:28.380Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "9fde98ca-be0d-4d7a-941f-40ed77f0ea12": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "e97042b7-d525-4ce3-9baa-fb189748e461",
+    "lastChapter": "67",
+    "lastAttemptAt": "2026-04-21T16:51:31.868Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "c5def82d-b265-4893-9298-45b1a529ede5": {
+    "status": "failed",
+    "title": "Northern Land arc episode 7",
+    "lastChapterId": "f579a39f-5036-4c11-beec-525a140350c6",
+    "lastChapter": "29",
+    "lastAttemptAt": "2026-04-21T16:51:33.489Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "99bf1235-3d96-4668-be60-9b612d174185": {
+    "status": "discovered",
+    "title": "Kikaijikake no Marie+",
+    "mangaId": 193822,
+    "anilistId": 193822,
+    "chapterIndexId": "99bf1235-3d96-4668-be60-9b612d174185",
+    "lastChapterId": "f8dfbb6d-f7f1-4656-96ff-498904b5da55",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-21T16:51:34.880Z",
+    "lastSuccessAt": "2026-04-21T16:51:34.880Z",
     "reason": null,
     "matcherVersion": 2
   }
