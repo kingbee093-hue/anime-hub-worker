@@ -1856,9 +1856,9 @@
   "8e5ff937-0d9a-40d5-b7ed-9f37a70901fb": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "c7d33fe7-1252-46b4-9e79-8198ef8c80c4",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-21T08:17:26.788Z",
+    "lastChapterId": "abed0de2-b9e6-4e92-ae02-dfa613870bc7",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T08:34:28.445Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -4509,7 +4509,7 @@
     "title": "",
     "lastChapterId": "92a24f0e-36d8-4c54-bbfc-740c3fea39aa",
     "lastChapter": "41",
-    "lastAttemptAt": "2026-04-20T20:17:29.836Z",
+    "lastAttemptAt": "2026-04-21T08:34:28.684Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -6005,6 +6005,15 @@
     "lastAttemptAt": "2026-04-21T07:17:26.600Z",
     "lastSuccessAt": "2026-04-21T07:17:26.600Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "2ae5d43a-709f-47ab-893e-5bffda798595": {
+    "status": "failed",
+    "title": "The Eye of the Storm",
+    "lastChapterId": "762491f9-b095-4b1e-9f91-512cbcc21481",
+    "lastChapter": "16",
+    "lastAttemptAt": "2026-04-21T08:34:28.589Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
