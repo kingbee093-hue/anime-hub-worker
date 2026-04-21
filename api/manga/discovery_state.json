@@ -4918,9 +4918,9 @@
   "bd38c075-8b12-450a-aeee-125e3ac5da4b": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "1d4db287-a325-45f6-81bb-fc469a3601cd",
-    "lastChapter": "133.5",
-    "lastAttemptAt": "2026-04-21T23:00:24.988Z",
+    "lastChapterId": "3067a77b-0baa-4ea8-a11c-434a35dd5763",
+    "lastChapter": "125.6",
+    "lastAttemptAt": "2026-04-21T23:17:29.932Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -6660,6 +6660,28 @@
     "lastChapter": "4",
     "lastAttemptAt": "2026-04-21T22:51:30.682Z",
     "lastSuccessAt": "2026-04-21T22:51:30.682Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "ef604209-7612-4405-8bce-c0f2ce056839": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "dfecb342-8d79-4586-8426-52d9b7e368f5",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T23:17:28.879Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "4c06dc79-8f28-4e09-9bc9-2437b529f5e0": {
+    "status": "discovered",
+    "title": "Ojousama-kei Teihen Dungeon Haishinsha, Meiwaku-kei wo Bokottara Bazutte Densetsu ni Nattemasu wa!?",
+    "mangaId": 205442,
+    "anilistId": 205442,
+    "chapterIndexId": "4c06dc79-8f28-4e09-9bc9-2437b529f5e0",
+    "lastChapterId": "11bd5036-cbfa-4fc9-a207-17ed05b830ed",
+    "lastChapter": "20",
+    "lastAttemptAt": "2026-04-21T23:17:29.305Z",
+    "lastSuccessAt": "2026-04-21T23:17:29.305Z",
     "reason": null,
     "matcherVersion": 2
   }
