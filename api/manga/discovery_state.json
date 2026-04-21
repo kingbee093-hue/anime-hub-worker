@@ -606,10 +606,10 @@
   },
   "ee957607-e7fc-40b0-acdb-10c7084d9d40": {
     "status": "failed",
-    "title": "Oh",
-    "lastChapterId": "62aa9b45-578f-4dae-a23e-2cd07b73a60b",
-    "lastChapter": "37",
-    "lastAttemptAt": "2026-04-21T09:17:32.870Z",
+    "title": "HAKKK",
+    "lastChapterId": "e3377181-c7b0-4f3b-99aa-d9ff6255ae02",
+    "lastChapter": "36",
+    "lastAttemptAt": "2026-04-21T12:00:33.840Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -5075,7 +5075,7 @@
     "title": "The Unyielding One",
     "lastChapterId": "7439b0fb-98f9-4ae0-b0ab-ad9744a31b53",
     "lastChapter": "12",
-    "lastAttemptAt": "2026-04-21T00:00:33.127Z",
+    "lastAttemptAt": "2026-04-21T12:00:33.918Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5611,12 +5611,16 @@
     "matcherVersion": 2
   },
   "81eaaace-c7c4-491c-95cd-f931268dca7c": {
-    "status": "failed",
-    "title": "Boyish Onee-San Saw My Phone’s Search History",
-    "lastChapterId": "b9d91326-81cf-42b6-b275-2e1652695739",
-    "lastChapter": "9",
-    "lastAttemptAt": "2026-04-21T09:00:42.440Z",
-    "reason": "anilist_match_not_found",
+    "status": "discovered",
+    "title": "Are You a Landmine, Chihara-san?",
+    "mangaId": 137714,
+    "anilistId": 137714,
+    "chapterIndexId": "81eaaace-c7c4-491c-95cd-f931268dca7c",
+    "lastChapterId": "5f2e92b9-fd38-486d-a7dd-358f8edad159",
+    "lastChapter": "8",
+    "lastAttemptAt": "2026-04-21T12:00:31.215Z",
+    "lastSuccessAt": "2026-04-21T12:00:31.215Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "37f47b1d-6e22-417c-a113-5a75c96247c6": {
@@ -6035,6 +6039,19 @@
     "lastChapter": "26",
     "lastAttemptAt": "2026-04-21T11:51:28.170Z",
     "lastSuccessAt": "2026-04-21T11:51:28.170Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "c0727be3-cccf-4cfd-99de-13c52c0f23be": {
+    "status": "discovered",
+    "title": "Kyomu Nee-chan wa Kamatte Hoshii",
+    "mangaId": 209851,
+    "anilistId": 209851,
+    "chapterIndexId": "c0727be3-cccf-4cfd-99de-13c52c0f23be",
+    "lastChapterId": "976dea8c-283e-4b3f-a269-64637cbb380c",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-21T12:00:31.839Z",
+    "lastSuccessAt": "2026-04-21T12:00:31.839Z",
     "reason": null,
     "matcherVersion": 2
   }
