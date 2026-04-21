@@ -1,10 +1,22 @@
 const ALLOWED_FORMATS = ['TV', 'TV_SHORT', 'OVA', 'ONA', 'SPECIAL', 'MOVIE'];
 const ALLOWED_MANGA_FORMATS = ['MANGA', 'ONE_SHOT'];
 
-const BLOCKED_GENRES = ['Hentai', 'Ecchi'];
+const BLOCKED_GENRES = ['Hentai', 'Ecchi', 'Erotica', 'Pornographic', 'Adult'];
 
 const BLOCKED_TAGS = [
-  'Hentai', 'Explicit Sexual Content', 'Pornography', 'Ecchi'
+  'Hentai', 
+  'Explicit Sexual Content', 
+  'Pornography', 
+  'Ecchi', 
+  'Sexual Violence', 
+  'Nudity', 
+  'Incest', 
+  'Smut',
+  // MangaDex fixed Tag IDs (UUIDs)
+  'd146d73e-3f6e-4171-8848-f68670497554', // Ecchi (MD)
+  '97893a4c-12af-4dac-b6be-0dffb353568e', // Sexual Violence (MD)
+  '5bd0e105-4481-44ca-b6e7-7544da56b1a3', // Incest (MD)
+  'b13b2a48-c720-44a9-9c77-39c9979373fb', // Doujinshi (MD)
 ];
 
 const ALLOWED_COUNTRIES = ['JP', 'CN', 'KR', 'TW'];
@@ -14,7 +26,7 @@ function isAdultContent(media) {
 
   const genres = media.genres || [];
   for (const genre of genres) {
-    if (BLOCKED_GENRES.includes(genre)) {
+    if (BLOCKED_GENRES.some(blocked => genre.toLowerCase() === blocked.toLowerCase())) {
       return { blocked: true, reason: genre };
     }
   }
@@ -22,8 +34,14 @@ function isAdultContent(media) {
   const tags = media.tags || [];
   for (const tag of tags) {
     const tagName = typeof tag === 'string' ? tag : tag.name;
-    if (BLOCKED_TAGS.includes(tagName)) {
+    const tagId = typeof tag === 'string' ? null : tag.id?.toString();
+    
+    if (tagName && BLOCKED_TAGS.some(blocked => tagName.toLowerCase() === blocked.toLowerCase())) {
       return { blocked: true, reason: tagName };
+    }
+    
+    if (tagId && BLOCKED_TAGS.includes(tagId)) {
+      return { blocked: true, reason: `Tag ID: ${tagId}` };
     }
   }
 
