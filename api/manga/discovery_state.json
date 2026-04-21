@@ -5252,10 +5252,10 @@
   },
   "f36ebc4e-df57-4e11-ac35-b73469cd1810": {
     "status": "failed",
-    "title": "Sunset",
-    "lastChapterId": "1aedcd16-a217-4587-a2b7-0f92fbb3c15a",
-    "lastChapter": "30",
-    "lastAttemptAt": "2026-04-21T15:00:36.840Z",
+    "title": "Ah! A huge grassfield!",
+    "lastChapterId": "a2e5b4a8-f52b-43aa-8b73-9e3c176f76cb",
+    "lastChapter": "27",
+    "lastAttemptAt": "2026-04-21T18:34:29.784Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -6451,6 +6451,54 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-21T18:17:40.144Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "37e8bcef-918f-4220-ac81-53f3a5919304": {
+    "status": "discovered",
+    "title": "Stray Cat & Wolf",
+    "mangaId": 121647,
+    "anilistId": 121647,
+    "chapterIndexId": "37e8bcef-918f-4220-ac81-53f3a5919304",
+    "lastChapterId": "aabe25ee-9a4f-4874-b4cb-e1a7208e623d",
+    "lastChapter": "22",
+    "lastAttemptAt": "2026-04-21T18:34:21.725Z",
+    "lastSuccessAt": "2026-04-21T18:34:21.725Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "651bd34b-21c8-460d-bbdd-2318dc150fa7": {
+    "status": "discovered",
+    "title": "Even Exiled, She's Still the Beloved Saint! St. Evelyn's Weird and Wonderful Friends",
+    "mangaId": 196624,
+    "anilistId": 196624,
+    "chapterIndexId": "651bd34b-21c8-460d-bbdd-2318dc150fa7",
+    "lastChapterId": "814398ef-7c10-4b64-9afe-628ffe3e60b6",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T18:34:25.645Z",
+    "lastSuccessAt": "2026-04-21T18:34:25.645Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "e3e2c204-ccc4-4061-b9e0-526a8b47d652": {
+    "status": "discovered",
+    "title": "Kominka Gal to Renovation Gurashi",
+    "mangaId": 209346,
+    "anilistId": 209346,
+    "chapterIndexId": "e3e2c204-ccc4-4061-b9e0-526a8b47d652",
+    "lastChapterId": "4c8d76c6-7a48-4d57-a392-0d71d2a254e8",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-21T18:34:26.322Z",
+    "lastSuccessAt": "2026-04-21T18:34:26.322Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "11ac676c-15c1-48ec-a289-91f798826ac5": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "d4490cfd-6c6f-4fe4-8a33-9417b979a8ba",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-21T18:34:26.663Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
