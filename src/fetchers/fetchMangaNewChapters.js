@@ -714,8 +714,9 @@ async function fetchRecentMangaDexFeed() {
         includeFuturePublishAt: 0,
         includeEmptyPages: 0,
         includeExternalUrl: 0,
-        contentRating: ['safe', 'suggestive', 'erotica'],
+        contentRating: ['safe', 'suggestive'],
         translatedLanguage: ALLOWED_LANGUAGES,
+        includes: ['manga'],
       },
       timeout: 45000,
     }, `mangadex recent feed page ${page + 1}`);
@@ -740,6 +741,14 @@ async function fetchRecentMangaDexFeed() {
       pageHasFreshRows = true;
       const mangaId = extractMangaId(row.relationships);
       if (!mangaId) continue;
+
+      // Filter out Ecchi (MangaDex Tag ID: 946652e5-4121-4494-bc5b-bfa0547b97cd)
+      const mangaObj = response.data.included?.find(inc => inc.type === 'manga' && inc.id === mangaId);
+      if (mangaObj) {
+        const tags = mangaObj.attributes?.tags || [];
+        const isEcchi = tags.some(tag => tag.id === '946652e5-4121-4494-bc5b-bfa0547b97cd');
+        if (isEcchi) continue;
+      }
 
       const language = String(attributes.translatedLanguage || '').trim().toLowerCase();
       if (!ALLOWED_LANGUAGES.includes(language)) {

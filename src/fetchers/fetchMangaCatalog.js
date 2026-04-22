@@ -327,6 +327,8 @@ async function fetchMangaDexCandidates(title, year) {
       limit: 5,
       year: year || undefined,
       includes: ['author', 'artist'],
+      contentRating: ['safe', 'suggestive'],
+      excludedTags: ['946652e5-4121-4494-bc5b-bfa0547b97cd'],
     },
     timeout: 25000,
   });
