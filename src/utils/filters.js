@@ -8,8 +8,6 @@ const BLOCKED_TAGS = [
   'Explicit Sexual Content', 
   'Pornography', 
   'Ecchi', 
-  'Sexual Violence', 
-  'Nudity', 
   'Incest', 
   'Smut',
   'Sexual Content',
@@ -18,8 +16,7 @@ const BLOCKED_TAGS = [
   'NTR',
   'Netorare',
   // MangaDex fixed Tag IDs (UUIDs)
-  'd146d73e-3f6e-4171-8848-f68670497554', // Ecchi (MD)
-  '97893a4c-12af-4dac-b6be-0dffb353568e', // Sexual Violence (MD)
+  '946652e5-4121-4494-bc5b-bfa0547b97cd', // Ecchi (MD)
   '5bd0e105-4481-44ca-b6e7-7544da56b1a3', // Incest (MD)
   'b13b2a48-c720-44a9-9c77-39c9979373fb', // Doujinshi (MD)
 ];
