@@ -1,14 +1,14 @@
 {
   "graphql.anilist.co": {
     "host": "graphql.anilist.co",
-    "consecutiveFailures": 0,
-    "totalFailures": 10,
-    "totalSuccesses": 1349,
-    "lastFailureAt": "2026-04-19T21:40:22.931Z",
-    "lastSuccessAt": "2026-04-22T14:20:21.776Z",
-    "lastStatus": 200,
-    "cooldownUntil": null,
-    "circuitOpenUntil": null,
-    "lastError": null
+    "consecutiveFailures": 3,
+    "totalFailures": 13,
+    "totalSuccesses": 1351,
+    "lastFailureAt": "2026-04-22T14:41:00.034Z",
+    "lastSuccessAt": "2026-04-22T14:40:24.578Z",
+    "lastStatus": 502,
+    "cooldownUntil": "2026-04-22T14:41:31.991Z",
+    "circuitOpenUntil": "2026-04-22T14:46:00.034Z",
+    "lastError": "Request failed with status code 502"
   }
 }
