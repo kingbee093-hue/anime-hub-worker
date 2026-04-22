@@ -6509,7 +6509,7 @@
     "title": "",
     "lastChapterId": "d4490cfd-6c6f-4fe4-8a33-9417b979a8ba",
     "lastChapter": "3",
-    "lastAttemptAt": "2026-04-21T18:34:26.663Z",
+    "lastAttemptAt": "2026-04-22T06:51:29.286Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -6801,6 +6801,37 @@
     "lastChapter": "26",
     "lastAttemptAt": "2026-04-22T05:51:24.372Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "17c9b56d-426f-4436-94ab-8525515cd617": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c67bffbe-c44c-43d8-99e2-1ce0ee3da2d1",
+    "lastChapter": "3.5",
+    "lastAttemptAt": "2026-04-22T06:51:29.011Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "adc21bdd-68aa-4551-8bd8-3ae82cd25f96": {
+    "status": "failed",
+    "title": "Vampire Hunter",
+    "lastChapterId": "837c2350-6e9c-4522-bb4e-512704c224bd",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-22T06:51:29.146Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "a540f26f-d440-4702-8aa6-38ee1c1bb74d": {
+    "status": "discovered",
+    "title": "Shinozaki-kun no Mente Jijou",
+    "mangaId": 122651,
+    "anilistId": 122651,
+    "chapterIndexId": "a540f26f-d440-4702-8aa6-38ee1c1bb74d",
+    "lastChapterId": "f369ef42-4e28-4d6a-b0f8-4ad3005080fe",
+    "lastChapter": "40",
+    "lastAttemptAt": "2026-04-22T06:51:29.707Z",
+    "lastSuccessAt": "2026-04-22T06:51:29.707Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
