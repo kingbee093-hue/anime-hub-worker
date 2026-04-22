@@ -1,7 +1,7 @@
 const ALLOWED_FORMATS = ['TV', 'TV_SHORT', 'OVA', 'ONA', 'SPECIAL', 'MOVIE'];
 const ALLOWED_MANGA_FORMATS = ['MANGA', 'ONE_SHOT'];
 
-const BLOCKED_GENRES = ['Hentai', 'Ecchi', 'Erotica', 'Pornographic', 'Adult'];
+const BLOCKED_GENRES = ['Hentai', 'Ecchi', 'Erotica', 'Pornographic', 'Adult', 'Sexual Content', 'Suggestive', 'Fanservice'];
 
 const BLOCKED_TAGS = [
   'Hentai', 
@@ -12,6 +12,11 @@ const BLOCKED_TAGS = [
   'Nudity', 
   'Incest', 
   'Smut',
+  'Sexual Content',
+  'Suggestive',
+  'Fanservice',
+  'NTR',
+  'Netorare',
   // MangaDex fixed Tag IDs (UUIDs)
   'd146d73e-3f6e-4171-8848-f68670497554', // Ecchi (MD)
   '97893a4c-12af-4dac-b6be-0dffb353568e', // Sexual Violence (MD)

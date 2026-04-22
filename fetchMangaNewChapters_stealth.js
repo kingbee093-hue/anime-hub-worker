@@ -93,7 +93,7 @@ const ANILIST_MANGA_FRAGMENT = `
 const ANILIST_MANGA_BY_ID_QUERY = `
 query ($id: Int, $idMal: Int) {
   Media(id: $id, idMal: $idMal, type: MANGA) {
-    ${ANILIST_MANGA_FRAGMENT}
+    \${ANILIST_MANGA_FRAGMENT}
   }
 }
 `;
@@ -102,7 +102,7 @@ const ANILIST_MANGA_SEARCH_QUERY = `
 query ($search: String, $perPage: Int) {
   Page(page: 1, perPage: $perPage) {
     media(type: MANGA, search: $search, sort: [POPULARITY_DESC, SCORE_DESC]) {
-      ${ANILIST_MANGA_FRAGMENT}
+      \${ANILIST_MANGA_FRAGMENT}
     }
   }
 }
@@ -318,7 +318,7 @@ function buildSearchIndexItem(manga, detailPage) {
 }
 
 function getDiscoveredEntriesPath() {
-  return path.join(__dirname, 'api', `${CONFIG.API_PATHS.MANGA_DISCOVERED_CATALOG}.json`);
+  return path.join(__dirname, 'api', `\${CONFIG.API_PATHS.MANGA_DISCOVERED_CATALOG}.json`);
 }
 
 function readDiscoveredCatalogEntries() {
@@ -330,10 +330,10 @@ function writeDiscoveredCatalogEntries(items) {
 }
 
 function readDiscoveryState() {
-  const filePath = path.join(__dirname, 'api', `${CONFIG.API_PATHS.MANGA_DISCOVERY_STATE}.json`);
-  console.log(`[Debug] Reading discovery state from: ${filePath}`);
+  const filePath = path.join(__dirname, 'api', `\${CONFIG.API_PATHS.MANGA_DISCOVERY_STATE}.json`);
+  console.log(`[Debug] Reading discovery state from: \${filePath}`);
   const parsed = readJsonFile(filePath, {});
-  console.log(`[Debug] Discovery state entries: ${Object.keys(parsed || {}).length}`);
+  console.log(`[Debug] Discovery state entries: \${Object.keys(parsed || {}).length}`);
   return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
 }
 
@@ -346,7 +346,7 @@ function writeDiscoveryReport(report) {
 }
 
 function readRequestHealth() {
-  const filePath = path.join(__dirname, 'api', `${CONFIG.API_PATHS.MANGA_REQUEST_HEALTH}.json`);
+  const filePath = path.join(__dirname, 'api', `\${CONFIG.API_PATHS.MANGA_REQUEST_HEALTH}.json`);
   const parsed = readJsonFile(filePath, {});
   return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
 }
@@ -420,12 +420,12 @@ async function waitForHostAvailability(hostKey, label) {
 
   if (waitMs > REQUEST_HOST_PREWAIT_MAX_MS) {
     throw new Error(
-      `host cooldown active for ${hostKey} before ${label}; remaining ${(waitMs / 1000).toFixed(1)}s exceeds prewait cap`,
+      `host cooldown active for \${hostKey} before \${label}; remaining \${(waitMs / 1000).toFixed(1)}s exceeds prewait cap`,
     );
   }
 
   console.log(
-    `Host ${hostKey} cooling down before ${label}; waiting ${(waitMs / 1000).toFixed(1)}s.`,
+    `Host \${hostKey} cooling down before \${label}; waiting \${(waitMs / 1000).toFixed(1)}s.`,
   );
   await delay(waitMs);
 }
@@ -513,18 +513,18 @@ async function requestJsonWithRetries(url, options = {}, label = 'request') {
       return response;
     } catch (error) {
       attempt += 1;
-      const statusText = error.response ? `[${error.response.status}]` : '[Network]';
-      console.error(`API request failed ${statusText} for ${label} (Attempt ${attempt}/${MANGADEX_REQUEST_RETRIES}): ${error.message}`);
+      const statusText = error.response ? `[\${error.response.status}]` : '[Network]';
+      console.error(`API request failed \${statusText} for \${label} (Attempt \${attempt}/\${MANGADEX_REQUEST_RETRIES}): \${error.message}`);
       const waitTimeMs = computeRetryDelayMs(attempt, error);
       markRequestFailure(hostKey, error, waitTimeMs);
       if (attempt >= MANGADEX_REQUEST_RETRIES) {
         throw error;
       }
-      console.log(`Retrying ${label} in ${(waitTimeMs / 1000).toFixed(1)}s...`);
+      console.log(`Retrying \${label} in \${(waitTimeMs / 1000).toFixed(1)}s...`);
       await delay(waitTimeMs);
     }
   }
-  throw new Error(`${label} failed after ${MANGADEX_REQUEST_RETRIES} attempts`);
+  throw new Error(`\${label} failed after \${MANGADEX_REQUEST_RETRIES} attempts`);
 }
 
 function summarizeRecentItem(recentItem, extra = {}) {
@@ -646,7 +646,7 @@ function buildTitleScore(media, titles, year) {
 
 function parseIntegerChapter(value) {
   const text = String(value || '').trim();
-  if (!/^\d+(?:\.0+)?$/.test(text)) {
+  if (!/^\\d+(?:\\.0+)?\$/.test(text)) {
     return null;
   }
   const parsed = Number(text);
@@ -712,7 +712,7 @@ async function fetchRecentMangaDexFeed() {
     const offset = page * 100; // Original was FEED_PAGE_SIZE, we use 100 for safety but limit loop
     const limit = getRandomFeedPageSize();
     
-    const response = await requestJsonWithRetries(`${MANGADEX_API}/chapter`, {
+    const response = await requestJsonWithRetries(`\${MANGADEX_API}/chapter`, {
       params: {
         limit: limit,
         offset: page * limit,
@@ -721,11 +721,11 @@ async function fetchRecentMangaDexFeed() {
         includeFuturePublishAt: 0,
         includeEmptyPages: 0,
         includeExternalUrl: 0,
-        contentRating: ['safe', 'suggestive', 'erotica'],
+        contentRating: ['safe', 'suggestive'],
         translatedLanguage: ALLOWED_LANGUAGES,
       },
       timeout: 45000,
-    }, `mangadex recent feed page ${page + 1}`);
+    }, `mangadex recent feed page \${page + 1}`);
 
     const rows = Array.isArray(response.data?.data) ? response.data.data : [];
     fetchedPages += 1;
@@ -791,725 +791,16 @@ async function fetchMangaDexMangaDetails(mangaId, cache) {
     return cache.get(mangaId);
   }
 
-  const response = await requestJsonWithRetries(`${MANGADEX_API}/manga/${mangaId}`, {
+  const response = await requestJsonWithRetries(`\${MANGADEX_API}/manga/\${mangaId}`, {
     params: {
       includes: ['cover_art', 'author', 'artist'],
     },
     timeout: 30000,
-  }, `mangadex manga details ${mangaId}`);
+  }, `mangadex manga details \${mangaId}`);
 
-  const details = response.data?.data || null;
-  cache.set(mangaId, details);
+  const details = response.data?.data;
+  if (details) {
+    cache.set(mangaId, details);
+  }
   return details;
 }
-
-async function fetchAniListMediaByIds({ anilistId = null, malId = null }) {
-  if (!anilistId && !malId) {
-    return null;
-  }
-
-  const data = await fetchGraphQL(ANILIST_MANGA_BY_ID_QUERY, {
-    id: anilistId || undefined,
-    idMal: malId || undefined,
-  });
-
-  return data?.Media || null;
-}
-
-async function searchAniListMediaByTitles(titles, year) {
-  // Prioritize ASCII titles to avoid Cloudflare WAF issues with Japanese characters
-  // Also reduce variants to 1 for Discovery to minimize rate limit pressure
-  const variants = buildSearchTitleVariants(titles);
-  const asciiVariants = variants.filter(isPureASCII);
-  const nonAsciiVariants = variants.filter(v => !isPureASCII(v));
-  
-  const searchCandidates = [
-    ...shuffleArray(asciiVariants), 
-    ...shuffleArray(nonAsciiVariants)
-  ].slice(0, 2); // Reduced from 3 to 2 to save requests
-
-  let best = null;
-  let bestScore = -1;
-
-  for (const title of searchCandidates) {
-    if (!title || title.length < 2) continue;
-    
-    // Explicitly log for diagnostics since we see rejections
-    console.log(`[AniList] Searching with term: "${title}"`);
-
-    const data = await fetchGraphQL(ANILIST_MANGA_SEARCH_QUERY, {
-      search: title,
-      perPage: SEARCH_RESULTS_LIMIT,
-    });
-    
-    if (!data) continue; // Skip if request failed or was blocked
-
-    const candidates = Array.isArray(data?.Page?.media) ? data.Page.media : [];
-
-    for (const media of candidates) {
-      const adult = isAdultContent(media);
-      const manga = isManga(media);
-      if (adult.blocked || !manga.allowed) {
-        continue;
-      }
-
-      const score = buildTitleScore(media, variants, year);
-      if (score > bestScore) {
-        best = media;
-        bestScore = score;
-      }
-    }
-
-    if (bestScore >= 120) {
-      break;
-    }
-    
-    // Safety delay between title variations
-    await delay(1200);
-  }
-
-  const result = bestScore >= 45 ? best : null;
-  if (!result) {
-    discoveryFailures.push({ titles, reason: `No match found (Best score: ${bestScore})` });
-  }
-  return result;
-}
-
-
-async function fetchChapterPages(chapterId) {
-  const response = await requestJsonWithRetries(`${MANGADEX_API}/at-home/server/${chapterId}`, {
-    timeout: 30000,
-  }, `mangadex chapter pages ${chapterId}`);
-
-  const baseUrl = String(response.data?.baseUrl || '');
-  const chapter = response.data?.chapter || {};
-  const hash = String(chapter.hash || '');
-  const files = Array.isArray(chapter.data) ? chapter.data : [];
-  if (!baseUrl || !hash || files.length === 0) {
-    return [];
-  }
-
-  return files.map((file) => `${baseUrl}/data/${hash}/${file}`);
-}
-
-function writeDiscoveredChapterIndex(entry, recentItem, pageUrls, manifest) {
-  const chapterPayload = normalizeStoredChapter({
-    id: recentItem.chapterId,
-    title: recentItem.title,
-    chapter: recentItem.chapter,
-    volume: '',
-    language: recentItem.language,
-    pages: pageUrls.length,
-    pageUrls,
-    imageHeaders: {},
-    publishedAt: recentItem.publishedAt,
-    externalUrl: null,
-    scanlationGroup: 'MangaDex',
-    sourceType: 'reader',
-    provider: 'mangadex',
-    providerChapterId: recentItem.chapterId,
-  });
-
-  const latestKnownChapterNumber = parseIntegerChapter(recentItem.chapter);
-  const chapterIndex = buildChapterIndexPayload(
-    entry,
-    { [recentItem.language]: [chapterPayload] },
-    {
-      latestKnownChapterNumber: recentItem.chapter || null,
-      latestKnownChapterNumberInt: latestKnownChapterNumber,
-    },
-  );
-
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/${entry.chapterIndexId}`, chapterIndex);
-
-  const manifestItems = Array.isArray(manifest.items) ? manifest.items : [];
-  const nextItem = {
-    chapterIndexId: entry.chapterIndexId,
-    mangaId: entry.mangaId,
-    anilistId: entry.anilistId,
-    mangadexId: entry.mangadexId,
-    title: entry.title,
-    updatedAt: chapterIndex.updatedAt,
-    availableLanguages: chapterIndex.availableLanguages,
-    counts: chapterIndex.counts,
-    englishFallbackProvider: null,
-    englishFallbackChapterCount: null,
-    latestKnownChapterNumber: recentItem.chapter || null,
-    latestKnownChapterNumberInt: latestKnownChapterNumber,
-  };
-
-  const existingIndex = manifestItems.findIndex((item) =>
-    String(item.chapterIndexId || item.mangadexId || '') === String(entry.chapterIndexId || entry.mangadexId || ''),
-  );
-  if (existingIndex >= 0) {
-    manifestItems[existingIndex] = {
-      ...manifestItems[existingIndex],
-      ...nextItem,
-    };
-  } else {
-    manifestItems.push(nextItem);
-  }
-
-  manifest.items = manifestItems
-    .filter((item) => item?.mangaId)
-    .sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
-  manifest.totalTitles = manifest.items.length;
-}
-
-function buildCatalogEntryFromAniList(media, mangadexDetails, recentItem) {
-  const formatted = convertMangaToFirestoreFormat(media, {
-    mangadexId: recentItem.mangaId,
-    mangadexUrl: `https://mangadex.org/title/${recentItem.mangaId}`,
-    mangadexMappingSource: 'recent_chapter_discovery',
-    mangadexMappingConfidence: 0.98,
-    chapterIndexId: buildChapterIndexId({
-      mangaId: media.id,
-      anilistId: media.id,
-      mangadexId: recentItem.mangaId,
-    }) || recentItem.mangaId,
-    chapterSourceProvider: 'mangadex',
-    chapterSourceId: recentItem.mangaId,
-    chapterSourceTitle: getPrimaryMangadexTitle(mangadexDetails),
-    chapterSourceConfidence: 1,
-  });
-
-  if (!formatted) {
-    return null;
-  }
-
-  const latestKnownChapter = parseIntegerChapter(recentItem.chapter);
-  return {
-    ...formatted,
-    title: formatted.title || getPrimaryMangadexTitle(mangadexDetails),
-    chapters: Math.max(Number(formatted.chapters || 0), latestKnownChapter || 0),
-  };
-}
-
-async function discoverCatalogEntryForRecentItem(recentItem, caches) {
-  const mangadexDetails = await fetchMangaDexMangaDetails(recentItem.mangaId, caches.mangadexDetails);
-  if (!mangadexDetails?.attributes) {
-    return { reason: 'mangadex_details_missing' };
-  }
-
-  const titles = extractMangadexTitles(mangadexDetails);
-  const year = Number(mangadexDetails.attributes?.year || 0) || null;
-  const description = String(mangadexDetails.attributes?.description?.en || '');
-
-  let media = null;
-  const linkedAniListId = extractAniListLinkId(mangadexDetails) || extractIdFromText(description, /anilist\.co\/manga\/(\d+)/);
-  const linkedMalId = extractMalLinkId(mangadexDetails) || extractIdFromText(description, /myanimelist\.net\/manga\/(\d+)/);
-
-  if (linkedAniListId) {
-    media = await fetchAniListMediaByIds({ anilistId: linkedAniListId });
-  }
-
-  if (!media && linkedMalId) {
-    media = await fetchAniListMediaByIds({ malId: linkedMalId });
-  }
-
-
-  if (!media) {
-    media = await searchAniListMediaByTitles(titles, year);
-  }
-
-  // Fallback to Consumet Anilist wrapper if standard GraphQL mapping failed
-  if (!media) {
-    try {
-      const anilistFallback = new META.Anilist.Manga();
-      const fallbackSearch = await anilistFallback.search(titles[0]);
-      if (fallbackSearch && fallbackSearch.results && fallbackSearch.results.length > 0) {
-        const bestFallbackId = fallbackSearch.results[0].id;
-        if (bestFallbackId) {
-          media = await fetchAniListMediaByIds({ anilistId: Number(bestFallbackId) });
-          if (media) {
-            console.log(`[Consumet Fallback] Matched ${titles[0]} to Anilist ID ${bestFallbackId}`);
-          }
-        }
-      }
-    } catch (err) {
-      console.log(`[Consumet Fallback] Failed for ${titles[0]}: ${err.message}`);
-    }
-  }
-
-  if (!media) {
-    return {
-      reason: 'anilist_match_not_found',
-      candidateTitles: titles.slice(0, 6),
-      year,
-      mangadexDetails,
-    };
-  }
-
-
-  const adult = isAdultContent(media);
-  const manga = isManga(media);
-  if (adult.blocked || !manga.allowed) {
-    return {
-      reason: adult.blocked ? `Blocked: ${adult.reason}` : 'non_manga_filtered',
-      anilistId: media?.id || null,
-      mangadexDetails,
-    };
-  }
-
-
-  const entry = buildCatalogEntryFromAniList(media, mangadexDetails, recentItem);
-  if (!entry) {
-    return {
-      reason: 'catalog_entry_build_failed',
-      anilistId: media?.id || null,
-    };
-  }
-
-  const pageUrls = await fetchChapterPages(recentItem.chapterId);
-  if (!Array.isArray(pageUrls) || pageUrls.length === 0) {
-    return {
-      reason: 'chapter_pages_missing',
-      anilistId: media?.id || null,
-      entry,
-    };
-  }
-
-  return {
-    entry,
-    pageUrls,
-    title: entry.title,
-    reason: null,
-  };
-}
-
-function writeCatalogArtifacts(catalogEntries) {
-  const catalog = sortCatalog(Array.from(catalogEntries || []));
-  const totalPages = Math.max(1, Math.ceil(catalog.length / CATALOG_PAGE_SIZE));
-  const lookup = {};
-  const genreBuckets = new Map();
-  const searchIndex = [];
-  const searchShards = new Map();
-
-  for (let pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
-    const start = (pageNumber - 1) * CATALOG_PAGE_SIZE;
-    const pageItems = catalog.slice(start, start + CATALOG_PAGE_SIZE);
-
-    for (const item of pageItems) {
-      lookup[String(item.mangaId)] = pageNumber;
-      const searchItem = buildSearchIndexItem(item, pageNumber);
-      searchIndex.push(searchItem);
-
-      const shardTerms = new Set([
-        searchItem.title,
-        searchItem.titleEnglish,
-        searchItem.titleRomaji,
-        searchItem.titleNative,
-        ...((item.synonyms || []).slice(0, 8)),
-      ]);
-      for (const term of shardTerms) {
-        addToShard(searchShards, getSearchShardKey(term), searchItem);
-      }
-
-      for (const genre of item.genres || []) {
-        if (!genreBuckets.has(genre)) {
-          genreBuckets.set(genre, []);
-        }
-        genreBuckets.get(genre).push(item);
-      }
-    }
-
-    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_page_${pageNumber}`, pageItems);
-  }
-
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CATALOG}/manga_lookup`, lookup);
-
-  for (const [genre, items] of genreBuckets.entries()) {
-    const sortedItems = sortCatalog(
-      Array.from(new Map(items.map((item) => [item.mangaId, item])).values()),
-    ).slice(0, GENRE_MAX_ITEMS);
-    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genre}`, sortedItems);
-  }
-
-  const searchManifest = {
-    generatedAt: new Date().toISOString(),
-    totalItems: searchIndex.length,
-    shards: {},
-  };
-
-  for (const [shardKey, itemsMap] of searchShards.entries()) {
-    const shardItems = sortCatalog(Array.from(itemsMap.values()));
-    searchManifest.shards[shardKey] = {
-      count: shardItems.length,
-      path: `${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/shards/${shardKey}.json`,
-    };
-    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/shards/${shardKey}`, shardItems);
-  }
-
-  writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_SEARCH_INDEX}/manifest`, searchManifest);
-  writeJsonIfChanged(CONFIG.API_PATHS.MANGA_SEARCH_INDEX, searchIndex);
-  writeJsonIfChanged(
-    CONFIG.API_PATHS.MANGA_RELEASING,
-    buildReleasingSection(catalog, DEFAULT_SECTION_LIMIT),
-  );
-}
-
-async function discoverMissingRecentCatalogEntries(recentFeedItems, catalogEntries) {
-  const manifest = getChapterManifest();
-  const discoveredEntries = readDiscoveredCatalogEntries();
-  const discoveryState = readDiscoveryState();
-  const catalog = mergeCatalogEntries(catalogEntries, discoveredEntries);
-  const catalogMaps = buildCatalogMaps(catalog);
-  const discoveredMangaIds = new Set();
-  const nextDiscoveredMap = new Map(
-    discoveredEntries
-      .filter((item) => item?.mangaId)
-      .map((item) => [String(item.mangaId), item]),
-  );
-
-  const caches = {
-    mangadexDetails: new Map(),
-  };
-
-  let attempted = 0;
-  let created = 0;
-  let skippedByLimit = 0;
-  let skippedRecentFailure = 0;
-  let alreadyKnown = 0;
-  const report = {
-    generatedAt: new Date().toISOString(),
-    discoveryLimit: DISCOVERY_LIMIT,
-    failureCooldownHours: FAILURE_COOLDOWN_HOURS,
-    freshFeedCount: recentFeedItems.length,
-    discovered: [],
-    failed: [],
-    skippedByLimit: [],
-    skippedRecentFailure: [],
-    skippedAlreadyKnown: [],
-  };
-
-  // Shuffle feed items to change processing pattern each run
-  const shuffledItems = shuffleArray(recentFeedItems);
-
-  for (const recentItem of shuffledItems) {
-    const recentKey = String(recentItem.mangaId);
-    if (catalogMaps.byMangadexId.has(recentKey)) {
-      alreadyKnown += 1;
-      report.skippedAlreadyKnown.push(summarizeRecentItem(recentItem, { reason: 'already_in_catalog' }));
-      continue;
-    }
-
-    if (isRecentFailureState(discoveryState[recentKey], recentItem)) {
-      skippedRecentFailure += 1;
-      report.skippedRecentFailure.push(summarizeRecentItem(recentItem, {
-        reason: discoveryState[recentKey]?.reason || 'recent_failure_cooldown',
-        lastAttemptAt: discoveryState[recentKey]?.lastAttemptAt || null,
-      }));
-      continue;
-    }
-
-    if (DISCOVERY_LIMIT > 0 && attempted >= DISCOVERY_LIMIT) {
-      skippedByLimit += 1;
-      report.skippedByLimit.push(summarizeRecentItem(recentItem, { reason: 'discovery_limit' }));
-      continue;
-    }
-
-    attempted += 1;
-    try {
-      const discovered = await discoverCatalogEntryForRecentItem(recentItem, caches);
-      if (!discovered?.entry) {
-        discoveryState[recentKey] = {
-          status: 'failed',
-          title: recentItem.title || '',
-          lastChapterId: recentItem.chapterId,
-          lastChapter: recentItem.chapter || '',
-          lastAttemptAt: new Date().toISOString(),
-          reason: discovered?.reason || 'unknown_discovery_failure',
-          matcherVersion: MATCHER_VERSION,
-        };
-        const displayTitle = recentItem.title || 
-                             (discovered?.mangadexDetails?.attributes?.title?.en) || 
-                             (discovered?.mangadexDetails?.attributes?.title?.[Object.keys(discovered.mangadexDetails.attributes.title || {})[0]]) ||
-                             `MangaDex:${recentItem.mangaId}`;
-        
-        report.failed.push(summarizeRecentItem(recentItem, {
-          title: displayTitle,
-          reason: discovered?.reason || 'unknown_discovery_failure',
-          candidateTitles: Array.isArray(discovered?.candidateTitles) ? discovered.candidateTitles : undefined,
-          anilistId: discovered?.anilistId || null,
-        }));
-        continue;
-      }
-
-
-      const entry = discovered.entry;
-      nextDiscoveredMap.set(String(entry.mangaId), entry);
-      catalog.push(entry);
-      catalogMaps.byMangadexId.set(String(entry.mangadexId), entry);
-      catalogMaps.byChapterIndexId.set(String(entry.chapterIndexId), entry);
-      catalogMaps.byMangaId.set(String(entry.mangaId), entry);
-      discoveredMangaIds.add(String(entry.mangaId));
-      writeDiscoveredChapterIndex(entry, recentItem, discovered.pageUrls, manifest);
-      discoveryState[recentKey] = {
-        status: 'discovered',
-        title: entry.title || recentItem.title || '',
-        mangaId: entry.mangaId,
-        anilistId: entry.anilistId,
-        chapterIndexId: entry.chapterIndexId,
-        lastChapterId: recentItem.chapterId,
-        lastChapter: recentItem.chapter || '',
-        lastAttemptAt: new Date().toISOString(),
-        lastSuccessAt: new Date().toISOString(),
-        reason: null,
-        matcherVersion: MATCHER_VERSION,
-      };
-      report.discovered.push(summarizeRecentItem(recentItem, {
-        title: entry.title,
-        mangaId: entry.mangaId,
-        anilistId: entry.anilistId,
-        chapterIndexId: entry.chapterIndexId,
-      }));
-      created += 1;
-      console.log(
-        `Discovered new manga from recent feed: "${entry.title}" (AniList=${entry.anilistId}, MangaDex=${entry.mangadexId}, latest ch=${recentItem.chapter || '?'})`,
-      );
-      
-      const stealthDelay = await getStealthDelay(REQUEST_DELAY_MS);
-      await delay(stealthDelay);
-    } catch (error) {
-      discoveryState[recentKey] = {
-        status: 'failed',
-        title: recentItem.title || '',
-        lastChapterId: recentItem.chapterId,
-        lastChapter: recentItem.chapter || '',
-        lastAttemptAt: new Date().toISOString(),
-        reason: error.message,
-        matcherVersion: MATCHER_VERSION,
-      };
-      report.failed.push(summarizeRecentItem(recentItem, {
-        reason: 'exception',
-        detail: error.message,
-      }));
-      console.warn(
-        `Recent discovery failed for MangaDex title ${recentItem.mangaId}: ${error.message}`,
-      );
-    }
-  }
-
-  writeDiscoveryState(discoveryState);
-  writeDiscoveryReport(report);
-
-  const nextDiscoveredEntries = sortCatalog(Array.from(nextDiscoveredMap.values()));
-
-  if (created > 0) {
-    writeDiscoveredCatalogEntries(nextDiscoveredEntries);
-    writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_CHAPTERS}/manifest`, {
-      generatedAt: new Date().toISOString(),
-      totalTitles: Array.isArray(manifest.items) ? manifest.items.length : 0,
-      items: manifest.items || [],
-    });
-  }
-
-  const mergedCatalog = mergeCatalogEntries(catalogEntries, nextDiscoveredEntries);
-  if (created > 0) {
-    writeCatalogArtifacts(mergedCatalog);
-  }
-
-  report.summary = {
-    discovered: report.discovered.length,
-    failed: report.failed.length,
-    skippedByLimit: report.skippedByLimit.length,
-    skippedRecentFailure: report.skippedRecentFailure.length,
-    skippedAlreadyKnown: report.skippedAlreadyKnown.length,
-    attempted,
-    catalogCountAfterMerge: mergedCatalog.length,
-  };
-  writeDiscoveryState(discoveryState);
-  writeDiscoveryReport(report);
-
-  return {
-    catalogEntries: mergedCatalog,
-    manifestMap: getChapterManifestMap(manifest),
-    discoveredCount: created,
-    discoveredMangaIds,
-    discoveryAttempts: attempted,
-    skippedByLimit,
-    skippedRecentFailure,
-    alreadyKnown,
-    failedCount: report.failed.length,
-    failedItems: report.failed,
-  };
-}
-
-
-function buildRecentFeedItems(recentFeedItems, catalogEntries, manifestMap, discoveredMangaIds = new Set()) {
-  const catalogMaps = buildCatalogMaps(catalogEntries);
-
-  const effectiveManifestMap = manifestMap || getChapterManifestMap();
-  const enriched = [];
-
-  for (const recentItem of recentFeedItems) {
-    const catalogEntry = catalogMaps.byMangadexId.get(String(recentItem.mangaId));
-    if (!catalogEntry) {
-      continue;
-    }
-
-    const manifestItem =
-      effectiveManifestMap.get(String(catalogEntry.chapterIndexId || '')) ||
-      effectiveManifestMap.get(String(catalogEntry.mangadexId || '')) ||
-      null;
-
-    enriched.push({
-      ...catalogEntry,
-      latestChapterUpdatedAt: recentItem.publishedAt,
-      latestChapterNumber: recentItem.chapter,
-      latestChapterTitle: recentItem.title,
-      latestChapterLanguage: recentItem.language,
-      latestChapterId: recentItem.chapterId,
-      chapterCoverageCount: getManifestCount(manifestItem),
-      chapterCoverageLanguages: Array.isArray(manifestItem?.availableLanguages)
-        ? manifestItem.availableLanguages
-        : [],
-      discoveredFromRecentFeed:
-        Boolean(catalogEntry.discoveredFromRecentFeed) ||
-        discoveredMangaIds.has(String(catalogEntry.mangaId)),
-    });
-  }
-
-  enriched.sort((a, b) => {
-    const timeDelta =
-      new Date(b.latestChapterUpdatedAt || 0).getTime() - new Date(a.latestChapterUpdatedAt || 0).getTime();
-    if (timeDelta !== 0) return timeDelta;
-    return Number(b.popularity || 0) - Number(a.popularity || 0);
-  });
-
-  const deduped = new Map();
-  for (const item of enriched) {
-    deduped.set(String(item.mangaId), item);
-  }
-
-  const dedupedItems = Array.from(deduped.values());
-  const sectionLimit = resolveSectionLimit(dedupedItems.length);
-  return {
-    items: sectionLimit > 0 ? dedupedItems.slice(0, sectionLimit) : dedupedItems,
-    catalogCount: catalogEntries.length,
-    matchedCount: dedupedItems.length,
-    sectionLimit,
-  };
-}
-
-async function collectFreshNewChapterItems() {
-  const recentFeed = await fetchRecentMangaDexFeed();
-  const catalogEntries = getMangaCatalogEntries();
-  const discovery = await discoverMissingRecentCatalogEntries(recentFeed.items, catalogEntries);
-  const built = buildRecentFeedItems(
-    recentFeed.items,
-    discovery.catalogEntries,
-    discovery.manifestMap,
-    discovery.discoveredMangaIds,
-  );
-
-  return {
-    ...built,
-    feedRows: recentFeed.totalRows,
-    feedPages: recentFeed.fetchedPages,
-    freshFeedItems: recentFeed.items.length,
-    cutoffIso: recentFeed.cutoffIso,
-    discoveredCount: discovery.discoveredCount,
-    discoveryAttempts: discovery.discoveryAttempts,
-    discoverySkippedByLimit: discovery.skippedByLimit,
-    discoverySkippedRecentFailure: discovery.skippedRecentFailure,
-    discoveryAlreadyKnown: discovery.alreadyKnown,
-    discoveryFailedCount: discovery.failedCount,
-    failedItems: discovery.failedItems,
-  };
-}
-
-
-async function fetchMangaNewChapters() {
-  console.log('========================================');
-  console.log('REFRESHING MANGA NEW CHAPTERS [STEALTH MODE]');
-  console.log('========================================');
-  pruneRequestHealthState();
-  const requestHealthBefore = getRequestHealthSummary();
-  console.log(
-    `Request health before run: hosts=${requestHealthBefore.hosts}, cooling=${requestHealthBefore.cooling}, open-circuits=${requestHealthBefore.openCircuits}.`,
-  );
-
-  const outputPath = path.join(__dirname, '../../api', `${CONFIG.API_PATHS.MANGA_NEW_CHAPTERS}.json`);
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-
-  const previousItems = parseExistingItems(outputPath);
-  console.log(`Window: last ${FRESH_HOURS} hours. Previous file entries: ${previousItems.length}.`);
-
-  try {
-    let latestAttempt = null;
-    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-      latestAttempt = await collectFreshNewChapterItems();
-
-      console.log(
-        `Attempt ${attempt}/${MAX_ATTEMPTS}: catalog=${latestAttempt.catalogCount}, feed-pages=${latestAttempt.feedPages}, feed-rows=${latestAttempt.feedRows}, fresh-feed=${latestAttempt.freshFeedItems}, discovered=${latestAttempt.discoveredCount}, matched=${latestAttempt.matchedCount}, limit=${latestAttempt.sectionLimit}, section=${latestAttempt.items.length}.`,
-      );
-
-      console.log(
-        `Discovery details: already-known=${latestAttempt.discoveryAlreadyKnown}, failed=${latestAttempt.discoveryFailedCount}, skipped-recent-failure=${latestAttempt.discoverySkippedRecentFailure}, skipped-limit=${latestAttempt.discoverySkippedByLimit}.`,
-      );
-
-      if (latestAttempt.discoverySkippedByLimit > 0) {
-        console.log(
-          `Discovery limit reached in this run: skipped ${latestAttempt.discoverySkippedByLimit} unmatched recent title(s) after ${latestAttempt.discoveryAttempts} attempts.`,
-        );
-      }
-
-      if (latestAttempt.failedItems && latestAttempt.failedItems.length > 0) {
-
-
-        console.log('\n---------- DISCOVERY FAILURE REPORT ----------');
-        latestAttempt.failedItems.forEach((f, i) => {
-          const title = f.title || f.mangaId || 'Unknown';
-          console.log(`${i + 1}. "${title}" -> Reason: ${f.reason}`);
-        });
-        console.log('----------------------------------------------\n');
-      }
-
-      if (latestAttempt.items.length > 0) {
-        if (attempt > 1) {
-          console.log(`Recovered non-empty new chapters section on attempt ${attempt}.`);
-        }
-        break;
-      }
-
-      if (attempt < MAX_ATTEMPTS) {
-        console.warn(
-          `New chapters result is empty (attempt ${attempt}/${MAX_ATTEMPTS}). Retrying in ${RETRY_DELAY_MS}ms...`,
-        );
-        await delay(RETRY_DELAY_MS);
-      }
-    }
-
-    const finalItems = Array.isArray(latestAttempt?.items) ? latestAttempt.items : [];
-
-    if (finalItems.length === 0 && previousItems.length > 0) {
-      console.warn(
-        `New chapters still empty after ${MAX_ATTEMPTS} attempts. Keeping previous file with ${previousItems.length} entries.`,
-      );
-      return;
-    }
-
-    if (finalItems.length === 0) {
-      console.warn(
-        `New chapters empty after ${MAX_ATTEMPTS} attempts and no previous cache exists. Skipping write to avoid publishing empty feed.`,
-      );
-      return;
-    }
-
-    writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
-    console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
-  } finally {
-    pruneRequestHealthState();
-    if (requestHealthDirty) {
-      writeRequestHealth(requestHealthState);
-      requestHealthDirty = false;
-    }
-    const requestHealthAfter = getRequestHealthSummary();
-    console.log(
-      `Request health after run: hosts=${requestHealthAfter.hosts}, cooling=${requestHealthAfter.cooling}, open-circuits=${requestHealthAfter.openCircuits}.`,
-    );
-  }
-}
-
-module.exports = fetchMangaNewChapters;
