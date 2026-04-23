@@ -24,7 +24,7 @@ async function run() {
     const target = args[0] ? args[0].toLowerCase() : 'all';
     const skipMangaChapters = process.env.MANGA_SKIP_CHAPTER_INDEX === '1';
 
-    console.log(`🚀 Starting Anime Hub Worker... Target: [${target.toUpperCase()}]`);
+    console.log(`🚀 Starting AnimeHub - Main Sections Worker... Target: [${target.toUpperCase()}]`);
 
     try {
         if (target === 'recent' || target === 'all') await fetchRecentEpisodes();

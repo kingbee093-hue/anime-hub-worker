@@ -19,6 +19,8 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
 
   const mediaList = data.Page.media || [];
   const finalData = [];
+  
+  console.log(`Fetched ${mediaList.length} items from API.`);
 
   for (const media of mediaList) {
     if (!media || (!media.idMal && !media.id)) continue;
@@ -27,6 +29,8 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
     const firestoreData = convertToFirestoreFormat(media);
     if (firestoreData) {
       finalData.push(firestoreData);
+      const title = firestoreData.title || firestoreData.englishTitle || firestoreData.romajiTitle || 'Unknown Title';
+      console.log(`  -> Processed: ${title}`);
     }
   }
 
@@ -41,13 +45,19 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
         if (id) deduped.set(String(id), item);
       }
       // Add new ones
+      let newCount = 0;
       for (const item of finalData) {
         const id = item.anilistId || item.animeId;
-        if (id) deduped.set(String(id), item);
+        if (id) {
+            if (!deduped.has(String(id))) {
+                newCount++;
+            }
+            deduped.set(String(id), item);
+        }
       }
       
       finalOutput = Array.from(deduped.values());
-      console.log(`[Accumulate] Merged ${finalData.length} new items with ${existing.length} existing. Total: ${finalOutput.length}`);
+      console.log(`[Accumulate] Merged ${finalData.length} fetched items with ${existing.length} existing. Added ${newCount} completely new entries. Total: ${finalOutput.length}`);
     }
   }
 

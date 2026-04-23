@@ -6,7 +6,7 @@ const CONFIG = require('../config/constants');
 async function fetchTrending() {
     return fetchSection(CONFIG.API_PATHS.TRENDING, {
         page: 1, perPage: CONFIG.MEDIA_PER_PAGE, sort: ['TRENDING_DESC', 'POPULARITY_DESC']
-    }, 'Trending Anime');
+    }, 'Trending Anime', { accumulate: true });
 }
 
 async function fetchFeatured() {
@@ -14,13 +14,13 @@ async function fetchFeatured() {
         page: 1,
         perPage: 8,
         sort: ['TRENDING_DESC', 'SCORE_DESC', 'POPULARITY_DESC']
-    }, 'Featured Anime');
+    }, 'Featured Anime', { accumulate: true });
 }
 
 async function fetchTopRated() {
     return fetchSection(CONFIG.API_PATHS.TOP_RATED, {
         page: 1, perPage: CONFIG.MEDIA_PER_PAGE, sort: ['SCORE_DESC']
-    }, 'Top Rated All Time');
+    }, 'Top Rated All Time', { accumulate: true });
 }
 
 async function fetchPopularSeason() {
@@ -35,19 +35,19 @@ async function fetchPopularSeason() {
     return fetchSection(CONFIG.API_PATHS.POPULAR_SEASON, {
         page: 1, perPage: CONFIG.MEDIA_PER_PAGE, 
         season: season, seasonYear: new Date().getFullYear(), sort: ['POPULARITY_DESC']
-    }, 'Popular This Season');
+    }, 'Popular This Season', { accumulate: true });
 }
 
 async function fetchUpcoming() {
     return fetchSection(CONFIG.API_PATHS.UPCOMING, {
         page: 1, perPage: CONFIG.MEDIA_PER_PAGE, status: 'NOT_YET_RELEASED', sort: ['POPULARITY_DESC']
-    }, 'Upcoming Next Season');
+    }, 'Upcoming Next Season', { accumulate: true });
 }
 
 async function fetchTopAiring() {
     return fetchSection(CONFIG.API_PATHS.TOP_AIRING, {
         page: 1, perPage: CONFIG.MEDIA_PER_PAGE, status: 'RELEASING', sort: ['POPULARITY_DESC']
-    }, 'Top Airing Now');
+    }, 'Top Airing Now', { accumulate: true });
 }
 
 module.exports = {
