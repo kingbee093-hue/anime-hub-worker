@@ -4,12 +4,12 @@ const CONFIG = require('../config/constants');
 // Generic sections wrapped around fetchSection helper
 
 async function fetchTrending() {
-    // Fetch trending exactly as AniList ranks it — no status filter, no cap on pages.
-    // Will scan as many pages as needed until 2000 valid items are collected.
+    // Fetch trending exactly as AniList ranks it — no status filter.
+    // Accumulates over time: each run adds 2000 new/updated items on top of existing data.
     return fetchSection(CONFIG.API_PATHS.TRENDING, {
         perPage: 50,
         sort: ['TRENDING_DESC']
-    }, 'Trending Anime', { accumulate: false, maxItems: 2000 });
+    }, 'Trending Anime', { accumulate: true, maxItems: 2000 });
 }
 
 async function fetchFeatured() {
