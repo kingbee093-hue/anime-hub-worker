@@ -1,52 +1,88 @@
-const CONFIG = require('../config/constants');
-const { isAdultContent, isAnime } = require('../utils/filters');
-const { convertToFirestoreFormat } = require('../utils/formatters');
-const { fetchGraphQL } = require('../utils/fetchHelper');
-const { GENERIC_MEDIA_QUERY } = require('../utils/anilistQueries');
+const fs   = require('fs');
+const path = require('path');
+
+const CONFIG    = require('../config/constants');
+const { isAdultContent, isAnime }      = require('../utils/filters');
+const { convertToFirestoreFormat }     = require('../utils/formatters');
+const { fetchGraphQL }                 = require('../utils/fetchHelper');
+const { GENERIC_MEDIA_QUERY }          = require('../utils/anilistQueries');
 const { writeJsonIfChanged, readJson } = require('../utils/writeJsonIfChanged');
+
+// ─── Page-state persistence ──────────────────────────────────────────────────
+// Saved at api/.section_state.json inside the repo so it survives between runs.
+const STATE_FILE = path.join(__dirname, '../../api/.section_state.json');
+
+function loadState() {
+    try {
+        if (fs.existsSync(STATE_FILE)) {
+            return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+        }
+    } catch (_) { /* ignore */ }
+    return {};
+}
+
+function saveState(state) {
+    try {
+        fs.mkdirSync(path.dirname(STATE_FILE), { recursive: true });
+        fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+    } catch (e) {
+        console.error('  [State] Failed to save state:', e.message);
+    }
+}
+// ─────────────────────────────────────────────────────────────────────────────
 
 async function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**
- * Fetches a section with full pagination support.
+ * Fetches a section with full pagination support, resuming from the last
+ * page fetched on the previous run (page-state tracking).
  *
- * @param {string} collectionPath - Path to write the JSON file
- * @param {object} variables - GraphQL variables (perPage, sort, etc.)
- * @param {string} sectionName - Human readable name for logging
+ * @param {string} collectionPath - Relative path used as the JSON file key
+ * @param {object} variables      - GraphQL query variables
+ * @param {string} sectionName    - Label used in log output
  * @param {object} options
- * @param {boolean} options.accumulate  - Merge with existing data without deleting old entries
- * @param {number}  options.maxItems    - Target number of valid items to collect.
- *                                        Worker keeps scanning pages until this is reached,
- *                                        even if it takes 300 pages. No artificial page cap
- *                                        is applied when this is set.
- * @param {number}  options.maxPages    - Hard page cap (used only when maxItems is NOT set).
- *                                        Defaults to 10 (500 items) as a safety fallback.
+ * @param {boolean} options.accumulate - Merge with existing data (no deletions)
+ * @param {number}  options.maxItems   - Stop collecting once this many valid items
+ *                                       are gathered in this run. Worker scans up
+ *                                       to 300 pages to reach the target.
+ * @param {number}  options.maxPages   - Hard page cap when maxItems is NOT set (default 10).
  */
 async function fetchSection(collectionPath, variables, sectionName, options = {}) {
     console.log('========================================');
     console.log(`FETCHING: ${sectionName}${options.accumulate ? ' (ACCUMULATE)' : ''}`);
-    if (options.maxItems) console.log(`  Target: ${options.maxItems} valid items`);
+    if (options.maxItems) console.log(`  Target this run: ${options.maxItems} valid items`);
     console.log('========================================');
 
-    let page = 1;
-    let hasNextPage = true;
-    const collected = [];
+    // ── Resume from last saved page ─────────────────────────────────────────
+    const state     = loadState();
+    const stateKey  = collectionPath;
+    let   startPage = (state[stateKey] || 0) + 1;  // continue from next page
+    console.log(`  [State] Last page for "${stateKey}" was ${startPage - 1}, starting at page ${startPage}`);
 
-    // If maxItems is set → scan up to 300 pages to reach that target.
-    // If maxItems is NOT set → respect maxPages (default 10) as a safety cap.
-    const hardPageLimit = options.maxItems
-        ? 300
-        : (options.maxPages || 10);
+    const hardPageLimit = options.maxItems ? 300 : (options.maxPages || 10);
+    const targetItems   = options.maxItems || Infinity;
 
-    const targetItems = options.maxItems || Infinity;
+    let page         = startPage;
+    let hasNextPage  = true;
+    let wrappedAround = false;
+    const collected  = [];
 
     variables.perPage = variables.perPage || 50;
 
-    while (hasNextPage && page <= hardPageLimit && collected.length < targetItems) {
-        variables.page = page;
+    while (hasNextPage && collected.length < targetItems) {
+        // If we've passed the hard limit, wrap around to page 1 and continue
+        // collecting until we hit targetItems (prevents infinite loop: stop after
+        // one full wrap that brings us back to startPage).
+        if (page > hardPageLimit) {
+            if (wrappedAround) break; // already wrapped once, stop
+            console.log(`  [State] Reached page ${page}, wrapping to page 1.`);
+            page = 1;
+            wrappedAround = true;
+        }
 
+        variables.page = page;
         const pct = targetItems === Infinity
             ? `${collected.length}`
             : `${collected.length}/${targetItems}`;
@@ -72,15 +108,28 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
 
         hasNextPage = data.Page.pageInfo?.hasNextPage ?? false;
 
+        // If AniList says no next page, wrap around on accumulate sections
+        if (!hasNextPage && options.accumulate && !wrappedAround && collected.length < targetItems) {
+            console.log(`  [State] No more pages from AniList, wrapping to page 1.`);
+            page = 1;
+            hasNextPage = true;
+            wrappedAround = true;
+            continue;
+        }
+
         if (hasNextPage && collected.length < targetItems) {
-            await delay(1000); // gentle rate-limit
+            await delay(1000);
         }
         page++;
     }
 
-    console.log(`  ✓ Finished "${sectionName}". Collected ${collected.length} valid items (scanned ${page - 1} pages).`);
+    // Save the last page we reached so next run continues from here
+    state[stateKey] = page - 1;
+    saveState(state);
+    console.log(`  [State] Saved last page = ${page - 1} for "${stateKey}"`);
+    console.log(`  ✓ Finished "${sectionName}". Collected ${collected.length} valid items.`);
 
-    // ── Accumulate (merge with existing, no deletions) ──────────────────────
+    // ── Accumulate (merge, no deletions) ────────────────────────────────────
     let finalOutput = collected;
     if (options.accumulate) {
         const existing = readJson(collectionPath);
@@ -103,7 +152,7 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
         }
     }
 
-    // ── Write JSON only if content changed ─────────────────────────────────
+    // ── Write JSON only if content changed ──────────────────────────────────
     const result = writeJsonIfChanged(collectionPath, finalOutput);
     if (result.changed) {
         console.log(`  ✔ Written to ${result.file}`);
