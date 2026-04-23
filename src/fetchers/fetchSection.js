@@ -5,46 +5,75 @@ const { fetchGraphQL } = require('../utils/fetchHelper');
 const { GENERIC_MEDIA_QUERY } = require('../utils/anilistQueries');
 const { writeJsonIfChanged, readJson } = require('../utils/writeJsonIfChanged');
 
+async function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function fetchSection(collectionPath, variables, sectionName, options = {}) {
   console.log('========================================');
   console.log(`FETCHING: ${sectionName} ${options.accumulate ? '(ACCUMULATE MODE)' : ''}`);
   console.log('========================================');
 
-  const data = await fetchGraphQL(GENERIC_MEDIA_QUERY, variables);
-
-  if (!data || !data.Page) {
-    console.error(`Failed to fetch ${sectionName}`);
-    return;
-  }
-
-  const mediaList = data.Page.media || [];
+  let page = 1;
+  let hasNextPage = true;
   const finalData = [];
-  
-  console.log(`Fetched ${mediaList.length} items from API.`);
+  const maxPages = options.maxPages || 100; // Hard limit of 100 pages (5000 items) to prevent infinite loops
 
-  for (const media of mediaList) {
-    if (!media || (!media.idMal && !media.id)) continue;
-    if (isAdultContent(media).blocked || !isAnime(media).allowed) continue;
+  // Force perPage to 50 for max efficiency if not specified
+  variables.perPage = variables.perPage || 50;
 
-    const firestoreData = convertToFirestoreFormat(media);
-    if (firestoreData) {
-      finalData.push(firestoreData);
-      const title = firestoreData.title || firestoreData.englishTitle || firestoreData.romajiTitle || 'Unknown Title';
-      console.log(`  -> Processed: ${title}`);
+  while (hasNextPage && page <= maxPages) {
+    variables.page = page;
+    console.log(`Fetching page ${page} for ${sectionName}...`);
+
+    const data = await fetchGraphQL(GENERIC_MEDIA_QUERY, variables);
+
+    if (!data || !data.Page) {
+      console.error(`Failed to fetch ${sectionName} on page ${page}`);
+      break;
     }
+
+    const mediaList = data.Page.media || [];
+    let processedOnPage = 0;
+
+    for (const media of mediaList) {
+      if (!media || (!media.idMal && !media.id)) continue;
+      if (isAdultContent(media).blocked || !isAnime(media).allowed) continue;
+
+      const firestoreData = convertToFirestoreFormat(media);
+      if (firestoreData) {
+        finalData.push(firestoreData);
+        processedOnPage++;
+      }
+    }
+
+    console.log(`  -> Processed ${processedOnPage} valid items on page ${page}.`);
+
+    if (data.Page.pageInfo) {
+      hasNextPage = data.Page.pageInfo.hasNextPage;
+    } else {
+      hasNextPage = false;
+    }
+
+    if (hasNextPage && page < maxPages) {
+       await delay(1000); // 1 sec delay between pages to be gentle on AniList
+    }
+    page++;
   }
+
+  console.log(`Finished fetching ${sectionName}. Total valid items fetched: ${finalData.length}`);
 
   let finalOutput = finalData;
   if (options.accumulate) {
     const existing = readJson(collectionPath);
     if (Array.isArray(existing)) {
       const deduped = new Map();
-      // Load existing (older ones might be replaced by newer versions if IDs match)
+      
       for (const item of existing) {
         const id = item.anilistId || item.animeId;
         if (id) deduped.set(String(id), item);
       }
-      // Add new ones
+      
       let newCount = 0;
       for (const item of finalData) {
         const id = item.anilistId || item.animeId;
