@@ -56,7 +56,7 @@
     "averageScore": 72,
     "meanScore": 79,
     "popularity": 1570,
-    "trending": 0,
+    "trending": 2,
     "favourites": 102,
     "source": "OTHER",
     "countryOfOrigin": "CN",
@@ -72,8 +72,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=a0N7s4OB0jA"
     },
-    "nextEpisode": 159,
-    "nextAiringAt": 1776823200
+    "nextEpisode": 160,
+    "nextAiringAt": 1777428000
   },
   {
     "animeId": 63964,
@@ -150,8 +150,8 @@
     "averageScore": 0,
     "meanScore": 64,
     "popularity": 2249,
-    "trending": 4,
-    "favourites": 18,
+    "trending": 1,
+    "favourites": 19,
     "source": "MANGA",
     "countryOfOrigin": "KR",
     "isLicensed": true,
@@ -162,8 +162,8 @@
     "mal_url": "https://myanimelist.net/anime/63964",
     "anilist_url": "https://anilist.co/anime/163793",
     "trailer": null,
-    "nextEpisode": 2,
-    "nextAiringAt": 1776845700
+    "nextEpisode": 3,
+    "nextAiringAt": 1777450500
   },
   {
     "animeId": 61254,
@@ -291,7 +291,7 @@
     "averageScore": 52,
     "meanScore": 62,
     "popularity": 425,
-    "trending": 1,
+    "trending": 0,
     "favourites": 9,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -307,8 +307,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=n-jg8syMe08"
     },
-    "nextEpisode": 28,
-    "nextAiringAt": 1776855600
+    "nextEpisode": 29,
+    "nextAiringAt": 1777460400
   },
   {
     "animeId": 59708,
@@ -456,9 +456,9 @@
         "isAdult": false
       },
       {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
         "category": "Theme-Drama",
         "rank": 90,
         "isGeneralSpoiler": false,
@@ -466,11 +466,11 @@
         "isAdult": false
       },
       {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
         "category": "Theme-Drama",
-        "rank": 88,
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -600,7 +600,7 @@
         "name": "Femboy",
         "description": "Features a boy who exhibits characteristics or behaviors considered in many cultures to be typical of girls.",
         "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 33,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -622,8 +622,8 @@
     "averageScore": 79,
     "meanScore": 80,
     "popularity": 68698,
-    "trending": 51,
-    "favourites": 1524,
+    "trending": 341,
+    "favourites": 1552,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -638,8 +638,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=kAncxuwCPZg"
     },
-    "nextEpisode": 7,
-    "nextAiringAt": 1776861000
+    "nextEpisode": 8,
+    "nextAiringAt": 1777465800
   },
   {
     "animeId": 63433,
@@ -726,8 +726,8 @@
     "averageScore": 43,
     "meanScore": 44,
     "popularity": 1578,
-    "trending": 4,
-    "favourites": 40,
+    "trending": 1,
+    "favourites": 41,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -738,8 +738,8 @@
     "mal_url": "https://myanimelist.net/anime/63433",
     "anilist_url": "https://anilist.co/anime/210375",
     "trailer": null,
-    "nextEpisode": 4,
-    "nextAiringAt": 1776862500
+    "nextEpisode": 5,
+    "nextAiringAt": 1777467300
   },
   {
     "animeId": 61316,
@@ -790,7 +790,7 @@
         "name": "Memory Manipulation",
         "description": "Prominently features a character(s) who has had their memories altered.",
         "category": "Theme-Other",
-        "rank": 98,
+        "rank": 99,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -850,7 +850,7 @@
         "name": "Amnesia",
         "description": "Prominently features a character(s) with memory loss.",
         "category": "Cast-Traits",
-        "rank": 83,
+        "rank": 85,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -990,7 +990,7 @@
         "name": "Shapeshifting",
         "description": "Features character(s) who changes one's appearance or form.",
         "category": "Theme-Fantasy",
-        "rank": 55,
+        "rank": 56,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -1026,6 +1026,16 @@
         "isAdult": false
       },
       {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 494,
         "name": "Twins",
         "description": "Prominently features two or more siblings that were born at one birth.",
@@ -1052,8 +1062,8 @@
     "averageScore": 86,
     "meanScore": 86,
     "popularity": 72360,
-    "trending": 30,
-    "favourites": 1795,
+    "trending": 555,
+    "favourites": 1856,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1068,8 +1078,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=i8EjBP85cCc"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776862800
+    "nextEpisode": 4,
+    "nextAiringAt": 1777467600
   },
   {
     "animeId": 62485,
@@ -1188,8 +1198,8 @@
     "averageScore": 57,
     "meanScore": 58,
     "popularity": 12629,
-    "trending": 11,
-    "favourites": 170,
+    "trending": 87,
+    "favourites": 172,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1204,8 +1214,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_yVyIweMYto"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776862800
+    "nextEpisode": 4,
+    "nextAiringAt": 1777467600
   },
   {
     "animeId": 62512,
@@ -1328,6 +1338,16 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
       }
     ],
     "studios": [
@@ -1354,7 +1374,7 @@
     "averageScore": 63,
     "meanScore": 65,
     "popularity": 8808,
-    "trending": 3,
+    "trending": 71,
     "favourites": 103,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -1370,8 +1390,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pxeYbPg5JIA"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776862800
+    "nextEpisode": 5,
+    "nextAiringAt": 1777467600
   },
   {
     "animeId": 63830,
@@ -1460,7 +1480,7 @@
     "averageScore": 58,
     "meanScore": 71,
     "popularity": 899,
-    "trending": 1,
+    "trending": 9,
     "favourites": 6,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -1472,8 +1492,8 @@
     "mal_url": "https://myanimelist.net/anime/63830",
     "anilist_url": "https://anilist.co/anime/210687",
     "trailer": null,
-    "nextEpisode": 3,
-    "nextAiringAt": 1776864600
+    "nextEpisode": 4,
+    "nextAiringAt": 1777469400
   },
   {
     "animeId": 57779,
@@ -1530,11 +1550,11 @@
         "isAdult": false
       },
       {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 92,
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1544,7 +1564,17 @@
         "name": "Gore",
         "description": "Prominently features graphic bloodshed and violence.",
         "category": "Theme-Other",
-        "rank": 90,
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1564,7 +1594,7 @@
         "name": "Magic",
         "description": "Prominently features magical elements or the use of magic.",
         "category": "Theme-Fantasy",
-        "rank": 85,
+        "rank": 84,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1574,17 +1604,37 @@
         "name": "Ensemble Cast",
         "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
         "category": "Cast-Main Cast",
-        "rank": 84,
+        "rank": 83,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
         "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 154,
+        "name": "Body Swapping",
+        "description": "Centers around individuals swapping bodies with one another.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1594,26 +1644,6 @@
         "name": "Full CGI",
         "description": "Almost entirely created with computer-generated imagery.",
         "category": "Technical",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 72,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 281,
-        "name": "Surreal Comedy",
-        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
-        "category": "Theme-Comedy",
         "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1630,11 +1660,21 @@
         "isAdult": false
       },
       {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
         "category": "Cast-Main Cast",
-        "rank": 68,
+        "rank": 66,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1644,7 +1684,7 @@
         "name": "Seinen",
         "description": "Target demographic is adult males.",
         "category": "Demographic",
-        "rank": 62,
+        "rank": 65,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1654,17 +1694,7 @@
         "name": "Curses",
         "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
         "category": "Theme-Fantasy",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 15,
-        "name": "Demons",
-        "description": "Prominently features malevolent otherworldly creatures.",
-        "category": "Cast-Traits",
-        "rank": 60,
+        "rank": 64,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1674,7 +1704,7 @@
         "name": "Nudity",
         "description": "Features a character wearing no clothing or exposing intimate body parts.",
         "category": "Cast-Traits",
-        "rank": 20,
+        "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -1696,8 +1726,8 @@
     "averageScore": 79,
     "meanScore": 80,
     "popularity": 29439,
-    "trending": 17,
-    "favourites": 491,
+    "trending": 118,
+    "favourites": 500,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1712,8 +1742,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=GHjCjHAKo9c"
     },
-    "nextEpisode": 6,
-    "nextAiringAt": 1776866400
+    "nextEpisode": 7,
+    "nextAiringAt": 1777471200
   },
   {
     "animeId": 61831,
@@ -1823,8 +1853,8 @@
     "averageScore": 55,
     "meanScore": 56,
     "popularity": 26491,
-    "trending": 11,
-    "favourites": 442,
+    "trending": 150,
+    "favourites": 448,
     "source": "OTHER",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1839,8 +1869,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=embD4ae1ufk"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776868200
+    "nextEpisode": 5,
+    "nextAiringAt": 1777473000
   },
   {
     "animeId": 62604,
@@ -1990,8 +2020,8 @@
     "averageScore": 73,
     "meanScore": 74,
     "popularity": 26612,
-    "trending": 25,
-    "favourites": 366,
+    "trending": 292,
+    "favourites": 388,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2006,8 +2036,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pdWQUnshA4M"
     },
-    "nextEpisode": 3,
-    "nextAiringAt": 1776869100
+    "nextEpisode": 4,
+    "nextAiringAt": 1777473900
   },
   {
     "animeId": 63276,
@@ -2062,7 +2092,7 @@
     "averageScore": 0,
     "meanScore": 57,
     "popularity": 428,
-    "trending": 0,
+    "trending": 4,
     "favourites": 1,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
@@ -2078,8 +2108,8 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=wM3E9LXHmu0"
     },
-    "nextEpisode": 2,
-    "nextAiringAt": 1776869760
+    "nextEpisode": 3,
+    "nextAiringAt": 1777474560
   },
   {
     "animeId": 62893,
@@ -2222,8 +2252,8 @@
     "averageScore": 70,
     "meanScore": 72,
     "popularity": 10902,
-    "trending": 7,
-    "favourites": 146,
+    "trending": 128,
+    "favourites": 147,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2238,8 +2268,105 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=d0LkNAqMrZw"
     },
-    "nextEpisode": 4,
-    "nextAiringAt": 1776870000
+    "nextEpisode": 5,
+    "nextAiringAt": 1777474800
+  },
+  {
+    "animeId": 63967,
+    "anilistId": 153466,
+    "title": "Pan Long",
+    "titleRomaji": "Pan Long",
+    "titleEnglish": "",
+    "titleNative": "盘龙",
+    "synonyms": [
+      "Coiling Dragon",
+      "Coiled Dragon"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b153466-9YOq1CIvfVg1.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b153466-9YOq1CIvfVg1.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b153466-9YOq1CIvfVg1.png",
+    "coverImageColor": "#e4ae50",
+    "bannerImage": "",
+    "synopsis": "Linley is a young noble of a declining, once-powerful clan which once dominated the world. He has large aspirations and wants to save his clan. Linley's journey begins with an accident when he discovers a ring. He took a liking to this ring, which had a dragon carved coiling around it. Upon being injured during a battle between two powerful fighters he discovers that his ring is not what he thought it was and possesses powers beyond his imagination.",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 20,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 326,
+        "name": "Cultivation",
+        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6481,
+        "name": "CG Year",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6481"
+      }
+    ],
+    "studiosNames": [
+      "CG Year"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 303,
+    "trending": 0,
+    "favourites": 6,
+    "source": "OTHER",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-04-30",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63967",
+    "anilist_url": "https://anilist.co/anime/153466",
+    "trailer": {
+      "id": "NdzlWFCOybM",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=NdzlWFCOybM"
+    },
+    "nextEpisode": 1,
+    "nextAiringAt": 1777474800
   },
   {
     "animeId": 59551,
@@ -2408,8 +2535,8 @@
     "averageScore": 75,
     "meanScore": 77,
     "popularity": 18407,
-    "trending": 9,
-    "favourites": 375,
+    "trending": 131,
+    "favourites": 381,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2424,7 +2551,7 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=QivWH79PkcE"
     },
-    "nextEpisode": 5,
-    "nextAiringAt": 1776871800
+    "nextEpisode": 6,
+    "nextAiringAt": 1777476600
   }
 ]
