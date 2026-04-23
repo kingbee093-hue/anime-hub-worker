@@ -17,7 +17,7 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
   let page = 1;
   let hasNextPage = true;
   const finalData = [];
-  const maxPages = options.maxPages || 100; // Hard limit of 100 pages (5000 items) to prevent infinite loops
+  const maxPages = options.maxPages || 40; // Hard limit of 40 pages (2000 items) to prevent infinite loops and optimize execution time
 
   // Force perPage to 50 for max efficiency if not specified
   variables.perPage = variables.perPage || 50;
