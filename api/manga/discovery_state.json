@@ -987,16 +987,12 @@
     "matcherVersion": 2
   },
   "51c40a98-ae76-40ae-9732-1b83b690c510": {
-    "status": "discovered",
-    "title": "The Destroyer Fell in Love with Me",
-    "mangaId": 126840,
-    "anilistId": 126840,
-    "chapterIndexId": "51c40a98-ae76-40ae-9732-1b83b690c510",
-    "lastChapterId": "209501a5-5b22-4c5a-9948-1eace2dd2dc6",
-    "lastChapter": "33",
-    "lastAttemptAt": "2026-04-17T15:51:37.409Z",
-    "lastSuccessAt": "2026-04-17T15:51:37.409Z",
-    "reason": null,
+    "status": "failed",
+    "title": "Page 34",
+    "lastChapterId": "187ed236-a2ef-4a13-9264-edb0dcd02c76",
+    "lastChapter": "34",
+    "lastAttemptAt": "2026-04-23T05:17:33.203Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
   "b07d7155-7a66-4e52-98ec-6b78b67506a6": {
@@ -6392,10 +6388,10 @@
   },
   "340aa554-4b29-4238-b713-f245c6995d1c": {
     "status": "failed",
-    "title": "A Bond Begins, A Journey Awaits",
-    "lastChapterId": "dd60a83f-43d0-4b09-a192-bf8d242ff053",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-23T04:34:29.114Z",
+    "title": "New Student",
+    "lastChapterId": "fe3ef668-c78f-4dc7-bb5f-40c9c3b4f373",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-23T05:17:29.367Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -7283,6 +7279,19 @@
     "lastChapter": "28",
     "lastAttemptAt": "2026-04-23T04:17:28.620Z",
     "lastSuccessAt": "2026-04-23T04:17:28.620Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "468bfe80-5869-4661-a1ee-d288c5491fc3": {
+    "status": "discovered",
+    "title": "Harebare Biyori",
+    "mangaId": 128954,
+    "anilistId": 128954,
+    "chapterIndexId": "468bfe80-5869-4661-a1ee-d288c5491fc3",
+    "lastChapterId": "e2da4717-9212-4878-8970-977782f96622",
+    "lastChapter": "23",
+    "lastAttemptAt": "2026-04-23T05:17:29.811Z",
+    "lastSuccessAt": "2026-04-23T05:17:29.811Z",
     "reason": null,
     "matcherVersion": 2
   }
