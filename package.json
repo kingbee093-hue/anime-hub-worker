@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "fetch:recent": "node index.js recent",
-    "fetch:sections": "node index.js featured && node index.js toprated && node index.js trending && node index.js popular && node index.js upcoming && node index.js topairing",
+    "fetch:sections": "node index.js featured && node index.js toprated && node index.js trending && node index.js popular && node index.js upcoming && node index.js topairing && node index.js genres",
     "fetch:schedule": "node index.js schedule",
     "fetch:catalog": "node index.js catalog",
     "fetch:manga": "node index.js manga",
@@ -16,7 +16,6 @@
     "backfill:manga-chapters": "node index.js mangachaptersbackfill",
     "backfill:manga-pages": "node index.js mangapagesbackfill",
     "fetch:characters": "node index.js characters",
-    "fetch:genres": "node index.js genres",
     "fetch:news": "node scraper.js"
   },
   "keywords": [
