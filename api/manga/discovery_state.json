@@ -606,10 +606,10 @@
   },
   "ee957607-e7fc-40b0-acdb-10c7084d9d40": {
     "status": "failed",
-    "title": "Pages may be wrong!",
-    "lastChapterId": "df160414-d7dc-420d-92ad-2ddfd6604a63",
-    "lastChapter": "40.1",
-    "lastAttemptAt": "2026-04-23T21:34:32.499Z",
+    "title": "Flies",
+    "lastChapterId": "c6d611a0-c529-499f-b815-793da84e7b19",
+    "lastChapter": "40",
+    "lastAttemptAt": "2026-04-23T22:18:23.981Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -7881,6 +7881,41 @@
     "lastAttemptAt": "2026-04-23T22:00:43.547Z",
     "lastSuccessAt": "2026-04-23T22:00:43.547Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "bdedd1a8-a0e7-403f-8d64-10d845abaef7": {
+    "status": "discovered",
+    "title": "Agassineun Monmallyeo",
+    "mangaId": 200705,
+    "anilistId": 200705,
+    "chapterIndexId": "bdedd1a8-a0e7-403f-8d64-10d845abaef7",
+    "lastChapterId": "1fc1e615-4319-40c8-9745-de6eff239140",
+    "lastChapter": "14",
+    "lastAttemptAt": "2026-04-23T22:18:18.355Z",
+    "lastSuccessAt": "2026-04-23T22:18:18.355Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "3eb5f9d6-21e4-4ed8-a392-66968a17dff1": {
+    "status": "discovered",
+    "title": "Gizoku",
+    "mangaId": 202836,
+    "anilistId": 202836,
+    "chapterIndexId": "3eb5f9d6-21e4-4ed8-a392-66968a17dff1",
+    "lastChapterId": "0be3734c-970a-400f-80fd-dcab902b6d8f",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-04-23T22:18:18.948Z",
+    "lastSuccessAt": "2026-04-23T22:18:18.948Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "684f3a6f-ea7b-4990-b9fe-a06955e0abc4": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "b440dacc-3d95-4e1e-b310-6327dfc32246",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-23T22:18:22.459Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
