@@ -5,8 +5,8 @@ const CONFIG = require('../config/constants');
 
 async function fetchTrending() {
     return fetchSection(CONFIG.API_PATHS.TRENDING, {
-        perPage: 50, sort: ['TRENDING_DESC', 'POPULARITY_DESC']
-    }, 'Trending Anime', { accumulate: false, maxPages: 20 }); // Limit to top 1000 trending to prevent saving 20,000 items with 0 trend score
+        perPage: 50, status: 'RELEASING', sort: ['TRENDING_DESC', 'POPULARITY_DESC']
+    }, 'Trending Anime', { accumulate: false }); // Limit is now handled by fetchSection default (40 pages = 2000 items)
 }
 
 async function fetchFeatured() {
@@ -19,7 +19,7 @@ async function fetchFeatured() {
 async function fetchTopRated() {
     return fetchSection(CONFIG.API_PATHS.TOP_RATED, {
         perPage: 50, sort: ['SCORE_DESC']
-    }, 'Top Rated All Time', { accumulate: true, maxPages: 100 }); // Top 5000, and accumulates over time!
+    }, 'Top Rated All Time', { accumulate: true }); 
 }
 
 async function fetchPopularSeason() {
@@ -33,19 +33,19 @@ async function fetchPopularSeason() {
     return fetchSection(CONFIG.API_PATHS.POPULAR_SEASON, {
         perPage: 50, 
         season: season, seasonYear: new Date().getFullYear(), sort: ['POPULARITY_DESC']
-    }, 'Popular This Season', { accumulate: false, maxPages: 100 }); // Will naturally stop early
+    }, 'Popular This Season', { accumulate: false }); 
 }
 
 async function fetchUpcoming() {
     return fetchSection(CONFIG.API_PATHS.UPCOMING, {
         perPage: 50, status: 'NOT_YET_RELEASED', sort: ['POPULARITY_DESC']
-    }, 'Upcoming Next Season', { accumulate: false, maxPages: 100 }); // Will naturally stop early
+    }, 'Upcoming Next Season', { accumulate: false }); 
 }
 
 async function fetchTopAiring() {
     return fetchSection(CONFIG.API_PATHS.TOP_AIRING, {
         perPage: 50, status: 'RELEASING', sort: ['POPULARITY_DESC']
-    }, 'Top Airing Now', { accumulate: false, maxPages: 100 }); // Will naturally stop early
+    }, 'Top Airing Now', { accumulate: false }); 
 }
 
 module.exports = {
