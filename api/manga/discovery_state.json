@@ -1020,9 +1020,9 @@
   "de0c8b12-2721-4a7c-a43e-82e452d62b9c": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "ba53883d-4ae5-40d9-93d7-400cbcbe065c",
-    "lastChapter": "4",
-    "lastAttemptAt": "2026-04-20T09:00:33.607Z",
+    "lastChapterId": "360ce157-cccc-4289-9603-7b20e74a02a3",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-04-23T09:17:32.978Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -7380,6 +7380,19 @@
     "lastChapter": "11",
     "lastAttemptAt": "2026-04-23T09:00:33.675Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "082bcc22-8198-4132-9c09-d18ce895e6e4": {
+    "status": "discovered",
+    "title": "Ashita no Ashita",
+    "mangaId": 178185,
+    "anilistId": 178185,
+    "chapterIndexId": "082bcc22-8198-4132-9c09-d18ce895e6e4",
+    "lastChapterId": "e53dbb0f-8a59-4932-94fa-cd0f315b051c",
+    "lastChapter": "10",
+    "lastAttemptAt": "2026-04-23T09:17:29.610Z",
+    "lastSuccessAt": "2026-04-23T09:17:29.610Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
