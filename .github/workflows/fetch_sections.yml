@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -41,6 +43,7 @@ jobs:
             echo "No API changes to commit."
           else
             git commit -m "api: update frontpage sections + genres [skip ci]"
-            git pull --rebase origin main || git pull origin main
+            # Pull latest changes. In case of conflict, -X theirs keeps OUR changes during rebase.
+            git pull --rebase -X theirs origin main
             git push origin HEAD:main
           fi
