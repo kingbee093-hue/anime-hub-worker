@@ -7182,12 +7182,16 @@
     "matcherVersion": 2
   },
   "07c370b3-4f14-4834-a5c2-0d7b42028fc3": {
-    "status": "failed",
-    "title": "Record 1 - Astral Tea",
+    "status": "discovered",
+    "title": "Hira Hira Hira",
+    "mangaId": 211280,
+    "anilistId": 211280,
+    "chapterIndexId": "07c370b3-4f14-4834-a5c2-0d7b42028fc3",
     "lastChapterId": "51a53c03-dd74-4c86-b619-bf322deb4372",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-22T20:51:29.502Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-23T09:00:47.696Z",
+    "lastSuccessAt": "2026-04-23T09:00:47.696Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "3c5c1c84-944f-42dd-aa4b-e92378a0cec6": {
@@ -7195,7 +7199,7 @@
     "title": "A God demanding sacrifices",
     "lastChapterId": "611fd2bf-ce63-43bc-a906-5fc1cfa4eed5",
     "lastChapter": "3",
-    "lastAttemptAt": "2026-04-22T21:00:32.517Z",
+    "lastAttemptAt": "2026-04-23T09:00:47.248Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -7367,6 +7371,15 @@
     "lastAttemptAt": "2026-04-23T08:51:26.436Z",
     "lastSuccessAt": "2026-04-23T08:51:26.436Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "cfcb65ff-cf9b-4628-a666-76d1b06553dc": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "593d3812-ded2-478e-a3ba-f9c917d468da",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-04-23T09:00:33.675Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
