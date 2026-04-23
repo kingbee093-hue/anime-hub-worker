@@ -16,7 +16,7 @@ jobs:
   fetch_sections:
     name: Fetch General Sections + By Genre
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 15
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
