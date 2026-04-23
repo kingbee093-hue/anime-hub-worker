@@ -5170,9 +5170,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "3eb67b11-db07-44fd-ba18-641f046ec353",
-    "lastChapter": "80",
-    "lastAttemptAt": "2026-04-23T17:34:32.843Z",
+    "lastChapterId": "1437caf8-1967-457c-adcb-03f8482f9df8",
+    "lastChapter": "81",
+    "lastAttemptAt": "2026-04-23T18:17:39.062Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -6807,7 +6807,7 @@
     "title": "Nanjou-san and roleplay",
     "lastChapterId": "3a62f3f4-d531-4e1c-a22b-f374fe2fc76e",
     "lastChapter": "26",
-    "lastAttemptAt": "2026-04-23T05:51:30.790Z",
+    "lastAttemptAt": "2026-04-23T18:17:38.495Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -7090,7 +7090,7 @@
     "title": "",
     "lastChapterId": "c1ee8c8d-5b6d-43eb-84f0-937362e2a423",
     "lastChapter": "1.2",
-    "lastAttemptAt": "2026-04-23T06:00:31.113Z",
+    "lastAttemptAt": "2026-04-23T18:17:37.266Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -7334,7 +7334,7 @@
     "title": "",
     "lastChapterId": "33d8d283-e4b5-4831-9003-199ff6fa79e9",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-23T06:17:29.517Z",
+    "lastAttemptAt": "2026-04-23T18:17:43.723Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -7736,6 +7736,67 @@
     "lastChapter": "3",
     "lastAttemptAt": "2026-04-23T17:51:38.157Z",
     "lastSuccessAt": "2026-04-23T17:51:38.157Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "cd0aa262-9ee6-4ad5-adc3-9196f1c4c1a7": {
+    "status": "discovered",
+    "title": "Minami the Super Evolution",
+    "mangaId": 191444,
+    "anilistId": 191444,
+    "chapterIndexId": "cd0aa262-9ee6-4ad5-adc3-9196f1c4c1a7",
+    "lastChapterId": "65f6a5ab-b122-4ed3-bec3-cef41ef9d57f",
+    "lastChapter": "12",
+    "lastAttemptAt": "2026-04-23T18:17:30.200Z",
+    "lastSuccessAt": "2026-04-23T18:17:30.200Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "d1417e9c-c0a0-4ee7-af02-a0a3065ce746": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c13c6678-1ec4-4aec-b35f-f5224edd2c9a",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-23T18:17:33.169Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "02fe9f7b-95a7-4f2b-a72f-639a55f46d33": {
+    "status": "discovered",
+    "title": "Kyousou no Simulacra",
+    "mangaId": 50081,
+    "anilistId": 50081,
+    "chapterIndexId": "02fe9f7b-95a7-4f2b-a72f-639a55f46d33",
+    "lastChapterId": "0be3734c-970a-400f-80fd-dcab902b6d8f",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-04-23T18:17:33.561Z",
+    "lastSuccessAt": "2026-04-23T18:17:33.561Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "209aefb0-3d89-4da8-b190-1cd484a991c9": {
+    "status": "discovered",
+    "title": "Kirishima Gakuen Seitokai Shikkoubu",
+    "mangaId": 164682,
+    "anilistId": 164682,
+    "chapterIndexId": "209aefb0-3d89-4da8-b190-1cd484a991c9",
+    "lastChapterId": "c8428c81-4bb6-4ffe-9938-d732beae510f",
+    "lastChapter": "3",
+    "lastAttemptAt": "2026-04-23T18:17:37.809Z",
+    "lastSuccessAt": "2026-04-23T18:17:37.809Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "74b263ae-d82e-4697-a618-452644ab1886": {
+    "status": "discovered",
+    "title": "Tabi to Michizure",
+    "mangaId": 36858,
+    "anilistId": 36858,
+    "chapterIndexId": "74b263ae-d82e-4697-a618-452644ab1886",
+    "lastChapterId": "c9f24606-e350-404c-8679-db50c5e3f8f8",
+    "lastChapter": "14",
+    "lastAttemptAt": "2026-04-23T18:17:39.878Z",
+    "lastSuccessAt": "2026-04-23T18:17:39.878Z",
     "reason": null,
     "matcherVersion": 2
   }
