@@ -6507,9 +6507,9 @@
   "11ac676c-15c1-48ec-a289-91f798826ac5": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "d4490cfd-6c6f-4fe4-8a33-9417b979a8ba",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-23T07:17:30.416Z",
+    "lastChapterId": "81e1a13c-5c65-4d5f-9755-25f1f93310b8",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-23T19:00:33.771Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -7807,6 +7807,32 @@
     "lastChapter": "",
     "lastAttemptAt": "2026-04-23T18:34:36.573Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "73a46c78-f4f7-452e-b4ed-e3a5c8da1032": {
+    "status": "discovered",
+    "title": "POLE STAR",
+    "mangaId": 175501,
+    "anilistId": 175501,
+    "chapterIndexId": "73a46c78-f4f7-452e-b4ed-e3a5c8da1032",
+    "lastChapterId": "47af8c47-b0de-4331-b179-2f1ffb794419",
+    "lastChapter": "24",
+    "lastAttemptAt": "2026-04-23T19:00:34.217Z",
+    "lastSuccessAt": "2026-04-23T19:00:34.217Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "965ef6dd-79ae-4fd1-892e-f4dd7c56af2e": {
+    "status": "discovered",
+    "title": "Kochira, Shuumatsu Teitai Iinkai",
+    "mangaId": 194621,
+    "anilistId": 194621,
+    "chapterIndexId": "965ef6dd-79ae-4fd1-892e-f4dd7c56af2e",
+    "lastChapterId": "65d57084-8860-4663-b718-e42c77eb120b",
+    "lastChapter": "9",
+    "lastAttemptAt": "2026-04-23T19:00:35.016Z",
+    "lastSuccessAt": "2026-04-23T19:00:35.016Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
