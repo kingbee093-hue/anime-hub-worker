@@ -7579,12 +7579,16 @@
     "matcherVersion": 2
   },
   "707133cd-d9c2-4c83-8398-55bfdda7da14": {
-    "status": "failed",
-    "title": "rE",
-    "lastChapterId": "1cdcfe59-f06b-49fe-9dd7-66279307bbb3",
-    "lastChapter": "51.7",
-    "lastAttemptAt": "2026-04-23T16:17:30.789Z",
-    "reason": "anilist_match_not_found",
+    "status": "discovered",
+    "title": "Blue Archive: Problem Solver 68 Business Diary",
+    "mangaId": 157410,
+    "anilistId": 157410,
+    "chapterIndexId": "707133cd-d9c2-4c83-8398-55bfdda7da14",
+    "lastChapterId": "ab4882e2-3392-4db4-86d4-53fe70603db2",
+    "lastChapter": "51.6",
+    "lastAttemptAt": "2026-04-24T00:34:37.211Z",
+    "lastSuccessAt": "2026-04-24T00:34:37.211Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "383d7a7f-84d1-48c3-b619-99dbf9ed9d4d": {
@@ -7993,6 +7997,45 @@
     "lastChapter": "48",
     "lastAttemptAt": "2026-04-24T00:17:34.131Z",
     "lastSuccessAt": "2026-04-24T00:17:34.131Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "deeec123-ca9e-4777-af5d-53f887034436": {
+    "status": "discovered",
+    "title": "Streaming War",
+    "mangaId": 186386,
+    "anilistId": 186386,
+    "chapterIndexId": "deeec123-ca9e-4777-af5d-53f887034436",
+    "lastChapterId": "0deffc62-5177-44ee-a960-678c06af64da",
+    "lastChapter": "6",
+    "lastAttemptAt": "2026-04-24T00:34:31.090Z",
+    "lastSuccessAt": "2026-04-24T00:34:31.090Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "80a4be27-f2ed-4e13-bebd-46bbef5dcd8e": {
+    "status": "discovered",
+    "title": "The (Poisoned) Invincible Poison Magician",
+    "mangaId": 209320,
+    "anilistId": 209320,
+    "chapterIndexId": "80a4be27-f2ed-4e13-bebd-46bbef5dcd8e",
+    "lastChapterId": "ceeacea7-5a33-4f8e-b274-41031622358a",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-24T00:34:31.974Z",
+    "lastSuccessAt": "2026-04-24T00:34:31.974Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "0a8240d1-c53f-44eb-9257-8587e844feef": {
+    "status": "discovered",
+    "title": "Fiancée-sama kara Nigerarenai",
+    "mangaId": 132363,
+    "anilistId": 132363,
+    "chapterIndexId": "0a8240d1-c53f-44eb-9257-8587e844feef",
+    "lastChapterId": "620c71a2-57b3-4fa3-b9d7-0527c4a3da93",
+    "lastChapter": "2.3",
+    "lastAttemptAt": "2026-04-24T00:34:34.352Z",
+    "lastSuccessAt": "2026-04-24T00:34:34.352Z",
     "reason": null,
     "matcherVersion": 2
   }
