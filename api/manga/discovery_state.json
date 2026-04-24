@@ -5170,9 +5170,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "3eb67b11-db07-44fd-ba18-641f046ec353",
-    "lastChapter": "80",
-    "lastAttemptAt": "2026-04-24T12:00:38.230Z",
+    "lastChapterId": "1437caf8-1967-457c-adcb-03f8482f9df8",
+    "lastChapter": "81",
+    "lastAttemptAt": "2026-04-24T12:17:35.591Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -7092,9 +7092,9 @@
   "4bccc4a8-0794-45ba-b8b8-a130125f4399": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "9f85de82-d961-45fb-b68b-d7ba706ceabe",
-    "lastChapter": "1.1",
-    "lastAttemptAt": "2026-04-24T12:00:41.442Z",
+    "lastChapterId": "c1ee8c8d-5b6d-43eb-84f0-937362e2a423",
+    "lastChapter": "1.2",
+    "lastAttemptAt": "2026-04-24T12:17:35.493Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -8279,6 +8279,28 @@
     "lastChapter": "",
     "lastAttemptAt": "2026-04-24T10:51:34.166Z",
     "lastSuccessAt": "2026-04-24T10:51:34.166Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "be182a31-d96f-46c0-b26a-79c3ff8aeaa9": {
+    "status": "failed",
+    "title": "service 14",
+    "lastChapterId": "747cd9ef-b1f1-41d3-83d8-fd885ff2e4f5",
+    "lastChapter": "14.2",
+    "lastAttemptAt": "2026-04-24T12:17:32.598Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "89d951cf-f381-4b8a-bda1-45611e6bd598": {
+    "status": "discovered",
+    "title": "Are You a Landmine, Chihara-san?",
+    "mangaId": 137714,
+    "anilistId": 137714,
+    "chapterIndexId": "89d951cf-f381-4b8a-bda1-45611e6bd598",
+    "lastChapterId": "9d14d38c-fc96-4b63-a38f-a3589b83c9e7",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-24T12:17:36.177Z",
+    "lastSuccessAt": "2026-04-24T12:17:36.177Z",
     "reason": null,
     "matcherVersion": 2
   }
