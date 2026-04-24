@@ -5170,9 +5170,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "3eb67b11-db07-44fd-ba18-641f046ec353",
-    "lastChapter": "80",
-    "lastAttemptAt": "2026-04-24T14:17:38.351Z",
+    "lastChapterId": "1437caf8-1967-457c-adcb-03f8482f9df8",
+    "lastChapter": "81",
+    "lastAttemptAt": "2026-04-24T14:34:56.143Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -7508,7 +7508,7 @@
     "title": "",
     "lastChapterId": "9ecb14bc-39d5-4bf8-b5f7-5c0ae70263e8",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-24T01:51:37.781Z",
+    "lastAttemptAt": "2026-04-24T14:34:51.969Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -8376,6 +8376,15 @@
     "lastAttemptAt": "2026-04-24T14:00:47.982Z",
     "lastSuccessAt": "2026-04-24T14:00:47.982Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "805f1be4-2a20-41a4-a27b-943dd137b023": {
+    "status": "failed",
+    "title": "You Lose It All",
+    "lastChapterId": "4f1d0c46-44c7-471f-8fb2-a1d995c74863",
+    "lastChapter": "17",
+    "lastAttemptAt": "2026-04-24T14:34:55.250Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
