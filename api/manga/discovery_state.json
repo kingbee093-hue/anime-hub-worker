@@ -5170,9 +5170,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "1437caf8-1967-457c-adcb-03f8482f9df8",
-    "lastChapter": "81",
-    "lastAttemptAt": "2026-04-24T12:17:35.591Z",
+    "lastChapterId": "3eb67b11-db07-44fd-ba18-641f046ec353",
+    "lastChapter": "80",
+    "lastAttemptAt": "2026-04-24T13:18:17.666Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5650,7 +5650,7 @@
     "title": "These are my parents",
     "lastChapterId": "f3f15fce-de82-4dea-876d-320600c0855c",
     "lastChapter": "74",
-    "lastAttemptAt": "2026-04-24T01:17:25.824Z",
+    "lastAttemptAt": "2026-04-24T13:18:18.483Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -8057,12 +8057,16 @@
     "matcherVersion": 2
   },
   "14b5db07-0713-4215-bbcb-0d169e141164": {
-    "status": "failed",
-    "title": "",
+    "status": "discovered",
+    "title": "My Isekai Life: I Gained a Second Character Class and Became the Strongest Sage in the World!",
+    "mangaId": 106144,
+    "anilistId": 106144,
+    "chapterIndexId": "14b5db07-0713-4215-bbcb-0d169e141164",
     "lastChapterId": "2932c2a6-5de0-4047-bb7f-a2eb70de31a6",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-24T01:17:32.171Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-24T13:18:22.660Z",
+    "lastSuccessAt": "2026-04-24T13:18:22.660Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "d422ddc8-eea3-4b0a-82a4-291bbd8c9285": {
@@ -8324,6 +8328,19 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-24T12:51:47.044Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "66b0511a-528c-43de-b572-a7ff7a30ebd9": {
+    "status": "discovered",
+    "title": "Cool na Doukyuusei no 10-nengo",
+    "mangaId": 181995,
+    "anilistId": 181995,
+    "chapterIndexId": "66b0511a-528c-43de-b572-a7ff7a30ebd9",
+    "lastChapterId": "08fb0327-cdfa-4fdc-b91b-47f16ce34d4b",
+    "lastChapter": "155",
+    "lastAttemptAt": "2026-04-24T13:18:19.030Z",
+    "lastSuccessAt": "2026-04-24T13:18:19.030Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }

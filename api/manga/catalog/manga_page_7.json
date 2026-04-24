@@ -3125,7 +3125,7 @@
     "year": 2018,
     "startDate": "2018-06-29",
     "endDate": null,
-    "chapters": 92,
+    "chapters": 1,
     "volumes": 0,
     "genres": [
       "Action",
@@ -3159,6 +3159,16 @@
         "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
         "category": "Theme-Other-Organisations",
         "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -3212,16 +3222,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
-      },
-      {
-        "id": 156,
-        "name": "Achronological Order",
-        "description": "Chapters or episodes do not occur in chronological order.",
-        "category": "Setting-Time",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
       }
     ],
     "authors": [
@@ -3234,9 +3234,9 @@
     "rating": 6.6,
     "averageScore": 66,
     "meanScore": 66,
-    "popularity": 10512,
-    "trending": 0,
-    "favourites": 201,
+    "popularity": 10537,
+    "trending": 1,
+    "favourites": 203,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isAdult": false,
@@ -3256,14 +3256,14 @@
         "url": "https://squareenixmangaandbooks.square-enix-games.com/en-us/series/my-isekai-life"
       }
     ],
-    "mangadexId": "f81026af-1b41-465c-932b-291ce4760c00",
-    "mangadexUrl": "https://mangadex.org/title/f81026af-1b41-465c-932b-291ce4760c00",
+    "mangadexId": "14b5db07-0713-4215-bbcb-0d169e141164",
+    "mangadexUrl": "https://mangadex.org/title/14b5db07-0713-4215-bbcb-0d169e141164",
     "mangadexMappingSource": "recent_chapter_discovery",
     "mangadexMappingConfidence": 0.98,
-    "chapterIndexId": "f81026af-1b41-465c-932b-291ce4760c00",
+    "chapterIndexId": "14b5db07-0713-4215-bbcb-0d169e141164",
     "chapterSourceProvider": "mangadex",
-    "chapterSourceId": "f81026af-1b41-465c-932b-291ce4760c00",
-    "chapterSourceTitle": "Tensei Kenja no Isekai Life ~Dai ni no Shokugyou wo Ete, Sekai Saikyou ni Narimashita~",
+    "chapterSourceId": "14b5db07-0713-4215-bbcb-0d169e141164",
+    "chapterSourceTitle": "Tensei Kizoku wa Taishi wo Idaku! ~Gekokujou Kizoku no Isekai Harem Senki~",
     "chapterSourceConfidence": 1
   },
   {
