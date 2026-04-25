@@ -8291,7 +8291,7 @@
     "title": "service 14",
     "lastChapterId": "747cd9ef-b1f1-41d3-83d8-fd885ff2e4f5",
     "lastChapter": "14.2",
-    "lastAttemptAt": "2026-04-25T00:17:35.553Z",
+    "lastAttemptAt": "2026-04-25T12:34:33.270Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -8921,6 +8921,41 @@
     "lastChapter": "15",
     "lastAttemptAt": "2026-04-25T12:17:32.417Z",
     "lastSuccessAt": "2026-04-25T12:17:32.417Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "13e442d6-a5dd-48ba-b9c0-2ad8f953af58": {
+    "status": "discovered",
+    "title": "Kouha Ginjirou",
+    "mangaId": 137474,
+    "anilistId": 137474,
+    "chapterIndexId": "13e442d6-a5dd-48ba-b9c0-2ad8f953af58",
+    "lastChapterId": "b3c19b60-72fe-444e-99aa-eff74a0dda54",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-25T12:34:34.456Z",
+    "lastSuccessAt": "2026-04-25T12:34:34.456Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "4151bef9-22c7-4a65-b421-69f5060e8e70": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "346bf61b-dc5b-4595-aa42-7cd6008e8023",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-25T12:34:38.350Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "c28d99bc-02f4-4541-b770-080464be4f8e": {
+    "status": "discovered",
+    "title": "Maou Tsukai no Saikyou Shihai",
+    "mangaId": 151919,
+    "anilistId": 151919,
+    "chapterIndexId": "c28d99bc-02f4-4541-b770-080464be4f8e",
+    "lastChapterId": "13d191db-5f04-4fe8-8bb0-e6b57c84ca43",
+    "lastChapter": "18",
+    "lastAttemptAt": "2026-04-25T12:34:38.783Z",
+    "lastSuccessAt": "2026-04-25T12:34:38.783Z",
     "reason": null,
     "matcherVersion": 2
   }
