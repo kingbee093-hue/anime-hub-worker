@@ -6507,9 +6507,9 @@
   "11ac676c-15c1-48ec-a289-91f798826ac5": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "81e1a13c-5c65-4d5f-9755-25f1f93310b8",
-    "lastChapter": "4",
-    "lastAttemptAt": "2026-04-25T16:17:42.629Z",
+    "lastChapterId": "39192d05-d487-4282-bcb0-8cd2ffc8f25f",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-04-25T16:34:42.676Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -7920,9 +7920,9 @@
   "684f3a6f-ea7b-4990-b9fe-a06955e0abc4": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "0a9950d7-ef7a-4e2c-82c7-c99f99723834",
-    "lastChapter": "1",
-    "lastAttemptAt": "2026-04-25T14:51:36.255Z",
+    "lastChapterId": "5d4db117-e9ce-4cd6-a945-704044c7ea93",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-25T16:34:38.826Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -9104,6 +9104,28 @@
     "lastChapter": "4",
     "lastAttemptAt": "2026-04-25T16:17:43.042Z",
     "lastSuccessAt": "2026-04-25T16:17:43.042Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "1aa17501-0328-4d5a-bbbe-3cb7cae8c9ae": {
+    "status": "failed",
+    "title": "The City Beyond the Veil (1)",
+    "lastChapterId": "7ade7aa2-771b-4892-90be-80ebf6bdbde7",
+    "lastChapter": "10",
+    "lastAttemptAt": "2026-04-25T16:34:41.611Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "591b6e03-c02b-4362-aa75-b9066e21f46e": {
+    "status": "discovered",
+    "title": "Tsuyokute New Game na Love Come",
+    "mangaId": 144940,
+    "anilistId": 144940,
+    "chapterIndexId": "591b6e03-c02b-4362-aa75-b9066e21f46e",
+    "lastChapterId": "8db77cee-4796-4653-a18d-f0b6e455954e",
+    "lastChapter": "75",
+    "lastAttemptAt": "2026-04-25T16:34:42.051Z",
+    "lastSuccessAt": "2026-04-25T16:34:42.051Z",
     "reason": null,
     "matcherVersion": 2
   }
