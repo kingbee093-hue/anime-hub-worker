@@ -868,8 +868,8 @@
     "title": "",
     "lastChapterId": "c9c28006-9549-4a03-a9fd-20c0fd414ef7",
     "lastChapter": "30.5",
-    "lastAttemptAt": "2026-04-24T20:20:04.718Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-25T08:34:36.658Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "2fe5571f-ecc9-4a26-9a50-cfa09757a735": {
@@ -3950,7 +3950,7 @@
     "title": "Glory of Holydoom",
     "lastChapterId": "c27daadb-e14c-4108-bd39-77c7fffc0d4e",
     "lastChapter": "15",
-    "lastAttemptAt": "2026-04-24T20:18:33.187Z",
+    "lastAttemptAt": "2026-04-25T08:34:36.447Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -8554,12 +8554,16 @@
     "matcherVersion": 2
   },
   "b90aae00-1fc5-4b24-92ae-08dcbac1fc6d": {
-    "status": "failed",
-    "title": "",
+    "status": "discovered",
+    "title": "Koukou Jidai ni Gouman Datta Joou-sama to no Dousei Seikatsu wa Igai to Ikigokochi ga Warukunai",
+    "mangaId": 187656,
+    "anilistId": 187656,
+    "chapterIndexId": "b90aae00-1fc5-4b24-92ae-08dcbac1fc6d",
     "lastChapterId": "68460119-4855-462f-925b-3436d8636f20",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-04-24T20:21:20.403Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-25T08:34:32.279Z",
+    "lastSuccessAt": "2026-04-25T08:34:32.279Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "cb11f862-2877-4adc-ac5a-0719da9b6122": {
@@ -8815,6 +8819,15 @@
     "lastAttemptAt": "2026-04-25T07:52:20.924Z",
     "lastSuccessAt": "2026-04-25T07:52:20.924Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "8ab5191e-218a-457f-a41c-cbdf756b59da": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "aa604fc4-8790-4573-b082-d8c7b2860dfc",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-04-25T08:34:39.715Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }

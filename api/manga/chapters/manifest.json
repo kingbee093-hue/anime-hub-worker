@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-25T08:17:34.560Z",
-  "totalTitles": 1629,
+  "generatedAt": "2026-04-25T08:34:40.083Z",
+  "totalTitles": 1630,
   "items": [
     {
       "chapterIndexId": "b8f9a660-ed4d-4667-9c8d-00e98c05167d",
@@ -1858,10 +1858,12 @@
         "en"
       ],
       "counts": {
-        "en": 75
+        "en": 76
       },
       "englishFallbackProvider": "mangapill",
-      "englishFallbackChapterCount": 54
+      "englishFallbackChapterCount": 54,
+      "latestKnownChapterNumber": "51",
+      "latestKnownChapterNumberInt": 51
     },
     {
       "chapterIndexId": "94d0b667-1076-4438-ba9d-700c42f06bef",
@@ -12183,6 +12185,25 @@
       },
       "englishFallbackProvider": null,
       "englishFallbackChapterCount": null
+    },
+    {
+      "chapterIndexId": "b90aae00-1fc5-4b24-92ae-08dcbac1fc6d",
+      "mangaId": 187656,
+      "anilistId": 187656,
+      "mangadexId": "b90aae00-1fc5-4b24-92ae-08dcbac1fc6d",
+      "title": "Koukou Jidai ni Gouman Datta Joou-sama to no Dousei Seikatsu wa Igai to Ikigokochi ga Warukunai",
+      "updatedAt": "2026-04-25T08:34:32.278Z",
+      "availableLanguages": [
+        "en"
+      ],
+      "counts": {
+        "en": 1
+      },
+      "englishFallbackProvider": null,
+      "englishFallbackProviderTitle": null,
+      "englishFallbackChapterCount": null,
+      "latestKnownChapterNumber": "1",
+      "latestKnownChapterNumberInt": 1
     },
     {
       "chapterIndexId": "27457fd8-8152-49dd-b26c-a76ffa96752f",
