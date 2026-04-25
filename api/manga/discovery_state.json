@@ -4509,8 +4509,8 @@
     "title": "",
     "lastChapterId": "012c38f5-78c2-4850-8b5c-73cd95855f6c",
     "lastChapter": "43",
-    "lastAttemptAt": "2026-04-24T20:04:07.427Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-25T08:17:34.535Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "0fcf27a9-317a-4079-9dfe-027ada844c0b": {
@@ -8532,12 +8532,16 @@
     "matcherVersion": 2
   },
   "5018f2b1-65ee-4a76-a7f3-4bb851e1ade5": {
-    "status": "failed",
-    "title": "",
+    "status": "discovered",
+    "title": "Hi Score Girl: DASH",
+    "mangaId": 113540,
+    "anilistId": 113540,
+    "chapterIndexId": "5018f2b1-65ee-4a76-a7f3-4bb851e1ade5",
     "lastChapterId": "76095f1c-6b2b-4915-a6c8-5b89db4e4016",
     "lastChapter": "65",
-    "lastAttemptAt": "2026-04-24T20:01:57.941Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-25T08:17:33.913Z",
+    "lastSuccessAt": "2026-04-25T08:17:33.913Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "4852893b-4308-4c6f-a253-6c837245bf2d": {
@@ -8545,7 +8549,7 @@
     "title": "",
     "lastChapterId": "35259311-32e1-4f2c-96e1-fb8b3665746c",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-24T20:02:35.708Z",
+    "lastAttemptAt": "2026-04-25T08:17:33.005Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
