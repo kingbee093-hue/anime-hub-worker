@@ -77,10 +77,7 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
     // ── Helper: fetch a single page and append valid items ──────────────────
     async function fetchPage(pageNum) {
         variables.page = pageNum;
-        const pct = targetItems === Infinity
-            ? `${collected.length}`
-            : `${collected.length}/${targetItems}`;
-        console.log(`  Page ${pageNum} — collected ${pct} so far...`);
+        console.log(`  Fetching page ${pageNum}...`);
 
         const data = await fetchGraphQL(GENERIC_MEDIA_QUERY, variables);
 
@@ -104,6 +101,12 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
             const formatted = convertToFirestoreFormat(media);
             if (formatted) { collected.push(formatted); added++; }
         }
+
+        const pct = targetItems === Infinity
+            ? `${collected.length}`
+            : `${collected.length}/${targetItems}`;
+        console.log(`  Page ${pageNum} — +${added} items (total: ${pct})`);
+
         return { items: added, hasNext: data.Page.pageInfo?.hasNextPage ?? false };
     }
 
