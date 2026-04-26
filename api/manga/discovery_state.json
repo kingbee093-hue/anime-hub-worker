@@ -1022,7 +1022,7 @@
     "title": "",
     "lastChapterId": "44437458-a0a8-4ad9-928b-30bd29420462",
     "lastChapter": "6",
-    "lastAttemptAt": "2026-04-25T23:34:30.336Z",
+    "lastAttemptAt": "2026-04-26T11:34:36.401Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -9631,6 +9631,28 @@
     "lastAttemptAt": "2026-04-26T11:00:38.267Z",
     "lastSuccessAt": "2026-04-26T11:00:38.267Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "acfd6902-b39c-4b7d-91a8-9825dda4ede8": {
+    "status": "discovered",
+    "title": "Class de Ichiban Kawaii Gal wo Ezuke Shiteiru Hanashi",
+    "mangaId": 192945,
+    "anilistId": 192945,
+    "chapterIndexId": "acfd6902-b39c-4b7d-91a8-9825dda4ede8",
+    "lastChapterId": "29599b28-f4f2-4598-ac00-fc9eb774784e",
+    "lastChapter": "12",
+    "lastAttemptAt": "2026-04-26T11:34:33.310Z",
+    "lastSuccessAt": "2026-04-26T11:34:33.310Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "7c99a379-bb29-4f17-9de7-ae02c4c22029": {
+    "status": "failed",
+    "title": "The woman who seeks pain",
+    "lastChapterId": "fb82af8f-600e-4c84-8c29-af0e9cfb2f5e",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-26T11:34:36.516Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
