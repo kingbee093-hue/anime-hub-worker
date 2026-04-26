@@ -98,16 +98,6 @@
     ],
     "tags": [
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 505,
         "name": "Advertisement",
         "description": "Produced in order to promote the products of a certain company.",
@@ -122,6 +112,16 @@
         "name": "Space",
         "description": "Partly or completely set in outer space.",
         "category": "Setting-Universe",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,

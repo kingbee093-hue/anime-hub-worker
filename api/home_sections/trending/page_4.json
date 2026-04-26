@@ -448,7 +448,7 @@
     "averageScore": 68,
     "meanScore": 72,
     "popularity": 2661,
-    "trending": 2,
+    "trending": 0,
     "favourites": 58,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
@@ -671,16 +671,6 @@
         "isAdult": false
       },
       {
-        "id": 220,
-        "name": "Ghost",
-        "description": "Prominently features a character who is a ghost.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 242,
         "name": "Flash",
         "description": "Created using Flash animation techniques.",
@@ -695,6 +685,16 @@
         "name": "Josei",
         "description": "Target demographic is adult females.",
         "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -2997,7 +2997,7 @@
     "rating": 7,
     "averageScore": 70,
     "meanScore": 75,
-    "popularity": 2545,
+    "popularity": 2547,
     "trending": 0,
     "favourites": 62,
     "source": "VIDEO_GAME",

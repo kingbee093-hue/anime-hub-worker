@@ -78,16 +78,6 @@
     ],
     "tags": [
       {
-        "id": 355,
-        "name": "Aviation",
-        "description": "Regarding the flying or operation of aircraft.",
-        "category": "Theme-Other-Vehicle",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1537,
         "name": "Coastal",
         "description": "Story prominently takes place near the beach or around a coastal area/town. Setting is near the ocean.",
@@ -108,9 +98,9 @@
         "isAdult": false
       },
       {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
         "category": "Technical",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -118,9 +108,19 @@
         "isAdult": false
       },
       {
-        "id": 90,
-        "name": "CGI",
-        "description": "Prominently features scenes created with computer-generated imagery.",
+        "id": 355,
+        "name": "Aviation",
+        "description": "Regarding the flying or operation of aircraft.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
         "category": "Technical",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -807,7 +807,7 @@
     "rating": 6.6,
     "averageScore": 66,
     "meanScore": 81,
-    "popularity": 279,
+    "popularity": 283,
     "trending": 0,
     "favourites": 10,
     "source": "VIDEO_GAME",
@@ -1067,9 +1067,39 @@
     ],
     "tags": [
       {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1564,
+        "name": "Estranged Family",
+        "description": "At least one family member of the MC intentionally distances themselves or a family distances themselves from a person related to the MC.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 598,
+        "name": "Elf",
+        "description": "Prominently features a character who is an elf.",
         "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -1087,39 +1117,9 @@
         "isAdult": false
       },
       {
-        "id": 598,
-        "name": "Elf",
-        "description": "Prominently features a character who is an elf.",
-        "category": "Cast-Traits",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 244,
-        "name": "Isekai",
-        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
-        "category": "Theme-Fantasy",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1564,
-        "name": "Estranged Family",
-        "description": "At least one family member of the MC intentionally distances themselves or a family distances themselves from a person related to the MC.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 249,
-        "name": "Maids",
-        "description": "Prominently features a character who is a maid.",
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
         "category": "Cast-Traits",
         "rank": 79,
         "isGeneralSpoiler": false,
@@ -1530,20 +1530,20 @@
     ],
     "tags": [
       {
-        "id": 433,
-        "name": "Animals",
-        "description": "Prominently features animal characters in a leading role.",
-        "category": "Theme-Other",
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
         "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,

@@ -1173,7 +1173,7 @@
     "rating": 7.9,
     "averageScore": 79,
     "meanScore": 81,
-    "popularity": 5018,
+    "popularity": 5031,
     "trending": 0,
     "favourites": 103,
     "source": "LIGHT_NOVEL",
@@ -1282,10 +1282,10 @@
         "isAdult": false
       },
       {
-        "id": 254,
-        "name": "Kemonomimi",
-        "description": "Prominently features humanoid characters with animal ears.",
-        "category": "Cast-Traits",
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
         "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1302,10 +1302,10 @@
         "isAdult": false
       },
       {
-        "id": 25,
-        "name": "Historical",
-        "description": "Partly or completely set during a real period of world history.",
-        "category": "Setting-Time",
+        "id": 254,
+        "name": "Kemonomimi",
+        "description": "Prominently features humanoid characters with animal ears.",
+        "category": "Cast-Traits",
         "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1342,30 +1342,10 @@
         "isAdult": false
       },
       {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 253,
-        "name": "Gods",
-        "description": "Prominently features a character of divine or religious nature.",
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
         "category": "Cast-Traits",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1091,
-        "name": "Religion",
-        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
-        "category": "Theme-Other",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1382,9 +1362,29 @@
         "isAdult": false
       },
       {
-        "id": 164,
-        "name": "Tsundere",
-        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
         "category": "Cast-Traits",
         "rank": 60,
         "isGeneralSpoiler": false,
@@ -1408,7 +1408,7 @@
     "averageScore": 0,
     "meanScore": 0,
     "popularity": 14358,
-    "trending": 1,
+    "trending": 0,
     "favourites": 164,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -1470,6 +1470,16 @@
         "isAdult": false
       },
       {
+        "id": 1453,
+        "name": "Desert",
+        "description": "Prominently features a desert environment.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 82,
         "name": "Male Protagonist",
         "description": "Main character is male.",
@@ -1524,16 +1534,6 @@
         "name": "Anthropomorphism",
         "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
         "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1453,
-        "name": "Desert",
-        "description": "Prominently features a desert environment.",
-        "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
