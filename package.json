@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "fetch:recent": "node index.js recent",
-    "fetch:sections": "node index.js featured && node index.js toprated && node index.js trending && node index.js popular && node index.js upcoming && node index.js topairing && node index.js genres",
+    "fetch:sections": "node index.js featured && node index.js toprated && node index.js trending && node index.js popular && node index.js upcoming && node index.js topairing && node index.js genres && node index.js characters",
     "fetch:schedule": "node index.js schedule",
     "fetch:catalog": "node index.js catalog",
     "fetch:manga": "node index.js manga",
