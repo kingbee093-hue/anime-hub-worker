@@ -3181,49 +3181,6 @@
     "chapterSourceConfidence": 1
   },
   {
-    "mangaId": 184773,
-    "anilistId": 184773,
-    "idMal": 176460,
-    "title": "Senki Survival Saga: Isekai no Unmei wo Kaketa Mujintou Fujun Iseikouyuu",
-    "titleEnglish": "",
-    "titleRomaji": "Senki Survival Saga: Isekai no Unmei wo Kaketa Mujintou Fujun Iseikouyuu",
-    "titleNative": "戦姫サバイバルサガ-異世界の運命をかけた無人島フジュン異性交遊-",
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b184773-qs75HCeLpJ3Q.jpg",
-    "synopsis": "Anastasia, an elf said to be the most powerful magical talent in a thousand years, is fighting in the final battle of a three-way war. In the midst of battle with her arch-enemies, the demons, Anastasia finds herself enveloped in an intense light, and wakes up",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "authors": [
-      "Otosama"
-    ],
-    "artists": [
-      "Otosama"
-    ],
-    "popularity": 3494,
-    "averageScore": 69,
-    "chapters": 0,
-    "volumes": 0,
-    "year": 2024,
-    "format": "MANGA",
-    "status": "RELEASING",
-    "mangadexId": "9a5b657d-b6db-45a7-a2b7-b165884d9603",
-    "detailPage": 8,
-    "searchTerms": [
-      "Senki Survival Saga: Isekai no Unmei wo Kaketa Mujintou Fujun Iseikouyuu",
-      "戦姫サバイバルサガ-異世界の運命をかけた無人島フジュン異性交遊-",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Otosama"
-    ],
-    "chapterIndexId": "9a5b657d-b6db-45a7-a2b7-b165884d9603",
-    "mangadexUrl": "https://mangadex.org/title/9a5b657d-b6db-45a7-a2b7-b165884d9603",
-    "mangadexMappingSource": "al",
-    "mangadexMappingConfidence": 1
-  },
-  {
     "mangaId": 138684,
     "anilistId": 138684,
     "idMal": 140215,
@@ -3244,14 +3201,14 @@
     "artists": [
       "Kamelie"
     ],
-    "popularity": 3492,
+    "popularity": 3502,
     "averageScore": 58,
-    "chapters": 0,
+    "chapters": 171,
     "volumes": 0,
     "year": 2021,
     "format": "MANGA",
     "status": "RELEASING",
-    "mangadexId": "03b51b22-f30e-4808-b1ff-bf6e1ff902cf",
+    "mangadexId": "51884f2e-8df3-45ec-8bab-4a9b10ae38ce",
     "detailPage": 8,
     "searchTerms": [
       "Danjo no Yuujou wa Seiritsu suru? (Iya, Shinai!!)",
@@ -3261,8 +3218,8 @@
       "Kamelie",
       "Nana Nanana"
     ],
-    "chapterIndexId": "03b51b22-f30e-4808-b1ff-bf6e1ff902cf",
-    "mangadexUrl": "https://mangadex.org/title/03b51b22-f30e-4808-b1ff-bf6e1ff902cf",
+    "chapterIndexId": "51884f2e-8df3-45ec-8bab-4a9b10ae38ce",
+    "mangadexUrl": "https://mangadex.org/title/51884f2e-8df3-45ec-8bab-4a9b10ae38ce",
     "mangadexMappingSource": "recent_chapter_discovery",
     "mangadexMappingConfidence": 0.98,
     "synonyms": [
@@ -3280,12 +3237,12 @@
     "endDate": null,
     "tags": [
       {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
         "rank": 60,
-        "isGeneralSpoiler": false,
+        "isGeneralSpoiler": true,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -3300,12 +3257,12 @@
         "isAdult": false
       },
       {
-        "id": 153,
-        "name": "Time Skip",
-        "description": "Features a gap in time used to advance the story.",
-        "category": "Setting-Time",
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
         "rank": 60,
-        "isGeneralSpoiler": true,
+        "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
@@ -3320,20 +3277,10 @@
         "isAdult": false
       },
       {
-        "id": 139,
-        "name": "Love Triangle",
-        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
-        "category": "Theme-Romance",
-        "rank": 40,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -3350,10 +3297,20 @@
         "isAdult": false
       },
       {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
         "rank": 40,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -3398,9 +3355,52 @@
       }
     ],
     "chapterSourceProvider": "mangadex",
-    "chapterSourceId": "03b51b22-f30e-4808-b1ff-bf6e1ff902cf",
-    "chapterSourceTitle": "Danjo no Yujou wa Seiritsu suru? (Iya, Shinai!!)",
+    "chapterSourceId": "51884f2e-8df3-45ec-8bab-4a9b10ae38ce",
+    "chapterSourceTitle": "Danjo-hi 1:39 no Heikou Sekai wa Omoi no Hoka Futsuu (Fan Colored)",
     "chapterSourceConfidence": 1
+  },
+  {
+    "mangaId": 184773,
+    "anilistId": 184773,
+    "idMal": 176460,
+    "title": "Senki Survival Saga: Isekai no Unmei wo Kaketa Mujintou Fujun Iseikouyuu",
+    "titleEnglish": "",
+    "titleRomaji": "Senki Survival Saga: Isekai no Unmei wo Kaketa Mujintou Fujun Iseikouyuu",
+    "titleNative": "戦姫サバイバルサガ-異世界の運命をかけた無人島フジュン異性交遊-",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b184773-qs75HCeLpJ3Q.jpg",
+    "synopsis": "Anastasia, an elf said to be the most powerful magical talent in a thousand years, is fighting in the final battle of a three-way war. In the midst of battle with her arch-enemies, the demons, Anastasia finds herself enveloped in an intense light, and wakes up",
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Fantasy"
+    ],
+    "authors": [
+      "Otosama"
+    ],
+    "artists": [
+      "Otosama"
+    ],
+    "popularity": 3494,
+    "averageScore": 69,
+    "chapters": 0,
+    "volumes": 0,
+    "year": 2024,
+    "format": "MANGA",
+    "status": "RELEASING",
+    "mangadexId": "9a5b657d-b6db-45a7-a2b7-b165884d9603",
+    "detailPage": 8,
+    "searchTerms": [
+      "Senki Survival Saga: Isekai no Unmei wo Kaketa Mujintou Fujun Iseikouyuu",
+      "戦姫サバイバルサガ-異世界の運命をかけた無人島フジュン異性交遊-",
+      "Comedy",
+      "Ecchi",
+      "Fantasy",
+      "Otosama"
+    ],
+    "chapterIndexId": "9a5b657d-b6db-45a7-a2b7-b165884d9603",
+    "mangadexUrl": "https://mangadex.org/title/9a5b657d-b6db-45a7-a2b7-b165884d9603",
+    "mangadexMappingSource": "al",
+    "mangadexMappingConfidence": 1
   },
   {
     "mangaId": 145382,
