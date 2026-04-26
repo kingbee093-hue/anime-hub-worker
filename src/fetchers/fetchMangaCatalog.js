@@ -16,6 +16,7 @@ const {
 const {
   writeReleasingSection,
 } = require('../utils/mangaSections');
+const { writeSectionPages } = require('../utils/sectionPagination');
 const { buildChapterIndexId } = require('../utils/mangaBackfillData');
 const manualMangaMappings = require('../config/manualMangaMappings.json');
 const manualMangaSourceMappings = require('../config/manualMangaSourceMappings.json');
@@ -1120,6 +1121,7 @@ async function fetchMangaCatalog() {
       Array.from(new Map(items.map((item) => [item.mangaId, item])).values()),
     ).slice(0, GENRE_MAX_ITEMS);
     writeJsonIfChanged(`${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genre}`, sortedItems);
+    writeSectionPages(`${CONFIG.API_PATHS.MANGA_BY_GENRE}/${genre}`, sortedItems);
   }
 
   for (const source of MANGA_CATALOG_SOURCES) {
@@ -1132,6 +1134,7 @@ async function fetchMangaCatalog() {
 
     if (source.sectionPath) {
       writeJsonIfChanged(source.sectionPath, items);
+      writeSectionPages(source.sectionPath, items);
     }
   }
 

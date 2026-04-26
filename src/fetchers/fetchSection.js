@@ -7,6 +7,7 @@ const { convertToFirestoreFormat }     = require('../utils/formatters');
 const { fetchGraphQL }                 = require('../utils/fetchHelper');
 const { GENERIC_MEDIA_QUERY }          = require('../utils/anilistQueries');
 const { writeJsonIfChanged, readJson } = require('../utils/writeJsonIfChanged');
+const { writeSectionPages } = require('../utils/sectionPagination');
 
 // ─── Page-state persistence ──────────────────────────────────────────────────
 // Using a regular file name (no dot) to ensure it's picked up by git and visible.
@@ -168,6 +169,9 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
     } else {
         console.log(`  = No changes in data, skipping file write.`);
     }
+
+    // ── Write paginated page files into subfolder ────────────────────────────
+    writeSectionPages(collectionPath, finalOutput);
 }
 
 module.exports = fetchSection;

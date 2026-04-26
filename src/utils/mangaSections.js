@@ -1,5 +1,6 @@
 const CONFIG = require('../config/constants');
 const { writeJsonIfChanged } = require('./writeJsonIfChanged');
+const { writeSectionPages } = require('./sectionPagination');
 
 const DEFAULT_SECTION_LIMIT = 24;
 
@@ -42,6 +43,7 @@ function buildReleasingSection(catalogEntries, limit = DEFAULT_SECTION_LIMIT) {
 function writeReleasingSection(catalogEntries, limit = DEFAULT_SECTION_LIMIT) {
   const items = buildReleasingSection(catalogEntries, limit);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_RELEASING, items);
+  writeSectionPages(CONFIG.API_PATHS.MANGA_RELEASING, items);
   return items;
 }
 
@@ -100,6 +102,7 @@ function buildNewChaptersSection(catalogEntries, chapterManifest, limit = 0) {
 function writeNewChaptersSection(catalogEntries, chapterManifest, limit = 0) {
   const items = buildNewChaptersSection(catalogEntries, chapterManifest, limit);
   writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, items);
+  writeSectionPages(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, items);
   return items;
 }
 

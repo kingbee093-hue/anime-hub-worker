@@ -18,6 +18,7 @@ const {
   buildChapterIndexId,
 } = require('../utils/mangaBackfillData');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
+const { writeSectionPages } = require('../utils/sectionPagination');
 const { buildReleasingSection } = require('../utils/mangaSections');
 
 const MANGADEX_API = 'https://api.mangadex.org';
@@ -1562,6 +1563,7 @@ async function fetchMangaNewChapters() {
 
 
     writeJsonIfChanged(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
+    writeSectionPages(CONFIG.API_PATHS.MANGA_NEW_CHAPTERS, finalItems);
     console.log(`Manga new chapters refreshed with ${finalItems.length} titles (cutoff: ${latestAttempt.cutoffIso}).`);
   } finally {
     pruneRequestHealthState();
