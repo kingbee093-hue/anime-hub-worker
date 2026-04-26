@@ -34,6 +34,9 @@ jobs:
       - name: Run Sections Fetcher (includes By Genre)
         run: npm run fetch:sections
 
+      - name: Split sections into paginated pages
+        run: node scripts/split-sections-to-pages-v2.js
+
       - name: Commit API updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

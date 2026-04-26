@@ -44,6 +44,9 @@ jobs:
           MANGA_BACKFILL_CHAPTER_BATCH: ${{ github.event.inputs.batch_size || '50' }}
         run: node index.js mangachaptersbackfill
 
+      - name: Split manga sections into paginated pages
+        run: node scripts/split-sections-to-pages-v2.js
+
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
