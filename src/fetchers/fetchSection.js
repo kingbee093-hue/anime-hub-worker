@@ -55,13 +55,17 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
     console.log(`FETCHING: ${sectionName}${options.accumulate ? ' (ACCUMULATE)' : ''}`);
     if (options.maxItems) console.log(`  Target this run: ${options.maxItems} valid items`);
 
-    // ── Resume from last saved page ─────────────────────────────────────────
+    // ── Resume from last saved page (only for accumulate sections) ──────────
     const state     = loadState();
     const stateKey  = collectionPath;
-    let   lastSavedPage = state[stateKey] || 0;
+    let   lastSavedPage = options.accumulate ? (state[stateKey] || 0) : 0;
     let   startPage     = lastSavedPage + 1;
 
-    console.log(`  [State] Last page for "${stateKey}" was ${lastSavedPage}, starting at page ${startPage}`);
+    if (options.accumulate) {
+        console.log(`  [State] Last page for "${stateKey}" was ${lastSavedPage}, starting at page ${startPage}`);
+    } else {
+        console.log(`  [State] Non-accumulate section — always starting from page 1`);
+    }
 
     const hardPageLimit = options.maxItems ? 300 : (options.maxPages || 10);
     const targetItems   = options.maxItems || Infinity;
@@ -125,9 +129,11 @@ async function fetchSection(collectionPath, variables, sectionName, options = {}
         }
     }
 
-    // Save the last page we reached
-    state[stateKey] = page;
-    saveState(state);
+    // Save the last page we reached (only for accumulate sections)
+    if (options.accumulate) {
+        state[stateKey] = page;
+        saveState(state);
+    }
     
     console.log(`  ✓ Finished "${sectionName}". Total collected in this run: ${collected.length}`);
 
