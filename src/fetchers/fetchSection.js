@@ -47,94 +47,112 @@ async function delay(ms) {
 }
 
 /**
- * Fetches a section with full pagination support, resuming from the last
- * page fetched on the previous run (page-state tracking).
+ * Fetches a section with full pagination support.
+ *
+ * Strategy:
+ *   accumulate=true  (trending, top_rated, genres):
+ *     1. Fetch page 1 first (guarantees latest/newest items)
+ *     2. Continue from last saved page (discovers deeper catalog)
+ *     3. Merge with existing data — no deletions
+ *
+ *   accumulate=false (featured, upcoming, top_airing, popular_season):
+ *     1. Always start from page 1, fetch sequentially
+ *     2. Replace old data completely — always up-to-date
  */
 async function fetchSection(collectionPath, variables, sectionName, options = {}) {
     console.log('----------------------------------------');
-    console.log(`FETCHING: ${sectionName}${options.accumulate ? ' (ACCUMULATE)' : ''}`);
+    console.log(`FETCHING: ${sectionName}${options.accumulate ? ' (ACCUMULATE)' : ' (REPLACE)'}`);
     if (options.maxItems) console.log(`  Target this run: ${options.maxItems} valid items`);
 
-    // ── Resume from last saved page (only for accumulate sections) ──────────
     const state     = loadState();
     const stateKey  = collectionPath;
-    let   lastSavedPage = options.accumulate ? (state[stateKey] || 0) : 0;
-    let   startPage     = lastSavedPage + 1;
-
-    if (options.accumulate) {
-        console.log(`  [State] Last page for "${stateKey}" was ${lastSavedPage}, starting at page ${startPage}`);
-    } else {
-        console.log(`  [State] Non-accumulate section — always starting from page 1`);
-    }
+    const lastSavedPage = options.accumulate ? (state[stateKey] || 0) : 0;
 
     const hardPageLimit = options.maxItems ? 300 : (options.maxPages || 10);
     const targetItems   = options.maxItems || Infinity;
-
-    let page         = startPage;
-    let hasNextPage  = true;
-    let wrappedAround = false;
-    const collected  = [];
-
     variables.perPage = variables.perPage || 50;
 
-    while (hasNextPage && collected.length < targetItems) {
-        if (page > hardPageLimit) {
-            if (wrappedAround) break; 
-            console.log(`  [State] Reached page limit ${hardPageLimit}, wrapping to page 1.`);
-            page = 1;
-            wrappedAround = true;
-        }
+    const collected  = [];
 
-        variables.page = page;
+    // ── Helper: fetch a single page and append valid items ──────────────────
+    async function fetchPage(pageNum) {
+        variables.page = pageNum;
         const pct = targetItems === Infinity
             ? `${collected.length}`
             : `${collected.length}/${targetItems}`;
-        console.log(`  Page ${page} — collected ${pct} so far...`);
+        console.log(`  Page ${pageNum} — collected ${pct} so far...`);
 
         const data = await fetchGraphQL(GENERIC_MEDIA_QUERY, variables);
 
         if (!data || !data.Page) {
-            console.error(`  ✗ Failed on page ${page}, stopping.`);
-            break;
+            console.error(`  ✗ Failed on page ${pageNum}, stopping.`);
+            return { items: 0, hasNext: false };
         }
 
         const mediaList = data.Page.media || [];
         if (mediaList.length === 0) {
-            console.log(`  [Info] Page ${page} is empty.`);
-            hasNextPage = false;
-        } else {
-            for (const media of mediaList) {
-                if (collected.length >= targetItems) break;
-                if (!media || (!media.idMal && !media.id)) continue;
-                if (isAdultContent(media).blocked || !isAnime(media).allowed) continue;
-
-                const formatted = convertToFirestoreFormat(media);
-                if (formatted) collected.push(formatted);
-            }
-            hasNextPage = data.Page.pageInfo?.hasNextPage ?? false;
+            console.log(`  [Info] Page ${pageNum} is empty.`);
+            return { items: 0, hasNext: false };
         }
 
-        // If AniList says no next page, wrap around on accumulate sections
-        if (!hasNextPage && options.accumulate && !wrappedAround && collected.length < targetItems) {
-            console.log(`  [State] No more pages available, wrapping to page 1.`);
-            page = 1;
-            hasNextPage = true;
-            wrappedAround = true;
-            continue;
-        }
+        let added = 0;
+        for (const media of mediaList) {
+            if (collected.length >= targetItems) break;
+            if (!media || (!media.idMal && !media.id)) continue;
+            if (isAdultContent(media).blocked || !isAnime(media).allowed) continue;
 
-        if (hasNextPage && collected.length < targetItems) {
-            await delay(1000);
-            page++;
+            const formatted = convertToFirestoreFormat(media);
+            if (formatted) { collected.push(formatted); added++; }
         }
+        return { items: added, hasNext: data.Page.pageInfo?.hasNextPage ?? false };
     }
 
-    // Save the last page we reached (only for accumulate sections)
     if (options.accumulate) {
+        // ── ACCUMULATE: page 1 first, then continue from last saved page ────
+        console.log(`  [Strategy] Accumulate — fetching page 1 first, then from page ${lastSavedPage + 1}`);
+
+        // Phase 1: Always fetch page 1 (latest data)
+        const p1 = await fetchPage(1);
+        if (p1.items === 0 && !p1.hasNext) {
+            console.log(`  [Info] Page 1 empty, nothing to accumulate.`);
+            return;
+        }
+        if (collected.length < targetItems && p1.hasNext) await delay(1000);
+
+        // Phase 2: Continue from last saved page (skip pages 2..lastSavedPage)
+        let page = lastSavedPage > 0 ? lastSavedPage + 1 : 2;
+        let hasNextPage = true;
+
+        while (hasNextPage && collected.length < targetItems && page <= hardPageLimit) {
+            const result = await fetchPage(page);
+            hasNextPage = result.hasNext;
+            if (collected.length < targetItems && hasNextPage) {
+                await delay(1000);
+                page++;
+            }
+        }
+
+        // Save the last page we reached
         state[stateKey] = page;
         saveState(state);
+
+    } else {
+        // ── REPLACE: always start from page 1, fetch sequentially ────────────
+        console.log(`  [Strategy] Replace — always starting from page 1`);
+
+        let page = 1;
+        let hasNextPage = true;
+
+        while (hasNextPage && collected.length < targetItems && page <= hardPageLimit) {
+            const result = await fetchPage(page);
+            hasNextPage = result.hasNext;
+            if (collected.length < targetItems && hasNextPage) {
+                await delay(1000);
+                page++;
+            }
+        }
     }
-    
+
     console.log(`  ✓ Finished "${sectionName}". Total collected in this run: ${collected.length}`);
 
     // ── Accumulate (merge, no deletions) ────────────────────────────────────
