@@ -1,0 +1,4817 @@
+[
+  {
+    "animeId": 474,
+    "anilistId": 474,
+    "title": "Macross Plus",
+    "titleRomaji": "Macross Plus",
+    "titleEnglish": "Macross Plus",
+    "titleNative": "マクロスプラス",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx474-lyjbbltW5ZX4.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx474-lyjbbltW5ZX4.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx474-lyjbbltW5ZX4.png",
+    "coverImageColor": "#f14335",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/474-WOoYctkP0cHi.jpg",
+    "synopsis": "The year is 2040 and the galaxy is flourishing with several colonies and advanced technology. AI is near perfection and the current top idol is the near-completed Virturoid Idol Sharon Apple. All that is missing are her actual feelings, which instead are supplied by Myung Fang Lone. Sharon's debut concert is on planet Eden, where at the same time, fighter pilots Isamu Dyson and Guld Bowman battle over air superiority for the \"Supernova Project.\" Isamu, Guld and Myung were once childhood friends, but after an accident seven years ago, they went their own separate ways. With Myung back in the picture, the old disputes are once again awakened. And when an unstable and illegal AI technique is installed in Sharon, the situation is worsened. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 1994,
+    "seasonInt": 943,
+    "episodes": 4,
+    "duration": 39,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Music",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 355,
+        "name": "Aviation",
+        "description": "Regarding the flying or operation of aircraft.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      }
+    ],
+    "studios": [
+      {
+        "id": 110,
+        "name": "Triangle Staff",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/110"
+      }
+    ],
+    "studiosNames": [
+      "Triangle Staff"
+    ],
+    "rating": 7.5,
+    "averageScore": 75,
+    "meanScore": 75,
+    "popularity": 16059,
+    "trending": 0,
+    "favourites": 390,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1994-08-25",
+    "endDate": "1995-06-25",
+    "mal_url": "https://myanimelist.net/anime/474",
+    "anilist_url": "https://anilist.co/anime/474",
+    "trailer": null
+  },
+  {
+    "animeId": 1089,
+    "anilistId": 1089,
+    "title": "Macross: Do You Remember Love?",
+    "titleRomaji": "Choujikuu Yousai Macross: Ai Oboete Imasu ka",
+    "titleEnglish": "Macross: Do You Remember Love?",
+    "titleNative": "超時空要塞マクロス -愛・おぼえていますか-",
+    "synonyms": [
+      "Clash of the Bionoids",
+      "Gekijouban Choujikuu Yousai Macross: Ai",
+      "Oboete Imasu ka",
+      "Macross in Clash Of The Bionoids",
+      "Macross - Il film",
+      "Macross, Le Film",
+      "Macross: Långfilmen om Robotech"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1089-uoP83D60OHxP.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1089-uoP83D60OHxP.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/1089-uoP83D60OHxP.jpg",
+    "coverImageColor": "#e45d86",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1089-QrL6y85OKpa5.jpg",
+    "synopsis": "A.D. 2009 - The human race is in the middle of a three-way war with a race of giant humanoid aliens called the Zentraedi (male) and Meltrandi (female). After executing a space fold that sent it and part of South Atalia Island to the edge of the Solar System, the space fortress Macross is on its way back to Earth. During a small skirmish with Zentraedi forces, young pilot Hikaru Ichijo rescues idol singer Lynn Minmay and their relationship develops as they're stranded somewhere within the ship. But shortly after returning to Macross City, Minmay is captured by the Zentraedi, and Hikaru and female officer Misa Hayase end up back on Earth - only to view the aftermath of the destruction of their civilization. Only a song discovered eons ago - along with Minmay's voice - can determine the outcome of the war. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 1984,
+    "seasonInt": 843,
+    "episodes": 1,
+    "duration": 115,
+    "genres": [
+      "Action",
+      "Mecha",
+      "Music",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 355,
+        "name": "Aviation",
+        "description": "Regarding the flying or operation of aircraft.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 466,
+        "name": "Lost Civilization",
+        "description": "Featuring a civilization with few ruins or records that exist in present day knowledge.",
+        "category": "Theme-Other",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 305,
+        "name": "Ships",
+        "description": "Prominently features the use of sea-based transportation vessels.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 516,
+        "name": "Language Barrier",
+        "description": "A barrier to communication between people who are unable to speak a common language.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 103,
+        "name": "Tatsunoko Production",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/103"
+      },
+      {
+        "id": 8,
+        "name": "Artland",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/8"
+      }
+    ],
+    "studiosNames": [
+      "Tatsunoko Production",
+      "Artland"
+    ],
+    "rating": 7.7,
+    "averageScore": 77,
+    "meanScore": 77,
+    "popularity": 15882,
+    "trending": 0,
+    "favourites": 691,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1984-07-07",
+    "endDate": "1984-07-07",
+    "mal_url": "https://myanimelist.net/anime/1089",
+    "anilist_url": "https://anilist.co/anime/1089",
+    "trailer": null
+  },
+  {
+    "animeId": 6772,
+    "anilistId": 6772,
+    "title": "Broken Blade",
+    "titleRomaji": "Break Blade 1: Kakusei no Toki",
+    "titleEnglish": "Broken Blade",
+    "titleNative": "ブレイク ブレイド 覚醒ノ刻",
+    "synonyms": [
+      "Breaker Blade",
+      "Break Blade 1: The Time of Awakening"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6772-rZOOo5n3QZ7u.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6772-rZOOo5n3QZ7u.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b6772-rZOOo5n3QZ7u.jpg",
+    "coverImageColor": "#e4bb6b",
+    "bannerImage": "",
+    "synopsis": "In the continent of Cruzon, an impending war between the Kingdom of Krisna and the nation of Athens is brimming. The people of this land are able to use quartz for whatever purpose they desire. Yet one person, Rygart Arrow, is not. He is an \"un-sorcerer,\" a person unable to use quartz. But this characteristic will enable him to pilot an ancient Golem, one strong enough to put up a fight against the invading army of Athens.",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2010,
+    "seasonInt": 102,
+    "episodes": 1,
+    "duration": 51,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Mecha"
+    ],
+    "tags": [
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 466,
+        "name": "Lost Civilization",
+        "description": "Featuring a civilization with few ruins or records that exist in present day knowledge.",
+        "category": "Theme-Other",
+        "rank": 52,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 10,
+        "name": "Production I.G",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/10"
+      },
+      {
+        "id": 27,
+        "name": "Xebec",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/27"
+      }
+    ],
+    "studiosNames": [
+      "Production I.G",
+      "Xebec"
+    ],
+    "rating": 7.2,
+    "averageScore": 72,
+    "meanScore": 72,
+    "popularity": 15775,
+    "trending": 0,
+    "favourites": 73,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2010-05-29",
+    "endDate": "2010-05-29",
+    "mal_url": "https://myanimelist.net/anime/6772",
+    "anilist_url": "https://anilist.co/anime/6772",
+    "trailer": null
+  },
+  {
+    "animeId": 5342,
+    "anilistId": 5342,
+    "title": "Asura Cryin'",
+    "titleRomaji": "Asura Cryin'",
+    "titleEnglish": "Asura Cryin'",
+    "titleNative": "アスラクライン",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5342-ANw2oxMaqpKa.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5342-ANw2oxMaqpKa.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5342-ANw2oxMaqpKa.jpg",
+    "coverImageColor": "#ff9343",
+    "bannerImage": "",
+    "synopsis": "Natsume Tomoharu is a normal high-school student in every way with one exception: he&rsquo;s being followed by the ghost of his best friend, Misao. After moving into his brother&rsquo;s old house, Tomoharu expects to continue living his normal life but is one day left with a mysterious and locked briefcase without any instruction. At first he plans to leave it in storage, however his house is soon invaded by multiple groups of people after the briefcase. Although still not knowing the purpose of the briefcase, Tomoharu and Misao attempt to escape with it. From there on, Tomoharu tries to learn the secrets behind the briefcase, the connections between it and Misao and why it has the power to change the world. [Written by MAL Rewrite]",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2009,
+    "seasonInt": 92,
+    "episodes": 13,
+    "duration": 24,
+    "genres": [
+      "Action",
+      "Mecha",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 35,
+        "name": "Seven Arcs",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/35"
+      }
+    ],
+    "studiosNames": [
+      "Seven Arcs"
+    ],
+    "rating": 6.4,
+    "averageScore": 64,
+    "meanScore": 64,
+    "popularity": 15574,
+    "trending": 0,
+    "favourites": 94,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2009-04-02",
+    "endDate": "2009-06-25",
+    "mal_url": "https://myanimelist.net/anime/5342",
+    "anilist_url": "https://anilist.co/anime/5342",
+    "trailer": null
+  },
+  {
+    "animeId": 21677,
+    "anilistId": 20446,
+    "title": "Captain Earth",
+    "titleRomaji": "Captain Earth",
+    "titleEnglish": "Captain Earth",
+    "titleNative": "キャプテン・アース",
+    "synonyms": [
+      "Cpt. Earth"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20446-raX25lZndRm7.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20446-raX25lZndRm7.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20446-raX25lZndRm7.jpg",
+    "coverImageColor": "#e4ae1a",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20446-T1zjR1Ic56uD.jpg",
+    "synopsis": "When Daichi Manatsu sees a mysterious rainbow appearing near the Tanegashima Space Center, he immediately recognizes it as being similar to an apparition that formed when his father was killed in a mysterious accident years earlier. Traveling to Tanegashima, Daichi quickly finds himself involved with the machinations of Globe, a secret agency created to defend mankind from extraterrestrial forces. And while it might seem like a big job for a mere teenager, it turns out that the skills Daichi has honed on video games, combined with a special weapon called the Livlaster, make Daichi ideally suited for operating the Earth Engine Impacter, a giant robot that may be Mankind's best hope against aliens whose goal is to completely drain our world's lifeforce energy. Fortunately, Daichi won't be on his own, as he's quickly joined by a group of equally dedicated young people who all have their own skills and abilities to contribute to the battle. (Source: Sentai Filmworks)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2014,
+    "seasonInt": 142,
+    "episodes": 25,
+    "duration": 24,
+    "genres": [
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 4,
+        "name": "bones",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/4"
+      }
+    ],
+    "studiosNames": [
+      "bones"
+    ],
+    "rating": 6,
+    "averageScore": 60,
+    "meanScore": 60,
+    "popularity": 15506,
+    "trending": 0,
+    "favourites": 109,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#CE_anime",
+    "startDate": "2014-04-06",
+    "endDate": "2014-09-21",
+    "mal_url": "https://myanimelist.net/anime/21677",
+    "anilist_url": "https://anilist.co/anime/20446",
+    "trailer": {
+      "id": "i6Az5YmnyPY",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=i6Az5YmnyPY"
+    }
+  },
+  {
+    "animeId": 1491,
+    "anilistId": 1491,
+    "title": "Galaxy Express 999",
+    "titleRomaji": "Ginga Tetsudou 999",
+    "titleEnglish": "Galaxy Express 999",
+    "titleNative": "銀河鉄道９９９",
+    "synonyms": [
+      "GE999",
+      "Ginga Tetsudo 999"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1491-XfYiHNYKDR2P.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1491-XfYiHNYKDR2P.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1491-XfYiHNYKDR2P.jpg",
+    "coverImageColor": "#e4780d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1491-Y0zzsr3VsxgN.jpg",
+    "synopsis": "After witnessing the death of his mother and being left for dead at the hands of Count Mecha, ten-year old Tetsuro Hoshino is awakened by a mysterious woman, Maetal. In exchange for only his company, Maetal offers him the ride of his life on the Galaxy Express 999. It is said that those who travel aboard the legendary train to the end of the line can receive a free mechanical body and with it, immortality. Impoverished and alone, Tetsuro leaps at the opportunity and joins Maetal on a quest that will span the cosmos. As the Galaxy Express 999 makes its way across our solar system and beyond, Tetsuro is drawn deeper into a dangerous universe where peril lurks at every stop. (Source: Discotek)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 1978,
+    "seasonInt": 784,
+    "episodes": 113,
+    "duration": 25,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 122,
+        "name": "Trains",
+        "description": "Prominently features trains.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 801,
+        "name": "Cyborg",
+        "description": "Prominently features a human character whose physiological functions are aided or enhanced by artificial means.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 342,
+        "name": "Environmental",
+        "description": "Concern with the state of the natural world and how humans interact with it.",
+        "category": "Theme-Other",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 158,
+        "name": "Crossover",
+        "description": "Centers around the placement of two or more otherwise discrete fictional characters, settings, or universes into the context of a single story.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 18,
+        "name": "Toei Animation",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/18"
+      }
+    ],
+    "studiosNames": [
+      "Toei Animation"
+    ],
+    "rating": 7.5,
+    "averageScore": 75,
+    "meanScore": 76,
+    "popularity": 15490,
+    "trending": 1,
+    "favourites": 374,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1978-09-14",
+    "endDate": "1981-04-09",
+    "mal_url": "https://myanimelist.net/anime/1491",
+    "anilist_url": "https://anilist.co/anime/1491",
+    "trailer": null
+  },
+  {
+    "animeId": 40964,
+    "anilistId": 114307,
+    "title": "BACK ARROW",
+    "titleRomaji": "Back Arrow",
+    "titleEnglish": "BACK ARROW",
+    "titleNative": "バック・アロウ",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114307-7ON0DNyETBRk.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114307-7ON0DNyETBRk.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114307-7ON0DNyETBRk.jpg",
+    "coverImageColor": "#f1d628",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/114307-xmy1dyKDR7gE.jpg",
+    "synopsis": "Lingalind is enclosed by the Wall. The Wall covers, protects, cultivates, and nurtures the land. The Wall is God. One day in Edger, a village on the outskirts, a mysterious man named Back Arrow appears. Arrow has no memory, but he claims that all he knows is that “I came from outside the Wall.” Arrow tries to go beyond the Wall to regain his memories but is pulled into one conflict after another. (Source: Funimation)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2021,
+    "seasonInt": 211,
+    "episodes": 24,
+    "duration": 24,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 513,
+        "name": "Tokusatsu",
+        "description": "Prominently features elements that resemble special effects in Japanese live-action shows",
+        "category": "Theme-Sci-Fi",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 99,
+        "name": "Henshin",
+        "description": "Prominently features character or costume transformations which often grant special abilities.",
+        "category": "Theme-Fantasy",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 44,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 490,
+        "name": "Anachronism",
+        "description": "Prominently features elements that are out of place in the historical period the work takes place in, particularly modern elements in a historical setting.",
+        "category": "Setting-Time",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6164,
+        "name": "Studio VOLN",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/6164"
+      }
+    ],
+    "studiosNames": [
+      "Studio VOLN"
+    ],
+    "rating": 5.8,
+    "averageScore": 58,
+    "meanScore": 58,
+    "popularity": 15486,
+    "trending": 1,
+    "favourites": 167,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#バック・アロウ",
+    "startDate": "2021-01-09",
+    "endDate": "2021-06-19",
+    "mal_url": "https://myanimelist.net/anime/40964",
+    "anilist_url": "https://anilist.co/anime/114307",
+    "trailer": {
+      "id": "EuZJtPoY8tM",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=EuZJtPoY8tM"
+    }
+  },
+  {
+    "animeId": 32023,
+    "anilistId": 21471,
+    "title": "BBK/BRNK",
+    "titleRomaji": "Bubuki Buranki",
+    "titleEnglish": "BBK/BRNK",
+    "titleNative": "ブブキ・ブランキ",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21471-cG8JwPn9v1d3.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21471-cG8JwPn9v1d3.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21471-cG8JwPn9v1d3.png",
+    "coverImageColor": "#285d78",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21471-6FlI4z7yKU4u.jpg",
+    "synopsis": "When Azuma Ikki returns to Japan after 10 years, he gets assaulted by a group of armed men and becomes their prisoner. Kogane Asabuki, a childhood friend, saves him with a weapon on her right hand known as Bubuki; a weapon with its own mind. Azuma Ikki, who is a Bubuki user himself, learns about the existence of Bubuki and goes on a journey alongside the companions he has found, in an attempt to find and revive Oumai, a Buranki (titan) who sleeps underground.",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2016,
+    "seasonInt": 161,
+    "episodes": 12,
+    "duration": 24,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 122,
+        "name": "Trains",
+        "description": "Prominently features trains.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 537,
+        "name": "SANZIGEN",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/537"
+      }
+    ],
+    "studiosNames": [
+      "SANZIGEN"
+    ],
+    "rating": 5.7,
+    "averageScore": 57,
+    "meanScore": 58,
+    "popularity": 15486,
+    "trending": 0,
+    "favourites": 73,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#ブブキ",
+    "startDate": "2016-01-09",
+    "endDate": "2016-03-26",
+    "mal_url": "https://myanimelist.net/anime/32023",
+    "anilist_url": "https://anilist.co/anime/21471",
+    "trailer": {
+      "id": "zIS05b8rArU",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=zIS05b8rArU"
+    }
+  },
+  {
+    "animeId": 1051,
+    "anilistId": 1051,
+    "title": "Blue Submarine No. 6",
+    "titleRomaji": "Ao no 6-gou",
+    "titleEnglish": "Blue Submarine No. 6",
+    "titleNative": "青の6号",
+    "synonyms": [
+      "Ao no 6-go",
+      "Ao no Rokugou",
+      "Ao no Rokugo"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1051-VVOaEzsQiEo4.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1051-VVOaEzsQiEo4.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b1051-VVOaEzsQiEo4.jpg",
+    "coverImageColor": "#1a86e4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1051-izHesBZj9wgE.jpg",
+    "synopsis": "The once famous and well respected scientist Zorndyke has bred a new genre of living being, one that thrives on the oceans and lives to destroy humans. Zorndyke believes it is time that the humans were relieved of their rule of the earth. It is up to Blue Submarine No. 6 and the rest of the Blue fleet to put an end to Zorndyke's madness and creations. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 1998,
+    "seasonInt": 984,
+    "episodes": 4,
+    "duration": 32,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 305,
+        "name": "Ships",
+        "description": "Prominently features the use of sea-based transportation vessels.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 259,
+        "name": "Monster Girl",
+        "description": "Prominently features a female character who is part-monster.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1090,
+        "name": "Monster Boy",
+        "description": "Prominently features a male character who is a part-monster.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 342,
+        "name": "Environmental",
+        "description": "Concern with the state of the natural world and how humans interact with it.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 774,
+        "name": "Chimera",
+        "description": "Features a beast made by combining animals, usually with humans.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1490,
+        "name": "Proxy Battle",
+        "description": "A proxy battle is a battle where humans use creatures/robots to do the fighting for them, either by commanding those creatures/robots or by simply evolving them/changing them into battle mode.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 931,
+        "name": "Tomboy",
+        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 113,
+        "name": "Nekomimi",
+        "description": "Humanoid characters with cat-like features such as cat ears and a tail.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 3,
+        "name": "GONZO",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/3"
+      }
+    ],
+    "studiosNames": [
+      "GONZO"
+    ],
+    "rating": 6.6,
+    "averageScore": 66,
+    "meanScore": 66,
+    "popularity": 15475,
+    "trending": 0,
+    "favourites": 218,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1998-10-25",
+    "endDate": "2000-03-25",
+    "mal_url": "https://myanimelist.net/anime/1051",
+    "anilist_url": "https://anilist.co/anime/1051",
+    "trailer": null
+  },
+  {
+    "animeId": 143,
+    "anilistId": 143,
+    "title": "Destiny of the Shrine Maiden",
+    "titleRomaji": "Kannazuki no Miko",
+    "titleEnglish": "Destiny of the Shrine Maiden",
+    "titleNative": "神無月の巫女",
+    "synonyms": [
+      "Kannaduki no Miko",
+      "Priestesses of the Godless Month",
+      "La sacerdotisa de Octubre",
+      "A Sacerdotisa de Outubro",
+      "Kapłanki przeklętych dni"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143-RcqeTmjW0Amu.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143-RcqeTmjW0Amu.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx143-RcqeTmjW0Amu.jpg",
+    "coverImageColor": "#860d43",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/143-Gd6EIlc48H9k.jpg",
+    "synopsis": "The highborn Himemiya Chikane is cool and aloof, the perfect young lady of good breeding. Kurusegawa Himeko is devoted to her, and secretly her friend. Their lives are undisturbed in their school, until an ancient evil suddenly rears its head. To combat it, Chikane and Himeko must take on the roles of shrine maidens of the Moon and Sun.",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2004,
+    "seasonInt": 44,
+    "episodes": 12,
+    "duration": 24,
+    "genres": [
+      "Drama",
+      "Mecha",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 468,
+        "name": "Shrine Maiden",
+        "description": "Prominently features a character who is a shrine maiden.",
+        "category": "Cast-Traits",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 146,
+        "name": "Alternate Universe",
+        "description": "Features multiple alternate universes in the same series.",
+        "category": "Setting-Universe",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 614,
+        "name": "Nun",
+        "description": "Prominently features a character who is a nun.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 294,
+        "name": "Bisexual",
+        "description": "Features a character who is romantically or sexually attracted to people of more than one sex or gender.",
+        "category": "Cast-Traits",
+        "rank": 32,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 120,
+        "name": "TNK",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/120"
+      }
+    ],
+    "studiosNames": [
+      "TNK"
+    ],
+    "rating": 6.2,
+    "averageScore": 62,
+    "meanScore": 62,
+    "popularity": 15462,
+    "trending": 1,
+    "favourites": 212,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#神無月の巫女",
+    "startDate": "2004-10-02",
+    "endDate": "2004-12-18",
+    "mal_url": "https://myanimelist.net/anime/143",
+    "anilist_url": "https://anilist.co/anime/143",
+    "trailer": null
+  },
+  {
+    "animeId": 40608,
+    "anilistId": 112716,
+    "title": "Muv-Luv Alternative",
+    "titleRomaji": "Muv-Luv Alternative",
+    "titleEnglish": "Muv-Luv Alternative",
+    "titleNative": "マブラヴ オルタネイティヴ",
+    "synonyms": [
+      "Muv-Luv Alternative The Animation"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112716-4mMkZtsR3MIn.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112716-4mMkZtsR3MIn.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112716-4mMkZtsR3MIn.jpg",
+    "coverImageColor": "#43aee4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112716-ljFnJHSIbChB.jpg",
+    "synopsis": "A story of the bonds between those who fight, in a world pushed to its limits. On one of the countless parallel worlds that exist throughout spacetime, humanity has fought a decades long war against the BETA, hostile extraterrestrial invaders, using humanoid fighting machines called Tactical Surface Fighters. This is a story of how humanity lives and dies while on the brink of extinction… (Source: Crunchyroll)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2021,
+    "seasonInt": 214,
+    "episodes": 12,
+    "duration": 23,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 85,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 64,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 146,
+        "name": "Alternate Universe",
+        "description": "Features multiple alternate universes in the same series.",
+        "category": "Setting-Universe",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 931,
+        "name": "Tomboy",
+        "description": "Features a girl who exhibits characteristics or behaviors considered in many cultures to be typical of boys.",
+        "category": "Cast-Traits",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 43,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 37,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 37,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 894,
+        "name": "Graphinica",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/894"
+      },
+      {
+        "id": 96,
+        "name": "Yumeta Company",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/96"
+      },
+      {
+        "id": 6828,
+        "name": "FLAGSHIP LINE",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6828"
+      }
+    ],
+    "studiosNames": [
+      "Graphinica",
+      "Yumeta Company",
+      "FLAGSHIP LINE"
+    ],
+    "rating": 5.5,
+    "averageScore": 55,
+    "meanScore": 55,
+    "popularity": 15342,
+    "trending": 0,
+    "favourites": 171,
+    "source": "VISUAL_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#マブラヴアニメ #muvluv",
+    "startDate": "2021-10-07",
+    "endDate": "2021-12-23",
+    "mal_url": "https://myanimelist.net/anime/40608",
+    "anilist_url": "https://anilist.co/anime/112716",
+    "trailer": {
+      "id": "g6gATcNgk9s",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=g6gATcNgk9s"
+    }
+  },
+  {
+    "animeId": 393,
+    "anilistId": 393,
+    "title": "Escaflowne: A Girl in Gaea",
+    "titleRomaji": "Escaflowne",
+    "titleEnglish": "Escaflowne: A Girl in Gaea",
+    "titleNative": "エスカフローネ",
+    "synonyms": [
+      "Escaflowne: The Movie"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx393-KAkauYiiSWGa.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx393-KAkauYiiSWGa.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx393-KAkauYiiSWGa.jpg",
+    "coverImageColor": "#4393e4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n393-0MCOvJoiF2pr.jpg",
+    "synopsis": "Hitomi Kanzaki is in a very depressed mood. She only wants to sleep and fade away. Her misery summons Lord Folken who sends her to Gaea. The people of Gaea think she is the Wing Goddess, who can call upon the legendary Dragon Armor called Escaflowne. On Gaea, King Van, the sole survior of the White Dragon Clan, is also in a depressed state. Swearing an oath to get his revenge on the Black Dragon Clan that oblierated Van's kingdom, he lives by the sword. Now that the Wing Goddess has finally appeared, she posseses Gaea's world fate in her heart. Escaflowne will either lead Gaea to peace or total ruin. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 2000,
+    "seasonInt": 3,
+    "episodes": 1,
+    "duration": 97,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Mecha",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1564,
+        "name": "Estranged Family",
+        "description": "At least one family member of the MC intentionally distances themselves or a family distances themselves from a person related to the MC.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 224,
+        "name": "Dragons",
+        "description": "Prominently features mythical reptiles which generally have wings and can breathe fire.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 113,
+        "name": "Nekomimi",
+        "description": "Humanoid characters with cat-like features such as cat ears and a tail.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 254,
+        "name": "Kemonomimi",
+        "description": "Prominently features humanoid characters with animal ears.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1068,
+        "name": "Angels",
+        "description": "Prominently features spiritual beings usually represented with wings and halos and believed to be attendants of God.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 95,
+        "name": "Steampunk",
+        "description": "Prominently features technology and designs inspired by 19th-century industrial steam-powered machinery.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 291,
+        "name": "Samurai",
+        "description": "Prominently features warriors of medieval Japanese nobility bound by a code of honor.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 598,
+        "name": "Elf",
+        "description": "Prominently features a character who is an elf.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 4,
+        "name": "bones",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/4"
+      }
+    ],
+    "studiosNames": [
+      "bones"
+    ],
+    "rating": 6.6,
+    "averageScore": 66,
+    "meanScore": 67,
+    "popularity": 15246,
+    "trending": 0,
+    "favourites": 170,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2000-06-24",
+    "endDate": "2000-06-24",
+    "mal_url": "https://myanimelist.net/anime/393",
+    "anilist_url": "https://anilist.co/anime/393",
+    "trailer": null
+  },
+  {
+    "animeId": 1072,
+    "anilistId": 1072,
+    "title": "Sweat Punch",
+    "titleRomaji": "Sweat Punch",
+    "titleEnglish": "Sweat Punch",
+    "titleNative": "スウェットパンチ",
+    "synonyms": [
+      "Deep Imagination",
+      "Dan Petory Kyoushu no Yuutsu",
+      "Professor Dan Petry's Blues",
+      "End of the World",
+      "Tanpetori Kyouju no Yuuutsu",
+      "タンペトリー教授の憂鬱",
+      "Kigeki",
+      "喜劇",
+      "Comedy",
+      "Higan",
+      "彼岸",
+      "Enlightenment",
+      "Garakuta no Machi",
+      "ガラクタの町",
+      "Junk Town"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1072-3HZC9uQacKht.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1072-3HZC9uQacKht.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1072-3HZC9uQacKht.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "Sweat Punch is a series of five Studio 4&deg;C shorts collected as a direct-to-DVD package film entitled Deep Imagination . 1. Tanpetori Kyouju no Yuuutsu (タンペトリー教授の憂鬱, Professor Dan Petory's Blues) A musical number starring a hand puppet named Junior. The puppet is controlled by the drunken Professor Dan Petory who explains in puppetry the answers to such questions as why the Earth is blue and why UFOs fly in a zig-zag pattern. 2. End of the World \"End of the World\" is a science fiction story about a young alien girl named Yuko as she escapes from the world of humans. After meeting Kazumi, a human girl Yuko met at a rock concert, the girls head to Kazumi's apartment. Before Yuko even takes off her shoes, however, she leaves through Kazumi's TV with her trusty cybernetic steed FACE to wage a retaliatory campaign against hordes of S&M monsters from another dimension, and the evil queen of Yuko's world. 3. Kigeki (喜劇, Comedy) Set during the Irish War of Independence, a five-year old girl",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2002,
+    "seasonInt": 21,
+    "episodes": 5,
+    "duration": 11,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Horror",
+      "Mecha",
+      "Music",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 471,
+        "name": "Anthology",
+        "description": "A collection of separate works collated into a single release.",
+        "category": "Technical",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 265,
+        "name": "Musical Theater",
+        "description": "Features a performance that combines songs, spoken dialogue, acting, and dance.",
+        "category": "Theme-Arts-Music",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 13,
+        "name": "Studio 4°C",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/13"
+      }
+    ],
+    "studiosNames": [
+      "Studio 4°C"
+    ],
+    "rating": 6.3,
+    "averageScore": 63,
+    "meanScore": 64,
+    "popularity": 7055,
+    "trending": 0,
+    "favourites": 23,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2002-03-02",
+    "endDate": "2006-07-01",
+    "mal_url": "https://myanimelist.net/anime/1072",
+    "anilist_url": "https://anilist.co/anime/1072",
+    "trailer": {
+      "id": "BGxLqrx1wl8",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=BGxLqrx1wl8"
+    }
+  },
+  {
+    "animeId": 1163,
+    "anilistId": 1163,
+    "title": "Neo Ranga",
+    "titleRomaji": "Neo Ranga",
+    "titleEnglish": "Neo Ranga",
+    "titleNative": "南海奇皇",
+    "synonyms": [
+      "Nankai Kio Neoranga",
+      "Strange World of the South Seas - Neoranga"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1163-PshZGMZytTxI.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx1163-PshZGMZytTxI.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx1163-PshZGMZytTxI.jpg",
+    "coverImageColor": "#ae4328",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1163-kMOMVvvVBMfg.jpg",
+    "synopsis": "An ancient God called Ranga awakens on an isolated island in the South Pacific where it has been slumbering forgotten by mankind. Three sisters living in Tokyo&mdash;Minami, Ushio, and Yuuhi Shimabara&mdash;discover they have inherited this Island Kingdom, along with the huge God. When Ranga shows up in Tokyo, it soon becomes a source of wonder and conflict for the three sisters that control Ranga, the people who want to destroy it, and ones who want to use it. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 1998,
+    "seasonInt": 982,
+    "episodes": 48,
+    "duration": 15,
+    "genres": [
+      "Adventure",
+      "Horror",
+      "Mecha"
+    ],
+    "tags": [
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 87,
+        "name": "Family Life",
+        "description": "Centers around the activities of a family unit.",
+        "category": "Theme-Slice of Life",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 174,
+        "name": "Tanks",
+        "description": "Prominently features the use of tanks or other armoured vehicles.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 335,
+        "name": "Tanned Skin",
+        "description": "Prominently features characters with tanned skin.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 1,
+        "name": "Studio Pierrot",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/1"
+      }
+    ],
+    "studiosNames": [
+      "Studio Pierrot"
+    ],
+    "rating": 6.4,
+    "averageScore": 64,
+    "meanScore": 66,
+    "popularity": 7012,
+    "trending": 0,
+    "favourites": 81,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1998-04-06",
+    "endDate": "1999-09-28",
+    "mal_url": "https://myanimelist.net/anime/1163",
+    "anilist_url": "https://anilist.co/anime/1163",
+    "trailer": null
+  },
+  {
+    "animeId": 1793,
+    "anilistId": 1793,
+    "title": "A Wind Named Amnesia",
+    "titleRomaji": "Kaze no Na wa Amnesia",
+    "titleEnglish": "A Wind Named Amnesia",
+    "titleNative": "風の名はアムネジア",
+    "synonyms": [
+      "Kaze no Namae wa Amunejia",
+      "Il vento dell'Amnesia",
+      "El viento de amnesia",
+      "The Wind of Amnesia: Wind des Vergessens",
+      "El vent d'Amnèsia",
+      "The Wind of Amnesia"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1793.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1793.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/1793.jpg",
+    "coverImageColor": "#5da1e4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1793-aD9cfQhORr2L.jpg",
+    "synopsis": "It happened quite suddenly, with no warning - all the memories of all the people on Earth, swept away as if by a sudden wind. In a post-catastrophic Earth populated mostly by savages without memories of their past civilisation, one man travels on a journey of enlightenment and hope, across a devastated America. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 1990,
+    "seasonInt": 904,
+    "episodes": 1,
+    "duration": 80,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Mecha",
+      "Mystery",
+      "Psychological",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 28,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 11,
+        "name": "MADHOUSE",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/11"
+      }
+    ],
+    "studiosNames": [
+      "MADHOUSE"
+    ],
+    "rating": 5.8,
+    "averageScore": 58,
+    "meanScore": 59,
+    "popularity": 6823,
+    "trending": 0,
+    "favourites": 52,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1990-12-22",
+    "endDate": "1990-12-22",
+    "mal_url": "https://myanimelist.net/anime/1793",
+    "anilist_url": "https://anilist.co/anime/1793",
+    "trailer": null
+  },
+  {
+    "animeId": 929,
+    "anilistId": 929,
+    "title": "Aura Battler Dunbine",
+    "titleRomaji": "Seisenshi Dunbine",
+    "titleEnglish": "Aura Battler Dunbine",
+    "titleNative": "聖戦士ダンバイン",
+    "synonyms": [
+      "Holy Warrior Dunbine",
+      "Dunbine"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx929-JfJS6SsLNF4B.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx929-JfJS6SsLNF4B.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx929-JfJS6SsLNF4B.jpg",
+    "coverImageColor": "#e4ae43",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/929-taFPFB4F2Ab8.jpg",
+    "synopsis": "Pulled into the mystical word of Byston Well from Japan after an accident, Show Zama is recruited with others by Lord Drake Luft to pilot his newest weapons. These Aura Battlers are a combination of Byston Well magic and Earthien technology. Marvel approaches Show during battle and convinces him of Luft’s sinister intentions. (Source: Sentai Filmworks)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 1983,
+    "seasonInt": 831,
+    "episodes": 49,
+    "duration": 24,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 93,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 305,
+        "name": "Ships",
+        "description": "Prominently features the use of sea-based transportation vessels.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1752,
+        "name": "Medieval",
+        "description": "Partially or completely set in the Middle Ages or a Middle Ages-inspired setting. Commonly features elements such as European castles and knights.",
+        "category": "Setting-Time",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 14,
+        "name": "Sunrise",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/14"
+      }
+    ],
+    "studiosNames": [
+      "Sunrise"
+    ],
+    "rating": 6.9,
+    "averageScore": 69,
+    "meanScore": 70,
+    "popularity": 6812,
+    "trending": 0,
+    "favourites": 93,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1983-02-05",
+    "endDate": "1984-01-21",
+    "mal_url": "https://myanimelist.net/anime/929",
+    "anilist_url": "https://anilist.co/anime/929",
+    "trailer": {
+      "id": "Km1kVJ-zf3k",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=Km1kVJ-zf3k"
+    }
+  },
+  {
+    "animeId": 49073,
+    "anilistId": 134761,
+    "title": "Mobile Suit Gundam SEED FREEDOM",
+    "titleRomaji": "Kidou Senshi Gundam SEED FREEDOM",
+    "titleEnglish": "Mobile Suit Gundam SEED FREEDOM",
+    "titleNative": "機動戦士ガンダムSEED FREEDOM",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx134761-UCVG3V6t6gJq.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx134761-UCVG3V6t6gJq.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx134761-UCVG3V6t6gJq.jpg",
+    "coverImageColor": "#e45d78",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/134761-rkxgE6nDeSqj.jpg",
+    "synopsis": "A new Gundam SEED Movie announced as part of the project \"Mobile Suit Gundam SEED PROJECT Ignited\" in celebration of Gundam SEED's upcoming 20th anniversary in 2022. It is now Cosmic Era (C.E.) 75, two years after the dismantlement of the Destiny Plan, but warfare still continues to rage on between Naturals and Coordinators. Independence movements are now sprouting up across Earth, and invasions by Blue Cosmos grow exponentially stronger... To deal with these predicaments, a World Peace Supervision Organization known as COMPASS has been established, with PLANT Chairwoman Lacus Clyne as the founding leader. Kira Yamato and the others, as its new members, intervene into various battles for the sake of this peace. However, as these battles take place, an emergent nation known as 'FOUNDATION' appears, and they propose a joint operation to attack the Blue Cosmos Headquarters. Will Destiny run its course, or will Kira still have the Freedom to resist against impossible odds?",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2024,
+    "seasonInt": 241,
+    "episodes": 1,
+    "duration": 135,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 94,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1403,
+        "name": "Class Struggle",
+        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
+        "category": "Theme-Drama",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1342,
+        "name": "Clone",
+        "description": "Prominently features a character who is an artificial exact copy of another organism.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 488,
+        "name": "Age Regression",
+        "description": "Prominently features a character who was returned to a younger state.",
+        "category": "Cast-Traits",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 14,
+        "name": "Sunrise",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/14"
+      }
+    ],
+    "studiosNames": [
+      "Sunrise"
+    ],
+    "rating": 7.3,
+    "averageScore": 73,
+    "meanScore": 73,
+    "popularity": 6795,
+    "trending": 1,
+    "favourites": 228,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#SEEDFREEDOM #ガンダムSEED #g_seed",
+    "startDate": "2024-01-26",
+    "endDate": "2024-01-26",
+    "mal_url": "https://myanimelist.net/anime/49073",
+    "anilist_url": "https://anilist.co/anime/134761",
+    "trailer": {
+      "id": "Gsj6ToFTGgc",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=Gsj6ToFTGgc"
+    }
+  },
+  {
+    "animeId": 1980,
+    "anilistId": 1980,
+    "title": "TRAVA: FIST PLANET",
+    "titleRomaji": "TRAVA: FIST PLANET",
+    "titleEnglish": "",
+    "titleNative": "TRAVA FIST PLANET",
+    "synonyms": [
+      "Trava",
+      "Trava Fist Planet episode 1"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1980-ehsctCAVsUU7.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1980-ehsctCAVsUU7.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b1980-ehsctCAVsUU7.jpg",
+    "coverImageColor": "#d66b1a",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1980-NpaSkwsS2Hoy.jpg",
+    "synopsis": "Ace pilot Trava and his personal mechanic buddy Shinkai, on their way to mark an out-of-the-way planet, pick up Mikuru, a girl with no memory. The three are about to discover that the planet is more than it seems. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2002,
+    "seasonInt": 22,
+    "episodes": 4,
+    "duration": 13,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 83,
+        "name": "Slapstick",
+        "description": "Prominently features comedy based on deliberately clumsy actions or embarrassing events.",
+        "category": "Theme-Comedy",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 11,
+        "name": "MADHOUSE",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/11"
+      }
+    ],
+    "studiosNames": [
+      "MADHOUSE"
+    ],
+    "rating": 6.1,
+    "averageScore": 61,
+    "meanScore": 61,
+    "popularity": 6690,
+    "trending": 0,
+    "favourites": 59,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2002-03-02",
+    "endDate": "2002-07-03",
+    "mal_url": "https://myanimelist.net/anime/1980",
+    "anilist_url": "https://anilist.co/anime/1980",
+    "trailer": null
+  },
+  {
+    "animeId": 38716,
+    "anilistId": 113971,
+    "title": "MOBILE SUIT GUNDAM HATHAWAY The Sorcery of Nymph Circe",
+    "titleRomaji": "Kidou Senshi Gundam: Senkou no Hathaway - Circe no Majo",
+    "titleEnglish": "MOBILE SUIT GUNDAM HATHAWAY The Sorcery of Nymph Circe",
+    "titleNative": "機動戦士ガンダム 閃光のハサウェイ キルケーの魔女",
+    "synonyms": [
+      "Mobile Suit Gundam Hathaway's Flash 2",
+      "機動戦士ガンダム 閃光のハサウェイ2",
+      "Kidou Senshi Gundam: Senkou no Hathaway 2"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113971-y2wxyDYUqiHz.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113971-y2wxyDYUqiHz.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113971-y2wxyDYUqiHz.png",
+    "coverImageColor": "#35a1ae",
+    "bannerImage": "",
+    "synopsis": "Second movie in the Hathaway trilogy celebrating the Gundam franchise's 40th anniversary, and the second project in the \"UC NexT 0100 Project\" that will tackle the future of the UC timeline. Haunted by past trauma, Hathaway is drawn to the mysterious girl Gigi Andalucia, whose strange powers stir memories within him. While swayed by her cryptic words, he continues preparing for Mafty’s mission — the attack on the Adelaide Conference. Meanwhile, Kenneth Sleg of the Federation Forces prepares a defense operation for the Adelaide Conference and a plan to eliminate Mafty, when he is approached by Handley Yoxon of the Criminal Police Organization with a secret proposal. As Hathaway and Kenneth pursue their respective goals, Gigi also sets off for Hong Kong to fulfill her own role. (Source: GundamInfo)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2026,
+    "seasonInt": 261,
+    "episodes": 1,
+    "duration": 108,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 14,
+        "name": "Sunrise",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/14"
+      }
+    ],
+    "studiosNames": [
+      "Sunrise"
+    ],
+    "rating": 6.9,
+    "averageScore": 69,
+    "meanScore": 80,
+    "popularity": 6615,
+    "trending": 0,
+    "favourites": 75,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#閃光のハサウェイ #キルケーの魔女 #ガンダム映画",
+    "startDate": "2026-01-30",
+    "endDate": "2026-01-30",
+    "mal_url": "https://myanimelist.net/anime/38716",
+    "anilist_url": "https://anilist.co/anime/113971",
+    "trailer": {
+      "id": "_mZod4M6nDQ",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=_mZod4M6nDQ"
+    }
+  },
+  {
+    "animeId": 2042,
+    "anilistId": 2042,
+    "title": "Five Star Stories",
+    "titleRomaji": "Five Star Stories",
+    "titleEnglish": "",
+    "titleNative": "ファイブスター物語",
+    "synonyms": [
+      "Five Star Monogatari",
+      "The Five Star Stories Movie"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2042-Y1AjGO4uCdCS.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx2042-Y1AjGO4uCdCS.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx2042-Y1AjGO4uCdCS.jpg",
+    "coverImageColor": "#f1e450",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2042-Tov90m6kP4ah.jpg",
+    "synopsis": "Amaterasu is the god of light, the future emperor of the Joker Star System. Under the guise of young mecha conceptor Ladios Sopp, he is compelled by an old friend, Dr Ballanche, to save his two latest Fatimas Lachesis and Clotho. And so began the stories of the Joker System, as well as Amaterasu's love for Lachesis. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 1989,
+    "seasonInt": 892,
+    "episodes": 1,
+    "duration": 66,
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1453,
+        "name": "Desert",
+        "description": "Prominently features a desert environment.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 33,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 33,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
+        "rank": 25,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1327,
+        "name": "Royal Affairs",
+        "description": "Features nobility, alliances, arranged marriage, succession disputes, religious orders and other elements of royal politics.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 14,
+        "name": "Sunrise",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/14"
+      }
+    ],
+    "studiosNames": [
+      "Sunrise"
+    ],
+    "rating": 6.4,
+    "averageScore": 64,
+    "meanScore": 65,
+    "popularity": 6579,
+    "trending": 0,
+    "favourites": 76,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1989-03-11",
+    "endDate": "1989-03-11",
+    "mal_url": "https://myanimelist.net/anime/2042",
+    "anilist_url": "https://anilist.co/anime/2042",
+    "trailer": null
+  },
+  {
+    "animeId": 1694,
+    "anilistId": 1694,
+    "title": "IDOLM@STER: XENOGLOSSIA",
+    "titleRomaji": "Idolm@ster Xenoglossia",
+    "titleEnglish": "IDOLM@STER: XENOGLOSSIA",
+    "titleNative": "アイドルマスター ゼノグラシア",
+    "synonyms": [
+      "Idol Master Xenoglossia",
+      "Idolmaster Xenoglossia"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1694-0fQrbEdvEBYW.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1694-0fQrbEdvEBYW.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1694-0fQrbEdvEBYW.png",
+    "coverImageColor": "#50bbe4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1694-VsGYnIykMeJw.jpg",
+    "synopsis": "107 years ago, the Moon was destroyed in a massive cataclysm that shattered Earth's former satellite into 81 quintillion tons of orbital debris. However, thanks to super-science, the Earth itself was saved and today no one really thinks much about that century-past disaster. Which is why when teenage Haruka Amami auditions for something called the Idolmaster Project, she THINKS she's trying out to be a singing idol. Instead, Haruka finds herself at a secret school run by the Mondenkind Agency, living with a group of other girls who have also been selected as candidates to pilot an iDOL - an advanced robot specifically designed to intercept falling chunks of moon rock. Except, the people who run the Mondenkind Agency aren't exactly knights in shining armor. And then there's the question of whether the iDOLs are really JUST robots. Because from almost the first moment, Haruka starts to feel emotions resonating from within the iDOL called Imber. (Source: Sentai Filmworks)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2007,
+    "seasonInt": 72,
+    "episodes": 26,
+    "duration": 23,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Mecha",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 92,
+        "name": "Cute Girls Doing Cute Things",
+        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
+        "category": "Theme-Slice of Life",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 115,
+        "name": "Idol",
+        "description": "Centers around the life and activities of an idol.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 5.9,
+    "averageScore": 59,
+    "meanScore": 59,
+    "popularity": 6509,
+    "trending": 1,
+    "favourites": 45,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2007-04-03",
+    "endDate": "2007-09-26",
+    "mal_url": "https://myanimelist.net/anime/1694",
+    "anilist_url": "https://anilist.co/anime/1694",
+    "trailer": null
+  },
+  {
+    "animeId": 3135,
+    "anilistId": 3135,
+    "title": "Dragon's Heaven",
+    "titleRomaji": "Dragon's Heaven",
+    "titleEnglish": "Dragon's Heaven",
+    "titleNative": "ドラゴンズヘブン",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/3135.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/3135.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/3135.jpg",
+    "coverImageColor": "#e4c943",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/3135-qqANvyGFQ70B.jpg",
+    "synopsis": "In the year 3195, there was a war between an army of robots and the humans. When Shaian, a sentient combat armor, lost his companion in battle, he shut down until his internal systems spotted a new human. It's now almost a 1000 years later, and Shaian's greatest enemy is still alive and doing battle in Brazil. With a new friend`s help, Shaian may be able to stop this evil force before another war rages over the continent. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 1988,
+    "seasonInt": 881,
+    "episodes": 1,
+    "duration": 43,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 111,
+        "name": "War",
+        "description": "Partly or completely set during wartime.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 162,
+        "name": "Space Opera",
+        "description": "Centers around space warfare, advanced technology, chivalric romance and adventure.",
+        "category": "Theme-Sci-Fi",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 323,
+        "name": "Stop Motion",
+        "description": "Animation style characterized by physical objects being moved incrementally between frames to create the illusion of movement.",
+        "category": "Technical",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 513,
+        "name": "Tokusatsu",
+        "description": "Prominently features elements that resemble special effects in Japanese live-action shows",
+        "category": "Theme-Sci-Fi",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1742,
+        "name": "Mixed Media",
+        "description": "Features a combination of different media and animation techniques. Often seen with puppetry, textiles, live action footage, stop motion, and more. This does not include works with normal usage of CGI in their production.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 159,
+        "name": "Super Robot",
+        "description": "Prominently features large robots often piloted by hot-blooded protagonists.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 48,
+        "name": "AIC",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/48"
+      },
+      {
+        "id": 72,
+        "name": "Artmic",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/72"
+      }
+    ],
+    "studiosNames": [
+      "AIC",
+      "Artmic"
+    ],
+    "rating": 6,
+    "averageScore": 60,
+    "meanScore": 61,
+    "popularity": 6462,
+    "trending": 0,
+    "favourites": 67,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1988-02-25",
+    "endDate": "1988-02-25",
+    "mal_url": "https://myanimelist.net/anime/3135",
+    "anilist_url": "https://anilist.co/anime/3135",
+    "trailer": null
+  },
+  {
+    "animeId": 1346,
+    "anilistId": 1346,
+    "title": "A.D. Police Files",
+    "titleRomaji": "AD Police",
+    "titleEnglish": "A.D. Police Files",
+    "titleNative": "ADポリス",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1346-SkXLEWaU1GeI.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1346-SkXLEWaU1GeI.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1346-SkXLEWaU1GeI.jpg",
+    "coverImageColor": "#e4a135",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n1346-3bUAj2aa630X.jpg",
+    "synopsis": "The year is 2027 in MegaTokyo, six years before the Knight Sabers will make their debut. Boomers (artificial humans) are still a relatively new advancement, and the implementation and integration of boomers into society is still a bit buggy -- sometimes fatally so. Whenever a boomer incident occurs, though, there is the Advanced Police, a special force trained to deal with boomer crimes. Leon McNichol is a rookie in the AD Police, and is just starting to become exposed to the horrors and tragedies one finds every day in MegaTokyo. He and his veteran partner, Gina Marceau, slowly learn about the ever-fading line that separates man from machine.",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 1990,
+    "seasonInt": 902,
+    "episodes": 3,
+    "duration": 27,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror",
+      "Mecha",
+      "Mystery",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 108,
+        "name": "Cyberpunk",
+        "description": "Set in a future of advanced technological and scientific achievements that have resulted in social disorder.",
+        "category": "Theme-Sci-Fi",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 801,
+        "name": "Cyborg",
+        "description": "Prominently features a human character whose physiological functions are aided or enhanced by artificial means.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 57,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 335,
+        "name": "Tanned Skin",
+        "description": "Prominently features characters with tanned skin.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 48,
+        "name": "AIC",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/48"
+      },
+      {
+        "id": 72,
+        "name": "Artmic",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/72"
+      }
+    ],
+    "studiosNames": [
+      "AIC",
+      "Artmic"
+    ],
+    "rating": 5.8,
+    "averageScore": 58,
+    "meanScore": 59,
+    "popularity": 6414,
+    "trending": 0,
+    "favourites": 54,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1990-05-25",
+    "endDate": "1990-11-22",
+    "mal_url": "https://myanimelist.net/anime/1346",
+    "anilist_url": "https://anilist.co/anime/1346",
+    "trailer": null
+  },
+  {
+    "animeId": 5307,
+    "anilistId": 5307,
+    "title": "The Girl Who Leapt Through Space",
+    "titleRomaji": "Sora wo Kakeru Shoujo",
+    "titleEnglish": "The Girl Who Leapt Through Space",
+    "titleNative": "宇宙をかける少女",
+    "synonyms": [
+      "Sora o Kakeru Shoujo",
+      "Sora Kake Girl"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5307-4SpesUsU7y7m.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5307-4SpesUsU7y7m.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5307-4SpesUsU7y7m.jpg",
+    "coverImageColor": "#e45d78",
+    "bannerImage": "",
+    "synopsis": "The story is set in the year 311 of the Orbital Calendar, when humanity has migrated to countless colony clusters in space. A space colony girl named Akiha Shishidou encounters a malevolent artificial intelligence named Leopard that has been installed on a colony. Akiha is joined by an Inter-Colony Police officer named Itsuki Kannagi, a taciturn young girl named Honoka Kawai, and a robot named Imoko \"Imo-chan\" Shishidou. (Source: AniDB)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2009,
+    "seasonInt": 91,
+    "episodes": 26,
+    "duration": 24,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 92,
+        "name": "Cute Girls Doing Cute Things",
+        "description": "Centers around female characters doing cute activities, usually with little to no emphasis on drama and conflict.\n",
+        "category": "Theme-Slice of Life",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 14,
+        "name": "Sunrise",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/14"
+      }
+    ],
+    "studiosNames": [
+      "Sunrise"
+    ],
+    "rating": 6.6,
+    "averageScore": 66,
+    "meanScore": 67,
+    "popularity": 6413,
+    "trending": 0,
+    "favourites": 35,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2009-01-06",
+    "endDate": "2009-06-30",
+    "mal_url": "https://myanimelist.net/anime/5307",
+    "anilist_url": "https://anilist.co/anime/5307",
+    "trailer": null
+  }
+]

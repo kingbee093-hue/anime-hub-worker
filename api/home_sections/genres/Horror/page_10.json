@@ -1,0 +1,3858 @@
+[
+  {
+    "animeId": 49163,
+    "anilistId": 135660,
+    "title": "exception",
+    "titleRomaji": "exception",
+    "titleEnglish": "exception",
+    "titleNative": "exception",
+    "synonyms": [
+      "エクセプション",
+      "الاستثناء",
+      "Excepción",
+      "Wyjątek"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135660-tpZ1LUb1dIe9.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx135660-tpZ1LUb1dIe9.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135660-tpZ1LUb1dIe9.png",
+    "coverImageColor": "#e40d0d",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/135660-zl7QDlvagiJh.jpg",
+    "synopsis": "In the distant future, human beings have been forced to leave earth and migrate to another galaxy. An advanced team of spacecraft arrives at a planet that is to be terraformed. Each member of the team is output by a biological 3D printer. (Source: Netflix)",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2022,
+    "seasonInt": 224,
+    "episodes": 8,
+    "duration": 29,
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 95,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1310,
+        "name": "Travel",
+        "description": "Centers around character(s) moving between places a significant distance apart.",
+        "category": "Theme-Other",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1342,
+        "name": "Clone",
+        "description": "Prominently features a character who is an artificial exact copy of another organism.",
+        "category": "Cast-Traits",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 342,
+        "name": "Environmental",
+        "description": "Concern with the state of the natural world and how humans interact with it.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1090,
+        "name": "Monster Boy",
+        "description": "Prominently features a male character who is a part-monster.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 64,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 103,
+        "name": "Tatsunoko Production",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/103"
+      },
+      {
+        "id": 6847,
+        "name": "5 Inc.",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6847"
+      },
+      {
+        "id": 6728,
+        "name": "BAKKEN RECORD",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6728"
+      }
+    ],
+    "studiosNames": [
+      "Tatsunoko Production",
+      "5 Inc.",
+      "BAKKEN RECORD"
+    ],
+    "rating": 5.7,
+    "averageScore": 57,
+    "meanScore": 58,
+    "popularity": 3906,
+    "trending": 0,
+    "favourites": 30,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2022-10-13",
+    "endDate": "2022-10-13",
+    "mal_url": "https://myanimelist.net/anime/49163",
+    "anilist_url": "https://anilist.co/anime/135660",
+    "trailer": {
+      "id": "ctUiQSAYOTo",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=ctUiQSAYOTo"
+    }
+  },
+  {
+    "animeId": 1245,
+    "anilistId": 1245,
+    "title": "Twilight of the Dark Master",
+    "titleRomaji": "Shihaisha no Tasogare: TWILIGHT OF THE DARK MASTER",
+    "titleEnglish": "Twilight of the Dark Master",
+    "titleNative": "支配者の黄昏 TWILIGHT OF THE DARK MASTER",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1245-xwxmrKTBImEc.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1245-xwxmrKTBImEc.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1245-xwxmrKTBImEc.png",
+    "coverImageColor": "#e4351a",
+    "bannerImage": "",
+    "synopsis": "From the beginning of time, Earth has been enslaved by the powerful and grotesque Ogres. The dominance these arrogant immortals hold over the helpless victims is challenged only by the noble Guardians. Eons later, in the year 2089, few Ogres of Guardians remain in Neo-Shinjuku. Humans rule the Earth; yet, deep within the dark underworld of the city, the supreme Ogre is still alive and is preparing, once again, to enslave the Human race. (Source: Urban Vision)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 1998,
+    "seasonInt": 981,
+    "episodes": 1,
+    "duration": 50,
+    "genres": [
+      "Horror"
+    ],
+    "tags": [
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 694,
+        "name": "Detective",
+        "description": "Features a character who investigates and solves crimes.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 327,
+        "name": "Noir",
+        "description": "Stylized as a cynical crime drama with low-key visuals.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 494,
+        "name": "Twins",
+        "description": "Prominently features two or more siblings that were born at one birth.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 11,
+        "name": "MADHOUSE",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/11"
+      }
+    ],
+    "studiosNames": [
+      "MADHOUSE"
+    ],
+    "rating": 5.5,
+    "averageScore": 55,
+    "meanScore": 55,
+    "popularity": 3808,
+    "trending": 0,
+    "favourites": 28,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1998-01-21",
+    "endDate": "1998-01-21",
+    "mal_url": "https://myanimelist.net/anime/1245",
+    "anilist_url": "https://anilist.co/anime/1245",
+    "trailer": null
+  },
+  {
+    "animeId": 6980,
+    "anilistId": 6980,
+    "title": "Kaidan Restaurant",
+    "titleRomaji": "Kaidan Restaurant",
+    "titleEnglish": "",
+    "titleNative": "怪談レストラン",
+    "synonyms": [
+      "Thriller Restaurant"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/6980.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/6980.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/6980.jpg",
+    "coverImageColor": "#e4c950",
+    "bannerImage": "",
+    "synopsis": "TV Asahi announced a new kids anime \"Kaidan Restaurant (Thriller Restaurant)\" based on a picture book. Each episode will consist of three stories or ''dishes'': the appetizer, the main dish, and dessert. The first two ''dishes'' will deal with an ordinary sixth-grade schoolgirl named Ako Ozara and the bizarre occurrences that befall her classmates. The third ''dish'' will be a standalone short ghost story told by Ako and her friends.",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2009,
+    "seasonInt": 94,
+    "episodes": 23,
+    "duration": 19,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 28,
+        "name": "Kids",
+        "description": "Target demographic is young children.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 446,
+        "name": "Primarily Child Cast",
+        "description": "Main cast is mostly composed of characters below a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 156,
+        "name": "Achronological Order",
+        "description": "Chapters or episodes do not occur in chronological order.",
+        "category": "Setting-Time",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1689,
+        "name": "Curses",
+        "description": "Features a character, object or area that has been cursed, usually by a malevolent supernatural force.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 18,
+        "name": "Toei Animation",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/18"
+      }
+    ],
+    "studiosNames": [
+      "Toei Animation"
+    ],
+    "rating": 6.8,
+    "averageScore": 68,
+    "meanScore": 69,
+    "popularity": 3770,
+    "trending": 0,
+    "favourites": 40,
+    "source": "OTHER",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2009-10-13",
+    "endDate": "2010-06-08",
+    "mal_url": "https://myanimelist.net/anime/6980",
+    "anilist_url": "https://anilist.co/anime/6980",
+    "trailer": null
+  },
+  {
+    "animeId": 15045,
+    "anilistId": 15045,
+    "title": "Lychee Light Club",
+    "titleRomaji": "Lychee DE Hikari Club",
+    "titleEnglish": "Lychee Light Club",
+    "titleNative": "ライチ DE 光クラブ",
+    "synonyms": [
+      "Litchi☆Hikari Club"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15045-3urZciUhS281.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15045-3urZciUhS281.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx15045-3urZciUhS281.jpg",
+    "coverImageColor": "#0dc9e4",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/15045-h4xx1lmfgi5R.jpg",
+    "synopsis": "A short, comical anime adaptation of the psychological-horror manga, Litchi☆Hikari Club. The story is about nine boys who are members of the Hikari Club and their self-made AI robot, Litchi. They are led by their leader Zera and keep a kidnapped girl named Kanon.",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2012,
+    "seasonInt": 124,
+    "episodes": 8,
+    "duration": 3,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Horror",
+      "Psychological",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 88,
+        "name": "Primarily Male Cast",
+        "description": "Main cast is mostly composed of male characters.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 432,
+        "name": "Kachidoki Studio",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/432"
+      }
+    ],
+    "studiosNames": [
+      "Kachidoki Studio"
+    ],
+    "rating": 4.7,
+    "averageScore": 47,
+    "meanScore": 47,
+    "popularity": 3729,
+    "trending": 0,
+    "favourites": 27,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2012-10-02",
+    "endDate": "2012-11-20",
+    "mal_url": "https://myanimelist.net/anime/15045",
+    "anilist_url": "https://anilist.co/anime/15045",
+    "trailer": null
+  },
+  {
+    "animeId": 294,
+    "anilistId": 294,
+    "title": "Divergence Eve",
+    "titleRomaji": "Divergence Eve",
+    "titleEnglish": "",
+    "titleNative": "ダイバージェンス・イヴ",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx294-aXIWReB1FL5M.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx294-aXIWReB1FL5M.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx294-aXIWReB1FL5M.jpg",
+    "coverImageColor": "#f16b1a",
+    "bannerImage": "",
+    "synopsis": "In the 24th Century, Intergalactic Space Travel has become a reality. One of the first outposts in the far reaches of space is WATCHER'S NEST - an inflation hole drive portal - which has recently come under attack by a mysterious force known simply as GHOUL... A group of young female cadets assigned to the portal are unexpectedly thrown into a hornet's nest of trouble as they finalize their training to become an elite pilot in the Seraphim Squadron. (Source: DVD Collection Back Cover)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 2003,
+    "seasonInt": 33,
+    "episodes": 13,
+    "duration": 24,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Horror",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 25,
+        "name": "Historical",
+        "description": "Partly or completely set during a real period of world history.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 81,
+        "name": "Radix",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/81"
+      }
+    ],
+    "studiosNames": [
+      "Radix"
+    ],
+    "rating": 5.6,
+    "averageScore": 56,
+    "meanScore": 57,
+    "popularity": 3699,
+    "trending": 0,
+    "favourites": 34,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2003-07-02",
+    "endDate": "2003-09-24",
+    "mal_url": "https://myanimelist.net/anime/294",
+    "anilist_url": "https://anilist.co/anime/294",
+    "trailer": null
+  },
+  {
+    "animeId": 2983,
+    "anilistId": 2983,
+    "title": "Digital Devil",
+    "titleRomaji": "Digital Devil Story: Megami Tensei",
+    "titleEnglish": "Digital Devil",
+    "titleNative": "デジタル・デビル物語 女神転生",
+    "synonyms": [
+      "デジタル・デビル・ストーリー",
+      "Digital Devil Monogatari",
+      "Digital Devil: Incarnazione infernale",
+      "L'histoire du démon numérique"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/2983.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/2983.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/2983.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "The story revolves around two high school students Akemi and Yumiko, who share a mysterious intertwining past lives. Akemi bullied at school but a genius has managed to create a demon summoning program to get revenge but chaos ensues. The OVA is based off the first of Aya Nishitani's Digital Devil Story: Megami Tensei novels.",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 1987,
+    "seasonInt": 872,
+    "episodes": 1,
+    "duration": 45,
+    "genres": [
+      "Adventure",
+      "Horror",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 253,
+        "name": "Gods",
+        "description": "Prominently features a character of divine or religious nature.",
+        "category": "Cast-Traits",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6896,
+        "name": "Animate Film",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6896"
+      }
+    ],
+    "studiosNames": [
+      "Animate Film"
+    ],
+    "rating": 4.9,
+    "averageScore": 49,
+    "meanScore": 49,
+    "popularity": 3689,
+    "trending": 0,
+    "favourites": 31,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1987-03-25",
+    "endDate": "1987-03-25",
+    "mal_url": "https://myanimelist.net/anime/2983",
+    "anilist_url": "https://anilist.co/anime/2983",
+    "trailer": null
+  },
+  {
+    "animeId": 49110,
+    "anilistId": 135108,
+    "title": "Theatre of Darkness: Yamishibai 9",
+    "titleRomaji": "Yami Shibai 9",
+    "titleEnglish": "Theatre of Darkness: Yamishibai 9",
+    "titleNative": "闇芝居 9",
+    "synonyms": [
+      "Yamishibai: Japanese Ghost Stories 9",
+      "เรื่องเล่าผีญี่ปุ่น ภาค 9"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135108-K5eosBMnj97L.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx135108-K5eosBMnj97L.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135108-K5eosBMnj97L.jpg",
+    "coverImageColor": "#1a286b",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/135108-MWEMjBH5QGE6.jpg",
+    "synopsis": "The ninth season of Yami Shibai .",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 2021,
+    "seasonInt": 213,
+    "episodes": 13,
+    "duration": 5,
+    "genres": [
+      "Horror",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 471,
+        "name": "Anthology",
+        "description": "A collection of separate works collated into a single release.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6078,
+        "name": "ILCA",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/6078"
+      }
+    ],
+    "studiosNames": [
+      "ILCA"
+    ],
+    "rating": 5.3,
+    "averageScore": 53,
+    "meanScore": 54,
+    "popularity": 3650,
+    "trending": 0,
+    "favourites": 16,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2021-07-12",
+    "endDate": "2021-10-04",
+    "mal_url": "https://myanimelist.net/anime/49110",
+    "anilist_url": "https://anilist.co/anime/135108",
+    "trailer": null
+  },
+  {
+    "animeId": 1494,
+    "anilistId": 1494,
+    "title": "Darkside Blues",
+    "titleRomaji": "Darkside Blues",
+    "titleEnglish": "",
+    "titleNative": "ダークサイド・ブルース",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/n1494-aIZQzlTQSkhN.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/n1494-aIZQzlTQSkhN.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/n1494-aIZQzlTQSkhN.png",
+    "coverImageColor": "#1a3578",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1494-1nyahCBKjQou.jpg",
+    "synopsis": "The Persona Century Corporation has purchased nearly every parcel of land on earth. Dissension is not tolerated within the corporation's borders and those who oppose Persona are dealt with swiftly. Of those few places not yet under Persona's control is the free town of Kabuki-cho, also known as \"The Dark Side of Tokyo\". Within the town, under the leadership of a woman named Mai, is a small resistance group called Messiah. Into this world steps a man who takes the sobriquet of Kabuki-cho: Darkside. Sealed up in another dimension eighteen years ago by Persona Century, Darkside now returns to aid Messiah using his unique mystic power of renewal. (Source: Anime News Network)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 1994,
+    "seasonInt": 944,
+    "episodes": 1,
+    "duration": 83,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Psychological",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 108,
+        "name": "Cyberpunk",
+        "description": "Set in a future of advanced technological and scientific achievements that have resulted in social disorder.",
+        "category": "Theme-Sci-Fi",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 285,
+        "name": "Terrorism",
+        "description": "Centers around the activities of a terrorist or terrorist organization.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1091,
+        "name": "Religion",
+        "description": "Centers on the belief that humanity is related to supernatural, transcendental, and spiritual elements.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 7,
+        "name": "J.C.STAFF",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/7"
+      }
+    ],
+    "studiosNames": [
+      "J.C.STAFF"
+    ],
+    "rating": 5.4,
+    "averageScore": 54,
+    "meanScore": 55,
+    "popularity": 3646,
+    "trending": 0,
+    "favourites": 41,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1994-10-08",
+    "endDate": "1994-10-08",
+    "mal_url": "https://myanimelist.net/anime/1494",
+    "anilist_url": "https://anilist.co/anime/1494",
+    "trailer": null
+  },
+  {
+    "animeId": 3710,
+    "anilistId": 3710,
+    "title": "Graveyard Kitaro",
+    "titleRomaji": "Hakaba Kitarou",
+    "titleEnglish": "Graveyard Kitaro",
+    "titleNative": "墓場鬼太郎",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3710-TGAjCIMRcQKT.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx3710-TGAjCIMRcQKT.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx3710-TGAjCIMRcQKT.jpg",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/3710-kK6Ue4uPTRKL.jpg",
+    "synopsis": "Kitarou is a youkai boy born in a cemetery, and aside from his mostly-decayed father, the last living member of the Ghost tribe. He is missing his left eye, but his hair usually covers the empty socket. He fights for peace between humans and youkai, which generally involves protecting the former from the wiles of the latter. This version of the Kitarou story is based on the original Hakaba Kitarou manga, the manga which inspired the popular Gegege no Kitarou series in the late 60's. (Source: Wikipedia)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2008,
+    "seasonInt": 81,
+    "episodes": 11,
+    "duration": 25,
+    "genres": [
+      "Horror",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1382,
+        "name": "Orphan",
+        "description": "Prominently features a character that is an orphan.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 74,
+        "name": "Vampire",
+        "description": "Prominently features a character who is a vampire.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 254,
+        "name": "Kemonomimi",
+        "description": "Prominently features humanoid characters with animal ears.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1379,
+        "name": "Homeless",
+        "description": "Prominently features a character that is homeless.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 6.6,
+    "averageScore": 66,
+    "meanScore": 68,
+    "popularity": 3570,
+    "trending": 0,
+    "favourites": 37,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2008-01-11",
+    "endDate": "2008-03-21",
+    "mal_url": "https://myanimelist.net/anime/3710",
+    "anilist_url": "https://anilist.co/anime/3710",
+    "trailer": null
+  },
+  {
+    "animeId": 11679,
+    "anilistId": 11679,
+    "title": "Chainsaw Maid",
+    "titleRomaji": "Chainsaw Maid",
+    "titleEnglish": "Chainsaw Maid",
+    "titleNative": "チェーンソー・メイド",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/11679.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/11679.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/11679.jpg",
+    "coverImageColor": "#d6d61a",
+    "bannerImage": "",
+    "synopsis": "A lady caked in blood bursts into the family's home and shouts, \"They're coming!\" Just what is coming? The family discovers that 'they' means zombies, much to their horror and displeasure. The master and the little girl have a difficult time processing this zombie invasion. However, they are very fortunate that they have a fully-prepared and fully-loaded maid that is quite capable.",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2007,
+    "seasonInt": 74,
+    "episodes": 1,
+    "duration": 6,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Supernatural",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 323,
+        "name": "Stop Motion",
+        "description": "Animation style characterized by physical objects being moved incrementally between frames to create the illusion of movement.",
+        "category": "Technical",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 152,
+        "name": "Zombie",
+        "description": "Prominently features reanimated corpses which often prey on live humans and turn them into zombies.",
+        "category": "Cast-Traits",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 4.8,
+    "averageScore": 48,
+    "meanScore": 48,
+    "popularity": 3569,
+    "trending": 0,
+    "favourites": 36,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2007-12-08",
+    "endDate": "2007-12-08",
+    "mal_url": "https://myanimelist.net/anime/11679",
+    "anilist_url": "https://anilist.co/anime/11679",
+    "trailer": {
+      "id": "6d-tNXxTRBA",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=6d-tNXxTRBA"
+    }
+  },
+  {
+    "animeId": 1085,
+    "anilistId": 1085,
+    "title": "INTERLUDE",
+    "titleRomaji": "INTERLUDE",
+    "titleEnglish": "INTERLUDE",
+    "titleNative": "インタールード",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1085-FuEraf1V2azp.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1085-FuEraf1V2azp.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b1085-FuEraf1V2azp.jpg",
+    "coverImageColor": "#352878",
+    "bannerImage": "",
+    "synopsis": "The unnamed main character has been having strange dreams, seeing strange things, and meeting strange people. He investigates these events and finds a strange girl named Aya. With her help, he discovers that his world may not in fact be real and many of the people he thinks he knows may not exist anymore. (Source: Funimation)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2004,
+    "seasonInt": 42,
+    "episodes": 3,
+    "duration": 40,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 146,
+        "name": "Alternate Universe",
+        "description": "Features multiple alternate universes in the same series.",
+        "category": "Setting-Universe",
+        "rank": 73,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 251,
+        "name": "Archery",
+        "description": "Centers around the sport of archery, or prominently features the use of archery in combat.",
+        "category": "Theme-Action",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 18,
+        "name": "Toei Animation",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/18"
+      },
+      {
+        "id": 787,
+        "name": "Happinet Pictures",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/787"
+      }
+    ],
+    "studiosNames": [
+      "Toei Animation",
+      "Happinet Pictures"
+    ],
+    "rating": 5.6,
+    "averageScore": 56,
+    "meanScore": 57,
+    "popularity": 3544,
+    "trending": 0,
+    "favourites": 24,
+    "source": "VISUAL_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2004-03-25",
+    "endDate": "2004-08-27",
+    "mal_url": "https://myanimelist.net/anime/1085",
+    "anilist_url": "https://anilist.co/anime/1085",
+    "trailer": null
+  },
+  {
+    "animeId": 1342,
+    "anilistId": 1342,
+    "title": "Violence Jack: Evil Town",
+    "titleRomaji": "Violence Jack: Jigokugai",
+    "titleEnglish": "Violence Jack: Evil Town",
+    "titleNative": "バイオレンスジャック 地獄街",
+    "synonyms": [
+      "Violence Jack Jigoku Gai"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1342.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1342.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/1342.jpg",
+    "coverImageColor": "#d65d1a",
+    "bannerImage": "",
+    "synopsis": "The World as we know it has been torn apart shattered by a series of natural disasters that have turned civilization into a brutish nightmare of survival and has left whole cities buried beneath the Earth. It's now a lethal and chaotic place, a place where only the strongest and most savage remain alive. The strongest of them all is a giant warrior known as Violence Jack&hellip; Violence Jack tries to avert a civil war brewing among the wretched inhabitants of a subterranean metropolis called Evil Town. Based on a character created by manga horror specialist, Go Nagai.",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 1988,
+    "seasonInt": 884,
+    "episodes": 1,
+    "duration": 59,
+    "genres": [
+      "Action",
+      "Drama",
+      "Horror"
+    ],
+    "tags": [
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 173,
+        "name": "Motorcycles",
+        "description": "Prominently features the use of motorcycles.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 870,
+        "name": "Cannibalism",
+        "description": "Prominently features the act of consuming another member of the same species as food.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1165,
+        "name": "Transgender",
+        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1501,
+        "name": "Natural Disaster",
+        "description": "It focuses on catastrophic events of natural origin, such as earthquakes, tsunamis,  volcanic eruptions, and severe storms. These works often present situations of extreme danger in which the characters struggle to survive and overcome the adversity.",
+        "category": "Setting-Scene",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6256,
+        "name": "Studio 88",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/6256"
+      }
+    ],
+    "studiosNames": [
+      "Studio 88"
+    ],
+    "rating": 5.2,
+    "averageScore": 52,
+    "meanScore": 53,
+    "popularity": 3459,
+    "trending": 0,
+    "favourites": 39,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1988-12-21",
+    "endDate": "1988-12-21",
+    "mal_url": "https://myanimelist.net/anime/1342",
+    "anilist_url": "https://anilist.co/anime/1342",
+    "trailer": null
+  },
+  {
+    "animeId": 45587,
+    "anilistId": 128369,
+    "title": "GLOOMY THE NAUGHTY GRIZZLY",
+    "titleRomaji": "Itazura Guma no Gloomy",
+    "titleEnglish": "GLOOMY THE NAUGHTY GRIZZLY",
+    "titleNative": "いたずらぐまのグル～ミ～",
+    "synonyms": [
+      "Gloomy Bear"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128369-a4OaoPGT8ZFP.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128369-a4OaoPGT8ZFP.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128369-a4OaoPGT8ZFP.jpg",
+    "coverImageColor": "#ff3593",
+    "bannerImage": "",
+    "synopsis": "GLOOMY is Pity’s pet bear. He’s a little over 6 feet and weighs as much as 2000 pomegranates. He’s well trained for the most part, but he can never remember that he’s not supposed to attack humans. Still, a pet owner must take ultimate responsibility for his pets. Recalling warm memories of GLOOMY as a cute bear cub, Pity tries to lead a life of peaceful co-existence with his pet bear. (Source: Crunchyroll)",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2021,
+    "seasonInt": 212,
+    "episodes": 12,
+    "duration": 1,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "id": 281,
+        "name": "Surreal Comedy",
+        "description": "Prominently features comedic moments that defy casual reasoning, resulting in illogical events.",
+        "category": "Theme-Comedy",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 4.8,
+    "averageScore": 48,
+    "meanScore": 48,
+    "popularity": 3413,
+    "trending": 0,
+    "favourites": 29,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#グルーミー #gloomybear",
+    "startDate": "2021-04-12",
+    "endDate": "2021-06-28",
+    "mal_url": "https://myanimelist.net/anime/45587",
+    "anilist_url": "https://anilist.co/anime/128369",
+    "trailer": {
+      "id": "5Yv8JL0hal8",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=5Yv8JL0hal8"
+    }
+  },
+  {
+    "animeId": 1225,
+    "anilistId": 1225,
+    "title": "3x3 Eyes: Legend of the Divine Demon",
+    "titleRomaji": "3x3 EYES Seima Densetsu",
+    "titleEnglish": "3x3 Eyes: Legend of the Divine Demon",
+    "titleNative": "3×3 EYES聖魔伝説",
+    "synonyms": [
+      "Shin 3x3 Eyes",
+      "Sazan Eyes: Seima Densetsu"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1225-FXHCKAknHdG7.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1225-FXHCKAknHdG7.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1225-FXHCKAknHdG7.png",
+    "coverImageColor": "#e4e45d",
+    "bannerImage": "",
+    "synopsis": "Yakumo has trained and searched for 4 years, following Pai's mysterious dissapearance. However, when he finally finds her, not all is well as her memory seems to be gone. They attempt to return her memory by going to the Holy Land, birthplace of the immortal race of Sanjiyans.",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 1995,
+    "seasonInt": 953,
+    "episodes": 3,
+    "duration": 45,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Horror",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 240,
+        "name": "Amnesia",
+        "description": "Prominently features a character(s) with memory loss.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 208,
+        "name": "Mythology",
+        "description": "Prominently features mythological elements, especially those from religious or cultural tradition.",
+        "category": "Theme-Fantasy",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 280,
+        "name": "Studio Junio",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/280"
+      }
+    ],
+    "studiosNames": [
+      "Studio Junio"
+    ],
+    "rating": 6.5,
+    "averageScore": 65,
+    "meanScore": 66,
+    "popularity": 3308,
+    "trending": 0,
+    "favourites": 30,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1995-07-25",
+    "endDate": "1996-06-25",
+    "mal_url": "https://myanimelist.net/anime/1225",
+    "anilist_url": "https://anilist.co/anime/1225",
+    "trailer": null
+  },
+  {
+    "animeId": 61608,
+    "anilistId": 191967,
+    "title": "Hell Teacher: Jigoku Sensei Nube (2025) Part 2",
+    "titleRomaji": "Jigoku Sensei Nube (2025) Part 2",
+    "titleEnglish": "Hell Teacher: Jigoku Sensei Nube (2025) Part 2",
+    "titleNative": "地獄先生ぬ～べ～ (2025) 第2クール",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191967-fLWqssc0gPI4.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191967-fLWqssc0gPI4.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191967-fLWqssc0gPI4.jpg",
+    "coverImageColor": "#e4ae43",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191967-4CuO4alxzNMR.jpg",
+    "synopsis": "The second cour of Jigoku Sensei Nube (2025) .",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2026,
+    "seasonInt": 261,
+    "episodes": 13,
+    "duration": 23,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Horror",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 165,
+        "name": "Teacher",
+        "description": "Protagonist is an educator, usually in a school setting.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1719,
+        "name": "Exorcism",
+        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 321,
+        "name": "Urban Fantasy",
+        "description": "Set in a world similar to the real world, but with the existence of magic or other supernatural elements.",
+        "category": "Setting-Universe",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 146,
+        "name": "Alternate Universe",
+        "description": "Features multiple alternate universes in the same series.",
+        "category": "Setting-Universe",
+        "rank": 20,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6312,
+        "name": "Studio KAI",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6312"
+      }
+    ],
+    "studiosNames": [
+      "Studio KAI"
+    ],
+    "rating": 6.8,
+    "averageScore": 68,
+    "meanScore": 70,
+    "popularity": 3255,
+    "trending": 0,
+    "favourites": 57,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#ぬーべーアニメ #HellTeacher",
+    "startDate": "2026-01-07",
+    "endDate": "2026-03-25",
+    "mal_url": "https://myanimelist.net/anime/61608",
+    "anilist_url": "https://anilist.co/anime/191967",
+    "trailer": {
+      "id": "qWHY5_G_BG0",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=qWHY5_G_BG0"
+    }
+  },
+  {
+    "animeId": 6276,
+    "anilistId": 6276,
+    "title": "The Curse of Kazuo Umezu",
+    "titleRomaji": "Umezu Kazuo no Noroi",
+    "titleEnglish": "The Curse of Kazuo Umezu",
+    "titleNative": "楳図かずおの呪い",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/6276.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/6276.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/6276.jpg",
+    "coverImageColor": "#f14378",
+    "bannerImage": "",
+    "synopsis": "\"Do not toy with the supernatural.\" Two stories of the consequences that descend upon humans who venture beyond the safe confines of their ordinary worlds. When a gorgeous girl named Rima transfers into Masami's class, she's not only jealous, but also deathly frightened of her. While the boys in class are tripping all over themselves to get to Rima, Masami's having nightmares of a ghastly visitor and finding scars on her body come morning. She asks a friend to help her get evidence to confirm her suspicions about the new girl. But if a picture is worth a thousand words, a video must be worth far more. The truth can set you free, but it can also be more terrifying than anything you can imagine. Shy Miko and her more outgoing friend Nanako are enjoying their summer vacation, trying to make the most of their youth. But when horror-movie marathons just aren't thrilling enough, Nanako sets her eyes on a new target: an abandoned mansion at the edge of town, said to be haunted. With two other",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 1990,
+    "seasonInt": 902,
+    "episodes": 1,
+    "duration": 43,
+    "genres": [
+      "Horror",
+      "Psychological",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 471,
+        "name": "Anthology",
+        "description": "A collection of separate works collated into a single release.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 917,
+        "name": "Takahashi Studio",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/917"
+      }
+    ],
+    "studiosNames": [
+      "Takahashi Studio"
+    ],
+    "rating": 5.8,
+    "averageScore": 58,
+    "meanScore": 58,
+    "popularity": 3232,
+    "trending": 0,
+    "favourites": 44,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1990-03-01",
+    "endDate": "1990-03-01",
+    "mal_url": "https://myanimelist.net/anime/6276",
+    "anilist_url": "https://anilist.co/anime/6276",
+    "trailer": null
+  },
+  {
+    "animeId": 1508,
+    "anilistId": 1508,
+    "title": "Sci-fi Harry",
+    "titleRomaji": "Sci-fi Harry",
+    "titleEnglish": "Sci-fi Harry",
+    "titleNative": "サイファイハリー",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1508-SDXzbWv7uORF.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1508-SDXzbWv7uORF.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1508-SDXzbWv7uORF.jpg",
+    "coverImageColor": "#5093e4",
+    "bannerImage": "",
+    "synopsis": "Harry is definitely not your average American teenager. Instead, he is the epitome of an \"alienated youth\" - friendless at school, extremely weird and nervous to the point of paranoia. But a chance occurrence causes Harry to start to demonstrate what appear to be psychic powers - yet he neither believes in them nor consciously controls them. But there are other ominous forces at work who do believe in Harry, and attempt to make use of him in ways that are threatening and frightful. (Source: AniDB)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 2000,
+    "seasonInt": 4,
+    "episodes": 20,
+    "duration": 25,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 198,
+        "name": "Foreign",
+        "description": "Partly or completely set in a country outside the country of origin.",
+        "category": "Setting-Scene",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 66,
+        "name": "Super Power",
+        "description": "Prominently features characters with special abilities that allow them to do what would normally be physically or logically impossible.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 72,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 46,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 192,
+        "name": "Basketball",
+        "description": "Centers around the sport of basketball.",
+        "category": "Theme-Game-Sport",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 77,
+        "name": "APPP",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/77"
+      }
+    ],
+    "studiosNames": [
+      "APPP"
+    ],
+    "rating": 5.6,
+    "averageScore": 56,
+    "meanScore": 58,
+    "popularity": 3196,
+    "trending": 0,
+    "favourites": 32,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2000-10-06",
+    "endDate": "2001-03-23",
+    "mal_url": "https://myanimelist.net/anime/1508",
+    "anilist_url": "https://anilist.co/anime/1508",
+    "trailer": null
+  },
+  {
+    "animeId": 34974,
+    "anilistId": 104330,
+    "title": "Aragne: Sign of Vermillion",
+    "titleRomaji": "Aragne no Mushikago",
+    "titleEnglish": "Aragne: Sign of Vermillion",
+    "titleNative": "アラーニェの虫籠",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104330-YaooadhGhhTr.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104330-YaooadhGhhTr.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104330-YaooadhGhhTr.jpg",
+    "coverImageColor": "#d6501a",
+    "bannerImage": "",
+    "synopsis": "There's something very wrong with the apartment that young university student Rin has rented, and it's more than just the terrible condition that it's in. There's something grim and foreboding about the place… an omnipresent atmosphere of dread that makes Rin feel as though she's constantly being watched by a thousand unblinking eyes. And the surrounding area isn't any better. Between sinister street people on strange missions, bizarre cults and rumors of a serial killer, it might seem that staying locked in behind closed doors would be the safest thing to do. But what if the real danger is already inside? There's no escape for Rin or her secrets now, and the only thing more terrifying than the horrific events that take place in her apartment are the nightmarish entities that conduct them! (Source: Sentai Filmworks)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 2018,
+    "seasonInt": 183,
+    "episodes": 1,
+    "duration": 75,
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Mystery"
+    ],
+    "tags": [
+      {
+        "id": 433,
+        "name": "Animals",
+        "description": "Prominently features animal characters in a leading role.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 683,
+        "name": "Rotoscoping",
+        "description": "Animation technique that animators use to trace over motion picture footage, frame by frame, to produce realistic action.",
+        "category": "Technical",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 96,
+        "name": "Time Manipulation",
+        "description": "Prominently features time-traveling or other time-warping phenomena.",
+        "category": "Theme-Sci-Fi",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 489,
+        "name": "Drugs",
+        "description": "Prominently features the usage of drugs such as opioids, stimulants, hallucinogens etc.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 4.7,
+    "averageScore": 47,
+    "meanScore": 47,
+    "popularity": 3104,
+    "trending": 0,
+    "favourites": 24,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#アラーニェの虫籠",
+    "startDate": "2018-08-18",
+    "endDate": "2018-08-18",
+    "mal_url": "https://myanimelist.net/anime/34974",
+    "anilist_url": "https://anilist.co/anime/104330",
+    "trailer": {
+      "id": "yq1x9xB730Q",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=yq1x9xB730Q"
+    }
+  },
+  {
+    "animeId": 31634,
+    "anilistId": 101086,
+    "title": "Kokuhaku",
+    "titleRomaji": "Kokuhaku",
+    "titleEnglish": "Kokuhaku",
+    "titleNative": "コクハク",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/101086-LZ6wVAuvgNHm.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/101086-LZ6wVAuvgNHm.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/101086-LZ6wVAuvgNHm.jpg",
+    "coverImageColor": "#e4aea1",
+    "bannerImage": "",
+    "synopsis": "A short animation by Nagao Takena.",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 2015,
+    "seasonInt": 153,
+    "episodes": 1,
+    "duration": 1,
+    "genres": [
+      "Horror"
+    ],
+    "tags": [
+      {
+        "id": 215,
+        "name": "POV",
+        "description": "Point of View; features scenes shown from the perspective of the series protagonist.",
+        "category": "Technical",
+        "rank": 96,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 93,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 89,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 341,
+        "name": "No Dialogue",
+        "description": "This work contains no dialogue.",
+        "category": "Technical",
+        "rank": 88,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 44,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 654,
+        "name": "Denpa",
+        "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
+        "category": "Theme-Other",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 10,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [],
+    "studiosNames": [],
+    "rating": 2.1,
+    "averageScore": 21,
+    "meanScore": 20,
+    "popularity": 3079,
+    "trending": 1,
+    "favourites": 5,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2015-08-27",
+    "endDate": "2015-08-27",
+    "mal_url": "https://myanimelist.net/anime/31634",
+    "anilist_url": "https://anilist.co/anime/101086",
+    "trailer": {
+      "id": "XVAcXqV8RsI",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=XVAcXqV8RsI"
+    }
+  },
+  {
+    "animeId": 1343,
+    "anilistId": 1343,
+    "title": "Violence Jack: Hell's Wind",
+    "titleRomaji": "Violence Jack: Hell's Wind",
+    "titleEnglish": "",
+    "titleNative": "バイオレンス ジャック 〜ヘルスウインド編〜",
+    "synonyms": [
+      "Violence Jack 3"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1343.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1343.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/1343.jpg",
+    "coverImageColor": "#d6a178",
+    "bannerImage": "",
+    "synopsis": "The survivors of Kanto's Hell Earthquake built a new city and christened it \"Hope Town\". However, this peaceful town becomes a nightmare when it's raided by the motorcycle gang, \"Hell's Wind\". They abduct the women while the remaining townsfolk are left helpless against them. Meanwhile, a boy, Subaro, meets Jun. Jun's lover was previously murdered, and the duo help one another to fight against Hell's Wind. The battles are getting more and more difficult, but with the appearance of Violence Jack, the citizens seem to gain the upper hand against Hell's Wind. (Source: AniDB)",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "FALL",
+    "seasonYear": 1990,
+    "seasonInt": 904,
+    "episodes": 1,
+    "duration": 52,
+    "genres": [
+      "Action",
+      "Drama",
+      "Horror"
+    ],
+    "tags": [
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 94,
+        "name": "Gore",
+        "description": "Prominently features graphic bloodshed and violence.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 173,
+        "name": "Motorcycles",
+        "description": "Prominently features the use of motorcycles.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": true
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6256,
+        "name": "Studio 88",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/6256"
+      }
+    ],
+    "studiosNames": [
+      "Studio 88"
+    ],
+    "rating": 5.3,
+    "averageScore": 53,
+    "meanScore": 53,
+    "popularity": 3075,
+    "trending": 0,
+    "favourites": 18,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1990-11-09",
+    "endDate": "1990-11-09",
+    "mal_url": "https://myanimelist.net/anime/1343",
+    "anilist_url": "https://anilist.co/anime/1343",
+    "trailer": null
+  },
+  {
+    "animeId": 2018,
+    "anilistId": 2018,
+    "title": "Laughing Target",
+    "titleRomaji": "Warau Hyouteki",
+    "titleEnglish": "Laughing Target",
+    "titleNative": "笑う標的",
+    "synonyms": [
+      "Rumic World 3"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2018-P7XDJzCdafKP.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx2018-P7XDJzCdafKP.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx2018-P7XDJzCdafKP.jpg",
+    "coverImageColor": "#d6281a",
+    "bannerImage": "",
+    "synopsis": "Yuzuru was an average teenager who had almost forgotten that he was betrothed to Azusa when he was only 6! Now arriving to claim what she feels is rightfully hers, only Satomi (Yuzuru's current girlfriend) stands in her way... and with the mysterious and frightening powers that Azusa brings, Satomi won't stand in her way for long!",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 1987,
+    "seasonInt": 872,
+    "episodes": 1,
+    "duration": 50,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Psychological",
+      "Romance",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 15,
+        "name": "Demons",
+        "description": "Prominently features malevolent otherworldly creatures.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 251,
+        "name": "Archery",
+        "description": "Centers around the sport of archery, or prominently features the use of archery in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 155,
+        "name": "Rape",
+        "description": "Features non-consensual sexual penetration.",
+        "category": "Sexual Content",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": true
+      }
+    ],
+    "studios": [
+      {
+        "id": 1,
+        "name": "Studio Pierrot",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/1"
+      }
+    ],
+    "studiosNames": [
+      "Studio Pierrot"
+    ],
+    "rating": 5.7,
+    "averageScore": 57,
+    "meanScore": 58,
+    "popularity": 2690,
+    "trending": 1,
+    "favourites": 19,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "1987-03-21",
+    "endDate": "1987-03-21",
+    "mal_url": "https://myanimelist.net/anime/2018",
+    "anilist_url": "https://anilist.co/anime/2018",
+    "trailer": null
+  },
+  {
+    "animeId": 9935,
+    "anilistId": 9935,
+    "title": "The Magic of Chocolate",
+    "titleRomaji": "Chocolat no Mahou",
+    "titleEnglish": "The Magic of Chocolate",
+    "titleNative": "ショコラの魔法",
+    "synonyms": [
+      "Chocolate no Mahou",
+      "Shokora no Mahou"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9935.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9935.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/9935.jpg",
+    "coverImageColor": "#e45086",
+    "bannerImage": "",
+    "synopsis": "The \"bittersweet, mysterious story\" revolves around Chocolat Aikawa, a chocolatière who runs a shop called Chocolat Noir. She can grant wishes to the troubled people who visit her shop — if they give her something precious in exchange. Note: The episodes were included in \"Ciao Ciao TV! (ちゃおちゃおTV!)\", a bonus DVD bundled in select issues of the shoujo magazine Ciao.",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "season": "SPRING",
+    "seasonYear": 2011,
+    "seasonInt": 112,
+    "episodes": 13,
+    "duration": 14,
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Mystery"
+    ],
+    "tags": [
+      {
+        "id": 53,
+        "name": "Shoujo",
+        "description": "Target demographic is teenage and young adult females.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 193,
+        "name": "Episodic",
+        "description": "Features story arcs that are loosely tied or lack an overarching plot.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 179,
+        "name": "Witch",
+        "description": "Prominently features a character who is a witch.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 118,
+        "name": "SynergySP",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/118"
+      }
+    ],
+    "studiosNames": [
+      "SynergySP"
+    ],
+    "rating": 5.8,
+    "averageScore": 58,
+    "meanScore": 60,
+    "popularity": 2649,
+    "trending": 0,
+    "favourites": 16,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2011-03-03",
+    "endDate": "2013-01-19",
+    "mal_url": "https://myanimelist.net/anime/9935",
+    "anilist_url": "https://anilist.co/anime/9935",
+    "trailer": null
+  },
+  {
+    "animeId": 49164,
+    "anilistId": 135429,
+    "title": "MAKE MY DAY",
+    "titleRomaji": "MAKE MY DAY",
+    "titleEnglish": "MAKE MY DAY",
+    "titleNative": "MAKE MY DAY",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135429-7BuTRpJhPjZl.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx135429-7BuTRpJhPjZl.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135429-7BuTRpJhPjZl.png",
+    "coverImageColor": "#aebbf1",
+    "bannerImage": "",
+    "synopsis": "The snowy, ice-covered planet Coldfoot is home to a precious energy-rich ore called “Sig.” On the surface, the planet seems to be a crime-free utopia, but in reality prisoners are used for back-breaking Sig mining. Jim, a young prison guard, rushes to the site of a sudden mining accident to find a mysterious creature attacking the humans. (Source: Netflix)",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2023,
+    "seasonInt": 231,
+    "episodes": 8,
+    "duration": 25,
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 191,
+        "name": "Aliens",
+        "description": "Prominently features extraterrestrial lifeforms.",
+        "category": "Cast-Traits",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1616,
+        "name": "Snowscape",
+        "description": "Prominently or partially set in a snowy environment.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 639,
+        "name": "Body Horror",
+        "description": "Features characters who undergo horrific transformations or disfigurement, often to their own detriment.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 801,
+        "name": "Cyborg",
+        "description": "Prominently features a human character whose physiological functions are aided or enhanced by artificial means.",
+        "category": "Cast-Traits",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 63,
+        "name": "Space",
+        "description": "Partly or completely set in outer space.",
+        "category": "Setting-Universe",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 108,
+        "name": "Cyberpunk",
+        "description": "Set in a future of advanced technological and scientific achievements that have resulted in social disorder.",
+        "category": "Theme-Sci-Fi",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 636,
+        "name": "Cosmic Horror",
+        "description": "A type of horror that emphasizes human insignificance in the grand scope of cosmic reality; fearing the unknown and being powerless to fight it.",
+        "category": "Theme-Other",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 175,
+        "name": "Robots",
+        "description": "Prominently features humanoid machines.",
+        "category": "Cast-Traits",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 160,
+        "name": "Real Robot",
+        "description": "Prominently features mechanical designs loosely influenced by real-world robotics.",
+        "category": "Theme-Sci-Fi-Mecha",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1427,
+        "name": "Prison",
+        "description": "Partly or completely set in a prison.",
+        "category": "Setting-Scene",
+        "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1403,
+        "name": "Class Struggle",
+        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
+        "category": "Theme-Drama",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 40,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6847,
+        "name": "5 Inc.",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6847"
+      }
+    ],
+    "studiosNames": [
+      "5 Inc."
+    ],
+    "rating": 5.2,
+    "averageScore": 52,
+    "meanScore": 53,
+    "popularity": 2555,
+    "trending": 0,
+    "favourites": 15,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#MAKEMYDAY",
+    "startDate": "2023-02-02",
+    "endDate": "2023-02-02",
+    "mal_url": "https://myanimelist.net/anime/49164",
+    "anilist_url": "https://anilist.co/anime/135429",
+    "trailer": {
+      "id": "a0WJGo3VtKM",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=a0WJGo3VtKM"
+    }
+  },
+  {
+    "animeId": 39675,
+    "anilistId": 110459,
+    "title": "Ling Cage",
+    "titleRomaji": "Ling Long",
+    "titleEnglish": "Ling Cage",
+    "titleNative": "灵笼",
+    "synonyms": [
+      "Ling Long: Incarnation",
+      "Spirit Cage: Incarnation",
+      "灵笼：INCARNATION",
+      "灵笼:INCARNATION 上半季"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110459-K2lyLvxHj72X.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110459-K2lyLvxHj72X.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110459-K2lyLvxHj72X.jpg",
+    "coverImageColor": "#e4ae86",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/110459-XGspfCO5cuxR.jpg",
+    "synopsis": "In the not-too-distant future, the human world has long been overpopulated. Humanity marched to the stars in search of a new home, and just as this was going on, the moon's alignment caused massive earthquakes to ripple across the world, lasting several decades. Humanity was demolished. When the land finally recovered, humanity reemerged to face this strange yet familiar world. Will we, who once lorded over this domain, still remain the masters of this world? (Source: BiliBili)",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "FINISHED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 6,
+    "duration": 37,
+    "genres": [
+      "Action",
+      "Drama",
+      "Horror",
+      "Mecha",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 217,
+        "name": "Dystopian",
+        "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
+        "category": "Setting-Time",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 342,
+        "name": "Environmental",
+        "description": "Concern with the state of the natural world and how humans interact with it.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 93,
+        "name": "Post-Apocalyptic",
+        "description": "Partly or completely set in a world or civilization after a global disaster.",
+        "category": "Setting-Universe",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 34,
+        "name": "Military",
+        "description": "Centered around the life and activities of military personnel.",
+        "category": "Theme-Other-Organisations",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 76,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 276,
+        "name": "Kaiju",
+        "description": "Prominently features giant monsters.",
+        "category": "Theme-Fantasy",
+        "rank": 75,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 586,
+        "name": "Cult",
+        "description": "Features a social group with unorthodox religious, spiritual, or philosophical beliefs and practices.",
+        "category": "Theme-Other-Organisations",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 466,
+        "name": "Lost Civilization",
+        "description": "Featuring a civilization with few ruins or records that exist in present day knowledge.",
+        "category": "Theme-Other",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 157,
+        "name": "Guns",
+        "description": "Prominently features the use of guns in combat.",
+        "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 247,
+        "name": "Slavery",
+        "description": "Prominently features slaves, slavery, or slave trade.",
+        "category": "Theme-Other",
+        "rank": 40,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 355,
+        "name": "Aviation",
+        "description": "Regarding the flying or operation of aircraft.",
+        "category": "Theme-Other-Vehicle",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6327,
+        "name": "YHKT Entertainment",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6327"
+      }
+    ],
+    "studiosNames": [
+      "YHKT Entertainment"
+    ],
+    "rating": 6.8,
+    "averageScore": 68,
+    "meanScore": 70,
+    "popularity": 2541,
+    "trending": 0,
+    "favourites": 60,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2019-07-13",
+    "endDate": "2019-09-21",
+    "mal_url": "https://myanimelist.net/anime/39675",
+    "anilist_url": "https://anilist.co/anime/110459",
+    "trailer": {
+      "id": "urtM_LasKyM",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=urtM_LasKyM"
+    }
+  }
+]
