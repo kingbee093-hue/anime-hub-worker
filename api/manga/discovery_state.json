@@ -7920,9 +7920,9 @@
   "684f3a6f-ea7b-4990-b9fe-a06955e0abc4": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "5d4db117-e9ce-4cd6-a945-704044c7ea93",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-04-26T08:51:37.424Z",
+    "lastChapterId": "0a9950d7-ef7a-4e2c-82c7-c99f99723834",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-26T20:00:39.306Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -9913,6 +9913,28 @@
     "lastChapter": "55.5",
     "lastAttemptAt": "2026-04-26T19:51:37.619Z",
     "lastSuccessAt": "2026-04-26T19:51:37.619Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "940aa8da-e313-4084-afea-efbca397b5cf": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "c7e34072-3c9e-44ef-b3f3-9dac2f765b5d",
+    "lastChapter": "22",
+    "lastAttemptAt": "2026-04-26T20:00:40.017Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "032f800d-d632-4442-8830-d037d616ead4": {
+    "status": "discovered",
+    "title": "Henkyougurashi no Maou, Tensei shite Saikyou no Majutsushi ni Naru",
+    "mangaId": 132657,
+    "anilistId": 132657,
+    "chapterIndexId": "032f800d-d632-4442-8830-d037d616ead4",
+    "lastChapterId": "714e5ac6-abe6-42bd-95be-82994d10fb2f",
+    "lastChapter": "60",
+    "lastAttemptAt": "2026-04-26T20:00:41.032Z",
+    "lastSuccessAt": "2026-04-26T20:00:41.032Z",
     "reason": null,
     "matcherVersion": 2
   }
