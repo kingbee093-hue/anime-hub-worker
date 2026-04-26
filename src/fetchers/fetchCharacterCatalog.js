@@ -3,8 +3,9 @@ const { fetchGraphQL } = require('../utils/fetchHelper');
 const { POPULAR_CHARACTERS_QUERY } = require('../utils/anilistQueries');
 const { cleanHtmlTags, delay } = require('../utils/formatters');
 const { writeJsonIfChanged } = require('../utils/writeJsonIfChanged');
+const { writeSectionPages } = require('../utils/sectionPagination');
 
-const CHARACTER_PAGES = 10;
+const CHARACTER_PAGES = 40;
 const CHARACTER_PAGE_SIZE = 50;
 
 function buildCharacterItem(character) {
@@ -83,6 +84,7 @@ async function fetchCharacterCatalog() {
   });
 
   writeJsonIfChanged(CONFIG.API_PATHS.CHARACTERS, catalog);
+  writeSectionPages(CONFIG.API_PATHS.CHARACTERS, catalog);
   console.log(`Character catalog built with ${catalog.length} characters.`);
 }
 
