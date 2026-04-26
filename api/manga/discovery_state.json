@@ -3133,10 +3133,10 @@
   },
   "1464700f-62f5-4ae9-8e90-c2c99ffbf23f": {
     "status": "failed",
-    "title": "Pivix Extras",
-    "lastChapterId": "195c8f40-b513-4188-b947-1947a1ee404b",
-    "lastChapter": "2.1",
-    "lastAttemptAt": "2026-04-21T10:34:47.337Z",
+    "title": "",
+    "lastChapterId": "d5caac79-6085-495b-8f47-0ebcaebfdd5a",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-26T15:17:26.566Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -9727,6 +9727,19 @@
     "lastChapter": "9",
     "lastAttemptAt": "2026-04-26T15:00:32.804Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "334019e1-18bb-4ac0-b35c-0e8efb1e481c": {
+    "status": "discovered",
+    "title": "JoJo no Kimyou na Bouken: The JOJOLands",
+    "mangaId": 138072,
+    "anilistId": 138072,
+    "chapterIndexId": "334019e1-18bb-4ac0-b35c-0e8efb1e481c",
+    "lastChapterId": "d37f81ef-22cf-4a2b-8f90-8123e2fea3e9",
+    "lastChapter": "25",
+    "lastAttemptAt": "2026-04-26T15:17:39.348Z",
+    "lastSuccessAt": "2026-04-26T15:17:39.348Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
