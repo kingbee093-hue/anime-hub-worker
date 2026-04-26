@@ -8756,9 +8756,9 @@
   "c84841cd-ae48-47a1-a88d-41fba4cc83d3": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "b10c1b3c-dcc5-479d-a8f2-1276a881d384",
-    "lastChapter": "40",
-    "lastAttemptAt": "2026-04-26T18:00:42.048Z",
+    "lastChapterId": "06c1b4b1-aaed-4b64-81a3-8b918b4e7ce2",
+    "lastChapter": "46",
+    "lastAttemptAt": "2026-04-26T18:17:45.849Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -9224,7 +9224,7 @@
     "title": "",
     "lastChapterId": "d48cd311-95b3-4ca0-9ae4-7a05a6f2c515",
     "lastChapter": "63",
-    "lastAttemptAt": "2026-04-26T06:17:37.595Z",
+    "lastAttemptAt": "2026-04-26T18:17:42.411Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -9800,6 +9800,32 @@
     "lastChapter": "34",
     "lastAttemptAt": "2026-04-26T17:34:34.204Z",
     "lastSuccessAt": "2026-04-26T17:34:34.204Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "53c12cd2-f7ff-4976-b16a-c83efdeedb6f": {
+    "status": "discovered",
+    "title": "Jeongnyeongwang Elkwineseu",
+    "mangaId": 111594,
+    "anilistId": 111594,
+    "chapterIndexId": "53c12cd2-f7ff-4976-b16a-c83efdeedb6f",
+    "lastChapterId": "b76423d1-bd3f-45ca-b317-76a2131463c0",
+    "lastChapter": "315",
+    "lastAttemptAt": "2026-04-26T18:17:41.055Z",
+    "lastSuccessAt": "2026-04-26T18:17:41.055Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "15ffddde-2548-4ca6-8f27-27718a9f2a7e": {
+    "status": "discovered",
+    "title": "The Siren: Becoming the Villain's Family",
+    "mangaId": 144027,
+    "anilistId": 144027,
+    "chapterIndexId": "15ffddde-2548-4ca6-8f27-27718a9f2a7e",
+    "lastChapterId": "4f6c0218-1c32-4f45-b475-da771d1f2ffa",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-26T18:17:41.966Z",
+    "lastSuccessAt": "2026-04-26T18:17:41.966Z",
     "reason": null,
     "matcherVersion": 2
   }
