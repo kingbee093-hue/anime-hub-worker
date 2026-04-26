@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-26T11:34:36.559Z",
-  "totalTitles": 1690,
+  "generatedAt": "2026-04-26T12:17:27.006Z",
+  "totalTitles": 1691,
   "items": [
     {
       "chapterIndexId": "b8f9a660-ed4d-4667-9c8d-00e98c05167d",
@@ -3205,10 +3205,12 @@
         "en"
       ],
       "counts": {
-        "en": 101
+        "en": 102
       },
       "englishFallbackProvider": null,
-      "englishFallbackChapterCount": null
+      "englishFallbackChapterCount": null,
+      "latestKnownChapterNumber": "93.5",
+      "latestKnownChapterNumberInt": 93
     },
     {
       "chapterIndexId": "5927e373-f024-42ad-9307-6f4c05ea3fc4",
@@ -6022,6 +6024,25 @@
       },
       "englishFallbackProvider": null,
       "englishFallbackChapterCount": null
+    },
+    {
+      "chapterIndexId": "13ccde4b-f0ae-4ead-8781-b444e51f81a1",
+      "mangaId": 162159,
+      "anilistId": 162159,
+      "mangadexId": "13ccde4b-f0ae-4ead-8781-b444e51f81a1",
+      "title": "Elf to Bike to Teikoku Chiri Chousain to",
+      "updatedAt": "2026-04-26T12:17:26.226Z",
+      "availableLanguages": [
+        "en"
+      ],
+      "counts": {
+        "en": 1
+      },
+      "englishFallbackProvider": null,
+      "englishFallbackProviderTitle": null,
+      "englishFallbackChapterCount": null,
+      "latestKnownChapterNumber": "20",
+      "latestKnownChapterNumberInt": 20
     },
     {
       "mangaId": 30933,
