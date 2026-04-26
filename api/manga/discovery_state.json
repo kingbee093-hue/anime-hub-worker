@@ -8254,9 +8254,9 @@
   "aec5b821-ca9d-4273-bece-cd3385a9cc8c": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "a824d3ff-35a8-4236-844e-c47b75876b2b",
-    "lastChapter": "6.5",
-    "lastAttemptAt": "2026-04-26T19:17:32.258Z",
+    "lastChapterId": "0f0fcb6b-765e-47af-9ddd-5e7006bfed9f",
+    "lastChapter": "9.5",
+    "lastAttemptAt": "2026-04-26T19:34:33.277Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -9853,6 +9853,41 @@
     "lastAttemptAt": "2026-04-26T19:17:31.322Z",
     "lastSuccessAt": "2026-04-26T19:17:31.322Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "6f81b440-3ece-4d24-ac12-1d460a1a3ca3": {
+    "status": "discovered",
+    "title": "Futari Machiaruki",
+    "mangaId": 203200,
+    "anilistId": 203200,
+    "chapterIndexId": "6f81b440-3ece-4d24-ac12-1d460a1a3ca3",
+    "lastChapterId": "adc37509-ce4e-4f7b-bb95-94a2ae7937e2",
+    "lastChapter": "9",
+    "lastAttemptAt": "2026-04-26T19:34:33.741Z",
+    "lastSuccessAt": "2026-04-26T19:34:33.741Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "fc5c1033-19d9-41ad-baf6-67bb7142e470": {
+    "status": "discovered",
+    "title": "Shishosei",
+    "mangaId": 134201,
+    "anilistId": 134201,
+    "chapterIndexId": "fc5c1033-19d9-41ad-baf6-67bb7142e470",
+    "lastChapterId": "8cb9cde4-60f2-45cb-a90f-b0b361881de0",
+    "lastChapter": "6",
+    "lastAttemptAt": "2026-04-26T19:34:35.023Z",
+    "lastSuccessAt": "2026-04-26T19:34:35.023Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "573faf0e-e0f0-4e17-ba21-ca58141368dd": {
+    "status": "failed",
+    "title": "FUN! IV",
+    "lastChapterId": "0f2d1d7f-2698-4256-afb1-def521eb1ec2",
+    "lastChapter": "14",
+    "lastAttemptAt": "2026-04-26T19:34:38.129Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
