@@ -10193,5 +10193,27 @@
     "lastSuccessAt": "2026-04-27T02:00:51.848Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "ed52ed30-97ae-4901-9b4d-77ab49ee6d84": {
+    "status": "discovered",
+    "title": "Maga Maga Yama",
+    "mangaId": 165543,
+    "anilistId": 165543,
+    "chapterIndexId": "ed52ed30-97ae-4901-9b4d-77ab49ee6d84",
+    "lastChapterId": "4778aa73-d0c7-4982-a4ab-4bd67b5ae948",
+    "lastChapter": "8",
+    "lastAttemptAt": "2026-04-27T02:17:48.743Z",
+    "lastSuccessAt": "2026-04-27T02:17:48.743Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "0301208d-258a-444a-8ef7-66e433d801b1": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "b309a0cf-0734-44c8-9fad-acb2737ba53c",
+    "lastChapter": "44",
+    "lastAttemptAt": "2026-04-27T02:17:49.692Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   }
 }
