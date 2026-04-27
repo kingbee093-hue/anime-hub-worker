@@ -3519,10 +3519,10 @@
     "mangaId": 106144,
     "anilistId": 106144,
     "chapterIndexId": "f81026af-1b41-465c-932b-291ce4760c00",
-    "lastChapterId": "7c8fb556-bb6d-4afc-ad47-16cfc252fdef",
-    "lastChapter": "92",
-    "lastAttemptAt": "2026-04-18T19:51:22.466Z",
-    "lastSuccessAt": "2026-04-18T19:51:22.466Z",
+    "lastChapterId": "8b80bb07-de64-47ae-a134-b14dd21b551f",
+    "lastChapter": "93.1",
+    "lastAttemptAt": "2026-04-27T22:51:50.869Z",
+    "lastSuccessAt": "2026-04-27T22:51:50.869Z",
     "reason": null,
     "matcherVersion": 2
   },
@@ -10694,6 +10694,28 @@
     "lastAttemptAt": "2026-04-27T22:34:44.763Z",
     "lastSuccessAt": "2026-04-27T22:34:44.764Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "5a46590b-14df-43f6-8450-5813cbf482e7": {
+    "status": "discovered",
+    "title": "Hachi-nan tte, Sore wa Nai deshou!",
+    "mangaId": 96344,
+    "anilistId": 96344,
+    "chapterIndexId": "5a46590b-14df-43f6-8450-5813cbf482e7",
+    "lastChapterId": "e13caa72-7e59-418a-9b78-d687512eacc5",
+    "lastChapter": "111",
+    "lastAttemptAt": "2026-04-27T22:51:47.157Z",
+    "lastSuccessAt": "2026-04-27T22:51:47.157Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "0c9879ae-5b4d-4d3a-8ab3-872a5968ae67": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "ce4b7f39-02ed-4292-90d5-658d4f28a834",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-27T22:51:50.409Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
