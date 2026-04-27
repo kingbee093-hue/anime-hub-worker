@@ -43,6 +43,16 @@
         "isAdult": false
       },
       {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 217,
         "name": "Dystopian",
         "description": "Partly or completely set in a society characterized by poverty, squalor or oppression.",
@@ -53,21 +63,11 @@
         "isAdult": false
       },
       {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 34,
         "name": "Military",
         "description": "Centered around the life and activities of military personnel.",
         "category": "Theme-Other-Organisations",
-        "rank": 88,
+        "rank": 86,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -88,16 +88,6 @@
         "description": "Partly or completely set in a world or civilization after a global disaster.",
         "category": "Setting-Universe",
         "rank": 75,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 80,
-        "name": "Satire",
-        "description": "Prominently features the use of comedy or ridicule to expose and criticise social phenomena.",
-        "category": "Theme-Comedy",
-        "rank": 73,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -127,6 +117,16 @@
         "name": "Swordplay",
         "description": "Prominently features the use of swords in combat.",
         "category": "Theme-Action",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 80,
+        "name": "Satire",
+        "description": "Prominently features the use of comedy or ridicule to expose and criticise social phenomena.",
+        "category": "Theme-Comedy",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -209,7 +209,7 @@
     "averageScore": 80,
     "meanScore": 81,
     "popularity": 24253,
-    "trending": 118,
+    "trending": 123,
     "favourites": 323,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -238,7 +238,8 @@
       "4 Seasons",
       "Utusan Empat Musim: Tarian Musim Semi",
       "Gli Agenti delle Quattro Stagioni: La Danza della Primavera",
-      "ลำนำรักผู้พิทักษ์ฤดูกาล ภาควสันตลีลา"
+      "ลำนำรักผู้พิทักษ์ฤดูกาล ภาควสันตลีลา",
+      "Sứ giả bốn mùa: Vũ Điệu Mùa Xuân"
     ],
     "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190143-IqqbkMAF0GOo.jpg",
     "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx190143-IqqbkMAF0GOo.jpg",
@@ -487,7 +488,7 @@
     "averageScore": 75,
     "meanScore": 76,
     "popularity": 26852,
-    "trending": 60,
+    "trending": 62,
     "favourites": 357,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -646,6 +647,16 @@
         "isAdult": false
       },
       {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 311,
         "name": "Rehabilitation",
         "description": "Prominently features the recovery of a character who became incapable of social life or work.",
@@ -684,16 +695,6 @@
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
-      },
-      {
-        "id": 779,
-        "name": "Kuudere",
-        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
-        "category": "Cast-Traits",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
       }
     ],
     "studios": [
@@ -712,7 +713,7 @@
     "averageScore": 72,
     "meanScore": 74,
     "popularity": 15438,
-    "trending": 52,
+    "trending": 66,
     "favourites": 205,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1303,7 +1304,7 @@
     "averageScore": 78,
     "meanScore": 80,
     "popularity": 24053,
-    "trending": 31,
+    "trending": 38,
     "favourites": 400,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1517,7 +1518,7 @@
     "averageScore": 75,
     "meanScore": 76,
     "popularity": 18268,
-    "trending": 26,
+    "trending": 43,
     "favourites": 230,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1693,7 +1694,7 @@
     "averageScore": 59,
     "meanScore": 60,
     "popularity": 18713,
-    "trending": 47,
+    "trending": 54,
     "favourites": 274,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -1969,7 +1970,7 @@
     "averageScore": 77,
     "meanScore": 79,
     "popularity": 24695,
-    "trending": 37,
+    "trending": 41,
     "favourites": 387,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -2044,7 +2045,7 @@
         "name": "Denpa",
         "description": "Works that feature themes of social dissociation, delusions, and other issues like suicide, bullying, self-isolation, paranoia, and technological necessity in daily lives. Classic iconography: telephone poles, rooftops, and trains.",
         "category": "Theme-Other",
-        "rank": 93,
+        "rank": 94,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": true,
         "isAdult": false
@@ -2120,6 +2121,16 @@
         "isAdult": true
       },
       {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 63,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 90,
         "name": "CGI",
         "description": "Prominently features scenes created with computer-generated imagery.",
@@ -2137,16 +2148,6 @@
         "rank": 62,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1046,
-        "name": "Suicide",
-        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
-        "category": "Theme-Drama",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2246,7 +2247,7 @@
     "averageScore": 68,
     "meanScore": 69,
     "popularity": 25949,
-    "trending": 39,
+    "trending": 42,
     "favourites": 432,
     "source": "VIDEO_GAME",
     "countryOfOrigin": "JP",
@@ -3373,7 +3374,7 @@
     "averageScore": 64,
     "meanScore": 66,
     "popularity": 11975,
-    "trending": 49,
+    "trending": 46,
     "favourites": 114,
     "source": "MANGA",
     "countryOfOrigin": "JP",
