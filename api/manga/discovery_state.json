@@ -8262,9 +8262,9 @@
   "aec5b821-ca9d-4273-bece-cd3385a9cc8c": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "0f0fcb6b-765e-47af-9ddd-5e7006bfed9f",
-    "lastChapter": "9.5",
-    "lastAttemptAt": "2026-04-27T21:34:51.871Z",
+    "lastChapterId": "a824d3ff-35a8-4236-844e-c47b75876b2b",
+    "lastChapter": "6.5",
+    "lastAttemptAt": "2026-04-28T03:17:43.413Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -9734,10 +9734,10 @@
   },
   "91fc383f-4ef5-468e-bc83-ce02ddea8b09": {
     "status": "failed",
-    "title": "Time between dog and wolf",
-    "lastChapterId": "0e248073-acb6-4970-b4af-8f1ec345a1e5",
+    "title": "",
+    "lastChapterId": "4c762227-f20c-4f84-84a0-d12dcb221e9b",
     "lastChapter": "9",
-    "lastAttemptAt": "2026-04-28T03:00:57.753Z",
+    "lastAttemptAt": "2026-04-28T03:17:43.326Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -10776,6 +10776,19 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-28T02:51:47.110Z",
     "lastSuccessAt": "2026-04-28T02:51:47.110Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "bcf2a791-c789-483a-91b1-12b09d2b38d7": {
+    "status": "discovered",
+    "title": "Inochi no Tabekata",
+    "mangaId": 171127,
+    "anilistId": 171127,
+    "chapterIndexId": "bcf2a791-c789-483a-91b1-12b09d2b38d7",
+    "lastChapterId": "ec16be96-aeda-4f64-bf94-a280c6c320a8",
+    "lastChapter": "17.2",
+    "lastAttemptAt": "2026-04-28T03:17:40.258Z",
+    "lastSuccessAt": "2026-04-28T03:17:40.258Z",
     "reason": null,
     "matcherVersion": 2
   }
