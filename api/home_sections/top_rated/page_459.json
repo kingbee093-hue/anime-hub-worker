@@ -940,7 +940,7 @@
     "rating": 4.8,
     "averageScore": 48,
     "meanScore": 50,
-    "popularity": 473,
+    "popularity": 472,
     "trending": 0,
     "favourites": 1,
     "source": "OTHER",
@@ -1285,7 +1285,17 @@
         "name": "Advertisement",
         "description": "Produced in order to promote the products of a certain company.",
         "category": "Technical",
-        "rank": 60,
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1304,
+        "name": "Anthropomorphism",
+        "description": "Contains non-human character(s) that have attributes or characteristics of a human being.",
+        "category": "Cast-Traits",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false

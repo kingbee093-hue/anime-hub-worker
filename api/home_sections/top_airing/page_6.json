@@ -76,7 +76,7 @@
     "averageScore": 0,
     "meanScore": 73,
     "popularity": 443,
-    "trending": 1,
+    "trending": 0,
     "favourites": 6,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -680,7 +680,7 @@
     "averageScore": 0,
     "meanScore": 82,
     "popularity": 368,
-    "trending": 1,
+    "trending": 2,
     "favourites": 19,
     "source": "OTHER",
     "countryOfOrigin": "CN",
@@ -1102,7 +1102,7 @@
     "averageScore": 0,
     "meanScore": 84,
     "popularity": 282,
-    "trending": 1,
+    "trending": 0,
     "favourites": 18,
     "source": "OTHER",
     "countryOfOrigin": "CN",
@@ -1182,7 +1182,7 @@
     "averageScore": 0,
     "meanScore": 66,
     "popularity": 267,
-    "trending": 1,
+    "trending": 0,
     "favourites": 7,
     "source": "OTHER",
     "countryOfOrigin": "CN",
@@ -1506,21 +1506,11 @@
         "isAdult": false
       },
       {
-        "id": 326,
-        "name": "Cultivation",
-        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
-        "category": "Theme-Fantasy",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 89,
         "name": "Full CGI",
         "description": "Almost entirely created with computer-generated imagery.",
         "category": "Technical",
-        "rank": 10,
+        "rank": 50,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1530,7 +1520,17 @@
         "name": "CGI",
         "description": "Prominently features scenes created with computer-generated imagery.",
         "category": "Technical",
-        "rank": 10,
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 326,
+        "name": "Cultivation",
+        "description": "Features characters using training, often martial arts-related, and other special methods to cultivate qi (a component of traditional Chinese philosophy, described as \"life force\") and gain strength or immortality.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -1594,7 +1594,7 @@
     "meanScore": 65,
     "popularity": 233,
     "trending": 0,
-    "favourites": 7,
+    "favourites": 6,
     "source": "OTHER",
     "countryOfOrigin": "CN",
     "isLicensed": true,
@@ -1705,6 +1705,26 @@
       "Fantasy"
     ],
     "tags": [
+      {
+        "id": 90,
+        "name": "CGI",
+        "description": "Prominently features scenes created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
       {
         "id": 244,
         "name": "Isekai",
@@ -1985,7 +2005,7 @@
     "meanScore": 70,
     "popularity": 216,
     "trending": 0,
-    "favourites": 10,
+    "favourites": 9,
     "source": "ORIGINAL",
     "countryOfOrigin": "CN",
     "isLicensed": true,
