@@ -7930,7 +7930,7 @@
     "title": "",
     "lastChapterId": "f17699a8-3996-4170-9129-40a20ec20a04",
     "lastChapter": "3",
-    "lastAttemptAt": "2026-04-28T17:36:59.237Z",
+    "lastAttemptAt": "2026-04-29T05:51:48.285Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -8730,8 +8730,8 @@
     "status": "failed",
     "title": "",
     "lastChapterId": "f648073f-070e-437a-b797-3b8a0d4e592a",
-    "lastChapter": "1",
-    "lastAttemptAt": "2026-04-28T17:36:03.564Z",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-29T05:51:52.020Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -9442,10 +9442,10 @@
   },
   "0172d5f3-757e-4ce2-9fea-f60cec470920": {
     "status": "failed",
-    "title": "Marching to the Comiket with a Deadly ASMR",
-    "lastChapterId": "a06d4d3d-132a-425f-b498-47522aace3ee",
-    "lastChapter": "15",
-    "lastAttemptAt": "2026-04-27T13:17:48.053Z",
+    "title": "The First Day of Comiket! With Many Events...",
+    "lastChapterId": "e66d0967-eacc-4c61-8c0d-af8aa329a83d",
+    "lastChapter": "16",
+    "lastAttemptAt": "2026-04-29T05:51:37.800Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -11138,7 +11138,7 @@
     "title": "",
     "lastChapterId": "7896a384-a6b2-494c-b39c-a93ab42072a8",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-28T17:37:35.776Z",
+    "lastAttemptAt": "2026-04-29T05:51:41.806Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -11147,17 +11147,21 @@
     "title": "",
     "lastChapterId": "b07a6a98-8a92-46d7-a750-fd77f1ece27a",
     "lastChapter": "",
-    "lastAttemptAt": "2026-04-28T17:38:14.246Z",
+    "lastAttemptAt": "2026-04-29T05:51:44.747Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
   "a300f72d-a70f-4994-9783-8c95c83113d1": {
-    "status": "failed",
-    "title": "",
+    "status": "discovered",
+    "title": "Kuni ni Saikyo no Barrier wo Hattara Heiwa ni Narisugite Tsuiho Saremashita. Ore no Mahou ga Yaba Sugite, Bijo to Mazoku ni Kakomarete Nanda ga!?",
+    "mangaId": 176502,
+    "anilistId": 176502,
+    "chapterIndexId": "a300f72d-a70f-4994-9783-8c95c83113d1",
     "lastChapterId": "c01164bd-91dd-41ca-a0ce-6bf9665bb763",
     "lastChapter": "21",
-    "lastAttemptAt": "2026-04-28T17:39:27.225Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-29T05:51:37.345Z",
+    "lastSuccessAt": "2026-04-29T05:51:37.345Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "22baef38-43f2-4f48-8855-51a877251dcb": {
@@ -11358,6 +11362,28 @@
     "lastChapter": "12",
     "lastAttemptAt": "2026-04-29T03:34:35.602Z",
     "lastSuccessAt": "2026-04-29T03:34:35.602Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "d1782475-2c3e-4deb-bc33-25a0ffbe3f18": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "33d17347-081f-4d43-a1c7-1cc9c1779333",
+    "lastChapter": "24",
+    "lastAttemptAt": "2026-04-29T05:51:38.201Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "85c4d8d6-d7c7-48a5-bb7b-18af4c875ca8": {
+    "status": "discovered",
+    "title": "1 Ii ne de Skirt ga 0.1mm Mijikaku Naru Class no Jimi na Onnanoko, Gojitsudan-hen",
+    "mangaId": 117740,
+    "anilistId": 117740,
+    "chapterIndexId": "85c4d8d6-d7c7-48a5-bb7b-18af4c875ca8",
+    "lastChapterId": "37cd6b21-7aea-4199-9bd1-a09884206ee1",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-29T05:51:38.699Z",
+    "lastSuccessAt": "2026-04-29T05:51:38.699Z",
     "reason": null,
     "matcherVersion": 2
   }
