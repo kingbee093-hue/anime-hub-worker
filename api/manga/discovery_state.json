@@ -5174,9 +5174,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "2dce2f0f-405a-4bd1-919d-263aa8eb4c8d",
-    "lastChapter": "83",
-    "lastAttemptAt": "2026-04-29T02:34:48.795Z",
+    "lastChapterId": "6ecc7c0c-0ef8-41ad-8965-3f7954b5f420",
+    "lastChapter": "84",
+    "lastAttemptAt": "2026-04-29T07:51:41.975Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -5771,7 +5771,7 @@
     "title": "Last Scream of the Butterfly",
     "lastChapterId": "74718a4e-2838-42cb-914e-33b85b2bb3f7",
     "lastChapter": "128",
-    "lastAttemptAt": "2026-04-28T19:35:52.570Z",
+    "lastAttemptAt": "2026-04-29T07:51:44.350Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -11243,7 +11243,7 @@
     "title": "Courage - Part 1 of 2",
     "lastChapterId": "1753fa58-a27a-43e2-b523-bddeab9d66a9",
     "lastChapter": "15.1",
-    "lastAttemptAt": "2026-04-28T19:35:33.014Z",
+    "lastAttemptAt": "2026-04-29T07:51:47.064Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -11252,8 +11252,8 @@
     "title": "An unyielding crossroads of the heart",
     "lastChapterId": "01436df7-0bbc-4743-9e97-e436f192d755",
     "lastChapter": "12",
-    "lastAttemptAt": "2026-04-28T19:37:06.703Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-29T07:51:42.983Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   },
   "c8810beb-48d8-4289-8fed-88bc89097b08": {
@@ -11427,6 +11427,19 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-04-29T06:34:40.513Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "b4bb5618-3f58-4e69-a9c0-8573384dffe5": {
+    "status": "discovered",
+    "title": "STRAYBOY OVERKILL",
+    "mangaId": 208848,
+    "anilistId": 208848,
+    "chapterIndexId": "b4bb5618-3f58-4e69-a9c0-8573384dffe5",
+    "lastChapterId": "7bb3b793-24f0-4ca1-b43a-6516172c091b",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-29T07:51:42.421Z",
+    "lastSuccessAt": "2026-04-29T07:51:42.421Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
