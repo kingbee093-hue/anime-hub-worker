@@ -10679,7 +10679,7 @@
     "title": "The Speed Limit Part 3",
     "lastChapterId": "95f2b75a-97c4-489f-9bfd-b07a9af1fd0f",
     "lastChapter": "7",
-    "lastAttemptAt": "2026-04-28T22:20:00.415Z",
+    "lastAttemptAt": "2026-04-29T10:34:53.291Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -11292,21 +11292,29 @@
     "matcherVersion": 2
   },
   "54791531-d62c-4041-9eaa-c2c7f20495cd": {
-    "status": "failed",
-    "title": "An Osomatsu-kun Car!?",
+    "status": "discovered",
+    "title": "Kochira Katsushikaku Kameari Kouenmae Hashutsujo",
+    "mangaId": 30733,
+    "anilistId": 30733,
+    "chapterIndexId": "54791531-d62c-4041-9eaa-c2c7f20495cd",
     "lastChapterId": "cac59bfe-b74a-4684-bf62-eee0ed9c1a42",
     "lastChapter": "9",
-    "lastAttemptAt": "2026-04-28T22:21:15.440Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-29T10:34:53.733Z",
+    "lastSuccessAt": "2026-04-29T10:34:53.733Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "cd227b09-cef8-43a1-af51-aea09d1da03f": {
-    "status": "failed",
-    "title": "All Knowledge, Everywhere",
+    "status": "discovered",
+    "title": "Akuyaku no Goreisoku no Dounika shitai Nichijou   ",
+    "mangaId": 180818,
+    "anilistId": 180818,
+    "chapterIndexId": "cd227b09-cef8-43a1-af51-aea09d1da03f",
     "lastChapterId": "17780dd8-97b5-4ace-bf6c-856960dcde02",
     "lastChapter": "56",
-    "lastAttemptAt": "2026-04-28T22:22:30.235Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-29T10:34:50.118Z",
+    "lastSuccessAt": "2026-04-29T10:34:50.118Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "cb676e05-8e6e-4ec4-8ba0-d3cb4f033cfa": {
@@ -11457,6 +11465,19 @@
     "lastChapter": "139",
     "lastAttemptAt": "2026-04-29T09:17:45.330Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "ec420fab-3ee7-449b-85bb-41542c241088": {
+    "status": "discovered",
+    "title": "Maid-sama!",
+    "mangaId": 32921,
+    "anilistId": 32921,
+    "chapterIndexId": "ec420fab-3ee7-449b-85bb-41542c241088",
+    "lastChapterId": "aa8b40b3-0601-45c4-b397-e4a021067f92",
+    "lastChapter": "58",
+    "lastAttemptAt": "2026-04-29T10:34:49.397Z",
+    "lastSuccessAt": "2026-04-29T10:34:49.397Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
