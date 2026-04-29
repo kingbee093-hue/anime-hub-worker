@@ -10009,10 +10009,10 @@
   },
   "c9a8ffb7-682f-40e2-87fe-9537e8f425ea": {
     "status": "failed",
-    "title": "Episode 3",
-    "lastChapterId": "1cb581b3-b740-48df-88ee-f9ca6f94d70f",
-    "lastChapter": "3",
-    "lastAttemptAt": "2026-04-29T16:17:51.610Z",
+    "title": "Episode 4",
+    "lastChapterId": "d864a026-16b4-47c4-b26f-1205055ac314",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-04-29T23:17:53.220Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -11695,6 +11695,32 @@
     "lastChapter": "4",
     "lastAttemptAt": "2026-04-29T22:35:29.965Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "43f963e3-8839-41f8-912e-38e44f761ac8": {
+    "status": "discovered",
+    "title": "Datenshi Soprano-chan no Fukushuu",
+    "mangaId": 195412,
+    "anilistId": 195412,
+    "chapterIndexId": "43f963e3-8839-41f8-912e-38e44f761ac8",
+    "lastChapterId": "08be802b-aebb-482e-bb3c-07c32e14680c",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-29T23:17:50.541Z",
+    "lastSuccessAt": "2026-04-29T23:17:50.541Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "13ec3c49-9a27-4551-9ac4-4fffd530d69f": {
+    "status": "discovered",
+    "title": "Break New World",
+    "mangaId": 194193,
+    "anilistId": 194193,
+    "chapterIndexId": "13ec3c49-9a27-4551-9ac4-4fffd530d69f",
+    "lastChapterId": "441179c4-dca7-4994-ac44-2a00e19795cb",
+    "lastChapter": "40",
+    "lastAttemptAt": "2026-04-29T23:17:54.396Z",
+    "lastSuccessAt": "2026-04-29T23:17:54.396Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
