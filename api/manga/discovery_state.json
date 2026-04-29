@@ -8065,16 +8065,12 @@
     "matcherVersion": 2
   },
   "14b5db07-0713-4215-bbcb-0d169e141164": {
-    "status": "discovered",
-    "title": "My Isekai Life: I Gained a Second Character Class and Became the Strongest Sage in the World!",
-    "mangaId": 106144,
-    "anilistId": 106144,
-    "chapterIndexId": "14b5db07-0713-4215-bbcb-0d169e141164",
-    "lastChapterId": "2932c2a6-5de0-4047-bb7f-a2eb70de31a6",
-    "lastChapter": "1",
-    "lastAttemptAt": "2026-04-24T13:18:22.660Z",
-    "lastSuccessAt": "2026-04-24T13:18:22.660Z",
-    "reason": null,
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "1ec78217-86c6-4c18-b60d-f4340ca60aac",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-29T21:34:42.877Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
   "d422ddc8-eea3-4b0a-82a4-291bbd8c9285": {
@@ -11676,6 +11672,19 @@
     "lastChapter": "2",
     "lastAttemptAt": "2026-04-29T21:17:51.375Z",
     "lastSuccessAt": "2026-04-29T21:17:51.375Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "cc121572-858e-4bd2-b5f3-ef505eca0081": {
+    "status": "discovered",
+    "title": "Hazure Skill: The Guild Member with a Worthless Skill Is Actually a Legendary Assassin",
+    "mangaId": 111101,
+    "anilistId": 111101,
+    "chapterIndexId": "cc121572-858e-4bd2-b5f3-ef505eca0081",
+    "lastChapterId": "5a9cf53c-bec0-4452-8e6a-09cab83bcd28",
+    "lastChapter": "48",
+    "lastAttemptAt": "2026-04-29T21:34:39.666Z",
+    "lastSuccessAt": "2026-04-29T21:34:39.666Z",
     "reason": null,
     "matcherVersion": 2
   }
