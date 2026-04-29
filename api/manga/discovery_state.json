@@ -11165,12 +11165,16 @@
     "matcherVersion": 2
   },
   "22baef38-43f2-4f48-8855-51a877251dcb": {
-    "status": "failed",
-    "title": "",
+    "status": "discovered",
+    "title": "Akuyaku Reijou no Taida na Tameiki",
+    "mangaId": 122427,
+    "anilistId": 122427,
+    "chapterIndexId": "22baef38-43f2-4f48-8855-51a877251dcb",
     "lastChapterId": "4964c6ab-5a31-48d9-8daf-86d2fee97e70",
     "lastChapter": "12",
-    "lastAttemptAt": "2026-04-28T18:19:09.675Z",
-    "reason": "anilist_match_not_found",
+    "lastAttemptAt": "2026-04-29T06:34:37.405Z",
+    "lastSuccessAt": "2026-04-29T06:34:37.405Z",
+    "reason": null,
     "matcherVersion": 2
   },
   "ccf640d0-d4b9-4dc0-8d31-d090b04c0025": {
@@ -11385,6 +11389,28 @@
     "lastAttemptAt": "2026-04-29T05:51:38.699Z",
     "lastSuccessAt": "2026-04-29T05:51:38.699Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "79264ef2-507e-4216-aed3-ab42ca140706": {
+    "status": "discovered",
+    "title": "Second Time in Another World, This Old Man Is WAY Stronger Than the High School Heroes!",
+    "mangaId": 191766,
+    "anilistId": 191766,
+    "chapterIndexId": "79264ef2-507e-4216-aed3-ab42ca140706",
+    "lastChapterId": "e5e5686a-645d-483e-8ce9-d17b1e9393f5",
+    "lastChapter": "8",
+    "lastAttemptAt": "2026-04-29T06:34:36.231Z",
+    "lastSuccessAt": "2026-04-29T06:34:36.231Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "1ad0f483-5d11-466a-a237-175086fd0ab8": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "6166029e-58eb-47b1-96c7-aa20a0bb638d",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-04-29T06:34:40.513Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
