@@ -8296,10 +8296,10 @@
   },
   "be182a31-d96f-46c0-b26a-79c3ff8aeaa9": {
     "status": "failed",
-    "title": "service 14",
-    "lastChapterId": "747cd9ef-b1f1-41d3-83d8-fd885ff2e4f5",
-    "lastChapter": "14.2",
-    "lastAttemptAt": "2026-04-26T00:51:25.786Z",
+    "title": "Service other",
+    "lastChapterId": "89300160-73e0-4c94-83fa-92dbc6afde14",
+    "lastChapter": "14.5",
+    "lastAttemptAt": "2026-04-29T21:17:49.764Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -11483,7 +11483,7 @@
     "title": "",
     "lastChapterId": "f5f0b76a-b454-4b4c-96ae-d53e14b60b03",
     "lastChapter": "139",
-    "lastAttemptAt": "2026-04-29T09:17:45.330Z",
+    "lastAttemptAt": "2026-04-29T21:17:49.378Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -11651,6 +11651,32 @@
     "lastChapter": "",
     "lastAttemptAt": "2026-04-29T20:51:49.033Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "7e6782d0-d693-4af1-b3f6-7550ddb5b5a1": {
+    "status": "discovered",
+    "title": "Tensai Saijaku Mamono Tsukai wa Kikan Shitai: Saikyou no Juusha to Hikihanasarete, Mishiranu Chi ni Tobasaremashita",
+    "mangaId": 145625,
+    "anilistId": 145625,
+    "chapterIndexId": "7e6782d0-d693-4af1-b3f6-7550ddb5b5a1",
+    "lastChapterId": "a7d8e386-9642-4d98-b069-6843a0877105",
+    "lastChapter": "6",
+    "lastAttemptAt": "2026-04-29T21:17:50.548Z",
+    "lastSuccessAt": "2026-04-29T21:17:50.548Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "0c5ffb7d-20b8-41d3-bfd3-0080c3ba68ed": {
+    "status": "discovered",
+    "title": "Yorozu Kagiya no Jiken Jou",
+    "mangaId": 158531,
+    "anilistId": 158531,
+    "chapterIndexId": "0c5ffb7d-20b8-41d3-bfd3-0080c3ba68ed",
+    "lastChapterId": "26e5c688-82e3-4d3d-9208-d8aa540d410c",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-04-29T21:17:51.375Z",
+    "lastSuccessAt": "2026-04-29T21:17:51.375Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
