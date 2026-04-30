@@ -214,7 +214,7 @@
     "averageScore": 0,
     "meanScore": 0,
     "popularity": 859,
-    "trending": 1,
+    "trending": 0,
     "favourites": 7,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1072,7 +1072,7 @@
     "averageScore": 0,
     "meanScore": 0,
     "popularity": 770,
-    "trending": 1,
+    "trending": 0,
     "favourites": 15,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -1228,7 +1228,7 @@
     "averageScore": 0,
     "meanScore": 0,
     "popularity": 757,
-    "trending": 1,
+    "trending": 0,
     "favourites": 4,
     "source": "VIDEO_GAME",
     "countryOfOrigin": "JP",
@@ -1277,7 +1277,7 @@
     "averageScore": 0,
     "meanScore": 0,
     "popularity": 749,
-    "trending": 2,
+    "trending": 3,
     "favourites": 5,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1498,7 +1498,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 709,
+    "popularity": 710,
     "trending": 0,
     "favourites": 4,
     "source": "MANGA",
@@ -1510,66 +1510,6 @@
     "endDate": null,
     "mal_url": "https://myanimelist.net/anime/35854",
     "anilist_url": "https://anilist.co/anime/100148",
-    "trailer": null
-  },
-  {
-    "animeId": 62719,
-    "anilistId": 206354,
-    "title": "Quanzhi Fashi 7",
-    "titleRomaji": "Quanzhi Fashi 7",
-    "titleEnglish": "",
-    "titleNative": "全职法师 第7季",
-    "synonyms": [
-      "Full-Time Magister 7th Season",
-      "Versatile Mage 7th Season",
-      "Almighty Mage 7th Season"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206354-JDkdtdhrd6mD.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206354-JDkdtdhrd6mD.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206354-JDkdtdhrd6mD.jpg",
-    "coverImageColor": "#f17835",
-    "bannerImage": "",
-    "synopsis": "The seventh season of Quanzhi Fashi .",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "tags": [],
-    "studios": [
-      {
-        "id": 6162,
-        "name": "Foch",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6162"
-      }
-    ],
-    "studiosNames": [
-      "Foch"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 695,
-    "trending": 0,
-    "favourites": 8,
-    "source": "OTHER",
-    "countryOfOrigin": "CN",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": "2026-01-01",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/62719",
-    "anilist_url": "https://anilist.co/anime/206354",
     "trailer": null
   },
   {
@@ -1640,6 +1580,66 @@
     "endDate": null,
     "mal_url": "",
     "anilist_url": "https://anilist.co/anime/209661",
+    "trailer": null
+  },
+  {
+    "animeId": 62719,
+    "anilistId": 206354,
+    "title": "Quanzhi Fashi 7",
+    "titleRomaji": "Quanzhi Fashi 7",
+    "titleEnglish": "",
+    "titleNative": "全职法师 第7季",
+    "synonyms": [
+      "Full-Time Magister 7th Season",
+      "Versatile Mage 7th Season",
+      "Almighty Mage 7th Season"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206354-JDkdtdhrd6mD.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206354-JDkdtdhrd6mD.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206354-JDkdtdhrd6mD.jpg",
+    "coverImageColor": "#f17835",
+    "bannerImage": "",
+    "synopsis": "The seventh season of Quanzhi Fashi .",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "tags": [],
+    "studios": [
+      {
+        "id": 6162,
+        "name": "Foch",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6162"
+      }
+    ],
+    "studiosNames": [
+      "Foch"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 695,
+    "trending": 0,
+    "favourites": 8,
+    "source": "OTHER",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-01-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/62719",
+    "anilist_url": "https://anilist.co/anime/206354",
     "trailer": null
   },
   {
