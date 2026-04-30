@@ -1,18 +1,20 @@
 [
   {
-    "animeId": 169374,
-    "anilistId": 169374,
-    "title": "DICE",
-    "titleRomaji": "DICE",
+    "animeId": 50405,
+    "anilistId": 137296,
+    "title": "Tianbao Fuyao Lu 3",
+    "titleRomaji": "Tianbao Fuyao Lu 3",
     "titleEnglish": "",
-    "titleNative": "다이스",
-    "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/default.jpg",
-    "coverImageColor": "",
+    "titleNative": "天宝伏妖录 第三季",
+    "synonyms": [
+      "Legend of Exorcism 3"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137296-sdZEe5it6RTK.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx137296-sdZEe5it6RTK.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx137296-sdZEe5it6RTK.png",
+    "coverImageColor": "#e4bb93",
     "bannerImage": "",
-    "synopsis": "Whether it's appearance, grades, or social life, Dongtae's at the bottom of the barrel. When popular transfer student Taebin gives him an opportunity to change all of that, Dongtae heads down a path to make things right. This is the world of DICE, where a single roll can change your fate. (Source: WEBTOON)",
+    "synopsis": "The third season of Tianbao Fuyao Lu .",
     "type": "ANIME",
     "format": "ONA",
     "status": "NOT_YET_RELEASED",
@@ -23,38 +25,62 @@
     "duration": 0,
     "genres": [
       "Action",
-      "Psychological",
-      "Supernatural"
+      "Fantasy"
     ],
-    "tags": [],
+    "tags": [
+      {
+        "id": 1719,
+        "name": "Exorcism",
+        "description": "Involving religious methods of vanquishing youkai, demons, or other supernatural entities.",
+        "category": "Theme-Fantasy",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 75,
+        "name": "Boys' Love",
+        "description": "Prominently features romance between two males, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "studios": [
       {
-        "id": 7457,
-        "name": "Ocon Studios",
+        "id": 6393,
+        "name": "Sparkly Key Animation",
         "isMain": true,
         "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/7457"
+        "siteUrl": "https://anilist.co/studio/6393"
       }
     ],
     "studiosNames": [
-      "Ocon Studios"
+      "Sparkly Key Animation"
     ],
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 669,
+    "popularity": 677,
     "trending": 0,
-    "favourites": 10,
-    "source": "MANGA",
-    "countryOfOrigin": "KR",
+    "favourites": 11,
+    "source": "OTHER",
+    "countryOfOrigin": "CN",
     "isLicensed": true,
     "isAdult": false,
     "hashtag": "",
     "startDate": null,
     "endDate": null,
-    "mal_url": "",
-    "anilist_url": "https://anilist.co/anime/169374",
-    "trailer": null
+    "mal_url": "https://myanimelist.net/anime/50405",
+    "anilist_url": "https://anilist.co/anime/137296",
+    "trailer": {
+      "id": "L9_XBetgcG0",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=L9_XBetgcG0"
+    }
   },
   {
     "animeId": 202250,
@@ -124,7 +150,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 665,
+    "popularity": 669,
     "trending": 0,
     "favourites": 9,
     "source": "MANGA",
@@ -136,6 +162,63 @@
     "endDate": null,
     "mal_url": "",
     "anilist_url": "https://anilist.co/anime/202250",
+    "trailer": null
+  },
+  {
+    "animeId": 169374,
+    "anilistId": 169374,
+    "title": "DICE",
+    "titleRomaji": "DICE",
+    "titleEnglish": "",
+    "titleNative": "다이스",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/default.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "Whether it's appearance, grades, or social life, Dongtae's at the bottom of the barrel. When popular transfer student Taebin gives him an opportunity to change all of that, Dongtae heads down a path to make things right. This is the world of DICE, where a single roll can change your fate. (Source: WEBTOON)",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Psychological",
+      "Supernatural"
+    ],
+    "tags": [],
+    "studios": [
+      {
+        "id": 7457,
+        "name": "Ocon Studios",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/7457"
+      }
+    ],
+    "studiosNames": [
+      "Ocon Studios"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 669,
+    "trending": 0,
+    "favourites": 10,
+    "source": "MANGA",
+    "countryOfOrigin": "KR",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": null,
+    "endDate": null,
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/169374",
     "trailer": null
   },
   {
@@ -257,7 +340,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 656,
+    "popularity": 660,
     "trending": 0,
     "favourites": 5,
     "source": "ORIGINAL",
@@ -353,7 +436,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 647,
+    "popularity": 650,
     "trending": 0,
     "favourites": 4,
     "source": "ORIGINAL",
@@ -438,6 +521,104 @@
     "endDate": null,
     "mal_url": "https://myanimelist.net/anime/23275",
     "anilist_url": "https://anilist.co/anime/20676",
+    "trailer": null
+  },
+  {
+    "animeId": 63713,
+    "anilistId": 209132,
+    "title": "Junket Bank",
+    "titleRomaji": "Junket Bank",
+    "titleEnglish": "",
+    "titleNative": "ジャンケットバンク",
+    "synonyms": [],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209132-uAEsususOR9h.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209132-uAEsususOR9h.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209132-uAEsususOR9h.png",
+    "coverImageColor": "#f1a135",
+    "bannerImage": "",
+    "synopsis": "Mitarai, a bank clerk bored with his everyday life and work, soon finds himself transferred to the \"Appraisal Unit.\" Guided by his new boss Usami, Mitarai's led through a secret underground passage within the bank where a new, exciting world of gambling awaits.",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "NOT_YET_RELEASED",
+    "season": "FALL",
+    "seasonYear": 2026,
+    "seasonInt": 264,
+    "episodes": 0,
+    "duration": 0,
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Thriller"
+    ],
+    "tags": [
+      {
+        "id": 50,
+        "name": "Seinen",
+        "description": "Target demographic is adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 91,
+        "name": "Gambling",
+        "description": "Centers around the act of gambling.",
+        "category": "Theme-Other",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 109,
+        "name": "Primarily Adult Cast",
+        "description": "Main cast is mostly composed of characters above a high school age.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 7693,
+        "name": "CUE",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/7693"
+      }
+    ],
+    "studiosNames": [
+      "CUE"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 645,
+    "trending": 0,
+    "favourites": 3,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#ジャンケットバンク",
+    "startDate": "2026-10-01",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63713",
+    "anilist_url": "https://anilist.co/anime/209132",
     "trailer": null
   },
   {
@@ -551,7 +732,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 639,
+    "popularity": 640,
     "trending": 0,
     "favourites": 7,
     "source": "ORIGINAL",
@@ -640,104 +821,6 @@
     }
   },
   {
-    "animeId": 63713,
-    "anilistId": 209132,
-    "title": "Junket Bank",
-    "titleRomaji": "Junket Bank",
-    "titleEnglish": "",
-    "titleNative": "ジャンケットバンク",
-    "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209132-uAEsususOR9h.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209132-uAEsususOR9h.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209132-uAEsususOR9h.png",
-    "coverImageColor": "#f1a135",
-    "bannerImage": "",
-    "synopsis": "Mitarai, a bank clerk bored with his everyday life and work, soon finds himself transferred to the \"Appraisal Unit.\" Guided by his new boss Usami, Mitarai's led through a secret underground passage within the bank where a new, exciting world of gambling awaits.",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "NOT_YET_RELEASED",
-    "season": "FALL",
-    "seasonYear": 2026,
-    "seasonInt": 264,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Drama",
-      "Psychological",
-      "Thriller"
-    ],
-    "tags": [
-      {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 91,
-        "name": "Gambling",
-        "description": "Centers around the act of gambling.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 109,
-        "name": "Primarily Adult Cast",
-        "description": "Main cast is mostly composed of characters above a high school age.",
-        "category": "Cast-Main Cast",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 7693,
-        "name": "CUE",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/7693"
-      }
-    ],
-    "studiosNames": [
-      "CUE"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 638,
-    "trending": 0,
-    "favourites": 3,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#ジャンケットバンク",
-    "startDate": "2026-10-01",
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/63713",
-    "anilist_url": "https://anilist.co/anime/209132",
-    "trailer": null
-  },
-  {
     "animeId": 176373,
     "anilistId": 176373,
     "title": "Shiranuhi",
@@ -789,7 +872,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 630,
+    "popularity": 635,
     "trending": 0,
     "favourites": 6,
     "source": "ORIGINAL",
@@ -838,16 +921,6 @@
     ],
     "tags": [
       {
-        "id": 648,
-        "name": "Crime",
-        "description": "Centers around unlawful activities punishable by the state or other authority.",
-        "category": "Theme-Other",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 694,
         "name": "Detective",
         "description": "Features a character who investigates and solves crimes.",
@@ -858,11 +931,11 @@
         "isAdult": false
       },
       {
-        "id": 145,
-        "name": "Work",
-        "description": "Centers around the activities of a certain occupation.",
-        "category": "Setting-Scene",
-        "rank": 20,
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 79,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -878,10 +951,10 @@
         "isAdult": false
       },
       {
-        "id": 40,
-        "name": "Police",
-        "description": "Centers around the life and activities of law enforcement officers.",
-        "category": "Theme-Other-Organisations",
+        "id": 145,
+        "name": "Work",
+        "description": "Centers around the activities of a certain occupation.",
+        "category": "Setting-Scene",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -892,6 +965,16 @@
         "name": "Boys' Love",
         "description": "Prominently features romance between two males, not inherently sexual.",
         "category": "Theme-Romance",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 40,
+        "name": "Police",
+        "description": "Centers around the life and activities of law enforcement officers.",
+        "category": "Theme-Other-Organisations",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -971,7 +1054,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 604,
+    "popularity": 605,
     "trending": 0,
     "favourites": 1,
     "source": "OTHER",
@@ -1014,7 +1097,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 602,
+    "popularity": 603,
     "trending": 0,
     "favourites": 3,
     "source": "OTHER",
@@ -1074,7 +1157,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 597,
+    "popularity": 598,
     "trending": 0,
     "favourites": 3,
     "source": "ORIGINAL",
@@ -1210,7 +1293,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 574,
+    "popularity": 577,
     "trending": 0,
     "favourites": 5,
     "source": "OTHER",
@@ -1290,7 +1373,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 571,
+    "popularity": 572,
     "trending": 0,
     "favourites": 5,
     "source": "ORIGINAL",
@@ -1307,55 +1390,6 @@
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=5v_P3gzgGPo"
     }
-  },
-  {
-    "animeId": 211538,
-    "anilistId": 211538,
-    "title": "Hokuhokusei ni Kumo to Ike",
-    "titleRomaji": "Hokuhokusei ni Kumo to Ike",
-    "titleEnglish": "",
-    "titleNative": "北北西に曇と往け",
-    "synonyms": [
-      "Go with the Clouds, North-by-Northwest"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211538-9DIgBfTibfZh.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211538-9DIgBfTibfZh.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211538-9DIgBfTibfZh.jpg",
-    "coverImageColor": "#5078e4",
-    "bannerImage": "",
-    "synopsis": "The story takes place in Iceland, at land’s end, 64°N. Kei Miyama is a 17-year-old with three secrets: he can talk to cars, he can’t handle pretty girls, and he works as a private investigator. One case has him searching for a beloved dog, another involves reuniting a woman with a man she fell for at first sight. And then comes a case that strikes close to home—searching for his own little brother. Tag along as this globe-spanning journey unfolds… (Source: Kodansha USA)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Adventure",
-      "Mystery",
-      "Slice of Life"
-    ],
-    "tags": [],
-    "studios": [],
-    "studiosNames": [],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 569,
-    "trending": 1,
-    "favourites": 5,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#北北西に曇と往け",
-    "startDate": null,
-    "endDate": null,
-    "mal_url": "",
-    "anilist_url": "https://anilist.co/anime/211538",
-    "trailer": null
   },
   {
     "animeId": 186347,
@@ -1574,7 +1608,7 @@
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 561,
+    "popularity": 562,
     "trending": 0,
     "favourites": 2,
     "source": "MANGA",
