@@ -9950,8 +9950,8 @@
     "chapterIndexId": "abd0bc20-063a-45a0-91b2-8b7049701d4a",
     "lastChapterId": "efa0f990-8549-4d5f-9335-0233bfaf3ba8",
     "lastChapter": "1",
-    "lastAttemptAt": "2026-05-01T18:51:53.776Z",
-    "lastSuccessAt": "2026-05-01T18:51:53.776Z",
+    "lastAttemptAt": "2026-05-01T19:17:59.602Z",
+    "lastSuccessAt": "2026-05-01T19:17:59.602Z",
     "reason": null,
     "matcherVersion": 2
   },
@@ -11453,7 +11453,7 @@
     "title": "",
     "lastChapterId": "5af68cfa-669d-418a-924f-b40c563c15b2",
     "lastChapter": "2",
-    "lastAttemptAt": "2026-05-01T07:17:48.570Z",
+    "lastAttemptAt": "2026-05-01T19:18:02.512Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -12529,6 +12529,41 @@
     "lastChapter": "27",
     "lastAttemptAt": "2026-05-01T19:01:03.722Z",
     "lastSuccessAt": "2026-05-01T19:01:03.722Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "6f8509aa-dec9-4b92-aa20-014b14fa4d7f": {
+    "status": "failed",
+    "title": "The Final Boss's Tears",
+    "lastChapterId": "a462a513-cec0-4cbd-a9d4-eea966a5189c",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-05-01T19:17:59.213Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "6675fe08-1c9a-41e3-bbb3-20ab08c26a28": {
+    "status": "discovered",
+    "title": "Aruiwa, Watashi no Meitantei",
+    "mangaId": 198512,
+    "anilistId": 198512,
+    "chapterIndexId": "6675fe08-1c9a-41e3-bbb3-20ab08c26a28",
+    "lastChapterId": "e27d4dd9-80e3-4c07-9aae-6b572b8a1b1f",
+    "lastChapter": "4",
+    "lastAttemptAt": "2026-05-01T19:18:02.950Z",
+    "lastSuccessAt": "2026-05-01T19:18:02.950Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "d89cfcf7-dcb4-4af7-8c95-330c2c6167d0": {
+    "status": "discovered",
+    "title": "Shiou no Kikan: Moto Yuusha no Ore, Jibun ga Soshiki Shita Chuuni Himitsu Kessha o Tomeru tame ni Futatabi Isekai ni Shoukan Sareteshimau",
+    "mangaId": 187863,
+    "anilistId": 187863,
+    "chapterIndexId": "d89cfcf7-dcb4-4af7-8c95-330c2c6167d0",
+    "lastChapterId": "525c3a33-f3ef-49ea-9879-4d0bf3d76416",
+    "lastChapter": "11",
+    "lastAttemptAt": "2026-05-01T19:18:03.894Z",
+    "lastSuccessAt": "2026-05-01T19:18:03.894Z",
     "reason": null,
     "matcherVersion": 2
   }
