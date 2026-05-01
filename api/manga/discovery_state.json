@@ -11455,9 +11455,9 @@
   "1ad0f483-5d11-466a-a237-175086fd0ab8": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "6166029e-58eb-47b1-96c7-aa20a0bb638d",
-    "lastChapter": "1",
-    "lastAttemptAt": "2026-04-30T19:17:50.791Z",
+    "lastChapterId": "5af68cfa-669d-418a-924f-b40c563c15b2",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-05-01T07:17:48.570Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -12254,6 +12254,32 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-05-01T07:00:57.355Z",
     "lastSuccessAt": "2026-05-01T07:00:57.355Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "7f6ee9cf-c706-4f74-80bd-2467fd02aeab": {
+    "status": "discovered",
+    "title": "Ore no Ichizu wo Jama Suru Aitsu",
+    "mangaId": 208491,
+    "anilistId": 208491,
+    "chapterIndexId": "7f6ee9cf-c706-4f74-80bd-2467fd02aeab",
+    "lastChapterId": "c0ac271e-d4b6-43e5-a9f1-515079ba576e",
+    "lastChapter": "5",
+    "lastAttemptAt": "2026-05-01T07:17:45.070Z",
+    "lastSuccessAt": "2026-05-01T07:17:45.070Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "c66d2a14-e0a2-4488-9023-abdab7249d61": {
+    "status": "discovered",
+    "title": "Arte",
+    "mangaId": 87466,
+    "anilistId": 87466,
+    "chapterIndexId": "c66d2a14-e0a2-4488-9023-abdab7249d61",
+    "lastChapterId": "92474867-275a-4586-ad75-0e57d8f87d1c",
+    "lastChapter": "102",
+    "lastAttemptAt": "2026-05-01T07:17:45.719Z",
+    "lastSuccessAt": "2026-05-01T07:17:45.719Z",
     "reason": null,
     "matcherVersion": 2
   }
