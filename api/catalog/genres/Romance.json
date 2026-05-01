@@ -1094,9 +1094,9 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 84,
-    "popularity": 574329,
-    "trending": 32,
-    "favourites": 33868,
+    "popularity": 574689,
+    "trending": 29,
+    "favourites": 33893,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -1528,9 +1528,9 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 569890,
-    "trending": 25,
-    "favourites": 32896,
+    "popularity": 570230,
+    "trending": 37,
+    "favourites": 32922,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -2568,9 +2568,9 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 489983,
-    "trending": 9,
-    "favourites": 30103,
+    "popularity": 491236,
+    "trending": 18,
+    "favourites": 30180,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -20930,222 +20930,6 @@
     }
   },
   {
-    "animeId": 31765,
-    "anilistId": 21403,
-    "title": "Sword Art Online the Movie: Ordinal Scale",
-    "titleRomaji": "Sword Art Online: Ordinal Scale",
-    "titleEnglish": "Sword Art Online the Movie: Ordinal Scale",
-    "titleNative": "ソードアート・オンライン -オーディナル・スケール-",
-    "synonyms": [
-      "SAO THE MOVIE"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21403-k8DZhZ3x1BCO.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21403-k8DZhZ3x1BCO.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx21403-k8DZhZ3x1BCO.png",
-    "coverImageColor": "",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21403-3CvHjmnIays3.jpg",
-    "synopsis": "In 2022, the world of virtual reality was upended by the arrival of a new invention from a genius programmer, Akihiko Kayaba. Called NerveGear, it was the first full-dive system and with it, came endless possibilities to VRMMORPGs. In 2026, a new machine called the Augma is developed to compete against the NerveGear and its successor, the Amusphere. A next-gen wearable device, the Augma doesn't have a full-dive function like its predecessors. Instead, it uses Augmented Reality to get players into the game. It is safe, user-friendly and lets users play while they are conscious, making it an instant hit on the market. The most popular game on the system is “Ordinal Scale” (aka: OS), an ARMMORPG developed exclusively for the Augma. Asuna and the gang have already been playing OS for a while, by the time Kirito decides to join them. They’re about to find out that Ordinal Scale isn’t all fun and games… (Source: Official website)",
-    "type": "ANIME",
-    "format": "MOVIE",
-    "status": "FINISHED",
-    "season": "WINTER",
-    "seasonYear": 2017,
-    "seasonInt": 171,
-    "episodes": 1,
-    "duration": 119,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "tags": [
-      {
-        "id": 517,
-        "name": "Artificial Intelligence",
-        "description": "Intelligent non-organic machines that work and react similarly to humans.",
-        "category": "Cast-Traits",
-        "rank": 100,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 364,
-        "name": "Augmented Reality",
-        "description": "Prominently features events with augmented reality as the main setting.",
-        "category": "Setting-Universe",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 308,
-        "name": "Video Games",
-        "description": "Centers around characters playing video games.",
-        "category": "Theme-Game",
-        "rank": 92,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 43,
-        "name": "Swordplay",
-        "description": "Prominently features the use of swords in combat.",
-        "category": "Theme-Action",
-        "rank": 84,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 112,
-        "name": "Virtual World",
-        "description": "Partly or completely set in the world inside a video game.",
-        "category": "Setting-Universe",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
-        "rank": 79,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 365,
-        "name": "Memory Manipulation",
-        "description": "Prominently features a character(s) who has had their memories altered.",
-        "category": "Theme-Other",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 68,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 68,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 86,
-        "name": "Primarily Female Cast",
-        "description": "Main cast is mostly composed of female characters.",
-        "category": "Cast-Main Cast",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 335,
-        "name": "Tanned Skin",
-        "description": "Prominently features characters with tanned skin.",
-        "category": "Cast-Traits",
-        "rank": 45,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 85,
-        "name": "Tragedy",
-        "description": "Centers around tragic events and unhappy endings.",
-        "category": "Theme-Drama",
-        "rank": 40,
-        "isGeneralSpoiler": true,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 100,
-        "name": "Nudity",
-        "description": "Features a character wearing no clothing or exposing intimate body parts.",
-        "category": "Cast-Traits",
-        "rank": 13,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 561,
-        "name": "A-1 Pictures",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/561"
-      }
-    ],
-    "studiosNames": [
-      "A-1 Pictures"
-    ],
-    "rating": 7.4,
-    "averageScore": 74,
-    "meanScore": 74,
-    "popularity": 184557,
-    "trending": 1,
-    "favourites": 3433,
-    "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#sao_anime",
-    "startDate": "2017-02-18",
-    "endDate": "2017-02-18",
-    "mal_url": "https://myanimelist.net/anime/31765",
-    "anilist_url": "https://anilist.co/anime/21403",
-    "trailer": {
-      "id": "32FLqOWjUfI",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=32FLqOWjUfI"
-    }
-  },
-  {
     "animeId": 57555,
     "anilistId": 171627,
     "title": "Chainsaw Man – The Movie: Reze Arc",
@@ -21528,9 +21312,9 @@
     "rating": 9,
     "averageScore": 90,
     "meanScore": 90,
-    "popularity": 183567,
-    "trending": 20,
-    "favourites": 14176,
+    "popularity": 184633,
+    "trending": 26,
+    "favourites": 14252,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -21544,6 +21328,222 @@
       "id": "pv8A7eubPQQ",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=pv8A7eubPQQ"
+    }
+  },
+  {
+    "animeId": 31765,
+    "anilistId": 21403,
+    "title": "Sword Art Online the Movie: Ordinal Scale",
+    "titleRomaji": "Sword Art Online: Ordinal Scale",
+    "titleEnglish": "Sword Art Online the Movie: Ordinal Scale",
+    "titleNative": "ソードアート・オンライン -オーディナル・スケール-",
+    "synonyms": [
+      "SAO THE MOVIE"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21403-k8DZhZ3x1BCO.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21403-k8DZhZ3x1BCO.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx21403-k8DZhZ3x1BCO.png",
+    "coverImageColor": "",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21403-3CvHjmnIays3.jpg",
+    "synopsis": "In 2022, the world of virtual reality was upended by the arrival of a new invention from a genius programmer, Akihiko Kayaba. Called NerveGear, it was the first full-dive system and with it, came endless possibilities to VRMMORPGs. In 2026, a new machine called the Augma is developed to compete against the NerveGear and its successor, the Amusphere. A next-gen wearable device, the Augma doesn't have a full-dive function like its predecessors. Instead, it uses Augmented Reality to get players into the game. It is safe, user-friendly and lets users play while they are conscious, making it an instant hit on the market. The most popular game on the system is “Ordinal Scale” (aka: OS), an ARMMORPG developed exclusively for the Augma. Asuna and the gang have already been playing OS for a while, by the time Kirito decides to join them. They’re about to find out that Ordinal Scale isn’t all fun and games… (Source: Official website)",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2017,
+    "seasonInt": 171,
+    "episodes": 1,
+    "duration": 119,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 517,
+        "name": "Artificial Intelligence",
+        "description": "Intelligent non-organic machines that work and react similarly to humans.",
+        "category": "Cast-Traits",
+        "rank": 100,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 364,
+        "name": "Augmented Reality",
+        "description": "Prominently features events with augmented reality as the main setting.",
+        "category": "Setting-Universe",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 308,
+        "name": "Video Games",
+        "description": "Centers around characters playing video games.",
+        "category": "Theme-Game",
+        "rank": 92,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 43,
+        "name": "Swordplay",
+        "description": "Prominently features the use of swords in combat.",
+        "category": "Theme-Action",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 112,
+        "name": "Virtual World",
+        "description": "Partly or completely set in the world inside a video game.",
+        "category": "Setting-Universe",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 365,
+        "name": "Memory Manipulation",
+        "description": "Prominently features a character(s) who has had their memories altered.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 68,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 86,
+        "name": "Primarily Female Cast",
+        "description": "Main cast is mostly composed of female characters.",
+        "category": "Cast-Main Cast",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 335,
+        "name": "Tanned Skin",
+        "description": "Prominently features characters with tanned skin.",
+        "category": "Cast-Traits",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 85,
+        "name": "Tragedy",
+        "description": "Centers around tragic events and unhappy endings.",
+        "category": "Theme-Drama",
+        "rank": 40,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 100,
+        "name": "Nudity",
+        "description": "Features a character wearing no clothing or exposing intimate body parts.",
+        "category": "Cast-Traits",
+        "rank": 13,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 561,
+        "name": "A-1 Pictures",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/561"
+      }
+    ],
+    "studiosNames": [
+      "A-1 Pictures"
+    ],
+    "rating": 7.4,
+    "averageScore": 74,
+    "meanScore": 74,
+    "popularity": 184557,
+    "trending": 1,
+    "favourites": 3433,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#sao_anime",
+    "startDate": "2017-02-18",
+    "endDate": "2017-02-18",
+    "mal_url": "https://myanimelist.net/anime/31765",
+    "anilist_url": "https://anilist.co/anime/21403",
+    "trailer": {
+      "id": "32FLqOWjUfI",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=32FLqOWjUfI"
     }
   },
   {
@@ -25137,6 +25137,204 @@
     }
   },
   {
+    "animeId": 59845,
+    "anilistId": 181444,
+    "title": "The Fragrant Flower Blooms With Dignity",
+    "titleRomaji": "Kaoru Hana wa Rin to Saku",
+    "titleEnglish": "The Fragrant Flower Blooms With Dignity",
+    "titleNative": "薫る花は凛と咲く",
+    "synonyms": [
+      "Kaoru i Rin: Rozkwitając z tobą",
+      "BLOOM",
+      "Благоухающий цветок расцветает с достоинством",
+      "La nobleza de las flores",
+      "Kaoru und Rin"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181444-Ut9DDUZdfHwg.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181444-Ut9DDUZdfHwg.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181444-Ut9DDUZdfHwg.jpg",
+    "coverImageColor": "#6baed6",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/181444-SBhwJNPxjHrr.jpg",
+    "synopsis": "Chidori High is a boys’ school that takes in the dregs of society with the lowest grades. Next door stands Kikyo Girls’ High, where the wealthy, high-class families send their precious daughters. Chidori second-year Rintarou, who has a fierce face but a gentle heart, is helping at his family’s patisserie when he meets a girl named Kaoruko. The two hit it off right away…but this blissful peace is quickly disturbed when Rintarou discovers that Kaoruko is actually a student at Kikyo. Worse, she doesn’t seem to realize what a huge problem this really is! Will these two be able to forge a path for themselves, and sidestep the traps (metaphorical and literal) laid by their classmates? (Source: Kodansha USA)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "SUMMER",
+    "seasonYear": 2025,
+    "seasonInt": 253,
+    "episodes": 13,
+    "duration": 24,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "tags": [
+      {
+        "id": 1045,
+        "name": "Heterosexual",
+        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
+        "category": "Theme-Romance",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 81,
+        "name": "Iyashikei",
+        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
+        "category": "Theme-Slice of Life",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 142,
+        "name": "Food",
+        "description": "Centers around cooking or food appraisal.",
+        "category": "Theme-Arts",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 595,
+        "name": "Urban",
+        "description": "Partly or completely set in a city.",
+        "category": "Setting-Scene",
+        "rank": 70,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 69,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1403,
+        "name": "Class Struggle",
+        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
+        "category": "Theme-Drama",
+        "rank": 48,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6222,
+        "name": "CloverWorks",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6222"
+      }
+    ],
+    "studiosNames": [
+      "CloverWorks"
+    ],
+    "rating": 8.5,
+    "averageScore": 85,
+    "meanScore": 85,
+    "popularity": 166869,
+    "trending": 21,
+    "favourites": 9946,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#薫る花 #薫る花は凛と咲く",
+    "startDate": "2025-07-06",
+    "endDate": "2025-09-28",
+    "mal_url": "https://myanimelist.net/anime/59845",
+    "anilist_url": "https://anilist.co/anime/181444",
+    "trailer": {
+      "id": "wMDwbC-cAQg",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=wMDwbC-cAQg"
+    }
+  },
+  {
     "animeId": 42938,
     "anilistId": 124194,
     "title": "Fruits Basket The Final Season",
@@ -25608,204 +25806,6 @@
       "id": "ci2XSskC_wA",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=ci2XSskC_wA"
-    }
-  },
-  {
-    "animeId": 59845,
-    "anilistId": 181444,
-    "title": "The Fragrant Flower Blooms With Dignity",
-    "titleRomaji": "Kaoru Hana wa Rin to Saku",
-    "titleEnglish": "The Fragrant Flower Blooms With Dignity",
-    "titleNative": "薫る花は凛と咲く",
-    "synonyms": [
-      "Kaoru i Rin: Rozkwitając z tobą",
-      "BLOOM",
-      "Благоухающий цветок расцветает с достоинством",
-      "La nobleza de las flores",
-      "Kaoru und Rin"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181444-Ut9DDUZdfHwg.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181444-Ut9DDUZdfHwg.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181444-Ut9DDUZdfHwg.jpg",
-    "coverImageColor": "#6baed6",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/181444-SBhwJNPxjHrr.jpg",
-    "synopsis": "Chidori High is a boys’ school that takes in the dregs of society with the lowest grades. Next door stands Kikyo Girls’ High, where the wealthy, high-class families send their precious daughters. Chidori second-year Rintarou, who has a fierce face but a gentle heart, is helping at his family’s patisserie when he meets a girl named Kaoruko. The two hit it off right away…but this blissful peace is quickly disturbed when Rintarou discovers that Kaoruko is actually a student at Kikyo. Worse, she doesn’t seem to realize what a huge problem this really is! Will these two be able to forge a path for themselves, and sidestep the traps (metaphorical and literal) laid by their classmates? (Source: Kodansha USA)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "FINISHED",
-    "season": "SUMMER",
-    "seasonYear": 2025,
-    "seasonInt": 253,
-    "episodes": 13,
-    "duration": 24,
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "tags": [
-      {
-        "id": 1045,
-        "name": "Heterosexual",
-        "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
-        "category": "Theme-Romance",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 91,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 87,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 81,
-        "name": "Iyashikei",
-        "description": "Primary aim is to heal the audience through serene depictions of characters' daily lives.",
-        "category": "Theme-Slice of Life",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 98,
-        "name": "Female Protagonist",
-        "description": "Main character is female.",
-        "category": "Cast-Main Cast",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 56,
-        "name": "Shounen",
-        "description": "Target demographic is teenage and young adult males.",
-        "category": "Demographic",
-        "rank": 71,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 142,
-        "name": "Food",
-        "description": "Centers around cooking or food appraisal.",
-        "category": "Theme-Arts",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 595,
-        "name": "Urban",
-        "description": "Partly or completely set in a city.",
-        "category": "Setting-Scene",
-        "rank": 70,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 69,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1403,
-        "name": "Class Struggle",
-        "description": "Contains conflict born between the different social classes. Generally between an dominant elite and a suffering oppressed group.",
-        "category": "Theme-Drama",
-        "rank": 48,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 395,
-        "name": "Delinquents",
-        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
-        "category": "Cast-Traits",
-        "rank": 47,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 45,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 6222,
-        "name": "CloverWorks",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6222"
-      }
-    ],
-    "studiosNames": [
-      "CloverWorks"
-    ],
-    "rating": 8.5,
-    "averageScore": 85,
-    "meanScore": 85,
-    "popularity": 166338,
-    "trending": 17,
-    "favourites": 9908,
-    "source": "MANGA",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#薫る花 #薫る花は凛と咲く",
-    "startDate": "2025-07-06",
-    "endDate": "2025-09-28",
-    "mal_url": "https://myanimelist.net/anime/59845",
-    "anilist_url": "https://anilist.co/anime/181444",
-    "trailer": {
-      "id": "wMDwbC-cAQg",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=wMDwbC-cAQg"
     }
   },
   {
@@ -27194,9 +27194,9 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 84,
-    "popularity": 163559,
-    "trending": 19,
-    "favourites": 5449,
+    "popularity": 163777,
+    "trending": 17,
+    "favourites": 5459,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
