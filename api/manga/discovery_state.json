@@ -5174,9 +5174,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "8ec3173d-0014-4279-bbb8-48b5c2722abf",
-    "lastChapter": "87",
-    "lastAttemptAt": "2026-05-01T13:17:45.616Z",
+    "lastChapterId": "0cc8e6fd-da96-42d0-8319-a84f1f46ef8c",
+    "lastChapter": "85",
+    "lastAttemptAt": "2026-05-01T13:51:41.445Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -12412,6 +12412,15 @@
     "lastAttemptAt": "2026-05-01T13:17:46.027Z",
     "lastSuccessAt": "2026-05-01T13:17:46.027Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "be0b2359-aec6-4aa8-bc27-1dbb9be79cd4": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "5e0d85df-6bed-45a8-b15f-f30817d8f187",
+    "lastChapter": "1",
+    "lastAttemptAt": "2026-05-01T13:51:40.980Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
