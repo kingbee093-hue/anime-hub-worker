@@ -5174,9 +5174,9 @@
   "55289edb-913d-4832-bf2c-12e7693b0cfc": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "97a3919b-98d5-4c2e-b237-5b24f34bff33",
-    "lastChapter": "86",
-    "lastAttemptAt": "2026-05-01T15:17:42.561Z",
+    "lastChapterId": "8ec3173d-0014-4279-bbb8-48b5c2722abf",
+    "lastChapter": "87",
+    "lastAttemptAt": "2026-05-01T15:34:41.101Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -10009,10 +10009,10 @@
   },
   "c9a8ffb7-682f-40e2-87fe-9537e8f425ea": {
     "status": "failed",
-    "title": "Episode 12",
-    "lastChapterId": "e17a88f5-44a0-4e38-8c0d-fb9047141596",
-    "lastChapter": "12",
-    "lastAttemptAt": "2026-05-01T15:17:41.421Z",
+    "title": "Episode 14",
+    "lastChapterId": "ced39943-8352-4333-9e72-42ed2bfd181e",
+    "lastChapter": "14",
+    "lastAttemptAt": "2026-05-01T15:34:40.440Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -12456,6 +12456,15 @@
     "lastAttemptAt": "2026-05-01T14:17:42.470Z",
     "lastSuccessAt": "2026-05-01T14:17:42.470Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "83484d8a-f46f-4ae7-bd32-360cff7a9eb0": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "265e5299-5320-49a7-86fb-23c30eb0d975",
+    "lastChapter": "25",
+    "lastAttemptAt": "2026-05-01T15:34:42.708Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
