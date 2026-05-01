@@ -11420,9 +11420,9 @@
   "d1782475-2c3e-4deb-bc33-25a0ffbe3f18": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "b9d2dbc1-2c90-49bd-a0ce-ef40ef7f0fb6",
-    "lastChapter": "25",
-    "lastAttemptAt": "2026-04-30T20:17:45.847Z",
+    "lastChapterId": "bd4fa7b5-5ec7-4577-83b9-258c3f60015e",
+    "lastChapter": "26",
+    "lastAttemptAt": "2026-05-01T04:00:54.539Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -12116,6 +12116,32 @@
     "lastChapter": "1",
     "lastAttemptAt": "2026-05-01T03:52:04.130Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "1de48a75-06de-446e-967c-536a3fb3d390": {
+    "status": "discovered",
+    "title": "Jinmyaku Cheat de Hajimeru Hitomakase Eiyuu-tan",
+    "mangaId": 143546,
+    "anilistId": 143546,
+    "chapterIndexId": "1de48a75-06de-446e-967c-536a3fb3d390",
+    "lastChapterId": "e7c8e883-75e5-4d29-b206-c866e86b568e",
+    "lastChapter": "42",
+    "lastAttemptAt": "2026-05-01T04:00:54.971Z",
+    "lastSuccessAt": "2026-05-01T04:00:54.971Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "e7562ba1-5ad1-4f5a-a903-ef56efad0c1a": {
+    "status": "discovered",
+    "title": "Megumi no Daigo: Kyuukoku no Orange",
+    "mangaId": 124903,
+    "anilistId": 124903,
+    "chapterIndexId": "e7562ba1-5ad1-4f5a-a903-ef56efad0c1a",
+    "lastChapterId": "7fd6556c-67e0-4ff5-85af-879570dc516f",
+    "lastChapter": "12",
+    "lastAttemptAt": "2026-05-01T04:00:55.609Z",
+    "lastSuccessAt": "2026-05-01T04:00:55.609Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
