@@ -116,19 +116,21 @@
     "trailer": null
   },
   {
-    "animeId": 63987,
-    "anilistId": 211220,
-    "title": "Li Xiongmao",
-    "titleRomaji": "Li Xiongmao",
+    "animeId": 153474,
+    "anilistId": 153474,
+    "title": "Di Ba",
+    "titleRomaji": "Di Ba",
     "titleEnglish": "",
-    "titleNative": "李熊猫",
-    "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211220-V4JuyjRR4auR.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211220-V4JuyjRR4auR.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211220-V4JuyjRR4auR.png",
-    "coverImageColor": "#780d0d",
+    "titleNative": "帝霸",
+    "synonyms": [
+      "Emperor's Domination"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153474-YYNK0CjTI7RG.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153474-YYNK0CjTI7RG.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153474-YYNK0CjTI7RG.png",
+    "coverImageColor": "",
     "bannerImage": "",
-    "synopsis": "Adapted from a novel by Wen Zhou, this story follows Li Xiongmao, a human boy raised by demons who is sent by his master to leave Black-White Mountain and kill the three enemies responsible for the demons’ downfall. As he searches for the truth, he gradually unravels the mysteries behind the conflict between humans and demons, the secrets of the dynasty, and his own destiny. (Source: iQIYI, translated)",
+    "synopsis": "Over the years, countless powerful cultivators have come and gone. But the world never realized that behind every powerful cultivator, there seemed to be a mysterious... Dark Crow. After the Dark Crow guided a legion of young cultivators to the peak of cultivation and established their own sects, he chose to leave the world behind. Thousands of years have passed since his departure, and the once mighty sects have become weak and in danger of failing. Finally the Dark Crow returned in the form of a young man, here to fulfill his promise to defend the sects. (Source: Tencent, translated)",
     "type": "ANIME",
     "format": "ONA",
     "status": "NOT_YET_RELEASED",
@@ -138,37 +140,54 @@
     "episodes": 0,
     "duration": 0,
     "genres": [
-      "Adventure"
+      "Action",
+      "Drama",
+      "Fantasy"
     ],
-    "tags": [],
+    "tags": [
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
     "studios": [
       {
-        "id": 6546,
-        "name": "GARDEN",
+        "id": 6475,
+        "name": "Ruo Hong Culture",
         "isMain": true,
         "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6546"
+        "siteUrl": "https://anilist.co/studio/6475"
       }
     ],
     "studiosNames": [
-      "GARDEN"
+      "Ruo Hong Culture"
     ],
     "rating": 0,
     "averageScore": 0,
     "meanScore": 0,
-    "popularity": 146,
+    "popularity": 144,
     "trending": 0,
-    "favourites": 1,
+    "favourites": 4,
     "source": "OTHER",
     "countryOfOrigin": "CN",
     "isLicensed": true,
     "isAdult": false,
     "hashtag": "",
-    "startDate": "2026-01-01",
+    "startDate": null,
     "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/63987",
-    "anilist_url": "https://anilist.co/anime/211220",
-    "trailer": null
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/153474",
+    "trailer": {
+      "id": "xR-Uq-9EGO8",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=xR-Uq-9EGO8"
+    }
   },
   {
     "animeId": 129265,
@@ -265,80 +284,6 @@
     "mal_url": "",
     "anilist_url": "https://anilist.co/anime/141920",
     "trailer": null
-  },
-  {
-    "animeId": 153474,
-    "anilistId": 153474,
-    "title": "Di Ba",
-    "titleRomaji": "Di Ba",
-    "titleEnglish": "",
-    "titleNative": "帝霸",
-    "synonyms": [
-      "Emperor's Domination"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153474-YYNK0CjTI7RG.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153474-YYNK0CjTI7RG.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153474-YYNK0CjTI7RG.png",
-    "coverImageColor": "",
-    "bannerImage": "",
-    "synopsis": "Over the years, countless powerful cultivators have come and gone. But the world never realized that behind every powerful cultivator, there seemed to be a mysterious... Dark Crow. After the Dark Crow guided a legion of young cultivators to the peak of cultivation and established their own sects, he chose to leave the world behind. Thousands of years have passed since his departure, and the once mighty sects have become weak and in danger of failing. Finally the Dark Crow returned in the form of a young man, here to fulfill his promise to defend the sects. (Source: Tencent, translated)",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 0,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 6475,
-        "name": "Ruo Hong Culture",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6475"
-      }
-    ],
-    "studiosNames": [
-      "Ruo Hong Culture"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 143,
-    "trending": 0,
-    "favourites": 4,
-    "source": "OTHER",
-    "countryOfOrigin": "CN",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": null,
-    "endDate": null,
-    "mal_url": "",
-    "anilist_url": "https://anilist.co/anime/153474",
-    "trailer": {
-      "id": "xR-Uq-9EGO8",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=xR-Uq-9EGO8"
-    }
   },
   {
     "animeId": 50440,
@@ -713,6 +658,78 @@
     "trailer": null
   },
   {
+    "animeId": 60563,
+    "anilistId": 198696,
+    "title": "Ye De Ming Ming Shu",
+    "titleRomaji": "Ye De Ming Ming Shu",
+    "titleEnglish": "",
+    "titleNative": "夜的命名术",
+    "synonyms": [
+      "The Knight",
+      "Night's Nomenclature"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198696-r3AyjpgccVlc.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198696-r3AyjpgccVlc.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b198696-r3AyjpgccVlc.jpg",
+    "coverImageColor": "",
+    "bannerImage": "",
+    "synopsis": "After a difficult upbringing, Qingchen's life takes a drastic turn when a mysterious countdown emerges on his arm. He is taken to Prison No. 18, a dangerous parallel universe, when it reaches zero. He overcomes severe adversity and gains the respect of the demigod Li Shutong by using his cunning and bravery. He then becomes his disciple and embarks on a journey of genuine transformation.",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "NOT_YET_RELEASED",
+    "season": "",
+    "seasonYear": null,
+    "seasonInt": null,
+    "episodes": 12,
+    "duration": 0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "tags": [
+      {
+        "id": 89,
+        "name": "Full CGI",
+        "description": "Almost entirely created with computer-generated imagery.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 6653,
+        "name": "CHOSEN",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/6653"
+      }
+    ],
+    "studiosNames": [
+      "CHOSEN"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 137,
+    "trending": 0,
+    "favourites": 1,
+    "source": "OTHER",
+    "countryOfOrigin": "CN",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": null,
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/60563",
+    "anilist_url": "https://anilist.co/anime/198696",
+    "trailer": null
+  },
+  {
     "animeId": 187594,
     "anilistId": 187594,
     "title": "Wanmei Shijie Movie: Jiu Jie Fen Tian",
@@ -782,78 +799,6 @@
     "endDate": null,
     "mal_url": "",
     "anilist_url": "https://anilist.co/anime/187594",
-    "trailer": null
-  },
-  {
-    "animeId": 60563,
-    "anilistId": 198696,
-    "title": "Ye De Ming Ming Shu",
-    "titleRomaji": "Ye De Ming Ming Shu",
-    "titleEnglish": "",
-    "titleNative": "夜的命名术",
-    "synonyms": [
-      "The Knight",
-      "Night's Nomenclature"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198696-r3AyjpgccVlc.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b198696-r3AyjpgccVlc.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b198696-r3AyjpgccVlc.jpg",
-    "coverImageColor": "",
-    "bannerImage": "",
-    "synopsis": "After a difficult upbringing, Qingchen's life takes a drastic turn when a mysterious countdown emerges on his arm. He is taken to Prison No. 18, a dangerous parallel universe, when it reaches zero. He overcomes severe adversity and gains the respect of the demigod Li Shutong by using his cunning and bravery. He then becomes his disciple and embarks on a journey of genuine transformation.",
-    "type": "ANIME",
-    "format": "ONA",
-    "status": "NOT_YET_RELEASED",
-    "season": "",
-    "seasonYear": null,
-    "seasonInt": null,
-    "episodes": 12,
-    "duration": 0,
-    "genres": [
-      "Action",
-      "Adventure",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "tags": [
-      {
-        "id": 89,
-        "name": "Full CGI",
-        "description": "Almost entirely created with computer-generated imagery.",
-        "category": "Technical",
-        "rank": 20,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 6653,
-        "name": "CHOSEN",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/6653"
-      }
-    ],
-    "studiosNames": [
-      "CHOSEN"
-    ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 136,
-    "trending": 0,
-    "favourites": 1,
-    "source": "OTHER",
-    "countryOfOrigin": "CN",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "",
-    "startDate": null,
-    "endDate": null,
-    "mal_url": "https://myanimelist.net/anime/60563",
-    "anilist_url": "https://anilist.co/anime/198696",
     "trailer": null
   },
   {
@@ -1314,6 +1259,63 @@
     "endDate": null,
     "mal_url": "",
     "anilist_url": "https://anilist.co/anime/141927",
+    "trailer": null
+  },
+  {
+    "animeId": 211232,
+    "anilistId": 211232,
+    "title": "Majo no Tani no Yoru",
+    "titleRomaji": "Majo no Tani no Yoru",
+    "titleEnglish": "",
+    "titleNative": "魔女の谷の夜",
+    "synonyms": [
+      "Night in the Valley of Witches"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211232-Bthde3cpWCtq.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211232-Bthde3cpWCtq.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211232-Bthde3cpWCtq.png",
+    "coverImageColor": "#e4c943",
+    "bannerImage": "",
+    "synopsis": "A short film only screened at the Cinema Orion at Ghibli Park in Nagakute. The film is set in Ghibli Park's \"Valley of the Witches\" and is the first original animated short film created by Studio Ghibli for Ghibli Park.",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "NOT_YET_RELEASED",
+    "season": "SUMMER",
+    "seasonYear": 2026,
+    "seasonInt": 263,
+    "episodes": 1,
+    "duration": 0,
+    "genres": [
+      "Fantasy"
+    ],
+    "tags": [],
+    "studios": [
+      {
+        "id": 21,
+        "name": "Studio Ghibli",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/21"
+      }
+    ],
+    "studiosNames": [
+      "Studio Ghibli"
+    ],
+    "rating": 0,
+    "averageScore": 0,
+    "meanScore": 0,
+    "popularity": 128,
+    "trending": 0,
+    "favourites": 0,
+    "source": "ORIGINAL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-07-08",
+    "endDate": "2026-07-08",
+    "mal_url": "",
+    "anilist_url": "https://anilist.co/anime/211232",
     "trailer": null
   },
   {
