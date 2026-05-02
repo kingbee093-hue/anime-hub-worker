@@ -1265,7 +1265,7 @@
     "averageScore": 66,
     "meanScore": 72,
     "popularity": 1972,
-    "trending": 5,
+    "trending": 1,
     "favourites": 16,
     "source": "OTHER",
     "countryOfOrigin": "JP",
@@ -1367,7 +1367,7 @@
     "averageScore": 42,
     "meanScore": 42,
     "popularity": 1913,
-    "trending": 2,
+    "trending": 1,
     "favourites": 47,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1448,7 +1448,7 @@
     "averageScore": 67,
     "meanScore": 74,
     "popularity": 1756,
-    "trending": 0,
+    "trending": 1,
     "favourites": 20,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
@@ -1776,7 +1776,7 @@
     "averageScore": 72,
     "meanScore": 79,
     "popularity": 1606,
-    "trending": 1,
+    "trending": 4,
     "favourites": 105,
     "source": "OTHER",
     "countryOfOrigin": "CN",
@@ -2520,7 +2520,7 @@
     "averageScore": 60,
     "meanScore": 71,
     "popularity": 1132,
-    "trending": 3,
+    "trending": 2,
     "favourites": 8,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
@@ -2876,7 +2876,7 @@
     "averageScore": 56,
     "meanScore": 62,
     "popularity": 1074,
-    "trending": 1,
+    "trending": 0,
     "favourites": 4,
     "source": "ORIGINAL",
     "countryOfOrigin": "JP",
@@ -2951,7 +2951,7 @@
     "averageScore": 53,
     "meanScore": 61,
     "popularity": 1071,
-    "trending": 10,
+    "trending": 5,
     "favourites": 9,
     "source": "OTHER",
     "countryOfOrigin": "JP",
@@ -3035,7 +3035,7 @@
     "averageScore": 64,
     "meanScore": 70,
     "popularity": 1063,
-    "trending": 1,
+    "trending": 0,
     "favourites": 68,
     "source": "OTHER",
     "countryOfOrigin": "CN",
@@ -3050,6 +3050,134 @@
       "id": "_lGVSRDMFkU",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=_lGVSRDMFkU"
+    }
+  },
+  {
+    "animeId": 63469,
+    "anilistId": 207675,
+    "title": "Hyakki Yakoushou",
+    "titleRomaji": "Hyakki Yakou Shou",
+    "titleEnglish": "Hyakki Yakoushou",
+    "titleNative": "百鬼夜行抄",
+    "synonyms": [
+      "Selected Pandemonium",
+      "Tales of a Hundred Ghosts Traveling by the Night",
+      "Hyakkiyakou Shou",
+      "Beyond Twilight",
+      "Le Cortège des cent démons",
+      "La Corte dei Cento Demoni",
+      "บันทึกขบวนร้อยอสูรแห่งรัตติกาล"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207675-h3TZK82jG5aD.png",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207675-h3TZK82jG5aD.png",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207675-h3TZK82jG5aD.png",
+    "coverImageColor": "#e4a15d",
+    "bannerImage": "",
+    "synopsis": "Ritsu inherited his sixth sense from his grandfather, along with a demon guardian named Blue Storm. Strange things just seem to happen around these two, and it's left to them to get to the bottom of all these mysterious events. Each story is independent but features recurring characters you'll come to know and appreciate as they, each in their own way, try to deal with things 'not of this world'. (Source: MU)",
+    "type": "ANIME",
+    "format": "TV_SHORT",
+    "status": "RELEASING",
+    "season": "SPRING",
+    "seasonYear": 2026,
+    "seasonInt": 262,
+    "episodes": 0,
+    "duration": 4,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Supernatural"
+    ],
+    "tags": [
+      {
+        "id": 233,
+        "name": "Youkai",
+        "description": "Prominently features supernatural creatures from Japanese folklore.",
+        "category": "Theme-Fantasy",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 242,
+        "name": "Flash",
+        "description": "Created using Flash animation techniques.",
+        "category": "Technical",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 27,
+        "name": "Josei",
+        "description": "Target demographic is adult females.",
+        "category": "Demographic",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 220,
+        "name": "Ghost",
+        "description": "Prominently features a character who is a ghost.",
+        "category": "Cast-Traits",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 20,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 7472,
+        "name": "Imagica Infos",
+        "isMain": true,
+        "isAnimationStudio": false,
+        "siteUrl": "https://anilist.co/studio/7472"
+      },
+      {
+        "id": 7531,
+        "name": "Imageworks Studio",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/7531"
+      }
+    ],
+    "studiosNames": [
+      "Imagica Infos",
+      "Imageworks Studio"
+    ],
+    "rating": 4.4,
+    "averageScore": 44,
+    "meanScore": 47,
+    "popularity": 963,
+    "trending": 0,
+    "favourites": 7,
+    "source": "MANGA",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "",
+    "startDate": "2026-04-07",
+    "endDate": null,
+    "mal_url": "https://myanimelist.net/anime/63469",
+    "anilist_url": "https://anilist.co/anime/207675",
+    "trailer": {
+      "id": "gUKK4uohtgE",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=gUKK4uohtgE"
     }
   }
 ]
