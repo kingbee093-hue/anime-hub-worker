@@ -3738,7 +3738,7 @@
     "synopsis": "\"More,\" a new story by Kohei Horikoshi, is being adapted into an anime! It tells the story of Deku and friends after the final episode, published in the 42nd and final volume of the original manga. (Source: Official Website, translated)",
     "type": "ANIME",
     "format": "SPECIAL",
-    "status": "NOT_YET_RELEASED",
+    "status": "FINISHED",
     "season": "SPRING",
     "seasonYear": 2026,
     "seasonInt": 262,
@@ -3750,6 +3750,26 @@
     ],
     "tags": [
       {
+        "id": 172,
+        "name": "Superhero",
+        "description": "Prominently features super-powered humans who aim to serve the greater good.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
         "id": 56,
         "name": "Shounen",
         "description": "Target demographic is teenage and young adult males.",
@@ -3760,31 +3780,11 @@
         "isAdult": false
       },
       {
-        "id": 172,
-        "name": "Superhero",
-        "description": "Prominently features super-powered humans who aim to serve the greater good.",
-        "category": "Theme-Fantasy",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 73,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 1045,
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 60,
+        "rank": 70,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3802,12 +3802,12 @@
     "studiosNames": [
       "bones film"
     ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 0,
-    "popularity": 18876,
-    "trending": 4,
-    "favourites": 158,
+    "rating": 7.3,
+    "averageScore": 73,
+    "meanScore": 84,
+    "popularity": 19540,
+    "trending": 239,
+    "favourites": 173,
     "source": "MANGA",
     "countryOfOrigin": "JP",
     "isLicensed": true,
