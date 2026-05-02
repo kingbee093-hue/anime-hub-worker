@@ -1,48 +1,148 @@
 [
   {
-    "mangaId": 189108,
-    "anilistId": 189108,
-    "idMal": 177980,
-    "title": "Koppa Maichiru Sono Koro ni",
-    "titleRomaji": "Koppa Maichiru Sono Koro ni",
-    "titleEnglish": "",
-    "titleNative": "木っ端舞い散る その頃に",
+    "mangaId": 138555,
+    "anilistId": 138555,
+    "idMal": 143510,
+    "title": "The Otome Heroine's Fight for Survival (Manga)",
+    "titleRomaji": "Otome Game no Heroine de Saikyou Survival @COMIC",
+    "titleEnglish": "The Otome Heroine's Fight for Survival (Manga)",
+    "titleNative": "乙女ゲームのヒロインで最強サバイバル@COMIC",
     "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx189108-Q87zTj5HikFL.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx189108-Q87zTj5HikFL.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx189108-Q87zTj5HikFL.jpg",
-    "coverImageColor": "",
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138555-XDAahdNwiZXe.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx138555-XDAahdNwiZXe.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx138555-XDAahdNwiZXe.jpg",
+    "coverImageColor": "#f1ae5d",
     "bannerImage": "",
-    "synopsis": "Kei Maebara gets a job!! The bizarre and eerie world of public service, depicted by Ryukishi07, from Higurashi When They Cry . In the 13th year of the Heisei era, in the Tokyo Metropolitan Area, Coastal Region... Due to the prolonged economic recession, the police force has weakened, and the growing number of disillusioned youth turning to semi-criminal lifestyles has led to a drastic decline in public safety... Amidst all this, Kei Maebara begins working at the district office. Can he become a respectable public servant? (Source: Akita Shoten, translated)",
+    "synopsis": "After losing her parents at a young age to a monster attack on their village, Alicia is sent to an orphanage, where she spends three miserable years being mistreated—and doing her best to smile through it all. After finally reaching her limit and running away, Alicia is attacked by a strange woman who wants to take the young girl’s place as the protagonist of something called an otome game. During the struggle, Alicia accidentally absorbs part of the woman’s memories and knowledge, transforming her from a scared child to a calculated young woman with a mission: to write her own destiny. Now adrift in an unforgiving world, Alicia vows to grow stronger by any means necessary. She’ll need all the might she can muster if she has any hope of changing her fate and fighting for survival. (Source: J-Novel Club)",
     "type": "MANGA",
     "format": "MANGA",
     "status": "RELEASING",
-    "year": 2025,
-    "startDate": "2025-01-31",
+    "year": 2021,
+    "startDate": "2021-08-30",
     "endDate": null,
-    "chapters": 0,
+    "chapters": 36,
     "volumes": 0,
     "genres": [
-      "Comedy",
-      "Drama",
-      "Horror"
+      "Action",
+      "Adventure",
+      "Fantasy"
     ],
     "tags": [
       {
-        "id": 1571,
-        "name": "Office",
-        "description": "Features people who work in a business office.",
-        "category": "Setting-Scene",
-        "rank": 20,
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 145,
-        "name": "Work",
-        "description": "Centers around the activities of a certain occupation.",
-        "category": "Setting-Scene",
+        "id": 29,
+        "name": "Magic",
+        "description": "Prominently features magical elements or the use of magic.",
+        "category": "Theme-Fantasy",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 56,
+        "name": "Shounen",
+        "description": "Target demographic is teenage and young adult males.",
+        "category": "Demographic",
+        "rank": 79,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 244,
+        "name": "Isekai",
+        "description": "Features a character from a modern-day setting being transported into an alternate world and has to adapt to their new surroundings.",
+        "category": "Theme-Fantasy",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 322,
+        "name": "Assassins",
+        "description": "Centers around characters who murder people as a profession.",
+        "category": "Theme-Other-Organisations",
+        "rank": 73,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 71,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 243,
+        "name": "Reincarnation",
+        "description": "Features a character being born again after death, typically as another person or in another world.",
+        "category": "Theme-Other",
+        "rank": 60,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 857,
+        "name": "Villainess",
+        "description": "Centers around or prominently features a villainous noble lady.",
+        "category": "Cast-Traits",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 249,
+        "name": "Maids",
+        "description": "Prominently features a character who is a maid.",
+        "category": "Cast-Traits",
+        "rank": 45,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 33,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 186,
+        "name": "Crossdressing",
+        "description": "Prominently features a character dressing up as the opposite sex.",
+        "category": "Cast-Traits",
         "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -50,43 +150,52 @@
       }
     ],
     "authors": [
-      "Ryukishi07"
+      "Haruno Hibiyori",
+      "Kobato Wakasa"
     ],
     "artists": [
-      "Kouichi Tsugi"
+      "Kobato Wakasa"
     ],
-    "rating": 0,
-    "averageScore": 0,
-    "meanScore": 59,
-    "popularity": 241,
-    "trending": 0,
-    "favourites": 0,
-    "source": "ORIGINAL",
+    "rating": 7.6,
+    "averageScore": 76,
+    "meanScore": 78,
+    "popularity": 3798,
+    "trending": 1,
+    "favourites": 119,
+    "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/189108",
-    "mal_url": "https://myanimelist.net/manga/177980",
+    "anilist_url": "https://anilist.co/manga/138555",
+    "mal_url": "https://myanimelist.net/manga/143510",
     "externalLinks": [
       {
-        "site": "Young Champion Web",
-        "url": "https://youngchampion.jp/series/bdd20f6052e63"
+        "site": "Nico Nico Seiga",
+        "url": "https://seiga.nicovideo.jp/comic/54623?track=top_pickup"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://to-corona-ex.com/comics/20000000054623"
+      },
+      {
+        "site": "J-Novel Club",
+        "url": "https://j-novel.club/series/the-otome-heroine-s-fight-for-survival-manga"
       }
     ],
-    "mangadexId": "504161ba-7fe3-4c88-a3a2-b5e9dd313aa0",
-    "mangadexUrl": "https://mangadex.org/title/504161ba-7fe3-4c88-a3a2-b5e9dd313aa0",
+    "mangadexId": "f30a2fd3-cf2c-4f77-9910-51a908459a82",
+    "mangadexUrl": "https://mangadex.org/title/f30a2fd3-cf2c-4f77-9910-51a908459a82",
     "mangadexMappingSource": "recent_chapter_discovery",
     "mangadexMappingConfidence": 0.98,
-    "chapterIndexId": "504161ba-7fe3-4c88-a3a2-b5e9dd313aa0",
+    "chapterIndexId": "f30a2fd3-cf2c-4f77-9910-51a908459a82",
     "chapterSourceProvider": "mangadex",
-    "chapterSourceId": "504161ba-7fe3-4c88-a3a2-b5e9dd313aa0",
-    "chapterSourceTitle": "Koppa Mai Chiru - Sono Koro ni",
+    "chapterSourceId": "f30a2fd3-cf2c-4f77-9910-51a908459a82",
+    "chapterSourceTitle": "Otome Game no Heroine de Saikyou Survival",
     "chapterSourceConfidence": 1,
-    "latestChapterUpdatedAt": "2026-05-01T15:57:42+00:00",
-    "latestChapterNumber": "15.3",
+    "latestChapterUpdatedAt": "2026-05-01T14:04:47+00:00",
+    "latestChapterNumber": "36",
     "latestChapterTitle": "",
     "latestChapterLanguage": "en",
-    "latestChapterId": "b4aa1e20-c97c-491e-a067-87f54a153000",
-    "chapterCoverageCount": 3,
+    "latestChapterId": "2d9a502c-172f-4834-9a8b-0c0c6b1cd604",
+    "chapterCoverageCount": 1,
     "chapterCoverageLanguages": [
       "en"
     ],
@@ -2865,60 +2974,115 @@
     "discoveredFromRecentFeed": false
   },
   {
-    "mangaId": 208287,
-    "anilistId": 208287,
-    "idMal": 191398,
-    "title": "Enigmatica",
-    "titleRomaji": "Enigmatica",
-    "titleEnglish": "Enigmatica",
-    "titleNative": "エニグマティカ",
-    "synonyms": [],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx208287-PByILyyx4qVk.png",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx208287-PByILyyx4qVk.png",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx208287-PByILyyx4qVk.png",
-    "coverImageColor": "#1a4386",
+    "mangaId": 154526,
+    "anilistId": 154526,
+    "idMal": null,
+    "title": "Xiao Gu Niang",
+    "titleRomaji": "Xiao Gu Niang",
+    "titleEnglish": "",
+    "titleNative": "小姑孃",
+    "synonyms": [
+      "Lass",
+      "My Dear Lass"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx154526-scK81hCma6Hc.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx154526-scK81hCma6Hc.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx154526-scK81hCma6Hc.jpg",
+    "coverImageColor": "#ffd6bb",
     "bannerImage": "",
-    "synopsis": "World War II. Behind the horrific conflict known to all, there existed a secret war known to none. Codemakers and codebreakers. A story that unravels the lives of men who vanished into the shadows of history. (Source: MANGA Plus)",
+    "synopsis": "\"I think I could fall in love with you.\" \"You're cute like a little pony.\" A love story between the cute but flighty elder girl \"Little Fox\" and the younger but more mature \"Young Pony.\" See how they flourish both in love and in life! (Source: Bilibili, translated)",
     "type": "MANGA",
     "format": "MANGA",
-    "status": "RELEASING",
-    "year": 2026,
-    "startDate": "2026-02-26",
-    "endDate": null,
-    "chapters": 1,
+    "status": "FINISHED",
+    "year": 2022,
+    "startDate": "2022-08-11",
+    "endDate": "2025-08-26",
+    "chapters": 118,
     "volumes": 0,
     "genres": [
-      "Mystery"
+      "Drama",
+      "Romance",
+      "Slice of Life"
     ],
     "tags": [
       {
-        "id": 50,
-        "name": "Seinen",
-        "description": "Target demographic is adult males.",
-        "category": "Demographic",
-        "rank": 79,
+        "id": 76,
+        "name": "Yuri",
+        "description": "Prominently features romance between two females, not inherently sexual. Also known as Girls' Love.",
+        "category": "Theme-Romance",
+        "rank": 92,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 198,
-        "name": "Foreign",
-        "description": "Partly or completely set in a country outside the country of origin.",
-        "category": "Setting-Scene",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
+        "id": 98,
+        "name": "Female Protagonist",
+        "description": "Main character is female.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 90,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 483,
+        "name": "LGBTQ+ Themes",
+        "description": "Prominently features characters or themes associated with the LGBTQ+ community, such as sexuality or gender identity.",
+        "category": "Theme-Other",
+        "rank": 87,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 250,
+        "name": "Rural",
+        "description": "Partly or completely set in the countryside.",
+        "category": "Setting-Scene",
+        "rank": 85,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 207,
+        "name": "Full Color",
+        "description": "Manga that were initially published in full color.",
+        "category": "Technical",
+        "rank": 84,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 909,
+        "name": "Agriculture",
+        "description": "Prominently features agriculture practices.",
+        "category": "Theme-Slice of Life",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 138,
+        "name": "Age Gap",
+        "description": "Prominently features romantic relations between people with a significant age difference.",
+        "category": "Theme-Romance",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1165,
+        "name": "Transgender",
+        "description": "Features a character whose gender identity differs from the sex they were assigned at birth.",
+        "category": "Cast-Traits",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
         "isAdult": false
       },
       {
@@ -2926,74 +3090,72 @@
         "name": "Primarily Adult Cast",
         "description": "Main cast is mostly composed of characters above a high school age.",
         "category": "Cast-Main Cast",
-        "rank": 60,
+        "rank": 75,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       },
       {
-        "id": 25,
-        "name": "Historical",
-        "description": "Partly or completely set during a real period of world history.",
-        "category": "Setting-Time",
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
         "rank": 53,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1789,
+        "name": "Long Strip",
+        "description": "Manga originally published in a vertical, long-strip format, designed for viewing on smartphones. Also known as webtoons.",
+        "category": "Technical",
+        "rank": 20,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
       }
     ],
     "authors": [
-      "Kanji Shiba"
+      "Tracy Hu"
     ],
     "artists": [
-      "Kanji Shiba"
+      "Tracy Hu"
     ],
-    "rating": 5.6,
-    "averageScore": 56,
-    "meanScore": 69,
-    "popularity": 579,
-    "trending": 1,
-    "favourites": 3,
+    "rating": 7.7,
+    "averageScore": 77,
+    "meanScore": 85,
+    "popularity": 1690,
+    "trending": 0,
+    "favourites": 105,
     "source": "ORIGINAL",
-    "countryOfOrigin": "JP",
+    "countryOfOrigin": "CN",
     "isAdult": false,
-    "anilist_url": "https://anilist.co/manga/208287",
-    "mal_url": "https://myanimelist.net/manga/191398",
+    "anilist_url": "https://anilist.co/manga/154526",
+    "mal_url": "",
     "externalLinks": [
       {
-        "site": "MANGA Plus",
-        "url": "https://mangaplus.shueisha.co.jp/titles/100700"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://youngjump.jp/manga/enigmatica/"
-      },
-      {
-        "site": "Tonari no Young Jump",
-        "url": "https://tonarinoyj.jp/episode/12207421983427075798"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://ynjn.jp/title/30107"
+        "site": "Bilibili",
+        "url": "https://manga.bilibili.com/detail/mc32438"
       }
     ],
-    "mangadexId": "774f0f04-5023-4e2e-9c0b-f0ed382f078b",
-    "mangadexUrl": "https://mangadex.org/title/774f0f04-5023-4e2e-9c0b-f0ed382f078b",
+    "mangadexId": "f74dc24b-3f38-44d5-b7d0-8c40f4b04e29",
+    "mangadexUrl": "https://mangadex.org/title/f74dc24b-3f38-44d5-b7d0-8c40f4b04e29",
     "mangadexMappingSource": "recent_chapter_discovery",
     "mangadexMappingConfidence": 0.98,
-    "chapterIndexId": "774f0f04-5023-4e2e-9c0b-f0ed382f078b",
+    "chapterIndexId": "f74dc24b-3f38-44d5-b7d0-8c40f4b04e29",
     "chapterSourceProvider": "mangadex",
-    "chapterSourceId": "774f0f04-5023-4e2e-9c0b-f0ed382f078b",
-    "chapterSourceTitle": "Enigmatica",
+    "chapterSourceId": "f74dc24b-3f38-44d5-b7d0-8c40f4b04e29",
+    "chapterSourceTitle": "My Dear Lass",
     "chapterSourceConfidence": 1,
-    "latestChapterUpdatedAt": "2026-05-01T06:22:23+00:00",
-    "latestChapterNumber": "9",
-    "latestChapterTitle": "قطار الأشباح ⑤",
-    "latestChapterLanguage": "ar",
-    "latestChapterId": "5457deb2-2534-4c59-b429-1caea0b8c8ac",
-    "chapterCoverageCount": 6,
+    "latestChapterUpdatedAt": "2026-05-01T05:23:28+00:00",
+    "latestChapterNumber": "77",
+    "latestChapterTitle": "",
+    "latestChapterLanguage": "en",
+    "latestChapterId": "4b966f1f-9642-432e-9134-f2cd9b085cbb",
+    "chapterCoverageCount": 1,
     "chapterCoverageLanguages": [
-      "ar"
+      "en"
     ],
     "discoveredFromRecentFeed": false
   }
