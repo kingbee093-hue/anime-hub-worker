@@ -877,7 +877,7 @@
     "title": "I Saw it Very Clearly",
     "lastChapterId": "6f158fa2-3040-4f08-a73e-4a59252526bb",
     "lastChapter": "119",
-    "lastAttemptAt": "2026-05-01T19:01:02.782Z",
+    "lastAttemptAt": "2026-05-02T07:17:58.413Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -12537,7 +12537,7 @@
     "title": "The Final Boss's Tears",
     "lastChapterId": "a462a513-cec0-4cbd-a9d4-eea966a5189c",
     "lastChapter": "11",
-    "lastAttemptAt": "2026-05-01T19:17:59.213Z",
+    "lastAttemptAt": "2026-05-02T07:17:59.462Z",
     "reason": "adult_blocked",
     "matcherVersion": 2
   },
@@ -12854,6 +12854,41 @@
     "lastChapter": "37",
     "lastAttemptAt": "2026-05-02T07:00:54.879Z",
     "reason": "adult_blocked",
+    "matcherVersion": 2
+  },
+  "bcf87ead-3364-430d-a731-29a8943a5949": {
+    "status": "discovered",
+    "title": "Kiite Kuremasu yo ne? Senpai",
+    "mangaId": 143069,
+    "anilistId": 143069,
+    "chapterIndexId": "bcf87ead-3364-430d-a731-29a8943a5949",
+    "lastChapterId": "8ad08272-9f7b-4571-b470-c5d61165bc3a",
+    "lastChapter": "18",
+    "lastAttemptAt": "2026-05-02T07:17:59.071Z",
+    "lastSuccessAt": "2026-05-02T07:17:59.071Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "14366aaf-6f20-4aca-b1a2-def6e8ed3180": {
+    "status": "discovered",
+    "title": "Aejeunghwaeum",
+    "mangaId": 160031,
+    "anilistId": 160031,
+    "chapterIndexId": "14366aaf-6f20-4aca-b1a2-def6e8ed3180",
+    "lastChapterId": "31ed07b8-73ef-496a-a7a1-637729064679",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-05-02T07:18:01.576Z",
+    "lastSuccessAt": "2026-05-02T07:18:01.576Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "b31e10b4-ec67-46f5-bfad-96d8111ead3e": {
+    "status": "failed",
+    "title": "You´re late part 2",
+    "lastChapterId": "36aa1547-24af-45eb-b3b9-770a77e68c97",
+    "lastChapter": "7",
+    "lastAttemptAt": "2026-05-02T07:18:04.743Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
