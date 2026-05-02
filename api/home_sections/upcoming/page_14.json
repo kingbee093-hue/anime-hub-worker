@@ -1095,16 +1095,6 @@
     ],
     "tags": [
       {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
         "id": 291,
         "name": "Samurai",
         "description": "Prominently features warriors of medieval Japanese nobility bound by a code of honor.",
@@ -1129,6 +1119,16 @@
         "name": "Stop Motion",
         "description": "Animation style characterized by physical objects being moved incrementally between frames to create the illusion of movement.",
         "category": "Technical",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
         "rank": 60,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
@@ -1299,7 +1299,7 @@
     "averageScore": 0,
     "meanScore": 0,
     "popularity": 414,
-    "trending": 1,
+    "trending": 0,
     "favourites": 3,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",

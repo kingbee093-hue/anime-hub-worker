@@ -3780,11 +3780,21 @@
         "isAdult": false
       },
       {
+        "id": 153,
+        "name": "Time Skip",
+        "description": "Features a gap in time used to advance the story.",
+        "category": "Setting-Time",
+        "rank": 79,
+        "isGeneralSpoiler": true,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
         "id": 1045,
         "name": "Heterosexual",
         "description": "Prominently features a romance between a man and a woman, not inherently sexual.",
         "category": "Theme-Romance",
-        "rank": 70,
+        "rank": 76,
         "isGeneralSpoiler": false,
         "isMediaSpoiler": false,
         "isAdult": false
@@ -3806,7 +3816,7 @@
     "averageScore": 73,
     "meanScore": 84,
     "popularity": 19540,
-    "trending": 239,
+    "trending": 381,
     "favourites": 173,
     "source": "MANGA",
     "countryOfOrigin": "JP",
