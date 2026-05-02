@@ -12890,5 +12890,27 @@
     "lastAttemptAt": "2026-05-02T07:18:04.743Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
+  },
+  "cc6086f8-a6e9-48b9-80a5-4c432c8cd0e3": {
+    "status": "discovered",
+    "title": "Zangai Shoujo, Kirakira na Sekai no Soko",
+    "mangaId": 207949,
+    "anilistId": 207949,
+    "chapterIndexId": "cc6086f8-a6e9-48b9-80a5-4c432c8cd0e3",
+    "lastChapterId": "1ceed0ad-9a01-4186-a131-4c34bcf182bf",
+    "lastChapter": "2",
+    "lastAttemptAt": "2026-05-02T08:17:50.661Z",
+    "lastSuccessAt": "2026-05-02T08:17:50.661Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "0ce66d0f-3041-481c-be13-6ab6ae4a82bf": {
+    "status": "failed",
+    "title": "Sunrise & Weather",
+    "lastChapterId": "c002397d-d959-4e6a-9fdb-d25213ea4f91",
+    "lastChapter": "71",
+    "lastAttemptAt": "2026-05-02T08:17:51.163Z",
+    "reason": "adult_blocked",
+    "matcherVersion": 2
   }
 }
