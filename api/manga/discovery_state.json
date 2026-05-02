@@ -7869,7 +7869,7 @@
     "title": "SCP-5818 Frankenstein Burger King",
     "lastChapterId": "2a899c8a-e51e-480b-b252-52c1730f7076",
     "lastChapter": "191",
-    "lastAttemptAt": "2026-05-02T11:17:53.428Z",
+    "lastAttemptAt": "2026-05-02T23:17:58.325Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -13294,6 +13294,28 @@
     "lastAttemptAt": "2026-05-02T21:51:42.409Z",
     "lastSuccessAt": "2026-05-02T21:51:42.409Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "4d625431-165d-4bd0-a661-a630e5e8a3cc": {
+    "status": "discovered",
+    "title": "Under Idol",
+    "mangaId": 205438,
+    "anilistId": 205438,
+    "chapterIndexId": "4d625431-165d-4bd0-a661-a630e5e8a3cc",
+    "lastChapterId": "93f36ae8-9f38-4a73-9ec0-fa7fcbfa933c",
+    "lastChapter": "1.1",
+    "lastAttemptAt": "2026-05-02T23:17:55.015Z",
+    "lastSuccessAt": "2026-05-02T23:17:55.015Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "6e7da461-f619-4fcf-b077-ec1344745838": {
+    "status": "failed",
+    "title": "",
+    "lastChapterId": "5d7741f3-96a0-4613-96e2-70887f424b2d",
+    "lastChapter": "",
+    "lastAttemptAt": "2026-05-02T23:18:01.066Z",
+    "reason": "anilist_match_not_found",
     "matcherVersion": 2
   }
 }
