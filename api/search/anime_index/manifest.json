@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T09:12:53.960Z",
+  "generatedAt": "2026-05-02T09:13:39.828Z",
   "totalItems": 3000,
   "shards": {
     "a": {
@@ -47,7 +47,7 @@
       "path": "search/anime_index/shards/m.json"
     },
     "b": {
-      "count": 340,
+      "count": 339,
       "path": "search/anime_index/shards/b.json"
     },
     "0-9": {
@@ -94,13 +94,13 @@
       "count": 87,
       "path": "search/anime_index/shards/u.json"
     },
-    "e": {
-      "count": 131,
-      "path": "search/anime_index/shards/e.json"
-    },
     "r": {
       "count": 189,
       "path": "search/anime_index/shards/r.json"
+    },
+    "e": {
+      "count": 131,
+      "path": "search/anime_index/shards/e.json"
     },
     "g": {
       "count": 274,
