@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-02T14:34:56.425Z",
-  "totalItems": 1884,
+  "generatedAt": "2026-05-02T14:51:49.641Z",
+  "totalItems": 1885,
   "shards": {
     "c": {
-      "count": 422,
+      "count": 423,
       "path": "search/manga_index/shards/c.json"
     },
     "m": {
@@ -11,7 +11,7 @@
       "path": "search/manga_index/shards/m.json"
     },
     "other": {
-      "count": 1806,
+      "count": 1807,
       "path": "search/manga_index/shards/other.json"
     },
     "arabic": {
@@ -19,11 +19,11 @@
       "path": "search/manga_index/shards/arabic.json"
     },
     "t": {
-      "count": 879,
+      "count": 880,
       "path": "search/manga_index/shards/t.json"
     },
     "a": {
-      "count": 585,
+      "count": 586,
       "path": "search/manga_index/shards/a.json"
     },
     "s": {
@@ -115,7 +115,7 @@
       "path": "search/manga_index/shards/q.json"
     },
     "x": {
-      "count": 25,
+      "count": 26,
       "path": "search/manga_index/shards/x.json"
     }
   }
