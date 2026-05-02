@@ -11455,9 +11455,9 @@
   "1ad0f483-5d11-466a-a237-175086fd0ab8": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "5af68cfa-669d-418a-924f-b40c563c15b2",
-    "lastChapter": "2",
-    "lastAttemptAt": "2026-05-02T15:00:56.645Z",
+    "lastChapterId": "a20ff65c-0532-4296-9b1d-072c0077b4f5",
+    "lastChapter": "3.2",
+    "lastAttemptAt": "2026-05-02T15:18:01.843Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -13081,6 +13081,32 @@
     "lastChapter": "4",
     "lastAttemptAt": "2026-05-02T15:00:58.387Z",
     "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "a3f0c858-0c38-4549-90e0-f677a34fa4af": {
+    "status": "discovered",
+    "title": "Kousha no Ura ni wa Tenshi ga Umerarete Iru",
+    "mangaId": 58845,
+    "anilistId": 58845,
+    "chapterIndexId": "a3f0c858-0c38-4549-90e0-f677a34fa4af",
+    "lastChapterId": "66ec30d9-29da-44b5-87e4-547921d784b6",
+    "lastChapter": "23",
+    "lastAttemptAt": "2026-05-02T15:17:58.139Z",
+    "lastSuccessAt": "2026-05-02T15:17:58.139Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "260583b8-fc7f-46a4-86d8-1f53d41c1690": {
+    "status": "discovered",
+    "title": "Hu Yu She Zhi Wu",
+    "mangaId": 207623,
+    "anilistId": 207623,
+    "chapterIndexId": "260583b8-fc7f-46a4-86d8-1f53d41c1690",
+    "lastChapterId": "142d5e38-79bd-4e0f-b22d-8b3f657d38a2",
+    "lastChapter": "0",
+    "lastAttemptAt": "2026-05-02T15:17:58.964Z",
+    "lastSuccessAt": "2026-05-02T15:17:58.964Z",
+    "reason": null,
     "matcherVersion": 2
   }
 }
