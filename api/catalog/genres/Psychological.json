@@ -324,7 +324,7 @@
     "averageScore": 84,
     "meanScore": 84,
     "popularity": 896170,
-    "trending": 18,
+    "trending": 28,
     "favourites": 59361,
     "source": "MANGA",
     "countryOfOrigin": "JP",
@@ -1649,9 +1649,9 @@
     "rating": 8.1,
     "averageScore": 81,
     "meanScore": 81,
-    "popularity": 570587,
-    "trending": 22,
-    "favourites": 32939,
+    "popularity": 570926,
+    "trending": 27,
+    "favourites": 33325,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -22540,366 +22540,6 @@
     }
   },
   {
-    "animeId": 51180,
-    "anilistId": 146066,
-    "title": "Classroom of the Elite Season 3",
-    "titleRomaji": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season",
-    "titleEnglish": "Classroom of the Elite Season 3",
-    "titleNative": "ようこそ実力至上主義の教室へ 3rd Season",
-    "synonyms": [
-      "You-Zitsu 3",
-      "Youjitsu 3",
-      "ขอต้อนรับสู่ห้องเรียนนิยม (เฉพาะ) ยอดคน ภาค 3",
-      "Classroom of the Elite III",
-      "欢迎来到实力至上主义的教室 第三季",
-      "Добро пожаловать в класс для особо одарённых 3",
-      "فصل النخبة الموسم الثالث",
-      "歡迎來到實力至上主義的教室 第三季"
-    ],
-    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146066-zzKl6P6OeEjy.jpg",
-    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146066-zzKl6P6OeEjy.jpg",
-    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx146066-zzKl6P6OeEjy.jpg",
-    "coverImageColor": "#bbd6f1",
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/146066-gxjPUB1ofAO4.jpg",
-    "synopsis": "The third season of Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e . The third semester kicks off in high gear with a special boot camp deep in the mountains. Forcibly separated into groups along grade and gender lines, the first, second and third years alike must work together to survive the rugged terrain. Even worse? The leader of the group that comes in last will be expelled. Can Class D make it back to campus intact, or is this where they finally say goodbye to one of their own? (Source: Seven Seas Entertainment)",
-    "type": "ANIME",
-    "format": "TV",
-    "status": "FINISHED",
-    "season": "WINTER",
-    "seasonYear": 2024,
-    "seasonInt": 241,
-    "episodes": 13,
-    "duration": 24,
-    "genres": [
-      "Drama",
-      "Psychological"
-    ],
-    "tags": [
-      {
-        "id": 46,
-        "name": "School",
-        "description": "Partly or completely set in a primary or secondary educational institution.",
-        "category": "Setting-Scene",
-        "rank": 97,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 82,
-        "name": "Male Protagonist",
-        "description": "Main character is male.",
-        "category": "Cast-Main Cast",
-        "rank": 95,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 226,
-        "name": "Fugitive",
-        "description": "Prominently features a character evading capture by an individual or organization.",
-        "category": "Theme-Action",
-        "rank": 91,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 104,
-        "name": "Anti-Hero",
-        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
-        "category": "Cast-Main Cast",
-        "rank": 90,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1228,
-        "name": "Primarily Teen Cast",
-        "description": "Main cast is mostly composed of teen characters.",
-        "category": "Cast-Main Cast",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 105,
-        "name": "Ensemble Cast",
-        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
-        "category": "Cast-Main Cast",
-        "rank": 86,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 391,
-        "name": "Philosophy",
-        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
-        "category": "Theme-Other",
-        "rank": 83,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 101,
-        "name": "Battle Royale",
-        "description": "Centers around a fierce group competition, often violent and with only one winner.",
-        "category": "Theme-Action",
-        "rank": 82,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 456,
-        "name": "Conspiracy",
-        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
-        "category": "Theme-Drama",
-        "rank": 80,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 102,
-        "name": "Coming of Age",
-        "description": "Centers around a character's transition from childhood to adulthood.",
-        "category": "Theme-Drama",
-        "rank": 78,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 252,
-        "name": "Revenge",
-        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
-        "category": "Theme-Drama",
-        "rank": 77,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 103,
-        "name": "Politics",
-        "description": "Centers around politics, politicians, or government activities.",
-        "category": "Theme-Other",
-        "rank": 76,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 143,
-        "name": "Survival",
-        "description": "Centers around the struggle to live in spite of extreme obstacles.",
-        "category": "Theme-Other",
-        "rank": 74,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 171,
-        "name": "Bullying",
-        "description": "Prominently features the use of force for intimidation, often in a school setting.",
-        "category": "Theme-Drama",
-        "rank": 67,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1219,
-        "name": "Disability",
-        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
-        "category": "Cast-Traits",
-        "rank": 66,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1489,
-        "name": "Boarding School",
-        "description": "Features characters attending a boarding school.",
-        "category": "Setting-Scene",
-        "rank": 65,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 1492,
-        "name": "Board Game",
-        "description": "Centers around characters playing board games.",
-        "category": "Theme-Game",
-        "rank": 60,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 23,
-        "name": "Female Harem",
-        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
-        "category": "Theme-Romance",
-        "rank": 58,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 139,
-        "name": "Love Triangle",
-        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
-        "category": "Theme-Romance",
-        "rank": 56,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 779,
-        "name": "Kuudere",
-        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
-        "category": "Cast-Traits",
-        "rank": 55,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 311,
-        "name": "Rehabilitation",
-        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
-        "category": "Theme-Drama",
-        "rank": 54,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 1046,
-        "name": "Suicide",
-        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
-        "category": "Theme-Drama",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 164,
-        "name": "Tsundere",
-        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
-        "category": "Cast-Traits",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 395,
-        "name": "Delinquents",
-        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
-        "category": "Cast-Traits",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 84,
-        "name": "School Club",
-        "description": "Partly or completely set in a school club scene.",
-        "category": "Setting-Scene",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 648,
-        "name": "Crime",
-        "description": "Centers around unlawful activities punishable by the state or other authority.",
-        "category": "Theme-Other",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 536,
-        "name": "Dissociative Identities",
-        "description": "A case where one or more people share the same body.",
-        "category": "Cast-Traits",
-        "rank": 50,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      },
-      {
-        "id": 264,
-        "name": "Athletics",
-        "description": "Centers around sporting events that involve competitive running, jumping, throwing, or walking.",
-        "category": "Theme-Game-Sport",
-        "rank": 47,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": false,
-        "isAdult": false
-      },
-      {
-        "id": 163,
-        "name": "Yandere",
-        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
-        "category": "Cast-Traits",
-        "rank": 30,
-        "isGeneralSpoiler": false,
-        "isMediaSpoiler": true,
-        "isAdult": false
-      }
-    ],
-    "studios": [
-      {
-        "id": 456,
-        "name": "Lerche",
-        "isMain": true,
-        "isAnimationStudio": true,
-        "siteUrl": "https://anilist.co/studio/456"
-      }
-    ],
-    "studiosNames": [
-      "Lerche"
-    ],
-    "rating": 7.8,
-    "averageScore": 78,
-    "meanScore": 78,
-    "popularity": 164114,
-    "trending": 17,
-    "favourites": 3952,
-    "source": "LIGHT_NOVEL",
-    "countryOfOrigin": "JP",
-    "isLicensed": true,
-    "isAdult": false,
-    "hashtag": "#you_zitsu #よう実",
-    "startDate": "2024-01-03",
-    "endDate": "2024-03-27",
-    "mal_url": "https://myanimelist.net/anime/51180",
-    "anilist_url": "https://anilist.co/anime/146066",
-    "trailer": {
-      "id": "Z11Ozjk0ufY",
-      "site": "youtube",
-      "url": "https://www.youtube.com/watch?v=Z11Ozjk0ufY"
-    }
-  },
-  {
     "animeId": 54857,
     "anilistId": 163134,
     "title": "Re:ZERO -Starting Life in Another World- Season 3",
@@ -23269,9 +22909,9 @@
     "rating": 8.4,
     "averageScore": 84,
     "meanScore": 84,
-    "popularity": 163993,
-    "trending": 31,
-    "favourites": 5459,
+    "popularity": 164213,
+    "trending": 34,
+    "favourites": 5465,
     "source": "LIGHT_NOVEL",
     "countryOfOrigin": "JP",
     "isLicensed": true,
@@ -23285,6 +22925,366 @@
       "id": "qMJNdQFPaHk",
       "site": "youtube",
       "url": "https://www.youtube.com/watch?v=qMJNdQFPaHk"
+    }
+  },
+  {
+    "animeId": 51180,
+    "anilistId": 146066,
+    "title": "Classroom of the Elite Season 3",
+    "titleRomaji": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season",
+    "titleEnglish": "Classroom of the Elite Season 3",
+    "titleNative": "ようこそ実力至上主義の教室へ 3rd Season",
+    "synonyms": [
+      "You-Zitsu 3",
+      "Youjitsu 3",
+      "ขอต้อนรับสู่ห้องเรียนนิยม (เฉพาะ) ยอดคน ภาค 3",
+      "Classroom of the Elite III",
+      "欢迎来到实力至上主义的教室 第三季",
+      "Добро пожаловать в класс для особо одарённых 3",
+      "فصل النخبة الموسم الثالث",
+      "歡迎來到實力至上主義的教室 第三季"
+    ],
+    "imageUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146066-zzKl6P6OeEjy.jpg",
+    "coverImageLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146066-zzKl6P6OeEjy.jpg",
+    "coverImageMedium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx146066-zzKl6P6OeEjy.jpg",
+    "coverImageColor": "#bbd6f1",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/146066-gxjPUB1ofAO4.jpg",
+    "synopsis": "The third season of Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e . The third semester kicks off in high gear with a special boot camp deep in the mountains. Forcibly separated into groups along grade and gender lines, the first, second and third years alike must work together to survive the rugged terrain. Even worse? The leader of the group that comes in last will be expelled. Can Class D make it back to campus intact, or is this where they finally say goodbye to one of their own? (Source: Seven Seas Entertainment)",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "season": "WINTER",
+    "seasonYear": 2024,
+    "seasonInt": 241,
+    "episodes": 13,
+    "duration": 24,
+    "genres": [
+      "Drama",
+      "Psychological"
+    ],
+    "tags": [
+      {
+        "id": 46,
+        "name": "School",
+        "description": "Partly or completely set in a primary or secondary educational institution.",
+        "category": "Setting-Scene",
+        "rank": 97,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 82,
+        "name": "Male Protagonist",
+        "description": "Main character is male.",
+        "category": "Cast-Main Cast",
+        "rank": 95,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 226,
+        "name": "Fugitive",
+        "description": "Prominently features a character evading capture by an individual or organization.",
+        "category": "Theme-Action",
+        "rank": 91,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 104,
+        "name": "Anti-Hero",
+        "description": "Features a protagonist who lacks conventional heroic attributes and may be considered a borderline villain.",
+        "category": "Cast-Main Cast",
+        "rank": 90,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1228,
+        "name": "Primarily Teen Cast",
+        "description": "Main cast is mostly composed of teen characters.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 105,
+        "name": "Ensemble Cast",
+        "description": "Features a large cast of characters with (almost) equal screen time and importance to the plot.",
+        "category": "Cast-Main Cast",
+        "rank": 86,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 391,
+        "name": "Philosophy",
+        "description": "Relating or devoted to the study of the fundamental nature of knowledge, reality, and existence.",
+        "category": "Theme-Other",
+        "rank": 83,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 101,
+        "name": "Battle Royale",
+        "description": "Centers around a fierce group competition, often violent and with only one winner.",
+        "category": "Theme-Action",
+        "rank": 82,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 456,
+        "name": "Conspiracy",
+        "description": "Contains one or more factions controlling or attempting to control the world from the shadows.",
+        "category": "Theme-Drama",
+        "rank": 80,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 102,
+        "name": "Coming of Age",
+        "description": "Centers around a character's transition from childhood to adulthood.",
+        "category": "Theme-Drama",
+        "rank": 78,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 252,
+        "name": "Revenge",
+        "description": "Prominently features a character who aims to exact punishment in a resentful or vindictive manner.",
+        "category": "Theme-Drama",
+        "rank": 77,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 103,
+        "name": "Politics",
+        "description": "Centers around politics, politicians, or government activities.",
+        "category": "Theme-Other",
+        "rank": 76,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 143,
+        "name": "Survival",
+        "description": "Centers around the struggle to live in spite of extreme obstacles.",
+        "category": "Theme-Other",
+        "rank": 74,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 171,
+        "name": "Bullying",
+        "description": "Prominently features the use of force for intimidation, often in a school setting.",
+        "category": "Theme-Drama",
+        "rank": 67,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1219,
+        "name": "Disability",
+        "description": "A work that features one or more characters with a physical, mental, cognitive, or developmental condition that impairs, interferes with, or limits the person's ability to engage in certain tasks or actions.",
+        "category": "Cast-Traits",
+        "rank": 66,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1489,
+        "name": "Boarding School",
+        "description": "Features characters attending a boarding school.",
+        "category": "Setting-Scene",
+        "rank": 65,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 1492,
+        "name": "Board Game",
+        "description": "Centers around characters playing board games.",
+        "category": "Theme-Game",
+        "rank": 60,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 23,
+        "name": "Female Harem",
+        "description": "Main cast features the protagonist plus several female characters who are romantically interested in them.",
+        "category": "Theme-Romance",
+        "rank": 58,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 139,
+        "name": "Love Triangle",
+        "description": "Centered around romantic feelings between more than two people. Includes all love polygons.",
+        "category": "Theme-Romance",
+        "rank": 56,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 779,
+        "name": "Kuudere",
+        "description": "Prominently features a character who generally retains a cold, blunt and cynical exterior, but once one gets to know them, they have a very warm and loving interior.",
+        "category": "Cast-Traits",
+        "rank": 55,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 311,
+        "name": "Rehabilitation",
+        "description": "Prominently features the recovery of a character who became incapable of social life or work.",
+        "category": "Theme-Drama",
+        "rank": 54,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 1046,
+        "name": "Suicide",
+        "description": "The act or an instance of taking or attempting to take one's own life voluntarily and intentionally.",
+        "category": "Theme-Drama",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 164,
+        "name": "Tsundere",
+        "description": "Prominently features a character who acts cold and hostile in order to mask warmer emotions.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 395,
+        "name": "Delinquents",
+        "description": "Features characters with a notorious image and attitude, sometimes referred to as \"yankees\".",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 84,
+        "name": "School Club",
+        "description": "Partly or completely set in a school club scene.",
+        "category": "Setting-Scene",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 648,
+        "name": "Crime",
+        "description": "Centers around unlawful activities punishable by the state or other authority.",
+        "category": "Theme-Other",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 536,
+        "name": "Dissociative Identities",
+        "description": "A case where one or more people share the same body.",
+        "category": "Cast-Traits",
+        "rank": 50,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      },
+      {
+        "id": 264,
+        "name": "Athletics",
+        "description": "Centers around sporting events that involve competitive running, jumping, throwing, or walking.",
+        "category": "Theme-Game-Sport",
+        "rank": 47,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": false,
+        "isAdult": false
+      },
+      {
+        "id": 163,
+        "name": "Yandere",
+        "description": "Prominently features a character who is obsessively in love with another, to the point of acting deranged or violent.",
+        "category": "Cast-Traits",
+        "rank": 30,
+        "isGeneralSpoiler": false,
+        "isMediaSpoiler": true,
+        "isAdult": false
+      }
+    ],
+    "studios": [
+      {
+        "id": 456,
+        "name": "Lerche",
+        "isMain": true,
+        "isAnimationStudio": true,
+        "siteUrl": "https://anilist.co/studio/456"
+      }
+    ],
+    "studiosNames": [
+      "Lerche"
+    ],
+    "rating": 7.8,
+    "averageScore": 78,
+    "meanScore": 78,
+    "popularity": 164114,
+    "trending": 17,
+    "favourites": 3952,
+    "source": "LIGHT_NOVEL",
+    "countryOfOrigin": "JP",
+    "isLicensed": true,
+    "isAdult": false,
+    "hashtag": "#you_zitsu #よう実",
+    "startDate": "2024-01-03",
+    "endDate": "2024-03-27",
+    "mal_url": "https://myanimelist.net/anime/51180",
+    "anilist_url": "https://anilist.co/anime/146066",
+    "trailer": {
+      "id": "Z11Ozjk0ufY",
+      "site": "youtube",
+      "url": "https://www.youtube.com/watch?v=Z11Ozjk0ufY"
     }
   },
   {
