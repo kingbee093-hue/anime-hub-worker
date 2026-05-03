@@ -10009,10 +10009,10 @@
   },
   "c9a8ffb7-682f-40e2-87fe-9537e8f425ea": {
     "status": "failed",
-    "title": "Episode 46",
-    "lastChapterId": "e14e02f8-0e0b-4893-8934-297f8e13a7d6",
-    "lastChapter": "46",
-    "lastAttemptAt": "2026-05-02T23:51:58.489Z",
+    "title": "Episode 42",
+    "lastChapterId": "e2809f6e-82b1-4d00-82d7-1c5b265f0869",
+    "lastChapter": "42",
+    "lastAttemptAt": "2026-05-03T00:17:57.007Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -11022,9 +11022,9 @@
   "cb871a0b-8442-4f9d-8987-38a6d7f11d17": {
     "status": "failed",
     "title": "",
-    "lastChapterId": "57ead918-c284-4b2d-9494-e407f7131ffc",
-    "lastChapter": "12",
-    "lastAttemptAt": "2026-05-02T13:34:59.649Z",
+    "lastChapterId": "d052f4ac-a18e-4257-9506-75d0f5965604",
+    "lastChapter": "13",
+    "lastAttemptAt": "2026-05-03T00:17:55.121Z",
     "reason": "anilist_match_not_found",
     "matcherVersion": 2
   },
@@ -13329,6 +13329,15 @@
     "lastAttemptAt": "2026-05-02T23:35:03.520Z",
     "lastSuccessAt": "2026-05-02T23:35:03.520Z",
     "reason": null,
+    "matcherVersion": 2
+  },
+  "e1bede76-6ec6-4918-bdf3-4b36733ba646": {
+    "status": "failed",
+    "title": "Does That Count as Old?",
+    "lastChapterId": "a22b80f1-06f7-4808-9739-d783257d831b",
+    "lastChapter": "85",
+    "lastAttemptAt": "2026-05-03T00:17:57.144Z",
+    "reason": "adult_blocked",
     "matcherVersion": 2
   }
 }
