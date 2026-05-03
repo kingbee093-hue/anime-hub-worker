@@ -13395,5 +13395,40 @@
     "lastSuccessAt": "2026-05-03T04:34:40.413Z",
     "reason": null,
     "matcherVersion": 2
+  },
+  "7b5b502d-00bb-4cee-979b-2f700a4f9b5b": {
+    "status": "discovered",
+    "title": "Wild Life",
+    "mangaId": 35602,
+    "anilistId": 35602,
+    "chapterIndexId": "7b5b502d-00bb-4cee-979b-2f700a4f9b5b",
+    "lastChapterId": "81323dbd-b499-402f-865c-365d842a54e1",
+    "lastChapter": "164",
+    "lastAttemptAt": "2026-05-03T06:17:51.900Z",
+    "lastSuccessAt": "2026-05-03T06:17:51.900Z",
+    "reason": null,
+    "matcherVersion": 2
+  },
+  "9d45ff11-2385-4179-8663-e0dbb0ebd792": {
+    "status": "failed",
+    "title": "Prologue",
+    "lastChapterId": "a19a860e-f990-4b0b-9a7c-47d4959e16a9",
+    "lastChapter": "0",
+    "lastAttemptAt": "2026-05-03T06:17:54.715Z",
+    "reason": "anilist_match_not_found",
+    "matcherVersion": 2
+  },
+  "d964361f-042a-4c1b-907d-3c907dd50060": {
+    "status": "discovered",
+    "title": "A Ninja and an Assassin Under One Roof",
+    "mangaId": 131538,
+    "anilistId": 131538,
+    "chapterIndexId": "d964361f-042a-4c1b-907d-3c907dd50060",
+    "lastChapterId": "38e1f2ed-b63d-484f-971e-e0e17c2e4fdb",
+    "lastChapter": "53",
+    "lastAttemptAt": "2026-05-03T06:17:55.149Z",
+    "lastSuccessAt": "2026-05-03T06:17:55.149Z",
+    "reason": null,
+    "matcherVersion": 2
   }
 }
